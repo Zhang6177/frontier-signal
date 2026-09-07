@@ -1,0 +1,1072 @@
+{
+ "papers": [
+  {
+   "id": "2608.07261",
+   "version": 1,
+   "title": "Why Knowing Both Hops Is Not Enough: Understanding Two-Hop Generalization in Language Models",
+   "abstract": "通过机制分析揭示 LLM 在多跳推理中的失败模式，提出循环式训练策略显著提升 OOD 泛化。",
+   "authors": [],
+   "published": "2026-08-10T04:00:00.000Z",
+   "updated": "2026-08-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.07261",
+   "pdf": "https://arxiv.org/pdf/2608.07261",
+   "announceType": "new",
+   "summary": "通过机制分析揭示 LLM 在多跳推理中的失败模式，提出循环式训练策略显著提升 OOD 泛化。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.07261"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "首次给出 LLM 多跳推理失败的完整机制解释，为改进推理架构提供理论指导",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "机制性解释: 发现下层层级能正确构建实体中间表示，但上层层级主要学习映射而非推理，导致二跳 OOD 失败"
+   ],
+   "innovations": [
+    "循环式训练策略: 让 Transformer 跨输入形式复用推理电路，从根本上提升泛化能力",
+    "系统性实验设计: 在可控符号环境中从头训练 Transformer，分离各因素对泛化的影响"
+   ],
+   "method": "在可控符号环境中训练 Transformer → 机制分析识别层级间失配 → 设计循环式训练策略让模型复用推理电路",
+   "results": "在 OOD 二跳查询上显著提升泛化性能；揭示了\"一致中间表示\"的成功泛化机制",
+   "value": "首次给出 LLM 多跳推理失败的完整机制解释，为改进推理架构提供理论指导",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "机制性解释: 发现下层层级能正确构建实体中间表示，但上层层级主要学习映射而非推理，导致二跳 OOD 失败",
+    "agentChange": "在可控符号环境中训练 Transformer → 机制分析识别层级间失配 → 设计循环式训练策略让模型复用推理电路",
+    "selfEvolution": null,
+    "evidence": [
+     "在 OOD 二跳查询上显著提升泛化性能；揭示了\"一致中间表示\"的成功泛化机制",
+     "系统性实验设计: 在可控符号环境中从头训练 Transformer，分离各因素对泛化的影响"
+    ],
+    "faq": {
+     "problem": "通过机制分析揭示 LLM 在多跳推理中的失败模式，提出循环式训练策略显著提升 OOD 泛化。",
+     "mechanism": "在可控符号环境中训练 Transformer → 机制分析识别层级间失配 → 设计循环式训练策略让模型复用推理电路",
+     "agentChange": "在可控符号环境中训练 Transformer → 机制分析识别层级间失配 → 设计循环式训练策略让模型复用推理电路",
+     "support": "在 OOD 二跳查询上显著提升泛化性能；揭示了\"一致中间表示\"的成功泛化机制",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "首次给出 LLM 多跳推理失败的完整机制解释，为改进推理架构提供理论指导"
+   }
+  },
+  {
+   "id": "2608.07430",
+   "version": 1,
+   "title": "Diffusion LLMs as Targets and Adversaries: Mechanistic Safety Exploits",
+   "abstract": "揭示扩散 LLM 的安全对齐存在稀疏性漏洞，提出 SN-Guided Diffusion 离线黑盒越狱方法。",
+   "authors": [],
+   "published": "2026-08-10T04:00:00.000Z",
+   "updated": "2026-08-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.07430",
+   "pdf": "https://arxiv.org/pdf/2608.07430",
+   "announceType": "new",
+   "summary": "揭示扩散 LLM 的安全对齐存在稀疏性漏洞，提出 SN-Guided Diffusion 离线黑盒越狱方法。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.07430"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "揭示扩散 LLM 安全机制的根本脆弱性，为新型对齐方法敲响警钟",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "安全神经元稀疏性与可迁移性: DLLM 从自回归前体继承相同的机制安全足迹，安全对齐在架构间可迁移"
+   ],
+   "innovations": [
+    "自剪枝攻击: 通过剪枝将攻击成功率从 2.6% 提升至 73.8%（LLaDA）和从 1.9% 提升至 86.6%（Dream）",
+    "SN-Guided Diffusion: 完全离线黑盒越狱框架，利用加权安全神经元损失引导扩散过程远离安全触发区域"
+   ],
+   "method": "分析 DLLM 安全神经元分布 → 剪枝增强攻击 → 设计 SN-Guided Diffusion 框架引导扩散去安全化",
+   "results": "对 Llama-3-8B-Instruct 转移攻击成功率 77.1%，Qwen2.5-7B-Instruct 86.9%，Gemini-2.5-Flash-Lite 74.3%；AUROC = 1.0 完美判别；每提示仅需 20 次生成",
+   "value": "揭示扩散 LLM 安全机制的根本脆弱性，为新型对齐方法敲响警钟",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "安全神经元稀疏性与可迁移性: DLLM 从自回归前体继承相同的机制安全足迹，安全对齐在架构间可迁移",
+    "agentChange": "分析 DLLM 安全神经元分布 → 剪枝增强攻击 → 设计 SN-Guided Diffusion 框架引导扩散去安全化",
+    "selfEvolution": null,
+    "evidence": [
+     "对 Llama-3-8B-Instruct 转移攻击成功率 77.1%，Qwen2.5-7B-Instruct 86.9%，Gemini-2.5-Flash-Lite 74.3%；AUROC = 1.0 完美判别；每提示仅需 20 次生成",
+     "SN-Guided Diffusion: 完全离线黑盒越狱框架，利用加权安全神经元损失引导扩散过程远离安全触发区域"
+    ],
+    "faq": {
+     "problem": "揭示扩散 LLM 的安全对齐存在稀疏性漏洞，提出 SN-Guided Diffusion 离线黑盒越狱方法。",
+     "mechanism": "分析 DLLM 安全神经元分布 → 剪枝增强攻击 → 设计 SN-Guided Diffusion 框架引导扩散去安全化",
+     "agentChange": "分析 DLLM 安全神经元分布 → 剪枝增强攻击 → 设计 SN-Guided Diffusion 框架引导扩散去安全化",
+     "support": "对 Llama-3-8B-Instruct 转移攻击成功率 77.1%，Qwen2.5-7B-Instruct 86.9%，Gemini-2.5-Flash-Lite 74.3%；AUROC = 1.0 完美判别；每提示仅需 20 次生成",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "揭示扩散 LLM 安全机制的根本脆弱性，为新型对齐方法敲响警钟"
+   }
+  },
+  {
+   "id": "2608.07460",
+   "version": 1,
+   "title": "CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity",
+   "abstract": "提出 CreativeInstruct 指令微调方法，让 LLM 在保持质量的同时恢复创造性和多样性。",
+   "authors": [],
+   "published": "2026-08-10T04:00:00.000Z",
+   "updated": "2026-08-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.07460",
+   "pdf": "https://arxiv.org/pdf/2608.07460",
+   "announceType": "new",
+   "summary": "提出 CreativeInstruct 指令微调方法，让 LLM 在保持质量的同时恢复创造性和多样性。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.07460"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "解决了\"后训练降低创造性\"这一长期被忽视的问题，为创意任务和质量任务的统一提供方案",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "创造性跨度注入: 学习在生成中插入特殊 [StartCreativity] 标记，在质量与创造性之间动态平衡"
+   ],
+   "innovations": [
+    "图编辑距离多样性度量: 提出基于图编辑距离的结构多样性指标，捕捉纯词汇/语义指标遗漏的叙事级变异",
+    "创造性作为 RL 底座的洞察: 创造性模型作为强化学习基座能显著提升数学推理性能"
+   ],
+   "method": "设计包含创造性标记的指令微调数据集 → 训练模型学习质量-创造性平衡 → 在 RL 中验证创造性基座优势",
+   "results": "人类评估中 70.3% 认为 CreativeInstruct 更富创造性；GRPO 在此基础上在 AMC 提升约 4%，MATH 提升约 5 个百分点",
+   "value": "解决了\"后训练降低创造性\"这一长期被忽视的问题，为创意任务和质量任务的统一提供方案",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "创造性跨度注入: 学习在生成中插入特殊 [StartCreativity] 标记，在质量与创造性之间动态平衡",
+    "agentChange": "设计包含创造性标记的指令微调数据集 → 训练模型学习质量-创造性平衡 → 在 RL 中验证创造性基座优势",
+    "selfEvolution": null,
+    "evidence": [
+     "人类评估中 70.3% 认为 CreativeInstruct 更富创造性；GRPO 在此基础上在 AMC 提升约 4%，MATH 提升约 5 个百分点",
+     "创造性作为 RL 底座的洞察: 创造性模型作为强化学习基座能显著提升数学推理性能"
+    ],
+    "faq": {
+     "problem": "提出 CreativeInstruct 指令微调方法，让 LLM 在保持质量的同时恢复创造性和多样性。",
+     "mechanism": "设计包含创造性标记的指令微调数据集 → 训练模型学习质量-创造性平衡 → 在 RL 中验证创造性基座优势",
+     "agentChange": "设计包含创造性标记的指令微调数据集 → 训练模型学习质量-创造性平衡 → 在 RL 中验证创造性基座优势",
+     "support": "人类评估中 70.3% 认为 CreativeInstruct 更富创造性；GRPO 在此基础上在 AMC 提升约 4%，MATH 提升约 5 个百分点",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "解决了\"后训练降低创造性\"这一长期被忽视的问题，为创意任务和质量任务的统一提供方案"
+   }
+  },
+  {
+   "id": "2608.07437",
+   "version": 1,
+   "title": "Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing",
+   "abstract": "通过 RL 训练 LLM Agent 进行可靠的统计假设检验，在 P-Bench 上超越 GPT-5.4 和 DeepSeek-V4-Pro。",
+   "authors": [],
+   "published": "2026-08-10T04:00:00.000Z",
+   "updated": "2026-08-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.07437",
+   "pdf": "https://arxiv.org/pdf/2608.07437",
+   "announceType": "new",
+   "summary": "通过 RL 训练 LLM Agent 进行可靠的统计假设检验，在 P-Bench 上超越 GPT-5.4 和 DeepSeek-V4-Pro。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.07437"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "首次系统性展示 LLM 在统计推理中的不可靠性，RL 可显著改善这一关键科学能力",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "P-Bench 基准: 425 个开放 ended 假设检验任务，覆盖经济学、生物学和医学，评估真实统计推理能力"
+   ],
+   "innovations": [
+    "Fisher-R1 训练框架: 使用合成任务和 RL 训练，以经过验证的统计奖励驱动改进",
+    "揭示系统性推理缺陷: 当前 LLM Agent 频繁做出细微推断错误，导致错误结论"
+   ],
+   "method": "构建 P-Bench → 生成合成统计任务 → RL 训练 LLM Agent → 在真实基准上评估",
+   "results": "Fisher-R1-14B 比 DeepSeek-V4-Pro 平均相对提升 21%，最难任务上提升达 26%；超越 GPT-5.4 和 DeepSeek-V4-Pro",
+   "value": "首次系统性展示 LLM 在统计推理中的不可靠性，RL 可显著改善这一关键科学能力",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "P-Bench 基准: 425 个开放 ended 假设检验任务，覆盖经济学、生物学和医学，评估真实统计推理能力",
+    "agentChange": "构建 P-Bench → 生成合成统计任务 → RL 训练 LLM Agent → 在真实基准上评估",
+    "selfEvolution": null,
+    "evidence": [
+     "Fisher-R1-14B 比 DeepSeek-V4-Pro 平均相对提升 21%，最难任务上提升达 26%；超越 GPT-5.4 和 DeepSeek-V4-Pro",
+     "揭示系统性推理缺陷: 当前 LLM Agent 频繁做出细微推断错误，导致错误结论"
+    ],
+    "faq": {
+     "problem": "通过 RL 训练 LLM Agent 进行可靠的统计假设检验，在 P-Bench 上超越 GPT-5.4 和 DeepSeek-V4-Pro。",
+     "mechanism": "构建 P-Bench → 生成合成统计任务 → RL 训练 LLM Agent → 在真实基准上评估",
+     "agentChange": "构建 P-Bench → 生成合成统计任务 → RL 训练 LLM Agent → 在真实基准上评估",
+     "support": "Fisher-R1-14B 比 DeepSeek-V4-Pro 平均相对提升 21%，最难任务上提升达 26%；超越 GPT-5.4 和 DeepSeek-V4-Pro",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "首次系统性展示 LLM 在统计推理中的不可靠性，RL 可显著改善这一关键科学能力"
+   }
+  },
+  {
+   "id": "2608.07449",
+   "version": 1,
+   "title": "SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent",
+   "abstract": "提出近端梯度启发的框架，让 LLM Agent 的自我进化技能具备闭环诊断和效用感知精炼。",
+   "authors": [],
+   "published": "2026-08-10T04:00:00.000Z",
+   "updated": "2026-08-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.07449",
+   "pdf": "https://arxiv.org/pdf/2608.07449",
+   "announceType": "new",
+   "summary": "提出近端梯度启发的框架，让 LLM Agent 的自我进化技能具备闭环诊断和效用感知精炼。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.07449"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "解决了现有技能进化框架缺乏显式诊断和有效整合的核心缺陷",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "前向-后向框架: 前向阶段执行诊断驱动编辑并回滚退化，后向阶段基于留一效用审计进行分解和精炼"
+   ],
+   "innovations": [
+    "显式诊断-结果反馈: 将编辑结果反馈到后续诊断，形成闭环进化",
+    "效用感知近端精炼: 分解技能为可审计知识单元，应用验证门控的整合、降级或移除"
+   ],
+   "method": "设计复合目标平衡任务损失和技能复杂度 → 前向诊断编辑 → 后向效用审计 → 闭环迭代",
+   "results": "跨多个基准和骨干模型平均准确率高出最强梯度基线 3.0 个百分点；组件消融验证诊断和精炼的互补效应",
+   "value": "解决了现有技能进化框架缺乏显式诊断和有效整合的核心缺陷",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "前向-后向框架: 前向阶段执行诊断驱动编辑并回滚退化，后向阶段基于留一效用审计进行分解和精炼",
+    "agentChange": "设计复合目标平衡任务损失和技能复杂度 → 前向诊断编辑 → 后向效用审计 → 闭环迭代",
+    "selfEvolution": null,
+    "evidence": [
+     "跨多个基准和骨干模型平均准确率高出最强梯度基线 3.0 个百分点；组件消融验证诊断和精炼的互补效应",
+     "效用感知近端精炼: 分解技能为可审计知识单元，应用验证门控的整合、降级或移除"
+    ],
+    "faq": {
+     "problem": "提出近端梯度启发的框架，让 LLM Agent 的自我进化技能具备闭环诊断和效用感知精炼。",
+     "mechanism": "设计复合目标平衡任务损失和技能复杂度 → 前向诊断编辑 → 后向效用审计 → 闭环迭代",
+     "agentChange": "设计复合目标平衡任务损失和技能复杂度 → 前向诊断编辑 → 后向效用审计 → 闭环迭代",
+     "support": "跨多个基准和骨干模型平均准确率高出最强梯度基线 3.0 个百分点；组件消融验证诊断和精炼的互补效应",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "解决了现有技能进化框架缺乏显式诊断和有效整合的核心缺陷"
+   }
+  },
+  {
+   "id": "2608.07418",
+   "version": 1,
+   "title": "ResidencyRL: Reinforcement Learning in Simulated Clinical Environments",
+   "abstract": "模拟住院医师培训流程，通过多轮 RL 训练临床 AI Agent，显著提升诊断准确性和安全性。",
+   "authors": [],
+   "published": "2026-08-10T04:00:00.000Z",
+   "updated": "2026-08-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.07418",
+   "pdf": "https://arxiv.org/pdf/2608.07418",
+   "announceType": "new",
+   "summary": "模拟住院医师培训流程，通过多轮 RL 训练临床 AI Agent，显著提升诊断准确性和安全性。",
+   "topic": "Agent / 强化学习 / 机器人",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.07418"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明序列临床决策可通过模拟 RL 有效学习，为 AI 临床精通开辟路径",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "模拟住院医师培训: 将医学教育中的住院医师模式迁移到 RL，包含数千次遭遇、多样反馈和逐步自主性"
+   ],
+   "innovations": [
+    "长程多轮交互: 支持高达 60 轮对话和 8 次工具调用的复杂临床遭遇",
+    "结构化多轴奖励: 诊断准确性、管理质量、沟通、文档和安全的综合奖励体系"
+   ],
+   "method": "LLM 模拟器生成对抗性临床场景 → 策略 Agent 通过 RL 优化 → 结构化奖励驱动训练 → 多基准迁移评估",
+   "results": "对抗条件下诊断准确率提升 7.0%（88.0% vs 81.0%），遗漏红旗率降低 31%；专家偏好率 87.6%；在 AMIE 六轴临床基准全面超越基线",
+   "value": "证明序列临床决策可通过模拟 RL 有效学习，为 AI 临床精通开辟路径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "模拟住院医师培训: 将医学教育中的住院医师模式迁移到 RL，包含数千次遭遇、多样反馈和逐步自主性",
+    "agentChange": "LLM 模拟器生成对抗性临床场景 → 策略 Agent 通过 RL 优化 → 结构化奖励驱动训练 → 多基准迁移评估",
+    "selfEvolution": null,
+    "evidence": [
+     "对抗条件下诊断准确率提升 7.0%（88.0% vs 81.0%），遗漏红旗率降低 31%；专家偏好率 87.6%；在 AMIE 六轴临床基准全面超越基线",
+     "结构化多轴奖励: 诊断准确性、管理质量、沟通、文档和安全的综合奖励体系"
+    ],
+    "faq": {
+     "problem": "模拟住院医师培训流程，通过多轮 RL 训练临床 AI Agent，显著提升诊断准确性和安全性。",
+     "mechanism": "LLM 模拟器生成对抗性临床场景 → 策略 Agent 通过 RL 优化 → 结构化奖励驱动训练 → 多基准迁移评估",
+     "agentChange": "LLM 模拟器生成对抗性临床场景 → 策略 Agent 通过 RL 优化 → 结构化奖励驱动训练 → 多基准迁移评估",
+     "support": "对抗条件下诊断准确率提升 7.0%（88.0% vs 81.0%），遗漏红旗率降低 31%；专家偏好率 87.6%；在 AMIE 六轴临床基准全面超越基线",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "证明序列临床决策可通过模拟 RL 有效学习，为 AI 临床精通开辟路径"
+   }
+  },
+  {
+   "id": "2608.07267",
+   "version": 1,
+   "title": "WNM-3D: A World Navigation Model with 3D Scene Conditioning for Closed-Loop VLN",
+   "abstract": "提出 3D 场景条件化的世界导航模型，在闭环视觉语言导航中超越行动中心方法。",
+   "authors": [],
+   "published": "2026-08-10T04:00:00.000Z",
+   "updated": "2026-08-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.07267",
+   "pdf": "https://arxiv.org/pdf/2608.07267",
+   "announceType": "new",
+   "summary": "提出 3D 场景条件化的世界导航模型，在闭环视觉语言导航中超越行动中心方法。",
+   "topic": "Agent / 强化学习 / 机器人",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.07267"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "首次将 3D 几何条件化引入连续 VLN 的世界-动作模型，弥合语义能力与空间推理之间的鸿沟",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "3D 几何感知场景编码: 冻结前馈几何编码器从单目 RGB 历史中提取几何感知表示"
+   ],
+   "innovations": [
+    "3D 场景到 Token 适配器: 将几何前缀注入世界-动作 Diffusion Transformer，通过块因果注意力条件化",
+    "混合训练策略: A* 演示 + DAgger 自适应 + DanceGRPO 闭环优化三阶段训练"
+   ],
+   "method": "几何编码器提取 3D 上下文 → 3D Scene-to-Token 适配器转换为固定长度前缀 → 条件化未来视景和动作生成 → 混合训练",
+   "results": "在 GN-Bench 上超越强 VLM 导航策略和 2D 条件基线；近目标评估集上更高流-动作一致性和更低视觉-运动误差",
+   "value": "首次将 3D 几何条件化引入连续 VLN 的世界-动作模型，弥合语义能力与空间推理之间的鸿沟",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "3D 几何感知场景编码: 冻结前馈几何编码器从单目 RGB 历史中提取几何感知表示",
+    "agentChange": "几何编码器提取 3D 上下文 → 3D Scene-to-Token 适配器转换为固定长度前缀 → 条件化未来视景和动作生成 → 混合训练",
+    "selfEvolution": null,
+    "evidence": [
+     "在 GN-Bench 上超越强 VLM 导航策略和 2D 条件基线；近目标评估集上更高流-动作一致性和更低视觉-运动误差",
+     "混合训练策略: A* 演示 + DAgger 自适应 + DanceGRPO 闭环优化三阶段训练"
+    ],
+    "faq": {
+     "problem": "提出 3D 场景条件化的世界导航模型，在闭环视觉语言导航中超越行动中心方法。",
+     "mechanism": "几何编码器提取 3D 上下文 → 3D Scene-to-Token 适配器转换为固定长度前缀 → 条件化未来视景和动作生成 → 混合训练",
+     "agentChange": "几何编码器提取 3D 上下文 → 3D Scene-to-Token 适配器转换为固定长度前缀 → 条件化未来视景和动作生成 → 混合训练",
+     "support": "在 GN-Bench 上超越强 VLM 导航策略和 2D 条件基线；近目标评估集上更高流-动作一致性和更低视觉-运动误差",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "首次将 3D 几何条件化引入连续 VLN 的世界-动作模型，弥合语义能力与空间推理之间的鸿沟"
+   }
+  },
+  {
+   "id": "2608.07463",
+   "version": 1,
+   "title": "MirrorWorld: Taming Video Diffusion Models for Mirror Reflection Generation",
+   "abstract": "提出镜面感知的视频修复框架，解决视频扩散模型生成镜面反射时的不一致问题。",
+   "authors": [],
+   "published": "2026-08-10T04:00:00.000Z",
+   "updated": "2026-08-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.07463",
+   "pdf": "https://arxiv.org/pdf/2608.07463",
+   "announceType": "new",
+   "summary": "提出镜面感知的视频修复框架，解决视频扩散模型生成镜面反射时的不一致问题。",
+   "topic": "计算机视觉 / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.07463"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "首次系统性解决视频扩散模型中的镜面反射一致性问题，构建统一基准推动该方向研究",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "语义关系蒸馏 (SRD): 从冻结视觉基础模型转移关系信息，建模\"反射什么\""
+   ],
+   "innovations": [
+    "几何变换对齐 (GTA): 学习变换引导反射内容的空间排列，建模\"如何排列\"",
+    "双互补机制设计: SRD 和 GTA 互补，分别解决内容一致性和空间一致性"
+   ],
+   "method": "冻结 VLM 提取语义关系 → SRD 蒸馏关系信息 → GTA 学习几何变换 → 视频修复框架统一生成",
+   "results": "在视频镜面反射生成基准上超越代表性图像反射生成方法和强视频修复基线",
+   "value": "首次系统性解决视频扩散模型中的镜面反射一致性问题，构建统一基准推动该方向研究",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "语义关系蒸馏 (SRD): 从冻结视觉基础模型转移关系信息，建模\"反射什么\"",
+    "agentChange": "冻结 VLM 提取语义关系 → SRD 蒸馏关系信息 → GTA 学习几何变换 → 视频修复框架统一生成",
+    "selfEvolution": null,
+    "evidence": [
+     "在视频镜面反射生成基准上超越代表性图像反射生成方法和强视频修复基线",
+     "双互补机制设计: SRD 和 GTA 互补，分别解决内容一致性和空间一致性"
+    ],
+    "faq": {
+     "problem": "提出镜面感知的视频修复框架，解决视频扩散模型生成镜面反射时的不一致问题。",
+     "mechanism": "冻结 VLM 提取语义关系 → SRD 蒸馏关系信息 → GTA 学习几何变换 → 视频修复框架统一生成",
+     "agentChange": "冻结 VLM 提取语义关系 → SRD 蒸馏关系信息 → GTA 学习几何变换 → 视频修复框架统一生成",
+     "support": "在视频镜面反射生成基准上超越代表性图像反射生成方法和强视频修复基线",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "首次系统性解决视频扩散模型中的镜面反射一致性问题，构建统一基准推动该方向研究"
+   }
+  },
+  {
+   "id": "2608.07088",
+   "version": 1,
+   "title": "RoRA: Role-Oriented Regional Allocation for Visual Token Pruning in MLLMs",
+   "abstract": "提出面向角色的区域分配框架，在视觉 token 剪枝中实现极致压缩下的精度保持。",
+   "authors": [],
+   "published": "2026-08-10T04:00:00.000Z",
+   "updated": "2026-08-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.07088",
+   "pdf": "https://arxiv.org/pdf/2608.07088",
+   "announceType": "new",
+   "summary": "提出面向角色的区域分配框架，在视觉 token 剪枝中实现极致压缩下的精度保持。",
+   "topic": "计算机视觉 / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.07088"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "解决了现有剪枝方法忽视对象覆盖跟踪的根本问题，实现极致压缩下的精度保持",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "角色导向分配: 将 token 分为保护性语义核心、补充性上下文和细粒度细节，替代互换性假设"
+   ],
+   "innovations": [
+    "注意力锚定区域 (AAR): 从高置信度锚点构建轻量级覆盖代理，避免重复覆盖同一对象",
+    "位置先验 + 提示校准对象先验: 双重校准文本条件注意力，提升选择精度"
+   ],
+   "method": "注意力校准 → AAR 构建 → 角色导向 token 分区 → 分层选择策略 → 无需训练",
+   "results": "88.9% 剪枝率下保留 96.5% 完整性能；66.7% 剪枝率下仅需 0.7ms 选择时间，端到端加速 1.33x（NVIDIA H800）；在 Qwen3-VL 上比 D2Pruner 提升约 5%",
+   "value": "解决了现有剪枝方法忽视对象覆盖跟踪的根本问题，实现极致压缩下的精度保持",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "角色导向分配: 将 token 分为保护性语义核心、补充性上下文和细粒度细节，替代互换性假设",
+    "agentChange": "注意力校准 → AAR 构建 → 角色导向 token 分区 → 分层选择策略 → 无需训练",
+    "selfEvolution": null,
+    "evidence": [
+     "88.9% 剪枝率下保留 96.5% 完整性能；66.7% 剪枝率下仅需 0.7ms 选择时间，端到端加速 1.33x（NVIDIA H800）；在 Qwen3-VL 上比 D2Pruner 提升约 5%",
+     "位置先验 + 提示校准对象先验: 双重校准文本条件注意力，提升选择精度"
+    ],
+    "faq": {
+     "problem": "提出面向角色的区域分配框架，在视觉 token 剪枝中实现极致压缩下的精度保持。",
+     "mechanism": "注意力校准 → AAR 构建 → 角色导向 token 分区 → 分层选择策略 → 无需训练",
+     "agentChange": "注意力校准 → AAR 构建 → 角色导向 token 分区 → 分层选择策略 → 无需训练",
+     "support": "88.9% 剪枝率下保留 96.5% 完整性能；66.7% 剪枝率下仅需 0.7ms 选择时间，端到端加速 1.33x（NVIDIA H800）；在 Qwen3-VL 上比 D2Pruner 提升约 5%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "解决了现有剪枝方法忽视对象覆盖跟踪的根本问题，实现极致压缩下的精度保持"
+   }
+  },
+  {
+   "id": "2608.07302",
+   "version": 1,
+   "title": "Same Attention, Different Truths: Put Logit-Lens over Visual Attention to Detect and Mitigate LVLM Object Hallucination",
+   "abstract": "揭示 LVLM 幻觉的根因不是\"注意力不足\"而是\"注意力解码不一致\"，提出无需训练的检测-缓解框架。",
+   "authors": [],
+   "published": "2026-08-10T04:00:00.000Z",
+   "updated": "2026-08-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.07302",
+   "pdf": "https://arxiv.org/pdf/2608.07302",
+   "announceType": "new",
+   "summary": "揭示 LVLM 幻觉的根因不是\"注意力不足\"而是\"注意力解码不一致\"，提出无需训练的检测-缓解框架。",
+   "topic": "计算机视觉 / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.07302"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "颠覆了\"幻觉源于注意力不足\"的传统假设，为理解和缓解幻觉提供全新机制视角",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "注意力一致性发现: 真实物体和幻觉物体在中后期层级获得同等强度的视觉注意力"
+   ],
+   "innovations": [
+    "Logit Lens 解码诊断: 真实物体区域可正确解码为目标 token，幻觉物体区域则不能",
+    "双幻觉机制识别: 视觉不确定性（语义混淆区域触发）和上下文先验（共现先验驱动）"
+   ],
+   "method": "Logit Lens 解码高注意力区域 → 识别幻觉类型 → HARM（高注意力区域掩码）处理视觉不确定性 → VEED（视觉证据增强解码）处理上下文先验",
+   "results": "在多个幻觉基准上达到 SOTA；HARM 消除视觉不确定性幻觉，VEED 缓解上下文先验幻觉",
+   "value": "颠覆了\"幻觉源于注意力不足\"的传统假设，为理解和缓解幻觉提供全新机制视角",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "注意力一致性发现: 真实物体和幻觉物体在中后期层级获得同等强度的视觉注意力",
+    "agentChange": "Logit Lens 解码高注意力区域 → 识别幻觉类型 → HARM（高注意力区域掩码）处理视觉不确定性 → VEED（视觉证据增强解码）处理上下文先验",
+    "selfEvolution": null,
+    "evidence": [
+     "在多个幻觉基准上达到 SOTA；HARM 消除视觉不确定性幻觉，VEED 缓解上下文先验幻觉",
+     "双幻觉机制识别: 视觉不确定性（语义混淆区域触发）和上下文先验（共现先验驱动）"
+    ],
+    "faq": {
+     "problem": "揭示 LVLM 幻觉的根因不是\"注意力不足\"而是\"注意力解码不一致\"，提出无需训练的检测-缓解框架。",
+     "mechanism": "Logit Lens 解码高注意力区域 → 识别幻觉类型 → HARM（高注意力区域掩码）处理视觉不确定性 → VEED（视觉证据增强解码）处理上下文先验",
+     "agentChange": "Logit Lens 解码高注意力区域 → 识别幻觉类型 → HARM（高注意力区域掩码）处理视觉不确定性 → VEED（视觉证据增强解码）处理上下文先验",
+     "support": "在多个幻觉基准上达到 SOTA；HARM 消除视觉不确定性幻觉，VEED 缓解上下文先验幻觉",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "颠覆了\"幻觉源于注意力不足\"的传统假设，为理解和缓解幻觉提供全新机制视角"
+   }
+  },
+  {
+   "id": "2608.07291",
+   "version": 1,
+   "title": "Foundation Models Adaptation for Multi-View Multi-modal Cardiac MRI Segmentation and Direct Ejection Fraction Estimation",
+   "abstract": "评估心脏 MRI 基础模型在多视图多序列分割和直接射血分数估计中的适配效果。",
+   "authors": [],
+   "published": "2026-08-10T04:00:00.000Z",
+   "updated": "2026-08-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.07291",
+   "pdf": "https://arxiv.org/pdf/2608.07291",
+   "announceType": "new",
+   "summary": "评估心脏 MRI 基础模型在多视图多序列分割和直接射血分数估计中的适配效果。",
+   "topic": "医学影像 / 基础模型应用",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.07291"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "验证基础模型在多视图 CMR 分析中的有效适配性，同时指出 LGE 疤痕分割仍是挑战",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "CineMA 微调跨视图分割: 在短轴、两腔和四腔视图中微调 cine 和 LGE 分割"
+   ],
+   "innovations": [
+    "注意力多实例学习 LVEF 估计: 结合冻结基础模型嵌入 + 注意力 MIL 实现直接 LVEF 回归",
+    "系统性基准比较: 在 CMR-Multi Challenge 上评估多种基础模型的跨视图有效性"
+   ],
+   "method": "CineMA 微调 → 多视图 cine/LGE 分割 → 冻结基础模型提取嵌入 → 注意力 MIL 回归 LVEF",
+   "results": "Cine 分割 Dice: 短轴 0.862、两腔 0.883、四腔 0.902；LGE 分割 Dice 0.621-0.846；LVEF 回归 MAE 4.96 百分点，Pearson 0.91",
+   "value": "验证基础模型在多视图 CMR 分析中的有效适配性，同时指出 LGE 疤痕分割仍是挑战",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "CineMA 微调跨视图分割: 在短轴、两腔和四腔视图中微调 cine 和 LGE 分割",
+    "agentChange": "CineMA 微调 → 多视图 cine/LGE 分割 → 冻结基础模型提取嵌入 → 注意力 MIL 回归 LVEF",
+    "selfEvolution": null,
+    "evidence": [
+     "Cine 分割 Dice: 短轴 0.862、两腔 0.883、四腔 0.902；LGE 分割 Dice 0.621-0.846；LVEF 回归 MAE 4.96 百分点，Pearson 0.91",
+     "系统性基准比较: 在 CMR-Multi Challenge 上评估多种基础模型的跨视图有效性"
+    ],
+    "faq": {
+     "problem": "评估心脏 MRI 基础模型在多视图多序列分割和直接射血分数估计中的适配效果。",
+     "mechanism": "CineMA 微调 → 多视图 cine/LGE 分割 → 冻结基础模型提取嵌入 → 注意力 MIL 回归 LVEF",
+     "agentChange": "CineMA 微调 → 多视图 cine/LGE 分割 → 冻结基础模型提取嵌入 → 注意力 MIL 回归 LVEF",
+     "support": "Cine 分割 Dice: 短轴 0.862、两腔 0.883、四腔 0.902；LGE 分割 Dice 0.621-0.846；LVEF 回归 MAE 4.96 百分点，Pearson 0.91",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "验证基础模型在多视图 CMR 分析中的有效适配性，同时指出 LGE 疤痕分割仍是挑战"
+   }
+  },
+  {
+   "id": "2608.07176",
+   "version": 1,
+   "title": "REVEAL: Representation-driven Endoscopic Visual Embedding Alignment for Latent Generation",
+   "abstract": "在 500 万胃镜帧上训练最大胃镜生成基础模型，实现领域特定表示对齐。",
+   "authors": [],
+   "published": "2026-08-10T04:00:00.000Z",
+   "updated": "2026-08-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.07176",
+   "pdf": "https://arxiv.org/pdf/2608.07176",
+   "announceType": "new",
+   "summary": "在 500 万胃镜帧上训练最大胃镜生成基础模型，实现领域特定表示对齐。",
+   "topic": "医学影像 / 基础模型应用",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.07176"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "降低构建专业临床工具的门槛，为智能胃肠病学系统提供开放的通用基础",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "领域内预训练编码器: 直接在胃镜分布上预训练编码器，替代跨域先验"
+   ],
+   "innovations": [
+    "大规模训练: GastroNet-5M (GN-5M) 多中心 500 万帧数据集",
+    "双重能力: 既是高质量生成模型，也是竞争性特征提取器"
+   ],
+   "method": "领域内预训练编码器 → 对齐扩散潜空间 → 在 5M 帧上训练 → 评估生成和特征提取能力",
+   "results": "在多个基准上与 EndoViT 和 Endo-FM 竞争甚至超越；在潜在空间编辑（修复、外延）中保持结构一致性",
+   "value": "降低构建专业临床工具的门槛，为智能胃肠病学系统提供开放的通用基础",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "领域内预训练编码器: 直接在胃镜分布上预训练编码器，替代跨域先验",
+    "agentChange": "领域内预训练编码器 → 对齐扩散潜空间 → 在 5M 帧上训练 → 评估生成和特征提取能力",
+    "selfEvolution": null,
+    "evidence": [
+     "在多个基准上与 EndoViT 和 Endo-FM 竞争甚至超越；在潜在空间编辑（修复、外延）中保持结构一致性",
+     "双重能力: 既是高质量生成模型，也是竞争性特征提取器"
+    ],
+    "faq": {
+     "problem": "在 500 万胃镜帧上训练最大胃镜生成基础模型，实现领域特定表示对齐。",
+     "mechanism": "领域内预训练编码器 → 对齐扩散潜空间 → 在 5M 帧上训练 → 评估生成和特征提取能力",
+     "agentChange": "领域内预训练编码器 → 对齐扩散潜空间 → 在 5M 帧上训练 → 评估生成和特征提取能力",
+     "support": "在多个基准上与 EndoViT 和 Endo-FM 竞争甚至超越；在潜在空间编辑（修复、外延）中保持结构一致性",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "降低构建专业临床工具的门槛，为智能胃肠病学系统提供开放的通用基础"
+   }
+  },
+  {
+   "id": "2608.07193",
+   "version": 1,
+   "title": "AutoPrune: An AI4AI Framework for Visual Token Pruning",
+   "abstract": "用 LLM 自动设计视觉 token 剪枝策略，在 14 个基准上实现 94.4% token 削减下的 99% 精度保持。",
+   "authors": [],
+   "published": "2026-08-10T04:00:00.000Z",
+   "updated": "2026-08-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.07193",
+   "pdf": "https://arxiv.org/pdf/2608.07193",
+   "announceType": "new",
+   "summary": "用 LLM 自动设计视觉 token 剪枝策略，在 14 个基准上实现 94.4% token 削减下的 99% 精度保持。",
+   "topic": "效率 / 推理优化",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.07193"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "首次将 AI4AI 范式引入视觉 token 剪枝，解决设计空间爆炸问题",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "TPDSL 领域专用语言: 131 个可复用原子，涵盖预算控制、token 评分、选择约束和重组"
+   ],
+   "innovations": [
+    "残差搜索空间: 每个搜索状态表示为强基线策略的残差修改，缩小搜索空间",
+    "AI4AI 范式: LLM 自动导航设计空间，替代手工启发式和专家试错"
+   ],
+   "method": "定义 TPDSL → LLM 驱动搜索策略设计 → 残差修改强基线 → 跨基准验证",
+   "results": "14 个多模态基准、3 个 MLLM 骨干；94.4% token 削减下保留 >99% 性能，FLOPs 降低 9.9x，预填延迟降低 6.4x",
+   "value": "首次将 AI4AI 范式引入视觉 token 剪枝，解决设计空间爆炸问题",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "TPDSL 领域专用语言: 131 个可复用原子，涵盖预算控制、token 评分、选择约束和重组",
+    "agentChange": "定义 TPDSL → LLM 驱动搜索策略设计 → 残差修改强基线 → 跨基准验证",
+    "selfEvolution": null,
+    "evidence": [
+     "14 个多模态基准、3 个 MLLM 骨干；94.4% token 削减下保留 >99% 性能，FLOPs 降低 9.9x，预填延迟降低 6.4x",
+     "AI4AI 范式: LLM 自动导航设计空间，替代手工启发式和专家试错"
+    ],
+    "faq": {
+     "problem": "用 LLM 自动设计视觉 token 剪枝策略，在 14 个基准上实现 94.4% token 削减下的 99% 精度保持。",
+     "mechanism": "定义 TPDSL → LLM 驱动搜索策略设计 → 残差修改强基线 → 跨基准验证",
+     "agentChange": "定义 TPDSL → LLM 驱动搜索策略设计 → 残差修改强基线 → 跨基准验证",
+     "support": "14 个多模态基准、3 个 MLLM 骨干；94.4% token 削减下保留 >99% 性能，FLOPs 降低 9.9x，预填延迟降低 6.4x",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 13,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "首次将 AI4AI 范式引入视觉 token 剪枝，解决设计空间爆炸问题"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-08-09",
+  "newCount": 13,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-08-09 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-08-10T04:00:00.000Z",
+ "totalMatched": 97,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 97
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-08-10",
+ "historical": true
+}

@@ -1,0 +1,1006 @@
+{
+ "papers": [
+  {
+   "id": "2608.13344",
+   "version": 1,
+   "title": "LongEarth-R1: 面向长时序地球观测推理的基准与视觉语言模型对齐",
+   "abstract": "首个长时序地球观测推理基准 + SFT/GRPO 训练范式，12 任务全第一。",
+   "authors": [],
+   "published": "2026-08-15T04:00:00.000Z",
+   "updated": "2026-08-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13344",
+   "pdf": "https://arxiv.org/pdf/2608.13344",
+   "announceType": "new",
+   "summary": "首个长时序地球观测推理基准 + SFT/GRPO 训练范式，12 任务全第一。",
+   "topic": "遥感 / 地理空间 / 高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13344"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "定义\"多阶段地理过程理解\"新能力维度，为灾害演化、城市建造等长时序地学分析提供可复现训练范式。",
+   "repository": null,
+   "motivation": "地学分析需要从长图像序列理解多阶段地理演化过程。",
+   "coreProblem": "现有遥感 VLM 局限于单图/图像对，无法在长序列中可靠定位关键帧与变化区域。",
+   "contributions": [
+    "构建 LongEarth-Bench：12 万 QA、11.7 万图、12 类任务，序列平均 15.14 帧、最长 30 帧",
+    "提供 3 万结构化推理链子集，将关键帧/变化区域与最终答案关联",
+    "以 SFT + GRPO（格式/时间/空间三重奖励）训练 LongEarth-R1"
+   ],
+   "innovations": [
+    "定义\"长时序地球观测推理\"新任务，超越传统端点变化比较范式",
+    "时间/空间双 grounding 奖励，专治长上下文时间错位"
+   ],
+   "method": "显式序列编号 + 结构化 CoT 监督微调，再以时空奖励 GRPO 强化对齐。",
+   "results": "12 个长序列任务全部第一，领先 10.7–31.9%；26–30 帧输入仍保持 51.4 分；9 个标准遥感基准 6 个第一。",
+   "value": "定义\"多阶段地理过程理解\"新能力维度，为灾害演化、城市建造等长时序地学分析提供可复现训练范式。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "构建 LongEarth-Bench：12 万 QA、11.7 万图、12 类任务，序列平均 15.14 帧、最长 30 帧",
+    "agentChange": "显式序列编号 + 结构化 CoT 监督微调，再以时空奖励 GRPO 强化对齐。",
+    "selfEvolution": null,
+    "evidence": [
+     "12 个长序列任务全部第一，领先 10.7–31.9%；26–30 帧输入仍保持 51.4 分；9 个标准遥感基准 6 个第一。",
+     "时间/空间双 grounding 奖励，专治长上下文时间错位"
+    ],
+    "faq": {
+     "problem": "首个长时序地球观测推理基准 + SFT/GRPO 训练范式，12 任务全第一。",
+     "mechanism": "显式序列编号 + 结构化 CoT 监督微调，再以时空奖励 GRPO 强化对齐。",
+     "agentChange": "显式序列编号 + 结构化 CoT 监督微调，再以时空奖励 GRPO 强化对齐。",
+     "support": "12 个长序列任务全部第一，领先 10.7–31.9%；26–30 帧输入仍保持 51.4 分；9 个标准遥感基准 6 个第一。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "定义\"多阶段地理过程理解\"新能力维度，为灾害演化、城市建造等长时序地学分析提供可复现训练范式。"
+   }
+  },
+  {
+   "id": "2608.12980",
+   "version": 1,
+   "title": "DiCoR: 解耦指代消歧与轮廓重校准的高效遥感指代分割",
+   "abstract": "消歧引导 + 轮廓残差校正，DPS 级精度、JFS 级速度做 RRSIS。",
+   "authors": [],
+   "published": "2026-08-15T04:00:00.000Z",
+   "updated": "2026-08-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.12980",
+   "pdf": "https://arxiv.org/pdf/2608.12980",
+   "announceType": "new",
+   "summary": "消歧引导 + 轮廓残差校正，DPS 级精度、JFS 级速度做 RRSIS。",
+   "topic": "遥感 / 地理空间 / 高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.12980"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给出 RRSIS 精度-效率折中新范式，适合边缘/实时遥感解译。",
+   "repository": null,
+   "motivation": "遥感指代分割需要在边缘/实时场景中兼顾精度与效率。",
+   "coreProblem": "JFS 联合优化精度受限；DPS 依赖大型基础分割器，显存/时延开销高。",
+   "contributions": [
+    "消歧感知定位引导：语言线索排序候选区域，注入定位先验",
+    "轻量轮廓重校准：局部轮廓监督下预测粗 logits 残差修正"
+   ],
+   "innovations": [
+    "将\"指代消歧\"与\"轮廓精化\"解耦为两个独立阶段",
+    "不依赖 SAM 类大模型即逼近其精度"
+   ],
+   "method": "JFS 主干 + 候选排序先验注入 + 轮廓级残差校正头，端到端可训练。",
+   "results": "RefSegRS / RRSIS-D / RISBench 三基准均最佳；mIoU +5.28%、gIoU +2.87%，比代表性 DPS 方法快 4.7%。",
+   "value": "给出 RRSIS 精度-效率折中新范式，适合边缘/实时遥感解译。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "消歧感知定位引导：语言线索排序候选区域，注入定位先验",
+    "agentChange": "JFS 主干 + 候选排序先验注入 + 轮廓级残差校正头，端到端可训练。",
+    "selfEvolution": null,
+    "evidence": [
+     "RefSegRS / RRSIS-D / RISBench 三基准均最佳；mIoU +5.28%、gIoU +2.87%，比代表性 DPS 方法快 4.7%。",
+     "不依赖 SAM 类大模型即逼近其精度"
+    ],
+    "faq": {
+     "problem": "消歧引导 + 轮廓残差校正，DPS 级精度、JFS 级速度做 RRSIS。",
+     "mechanism": "JFS 主干 + 候选排序先验注入 + 轮廓级残差校正头，端到端可训练。",
+     "agentChange": "JFS 主干 + 候选排序先验注入 + 轮廓级残差校正头，端到端可训练。",
+     "support": "RefSegRS / RRSIS-D / RISBench 三基准均最佳；mIoU +5.28%、gIoU +2.87%，比代表性 DPS 方法快 4.7%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "给出 RRSIS 精度-效率折中新范式，适合边缘/实时遥感解译。"
+   }
+  },
+  {
+   "id": "2608.11663",
+   "version": 1,
+   "title": "Zero-OVCD: 免训练基础模型 + 伪标签学习打通开放词汇变化检测",
+   "abstract": "免训练基础模型产伪标签 + 噪声感知训练，零像素标注 OVCD。",
+   "authors": [],
+   "published": "2026-08-15T04:00:00.000Z",
+   "updated": "2026-08-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.11663",
+   "pdf": "https://arxiv.org/pdf/2608.11663",
+   "announceType": "new",
+   "summary": "免训练基础模型产伪标签 + 噪声感知训练，零像素标注 OVCD。",
+   "topic": "遥感 / 地理空间 / 高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.11663"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "遥感 OVCD 少标注落地的实用路径，基础模型零样本能力可迁移至专用模型。",
+   "repository": null,
+   "motivation": "开放词汇变化检测缺少目标域像素级标注。",
+   "coreProblem": "免训练管线候选噪声大，常规自训练对伪标签噪声敏感。",
+   "contributions": [
+    "两阶段框架：免训练基础模型产伪标签 → 噪声感知伪标签训练",
+    "互补掩码精化 + 多尺度语义融合 + 响应引导补全三重去噪"
+   ],
+   "innovations": [
+    "检查点投票 + 高一致样本筛选显式对抗残余伪标签噪声",
+    "把基础模型零样本能力\"蒸馏\"进专用检测器"
+   ],
+   "method": "Stage I 免训练 OVCD 推理产伪标签；Stage II 检查点投票 + 高一致样本筛选训练。",
+   "results": "LEVIR-CD F1 86.25→88.65；WHU-CD 85.82→88.85；S2Looking 50.48→57.96（Stage I→II）。",
+   "value": "遥感 OVCD 少标注落地的实用路径，基础模型零样本能力可迁移至专用模型。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "两阶段框架：免训练基础模型产伪标签 → 噪声感知伪标签训练",
+    "agentChange": "Stage I 免训练 OVCD 推理产伪标签；Stage II 检查点投票 + 高一致样本筛选训练。",
+    "selfEvolution": null,
+    "evidence": [
+     "LEVIR-CD F1 86.25→88.65；WHU-CD 85.82→88.85；S2Looking 50.48→57.96（Stage I→II）。",
+     "把基础模型零样本能力\"蒸馏\"进专用检测器"
+    ],
+    "faq": {
+     "problem": "免训练基础模型产伪标签 + 噪声感知训练，零像素标注 OVCD。",
+     "mechanism": "Stage I 免训练 OVCD 推理产伪标签；Stage II 检查点投票 + 高一致样本筛选训练。",
+     "agentChange": "Stage I 免训练 OVCD 推理产伪标签；Stage II 检查点投票 + 高一致样本筛选训练。",
+     "support": "LEVIR-CD F1 86.25→88.65；WHU-CD 85.82→88.85；S2Looking 50.48→57.96（Stage I→II）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "遥感 OVCD 少标注落地的实用路径，基础模型零样本能力可迁移至专用模型。"
+   }
+  },
+  {
+   "id": "2608.11748",
+   "version": 1,
+   "title": "DIDM: 双模态提示扩散先验的零样本高光谱 pansharpening",
+   "abstract": "双模态 prompt 注入冻结遥感扩散模型，零样本高光谱融合。",
+   "authors": [],
+   "published": "2026-08-15T04:00:00.000Z",
+   "updated": "2026-08-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.11748",
+   "pdf": "https://arxiv.org/pdf/2608.11748",
+   "announceType": "new",
+   "summary": "双模态 prompt 注入冻结遥感扩散模型，零样本高光谱融合。",
+   "topic": "遥感 / 地理空间 / 高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.11748"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明通用扩散先验经恰当提示可免训练迁移到高光谱融合，对缺配对数据任务价值大。",
+   "repository": null,
+   "motivation": "高光谱 pansharpening 缺少配对训练数据。",
+   "coreProblem": "现有方法需任务特化训练，难以复用通用扩散先验。",
+   "contributions": [
+    "双模态图像提示：LRHS/PAN 编码为光谱/空间 prompt token，cross-attention 注入",
+    "全色引导的加权像素感知 TV 正则，保边缘抑伪纹理"
+   ],
+   "innovations": [
+    "观测数据直接参与扩散特征演化，而非仅作外部重建目标",
+    "零参数训练，仅靠提示迁移扩散先验"
+   ],
+   "method": "冻结遥感扩散模型 + cross-attention 提示注入 + PAN 引导结构正则，全程零样本。",
+   "results": "Pavia / Chikusei / Houston 降分辨率协议全指标最佳；FR1 全分辨率 HQNR 最高。",
+   "value": "证明通用扩散先验经恰当提示可免训练迁移到高光谱融合，对缺配对数据任务价值大。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "双模态图像提示：LRHS/PAN 编码为光谱/空间 prompt token，cross-attention 注入",
+    "agentChange": "冻结遥感扩散模型 + cross-attention 提示注入 + PAN 引导结构正则，全程零样本。",
+    "selfEvolution": null,
+    "evidence": [
+     "Pavia / Chikusei / Houston 降分辨率协议全指标最佳；FR1 全分辨率 HQNR 最高。",
+     "零参数训练，仅靠提示迁移扩散先验"
+    ],
+    "faq": {
+     "problem": "双模态 prompt 注入冻结遥感扩散模型，零样本高光谱融合。",
+     "mechanism": "冻结遥感扩散模型 + cross-attention 提示注入 + PAN 引导结构正则，全程零样本。",
+     "agentChange": "冻结遥感扩散模型 + cross-attention 提示注入 + PAN 引导结构正则，全程零样本。",
+     "support": "Pavia / Chikusei / Houston 降分辨率协议全指标最佳；FR1 全分辨率 HQNR 最高。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "证明通用扩散先验经恰当提示可免训练迁移到高光谱融合，对缺配对数据任务价值大。"
+   }
+  },
+  {
+   "id": "2608.11685",
+   "version": 1,
+   "title": "EGM-Det: 熵引导多模态自适应融合的 UAV RGB-IR 目标检测",
+   "abstract": "熵先验引导自适应 RGB-IR 融合，mAP50-95 71.4%（+5.9pp）。",
+   "authors": [],
+   "published": "2026-08-15T04:00:00.000Z",
+   "updated": "2026-08-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.11685",
+   "pdf": "https://arxiv.org/pdf/2608.11685",
+   "announceType": "new",
+   "summary": "熵先验引导自适应 RGB-IR 融合，mAP50-95 71.4%（+5.9pp）。",
+   "topic": "遥感 / 地理空间 / 高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.11685"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "指出模态可靠性空间变异性这一被忽视问题，熵先验融合可推广到其他 RGB-IR/多光谱 UAV 感知。",
+   "repository": null,
+   "motivation": "UAV 复杂场景需按可靠性聚合 RGB-IR 互补模态。",
+   "coreProblem": "静态/固定加权融合忽视\"模态可靠性随空间位置变化\"。",
+   "contributions": [
+    "以输入强度/局部熵/跨模态差异构建浅层熵先验",
+    "Entropy Offset Gate Fusion：融合权重随位置与场景动态变化"
+   ],
+   "innovations": [
+    "跨模态蒸馏正则化融合门，学生分支从跨模态教师提取互补知识",
+    "熵自适应监督强化不确定模态决策"
+   ],
+   "method": "双流模态特征 → 熵先验引导多尺度门控融合 → 跨模态选择性蒸馏。",
+   "results": "DroneVehicle mAP50-95 71.4%（超最强对手 COMO 5.9pp）；LLVIP、VEDAI 均 SOTA，VEDAI 领先 10pp+。",
+   "value": "指出模态可靠性空间变异性这一被忽视问题，熵先验融合可推广到其他 RGB-IR/多光谱 UAV 感知。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "以输入强度/局部熵/跨模态差异构建浅层熵先验",
+    "agentChange": "双流模态特征 → 熵先验引导多尺度门控融合 → 跨模态选择性蒸馏。",
+    "selfEvolution": null,
+    "evidence": [
+     "DroneVehicle mAP50-95 71.4%（超最强对手 COMO 5.9pp）；LLVIP、VEDAI 均 SOTA，VEDAI 领先 10pp+。",
+     "熵自适应监督强化不确定模态决策"
+    ],
+    "faq": {
+     "problem": "熵先验引导自适应 RGB-IR 融合，mAP50-95 71.4%（+5.9pp）。",
+     "mechanism": "双流模态特征 → 熵先验引导多尺度门控融合 → 跨模态选择性蒸馏。",
+     "agentChange": "双流模态特征 → 熵先验引导多尺度门控融合 → 跨模态选择性蒸馏。",
+     "support": "DroneVehicle mAP50-95 71.4%（超最强对手 COMO 5.9pp）；LLVIP、VEDAI 均 SOTA，VEDAI 领先 10pp+。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "指出模态可靠性空间变异性这一被忽视问题，熵先验融合可推广到其他 RGB-IR/多光谱 UAV 感知。"
+   }
+  },
+  {
+   "id": "2608.13492",
+   "version": 1,
+   "title": "AlayaWorld: 交互式长时序世界建模技术报告 v1.1",
+   "abstract": "重设计条件信号表征（6 项修改），改善长时序交互一致性。",
+   "authors": [],
+   "published": "2026-08-15T04:00:00.000Z",
+   "updated": "2026-08-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13492",
+   "pdf": "https://arxiv.org/pdf/2608.13492",
+   "announceType": "new",
+   "summary": "重设计条件信号表征（6 项修改），改善长时序交互一致性。",
+   "topic": "世界模型 / 视频生成",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13492"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "展示\"条件对齐\"这一被低估的设计维度，6 项消融对世界模型工程实践有直接参考价值。",
+   "repository": null,
+   "motivation": "交互式世界模型需要长时序记忆与视角控制一致性。",
+   "coreProblem": "条件信号与生成内容在潜表征/时间结构上不匹配，导致记忆漂移。",
+   "contributions": [
+    "流式 3D 点缓存渲染器替代深度 warping 空间记忆",
+    "所有视觉条件编码进与生成视频同一 causal-VAE 潜空间"
+   ],
+   "innovations": [
+    "提出\"条件应与生成内容在潜表征和时间结构上对齐\"核心原则",
+    "硬记忆 dropout、统一 VAE 协议、去相机 AdaLN 等 6 项系统性修改"
+   ],
+   "method": "块状自回归生成 + 流式 3D 点缓存渲染空间记忆 + 同潜空间条件注入。",
+   "results": "技术报告，系统改进长时序交互一致性（记忆漂移、视角控制），具体评测见报告实验节。",
+   "value": "展示\"条件对齐\"这一被低估的设计维度，6 项消融对世界模型工程实践有直接参考价值。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "流式 3D 点缓存渲染器替代深度 warping 空间记忆",
+    "agentChange": "块状自回归生成 + 流式 3D 点缓存渲染空间记忆 + 同潜空间条件注入。",
+    "selfEvolution": null,
+    "evidence": [
+     "技术报告，系统改进长时序交互一致性（记忆漂移、视角控制），具体评测见报告实验节。",
+     "硬记忆 dropout、统一 VAE 协议、去相机 AdaLN 等 6 项系统性修改"
+    ],
+    "faq": {
+     "problem": "重设计条件信号表征（6 项修改），改善长时序交互一致性。",
+     "mechanism": "块状自回归生成 + 流式 3D 点缓存渲染空间记忆 + 同潜空间条件注入。",
+     "agentChange": "块状自回归生成 + 流式 3D 点缓存渲染空间记忆 + 同潜空间条件注入。",
+     "support": "技术报告，系统改进长时序交互一致性（记忆漂移、视角控制），具体评测见报告实验节。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "展示\"条件对齐\"这一被低估的设计维度，6 项消融对世界模型工程实践有直接参考价值。"
+   }
+  },
+  {
+   "id": "2608.13489",
+   "version": 1,
+   "title": "DreamX-Phi 1.0: 面向机器人操作的动作条件视频世界模型",
+   "abstract": "SE(3) 几何注意力 + 物体一致性约束，WorldArena Track 1 冠军。",
+   "authors": [],
+   "published": "2026-08-15T04:00:00.000Z",
+   "updated": "2026-08-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13489",
+   "pdf": "https://arxiv.org/pdf/2608.13489",
+   "announceType": "new",
+   "summary": "SE(3) 几何注意力 + 物体一致性约束，WorldArena Track 1 冠军。",
+   "topic": "世界模型 / 视频生成",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13489"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "对以世界模型做动作规划/仿真验证的机器人方向影响直接，动作忠实性成为可设计约束。",
+   "repository": null,
+   "motivation": "机器人操作需要 rollout 忠实于指令动作的世界模型。",
+   "coreProblem": "真实 rollout ≠ 忠实 rollout：可能动错手臂或丢失被抓物体。",
+   "contributions": [
+    "PRoPE 式几何编码：每臂 SE(3) 变换注入注意力，保留臂身份与刚体结构",
+    "SAM3 掩码 + 冻结 V-JEPA 教师做物体级一致性约束"
+   ],
+   "innovations": [
+    "把\"动作忠实性\"从美学指标提升为可显式约束的几何问题",
+    "轻量深度分支补场景级几何，few-step 蒸馏便于部署"
+   ],
+   "method": "视频生成主干 + SE(3) 几何注意力 + 深度分支 + 物体掩码一致性 + 分布匹配蒸馏。",
+   "results": "WorldArena 2.0 Challenge Track 1 第一名、Track 2 第二名（IROS 挑战）。",
+   "value": "对以世界模型做动作规划/仿真验证的机器人方向影响直接，动作忠实性成为可设计约束。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "PRoPE 式几何编码：每臂 SE(3) 变换注入注意力，保留臂身份与刚体结构",
+    "agentChange": "视频生成主干 + SE(3) 几何注意力 + 深度分支 + 物体掩码一致性 + 分布匹配蒸馏。",
+    "selfEvolution": null,
+    "evidence": [
+     "WorldArena 2.0 Challenge Track 1 第一名、Track 2 第二名（IROS 挑战）。",
+     "轻量深度分支补场景级几何，few-step 蒸馏便于部署"
+    ],
+    "faq": {
+     "problem": "SE(3) 几何注意力 + 物体一致性约束，WorldArena Track 1 冠军。",
+     "mechanism": "视频生成主干 + SE(3) 几何注意力 + 深度分支 + 物体掩码一致性 + 分布匹配蒸馏。",
+     "agentChange": "视频生成主干 + SE(3) 几何注意力 + 深度分支 + 物体掩码一致性 + 分布匹配蒸馏。",
+     "support": "WorldArena 2.0 Challenge Track 1 第一名、Track 2 第二名（IROS 挑战）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "对以世界模型做动作规划/仿真验证的机器人方向影响直接，动作忠实性成为可设计约束。"
+   }
+  },
+  {
+   "id": "2608.13556",
+   "version": 1,
+   "title": "V-RAE: 重新思考视频生成的潜空间设计",
+   "abstract": "冻结基础模型表征构建生成潜空间，收敛快 6×，提出 tFVD 诊断指标。",
+   "authors": [],
+   "published": "2026-08-15T04:00:00.000Z",
+   "updated": "2026-08-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13556",
+   "pdf": "https://arxiv.org/pdf/2608.13556",
+   "announceType": "new",
+   "summary": "冻结基础模型表征构建生成潜空间，收敛快 6×，提出 tFVD 诊断指标。",
+   "topic": "世界模型 / 视频生成",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13556"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "\"语义先于像素\"新范式，与图像域 RAE 结论呼应，可能改变下一代视频 VAE 训练目标。",
+   "repository": null,
+   "motivation": "潜视频生成依赖自编码器定义紧凑潜空间。",
+   "coreProblem": "现有潜空间面向像素重建优化，缺乏高层语义组织；重建最优 ≠ 生成友好。",
+   "contributions": [
+    "V-RAE 表征自编码器：冻结编码器 + 时序池化压缩 + 视频解码器重建",
+    "提出 tFVD 时序一致性诊断指标"
+   ],
+   "innovations": [
+    "以冻结视觉基础模型语义表征为潜空间基底，生成\"站在基础模型肩膀上\"",
+    "揭示\"按重建质量选 VAE\"是误区，tFVD 与生成质量相关性更可靠"
+   ],
+   "method": "冻结编码器（4 种）→ 时序池化压缩 → 视频解码器重建 → 该潜空间训练生成模型。",
+   "results": "K600 rFVD 2.13 超所有被评测视频 VAE；gFVD 117.86/19.16，收敛最高快 6×；Cityscapes 预测优于 Wan 2.2 VAE。",
+   "value": "\"语义先于像素\"新范式，与图像域 RAE 结论呼应，可能改变下一代视频 VAE 训练目标。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "V-RAE 表征自编码器：冻结编码器 + 时序池化压缩 + 视频解码器重建",
+    "agentChange": "冻结编码器（4 种）→ 时序池化压缩 → 视频解码器重建 → 该潜空间训练生成模型。",
+    "selfEvolution": null,
+    "evidence": [
+     "K600 rFVD 2.13 超所有被评测视频 VAE；gFVD 117.86/19.16，收敛最高快 6×；Cityscapes 预测优于 Wan 2.2 VAE。",
+     "揭示\"按重建质量选 VAE\"是误区，tFVD 与生成质量相关性更可靠"
+    ],
+    "faq": {
+     "problem": "冻结基础模型表征构建生成潜空间，收敛快 6×，提出 tFVD 诊断指标。",
+     "mechanism": "冻结编码器（4 种）→ 时序池化压缩 → 视频解码器重建 → 该潜空间训练生成模型。",
+     "agentChange": "冻结编码器（4 种）→ 时序池化压缩 → 视频解码器重建 → 该潜空间训练生成模型。",
+     "support": "K600 rFVD 2.13 超所有被评测视频 VAE；gFVD 117.86/19.16，收敛最高快 6×；Cityscapes 预测优于 Wan 2.2 VAE。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "\"语义先于像素\"新范式，与图像域 RAE 结论呼应，可能改变下一代视频 VAE 训练目标。"
+   }
+  },
+  {
+   "id": "2608.11739",
+   "version": 1,
+   "title": "G0.5: 单一自回归流同时输出机器人推理与动作",
+   "abstract": "单自回归流统一推理 + 动作，真实机器人 76.7%（vs π0.5 53.3%）。",
+   "authors": [],
+   "published": "2026-08-15T04:00:00.000Z",
+   "updated": "2026-08-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.11739",
+   "pdf": "https://arxiv.org/pdf/2608.11739",
+   "announceType": "new",
+   "summary": "单自回归流统一推理 + 动作，真实机器人 76.7%（vs π0.5 53.3%）。",
+   "topic": "机器人 / 科学智能体",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.11739"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明\"推理与动作统一进自回归词表\"可行且更强，是对 VLA 架构路线的重要押注。",
+   "repository": null,
+   "motivation": "主流 VLA 采用\"VLM + 独立动作专家\"配方，能力割裂。",
+   "coreProblem": "独立动作专家无法共享 VLM 的指令跟随与可控性。",
+   "contributions": [
+    "可学习跨本体动作 tokenizer：异构机器人动作映射进共享词表",
+    "原生 CoT 流：推理与动作 token 交错生成，共享同一套权重"
+   ],
+   "innovations": [
+    "抛弃 flow-matching 动作专家，纯自回归单一 next-token 目标统一推理 + 动作",
+    "提示可直接调节动作粒度/任务时域/OOD 处理，无需再训练"
+   ],
+   "method": "大规模机器人数据 + VQA 联合预训练，单一 next-token 目标 + 视觉记忆模块。",
+   "results": "7 设定全面 SOTA：真实机器人微调 76.7%（vs π0.5 53.3%、GR00T-N1.7 24.4%）；LIBERO 98.9%；DROID 零样本 82.5%。",
+   "value": "证明\"推理与动作统一进自回归词表\"可行且更强，是对 VLA 架构路线的重要押注。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "可学习跨本体动作 tokenizer：异构机器人动作映射进共享词表",
+    "agentChange": "大规模机器人数据 + VQA 联合预训练，单一 next-token 目标 + 视觉记忆模块。",
+    "selfEvolution": null,
+    "evidence": [
+     "7 设定全面 SOTA：真实机器人微调 76.7%（vs π0.5 53.3%、GR00T-N1.7 24.4%）；LIBERO 98.9%；DROID 零样本 82.5%。",
+     "提示可直接调节动作粒度/任务时域/OOD 处理，无需再训练"
+    ],
+    "faq": {
+     "problem": "单自回归流统一推理 + 动作，真实机器人 76.7%（vs π0.5 53.3%）。",
+     "mechanism": "大规模机器人数据 + VQA 联合预训练，单一 next-token 目标 + 视觉记忆模块。",
+     "agentChange": "大规模机器人数据 + VQA 联合预训练，单一 next-token 目标 + 视觉记忆模块。",
+     "support": "7 设定全面 SOTA：真实机器人微调 76.7%（vs π0.5 53.3%、GR00T-N1.7 24.4%）；LIBERO 98.9%；DROID 零样本 82.5%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "证明\"推理与动作统一进自回归词表\"可行且更强，是对 VLA 架构路线的重要押注。"
+   }
+  },
+  {
+   "id": "2608.13505",
+   "version": 1,
+   "title": "Intern-S2-Preview: 科学智能体基础模型",
+   "abstract": "397B 科学智能体基座 + 完整后训练管线技术报告。",
+   "authors": [],
+   "published": "2026-08-15T04:00:00.000Z",
+   "updated": "2026-08-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13505",
+   "pdf": "https://arxiv.org/pdf/2608.13505",
+   "announceType": "new",
+   "summary": "397B 科学智能体基座 + 完整后训练管线技术报告。",
+   "topic": "机器人 / 科学智能体",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13505"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "最完整的科学 AI 智能体训练管线公开报告之一，RL 稳定性技巧对 agentic RL 团队有直接工程价值。",
+   "repository": null,
+   "motivation": "科学发现需要推理异构证据、调用工具、长程持续推进的 AI。",
+   "coreProblem": "科学多模态理解与 agentic 长程任务缺乏统一训练范式。",
+   "contributions": [
+    "科学多模态预训练：渲染论文、图文交错、多样科学语料",
+    "统一后训练：SFT + 多任务 RL + 黑/白盒 agentic RL + on-policy 蒸馏"
+   ],
+   "innovations": [
+    "RL rollout 稳定性技术包：部分 rollout + off-policy 修正、自适应长度正则、在线投机解码",
+    "Memory Decoder：冻结主干外挂记忆模块即可快速科学特化"
+   ],
+   "method": "预训练 → SFT → 多任务 RL → agentic RL → on-policy 蒸馏流水线。",
+   "results": "多组基准竞争或领先；MemDec-4B 把 Biology-Instructions 从 56.92 提到 60.32（主干冻结）。",
+   "value": "最完整的科学 AI 智能体训练管线公开报告之一，RL 稳定性技巧对 agentic RL 团队有直接工程价值。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "科学多模态预训练：渲染论文、图文交错、多样科学语料",
+    "agentChange": "预训练 → SFT → 多任务 RL → agentic RL → on-policy 蒸馏流水线。",
+    "selfEvolution": null,
+    "evidence": [
+     "多组基准竞争或领先；MemDec-4B 把 Biology-Instructions 从 56.92 提到 60.32（主干冻结）。",
+     "Memory Decoder：冻结主干外挂记忆模块即可快速科学特化"
+    ],
+    "faq": {
+     "problem": "397B 科学智能体基座 + 完整后训练管线技术报告。",
+     "mechanism": "预训练 → SFT → 多任务 RL → agentic RL → on-policy 蒸馏流水线。",
+     "agentChange": "预训练 → SFT → 多任务 RL → agentic RL → on-policy 蒸馏流水线。",
+     "support": "多组基准竞争或领先；MemDec-4B 把 Biology-Instructions 从 56.92 提到 60.32（主干冻结）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "最完整的科学 AI 智能体训练管线公开报告之一，RL 稳定性技巧对 agentic RL 团队有直接工程价值。"
+   }
+  },
+  {
+   "id": "2608.13524",
+   "version": 1,
+   "title": "DARTree: 自回归草稿树的投机扩散解码",
+   "abstract": "免训练投机解码，单轮最多接受 12.97 token（+98.6%），9.73× 无损加速。",
+   "authors": [],
+   "published": "2026-08-15T04:00:00.000Z",
+   "updated": "2026-08-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13524",
+   "pdf": "https://arxiv.org/pdf/2608.13524",
+   "announceType": "new",
+   "summary": "免训练投机解码，单轮最多接受 12.97 token（+98.6%），9.73× 无损加速。",
+   "topic": "LLM 推理效率 / 训练",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13524"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "LLM 无损加速最新 SOTA，\"扩散草稿 + AR 修正\"混合架构可能成为投机解码新标准配方。",
+   "repository": null,
+   "motivation": "投机解码无损加速 LLM 推理，扩散草稿器进一步降低提案时延。",
+   "coreProblem": "扩散草稿位置分布是边缘分布、缺路径因果条件；现有树构建不携带 AR 修正。",
+   "contributions": [
+    "把预训练 AR 修正头从\"链\"扩展到\"树\"，逐分支恢复因果条件",
+    "深度并行\"超树\"构建：逐深度批量扩展/打分所有节点"
+   ],
+   "innovations": [
+    "AR 修正头为扩散树草稿每个分支补因果信息，与 DDTree 互补",
+    "AR 头推理与堆操作解耦，避免 best-first 串行开销"
+   ],
+   "method": "扩散草稿器生成候选树 → AR 修正头批量打分 → 延迟 best-first 剪枝出验证树。",
+   "results": "7 基准 × 4 模型-温度组合平均接受长度与加速比全部最高；单轮最多接受 12.97 token（比 DFlash 多 98.6%），无损加速最高 9.73×。",
+   "value": "LLM 无损加速最新 SOTA，\"扩散草稿 + AR 修正\"混合架构可能成为投机解码新标准配方。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "把预训练 AR 修正头从\"链\"扩展到\"树\"，逐分支恢复因果条件",
+    "agentChange": "扩散草稿器生成候选树 → AR 修正头批量打分 → 延迟 best-first 剪枝出验证树。",
+    "selfEvolution": null,
+    "evidence": [
+     "7 基准 × 4 模型-温度组合平均接受长度与加速比全部最高；单轮最多接受 12.97 token（比 DFlash 多 98.6%），无损加速最高 9.73×。",
+     "AR 头推理与堆操作解耦，避免 best-first 串行开销"
+    ],
+    "faq": {
+     "problem": "免训练投机解码，单轮最多接受 12.97 token（+98.6%），9.73× 无损加速。",
+     "mechanism": "扩散草稿器生成候选树 → AR 修正头批量打分 → 延迟 best-first 剪枝出验证树。",
+     "agentChange": "扩散草稿器生成候选树 → AR 修正头批量打分 → 延迟 best-first 剪枝出验证树。",
+     "support": "7 基准 × 4 模型-温度组合平均接受长度与加速比全部最高；单轮最多接受 12.97 token（比 DFlash 多 98.6%），无损加速最高 9.73×。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "LLM 无损加速最新 SOTA，\"扩散草稿 + AR 修正\"混合架构可能成为投机解码新标准配方。"
+   }
+  },
+  {
+   "id": "2608.13517",
+   "version": 1,
+   "title": "DFM Mimir v1: 仅用可授权数据训练的 1B 层级推理模型",
+   "abstract": "100% 可授权数据从零训练 1B HRM，丹麦语 SOTA。",
+   "authors": [],
+   "published": "2026-08-15T04:00:00.000Z",
+   "updated": "2026-08-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13517",
+   "pdf": "https://arxiv.org/pdf/2608.13517",
+   "announceType": "new",
+   "summary": "100% 可授权数据从零训练 1B HRM，丹麦语 SOTA。",
+   "topic": "LLM 推理效率 / 训练",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13517"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明\"干净小数据 + 新架构\"可逼近更大模型实用水平，是开源合规训练路线的重要实证。",
+   "repository": null,
+   "motivation": "LLM 训练依赖海量不可授权数据，合规开源机构门槛高。",
+   "coreProblem": "缺少\"仅用可授权数据训练出可用基座\"的完整可复现配方。",
+   "contributions": [
+    "161 数据集混合从零训练 1B HRM 基座",
+    "提出\"移植数据集\"：合成可授权数据替代不可授权数据"
+   ],
+   "innovations": [
+    "验证 HRM\"后训练数据即预训练\"路线在低资源语言可行",
+    "合成替代数据性能相当甚至更好，给出合规训练完整配方"
+   ],
+   "method": "HRM 架构 + 161 数据集混合指令训练（含合成移植数据），完全从零。",
+   "results": "20 个英/数学/代码/丹麦基准超原版 HRM-Text 1B，与 Qwen 3.5 4B、Gemma 4 E2B 互有胜负；丹麦语 SOTA。",
+   "value": "证明\"干净小数据 + 新架构\"可逼近更大模型实用水平，是开源合规训练路线的重要实证。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "161 数据集混合从零训练 1B HRM 基座",
+    "agentChange": "HRM 架构 + 161 数据集混合指令训练（含合成移植数据），完全从零。",
+    "selfEvolution": null,
+    "evidence": [
+     "20 个英/数学/代码/丹麦基准超原版 HRM-Text 1B，与 Qwen 3.5 4B、Gemma 4 E2B 互有胜负；丹麦语 SOTA。",
+     "合成替代数据性能相当甚至更好，给出合规训练完整配方"
+    ],
+    "faq": {
+     "problem": "100% 可授权数据从零训练 1B HRM，丹麦语 SOTA。",
+     "mechanism": "HRM 架构 + 161 数据集混合指令训练（含合成移植数据），完全从零。",
+     "agentChange": "HRM 架构 + 161 数据集混合指令训练（含合成移植数据），完全从零。",
+     "support": "20 个英/数学/代码/丹麦基准超原版 HRM-Text 1B，与 Qwen 3.5 4B、Gemma 4 E2B 互有胜负；丹麦语 SOTA。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "证明\"干净小数据 + 新架构\"可逼近更大模型实用水平，是开源合规训练路线的重要实证。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-08-12",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-08-12 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-08-15T04:00:00.000Z",
+ "totalMatched": 662,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 662
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-08-15",
+ "historical": true
+}

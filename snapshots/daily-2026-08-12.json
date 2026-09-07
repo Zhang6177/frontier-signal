@@ -1,0 +1,1011 @@
+{
+ "papers": [
+  {
+   "id": "2608.11142",
+   "version": 1,
+   "title": "SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring",
+   "abstract": "提出首个仅使用 SAR 强度图像进行自监督学习的农业监测 pipeline，在作物类型映射上超越光学基线 15.3 个百分点。",
+   "authors": [],
+   "published": "2026-08-12T04:00:00.000Z",
+   "updated": "2026-08-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cs.RO"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.11142",
+   "pdf": "https://arxiv.org/pdf/2608.11142",
+   "announceType": "new",
+   "summary": "提出首个仅使用 SAR 强度图像进行自监督学习的农业监测 pipeline，在作物类型映射上超越光学基线 15.3 个百分点。",
+   "topic": "遥感 / Remote Sensing",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.11142"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明了仅用 SAR 就能在农业监测中超越光学方案，这对多云地区（光学卫星无法穿透云层）的农业监测具有实际应用价值。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "SAR-only 自监督 pipeline：现有多模态遥感基础模型（TerraMind、CopernicusFM）都依赖光学图像来 grounding SAR 表征，而 SAR2Agri 完全脱离光学数据，只用 SAR 强度图像"
+   ],
+   "innovations": [
+    "基于物候学的时间 pretext tasks：通过 masking 和 curriculum learning 改进预训练策略，使模型能捕捉 SAR 数据中的作物物候特征",
+    "填补 SAR 专用模型空白：已有 SAR 专用模型（SAR-JEPA、SARMAE）主要关注目标检测和洪泛映射，SAR2Agri 首次将 SAR 自监督预训练聚焦于农业应用"
+   ],
+   "method": "基于时间掩码和课程学习的自监督预训练框架，专门针对 SAR 强度图像设计，无需光学配对数据。",
+   "results": "在 SICKLE 基准上达到 84.9% IoU（作物类型映射），超越光学基线 15.3 pt，超越现有 SAR 基线 2.2 pt。",
+   "value": "证明了仅用 SAR 就能在农业监测中超越光学方案，这对多云地区（光学卫星无法穿透云层）的农业监测具有实际应用价值。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "SAR-only 自监督 pipeline：现有多模态遥感基础模型（TerraMind、CopernicusFM）都依赖光学图像来 grounding SAR 表征，而 SAR2Agri 完全脱离光学数据，只用 SAR 强度图像",
+    "agentChange": "基于时间掩码和课程学习的自监督预训练框架，专门针对 SAR 强度图像设计，无需光学配对数据。",
+    "selfEvolution": null,
+    "evidence": [
+     "在 SICKLE 基准上达到 84.9% IoU（作物类型映射），超越光学基线 15.3 pt，超越现有 SAR 基线 2.2 pt。",
+     "填补 SAR 专用模型空白：已有 SAR 专用模型（SAR-JEPA、SARMAE）主要关注目标检测和洪泛映射，SAR2Agri 首次将 SAR 自监督预训练聚焦于农业应用"
+    ],
+    "faq": {
+     "problem": "提出首个仅使用 SAR 强度图像进行自监督学习的农业监测 pipeline，在作物类型映射上超越光学基线 15.3 个百分点。",
+     "mechanism": "基于时间掩码和课程学习的自监督预训练框架，专门针对 SAR 强度图像设计，无需光学配对数据。",
+     "agentChange": "基于时间掩码和课程学习的自监督预训练框架，专门针对 SAR 强度图像设计，无需光学配对数据。",
+     "support": "在 SICKLE 基准上达到 84.9% IoU（作物类型映射），超越光学基线 15.3 pt，超越现有 SAR 基线 2.2 pt。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "证明了仅用 SAR 就能在农业监测中超越光学方案，这对多云地区（光学卫星无法穿透云层）的农业监测具有实际应用价值。"
+   }
+  },
+  {
+   "id": "2608.11205",
+   "version": 1,
+   "title": "AdvFD: Boosting Visual Generation via Adversarial Fréchet Distance Loss",
+   "abstract": "提出对抗性 Fréchet 距离（AdvFD），通过可学习的动态特征空间替代静态预训练特征，解决生成模型后训练中的 Fréchet hacking 问题。",
+   "authors": [],
+   "published": "2026-08-12T04:00:00.000Z",
+   "updated": "2026-08-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cs.RO"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.11205",
+   "pdf": "https://arxiv.org/pdf/2608.11205",
+   "announceType": "new",
+   "summary": "提出对抗性 Fréchet 距离（AdvFD），通过可学习的动态特征空间替代静态预训练特征，解决生成模型后训练中的 Fréchet hacking 问题。",
+   "topic": "计算机视觉 / Computer Vision",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.11205"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "Fréchet 距离已成为扩散模型和流匹配模型后训练的关键目标，AdvFD 为这一方向提供了更鲁棒的优化策略。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "对抗性 Fréchet 距离：将静态 FD-Loss 扩展为 min-max 对抗框架，判别器（可学习表征）最大化真实与生成样本间的 Fréchet 差异，生成器最小化"
+   ],
+   "innovations": [
+    "真实特征白化（Real-Feature Whitening）：防止对抗表征通过特征放大作弊，对真实特征的尺度和协方差几何进行归一化",
+    "解决了 Fréchet hacking：直接优化 Fréchet 目标会导致\"指标涨但质量不涨\"，AdvFD 通过动态特征空间提供更完整的分布差异视角"
+   ],
+   "method": "在 JiT（Journey to Infinity）和 pMF（pretrained flow-matching）两类骨干上添加 AdvFD 后训练模块，使用对抗训练优化。",
+   "results": "在不同模型规模下，AdvFD 一致性地 改善了生成质量，跨 JiT 和 pMF 两类骨干均有效。",
+   "value": "Fréchet 距离已成为扩散模型和流匹配模型后训练的关键目标，AdvFD 为这一方向提供了更鲁棒的优化策略。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "对抗性 Fréchet 距离：将静态 FD-Loss 扩展为 min-max 对抗框架，判别器（可学习表征）最大化真实与生成样本间的 Fréchet 差异，生成器最小化",
+    "agentChange": "在 JiT（Journey to Infinity）和 pMF（pretrained flow-matching）两类骨干上添加 AdvFD 后训练模块，使用对抗训练优化。",
+    "selfEvolution": null,
+    "evidence": [
+     "在不同模型规模下，AdvFD 一致性地 改善了生成质量，跨 JiT 和 pMF 两类骨干均有效。",
+     "解决了 Fréchet hacking：直接优化 Fréchet 目标会导致\"指标涨但质量不涨\"，AdvFD 通过动态特征空间提供更完整的分布差异视角"
+    ],
+    "faq": {
+     "problem": "提出对抗性 Fréchet 距离（AdvFD），通过可学习的动态特征空间替代静态预训练特征，解决生成模型后训练中的 Fréchet hacking 问题。",
+     "mechanism": "在 JiT（Journey to Infinity）和 pMF（pretrained flow-matching）两类骨干上添加 AdvFD 后训练模块，使用对抗训练优化。",
+     "agentChange": "在 JiT（Journey to Infinity）和 pMF（pretrained flow-matching）两类骨干上添加 AdvFD 后训练模块，使用对抗训练优化。",
+     "support": "在不同模型规模下，AdvFD 一致性地 改善了生成质量，跨 JiT 和 pMF 两类骨干均有效。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "Fréchet 距离已成为扩散模型和流匹配模型后训练的关键目标，AdvFD 为这一方向提供了更鲁棒的优化策略。"
+   }
+  },
+  {
+   "id": "2608.11201",
+   "version": 1,
+   "title": "VidForensics-M1: Meta-Detection Reinforcement Learning with Verifiable Temporal Grounding for AI-Generated Video Forensics",
+   "abstract": "首次将元检测（Meta-Detection）引入 AI 生成视频取证，通过可验证的时间 grounding 和证据引导的奖励重分配强化学习，实现鲁棒的伪造视频检测。",
+   "authors": [],
+   "published": "2026-08-12T04:00:00.000Z",
+   "updated": "2026-08-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cs.RO"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.11201",
+   "pdf": "https://arxiv.org/pdf/2608.11201",
+   "announceType": "new",
+   "summary": "首次将元检测（Meta-Detection）引入 AI 生成视频取证，通过可验证的时间 grounding 和证据引导的奖励重分配强化学习，实现鲁棒的伪造视频检测。",
+   "topic": "计算机视觉 / Computer Vision",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.11201"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "视频生成模型（Sora、Kling 等）越来越逼真，传统的监督微调方法泛化差，该方法为应对不断演进的生成攻击提供了新思路。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "元检测范式：同时优化预测标签和支持证据，而非仅靠标签级监督"
+   ],
+   "innovations": [
+    "可验证时间 grounding：用边界帧条件视频生成模型替换时间片段来构建配对的真/假视频，操纵区间可精确控制，比文本 rationale 更客观",
+    "证据引导奖励重分配：根据证据质量在标签正确的响应间重新分配奖励，保留可靠标签监督的同时鼓励细粒度伪造定位"
+   ],
+   "method": "构建自动化数据管道生成配对真/假视频，使用强化学习训练检测器，引入 Evidence-Guided Reward Redistribution 进行证据感知的信用分配。",
+   "results": "实验证明 VidForensics-M1 能有效利用可验证时间证据实现鲁棒且可泛化的 AI 生成视频检测。",
+   "value": "视频生成模型（Sora、Kling 等）越来越逼真，传统的监督微调方法泛化差，该方法为应对不断演进的生成攻击提供了新思路。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "元检测范式：同时优化预测标签和支持证据，而非仅靠标签级监督",
+    "agentChange": "构建自动化数据管道生成配对真/假视频，使用强化学习训练检测器，引入 Evidence-Guided Reward Redistribution 进行证据感知的信用分配。",
+    "selfEvolution": null,
+    "evidence": [
+     "实验证明 VidForensics-M1 能有效利用可验证时间证据实现鲁棒且可泛化的 AI 生成视频检测。",
+     "证据引导奖励重分配：根据证据质量在标签正确的响应间重新分配奖励，保留可靠标签监督的同时鼓励细粒度伪造定位"
+    ],
+    "faq": {
+     "problem": "首次将元检测（Meta-Detection）引入 AI 生成视频取证，通过可验证的时间 grounding 和证据引导的奖励重分配强化学习，实现鲁棒的伪造视频检测。",
+     "mechanism": "构建自动化数据管道生成配对真/假视频，使用强化学习训练检测器，引入 Evidence-Guided Reward Redistribution 进行证据感知的信用分配。",
+     "agentChange": "构建自动化数据管道生成配对真/假视频，使用强化学习训练检测器，引入 Evidence-Guided Reward Redistribution 进行证据感知的信用分配。",
+     "support": "实验证明 VidForensics-M1 能有效利用可验证时间证据实现鲁棒且可泛化的 AI 生成视频检测。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "视频生成模型（Sora、Kling 等）越来越逼真，传统的监督微调方法泛化差，该方法为应对不断演进的生成攻击提供了新思路。"
+   }
+  },
+  {
+   "id": "2608.11191",
+   "version": 1,
+   "title": "Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation",
+   "abstract": "提出测试时自进化框架，使 GUI 视觉定位模型在部署后无需人工标注即可自我改进，平均准确率提升 7.4%。",
+   "authors": [],
+   "published": "2026-08-12T04:00:00.000Z",
+   "updated": "2026-08-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cs.RO"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.11191",
+   "pdf": "https://arxiv.org/pdf/2608.11191",
+   "announceType": "new",
+   "summary": "提出测试时自进化框架，使 GUI 视觉定位模型在部署后无需人工标注即可自我改进，平均准确率提升 7.4%。",
+   "topic": "计算机视觉 / Computer Vision",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.11191"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "GUI Agent 是 LLM Agent 的重要应用方向，测试时自适应能力是实际部署的关键瓶颈，该方法首次展示了在线自蒸馏在 GUI 定位上的可行性。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "测试时自进化闭环：构建探索 → 评估 → 反思 → 内化的四阶段闭环，模型在部署后持续学习"
+   ],
+   "innovations": [
+    "MLLM 驱动的反思器：用多模态大语言模型评估探索结果并提供推理反思",
+    "反思引导的在线自蒸馏：将高层推理转化为密集 token 级监督，首次成功用于 GUI 视觉定位的测试时适配",
+    "对比校准：防止失败的探索中的错误自回归前缀污染监督信号"
+   ],
+   "method": "智能体在未见过界面上预测定位坐标，MLLM 反思器评估并生成反思，通过条件自教师将反思知识蒸馏到模型权重中。",
+   "results": "在 6 个基准上平均准确率提升 7.4%，无需任何人工标注 ground truth。",
+   "value": "GUI Agent 是 LLM Agent 的重要应用方向，测试时自适应能力是实际部署的关键瓶颈，该方法首次展示了在线自蒸馏在 GUI 定位上的可行性。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "测试时自进化闭环：构建探索 → 评估 → 反思 → 内化的四阶段闭环，模型在部署后持续学习",
+    "agentChange": "智能体在未见过界面上预测定位坐标，MLLM 反思器评估并生成反思，通过条件自教师将反思知识蒸馏到模型权重中。",
+    "selfEvolution": null,
+    "evidence": [
+     "在 6 个基准上平均准确率提升 7.4%，无需任何人工标注 ground truth。",
+     "反思引导的在线自蒸馏：将高层推理转化为密集 token 级监督，首次成功用于 GUI 视觉定位的测试时适配",
+     "对比校准：防止失败的探索中的错误自回归前缀污染监督信号"
+    ],
+    "faq": {
+     "problem": "提出测试时自进化框架，使 GUI 视觉定位模型在部署后无需人工标注即可自我改进，平均准确率提升 7.4%。",
+     "mechanism": "智能体在未见过界面上预测定位坐标，MLLM 反思器评估并生成反思，通过条件自教师将反思知识蒸馏到模型权重中。",
+     "agentChange": "智能体在未见过界面上预测定位坐标，MLLM 反思器评估并生成反思，通过条件自教师将反思知识蒸馏到模型权重中。",
+     "support": "在 6 个基准上平均准确率提升 7.4%，无需任何人工标注 ground truth。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "GUI Agent 是 LLM Agent 的重要应用方向，测试时自适应能力是实际部署的关键瓶颈，该方法首次展示了在线自蒸馏在 GUI 定位上的可行性。"
+   }
+  },
+  {
+   "id": "2608.08557",
+   "version": 1,
+   "title": "OpenVisTool: An Open Recipe for Synthesizing Instructive Visual Tool-Use Trajectories",
+   "abstract": "提出 OpenVisTool 框架，通过因果效用筛选而非结果正确性筛选来构建视觉工具使用训练数据，显著提升多模态 Agent 的工具学习能力。",
+   "authors": [],
+   "published": "2026-08-12T04:00:00.000Z",
+   "updated": "2026-08-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cs.RO"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.08557",
+   "pdf": "https://arxiv.org/pdf/2608.08557",
+   "announceType": "new",
+   "summary": "提出 OpenVisTool 框架，通过因果效用筛选而非结果正确性筛选来构建视觉工具使用训练数据，显著提升多模态 Agent 的工具学习能力。",
+   "topic": "计算机视觉 / Computer Vision",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.08557"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "揭示了工具使用训练数据质量的关键问题——不是所有正确轨迹都是有用的教学材料，为多模态 Agent 的训练提供了新的方法论。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "因果效用筛选：指出现有方法假设\"答案正确=有效监督\"是错误的，强的教师往往不需要工具就能答对，导致学生学到\"工具伴随正确答案\"而非\"工具观测支撑答案\""
+   ],
+   "innovations": [
+    "双条件筛选：轨迹必须满足结果有效（答案正确）且因果有用（工具观测对答案有因果贡献）",
+    "三阶段管道：难度筛选 → 领域特定轨迹合成 → 监督验证"
+   ],
+   "method": "构建 OpenVisTool-42K 数据集（跨 5 个视觉推理领域）和 OpenVisTool-Bench 基准。",
+   "results": "在 4 个 backbone（4B-27B）上微调，一致性地 提升视觉工具使用性能，并在 2 个分布外基准上获得增益。",
+   "value": "揭示了工具使用训练数据质量的关键问题——不是所有正确轨迹都是有用的教学材料，为多模态 Agent 的训练提供了新的方法论。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "因果效用筛选：指出现有方法假设\"答案正确=有效监督\"是错误的，强的教师往往不需要工具就能答对，导致学生学到\"工具伴随正确答案\"而非\"工具观测支撑答案\"",
+    "agentChange": "构建 OpenVisTool-42K 数据集（跨 5 个视觉推理领域）和 OpenVisTool-Bench 基准。",
+    "selfEvolution": null,
+    "evidence": [
+     "在 4 个 backbone（4B-27B）上微调，一致性地 提升视觉工具使用性能，并在 2 个分布外基准上获得增益。",
+     "三阶段管道：难度筛选 → 领域特定轨迹合成 → 监督验证"
+    ],
+    "faq": {
+     "problem": "提出 OpenVisTool 框架，通过因果效用筛选而非结果正确性筛选来构建视觉工具使用训练数据，显著提升多模态 Agent 的工具学习能力。",
+     "mechanism": "构建 OpenVisTool-42K 数据集（跨 5 个视觉推理领域）和 OpenVisTool-Bench 基准。",
+     "agentChange": "构建 OpenVisTool-42K 数据集（跨 5 个视觉推理领域）和 OpenVisTool-Bench 基准。",
+     "support": "在 4 个 backbone（4B-27B）上微调，一致性地 提升视觉工具使用性能，并在 2 个分布外基准上获得增益。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "揭示了工具使用训练数据质量的关键问题——不是所有正确轨迹都是有用的教学材料，为多模态 Agent 的训练提供了新的方法论。"
+   }
+  },
+  {
+   "id": "2604.26355",
+   "version": 1,
+   "title": "Shorthand for Thought: Compressing LLM Reasoning via Entropy-Guided Supertokens",
+   "abstract": "发现推理 trace 中的 token 可分为低熵的\"结构性 token\"和高熵的\"有机性 token\"，通过 BPE 合并结构性 token 为\"超 token\"，在平均压缩 8.1% 推理长度的同时保持准确率不变。",
+   "authors": [],
+   "published": "2026-08-12T04:00:00.000Z",
+   "updated": "2026-08-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cs.RO"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2604.26355",
+   "pdf": "https://arxiv.org/pdf/2604.26355",
+   "announceType": "new",
+   "summary": "发现推理 trace 中的 token 可分为低熵的\"结构性 token\"和高熵的\"有机性 token\"，通过 BPE 合并结构性 token 为\"超 token\"，在平均压缩 8.1% 推理长度的同时保持准确率不变。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2604.26355"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "推理压缩是 LLM 推理成本的关键瓶颈，该方法模型无关且无需修改模型架构，同时提供了推理过程的可解释性。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "结构性 vs 有机性 token 的二分法：结构性 token 是重复出现的公式化短语（回溯提示、验证步骤等），有机性 token 是特定问题的内容"
+   ],
+   "innovations": [
+    "超 token（Supertokens）：通过对模型自身推理 trace 进行跨词 BPE 合并，捕获频繁结构模式",
+    "可解释的推理标注：超 token 充当推理动作的标注（回溯、验证、策略切换），一目了然地暴露模型的高层策略",
+    "正确 vs 错误 trace 的结构性差异：分析结构性 token 间的转换发现正确和错误推理 trace 存在系统性差异"
+   ],
+   "method": "在模型自身推理 trace 上训练 BPE 合并生成超 token，再通过监督微调教模型使用这些超 token。",
+   "results": "跨 3 个模型族和 5 个数学推理基准，推理 trace 平均缩短 8.1%，没有任何模型-基准组合出现统计显著的准确率下降。",
+   "value": "推理压缩是 LLM 推理成本的关键瓶颈，该方法模型无关且无需修改模型架构，同时提供了推理过程的可解释性。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "结构性 vs 有机性 token 的二分法：结构性 token 是重复出现的公式化短语（回溯提示、验证步骤等），有机性 token 是特定问题的内容",
+    "agentChange": "在模型自身推理 trace 上训练 BPE 合并生成超 token，再通过监督微调教模型使用这些超 token。",
+    "selfEvolution": null,
+    "evidence": [
+     "跨 3 个模型族和 5 个数学推理基准，推理 trace 平均缩短 8.1%，没有任何模型-基准组合出现统计显著的准确率下降。",
+     "可解释的推理标注：超 token 充当推理动作的标注（回溯、验证、策略切换），一目了然地暴露模型的高层策略",
+     "正确 vs 错误 trace 的结构性差异：分析结构性 token 间的转换发现正确和错误推理 trace 存在系统性差异"
+    ],
+    "faq": {
+     "problem": "发现推理 trace 中的 token 可分为低熵的\"结构性 token\"和高熵的\"有机性 token\"，通过 BPE 合并结构性 token 为\"超 token\"，在平均压缩 8.1% 推理长度的同时保持准确率不变。",
+     "mechanism": "在模型自身推理 trace 上训练 BPE 合并生成超 token，再通过监督微调教模型使用这些超 token。",
+     "agentChange": "在模型自身推理 trace 上训练 BPE 合并生成超 token，再通过监督微调教模型使用这些超 token。",
+     "support": "跨 3 个模型族和 5 个数学推理基准，推理 trace 平均缩短 8.1%，没有任何模型-基准组合出现统计显著的准确率下降。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "推理压缩是 LLM 推理成本的关键瓶颈，该方法模型无关且无需修改模型架构，同时提供了推理过程的可解释性。"
+   }
+  },
+  {
+   "id": "2608.11138",
+   "version": 1,
+   "title": "Attention-Path Fragility as an Uncertainty Signal in Large Language Models",
+   "abstract": "提出\"注意力路径脆弱性\"作为 LLM 不确定性信号，通过掩码注意力头并测量子网络间的 BALD 互信息，实现无需训练的不确定性估计。",
+   "authors": [],
+   "published": "2026-08-12T04:00:00.000Z",
+   "updated": "2026-08-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cs.RO"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.11138",
+   "pdf": "https://arxiv.org/pdf/2608.11138",
+   "announceType": "new",
+   "summary": "提出\"注意力路径脆弱性\"作为 LLM 不确定性信号，通过掩码注意力头并测量子网络间的 BALD 互信息，实现无需训练的不确定性估计。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.11138"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "不确定性估计对 LLM 可靠性评估至关重要，ASMI 是一个零成本（无需多次采样）且信息量超过传统方法的估计器。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "注意力脆弱性作为不确定性：不仅看输出分布的宽度，还看自信预测在注意力路径扰动下是否脆弱"
+   ],
+   "innovations": [
+    "ASMI（Attention-Subnetwork Mutual Information）：掩码注意力头，测量子网络间的 BALD 互信息，用语义一致性核降低表面形式不一致的噪音",
+    "自预测适用范围：信号强度与答案来源有关——在基于上下文的问答中强，在参数知识回忆中弱，模型能预测自己的适用范围"
+   ],
+   "method": "训练-free 的估计器，对注意力头进行掩码采样，计算不同子网络输出间的互信息作为不确定性度量。",
+   "results": "在 grounded QA 测试中，ASMI 在置信度过滤之上额外提供了错误预测信息，集中于\"自信但脆弱\"的预测，作用于其上可将保留错误减半。在 12 个 grounded 基准中，Sem-ASMI（仅用单次贪婪解码）在 10/12 中持平或超越 Semantic Entropy。",
+   "value": "不确定性估计对 LLM 可靠性评估至关重要，ASMI 是一个零成本（无需多次采样）且信息量超过传统方法的估计器。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "注意力脆弱性作为不确定性：不仅看输出分布的宽度，还看自信预测在注意力路径扰动下是否脆弱",
+    "agentChange": "训练-free 的估计器，对注意力头进行掩码采样，计算不同子网络输出间的互信息作为不确定性度量。",
+    "selfEvolution": null,
+    "evidence": [
+     "在 grounded QA 测试中，ASMI 在置信度过滤之上额外提供了错误预测信息，集中于\"自信但脆弱\"的预测，作用于其上可将保留错误减半。在 12 个 grounded 基准中，Sem-ASMI（仅用单次贪婪解码）在 10/12 中持平或超越 Semantic Entropy。",
+     "自预测适用范围：信号强度与答案来源有关——在基于上下文的问答中强，在参数知识回忆中弱，模型能预测自己的适用范围"
+    ],
+    "faq": {
+     "problem": "提出\"注意力路径脆弱性\"作为 LLM 不确定性信号，通过掩码注意力头并测量子网络间的 BALD 互信息，实现无需训练的不确定性估计。",
+     "mechanism": "训练-free 的估计器，对注意力头进行掩码采样，计算不同子网络输出间的互信息作为不确定性度量。",
+     "agentChange": "训练-free 的估计器，对注意力头进行掩码采样，计算不同子网络输出间的互信息作为不确定性度量。",
+     "support": "在 grounded QA 测试中，ASMI 在置信度过滤之上额外提供了错误预测信息，集中于\"自信但脆弱\"的预测，作用于其上可将保留错误减半。在 12 个 grounded 基准中，Sem-ASMI（仅用单次贪婪解码）在 10/12 中持平或超越 Semantic Entropy。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "不确定性估计对 LLM 可靠性评估至关重要，ASMI 是一个零成本（无需多次采样）且信息量超过传统方法的估计器。"
+   }
+  },
+  {
+   "id": "2604.20209",
+   "version": 1,
+   "title": "Scaling Self-Play with Self-Guidance",
+   "abstract": "提出自引导自博弈（SGS），通过让语言模型自身担任\"引导者\"角色防止 Conjecturer 模型崩溃，解决了 LLM 自博弈的扩展瓶颈问题。",
+   "authors": [],
+   "published": "2026-08-12T04:00:00.000Z",
+   "updated": "2026-08-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cs.RO"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2604.20209",
+   "pdf": "https://arxiv.org/pdf/2604.20209",
+   "announceType": "new",
+   "summary": "提出自引导自博弈（SGS），通过让语言模型自身担任\"引导者\"角色防止 Conjecturer 模型崩溃，解决了 LLM 自博弈的扩展瓶颈问题。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2604.20209"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "自博弈被认为是实现 LLM 无限学习潜力的关键路径，SGS 解决了长期训练中的核心瓶颈——出题模型退化。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "诊断 Conjecturer 崩溃：发现现有自博弈方法在长训练后会遇到学习平台期，原因是 Conjecturer 学会\"hack 奖励\"，生成人工复杂但无帮助的问题"
+   ],
+   "innovations": [
+    "三角色自博弈：模型同时扮演 Solver（解题者）、Conjecturer（出题者）和 Guide（引导者）",
+    "Guide 评分机制：评估合成问题与未解决目标问题的相关性和自然性，防止 Conjecturer 退化为奖励黑客"
+   ],
+   "method": "扩展训练时间远超过往工作，对累积解决率曲线拟合缩放定律，在形式化定理证明和数学领域评估。",
+   "results": "SGS 在长时间训练中展现出优于先前方法的扩展性，通过引导机制成功防止了 Conjecturer 崩溃。",
+   "value": "自博弈被认为是实现 LLM 无限学习潜力的关键路径，SGS 解决了长期训练中的核心瓶颈——出题模型退化。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "诊断 Conjecturer 崩溃：发现现有自博弈方法在长训练后会遇到学习平台期，原因是 Conjecturer 学会\"hack 奖励\"，生成人工复杂但无帮助的问题",
+    "agentChange": "扩展训练时间远超过往工作，对累积解决率曲线拟合缩放定律，在形式化定理证明和数学领域评估。",
+    "selfEvolution": null,
+    "evidence": [
+     "SGS 在长时间训练中展现出优于先前方法的扩展性，通过引导机制成功防止了 Conjecturer 崩溃。",
+     "Guide 评分机制：评估合成问题与未解决目标问题的相关性和自然性，防止 Conjecturer 退化为奖励黑客"
+    ],
+    "faq": {
+     "problem": "提出自引导自博弈（SGS），通过让语言模型自身担任\"引导者\"角色防止 Conjecturer 模型崩溃，解决了 LLM 自博弈的扩展瓶颈问题。",
+     "mechanism": "扩展训练时间远超过往工作，对累积解决率曲线拟合缩放定律，在形式化定理证明和数学领域评估。",
+     "agentChange": "扩展训练时间远超过往工作，对累积解决率曲线拟合缩放定律，在形式化定理证明和数学领域评估。",
+     "support": "SGS 在长时间训练中展现出优于先前方法的扩展性，通过引导机制成功防止了 Conjecturer 崩溃。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "自博弈被认为是实现 LLM 无限学习潜力的关键路径，SGS 解决了长期训练中的核心瓶颈——出题模型退化。"
+   }
+  },
+  {
+   "id": "2608.11204",
+   "version": 1,
+   "title": "Surgical WAM: A World-Action Model for Data-Efficient Surgical Robot Learning",
+   "abstract": "提出手术世界-动作模型（Surgical WAM），通过无动作标签的手术视频预训练学习视觉动态先验，在固定动作标注预算下将手术操控成功率从 63.5% 提升到 77.8%。",
+   "authors": [],
+   "published": "2026-08-12T04:00:00.000Z",
+   "updated": "2026-08-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cs.RO"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.11204",
+   "pdf": "https://arxiv.org/pdf/2608.11204",
+   "announceType": "new",
+   "summary": "提出手术世界-动作模型（Surgical WAM），通过无动作标签的手术视频预训练学习视觉动态先验，在固定动作标注预算下将手术操控成功率从 63.5% 提升到 77.8%。",
+   "topic": "机器人学习 / Robot Learning",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.11204"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "手术机器人数据标注极其昂贵，该方法证明了利用大量无标注视频数据可以显著提升数据效率，为手术机器人学习的规模化提供了实用路径。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "视频预训练的迁移价值：首次系统验证无动作标签的手术视频能否改善闭环手术操控——答案是肯定的"
+   ],
+   "innovations": [
+    "基于 Cosmos Policy 的联合预测：同时预测未来内窥镜观测和执行动作块",
+    "两段式训练：先在无动作视频上学习手术视觉动态，再用固定预算的动作标注微调",
+    "滚动时域控制器：部署时执行预测动作块的前缀，然后从新观测重新规划"
+   ],
+   "method": "视频预训练 → 动作标注微调 → 闭环 receding-horizon 控制，构建在 Cosmos Policy 生成模型架构上。",
+   "results": "在 4 个模拟手术操控任务上，视频预训练将平均成功率从 63.5% 提升至 77.8%，其中 PegTransfer 任务绝对提升 20 个百分点，在接触密集和双手任务上提升最大。",
+   "value": "手术机器人数据标注极其昂贵，该方法证明了利用大量无标注视频数据可以显著提升数据效率，为手术机器人学习的规模化提供了实用路径。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "视频预训练的迁移价值：首次系统验证无动作标签的手术视频能否改善闭环手术操控——答案是肯定的",
+    "agentChange": "视频预训练 → 动作标注微调 → 闭环 receding-horizon 控制，构建在 Cosmos Policy 生成模型架构上。",
+    "selfEvolution": null,
+    "evidence": [
+     "在 4 个模拟手术操控任务上，视频预训练将平均成功率从 63.5% 提升至 77.8%，其中 PegTransfer 任务绝对提升 20 个百分点，在接触密集和双手任务上提升最大。",
+     "两段式训练：先在无动作视频上学习手术视觉动态，再用固定预算的动作标注微调",
+     "滚动时域控制器：部署时执行预测动作块的前缀，然后从新观测重新规划"
+    ],
+    "faq": {
+     "problem": "提出手术世界-动作模型（Surgical WAM），通过无动作标签的手术视频预训练学习视觉动态先验，在固定动作标注预算下将手术操控成功率从 63.5% 提升到 77.8%。",
+     "mechanism": "视频预训练 → 动作标注微调 → 闭环 receding-horizon 控制，构建在 Cosmos Policy 生成模型架构上。",
+     "agentChange": "视频预训练 → 动作标注微调 → 闭环 receding-horizon 控制，构建在 Cosmos Policy 生成模型架构上。",
+     "support": "在 4 个模拟手术操控任务上，视频预训练将平均成功率从 63.5% 提升至 77.8%，其中 PegTransfer 任务绝对提升 20 个百分点，在接触密集和双手任务上提升最大。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "手术机器人数据标注极其昂贵，该方法证明了利用大量无标注视频数据可以显著提升数据效率，为手术机器人学习的规模化提供了实用路径。"
+   }
+  },
+  {
+   "id": "2608.11152",
+   "version": 1,
+   "title": "Scheduling Mixed RL Rollouts Beyond Prefix Locality",
+   "abstract": "提出 MISA-T，一个针对混合 RL rollout 服务的路由层准入策略，解决 RLVR、RLHF 和 Agent rollout 共享推理服务时的 KV cache 竞争问题。",
+   "authors": [],
+   "published": "2026-08-12T04:00:00.000Z",
+   "updated": "2026-08-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cs.RO"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.11152",
+   "pdf": "https://arxiv.org/pdf/2608.11152",
+   "announceType": "new",
+   "summary": "提出 MISA-T，一个针对混合 RL rollout 服务的路由层准入策略，解决 RLVR、RLHF 和 Agent rollout 共享推理服务时的 KV cache 竞争问题。",
+   "topic": "系统 / 基础设施 / Infrastructure",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.11152"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "随着 LLM 的 RL 后训练越来越普遍，混合 rollout 调度的效率直接影响训练成本和速度，MISA-T 提供了实质性的工程改进。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "识别异构 rollout 的 KV 竞争：RLVR、RLHF 和 agentic rollout 具有不同的序列结构、交互模式和 KV 驻留时间，现有前缀感知路由无法控制这种竞争"
+   ],
+   "innovations": [
+    "三合一策略：自适应会话准入 + 工作负载感知 KV 容量分配 + 驻留时间感知 KV 记账",
+    "保持训练器指定的工作负载混合：调度器不能扭曲训练器指定的 rollout 混合比例"
+   ],
+   "method": "在推理服务的路由层实现 MISA-T 准入策略，结合自适应 admission、KV 容量分配和驻留时间感知的 KV 会计。",
+   "results": "在 Step3.7 和 Qwen3.6-35B-A3B 上，rollout 吞吐量分别比 sweep-tuned cache-aware vLLM Router 提升 53.3% 和 43.6%；在 50 轮 Step3.7 实验中，吞吐量提升 35.6%，平均迭代时间减少 22.8%。",
+   "value": "随着 LLM 的 RL 后训练越来越普遍，混合 rollout 调度的效率直接影响训练成本和速度，MISA-T 提供了实质性的工程改进。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "识别异构 rollout 的 KV 竞争：RLVR、RLHF 和 agentic rollout 具有不同的序列结构、交互模式和 KV 驻留时间，现有前缀感知路由无法控制这种竞争",
+    "agentChange": "在推理服务的路由层实现 MISA-T 准入策略，结合自适应 admission、KV 容量分配和驻留时间感知的 KV 会计。",
+    "selfEvolution": null,
+    "evidence": [
+     "在 Step3.7 和 Qwen3.6-35B-A3B 上，rollout 吞吐量分别比 sweep-tuned cache-aware vLLM Router 提升 53.3% 和 43.6%；在 50 轮 Step3.7 实验中，吞吐量提升 35.6%，平均迭代时间减少 22.8%。",
+     "保持训练器指定的工作负载混合：调度器不能扭曲训练器指定的 rollout 混合比例"
+    ],
+    "faq": {
+     "problem": "提出 MISA-T，一个针对混合 RL rollout 服务的路由层准入策略，解决 RLVR、RLHF 和 Agent rollout 共享推理服务时的 KV cache 竞争问题。",
+     "mechanism": "在推理服务的路由层实现 MISA-T 准入策略，结合自适应 admission、KV 容量分配和驻留时间感知的 KV 会计。",
+     "agentChange": "在推理服务的路由层实现 MISA-T 准入策略，结合自适应 admission、KV 容量分配和驻留时间感知的 KV 会计。",
+     "support": "在 Step3.7 和 Qwen3.6-35B-A3B 上，rollout 吞吐量分别比 sweep-tuned cache-aware vLLM Router 提升 53.3% 和 43.6%；在 50 轮 Step3.7 实验中，吞吐量提升 35.6%，平均迭代时间减少 22.8%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "随着 LLM 的 RL 后训练越来越普遍，混合 rollout 调度的效率直接影响训练成本和速度，MISA-T 提供了实质性的工程改进。"
+   }
+  },
+  {
+   "id": "2608.07440",
+   "version": 1,
+   "title": "Blast Radius: Predictive Memory Management for Agentic Coding",
+   "abstract": "提出 Blast Radius，一个预测性内存管理层，通过估算 prompt 的影响范围来减少 Agentic Coding 中的 token 浪费，在 7 个 OpenAI 模型上减少 17-26% 的 token 消耗。",
+   "authors": [],
+   "published": "2026-08-12T04:00:00.000Z",
+   "updated": "2026-08-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cs.RO"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.07440",
+   "pdf": "https://arxiv.org/pdf/2608.07440",
+   "announceType": "new",
+   "summary": "提出 Blast Radius，一个预测性内存管理层，通过估算 prompt 的影响范围来减少 Agentic Coding 中的 token 浪费，在 7 个 OpenAI 模型上减少 17-26% 的 token 消耗。",
+   "topic": "系统 / 基础设施 / Infrastructure",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.07440"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "Agentic Coding（如 Devin、Cursor）的 token 成本是主要瓶颈，Blast Radius 从内存管理的角度提供了有效的成本控制方案。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "预测性上下文管理：NECROPHORESIS 实现可逆驱逐——将\"死上下文\"逐字存档"
+   ],
+   "innovations": [
+    "重复死事务（RDM）：识别并掩埋反复出现的转录内容",
+    "数学基础：在 Polish 上下文空间上形式化可逆上下文驱逐，将上下文熵与复活概率联系起来"
+   ],
+   "method": "在 agentic coding 系统的底层添加 Blast Radius 内存管理层，决定哪些记录应该\"掩埋\"以及传入 prompt 能影响代码库多深。",
+   "results": "跨 7 个 OpenAI 模型，token 消耗减少 17-26%，测试策略中溢出率最低，且保持字节精确可逆。450 个被掩埋的 body 中 378 个是重复死事务，零个被召回。",
+   "value": "Agentic Coding（如 Devin、Cursor）的 token 成本是主要瓶颈，Blast Radius 从内存管理的角度提供了有效的成本控制方案。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "预测性上下文管理：NECROPHORESIS 实现可逆驱逐——将\"死上下文\"逐字存档",
+    "agentChange": "在 agentic coding 系统的底层添加 Blast Radius 内存管理层，决定哪些记录应该\"掩埋\"以及传入 prompt 能影响代码库多深。",
+    "selfEvolution": null,
+    "evidence": [
+     "跨 7 个 OpenAI 模型，token 消耗减少 17-26%，测试策略中溢出率最低，且保持字节精确可逆。450 个被掩埋的 body 中 378 个是重复死事务，零个被召回。",
+     "数学基础：在 Polish 上下文空间上形式化可逆上下文驱逐，将上下文熵与复活概率联系起来"
+    ],
+    "faq": {
+     "problem": "提出 Blast Radius，一个预测性内存管理层，通过估算 prompt 的影响范围来减少 Agentic Coding 中的 token 浪费，在 7 个 OpenAI 模型上减少 17-26% 的 token 消耗。",
+     "mechanism": "在 agentic coding 系统的底层添加 Blast Radius 内存管理层，决定哪些记录应该\"掩埋\"以及传入 prompt 能影响代码库多深。",
+     "agentChange": "在 agentic coding 系统的底层添加 Blast Radius 内存管理层，决定哪些记录应该\"掩埋\"以及传入 prompt 能影响代码库多深。",
+     "support": "跨 7 个 OpenAI 模型，token 消耗减少 17-26%，测试策略中溢出率最低，且保持字节精确可逆。450 个被掩埋的 body 中 378 个是重复死事务，零个被召回。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "Agentic Coding（如 Devin、Cursor）的 token 成本是主要瓶颈，Blast Radius 从内存管理的角度提供了有效的成本控制方案。"
+   }
+  },
+  {
+   "id": "2608.11167",
+   "version": 1,
+   "title": "MultiModal Code-Switching: Interleaving Visual Objects into Language for Explicit Object-Level Alignment",
+   "abstract": "受语言中 code-switching 启发，提出将视觉对象嵌入文本序列的多模态预训练范式，用 50K 样本匹配 600K 图像-文本对模型的性能。",
+   "authors": [],
+   "published": "2026-08-12T04:00:00.000Z",
+   "updated": "2026-08-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cs.RO"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.11167",
+   "pdf": "https://arxiv.org/pdf/2608.11167",
+   "announceType": "new",
+   "summary": "受语言中 code-switching 启发，提出将视觉对象嵌入文本序列的多模态预训练范式，用 50K 样本匹配 600K 图像-文本对模型的性能。",
+   "topic": "多模态 / Multimodal",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.11167"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "揭示了当前 MLLM 预训练中图像级对齐的根本缺陷，提供了更细粒度、更高效的多模态对齐方案。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "对象级对齐 vs 图像级对齐：现有 MLLM 用全局图像表征映射到文本描述，存在引用歧义——模型难以从全局表征推断多个视觉对象与文本实体的对应关系"
+   ],
+   "innovations": [
+    "多模态 code-switching：用对应的视觉对象替换文本实体，强制局部视觉-语言对齐",
+    "高效数据合成管道：自动生成 773K 样本，带有精确的对象-实体对应关系"
+   ],
+   "method": "在预训练数据中将文本实体替换为对应的视觉对象 embedding，训练模型学习对象级别的跨模态对齐。",
+   "results": "*50K 样本即可匹配或超越在 600K 图像-文本对上训练的模型，数据效率提升 12 倍以上**。在多个模型规模上一致性改善视觉定位和感知能力。",
+   "value": "揭示了当前 MLLM 预训练中图像级对齐的根本缺陷，提供了更细粒度、更高效的多模态对齐方案。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "对象级对齐 vs 图像级对齐：现有 MLLM 用全局图像表征映射到文本描述，存在引用歧义——模型难以从全局表征推断多个视觉对象与文本实体的对应关系",
+    "agentChange": "在预训练数据中将文本实体替换为对应的视觉对象 embedding，训练模型学习对象级别的跨模态对齐。",
+    "selfEvolution": null,
+    "evidence": [
+     "*50K 样本即可匹配或超越在 600K 图像-文本对上训练的模型，数据效率提升 12 倍以上**。在多个模型规模上一致性改善视觉定位和感知能力。",
+     "高效数据合成管道：自动生成 773K 样本，带有精确的对象-实体对应关系"
+    ],
+    "faq": {
+     "problem": "受语言中 code-switching 启发，提出将视觉对象嵌入文本序列的多模态预训练范式，用 50K 样本匹配 600K 图像-文本对模型的性能。",
+     "mechanism": "在预训练数据中将文本实体替换为对应的视觉对象 embedding，训练模型学习对象级别的跨模态对齐。",
+     "agentChange": "在预训练数据中将文本实体替换为对应的视觉对象 embedding，训练模型学习对象级别的跨模态对齐。",
+     "support": "*50K 样本即可匹配或超越在 600K 图像-文本对上训练的模型，数据效率提升 12 倍以上**。在多个模型规模上一致性改善视觉定位和感知能力。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "揭示了当前 MLLM 预训练中图像级对齐的根本缺陷，提供了更细粒度、更高效的多模态对齐方案。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-08-10",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-08-10 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-08-12T04:00:00.000Z",
+ "totalMatched": 60,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 60
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-08-12",
+ "historical": true
+}

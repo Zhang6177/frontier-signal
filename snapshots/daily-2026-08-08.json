@@ -1,0 +1,1003 @@
+{
+ "papers": [
+  {
+   "id": "2608.06150",
+   "version": 1,
+   "title": "CogVis: Must Open-Vocabulary Change Detection Perceive the Scene Anew for Every Query?",
+   "abstract": "提出了一种认知记忆引导的开放词汇变化检测框架 CogVis，将变化检测重构为\"感知-记忆-验证\"三段式范式，在所有 7 个数据集上达到 SOTA。",
+   "authors": [],
+   "published": "2026-08-08T04:00:00.000Z",
+   "updated": "2026-08-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.06150",
+   "pdf": "https://arxiv.org/pdf/2608.06150",
+   "announceType": "new",
+   "summary": "提出了一种认知记忆引导的开放词汇变化检测框架 CogVis，将变化检测重构为\"感知-记忆-验证\"三段式范式，在所有 7 个数据集上达到 SOTA。",
+   "topic": "遥感 / 地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06150"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "开放词汇变化检测是遥感地球监测的核心技术。CogVis 的\"感知一次、多次使用\"机制显著降低了计算冗余，对实际部署意义重大。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "感知-记忆-验证范式: 受人类视觉变化感知启发，将 OVCD 拆解为三个解耦模块，避免了现有方法中时序感知、语义判别和区域验证的纠缠"
+   ],
+   "innovations": [
+    "Scene Change Perceptron (SCP): 从冻结的双时相特征中提取可复用的、类别无关的变化先验，将时序证据与语义类别决策解耦——不同查询无需重复感知同一场景变化",
+    "Semantic Memory Calibrator (SMC): 动态估计图像-查询特定的决策阈值，补偿类别依赖的分数偏移",
+    "Adaptive Region Filter (ARF): 使用学习到的语义、时序和结构可靠性过滤连通候选区域"
+   ],
+   "method": "先通过 SCP 提取类别无关的变化先验，再用 SMC 动态校准分类阈值，最后通过 ARF 过滤低可靠候选区域。",
+   "results": "在 7 个基准数据集（语义变化检测、二值变化定位、建筑损伤评估）上全面达到 SOTA；通过共享场景级变化感知，推理吞吐量提升 28.50%。",
+   "value": "开放词汇变化检测是遥感地球监测的核心技术。CogVis 的\"感知一次、多次使用\"机制显著降低了计算冗余，对实际部署意义重大。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "感知-记忆-验证范式: 受人类视觉变化感知启发，将 OVCD 拆解为三个解耦模块，避免了现有方法中时序感知、语义判别和区域验证的纠缠",
+    "agentChange": "先通过 SCP 提取类别无关的变化先验，再用 SMC 动态校准分类阈值，最后通过 ARF 过滤低可靠候选区域。",
+    "selfEvolution": null,
+    "evidence": [
+     "在 7 个基准数据集（语义变化检测、二值变化定位、建筑损伤评估）上全面达到 SOTA；通过共享场景级变化感知，推理吞吐量提升 28.50%。",
+     "Semantic Memory Calibrator (SMC): 动态估计图像-查询特定的决策阈值，补偿类别依赖的分数偏移",
+     "Adaptive Region Filter (ARF): 使用学习到的语义、时序和结构可靠性过滤连通候选区域"
+    ],
+    "faq": {
+     "problem": "提出了一种认知记忆引导的开放词汇变化检测框架 CogVis，将变化检测重构为\"感知-记忆-验证\"三段式范式，在所有 7 个数据集上达到 SOTA。",
+     "mechanism": "先通过 SCP 提取类别无关的变化先验，再用 SMC 动态校准分类阈值，最后通过 ARF 过滤低可靠候选区域。",
+     "agentChange": "先通过 SCP 提取类别无关的变化先验，再用 SMC 动态校准分类阈值，最后通过 ARF 过滤低可靠候选区域。",
+     "support": "在 7 个基准数据集（语义变化检测、二值变化定位、建筑损伤评估）上全面达到 SOTA；通过共享场景级变化感知，推理吞吐量提升 28.50%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "开放词汇变化检测是遥感地球监测的核心技术。CogVis 的\"感知一次、多次使用\"机制显著降低了计算冗余，对实际部署意义重大。"
+   }
+  },
+  {
+   "id": "2608.06243",
+   "version": 1,
+   "title": "DASH: Divergence-Adaptive Supervision Horizons for On-Policy Self-Distillation of Reasoning Models",
+   "abstract": "提出 DASH 方法，根据局部偏差的演化动态调整 token 级监督权重，在推理模型自蒸馏中取得全面提升且无需额外前向传播。",
+   "authors": [],
+   "published": "2026-08-08T04:00:00.000Z",
+   "updated": "2026-08-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.06243",
+   "pdf": "https://arxiv.org/pdf/2608.06243",
+   "announceType": "new",
+   "summary": "提出 DASH 方法，根据局部偏差的演化动态调整 token 级监督权重，在推理模型自蒸馏中取得全面提升且无需额外前向传播。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06243"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "RLVR + OPSD 是当前推理模型训练的主流范式。DASH 在不增加任何计算成本的前提下改进了偏差利用效率，具有即插即用的部署价值。代码: https://github.com/DBtxy/DASH-OPSD",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "发现标准 OPSD 的时序利用不足: 标准 OPSD 对所有局部偏差赋予相同系数，无法区分不同偏差历史下的相同偏差幅度"
+   ],
+   "innovations": [
+    "偏差自适应传播门: 将每个局部蒸馏信号与序列级均值的差距映射为自适应传播门，控制多步向后聚合",
+    "零额外计算开销: DASH 复用 OPSD 已计算的教师和学生分布，无需额外的教师或学生前向传播"
+   ],
+   "method": "计算局部蒸馏信号与序列均值的差距 → 映射为传播门 → 控制多步向后聚合 → 自适应调整 token 级监督权重。",
+   "results": "在 3 个数学推理基准上、3 个模型规模下，DASH 均优于标准 OPSD 对照实验。",
+   "value": "RLVR + OPSD 是当前推理模型训练的主流范式。DASH 在不增加任何计算成本的前提下改进了偏差利用效率，具有即插即用的部署价值。代码: https://github.com/DBtxy/DASH-OPSD",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "发现标准 OPSD 的时序利用不足: 标准 OPSD 对所有局部偏差赋予相同系数，无法区分不同偏差历史下的相同偏差幅度",
+    "agentChange": "计算局部蒸馏信号与序列均值的差距 → 映射为传播门 → 控制多步向后聚合 → 自适应调整 token 级监督权重。",
+    "selfEvolution": null,
+    "evidence": [
+     "在 3 个数学推理基准上、3 个模型规模下，DASH 均优于标准 OPSD 对照实验。",
+     "零额外计算开销: DASH 复用 OPSD 已计算的教师和学生分布，无需额外的教师或学生前向传播"
+    ],
+    "faq": {
+     "problem": "提出 DASH 方法，根据局部偏差的演化动态调整 token 级监督权重，在推理模型自蒸馏中取得全面提升且无需额外前向传播。",
+     "mechanism": "计算局部蒸馏信号与序列均值的差距 → 映射为传播门 → 控制多步向后聚合 → 自适应调整 token 级监督权重。",
+     "agentChange": "计算局部蒸馏信号与序列均值的差距 → 映射为传播门 → 控制多步向后聚合 → 自适应调整 token 级监督权重。",
+     "support": "在 3 个数学推理基准上、3 个模型规模下，DASH 均优于标准 OPSD 对照实验。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "RLVR + OPSD 是当前推理模型训练的主流范式。DASH 在不增加任何计算成本的前提下改进了偏差利用效率，具有即插即用的部署价值。代码: https://github.com/DBtxy/DASH-OPSD"
+   }
+  },
+  {
+   "id": "2608.06310",
+   "version": 1,
+   "title": "RRC: Unlocking Generative Reward Models in LLM Reinforcement Learning via Ranking-Based Reward Construction",
+   "abstract": "发现生成式奖励模型在 RL 中潜力未释放的根源是\"比较式建模 vs 标量打分\"的范式错配，提出基于排序的奖励构建方法 RRC。",
+   "authors": [],
+   "published": "2026-08-08T04:00:00.000Z",
+   "updated": "2026-08-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.06310",
+   "pdf": "https://arxiv.org/pdf/2608.06310",
+   "announceType": "new",
+   "summary": "发现生成式奖励模型在 RL 中潜力未释放的根源是\"比较式建模 vs 标量打分\"的范式错配，提出基于排序的奖励构建方法 RRC。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06310"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "生成式奖励模型是奖励建模的前沿方向，RRC 释放了其在 RL 训练中的潜力。代码: https://github.com/wangclnlp/RRC",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "诊断根因: 生成式奖励模型擅长比较排序，但现有 RL 算法采用标量打分范式，导致信号利用不充分"
+   ],
+   "innovations": [
+    "自竞争排序 (self-competitive ranking): 利用采样响应之间的相互比较构建奖励信号",
+    "锚点引导排序 (anchor-guided ranking): 用小量参考响应实现可扩展的排序奖励构建"
+   ],
+   "method": "将生成式奖励模型的比较偏好通过排序转化为标量奖励信号，桥接比较式模型与标量 RL 算法之间的鸿沟。",
+   "results": "在开放式对话和推理基准上均取得显著提升，一致优于现有奖励构建方法。",
+   "value": "生成式奖励模型是奖励建模的前沿方向，RRC 释放了其在 RL 训练中的潜力。代码: https://github.com/wangclnlp/RRC",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "诊断根因: 生成式奖励模型擅长比较排序，但现有 RL 算法采用标量打分范式，导致信号利用不充分",
+    "agentChange": "将生成式奖励模型的比较偏好通过排序转化为标量奖励信号，桥接比较式模型与标量 RL 算法之间的鸿沟。",
+    "selfEvolution": null,
+    "evidence": [
+     "在开放式对话和推理基准上均取得显著提升，一致优于现有奖励构建方法。",
+     "锚点引导排序 (anchor-guided ranking): 用小量参考响应实现可扩展的排序奖励构建"
+    ],
+    "faq": {
+     "problem": "发现生成式奖励模型在 RL 中潜力未释放的根源是\"比较式建模 vs 标量打分\"的范式错配，提出基于排序的奖励构建方法 RRC。",
+     "mechanism": "将生成式奖励模型的比较偏好通过排序转化为标量奖励信号，桥接比较式模型与标量 RL 算法之间的鸿沟。",
+     "agentChange": "将生成式奖励模型的比较偏好通过排序转化为标量奖励信号，桥接比较式模型与标量 RL 算法之间的鸿沟。",
+     "support": "在开放式对话和推理基准上均取得显著提升，一致优于现有奖励构建方法。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "生成式奖励模型是奖励建模的前沿方向，RRC 释放了其在 RL 训练中的潜力。代码: https://github.com/wangclnlp/RRC"
+   }
+  },
+  {
+   "id": "2608.06296",
+   "version": 1,
+   "title": "U-OPSD: On-Policy Self-Distillation without Any Supervision",
+   "abstract": "提出完全无需外部监督的自蒸馏方法 U-OPSD，仅通过模型自身生成的内部一致性信号实现自我改进。",
+   "authors": [],
+   "published": "2026-08-08T04:00:00.000Z",
+   "updated": "2026-08-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.06296",
+   "pdf": "https://arxiv.org/pdf/2608.06296",
+   "announceType": "new",
+   "summary": "提出完全无需外部监督的自蒸馏方法 U-OPSD，仅通过模型自身生成的内部一致性信号实现自我改进。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06296"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "消除了自蒸馏对任何外部监督的依赖，使 LLM 能够通过自身生成的内部一致性信号实现真正的自我进化。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "真正的\"自\"蒸馏: 完全不依赖 ground-truth、环境反馈或更大模型的指导"
+   ],
+   "innovations": [
+    "多数投票伪解构造: 采样多个 rollout，在自一致性阈值下通过多数投票构建伪解",
+    "最短伪解 + 最长错误前缀蒸馏: 条件化最短伪解的教师分布蒸馏到模型最长错误补全的前缀，精确修正模型\"自信地犯错\"的位置"
+   ],
+   "method": "多 rollout 采样 → 多数投票构建伪解 → 以最短伪解为教师，蒸馏至最长错误补全的前缀。",
+   "results": "Qwen3 非思考模式: 4B 提升 8.5%，8B 提升 10.7% - 优于 OPSD: 4B 平均 +3.2%，8B 平均 +2.3% - 思考模式下与 OPSD 持平，优于 GRPO +0.7% ~ +1.1% - 测试基准: AIME24, AIME25, HMMT25, MATH500, AMC23",
+   "value": "消除了自蒸馏对任何外部监督的依赖，使 LLM 能够通过自身生成的内部一致性信号实现真正的自我进化。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "真正的\"自\"蒸馏: 完全不依赖 ground-truth、环境反馈或更大模型的指导",
+    "agentChange": "多 rollout 采样 → 多数投票构建伪解 → 以最短伪解为教师，蒸馏至最长错误补全的前缀。",
+    "selfEvolution": null,
+    "evidence": [
+     "Qwen3 非思考模式: 4B 提升 8.5%，8B 提升 10.7% - 优于 OPSD: 4B 平均 +3.2%，8B 平均 +2.3% - 思考模式下与 OPSD 持平，优于 GRPO +0.7% ~ +1.1% - 测试基准: AIME24, AIME25, HMMT25, MATH500, AMC23",
+     "最短伪解 + 最长错误前缀蒸馏: 条件化最短伪解的教师分布蒸馏到模型最长错误补全的前缀，精确修正模型\"自信地犯错\"的位置"
+    ],
+    "faq": {
+     "problem": "提出完全无需外部监督的自蒸馏方法 U-OPSD，仅通过模型自身生成的内部一致性信号实现自我改进。",
+     "mechanism": "多 rollout 采样 → 多数投票构建伪解 → 以最短伪解为教师，蒸馏至最长错误补全的前缀。",
+     "agentChange": "多 rollout 采样 → 多数投票构建伪解 → 以最短伪解为教师，蒸馏至最长错误补全的前缀。",
+     "support": "Qwen3 非思考模式: 4B 提升 8.5%，8B 提升 10.7% - 优于 OPSD: 4B 平均 +3.2%，8B 平均 +2.3% - 思考模式下与 OPSD 持平，优于 GRPO +0.7% ~ +1.1% - 测试基准: AIME24, AIME25, HMMT25, MATH500, AMC23",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "消除了自蒸馏对任何外部监督的依赖，使 LLM 能够通过自身生成的内部一致性信号实现真正的自我进化。"
+   }
+  },
+  {
+   "id": "2608.06377",
+   "version": 1,
+   "title": "SCOPE: Learning When to Trust via Selective Context Preference Optimization",
+   "abstract": "提出选择性信任框架 SCOPE，训练 LLM 在误导性上下文前保持抵抗的同时保留对有用上下文的信任。",
+   "authors": [],
+   "published": "2026-08-08T04:00:00.000Z",
+   "updated": "2026-08-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.06377",
+   "pdf": "https://arxiv.org/pdf/2608.06377",
+   "announceType": "new",
+   "summary": "提出选择性信任框架 SCOPE，训练 LLM 在误导性上下文前保持抵抗的同时保留对有用上下文的信任。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06377"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "提出了评估 LLM 上下文鲁棒性的新视角——不应只测\"抵抗能力\"，而应测\"选择性信任能力\"。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "选择性信任问题定义: 指出\"抵抗所有上下文\"的防御策略会导致模型在有价值的上下文中变得无用"
+   ],
+   "innovations": [
+    "MIST 基准: 人工标注的基准，将每个推理项渲染为四种匹配条件（干净、误导、正确上下文、无关上下文）",
+    "SC2W 指标: 配对指标，衡量误导性信号将干净正确答案翻转为错误的频率",
+    "SCOPE 方法: 挖掘\"干净-正确 / 误导-错误\"失败样本，在四种条件上均衡的配对上优化 DPO 目标"
+   ],
+   "method": "构建四类条件配对 → 挖掘失败样本 → 使用 DPO 在均衡配对上进行偏好优化。",
+   "results": "在流行开源模型上显著降低 SC2W 分数，同时在干净、正确或无关上下文中保持准确率。",
+   "value": "提出了评估 LLM 上下文鲁棒性的新视角——不应只测\"抵抗能力\"，而应测\"选择性信任能力\"。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "选择性信任问题定义: 指出\"抵抗所有上下文\"的防御策略会导致模型在有价值的上下文中变得无用",
+    "agentChange": "构建四类条件配对 → 挖掘失败样本 → 使用 DPO 在均衡配对上进行偏好优化。",
+    "selfEvolution": null,
+    "evidence": [
+     "在流行开源模型上显著降低 SC2W 分数，同时在干净、正确或无关上下文中保持准确率。",
+     "SC2W 指标: 配对指标，衡量误导性信号将干净正确答案翻转为错误的频率",
+     "SCOPE 方法: 挖掘\"干净-正确 / 误导-错误\"失败样本，在四种条件上均衡的配对上优化 DPO 目标"
+    ],
+    "faq": {
+     "problem": "提出选择性信任框架 SCOPE，训练 LLM 在误导性上下文前保持抵抗的同时保留对有用上下文的信任。",
+     "mechanism": "构建四类条件配对 → 挖掘失败样本 → 使用 DPO 在均衡配对上进行偏好优化。",
+     "agentChange": "构建四类条件配对 → 挖掘失败样本 → 使用 DPO 在均衡配对上进行偏好优化。",
+     "support": "在流行开源模型上显著降低 SC2W 分数，同时在干净、正确或无关上下文中保持准确率。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "提出了评估 LLM 上下文鲁棒性的新视角——不应只测\"抵抗能力\"，而应测\"选择性信任能力\"。"
+   }
+  },
+  {
+   "id": "2608.06240",
+   "version": 1,
+   "title": "PRISM: Distribution-Gated Flow Matching for Controllable Unpaired Image Translation",
+   "abstract": "提出 PRISM，用基于分布的逐特征门控替代全局控制信号，实现无需 GAN 的可控非配对图像翻译。",
+   "authors": [],
+   "published": "2026-08-08T04:00:00.000Z",
+   "updated": "2026-08-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.06240",
+   "pdf": "https://arxiv.org/pdf/2608.06240",
+   "announceType": "new",
+   "summary": "提出 PRISM，用基于分布的逐特征门控替代全局控制信号，实现无需 GAN 的可控非配对图像翻译。",
+   "topic": "计算机视觉 / CV",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06240"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为无配对图像翻译提供了精细粒度的可控方案，在生物医学影像翻译（如虚拟染色）中有实际临床应用价值。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "逐特征门控替代全局控制: 现有方法用单一全局噪声/引导值控制整个图像的保持/改变，PRISM 为每个特征学习独立的门控"
+   ],
+   "innovations": [
+    "分布距离先验: 门控的空间先验来源于源特征到目标特征分布的标准化距离——远离目标的特征被释放，与目标一致的特征被保留",
+    "门控同时控制初始化和传输时序: 同一门控机制控制潜在空间初始化和 ODE 积分过程中的传输时机",
+    "推理时可文本/检测器局部覆盖门控: 无需重新训练即可在推理时用文本或检测器局部覆盖门控"
+   ],
+   "method": "基于源-目标分布距离计算特征门 → 门控控制初始化混合和 ODE 传输 → 实现细粒度的保持/改变控制。",
+   "results": "在 5 个自然和生物医学基准（AFHQ cat→dog、CelebA-HQ 外观翻译、day→night 重光照、虚拟染色、乳腺癌冰冻→永久组织病理学）上，PRISM 在 4/5 基准上达到最佳 Inception FID 和 KID，在组织病理学上核计数比最接近理想值。",
+   "value": "为无配对图像翻译提供了精细粒度的可控方案，在生物医学影像翻译（如虚拟染色）中有实际临床应用价值。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "逐特征门控替代全局控制: 现有方法用单一全局噪声/引导值控制整个图像的保持/改变，PRISM 为每个特征学习独立的门控",
+    "agentChange": "基于源-目标分布距离计算特征门 → 门控控制初始化混合和 ODE 传输 → 实现细粒度的保持/改变控制。",
+    "selfEvolution": null,
+    "evidence": [
+     "在 5 个自然和生物医学基准（AFHQ cat→dog、CelebA-HQ 外观翻译、day→night 重光照、虚拟染色、乳腺癌冰冻→永久组织病理学）上，PRISM 在 4/5 基准上达到最佳 Inception FID 和 KID，在组织病理学上核计数比最接近理想值。",
+     "门控同时控制初始化和传输时序: 同一门控机制控制潜在空间初始化和 ODE 积分过程中的传输时机",
+     "推理时可文本/检测器局部覆盖门控: 无需重新训练即可在推理时用文本或检测器局部覆盖门控"
+    ],
+    "faq": {
+     "problem": "提出 PRISM，用基于分布的逐特征门控替代全局控制信号，实现无需 GAN 的可控非配对图像翻译。",
+     "mechanism": "基于源-目标分布距离计算特征门 → 门控控制初始化混合和 ODE 传输 → 实现细粒度的保持/改变控制。",
+     "agentChange": "基于源-目标分布距离计算特征门 → 门控控制初始化混合和 ODE 传输 → 实现细粒度的保持/改变控制。",
+     "support": "在 5 个自然和生物医学基准（AFHQ cat→dog、CelebA-HQ 外观翻译、day→night 重光照、虚拟染色、乳腺癌冰冻→永久组织病理学）上，PRISM 在 4/5 基准上达到最佳 Inception FID 和 KID，在组织病理学上核计数比最接近理想值。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "为无配对图像翻译提供了精细粒度的可控方案，在生物医学影像翻译（如虚拟染色）中有实际临床应用价值。"
+   }
+  },
+  {
+   "id": "2608.06161",
+   "version": 1,
+   "title": "iARCS: Iterative Agentic RL for Controllable 3D Scene Generation",
+   "abstract": "提出 iARCS，通过迭代式智能体强化学习让预训练 3D 场景生成器适配自然语言任务约束。",
+   "authors": [],
+   "published": "2026-08-08T04:00:00.000Z",
+   "updated": "2026-08-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.06161",
+   "pdf": "https://arxiv.org/pdf/2608.06161",
+   "announceType": "new",
+   "summary": "提出 iARCS，通过迭代式智能体强化学习让预训练 3D 场景生成器适配自然语言任务约束。",
+   "topic": "计算机视觉 / CV",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06161"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为具身 AI 和计算机视觉提供了功能合规的合成 3D 数据源，缩小了合成数据与实际训练需求之间的差距。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "解决感知真实 vs 功能约束的矛盾: 现有生成器优化感知真实度但不满足任务关键功能约束（可达性、遍历性、空间规则合规性）"
+   ],
+   "innovations": [
+    "两阶段策略: 通用奖励预训练 + 任务特定微调，先用通用奖励学习基础场景生成能力，再用任务特定约束精调",
+    "迭代式智能体 RL: 将场景生成过程建模为智能体与环境的迭代交互，通过 RL 逐步优化场景满足自然语言描述的任务需求"
+   ],
+   "method": "预训练阶段学习通用场景奖励 → 迭代式 RL 微调 → 每个迭代步生成-评估-更新。",
+   "results": "生成的 3D 场景在下游任务关键约束（可达性、遍历性、空间规则）上显著优于现有方法。",
+   "value": "为具身 AI 和计算机视觉提供了功能合规的合成 3D 数据源，缩小了合成数据与实际训练需求之间的差距。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "解决感知真实 vs 功能约束的矛盾: 现有生成器优化感知真实度但不满足任务关键功能约束（可达性、遍历性、空间规则合规性）",
+    "agentChange": "预训练阶段学习通用场景奖励 → 迭代式 RL 微调 → 每个迭代步生成-评估-更新。",
+    "selfEvolution": null,
+    "evidence": [
+     "生成的 3D 场景在下游任务关键约束（可达性、遍历性、空间规则）上显著优于现有方法。",
+     "迭代式智能体 RL: 将场景生成过程建模为智能体与环境的迭代交互，通过 RL 逐步优化场景满足自然语言描述的任务需求"
+    ],
+    "faq": {
+     "problem": "提出 iARCS，通过迭代式智能体强化学习让预训练 3D 场景生成器适配自然语言任务约束。",
+     "mechanism": "预训练阶段学习通用场景奖励 → 迭代式 RL 微调 → 每个迭代步生成-评估-更新。",
+     "agentChange": "预训练阶段学习通用场景奖励 → 迭代式 RL 微调 → 每个迭代步生成-评估-更新。",
+     "support": "生成的 3D 场景在下游任务关键约束（可达性、遍历性、空间规则）上显著优于现有方法。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为具身 AI 和计算机视觉提供了功能合规的合成 3D 数据源，缩小了合成数据与实际训练需求之间的差距。"
+   }
+  },
+  {
+   "id": "2608.05000",
+   "version": 1,
+   "title": "Towards Physics of Multimodal Pretraining: Knowledge Flow, Modality Synergy, Early Unification, and Recipes",
+   "abstract": "系统性地探索多模态预训练的\"物理学\"，揭示知识流动、模态协同、早期统一四大核心发现，并在 13.5B MoE + 2T tokens 规模验证。",
+   "authors": [],
+   "published": "2026-08-08T04:00:00.000Z",
+   "updated": "2026-08-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.05000",
+   "pdf": "https://arxiv.org/pdf/2608.05000",
+   "announceType": "new",
+   "summary": "系统性地探索多模态预训练的\"物理学\"，揭示知识流动、模态协同、早期统一四大核心发现，并在 13.5B MoE + 2T tokens 规模验证。",
+   "topic": "多模态 / 基础研究",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.05000"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为原生统一的多模态预训练提供了系统性的理论指导和实践配方，是该领域少有的大规模实证基础研究。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "知识流动解耦: 分离语言、视觉理解、视觉生成在模态间的知识转移路径，揭示不同的影响模式和不对称性"
+   ],
+   "innovations": [
+    "协同 vs 竞争机制: 数据\"复杂度\"决定了模态是协同还是竞争；发现促进协同的架构选择（共享注意力 + 模态特定 FFN）",
+    "视觉惰性现象: 延迟整合导致模型依赖语言先验，证明早期统一训练优于晚期对齐或顺序训练",
+    "高效预训练配方: 仅用 5% 计算预算即可实现强大的生成性能"
+   ],
+   "method": "在合成和大规模真实数据集上进行受控实验 → 提炼核心规律 → 在 13.5B MoE / 2T tokens 规模上验证。",
+   "results": "四大核心发现在 13.5B MoE 模型的大规模实验中全部得到验证，5% 计算预算的配方实现竞争性生成性能。",
+   "value": "为原生统一的多模态预训练提供了系统性的理论指导和实践配方，是该领域少有的大规模实证基础研究。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "知识流动解耦: 分离语言、视觉理解、视觉生成在模态间的知识转移路径，揭示不同的影响模式和不对称性",
+    "agentChange": "在合成和大规模真实数据集上进行受控实验 → 提炼核心规律 → 在 13.5B MoE / 2T tokens 规模上验证。",
+    "selfEvolution": null,
+    "evidence": [
+     "四大核心发现在 13.5B MoE 模型的大规模实验中全部得到验证，5% 计算预算的配方实现竞争性生成性能。",
+     "视觉惰性现象: 延迟整合导致模型依赖语言先验，证明早期统一训练优于晚期对齐或顺序训练",
+     "高效预训练配方: 仅用 5% 计算预算即可实现强大的生成性能"
+    ],
+    "faq": {
+     "problem": "系统性地探索多模态预训练的\"物理学\"，揭示知识流动、模态协同、早期统一四大核心发现，并在 13.5B MoE + 2T tokens 规模验证。",
+     "mechanism": "在合成和大规模真实数据集上进行受控实验 → 提炼核心规律 → 在 13.5B MoE / 2T tokens 规模上验证。",
+     "agentChange": "在合成和大规模真实数据集上进行受控实验 → 提炼核心规律 → 在 13.5B MoE / 2T tokens 规模上验证。",
+     "support": "四大核心发现在 13.5B MoE 模型的大规模实验中全部得到验证，5% 计算预算的配方实现竞争性生成性能。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为原生统一的多模态预训练提供了系统性的理论指导和实践配方，是该领域少有的大规模实证基础研究。"
+   }
+  },
+  {
+   "id": "2608.06270",
+   "version": 1,
+   "title": "The Illusion of Visual Tool-Use: A Causal Audit of Thinking with Images",
+   "abstract": "通过因果审计发现\"视觉工具使用\"（crop-and-zoom）在大多数推理中并无因果效应，揭示了视觉工具使用的幻觉。",
+   "authors": [],
+   "published": "2026-08-08T04:00:00.000Z",
+   "updated": "2026-08-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.06270",
+   "pdf": "https://arxiv.org/pdf/2608.06270",
+   "announceType": "new",
+   "summary": "通过因果审计发现\"视觉工具使用\"（crop-and-zoom）在大多数推理中并无因果效应，揭示了视觉工具使用的幻觉。",
+   "topic": "多模态 / 基础研究",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06270"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "挑战了 MLLM 中流行的\"思考用图像\"范式，指出视觉工具使用在多数情况下是因果无效的。代码: https://github.com/OpenCausaLab/CauAudit",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "因果图建模: 首次将视觉工具使用建模为因果图，分离观察介导路径和行动诱导的捷径"
+   ],
+   "innovations": [
+    "三级干预诊断: 策略级（工具使用 vs 直接推理）、轨迹级（损坏所有观察）、步骤级（反事实替换单个观察）",
+    "Visual Evidence Gain 指标: 步骤级估计量，隔离每个返回观察的贡献",
+    "发现两种失败模式: \"Looking Without Planning\"（观察有信息但调用计划不连贯）和\"Calling Without Looking\"（返回的观察对答案无因果影响）"
+   ],
+   "method": "构建因果图 → 三级干预实验 → 分解策略级精度增益 → 定位校准少数群体。",
+   "results": "在 6 个代表性模型和 5 个细粒度感知基准上，发现聚合精度增益集中在少数\"校准\" rollout 中——大多数 rollout 的视觉工具使用并无因果有效性。",
+   "value": "挑战了 MLLM 中流行的\"思考用图像\"范式，指出视觉工具使用在多数情况下是因果无效的。代码: https://github.com/OpenCausaLab/CauAudit",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "因果图建模: 首次将视觉工具使用建模为因果图，分离观察介导路径和行动诱导的捷径",
+    "agentChange": "构建因果图 → 三级干预实验 → 分解策略级精度增益 → 定位校准少数群体。",
+    "selfEvolution": null,
+    "evidence": [
+     "在 6 个代表性模型和 5 个细粒度感知基准上，发现聚合精度增益集中在少数\"校准\" rollout 中——大多数 rollout 的视觉工具使用并无因果有效性。",
+     "Visual Evidence Gain 指标: 步骤级估计量，隔离每个返回观察的贡献",
+     "发现两种失败模式: \"Looking Without Planning\"（观察有信息但调用计划不连贯）和\"Calling Without Looking\"（返回的观察对答案无因果影响）"
+    ],
+    "faq": {
+     "problem": "通过因果审计发现\"视觉工具使用\"（crop-and-zoom）在大多数推理中并无因果效应，揭示了视觉工具使用的幻觉。",
+     "mechanism": "构建因果图 → 三级干预实验 → 分解策略级精度增益 → 定位校准少数群体。",
+     "agentChange": "构建因果图 → 三级干预实验 → 分解策略级精度增益 → 定位校准少数群体。",
+     "support": "在 6 个代表性模型和 5 个细粒度感知基准上，发现聚合精度增益集中在少数\"校准\" rollout 中——大多数 rollout 的视觉工具使用并无因果有效性。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "挑战了 MLLM 中流行的\"思考用图像\"范式，指出视觉工具使用在多数情况下是因果无效的。代码: https://github.com/OpenCausaLab/CauAudit"
+   }
+  },
+  {
+   "id": "2608.06291",
+   "version": 1,
+   "title": "BaKron: Efficient Quantization with Kronecker-Factored Hessians",
+   "abstract": "提出 BaKron 量化算法，通过 Kronecker 分解的 Hessian 近似 + 反对角优化加速 GPTQ 风格的自适应量化。",
+   "authors": [],
+   "published": "2026-08-08T04:00:00.000Z",
+   "updated": "2026-08-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.06291",
+   "pdf": "https://arxiv.org/pdf/2608.06291",
+   "announceType": "new",
+   "summary": "提出 BaKron 量化算法，通过 Kronecker 分解的 Hessian 近似 + 反对角优化加速 GPTQ 风格的自适应量化。",
+   "topic": "推理效率 / 量化 / 评估",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06291"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为大模型量化部署提供了更快的后端，在推理成本敏感的场景中（如边缘部署）有直接价值。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "双侧自适应舍入: GPTQ 仅利用输入激活的单侧信息，BaKron 通过 Kronecker 分解的 Hessian 捕捉输出坐标间的相关性"
+   ],
+   "innovations": [
+    "反对角优化: 在矢量化权重域中通过反对角遍历替代直接 GPTQ，大幅降低计算复杂度",
+    "兼容 BoA/YAQA 框架: 在 BoA 和 YAQA 的双侧自适应舍入公式基础上构建高效求解器"
+   ],
+   "method": "Kronecker 分解 Hessian → 反对角优化 + 双侧自适应舍入 → 高效量化求解。",
+   "results": "在保持量化精度的同时显著加速量化过程，适用于 GPTQ 风格的量化算法族。",
+   "value": "为大模型量化部署提供了更快的后端，在推理成本敏感的场景中（如边缘部署）有直接价值。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "双侧自适应舍入: GPTQ 仅利用输入激活的单侧信息，BaKron 通过 Kronecker 分解的 Hessian 捕捉输出坐标间的相关性",
+    "agentChange": "Kronecker 分解 Hessian → 反对角优化 + 双侧自适应舍入 → 高效量化求解。",
+    "selfEvolution": null,
+    "evidence": [
+     "在保持量化精度的同时显著加速量化过程，适用于 GPTQ 风格的量化算法族。",
+     "兼容 BoA/YAQA 框架: 在 BoA 和 YAQA 的双侧自适应舍入公式基础上构建高效求解器"
+    ],
+    "faq": {
+     "problem": "提出 BaKron 量化算法，通过 Kronecker 分解的 Hessian 近似 + 反对角优化加速 GPTQ 风格的自适应量化。",
+     "mechanism": "Kronecker 分解 Hessian → 反对角优化 + 双侧自适应舍入 → 高效量化求解。",
+     "agentChange": "Kronecker 分解 Hessian → 反对角优化 + 双侧自适应舍入 → 高效量化求解。",
+     "support": "在保持量化精度的同时显著加速量化过程，适用于 GPTQ 风格的量化算法族。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为大模型量化部署提供了更快的后端，在推理成本敏感的场景中（如边缘部署）有直接价值。"
+   }
+  },
+  {
+   "id": "2608.06362",
+   "version": 1,
+   "title": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping",
+   "abstract": "提出 AIVAT 评估框架，通过 anytime-valid 统计保证在不完全信息游戏中实现 74 倍评估成本降低。",
+   "authors": [],
+   "published": "2026-08-08T04:00:00.000Z",
+   "updated": "2026-08-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.06362",
+   "pdf": "https://arxiv.org/pdf/2608.06362",
+   "announceType": "new",
+   "summary": "提出 AIVAT 评估框架，通过 anytime-valid 统计保证在不完全信息游戏中实现 74 倍评估成本降低。",
+   "topic": "推理效率 / 量化 / 评估",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06362"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "智能体评估是 RL 和 LLM agent 开发中的核心瓶颈，74 倍成本降低对实际开发管线具有巨大经济价值。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "Anytime-valid 停止: 在证据充分时立即停止评估，同时保证置信区间的有效性（传统可选停止会破坏置信水平）"
+   ],
+   "innovations": [
+    "动作信息方差缩减: AIVAT 利用游戏中的动作信息降低评估方差，减少所需游戏局数",
+    "固定预算评估的问题诊断: 固定预算要么在结果确定后继续浪费，要么在区分前就停止"
+   ],
+   "method": "构建动作信息感知的方差缩减估计量 → 结合 anytime-valid 统计推断 → 动态停止。",
+   "results": "在不完全信息游戏中实现 74x 评估成本降低。",
+   "value": "智能体评估是 RL 和 LLM agent 开发中的核心瓶颈，74 倍成本降低对实际开发管线具有巨大经济价值。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "Anytime-valid 停止: 在证据充分时立即停止评估，同时保证置信区间的有效性（传统可选停止会破坏置信水平）",
+    "agentChange": "构建动作信息感知的方差缩减估计量 → 结合 anytime-valid 统计推断 → 动态停止。",
+    "selfEvolution": null,
+    "evidence": [
+     "在不完全信息游戏中实现 74x 评估成本降低。",
+     "固定预算评估的问题诊断: 固定预算要么在结果确定后继续浪费，要么在区分前就停止"
+    ],
+    "faq": {
+     "problem": "提出 AIVAT 评估框架，通过 anytime-valid 统计保证在不完全信息游戏中实现 74 倍评估成本降低。",
+     "mechanism": "构建动作信息感知的方差缩减估计量 → 结合 anytime-valid 统计推断 → 动态停止。",
+     "agentChange": "构建动作信息感知的方差缩减估计量 → 结合 anytime-valid 统计推断 → 动态停止。",
+     "support": "在不完全信息游戏中实现 74x 评估成本降低。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "智能体评估是 RL 和 LLM agent 开发中的核心瓶颈，74 倍成本降低对实际开发管线具有巨大经济价值。"
+   }
+  },
+  {
+   "id": "2608.06305",
+   "version": 1,
+   "title": "Beyond Top-K: Replacing Black-Box Retrieval with Interpretable Agentic Operations",
+   "abstract": "指出传统 chunk-embed-topK 检索在金融/法规文档上存在结构性缺陷，提出可解释的智能体操作替代方案。",
+   "authors": [],
+   "published": "2026-08-08T04:00:00.000Z",
+   "updated": "2026-08-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.06305",
+   "pdf": "https://arxiv.org/pdf/2608.06305",
+   "announceType": "new",
+   "summary": "指出传统 chunk-embed-topK 检索在金融/法规文档上存在结构性缺陷，提出可解释的智能体操作替代方案。",
+   "topic": "推理效率 / 量化 / 评估",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06305"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为金融、法律等关键领域的文档 RAG 提供了更可靠的替代方案，这些问题对准确性的要求远超一般对话场景。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "结构性问题量化: 在 780 页政府财务报告中，86.8% 的内容行是表格行，数千个近似相同的数字竞争同一嵌入空间"
+   ],
+   "innovations": [
+    "单位继承问题: 一个数字从上方中位数 13 行的表头继承单位——chunk 边界切断这种关联导致语义丢失",
+    "可解释的智能体操作: 用可解释的操作（如表格理解、单元定位）替代黑盒 top-K 检索"
+   ],
+   "method": "诊断 chunk-embed-topK 的结构性失效模式 → 设计基于文档结构的智能体操作 → 可解释的检索替代方案。",
+   "results": "在长文档 RAG 场景（特别是金融/法规文档）上展示了传统方法的系统性缺陷，为结构化文档 RAG 提供新思路。",
+   "value": "为金融、法律等关键领域的文档 RAG 提供了更可靠的替代方案，这些问题对准确性的要求远超一般对话场景。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "结构性问题量化: 在 780 页政府财务报告中，86.8% 的内容行是表格行，数千个近似相同的数字竞争同一嵌入空间",
+    "agentChange": "诊断 chunk-embed-topK 的结构性失效模式 → 设计基于文档结构的智能体操作 → 可解释的检索替代方案。",
+    "selfEvolution": null,
+    "evidence": [
+     "在长文档 RAG 场景（特别是金融/法规文档）上展示了传统方法的系统性缺陷，为结构化文档 RAG 提供新思路。",
+     "可解释的智能体操作: 用可解释的操作（如表格理解、单元定位）替代黑盒 top-K 检索"
+    ],
+    "faq": {
+     "problem": "指出传统 chunk-embed-topK 检索在金融/法规文档上存在结构性缺陷，提出可解释的智能体操作替代方案。",
+     "mechanism": "诊断 chunk-embed-topK 的结构性失效模式 → 设计基于文档结构的智能体操作 → 可解释的检索替代方案。",
+     "agentChange": "诊断 chunk-embed-topK 的结构性失效模式 → 设计基于文档结构的智能体操作 → 可解释的检索替代方案。",
+     "support": "在长文档 RAG 场景（特别是金融/法规文档）上展示了传统方法的系统性缺陷，为结构化文档 RAG 提供新思路。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为金融、法律等关键领域的文档 RAG 提供了更可靠的替代方案，这些问题对准确性的要求远超一般对话场景。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-08-07",
+  "newCount": 9,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-08-07 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-08-08T04:00:00.000Z",
+ "totalMatched": 12,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 12
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-08-08",
+ "historical": true
+}

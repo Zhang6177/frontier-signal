@@ -1,0 +1,1041 @@
+{
+ "papers": [
+  {
+   "id": "2609.01289",
+   "version": 1,
+   "title": "Agentic Multimodal Models for Environmental Hyperspectral Unmixing",
+   "abstract": "LVLM智能体以光谱库+丰度图证据迭代精炼高光谱解混，多数据集超端到端法",
+   "authors": [],
+   "published": "2026-09-03T04:00:00.000Z",
+   "updated": "2026-09-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.01289",
+   "pdf": "https://arxiv.org/pdf/2609.01289",
+   "announceType": "new",
+   "summary": "LVLM智能体以光谱库+丰度图证据迭代精炼高光谱解混，多数据集超端到端法",
+   "topic": "遥感与高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.01289"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让工具型LLM智能体成为物理地学反演问题的实用模块",
+   "repository": null,
+   "motivation": "遥感混合像素分解中端元数、谱签名与丰度均先验未知",
+   "coreProblem": "模块化管线级联误差产生冗余端元，劣化谱签名与丰度图",
+   "contributions": [
+    "算法无关的LVLM驱动解混精炼框架（适配任意管线）",
+    "ReAct智能体：光谱库检索+丰度图可视化，合并/丢弃端元",
+    "三大解混基准系统评测"
+   ],
+   "innovations": [
+    "首次用LVLM智能体\"精炼\"而非\"替代\"物理约束解混管线",
+    "智能体作通用精炼模块，与底层数值算法完全解耦",
+    "光谱（库匹配）与空间（丰度分布）双证据协同决策"
+   ],
+   "method": "从初始分解出发，ReAct循环中交替调用光谱库检索与丰度图检查，对冗余端元执行合并/丢弃，每次更新后重估丰度",
+   "results": "24种管线配置中mSAD 22/24、rRMSE 23/24改善；NWHFC初始化下12个数据集-指标组合11项最佳，超CNN-AE/uDAS/R-CoNMF端到端法（参考配置mSAD 2.1 vs 确定性启发式2.7）",
+   "value": "让工具型LLM智能体成为物理地学反演问题的实用模块",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "算法无关的LVLM驱动解混精炼框架（适配任意管线）",
+    "agentChange": "从初始分解出发，ReAct循环中交替调用光谱库检索与丰度图检查，对冗余端元执行合并/丢弃，每次更新后重估丰度",
+    "selfEvolution": null,
+    "evidence": [
+     "24种管线配置中mSAD 22/24、rRMSE 23/24改善；NWHFC初始化下12个数据集-指标组合11项最佳，超CNN-AE/uDAS/R-CoNMF端到端法（参考配置mSAD 2.1 vs 确定性启发式2.7）",
+     "智能体作通用精炼模块，与底层数值算法完全解耦",
+     "光谱（库匹配）与空间（丰度分布）双证据协同决策"
+    ],
+    "faq": {
+     "problem": "LVLM智能体以光谱库+丰度图证据迭代精炼高光谱解混，多数据集超端到端法",
+     "mechanism": "从初始分解出发，ReAct循环中交替调用光谱库检索与丰度图检查，对冗余端元执行合并/丢弃，每次更新后重估丰度",
+     "agentChange": "从初始分解出发，ReAct循环中交替调用光谱库检索与丰度图检查，对冗余端元执行合并/丢弃，每次更新后重估丰度",
+     "support": "24种管线配置中mSAD 22/24、rRMSE 23/24改善；NWHFC初始化下12个数据集-指标组合11项最佳，超CNN-AE/uDAS/R-CoNMF端到端法（参考配置mSAD 2.1 vs 确定性启发式2.7）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "让工具型LLM智能体成为物理地学反演问题的实用模块"
+   }
+  },
+  {
+   "id": "2609.00814",
+   "version": 1,
+   "title": "RingMoClaw: An Experience-Inspired Multi-Agent Framework for Self-Evolving Research in Remote Sensing",
+   "abstract": "经验驱动自进化多智能体框架，自动化遥感模型优化的研究闭环",
+   "authors": [],
+   "published": "2026-09-03T04:00:00.000Z",
+   "updated": "2026-09-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.00814",
+   "pdf": "https://arxiv.org/pdf/2609.00814",
+   "announceType": "new",
+   "summary": "经验驱动自进化多智能体框架，自动化遥感模型优化的研究闭环",
+   "topic": "遥感与高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.00814"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "推动遥感智能体从任务执行走向自主科研迭代",
+   "repository": null,
+   "motivation": "遥感模型改进依赖人工试错，成本高且难复现",
+   "coreProblem": "现有地理空间智能体只做任务执行与编排，缺自主研究迭代",
+   "contributions": [
+    "RingMoClaw：研究分支+质控分支+双流动态经验总线",
+    "异构Critic分阶段评审，量化瓶颈并剪枝低效路径",
+    "检测/分类/分割/变化检测四任务自主迭代验证"
+   ],
+   "innovations": [
+    "把\"假设-实验-独立评审-经验沉淀\"完整研究闭环引入遥感",
+    "外部文献流+内部实验轨迹双流注入结构化策略搜索空间",
+    "评审评分联动经验选择与动态策略扩展/剪枝"
+   ],
+   "method": "研究分支生成策略并执行实验，Critic独立诊断打分，经验总线将检索知识与实验轨迹转为可复用经验回注搜索空间，形成闭环",
+   "results": "四任务自主迭代较基线：目标检测mAP50 +1.84%，其余三任务+1.79%~2.87%；收敛轮数较现有研究自动化框架少40%以上",
+   "value": "推动遥感智能体从任务执行走向自主科研迭代",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "RingMoClaw：研究分支+质控分支+双流动态经验总线",
+    "agentChange": "研究分支生成策略并执行实验，Critic独立诊断打分，经验总线将检索知识与实验轨迹转为可复用经验回注搜索空间，形成闭环",
+    "selfEvolution": null,
+    "evidence": [
+     "四任务自主迭代较基线：目标检测mAP50 +1.84%，其余三任务+1.79%~2.87%；收敛轮数较现有研究自动化框架少40%以上",
+     "外部文献流+内部实验轨迹双流注入结构化策略搜索空间",
+     "评审评分联动经验选择与动态策略扩展/剪枝"
+    ],
+    "faq": {
+     "problem": "经验驱动自进化多智能体框架，自动化遥感模型优化的研究闭环",
+     "mechanism": "研究分支生成策略并执行实验，Critic独立诊断打分，经验总线将检索知识与实验轨迹转为可复用经验回注搜索空间，形成闭环",
+     "agentChange": "研究分支生成策略并执行实验，Critic独立诊断打分，经验总线将检索知识与实验轨迹转为可复用经验回注搜索空间，形成闭环",
+     "support": "四任务自主迭代较基线：目标检测mAP50 +1.84%，其余三任务+1.79%~2.87%；收敛轮数较现有研究自动化框架少40%以上",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "推动遥感智能体从任务执行走向自主科研迭代"
+   }
+  },
+  {
+   "id": "2609.00875",
+   "version": 1,
+   "title": "FractalNet-Based Heterogeneous Federated Learning for Orbital Edge Intelligence in Satellite Mega-Constellations",
+   "abstract": "FractalNet拓扑原生异构联邦学习，按轨道层为星座分配模型深度",
+   "authors": [],
+   "published": "2026-09-03T04:00:00.000Z",
+   "updated": "2026-09-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.00875",
+   "pdf": "https://arxiv.org/pdf/2609.00875",
+   "announceType": "new",
+   "summary": "FractalNet拓扑原生异构联邦学习，按轨道层为星座分配模型深度",
+   "topic": "遥感与高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.00875"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为巨型星座在轨边缘智能提供可落地的学习架构",
+   "repository": null,
+   "motivation": "卫星SWaP-C差数量级，地面同质联邦学习假设失配",
+   "coreProblem": "标准FL假设各节点训练同一模型，浪费高算力节点、排除弱LEO",
+   "contributions": [
+    "FN-HFL：FractalNet路径长度绑定训练深度与聚合职责",
+    "形式化深度异构联邦优化（层参与掩码、时延/陈旧界）",
+    "定期池化：LEO 30分钟/MEO 6小时/GEO 24小时聚合节拍"
+   ],
+   "innovations": [
+    "把通信拓扑直接编入学习算法（路径长短=模型深浅）",
+    "三层轨道语义分工：LEO像素级热异常、MEO区域火线、GEO风险传播",
+    "聚合节拍与接触窗解耦，浅层梯度包(4.2MB)适配分钟级接触窗"
+   ],
+   "method": "调度器按SWaP-C状态、预测接触窗与层统计分配浅/中/深训练路径，层间缺失深度容忍聚合，微/中/宏三级智能体控制面治理在轨调度与异常升级",
+   "results": "模拟中星座：AUROC 0.891（FedAvg-full 0.863、HierFL 0.847），47轮达80%（对照78/89轮），每轮通信894MB（对照2847MB），90天退化仅1.5%（对照3.1%），深度定向投毒攻击成功率11.4%（对照41~44%）",
+   "value": "为巨型星座在轨边缘智能提供可落地的学习架构",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "FN-HFL：FractalNet路径长度绑定训练深度与聚合职责",
+    "agentChange": "调度器按SWaP-C状态、预测接触窗与层统计分配浅/中/深训练路径，层间缺失深度容忍聚合，微/中/宏三级智能体控制面治理在轨调度与异常升级",
+    "selfEvolution": null,
+    "evidence": [
+     "模拟中星座：AUROC 0.891（FedAvg-full 0.863、HierFL 0.847），47轮达80%（对照78/89轮），每轮通信894MB（对照2847MB），90天退化仅1.5%（对照3.1%），深度定向投毒攻击成功率11.4%（对照41~44%）",
+     "三层轨道语义分工：LEO像素级热异常、MEO区域火线、GEO风险传播",
+     "聚合节拍与接触窗解耦，浅层梯度包(4.2MB)适配分钟级接触窗"
+    ],
+    "faq": {
+     "problem": "FractalNet拓扑原生异构联邦学习，按轨道层为星座分配模型深度",
+     "mechanism": "调度器按SWaP-C状态、预测接触窗与层统计分配浅/中/深训练路径，层间缺失深度容忍聚合，微/中/宏三级智能体控制面治理在轨调度与异常升级",
+     "agentChange": "调度器按SWaP-C状态、预测接触窗与层统计分配浅/中/深训练路径，层间缺失深度容忍聚合，微/中/宏三级智能体控制面治理在轨调度与异常升级",
+     "support": "模拟中星座：AUROC 0.891（FedAvg-full 0.863、HierFL 0.847），47轮达80%（对照78/89轮），每轮通信894MB（对照2847MB），90天退化仅1.5%（对照3.1%），深度定向投毒攻击成功率11.4%（对照41~44%）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "为巨型星座在轨边缘智能提供可落地的学习架构"
+   }
+  },
+  {
+   "id": "2609.01390",
+   "version": 1,
+   "title": "Multimodal RGB-Infrared Combination for UAV-Based Wildfire Segmentation: A Comparative Study on FLAME3",
+   "abstract": "FLAME3上系统评测三融合时机×三架构，热红外是主导模态",
+   "authors": [],
+   "published": "2026-09-03T04:00:00.000Z",
+   "updated": "2026-09-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.01390",
+   "pdf": "https://arxiv.org/pdf/2609.01390",
+   "announceType": "new",
+   "summary": "FLAME3上系统评测三融合时机×三架构，热红外是主导模态",
+   "topic": "遥感与高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.01390"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为UAV消防监测提供模态与融合时机选型依据",
+   "repository": null,
+   "motivation": "浓烟/低光条件下火线识别需RGB-IR互补信息",
+   "coreProblem": "融合策略与模态各自对分割的影响从未被隔离系统比较",
+   "contributions": [
+    "FLAME3辐射定标热红外UAV数据上的首个系统融合对比",
+    "统一协议评测三种融合时机×三种架构",
+    "建立FLAME3野火分割基线供后续复用"
+   ],
+   "innovations": [
+    "揭示RGB-only召回崩塌、热红外主导（IoU 0.62~0.69）",
+    "融合收益架构依赖：CNN无增益，Transformer益于中晚融合",
+    "量化\"模态选择+融合时机+架构\"三因素交互而非单一结论"
+   ],
+   "method": "三种架构在RGB-only、IR-only与三种融合时机下同协议训练，按F1/IoU/召回/精度统一评测并交叉分析",
+   "results": "SegFormer+中间融合整体最佳；IR-only已达F1 0.81/IoU 0.69；U-Net融合F1 0.73~0.74未超IR-only（0.75）；DeepLabV3+晚融合F1 0.74/IoU 0.58、中融合最差（IoU 0.37）",
+   "value": "为UAV消防监测提供模态与融合时机选型依据",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "FLAME3辐射定标热红外UAV数据上的首个系统融合对比",
+    "agentChange": "三种架构在RGB-only、IR-only与三种融合时机下同协议训练，按F1/IoU/召回/精度统一评测并交叉分析",
+    "selfEvolution": null,
+    "evidence": [
+     "SegFormer+中间融合整体最佳；IR-only已达F1 0.81/IoU 0.69；U-Net融合F1 0.73~0.74未超IR-only（0.75）；DeepLabV3+晚融合F1 0.74/IoU 0.58、中融合最差（IoU 0.37）",
+     "融合收益架构依赖：CNN无增益，Transformer益于中晚融合",
+     "量化\"模态选择+融合时机+架构\"三因素交互而非单一结论"
+    ],
+    "faq": {
+     "problem": "FLAME3上系统评测三融合时机×三架构，热红外是主导模态",
+     "mechanism": "三种架构在RGB-only、IR-only与三种融合时机下同协议训练，按F1/IoU/召回/精度统一评测并交叉分析",
+     "agentChange": "三种架构在RGB-only、IR-only与三种融合时机下同协议训练，按F1/IoU/召回/精度统一评测并交叉分析",
+     "support": "SegFormer+中间融合整体最佳；IR-only已达F1 0.81/IoU 0.69；U-Net融合F1 0.73~0.74未超IR-only（0.75）；DeepLabV3+晚融合F1 0.74/IoU 0.58、中融合最差（IoU 0.37）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "为UAV消防监测提供模态与融合时机选型依据"
+   }
+  },
+  {
+   "id": "2609.01596",
+   "version": 1,
+   "title": "Facet-0: A Robotic Foundation Model for Contact-Rich Precise Manipulation",
+   "abstract": "机器人基础模型联合预测动作与未来腕部力，亚毫米装配82%成功率",
+   "authors": [],
+   "published": "2026-09-03T04:00:00.000Z",
+   "updated": "2026-09-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.01596",
+   "pdf": "https://arxiv.org/pdf/2609.01596",
+   "announceType": "new",
+   "summary": "机器人基础模型联合预测动作与未来腕部力，亚毫米装配82%成功率",
+   "topic": "基础模型与SAM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.01596"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为接触丰富操作建立\"语义+接触+价值\"基础模型范式",
+   "repository": null,
+   "motivation": "精密装配最后毫米由接触结果决定，视觉动作无法预测力",
+   "coreProblem": "VLA策略把接触当历史观测，不预测也不评估未来接触后果",
+   "contributions": [
+    "ManuFacet-1K：1000小时力同步语料（3种本体、多产线）",
+    "动作-wrench联合流匹配生成策略（仅动作被执行）",
+    "部署Critic+接触选择信用+有界本地适配"
+   ],
+   "innovations": [
+    "首次把接触定义为\"动作的可预测后果+可估值量\"",
+    "区分任务进度相同但接触结果不同（对齐 vs 卡死）的运动",
+    "有界actor复用冻结表征，6.6%参数3小时适配未见部件"
+   ],
+   "method": "PaliGemma骨干+流匹配专家联合输出笛卡尔动作块与预期腕部wrench轨迹；部署rollout训练分布式critic精化策略；局部适配保持预测性动作-接触耦合",
+   "results": "5项亚毫米电脑装配任务平均成功率82%（最强基线15%）；0.5mm定位精度、50ms延迟；对比AWBC人工干预47%→24%、失败恢复44%→81%；10条演示+3小时训练未见模块达45%（基线5%）",
+   "value": "为接触丰富操作建立\"语义+接触+价值\"基础模型范式",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "ManuFacet-1K：1000小时力同步语料（3种本体、多产线）",
+    "agentChange": "PaliGemma骨干+流匹配专家联合输出笛卡尔动作块与预期腕部wrench轨迹；部署rollout训练分布式critic精化策略；局部适配保持预测性动作-接触耦合",
+    "selfEvolution": null,
+    "evidence": [
+     "5项亚毫米电脑装配任务平均成功率82%（最强基线15%）；0.5mm定位精度、50ms延迟；对比AWBC人工干预47%→24%、失败恢复44%→81%；10条演示+3小时训练未见模块达45%（基线5%）",
+     "区分任务进度相同但接触结果不同（对齐 vs 卡死）的运动",
+     "有界actor复用冻结表征，6.6%参数3小时适配未见部件"
+    ],
+    "faq": {
+     "problem": "机器人基础模型联合预测动作与未来腕部力，亚毫米装配82%成功率",
+     "mechanism": "PaliGemma骨干+流匹配专家联合输出笛卡尔动作块与预期腕部wrench轨迹；部署rollout训练分布式critic精化策略；局部适配保持预测性动作-接触耦合",
+     "agentChange": "PaliGemma骨干+流匹配专家联合输出笛卡尔动作块与预期腕部wrench轨迹；部署rollout训练分布式critic精化策略；局部适配保持预测性动作-接触耦合",
+     "support": "5项亚毫米电脑装配任务平均成功率82%（最强基线15%）；0.5mm定位精度、50ms延迟；对比AWBC人工干预47%→24%、失败恢复44%→81%；10条演示+3小时训练未见模块达45%（基线5%）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "为接触丰富操作建立\"语义+接触+价值\"基础模型范式"
+   }
+  },
+  {
+   "id": "2609.00898",
+   "version": 1,
+   "title": "Vision-Language-Guided Pseudo-Labels for Unsupervised Domain Adaptation in Semantic Segmentation for Waste Sorting",
+   "abstract": "SAM提区域+CLIP赋标签，零标注UDA分割，垃圾分选mIoU+134%",
+   "authors": [],
+   "published": "2026-09-03T04:00:00.000Z",
+   "updated": "2026-09-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.00898",
+   "pdf": "https://arxiv.org/pdf/2609.00898",
+   "announceType": "new",
+   "summary": "SAM提区域+CLIP赋标签，零标注UDA分割，垃圾分选mIoU+134%",
+   "topic": "基础模型与SAM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.00898"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为部署关键分割场景提供可信自动标注路径",
+   "repository": null,
+   "motivation": "工业域漂移下稠密像素标注不可行且持续变化",
+   "coreProblem": "自训练依赖分割器自身置信度，强域漂移下成循环依赖",
+   "contributions": [
+    "SAM区域提议+CLIP区域-文本赋标签的伪标签管线",
+    "置信度过滤+可选BLIP语言校验低置信区域",
+    "GTA5→Cityscapes与实验室→工厂分选双域验证"
+   ],
+   "innovations": [
+    "目标域监督与分割器解耦，由基础模型链独立提供标签",
+    "证明伪标签\"质量而非数量\"决定自训练成败（覆盖10%即可）",
+    "输出可检查、可版本化的显式伪标签库，backbone无关可部署"
+   ],
+   "method": "SAM生成无类区域提议，EVA-CLIP在共享嵌入空间按区域-文本相似度赋类，置信过滤后与源域数据联合自训练分割器，BLIP对歧义区域做语言接地校验",
+   "results": "垃圾分选mIoU 7.7%→18.0%（相对+133.8%，Full FT+BLIP）；Cityscapes 20.0%→26.3%（+31.5%）；伪标签质量：Cityscapes mIoU 29.5%/覆盖10.2%，分选96.3%/21.3%；CLIP区域赋类Top-1准确率0.542→0.960（全量微调）",
+   "value": "为部署关键分割场景提供可信自动标注路径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "SAM区域提议+CLIP区域-文本赋标签的伪标签管线",
+    "agentChange": "SAM生成无类区域提议，EVA-CLIP在共享嵌入空间按区域-文本相似度赋类，置信过滤后与源域数据联合自训练分割器，BLIP对歧义区域做语言接地校验",
+    "selfEvolution": null,
+    "evidence": [
+     "垃圾分选mIoU 7.7%→18.0%（相对+133.8%，Full FT+BLIP）；Cityscapes 20.0%→26.3%（+31.5%）；伪标签质量：Cityscapes mIoU 29.5%/覆盖10.2%，分选96.3%/21.3%；CLIP区域赋类Top-1准确率0.542→0.960（全量微调）",
+     "证明伪标签\"质量而非数量\"决定自训练成败（覆盖10%即可）",
+     "输出可检查、可版本化的显式伪标签库，backbone无关可部署"
+    ],
+    "faq": {
+     "problem": "SAM提区域+CLIP赋标签，零标注UDA分割，垃圾分选mIoU+134%",
+     "mechanism": "SAM生成无类区域提议，EVA-CLIP在共享嵌入空间按区域-文本相似度赋类，置信过滤后与源域数据联合自训练分割器，BLIP对歧义区域做语言接地校验",
+     "agentChange": "SAM生成无类区域提议，EVA-CLIP在共享嵌入空间按区域-文本相似度赋类，置信过滤后与源域数据联合自训练分割器，BLIP对歧义区域做语言接地校验",
+     "support": "垃圾分选mIoU 7.7%→18.0%（相对+133.8%，Full FT+BLIP）；Cityscapes 20.0%→26.3%（+31.5%）；伪标签质量：Cityscapes mIoU 29.5%/覆盖10.2%，分选96.3%/21.3%；CLIP区域赋类Top-1准确率0.542→0.960（全量微调）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "为部署关键分割场景提供可信自动标注路径"
+   }
+  },
+  {
+   "id": "2609.01245",
+   "version": 1,
+   "title": "Explore More, Drift Less: Outcome-Only Reinforcement Learning Can Suffice for Long-Horizon Interactive Agents",
+   "abstract": "纯结果奖励RL让Qwen3-14B登顶AppWorld，打破小模型上限论",
+   "authors": [],
+   "published": "2026-09-03T04:00:00.000Z",
+   "updated": "2026-09-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.01245",
+   "pdf": "https://arxiv.org/pdf/2609.01245",
+   "announceType": "new",
+   "summary": "纯结果奖励RL让Qwen3-14B登顶AppWorld，打破小模型上限论",
+   "topic": "Agent与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.01245"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明纯agentic RL仍是小开源模型可行训练路线",
+   "repository": null,
+   "motivation": "长程智能体能力需内化进小开源权重，而非依赖大模型+harness",
+   "coreProblem": "上限并非RL固有——探索不足致信号饥饿，无锚更新致策略漂移",
+   "contributions": [
+    "诊断两大失效机制，调和此前\"难任务有害\"的矛盾结论",
+    "CANOPY：放大同任务探索+严格on-policy+KL锚定",
+    "完整训练栈开源（配置、六项消融、跨域迁移验证）"
+   ],
+   "innovations": [
+    "首个仅靠环境交互、无SFT/技能库/编排的AppWorld公开榜首",
+    "覆盖恢复后最难任务从\"毒药\"翻转为最后梯度来源",
+    "单一14B检查点在推理期无任何外部机制即胜过更重系统"
+   ],
+   "method": "扩大rollout组规模至成败混合组自然重现，每次更新保持on-policy并以KL锚定采样分布，测试时放大交互预算兑现训练覆盖",
+   "results": "AppWorld Test-Normal TGC 86.9/Test-Challenge 67.6（2026-02榜首，领先次优ESAT约12/9 TGC）；同底座+50 TGC；SWE-bench Verified上Qwen3.5-9B +16.6分；消融：组n=8 -16.4、陈旧off-policy -17.4、奖励稠密化仅-1.8",
+   "value": "证明纯agentic RL仍是小开源模型可行训练路线",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "诊断两大失效机制，调和此前\"难任务有害\"的矛盾结论",
+    "agentChange": "扩大rollout组规模至成败混合组自然重现，每次更新保持on-policy并以KL锚定采样分布，测试时放大交互预算兑现训练覆盖",
+    "selfEvolution": null,
+    "evidence": [
+     "AppWorld Test-Normal TGC 86.9/Test-Challenge 67.6（2026-02榜首，领先次优ESAT约12/9 TGC）；同底座+50 TGC；SWE-bench Verified上Qwen3.5-9B +16.6分；消融：组n=8 -16.4、陈旧off-policy -17.4、奖励稠密化仅-1.8",
+     "覆盖恢复后最难任务从\"毒药\"翻转为最后梯度来源",
+     "单一14B检查点在推理期无任何外部机制即胜过更重系统"
+    ],
+    "faq": {
+     "problem": "纯结果奖励RL让Qwen3-14B登顶AppWorld，打破小模型上限论",
+     "mechanism": "扩大rollout组规模至成败混合组自然重现，每次更新保持on-policy并以KL锚定采样分布，测试时放大交互预算兑现训练覆盖",
+     "agentChange": "扩大rollout组规模至成败混合组自然重现，每次更新保持on-policy并以KL锚定采样分布，测试时放大交互预算兑现训练覆盖",
+     "support": "AppWorld Test-Normal TGC 86.9/Test-Challenge 67.6（2026-02榜首，领先次优ESAT约12/9 TGC）；同底座+50 TGC；SWE-bench Verified上Qwen3.5-9B +16.6分；消融：组n=8 -16.4、陈旧off-policy -17.4、奖励稠密化仅-1.8",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "证明纯agentic RL仍是小开源模型可行训练路线"
+   }
+  },
+  {
+   "id": "2609.01567",
+   "version": 1,
+   "title": "Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers",
+   "abstract": "熵高才问VLM教师并蒸馏进RL策略，推理零调用且反超教师",
+   "authors": [],
+   "published": "2026-09-03T04:00:00.000Z",
+   "updated": "2026-09-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.01567",
+   "pdf": "https://arxiv.org/pdf/2609.01567",
+   "announceType": "new",
+   "summary": "熵高才问VLM教师并蒸馏进RL策略，推理零调用且反超教师",
+   "topic": "Agent与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.01567"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把VLM从常驻策略转为可验证的临时指导源",
+   "repository": null,
+   "motivation": "VLM作策略昂贵、脆弱且不从交互学习，应作临时教师",
+   "coreProblem": "教师不可靠，盲目模仿无法区分有用与有害指导",
+   "contributions": [
+    "SAGE：熵门控选择性查询+优势加权蒸馏（AWBC）",
+    "新建CardMaze感知符号匹配环境",
+    "教师质量/查询预算/部署零调用系统分析（5环境）"
+   ],
+   "innovations": [
+    "用环境派生优势对教师动作加权，替代\"建议一律可信\"",
+    "学习策略在教师完全失败处反超（CardMaze 1.0 vs 0.0）",
+    "查询率仅1.2%~13.3%（对照方法100%）且部署无需VLM"
+   ],
+   "method": "策略熵超阈值才查询VLM并执行其建议动作，以环境回报优势加权蒸馏进轻量RL策略；评测阶段完全离线自主行动",
+   "results": "CardMaze 1.000（PPO 0.007、VLM-as-policy 0.000、DAgger 0.993）；ALFWorld 0.150（PPO 0.111）；GoToDoor 0.147、Fetch 0.122均超PPO；Oracle教师下FrozenLake 0.697、EZPoints 10.0",
+   "value": "把VLM从常驻策略转为可验证的临时指导源",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "SAGE：熵门控选择性查询+优势加权蒸馏（AWBC）",
+    "agentChange": "策略熵超阈值才查询VLM并执行其建议动作，以环境回报优势加权蒸馏进轻量RL策略；评测阶段完全离线自主行动",
+    "selfEvolution": null,
+    "evidence": [
+     "CardMaze 1.000（PPO 0.007、VLM-as-policy 0.000、DAgger 0.993）；ALFWorld 0.150（PPO 0.111）；GoToDoor 0.147、Fetch 0.122均超PPO；Oracle教师下FrozenLake 0.697、EZPoints 10.0",
+     "学习策略在教师完全失败处反超（CardMaze 1.0 vs 0.0）",
+     "查询率仅1.2%~13.3%（对照方法100%）且部署无需VLM"
+    ],
+    "faq": {
+     "problem": "熵高才问VLM教师并蒸馏进RL策略，推理零调用且反超教师",
+     "mechanism": "策略熵超阈值才查询VLM并执行其建议动作，以环境回报优势加权蒸馏进轻量RL策略；评测阶段完全离线自主行动",
+     "agentChange": "策略熵超阈值才查询VLM并执行其建议动作，以环境回报优势加权蒸馏进轻量RL策略；评测阶段完全离线自主行动",
+     "support": "CardMaze 1.000（PPO 0.007、VLM-as-policy 0.000、DAgger 0.993）；ALFWorld 0.150（PPO 0.111）；GoToDoor 0.147、Fetch 0.122均超PPO；Oracle教师下FrozenLake 0.697、EZPoints 10.0",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "把VLM从常驻策略转为可验证的临时指导源"
+   }
+  },
+  {
+   "id": "2609.00859",
+   "version": 1,
+   "title": "Reinforcement Learning Enhanced LLM Agents for Complex Vehicle Routing Problems",
+   "abstract": "软Q学习Planner编排LLM多智能体，自动VRP建模成功率+16.67%",
+   "authors": [],
+   "published": "2026-09-03T04:00:00.000Z",
+   "updated": "2026-09-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.00859",
+   "pdf": "https://arxiv.org/pdf/2609.00859",
+   "announceType": "new",
+   "summary": "软Q学习Planner编排LLM多智能体，自动VRP建模成功率+16.67%",
+   "topic": "Agent与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.00859"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "降低专家优化求解器使用门槛，非专家可直接建模复杂VRP",
+   "repository": null,
+   "motivation": "专家求解器强大但复杂VRP建模门槛高，非专家难用",
+   "coreProblem": "DRoC每步依赖LLM决策致高延迟，且忽视内部经验沉淀",
+   "contributions": [
+    "RL Planner+LLM建模智能体+可演化记忆框架",
+    "轻量Planner以Soft Q-learning自适应选择动作",
+    "记忆模块从轨迹提炼成功路径并归因约束冲突"
+   ],
+   "innovations": [
+    "用RL编排LLM动作序列替代逐步LLM决策，显著降延迟",
+    "外部RAG求解器知识与内部演化经验双知识源协同",
+    "48种VRP变体×多求解器的大规模自动建模评测"
+   ],
+   "method": "Planner在生成/精炼/检索/记忆动作间选择，LLM智能体产出solver-ready代码并迭代修复，可演化记忆持续蒸馏交互经验回注决策",
+   "results": "48种VRP变体上成功率较SOTA方法DRoC高16.67%，运行时错误率降低10.41%",
+   "value": "降低专家优化求解器使用门槛，非专家可直接建模复杂VRP",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "RL Planner+LLM建模智能体+可演化记忆框架",
+    "agentChange": "Planner在生成/精炼/检索/记忆动作间选择，LLM智能体产出solver-ready代码并迭代修复，可演化记忆持续蒸馏交互经验回注决策",
+    "selfEvolution": null,
+    "evidence": [
+     "48种VRP变体上成功率较SOTA方法DRoC高16.67%，运行时错误率降低10.41%",
+     "外部RAG求解器知识与内部演化经验双知识源协同",
+     "48种VRP变体×多求解器的大规模自动建模评测"
+    ],
+    "faq": {
+     "problem": "软Q学习Planner编排LLM多智能体，自动VRP建模成功率+16.67%",
+     "mechanism": "Planner在生成/精炼/检索/记忆动作间选择，LLM智能体产出solver-ready代码并迭代修复，可演化记忆持续蒸馏交互经验回注决策",
+     "agentChange": "Planner在生成/精炼/检索/记忆动作间选择，LLM智能体产出solver-ready代码并迭代修复，可演化记忆持续蒸馏交互经验回注决策",
+     "support": "48种VRP变体上成功率较SOTA方法DRoC高16.67%，运行时错误率降低10.41%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "降低专家优化求解器使用门槛，非专家可直接建模复杂VRP"
+   }
+  },
+  {
+   "id": "2609.00683",
+   "version": 1,
+   "title": "Creative Generation via Multi-Agent Debate: Does Debate Suppress Diversity?",
+   "abstract": "多智能体辩论会压缩创造多样性，CLA+EPS保分化后语义多样性+26%",
+   "authors": [],
+   "published": "2026-09-03T04:00:00.000Z",
+   "updated": "2026-09-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.00683",
+   "pdf": "https://arxiv.org/pdf/2609.00683",
+   "announceType": "new",
+   "summary": "多智能体辩论会压缩创造多样性，CLA+EPS保分化后语义多样性+26%",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.00683"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为多智能体辩论在创意任务的多样性坍塌提供结构性修复",
+   "repository": null,
+   "motivation": "创意任务同时要求输出质量与跨run多样性",
+   "coreProblem": "MAD收敛式设计致会话内同质化，抑制跨run输出多样性",
+   "contributions": [
+    "理论证明会话内多样性保持是跨run多样性必要条件",
+    "认知透镜分配CLA+嵌入同伴选择EPS双机制",
+    "四个创意基准+人类评测双重验证"
+   ],
+   "innovations": [
+    "首次识别并形式化MAD的质量-多样性权衡（前人只评质量）",
+    "CLA锚定身份漂移，EPS以语义最远同伴替代多数派引力",
+    "人设Hetero-MAD仍低19.7%，证明人设≠结构性分化"
+   ],
+   "method": "为每个智能体分配持久认知模式（分析/情感/类比），每轮仅将语义最远的同伴纳入其辩论上下文，抑制同质化",
+   "results": "四创意基准（LiveIdeaBench/论证写作/MacGyver/Arena Hard v2）语义多样性较Homo MAD +26.2%（Qwen3-8B）/+23.3%（Gemma-3-12B），词汇+24.0%；质量与最佳方法差距≤1.2分；人类评测35/40判其更多样，与Vendi Score一致率88%",
+   "value": "为多智能体辩论在创意任务的多样性坍塌提供结构性修复",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "理论证明会话内多样性保持是跨run多样性必要条件",
+    "agentChange": "为每个智能体分配持久认知模式（分析/情感/类比），每轮仅将语义最远的同伴纳入其辩论上下文，抑制同质化",
+    "selfEvolution": null,
+    "evidence": [
+     "四创意基准（LiveIdeaBench/论证写作/MacGyver/Arena Hard v2）语义多样性较Homo MAD +26.2%（Qwen3-8B）/+23.3%（Gemma-3-12B），词汇+24.0%；质量与最佳方法差距≤1.2分；人类评测35/40判其更多样，与Vendi Score一致率88%",
+     "CLA锚定身份漂移，EPS以语义最远同伴替代多数派引力",
+     "人设Hetero-MAD仍低19.7%，证明人设≠结构性分化"
+    ],
+    "faq": {
+     "problem": "多智能体辩论会压缩创造多样性，CLA+EPS保分化后语义多样性+26%",
+     "mechanism": "为每个智能体分配持久认知模式（分析/情感/类比），每轮仅将语义最远的同伴纳入其辩论上下文，抑制同质化",
+     "agentChange": "为每个智能体分配持久认知模式（分析/情感/类比），每轮仅将语义最远的同伴纳入其辩论上下文，抑制同质化",
+     "support": "四创意基准（LiveIdeaBench/论证写作/MacGyver/Arena Hard v2）语义多样性较Homo MAD +26.2%（Qwen3-8B）/+23.3%（Gemma-3-12B），词汇+24.0%；质量与最佳方法差距≤1.2分；人类评测35/40判其更多样，与Vendi Score一致率88%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为多智能体辩论在创意任务的多样性坍塌提供结构性修复"
+   }
+  },
+  {
+   "id": "2609.01491",
+   "version": 1,
+   "title": "GlossoGen: Emergent Language in Complex Multi-Agent LLM Interactions",
+   "abstract": "LLM多智能体在时限压力下演化出人类不可理解的新语言",
+   "authors": [],
+   "published": "2026-09-03T04:00:00.000Z",
+   "updated": "2026-09-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.01491",
+   "pdf": "https://arxiv.org/pdf/2609.01491",
+   "announceType": "new",
+   "summary": "LLM多智能体在时限压力下演化出人类不可理解的新语言",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.01491"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为智能体安全监控与累积文化演化提供首批实证",
+   "repository": null,
+   "motivation": "智能体间通信激增，语言演化是监控盲区与语言学对象",
+   "coreProblem": "缺让预训练LLM智能体在信息不全+时限下必须通信的复杂环境",
+   "contributions": [
+    "GlossoGen平台：可配置多智能体语言演化环境（开源）",
+    "SaveVeyru场景：信息不对称+字符预算的紧急救援任务",
+    "120组受控实验：模型强度×预算×复盘(postmortem)三因素"
+   ],
+   "innovations": [
+    "首次在预训练LLM智能体上记录系统性、形态能产的自发语言",
+    "区分\"涌现\"与\"传播\"：强模型才能创造，弱模型可学会",
+    "复盘（约定协商）阶段被证明是涌现与任务成功的关键条件"
+   ],
+   "method": "部分信息智能体经受字符预算的通道通信，可选postmortem阶段协商约定；用GPT-2困惑度量化偏离英语程度，语法归纳+新词测试验证能产性",
+   "results": "150秒预算+复盘下Opus 4.7成功率0.80、Sonnet 4.6 0.43、GPT 5.4 0.33；无复盘几乎全败；成功run使用\"TONE6lg12 bell-ring\"等自造词编码完整救援程序，失败run停留在缩写英文",
+   "value": "为智能体安全监控与累积文化演化提供首批实证",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "GlossoGen平台：可配置多智能体语言演化环境（开源）",
+    "agentChange": "部分信息智能体经受字符预算的通道通信，可选postmortem阶段协商约定；用GPT-2困惑度量化偏离英语程度，语法归纳+新词测试验证能产性",
+    "selfEvolution": null,
+    "evidence": [
+     "150秒预算+复盘下Opus 4.7成功率0.80、Sonnet 4.6 0.43、GPT 5.4 0.33；无复盘几乎全败；成功run使用\"TONE6lg12 bell-ring\"等自造词编码完整救援程序，失败run停留在缩写英文",
+     "区分\"涌现\"与\"传播\"：强模型才能创造，弱模型可学会",
+     "复盘（约定协商）阶段被证明是涌现与任务成功的关键条件"
+    ],
+    "faq": {
+     "problem": "LLM多智能体在时限压力下演化出人类不可理解的新语言",
+     "mechanism": "部分信息智能体经受字符预算的通道通信，可选postmortem阶段协商约定；用GPT-2困惑度量化偏离英语程度，语法归纳+新词测试验证能产性",
+     "agentChange": "部分信息智能体经受字符预算的通道通信，可选postmortem阶段协商约定；用GPT-2困惑度量化偏离英语程度，语法归纳+新词测试验证能产性",
+     "support": "150秒预算+复盘下Opus 4.7成功率0.80、Sonnet 4.6 0.43、GPT 5.4 0.33；无复盘几乎全败；成功run使用\"TONE6lg12 bell-ring\"等自造词编码完整救援程序，失败run停留在缩写英文",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为智能体安全监控与累积文化演化提供首批实证"
+   }
+  },
+  {
+   "id": "2609.01308",
+   "version": 1,
+   "title": "CMRVision: A Foundation Model for Cardiac MR Image Analysis",
+   "abstract": "36M心脏MRI影像DINOv3式预训练，11项多任务分割9项Dice最优",
+   "authors": [],
+   "published": "2026-09-03T04:00:00.000Z",
+   "updated": "2026-09-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.01308",
+   "pdf": "https://arxiv.org/pdf/2609.01308",
+   "announceType": "new",
+   "summary": "36M心脏MRI影像DINOv3式预训练，11项多任务分割9项Dice最优",
+   "topic": "医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.01308"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为心脏MRI分析提供域专用预训练范式与基线",
+   "repository": null,
+   "motivation": "心脏MRI多序列多切位自动分析需可泛化表征",
+   "coreProblem": "自然图像FM表征因成像物理/扫描仪差异无法直迁移CMR",
+   "contributions": [
+    "CMR专用ViT-S基础模型（DINOv3式自监督）",
+    "3600万影像多序列多中心预训练语料",
+    "系统消融patch尺寸、patch级目标、Gram锚定"
+   ],
+   "innovations": [
+    "首个跨全部CMR序列（而非仅cine）系统研究域专用FM",
+    "patch级目标+Gram矩阵对齐保留心肌等细微解剖的片间关系",
+    "未见LGE长轴切位的零样本分割泛化"
+   ],
+   "method": "ViT-S骨干+DINO/iBOT/KoLeo/Gram四目标自监督预训练，轴向RoPE位置编码；下游多任务分割与切位分类端到端微调",
+   "results": "多任务分割基准11项Dice 9项最优（增益集中于LGE与mapping）；零样本LGE长轴Dice 0.692；cine切位分类平均准确率0.906，超自然图像预训练模型与上一代CMR专用FM",
+   "value": "为心脏MRI分析提供域专用预训练范式与基线",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "CMR专用ViT-S基础模型（DINOv3式自监督）",
+    "agentChange": "ViT-S骨干+DINO/iBOT/KoLeo/Gram四目标自监督预训练，轴向RoPE位置编码；下游多任务分割与切位分类端到端微调",
+    "selfEvolution": null,
+    "evidence": [
+     "多任务分割基准11项Dice 9项最优（增益集中于LGE与mapping）；零样本LGE长轴Dice 0.692；cine切位分类平均准确率0.906，超自然图像预训练模型与上一代CMR专用FM",
+     "patch级目标+Gram矩阵对齐保留心肌等细微解剖的片间关系",
+     "未见LGE长轴切位的零样本分割泛化"
+    ],
+    "faq": {
+     "problem": "36M心脏MRI影像DINOv3式预训练，11项多任务分割9项Dice最优",
+     "mechanism": "ViT-S骨干+DINO/iBOT/KoLeo/Gram四目标自监督预训练，轴向RoPE位置编码；下游多任务分割与切位分类端到端微调",
+     "agentChange": "ViT-S骨干+DINO/iBOT/KoLeo/Gram四目标自监督预训练，轴向RoPE位置编码；下游多任务分割与切位分类端到端微调",
+     "support": "多任务分割基准11项Dice 9项最优（增益集中于LGE与mapping）；零样本LGE长轴Dice 0.692；cine切位分类平均准确率0.906，超自然图像预训练模型与上一代CMR专用FM",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为心脏MRI分析提供域专用预训练范式与基线"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-09-02",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-09-02 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-09-03T04:00:00.000Z",
+ "totalMatched": 420,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 420
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-09-03",
+ "historical": true
+}

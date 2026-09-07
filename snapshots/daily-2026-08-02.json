@@ -1,0 +1,1005 @@
+{
+ "papers": [
+  {
+   "id": "2607.28525",
+   "version": 1,
+   "title": "Same Graph Cross-Task Transfer in GNNs: Protocols and Predictors",
+   "abstract": "系统性地研究了同一图结构上节点分类 (NC) 与链接预测 (LP) 之间的跨任务迁移效应，提出了无数据泄露的评估协议和预测指标。",
+   "authors": [],
+   "published": "2026-08-02T04:00:00.000Z",
+   "updated": "2026-08-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cond-mat.str-el"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28525",
+   "pdf": "https://arxiv.org/pdf/2607.28525",
+   "announceType": "new",
+   "summary": "系统性地研究了同一图结构上节点分类 (NC) 与链接预测 (LP) 之间的跨任务迁移效应，提出了无数据泄露的评估协议和预测指标。",
+   "topic": "图神经网络 / GNN",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28525"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为 GNN 多任务学习提供了可操作的理论框架和实证基准，帮助研究者避免负迁移陷阱。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "提出了首个无泄露的同一图 NC-LP 迁移协议：固定节点和边划分、使用排除评估边的共享消息传递图、固定负样本"
+   ],
+   "innovations": [
+    "发现迁移具有强方向性：NC→LP 在同类图上一致有益，而 LP→NC 则脆弱且可能负迁移",
+    "引入 CoTask Score (CTS) 量化共享编码器同时服务两个任务的联合效用"
+   ],
+   "method": "在三种骨干（GCN、GraphSAGE、GPS）上系统评估 NC↔LP 迁移，使用图同配率（homophily）作为关键预测因子指导机制选择。",
+   "results": "NC→LP 在同类图上始终正迁移；LP→NC 仅在\"结构主导\"区域（LP 容易但 NC 未饱和）正迁移，表现为结构预训练效果。",
+   "value": "为 GNN 多任务学习提供了可操作的理论框架和实证基准，帮助研究者避免负迁移陷阱。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出了首个无泄露的同一图 NC-LP 迁移协议：固定节点和边划分、使用排除评估边的共享消息传递图、固定负样本",
+    "agentChange": "在三种骨干（GCN、GraphSAGE、GPS）上系统评估 NC↔LP 迁移，使用图同配率（homophily）作为关键预测因子指导机制选择。",
+    "selfEvolution": null,
+    "evidence": [
+     "NC→LP 在同类图上始终正迁移；LP→NC 仅在\"结构主导\"区域（LP 容易但 NC 未饱和）正迁移，表现为结构预训练效果。",
+     "引入 CoTask Score (CTS) 量化共享编码器同时服务两个任务的联合效用"
+    ],
+    "faq": {
+     "problem": "系统性地研究了同一图结构上节点分类 (NC) 与链接预测 (LP) 之间的跨任务迁移效应，提出了无数据泄露的评估协议和预测指标。",
+     "mechanism": "在三种骨干（GCN、GraphSAGE、GPS）上系统评估 NC↔LP 迁移，使用图同配率（homophily）作为关键预测因子指导机制选择。",
+     "agentChange": "在三种骨干（GCN、GraphSAGE、GPS）上系统评估 NC↔LP 迁移，使用图同配率（homophily）作为关键预测因子指导机制选择。",
+     "support": "NC→LP 在同类图上始终正迁移；LP→NC 仅在\"结构主导\"区域（LP 容易但 NC 未饱和）正迁移，表现为结构预训练效果。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为 GNN 多任务学习提供了可操作的理论框架和实证基准，帮助研究者避免负迁移陷阱。"
+   }
+  },
+  {
+   "id": "2607.28537",
+   "version": 1,
+   "title": "Graph Neural Network Force Fields for Spin Dynamics in Metallic Magnets",
+   "abstract": "将 GNN 应用于磁性力场学习，用机器学习的磁势能替代昂贵的电子结构计算，实现金属磁体自旋动力学的高效模拟。",
+   "authors": [],
+   "published": "2026-08-02T04:00:00.000Z",
+   "updated": "2026-08-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cond-mat.str-el"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28537",
+   "pdf": "https://arxiv.org/pdf/2607.28537",
+   "announceType": "new",
+   "summary": "将 GNN 应用于磁性力场学习，用机器学习的磁势能替代昂贵的电子结构计算，实现金属磁体自旋动力学的高效模拟。",
+   "topic": "图神经网络 / GNN",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28537"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为计算材料科学开辟了新方向——GNN 力场可在多个长度和时间尺度上实现预测性非平衡磁学研究。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "将 GNN 类比于机器学习原子间势，学习由巡游电子产生的有效磁能泛函"
+   ],
+   "innovations": [
+    "捕获非线性、空间扩展的电子介导磁相互作用，而传统力场难以处理",
+    "实现了从电子尺度计算到大尺度非平衡自旋动力学的桥梁"
+   ],
+   "method": "从 DFT 等电子计算中提取自旋力矩数据训练 GNN 力场，然后在非平衡自旋动力学模拟中替代实时电子求解。",
+   "results": "在共线、非共线和非共面磁性体系中，学习到的力场精确重现电子级自旋力矩，动力学模拟与直接电子仿真高度一致。",
+   "value": "为计算材料科学开辟了新方向——GNN 力场可在多个长度和时间尺度上实现预测性非平衡磁学研究。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "将 GNN 类比于机器学习原子间势，学习由巡游电子产生的有效磁能泛函",
+    "agentChange": "从 DFT 等电子计算中提取自旋力矩数据训练 GNN 力场，然后在非平衡自旋动力学模拟中替代实时电子求解。",
+    "selfEvolution": null,
+    "evidence": [
+     "在共线、非共线和非共面磁性体系中，学习到的力场精确重现电子级自旋力矩，动力学模拟与直接电子仿真高度一致。",
+     "实现了从电子尺度计算到大尺度非平衡自旋动力学的桥梁"
+    ],
+    "faq": {
+     "problem": "将 GNN 应用于磁性力场学习，用机器学习的磁势能替代昂贵的电子结构计算，实现金属磁体自旋动力学的高效模拟。",
+     "mechanism": "从 DFT 等电子计算中提取自旋力矩数据训练 GNN 力场，然后在非平衡自旋动力学模拟中替代实时电子求解。",
+     "agentChange": "从 DFT 等电子计算中提取自旋力矩数据训练 GNN 力场，然后在非平衡自旋动力学模拟中替代实时电子求解。",
+     "support": "在共线、非共线和非共面磁性体系中，学习到的力场精确重现电子级自旋力矩，动力学模拟与直接电子仿真高度一致。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "为计算材料科学开辟了新方向——GNN 力场可在多个长度和时间尺度上实现预测性非平衡磁学研究。"
+   }
+  },
+  {
+   "id": "2607.28611",
+   "version": 1,
+   "title": "Chimera: Designing and Chinchilla-Scaling Hybrid Visual Diffusion Transformers",
+   "abstract": "提出了 Chimera——一种混合视觉扩散 Transformer 架构，结合线性注意力、局部卷积和 MoE，并通过 Chinchilla 法则实现计算最优缩放。",
+   "authors": [],
+   "published": "2026-08-02T04:00:00.000Z",
+   "updated": "2026-08-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cond-mat.str-el"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28611",
+   "pdf": "https://arxiv.org/pdf/2607.28611",
+   "announceType": "new",
+   "summary": "提出了 Chimera——一种混合视觉扩散 Transformer 架构，结合线性注意力、局部卷积和 MoE，并通过 Chinchilla 法则实现计算最优缩放。",
+   "topic": "计算机视觉 / CV & 扩散模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28611"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为高效长上下文扩散架构的设计与缩放提供了理论基础，在成本大幅降低的同时支持更长视频生成。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "混合注意力架构：Kimi Delta Attention (KDA, O(N)) + Multi-head Latent Attention (MLA) + 模态感知短卷积，统一处理文本/图像/视频 token"
+   ],
+   "innovations": [
+    "提出 HeteroP：按模块张量功能 fan-in 和模型深度进行模块级超参迁移的缩放方案",
+    "拟合出激活模型大小、训练 token 数、图-视频数据比的 Chinchilla 风格最优计算法则"
+   ],
+   "method": "训练 11B 参数、2B 激活参数的 Chimera 模型，在图像和视频生成任务上验证。",
+   "results": "密集骨干比同规模 Wan-2.1 2B 基线计算效率提升 1.7x，完整系统达 7.3x - 无需长度特定微调，从 5 秒训练片段零样本外推到 30 秒视频，最后 5 秒 FID 仅退化 6.5%",
+   "value": "为高效长上下文扩散架构的设计与缩放提供了理论基础，在成本大幅降低的同时支持更长视频生成。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "混合注意力架构：Kimi Delta Attention (KDA, O(N)) + Multi-head Latent Attention (MLA) + 模态感知短卷积，统一处理文本/图像/视频 token",
+    "agentChange": "训练 11B 参数、2B 激活参数的 Chimera 模型，在图像和视频生成任务上验证。",
+    "selfEvolution": null,
+    "evidence": [
+     "密集骨干比同规模 Wan-2.1 2B 基线计算效率提升 1.7x，完整系统达 7.3x - 无需长度特定微调，从 5 秒训练片段零样本外推到 30 秒视频，最后 5 秒 FID 仅退化 6.5%",
+     "拟合出激活模型大小、训练 token 数、图-视频数据比的 Chinchilla 风格最优计算法则"
+    ],
+    "faq": {
+     "problem": "提出了 Chimera——一种混合视觉扩散 Transformer 架构，结合线性注意力、局部卷积和 MoE，并通过 Chinchilla 法则实现计算最优缩放。",
+     "mechanism": "训练 11B 参数、2B 激活参数的 Chimera 模型，在图像和视频生成任务上验证。",
+     "agentChange": "训练 11B 参数、2B 激活参数的 Chimera 模型，在图像和视频生成任务上验证。",
+     "support": "密集骨干比同规模 Wan-2.1 2B 基线计算效率提升 1.7x，完整系统达 7.3x - 无需长度特定微调，从 5 秒训练片段零样本外推到 30 秒视频，最后 5 秒 FID 仅退化 6.5%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "为高效长上下文扩散架构的设计与缩放提供了理论基础，在成本大幅降低的同时支持更长视频生成。"
+   }
+  },
+  {
+   "id": "2607.23159",
+   "version": 1,
+   "title": "CachedSearch: Training-Free Cached Exploration for Test-Time Search in Video Diffusion",
+   "abstract": "提出 CachedSearch——一种无需训练的缓存策略，让视频扩散模型的 test-time search 在 2-3x 加速下保持几乎无损的排序质量。",
+   "authors": [],
+   "published": "2026-08-02T04:00:00.000Z",
+   "updated": "2026-08-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cond-mat.str-el"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.23159",
+   "pdf": "https://arxiv.org/pdf/2607.23159",
+   "announceType": "new",
+   "summary": "提出 CachedSearch——一种无需训练的缓存策略，让视频扩散模型的 test-time search 在 2-3x 加速下保持几乎无损的排序质量。",
+   "topic": "计算机视觉 / CV & 扩散模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.23159"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为视频扩散模型的 test-time scaling 提供了即插即用的加速器，无需训练或修改搜索算法。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "首次系统研究缓存是否破坏 video test-time search 中的候选排序"
+   ],
+   "innovations": [
+    "缓存后 Spearman 秩相关 0.905，top-1 一致性 72%，证明缓存不会显著破坏 verifier 排序",
+    "提出\"先缓存探索所有候选，再对赢家全精度重生成\"的两阶段策略"
+   ],
+   "method": "在 Wan2.1-T2V-1.3B 上集成自适应缓存包装器，使用 ImageReward 验证缓存 vs 全精度 rollouts 的质量。",
+   "results": "N=8 时捕获 94.7% 的 best-of-N 增益，成本仅为 63% - 匹配预算下可搜索 2 倍宽的候选空间，增益提升 38% - 在 6 个模型家族（Wan、LTX、CogVideoX、Hunyuan）上跨 1.3B-14B 参数规模一致有效",
+   "value": "为视频扩散模型的 test-time scaling 提供了即插即用的加速器，无需训练或修改搜索算法。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "首次系统研究缓存是否破坏 video test-time search 中的候选排序",
+    "agentChange": "在 Wan2.1-T2V-1.3B 上集成自适应缓存包装器，使用 ImageReward 验证缓存 vs 全精度 rollouts 的质量。",
+    "selfEvolution": null,
+    "evidence": [
+     "N=8 时捕获 94.7% 的 best-of-N 增益，成本仅为 63% - 匹配预算下可搜索 2 倍宽的候选空间，增益提升 38% - 在 6 个模型家族（Wan、LTX、CogVideoX、Hunyuan）上跨 1.3B-14B 参数规模一致有效",
+     "提出\"先缓存探索所有候选，再对赢家全精度重生成\"的两阶段策略"
+    ],
+    "faq": {
+     "problem": "提出 CachedSearch——一种无需训练的缓存策略，让视频扩散模型的 test-time search 在 2-3x 加速下保持几乎无损的排序质量。",
+     "mechanism": "在 Wan2.1-T2V-1.3B 上集成自适应缓存包装器，使用 ImageReward 验证缓存 vs 全精度 rollouts 的质量。",
+     "agentChange": "在 Wan2.1-T2V-1.3B 上集成自适应缓存包装器，使用 ImageReward 验证缓存 vs 全精度 rollouts 的质量。",
+     "support": "N=8 时捕获 94.7% 的 best-of-N 增益，成本仅为 63% - 匹配预算下可搜索 2 倍宽的候选空间，增益提升 38% - 在 6 个模型家族（Wan、LTX、CogVideoX、Hunyuan）上跨 1.3B-14B 参数规模一致有效",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为视频扩散模型的 test-time scaling 提供了即插即用的加速器，无需训练或修改搜索算法。"
+   }
+  },
+  {
+   "id": "2607.28627",
+   "version": 1,
+   "title": "ReToken: One Token to Improve Vision-Language Models for Visual Retrieval",
+   "abstract": "仅用一个可学习 token 从预填充的视觉 KV 缓存中检索稀疏相关视觉 token，大幅提升 VLM 在长视觉上下文中的检索能力。",
+   "authors": [],
+   "published": "2026-08-02T04:00:00.000Z",
+   "updated": "2026-08-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cond-mat.str-el"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28627",
+   "pdf": "https://arxiv.org/pdf/2607.28627",
+   "announceType": "new",
+   "summary": "仅用一个可学习 token 从预填充的视觉 KV 缓存中检索稀疏相关视觉 token，大幅提升 VLM 在长视觉上下文中的检索能力。",
+   "topic": "计算机视觉 / CV & 扩散模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28627"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "以极简成本解决长视觉上下文中的检索瓶颈问题，为 VLM 扩展提供了轻量高效的方案。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "极简设计：单个 learnable embedding 作为显式检索目标，从密集视觉 token 中选择稀疏相关子集"
+   ],
+   "innovations": [
+    "在小型图像 QA 数据集上训练即可零样本迁移到视频任务",
+    "训练和长视频推理均可在单张 H100 上完成"
+   ],
+   "method": "在预填充的视觉 KV cache 上训练 ReToken 作为检索探针，选择与查询相关的稀疏视觉 token 子集。",
+   "results": "Visual Haystacks 基准：Qwen3VL-8B 提升 13.4 分，InternVL3.5 提升 12.4 分（>20% 相对提升） - LVBench 长视频基准：Qwen3VL-8B 零样本迁移提升 8.0 分",
+   "value": "以极简成本解决长视觉上下文中的检索瓶颈问题，为 VLM 扩展提供了轻量高效的方案。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "极简设计：单个 learnable embedding 作为显式检索目标，从密集视觉 token 中选择稀疏相关子集",
+    "agentChange": "在预填充的视觉 KV cache 上训练 ReToken 作为检索探针，选择与查询相关的稀疏视觉 token 子集。",
+    "selfEvolution": null,
+    "evidence": [
+     "Visual Haystacks 基准：Qwen3VL-8B 提升 13.4 分，InternVL3.5 提升 12.4 分（>20% 相对提升） - LVBench 长视频基准：Qwen3VL-8B 零样本迁移提升 8.0 分",
+     "训练和长视频推理均可在单张 H100 上完成"
+    ],
+    "faq": {
+     "problem": "仅用一个可学习 token 从预填充的视觉 KV 缓存中检索稀疏相关视觉 token，大幅提升 VLM 在长视觉上下文中的检索能力。",
+     "mechanism": "在预填充的视觉 KV cache 上训练 ReToken 作为检索探针，选择与查询相关的稀疏视觉 token 子集。",
+     "agentChange": "在预填充的视觉 KV cache 上训练 ReToken 作为检索探针，选择与查询相关的稀疏视觉 token 子集。",
+     "support": "Visual Haystacks 基准：Qwen3VL-8B 提升 13.4 分，InternVL3.5 提升 12.4 分（>20% 相对提升） - LVBench 长视频基准：Qwen3VL-8B 零样本迁移提升 8.0 分",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "以极简成本解决长视觉上下文中的检索瓶颈问题，为 VLM 扩展提供了轻量高效的方案。"
+   }
+  },
+  {
+   "id": "2607.28624",
+   "version": 1,
+   "title": "PhiZero: A World Model Built Around Physical Language",
+   "abstract": "提出 PhiZero——一种围绕\"物理语言\"（世界状态转换的紧凑离散表示）构建的物理世界模型，采用\"先推理后渲染\"范式。",
+   "authors": [],
+   "published": "2026-08-02T04:00:00.000Z",
+   "updated": "2026-08-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cond-mat.str-el"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28624",
+   "pdf": "https://arxiv.org/pdf/2607.28624",
+   "announceType": "new",
+   "summary": "提出 PhiZero——一种围绕\"物理语言\"（世界状态转换的紧凑离散表示）构建的物理世界模型，采用\"先推理后渲染\"范式。",
+   "topic": "计算机视觉 / CV & 扩散模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28624"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为物理世界建模提供了从隐式到显式推理的范式转变，有望在机器人和交互式模拟中发挥作用。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "从自然视频中自监督学习\"物理语言\"——一种压缩的世界状态转换离散表示"
+   ],
+   "innovations": [
+    "\"先推理后渲染\"范式：先推断未来世界演化的物理语言序列，再渲染为视频",
+    "相比直接在像素空间预测未来视频的方法，显式建模世界动态结构"
+   ],
+   "method": "自监督学习物理语言表征 → 用物理语言序列推理世界演化 → 将推理结果渲染为视频帧。",
+   "results": "在多项生成和理解基准上验证了物理一致性世界建模能力，展示了细粒度动作条件模拟和零样本运动迁移潜力。",
+   "value": "为物理世界建模提供了从隐式到显式推理的范式转变，有望在机器人和交互式模拟中发挥作用。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "从自然视频中自监督学习\"物理语言\"——一种压缩的世界状态转换离散表示",
+    "agentChange": "自监督学习物理语言表征 → 用物理语言序列推理世界演化 → 将推理结果渲染为视频帧。",
+    "selfEvolution": null,
+    "evidence": [
+     "在多项生成和理解基准上验证了物理一致性世界建模能力，展示了细粒度动作条件模拟和零样本运动迁移潜力。",
+     "相比直接在像素空间预测未来视频的方法，显式建模世界动态结构"
+    ],
+    "faq": {
+     "problem": "提出 PhiZero——一种围绕\"物理语言\"（世界状态转换的紧凑离散表示）构建的物理世界模型，采用\"先推理后渲染\"范式。",
+     "mechanism": "自监督学习物理语言表征 → 用物理语言序列推理世界演化 → 将推理结果渲染为视频帧。",
+     "agentChange": "自监督学习物理语言表征 → 用物理语言序列推理世界演化 → 将推理结果渲染为视频帧。",
+     "support": "在多项生成和理解基准上验证了物理一致性世界建模能力，展示了细粒度动作条件模拟和零样本运动迁移潜力。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为物理世界建模提供了从隐式到显式推理的范式转变，有望在机器人和交互式模拟中发挥作用。"
+   }
+  },
+  {
+   "id": "2607.28590",
+   "version": 1,
+   "title": "VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation",
+   "abstract": "提出视觉归因蒸馏 (VAD)——通过反事实目标重建算法分离教师修正中的视觉证据部分，提升多模态蒸馏效果。",
+   "authors": [],
+   "published": "2026-08-02T04:00:00.000Z",
+   "updated": "2026-08-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cond-mat.str-el"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28590",
+   "pdf": "https://arxiv.org/pdf/2607.28590",
+   "announceType": "new",
+   "summary": "提出视觉归因蒸馏 (VAD)——通过反事实目标重建算法分离教师修正中的视觉证据部分，提升多模态蒸馏效果。",
+   "topic": "计算机视觉 / CV & 扩散模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28590"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "解决了多模态蒸馏中\"来源混合\"的核心问题——区分哪些修正真正来自视觉证据而非语言先验。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "反事实评估：同一教师分别在证据存在和移除时评估，计算中心对数概率变化作为视觉证据方向代理"
+   ],
+   "innovations": [
+    "将原始修正投影到证据对齐分量和残差，仅用证据对齐部分重建学生锚定目标",
+    "教师从\"主要监督\"降级为\"弱正则化器\"，学生更依赖自身视觉证据"
+   ],
+   "method": "在每个学生生成的前缀处执行反事实教师评估，提取视觉证据方向 ut，用投影重建目标。",
+   "results": "在 6 个细粒度视觉基准上（4B 和 9B 规模），VAD 优于直接特权视图蒸馏和视觉优势加权方法。",
+   "value": "解决了多模态蒸馏中\"来源混合\"的核心问题——区分哪些修正真正来自视觉证据而非语言先验。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "反事实评估：同一教师分别在证据存在和移除时评估，计算中心对数概率变化作为视觉证据方向代理",
+    "agentChange": "在每个学生生成的前缀处执行反事实教师评估，提取视觉证据方向 ut，用投影重建目标。",
+    "selfEvolution": null,
+    "evidence": [
+     "在 6 个细粒度视觉基准上（4B 和 9B 规模），VAD 优于直接特权视图蒸馏和视觉优势加权方法。",
+     "教师从\"主要监督\"降级为\"弱正则化器\"，学生更依赖自身视觉证据"
+    ],
+    "faq": {
+     "problem": "提出视觉归因蒸馏 (VAD)——通过反事实目标重建算法分离教师修正中的视觉证据部分，提升多模态蒸馏效果。",
+     "mechanism": "在每个学生生成的前缀处执行反事实教师评估，提取视觉证据方向 ut，用投影重建目标。",
+     "agentChange": "在每个学生生成的前缀处执行反事实教师评估，提取视觉证据方向 ut，用投影重建目标。",
+     "support": "在 6 个细粒度视觉基准上（4B 和 9B 规模），VAD 优于直接特权视图蒸馏和视觉优势加权方法。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "解决了多模态蒸馏中\"来源混合\"的核心问题——区分哪些修正真正来自视觉证据而非语言先验。"
+   }
+  },
+  {
+   "id": "2607.28576",
+   "version": 1,
+   "title": "Sample More, Reflect Less: Self-Refine and Reflexion Lose to Repeated Sampling at Equal Token Cost",
+   "abstract": "系统性实验证明：在同等 token 成本下，self-refine、reflexion 等自我反思方法均不优于简单的重复采样投票。",
+   "authors": [],
+   "published": "2026-08-02T04:00:00.000Z",
+   "updated": "2026-08-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cond-mat.str-el"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28576",
+   "pdf": "https://arxiv.org/pdf/2607.28576",
+   "announceType": "new",
+   "summary": "系统性实验证明：在同等 token 成本下，self-refine、reflexion 等自我反思方法均不优于简单的重复采样投票。",
+   "topic": "AI Agent / 推理 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28576"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "对 LLM 推理时扩展的\"反思范式\"提出了严肃质疑，挑战了领域内广泛采用的方法论假设。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "首次使用严格的实验设计（配对检验、Bootstrap 置信区间、多重性校正）重新检验 \"反复反思 vs 重复采样\" 之争"
+   ],
+   "innovations": [
+    "覆盖 7 种方法、3 个模型规模（1.5B/3B/7B）、2 个数学基准（各 150 题）",
+    "发现所有 36 组比较中无一方法可靠优于重复采样，10 组可靠更差（全部是自我检查方法）"
+   ],
+   "method": "精确计数每种方法生成的每个 token（包括批评、反思、辩论轮次），在相同成本下比较。",
+   "results": "18 组自我检查比较全部为负（反思方法更差） - Self-Refine 在 7B 模型上仍低于基线 3.6-10.1 分 - Reflexion 在最小模型上从未触发重试——模型每次判断自己正确，静默退化为单链推理 - Best-of-N 投票比模型自评选择好 8.0-11.3 分（1.5B 时）",
+   "value": "对 LLM 推理时扩展的\"反思范式\"提出了严肃质疑，挑战了领域内广泛采用的方法论假设。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "首次使用严格的实验设计（配对检验、Bootstrap 置信区间、多重性校正）重新检验 \"反复反思 vs 重复采样\" 之争",
+    "agentChange": "精确计数每种方法生成的每个 token（包括批评、反思、辩论轮次），在相同成本下比较。",
+    "selfEvolution": null,
+    "evidence": [
+     "18 组自我检查比较全部为负（反思方法更差） - Self-Refine 在 7B 模型上仍低于基线 3.6-10.1 分 - Reflexion 在最小模型上从未触发重试——模型每次判断自己正确，静默退化为单链推理 - Best-of-N 投票比模型自评选择好 8.0-11.3 分（1.5B 时）",
+     "发现所有 36 组比较中无一方法可靠优于重复采样，10 组可靠更差（全部是自我检查方法）"
+    ],
+    "faq": {
+     "problem": "系统性实验证明：在同等 token 成本下，self-refine、reflexion 等自我反思方法均不优于简单的重复采样投票。",
+     "mechanism": "精确计数每种方法生成的每个 token（包括批评、反思、辩论轮次），在相同成本下比较。",
+     "agentChange": "精确计数每种方法生成的每个 token（包括批评、反思、辩论轮次），在相同成本下比较。",
+     "support": "18 组自我检查比较全部为负（反思方法更差） - Self-Refine 在 7B 模型上仍低于基线 3.6-10.1 分 - Reflexion 在最小模型上从未触发重试——模型每次判断自己正确，静默退化为单链推理 - Best-of-N 投票比模型自评选择好 8.0-11.3 分（1.5B 时）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "对 LLM 推理时扩展的\"反思范式\"提出了严肃质疑，挑战了领域内广泛采用的方法论假设。"
+   }
+  },
+  {
+   "id": "2607.28573",
+   "version": 1,
+   "title": "Rethinking Inference-Time Scaling in Local Computer-Use Agents: Failure Modes and Compute Tradeoffs",
+   "abstract": "系统研究本地计算机使用代理（CUA）中的推理时缩放，发现额外计算常带来收益递减并改变失败模式。",
+   "authors": [],
+   "published": "2026-08-02T04:00:00.000Z",
+   "updated": "2026-08-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cond-mat.str-el"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28573",
+   "pdf": "https://arxiv.org/pdf/2607.28573",
+   "announceType": "new",
+   "summary": "系统研究本地计算机使用代理（CUA）中的推理时缩放，发现额外计算常带来收益递减并改变失败模式。",
+   "topic": "AI Agent / 推理 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28573"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为高效本地 CUA 设计提供了关键指导——需要选择性计算分配和感知失败的机制。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "首次在资源受限的本地模型上系统评估推理时缩放的四个维度：上下文、时间、结构、并行"
+   ],
+   "innovations": [
+    "识别出关键现象：额外计算将失败模式从\"重复/停滞轨迹\"转移到\"过早虚假成功\"",
+    "揭示时间缩放延长错误轨迹而非纠正它的本质"
+   ],
+   "method": "评估 Qwen3-VL-8B/30B-A3B、UI-TARS-1.5-7B、OpenCUA-7B 在 OSWorld 基准上的表现。",
+   "results": "上下文缩放改善轨迹稳定性但增益饱和；时间缩放减少最大步数停滞但不显著提升任务成功率；结构分解引入规划和格式化开销；并行缩放部分缓解失败但计算成本显著。",
+   "value": "为高效本地 CUA 设计提供了关键指导——需要选择性计算分配和感知失败的机制。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "首次在资源受限的本地模型上系统评估推理时缩放的四个维度：上下文、时间、结构、并行",
+    "agentChange": "评估 Qwen3-VL-8B/30B-A3B、UI-TARS-1.5-7B、OpenCUA-7B 在 OSWorld 基准上的表现。",
+    "selfEvolution": null,
+    "evidence": [
+     "上下文缩放改善轨迹稳定性但增益饱和；时间缩放减少最大步数停滞但不显著提升任务成功率；结构分解引入规划和格式化开销；并行缩放部分缓解失败但计算成本显著。",
+     "揭示时间缩放延长错误轨迹而非纠正它的本质"
+    ],
+    "faq": {
+     "problem": "系统研究本地计算机使用代理（CUA）中的推理时缩放，发现额外计算常带来收益递减并改变失败模式。",
+     "mechanism": "评估 Qwen3-VL-8B/30B-A3B、UI-TARS-1.5-7B、OpenCUA-7B 在 OSWorld 基准上的表现。",
+     "agentChange": "评估 Qwen3-VL-8B/30B-A3B、UI-TARS-1.5-7B、OpenCUA-7B 在 OSWorld 基准上的表现。",
+     "support": "上下文缩放改善轨迹稳定性但增益饱和；时间缩放减少最大步数停滞但不显著提升任务成功率；结构分解引入规划和格式化开销；并行缩放部分缓解失败但计算成本显著。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为高效本地 CUA 设计提供了关键指导——需要选择性计算分配和感知失败的机制。"
+   }
+  },
+  {
+   "id": "2607.28595",
+   "version": 1,
+   "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
+   "abstract": "提出 Beacon——一个通过自适应工具调用和强化学习实现真正工具增益的 agentic 视觉推理模型。",
+   "authors": [],
+   "published": "2026-08-02T04:00:00.000Z",
+   "updated": "2026-08-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cond-mat.str-el"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28595",
+   "pdf": "https://arxiv.org/pdf/2607.28595",
+   "announceType": "new",
+   "summary": "提出 Beacon——一个通过自适应工具调用和强化学习实现真正工具增益的 agentic 视觉推理模型。",
+   "topic": "AI Agent / 推理 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28595"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "揭示了当前 agentic 视觉推理的核心缺陷——过度使用工具反而降低整体性能，并提出了解决方案。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "提出两个关键维度：模式自适应（MA——模型能否识别何时真正需要工具）和工具效应（TE——工具使用是否带来净收益）"
+   ],
+   "innovations": [
+    "发现现有 agentic 视觉推理模型的 MA 有限：工具在困难样本上的增益被在简单样本上引入的错误大幅抵消",
+    "必要性感知自适应奖励 + 提示引导能力扩展机制"
+   ],
+   "method": "在 RL 阶段引入 Necessity-Aware Adaptive Reward 鼓励基于任务必要性的自适应工具调用，以及 Hint-Guided Capability Expansion 加强模型在最困难问题上的工具使用能力。",
+   "results": "在多个基准上展示更强的整体性能、更高的模式自适应性和真正的工具增益。",
+   "value": "揭示了当前 agentic 视觉推理的核心缺陷——过度使用工具反而降低整体性能，并提出了解决方案。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出两个关键维度：模式自适应（MA——模型能否识别何时真正需要工具）和工具效应（TE——工具使用是否带来净收益）",
+    "agentChange": "在 RL 阶段引入 Necessity-Aware Adaptive Reward 鼓励基于任务必要性的自适应工具调用，以及 Hint-Guided Capability Expansion 加强模型在最困难问题上的工具使用能力。",
+    "selfEvolution": null,
+    "evidence": [
+     "在多个基准上展示更强的整体性能、更高的模式自适应性和真正的工具增益。",
+     "必要性感知自适应奖励 + 提示引导能力扩展机制"
+    ],
+    "faq": {
+     "problem": "提出 Beacon——一个通过自适应工具调用和强化学习实现真正工具增益的 agentic 视觉推理模型。",
+     "mechanism": "在 RL 阶段引入 Necessity-Aware Adaptive Reward 鼓励基于任务必要性的自适应工具调用，以及 Hint-Guided Capability Expansion 加强模型在最困难问题上的工具使用能力。",
+     "agentChange": "在 RL 阶段引入 Necessity-Aware Adaptive Reward 鼓励基于任务必要性的自适应工具调用，以及 Hint-Guided Capability Expansion 加强模型在最困难问题上的工具使用能力。",
+     "support": "在多个基准上展示更强的整体性能、更高的模式自适应性和真正的工具增益。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "揭示了当前 agentic 视觉推理的核心缺陷——过度使用工具反而降低整体性能，并提出了解决方案。"
+   }
+  },
+  {
+   "id": "2607.28609",
+   "version": 1,
+   "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+   "abstract": "构建 OSReward 基准系统评估 VLM 作为 CUA 轨迹裁判的可靠性，发现普遍存在的宽容偏差，并开源 OS-Shepherd 奖励模型。",
+   "authors": [],
+   "published": "2026-08-02T04:00:00.000Z",
+   "updated": "2026-08-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cond-mat.str-el"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28609",
+   "pdf": "https://arxiv.org/pdf/2607.28609",
+   "announceType": "new",
+   "summary": "构建 OSReward 基准系统评估 VLM 作为 CUA 轨迹裁判的可靠性，发现普遍存在的宽容偏差，并开源 OS-Shepherd 奖励模型。",
+   "topic": "AI Agent / 推理 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28609"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为 CUA 领域建立了标准化裁判评估基础设施，对 RL 训练和数据策展至关重要。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "首个系统评估 VLM 作为 CUA 轨迹裁判的可靠性基准，轨迹来自多样化代理骨架执行人工验证指令"
+   ],
+   "innovations": [
+    "发现关键问题：即使 SOTA 模型也存在系统性宽容偏差——将失败运行误标为成功",
+    "开源 OS-Shepherd-100K 推理标注轨迹判断数据集和 OS-Shepherd (9B/35B) 奖励模型"
+   ],
+   "method": "多阶段人工标注构建 ground-truth 裁判标签 → 评估主流 VLM 裁判 → 训练 OS-Shepherd 奖励模型。",
+   "results": "OS-Shepherd 在 30-60% 更低成本下匹配商业裁判的性能，提供低成本、稳定、可靠的奖励信号。",
+   "value": "为 CUA 领域建立了标准化裁判评估基础设施，对 RL 训练和数据策展至关重要。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "首个系统评估 VLM 作为 CUA 轨迹裁判的可靠性基准，轨迹来自多样化代理骨架执行人工验证指令",
+    "agentChange": "多阶段人工标注构建 ground-truth 裁判标签 → 评估主流 VLM 裁判 → 训练 OS-Shepherd 奖励模型。",
+    "selfEvolution": null,
+    "evidence": [
+     "OS-Shepherd 在 30-60% 更低成本下匹配商业裁判的性能，提供低成本、稳定、可靠的奖励信号。",
+     "开源 OS-Shepherd-100K 推理标注轨迹判断数据集和 OS-Shepherd (9B/35B) 奖励模型"
+    ],
+    "faq": {
+     "problem": "构建 OSReward 基准系统评估 VLM 作为 CUA 轨迹裁判的可靠性，发现普遍存在的宽容偏差，并开源 OS-Shepherd 奖励模型。",
+     "mechanism": "多阶段人工标注构建 ground-truth 裁判标签 → 评估主流 VLM 裁判 → 训练 OS-Shepherd 奖励模型。",
+     "agentChange": "多阶段人工标注构建 ground-truth 裁判标签 → 评估主流 VLM 裁判 → 训练 OS-Shepherd 奖励模型。",
+     "support": "OS-Shepherd 在 30-60% 更低成本下匹配商业裁判的性能，提供低成本、稳定、可靠的奖励信号。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为 CUA 领域建立了标准化裁判评估基础设施，对 RL 训练和数据策展至关重要。"
+   }
+  },
+  {
+   "id": "2607.28580",
+   "version": 1,
+   "title": "DualG-MRAG: Decoupling Macro-Reasoning and Micro-Matching for Multimodal Retrieval-Augmented Generation",
+   "abstract": "提出 DualG-MRAG——通过宏观推理图和微观匹配图的解耦架构解决多模态 RAG 中的检索噪声问题。",
+   "authors": [],
+   "published": "2026-08-02T04:00:00.000Z",
+   "updated": "2026-08-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "cond-mat.str-el"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28580",
+   "pdf": "https://arxiv.org/pdf/2607.28580",
+   "announceType": "new",
+   "summary": "提出 DualG-MRAG——通过宏观推理图和微观匹配图的解耦架构解决多模态 RAG 中的检索噪声问题。",
+   "topic": "AI Agent / 推理 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28580"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "解决了多模态 RAG 的核心难题——细粒度视觉特征导致图膨胀和检索噪声的矛盾。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "双层图架构：宏观图用于全局拓扑路由（抑制噪声），微观图用于精确局部验证"
+   ],
+   "innovations": [
+    "将检索公式化为查询驱动的消息传递过程（GNN Retriever）",
+    "动态规划解码机制从 GNN 前向传播中提取显式推理路径，替代孤立的文档块"
+   ],
+   "method": "构建 Macro Graph（全局结构）+ Micro Graph（细粒度证据匹配），通过 GNN 进行消息传递检索。",
+   "results": "在证据召回率和复杂 QA 准确率上均优于基线方法。",
+   "value": "解决了多模态 RAG 的核心难题——细粒度视觉特征导致图膨胀和检索噪声的矛盾。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "双层图架构：宏观图用于全局拓扑路由（抑制噪声），微观图用于精确局部验证",
+    "agentChange": "构建 Macro Graph（全局结构）+ Micro Graph（细粒度证据匹配），通过 GNN 进行消息传递检索。",
+    "selfEvolution": null,
+    "evidence": [
+     "在证据召回率和复杂 QA 准确率上均优于基线方法。",
+     "动态规划解码机制从 GNN 前向传播中提取显式推理路径，替代孤立的文档块"
+    ],
+    "faq": {
+     "problem": "提出 DualG-MRAG——通过宏观推理图和微观匹配图的解耦架构解决多模态 RAG 中的检索噪声问题。",
+     "mechanism": "构建 Macro Graph（全局结构）+ Micro Graph（细粒度证据匹配），通过 GNN 进行消息传递检索。",
+     "agentChange": "构建 Macro Graph（全局结构）+ Micro Graph（细粒度证据匹配），通过 GNN 进行消息传递检索。",
+     "support": "在证据召回率和复杂 QA 准确率上均优于基线方法。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "解决了多模态 RAG 的核心难题——细粒度视觉特征导致图膨胀和检索噪声的矛盾。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-07-31",
+  "newCount": 7,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-07-31 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-08-02T04:00:00.000Z",
+ "totalMatched": 12,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 12
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-08-02",
+ "historical": true
+}

@@ -1,0 +1,1041 @@
+{
+ "papers": [
+  {
+   "id": "2609.01786",
+   "version": 1,
+   "title": "Ten Architectures, One Error: Shared Failure Modes in Hyperspectral Classification under Spatially Disjoint Evaluation",
+   "abstract": "提出免泄漏高光谱评测协议，10架构Macro-F1均降0.147，排名变动达5位",
+   "authors": [],
+   "published": "2026-09-04T04:00:00.000Z",
+   "updated": "2026-09-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.01786",
+   "pdf": "https://arxiv.org/pdf/2609.01786",
+   "announceType": "new",
+   "summary": "提出免泄漏高光谱评测协议，10架构Macro-F1均降0.147，排名变动达5位",
+   "topic": "遥感与高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.01786"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为空间相关数据的基准评测确立防泄漏标准",
+   "repository": null,
+   "motivation": "Salinas等经典基准随机划分致近邻泄漏，OA普遍虚高",
+   "coreProblem": "随机像素划分使测试像素贴近训练像素，patch感受野跨越划分边界",
+   "contributions": [
+    "免泄漏评测协议：划分空间分离度与模型感受野绑定",
+    "10架构（经典/谱/Transformer/SSM）等调参预算统一评测",
+    "可复用审计流程+哈希冻结的公开评测子集"
+   ],
+   "innovations": [
+    "首次将划分合法性与分区实际支持半径挂钩",
+    "等预算对比：10架构各90次调参试验、5种子平均",
+    "揭示10架构误分类高度重合像素集（数据谱歧义）"
+   ],
+   "method": "哈希验证冻结划分保证空间不相交，全部模型在同一公开子集上同分同评，并报告划分支持半径与感受野的匹配关系",
+   "results": "Salinas上Macro-F1平均降0.147；模型排名最多变动5位；各架构误分像素高度重合",
+   "value": "为空间相关数据的基准评测确立防泄漏标准",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "免泄漏评测协议：划分空间分离度与模型感受野绑定",
+    "agentChange": "哈希验证冻结划分保证空间不相交，全部模型在同一公开子集上同分同评，并报告划分支持半径与感受野的匹配关系",
+    "selfEvolution": null,
+    "evidence": [
+     "Salinas上Macro-F1平均降0.147；模型排名最多变动5位；各架构误分像素高度重合",
+     "等预算对比：10架构各90次调参试验、5种子平均",
+     "揭示10架构误分类高度重合像素集（数据谱歧义）"
+    ],
+    "faq": {
+     "problem": "提出免泄漏高光谱评测协议，10架构Macro-F1均降0.147，排名变动达5位",
+     "mechanism": "哈希验证冻结划分保证空间不相交，全部模型在同一公开子集上同分同评，并报告划分支持半径与感受野的匹配关系",
+     "agentChange": "哈希验证冻结划分保证空间不相交，全部模型在同一公开子集上同分同评，并报告划分支持半径与感受野的匹配关系",
+     "support": "Salinas上Macro-F1平均降0.147；模型排名最多变动5位；各架构误分像素高度重合",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为空间相关数据的基准评测确立防泄漏标准"
+   }
+  },
+  {
+   "id": "2609.02187",
+   "version": 1,
+   "title": "Lightweight Adaptation of General-Purpose VLMs for Multispectral and SAR Image Understanding",
+   "abstract": "多视图渲染+LoRA让通用VLM理解多光谱/SAR，土地覆盖micro F1 0.8275",
+   "authors": [],
+   "published": "2026-09-04T04:00:00.000Z",
+   "updated": "2026-09-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.02187",
+   "pdf": "https://arxiv.org/pdf/2609.02187",
+   "announceType": "new",
+   "summary": "多视图渲染+LoRA让通用VLM理解多光谱/SAR，土地覆盖micro F1 0.8275",
+   "topic": "遥感与高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.02187"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为通用VLM在遥感复用提供免预训练轻量路径",
+   "repository": null,
+   "motivation": "MSI/SAR原生通道超出RGB预训练VLM的三通道输入接口",
+   "coreProblem": "传感器适配需专用编码器+域预训练，拖累新强checkpoint复用",
+   "contributions": [
+    "5光学视图（真彩/假彩/SWIR/指数图）+1 SAR视图渲染协议",
+    "视图命名+LoRA适配语言网络与选定视觉块",
+    "六类土地覆盖基准（BigEarthNet-v2）+洪水/描述迁移验证"
+   ],
+   "innovations": [
+    "复用VLM多图接口承载多光谱，免建新基础模型",
+    "以视图命名注入传感器语义，非仅堆叠多图",
+    "偏好对去真值标签留证据，促完整且一致预测"
+   ],
+   "method": "MSI渲染为波段合成与光谱指数图，与SAR渲染一同命名输入VLM，仅用紧凑LoRA适配，结构化监督耦合类别与传感器证据",
+   "results": "六类土地覆盖Qwen3-VL micro F1 0.8275；协议使4种受测VLM架构全部提升；迁移Sen1Floods11洪水验证与BigEarthNet.txt描述",
+   "value": "为通用VLM在遥感复用提供免预训练轻量路径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "5光学视图（真彩/假彩/SWIR/指数图）+1 SAR视图渲染协议",
+    "agentChange": "MSI渲染为波段合成与光谱指数图，与SAR渲染一同命名输入VLM，仅用紧凑LoRA适配，结构化监督耦合类别与传感器证据",
+    "selfEvolution": null,
+    "evidence": [
+     "六类土地覆盖Qwen3-VL micro F1 0.8275；协议使4种受测VLM架构全部提升；迁移Sen1Floods11洪水验证与BigEarthNet.txt描述",
+     "以视图命名注入传感器语义，非仅堆叠多图",
+     "偏好对去真值标签留证据，促完整且一致预测"
+    ],
+    "faq": {
+     "problem": "多视图渲染+LoRA让通用VLM理解多光谱/SAR，土地覆盖micro F1 0.8275",
+     "mechanism": "MSI渲染为波段合成与光谱指数图，与SAR渲染一同命名输入VLM，仅用紧凑LoRA适配，结构化监督耦合类别与传感器证据",
+     "agentChange": "MSI渲染为波段合成与光谱指数图，与SAR渲染一同命名输入VLM，仅用紧凑LoRA适配，结构化监督耦合类别与传感器证据",
+     "support": "六类土地覆盖Qwen3-VL micro F1 0.8275；协议使4种受测VLM架构全部提升；迁移Sen1Floods11洪水验证与BigEarthNet.txt描述",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "为通用VLM在遥感复用提供免预训练轻量路径"
+   }
+  },
+  {
+   "id": "2609.02377",
+   "version": 1,
+   "title": "ProSR: Semantic-Prototype-Guided Discrete Modeling for Physically Consistent SAR Super-Resolution",
+   "abstract": "语义原型引导离散token SAR超分，MSTAR ATR 88.39%，0.25m基准SOTA",
+   "authors": [],
+   "published": "2026-09-04T04:00:00.000Z",
+   "updated": "2026-09-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.02377",
+   "pdf": "https://arxiv.org/pdf/2609.02377",
+   "announceType": "new",
+   "summary": "语义原型引导离散token SAR超分，MSTAR ATR 88.39%，0.25m基准SOTA",
+   "topic": "遥感与高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.02377"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让生成式超分保持SAR散射物理一致性",
+   "repository": null,
+   "motivation": "SAR高分数据获取昂贵，超分是实用替代",
+   "coreProblem": "扩散平滑近似抹平SAR强散射尖峰，产生随机结构畸变",
+   "contributions": [
+    "SAR超分重述为量化隐空间离散token预测",
+    "自监督语义先验+原型图引导注意力",
+    "0.25m分辨率SAR超分公开基准（Umbra Open Dataset）"
+   ],
+   "innovations": [
+    "首个面向SAR超分的离散生成框架",
+    "散射原语离散化替代平滑密度近似，保持脉冲性",
+    "原型图约束注意力于同类语义区，消除跨类泄漏"
+   ],
+   "method": "特征映射到有限物理有效码本，重建即迭代选择类别token；SPMG构造空间语义图，PMGA将注意力流限制在同类语义区域",
+   "results": "0.25m Umbra基准主导|ΔTCR|/IW-SSIM/HaarPSI与FID；MSTAR下游ATR 88.39%，超最强基线84.18%（+4.21p）与上采样LR 23.87%",
+   "value": "让生成式超分保持SAR散射物理一致性",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "SAR超分重述为量化隐空间离散token预测",
+    "agentChange": "特征映射到有限物理有效码本，重建即迭代选择类别token；SPMG构造空间语义图，PMGA将注意力流限制在同类语义区域",
+    "selfEvolution": null,
+    "evidence": [
+     "0.25m Umbra基准主导|ΔTCR|/IW-SSIM/HaarPSI与FID；MSTAR下游ATR 88.39%，超最强基线84.18%（+4.21p）与上采样LR 23.87%",
+     "散射原语离散化替代平滑密度近似，保持脉冲性",
+     "原型图约束注意力于同类语义区，消除跨类泄漏"
+    ],
+    "faq": {
+     "problem": "语义原型引导离散token SAR超分，MSTAR ATR 88.39%，0.25m基准SOTA",
+     "mechanism": "特征映射到有限物理有效码本，重建即迭代选择类别token；SPMG构造空间语义图，PMGA将注意力流限制在同类语义区域",
+     "agentChange": "特征映射到有限物理有效码本，重建即迭代选择类别token；SPMG构造空间语义图，PMGA将注意力流限制在同类语义区域",
+     "support": "0.25m Umbra基准主导|ΔTCR|/IW-SSIM/HaarPSI与FID；MSTAR下游ATR 88.39%，超最强基线84.18%（+4.21p）与上采样LR 23.87%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "让生成式超分保持SAR散射物理一致性"
+   }
+  },
+  {
+   "id": "2609.02085",
+   "version": 1,
+   "title": "TC-Next: Zero-Shot Multimodal Cyclone Forecasting",
+   "abstract": "FM大气场+0.07°卫星红外预测台风路径强度，强度误差降3-6倍",
+   "authors": [],
+   "published": "2026-09-04T04:00:00.000Z",
+   "updated": "2026-09-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.02085",
+   "pdf": "https://arxiv.org/pdf/2609.02085",
+   "announceType": "new",
+   "summary": "FM大气场+0.07°卫星红外预测台风路径强度，强度误差降3-6倍",
+   "topic": "遥感与高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.02085"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为台风强度预报提供零样本可迁移多模态范式",
+   "repository": null,
+   "motivation": "台风强度预报决定大规模撤离决策，现有FM强度差",
+   "coreProblem": "天气FM强度读出不优于持续性预报，ERA5训练自带12-15m/s偏差",
+   "contributions": [
+    "TC-Next：FM大气场+GridSat红外多模态模型",
+    "仅用GraphCast训练即实现跨模型零样本迁移",
+    "西太平洋6-24h路径与强度系统评测"
+   ],
+   "innovations": [
+    "首次联合卫星风暴核影像与FM场做强度预报",
+    "输入仅泛化大气变量，与特定FM解耦",
+    "2025 WP季确定性对比中优于WN-C专用追踪器"
+   ],
+   "method": "FM预报场提供引导气流与环境热力学，GridSat 0.07°红外提供对流结构，多模态融合预测6-24h路径与强度",
+   "results": "GraphCast上路径误差降15-44%、强度误差降3-6倍（vs TempestExtremes）；零样本Pangu-Weather/IFS HRES双指标仍领先；WN-C上全时效强度更优",
+   "value": "为台风强度预报提供零样本可迁移多模态范式",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "TC-Next：FM大气场+GridSat红外多模态模型",
+    "agentChange": "FM预报场提供引导气流与环境热力学，GridSat 0.07°红外提供对流结构，多模态融合预测6-24h路径与强度",
+    "selfEvolution": null,
+    "evidence": [
+     "GraphCast上路径误差降15-44%、强度误差降3-6倍（vs TempestExtremes）；零样本Pangu-Weather/IFS HRES双指标仍领先；WN-C上全时效强度更优",
+     "输入仅泛化大气变量，与特定FM解耦",
+     "2025 WP季确定性对比中优于WN-C专用追踪器"
+    ],
+    "faq": {
+     "problem": "FM大气场+0.07°卫星红外预测台风路径强度，强度误差降3-6倍",
+     "mechanism": "FM预报场提供引导气流与环境热力学，GridSat 0.07°红外提供对流结构，多模态融合预测6-24h路径与强度",
+     "agentChange": "FM预报场提供引导气流与环境热力学，GridSat 0.07°红外提供对流结构，多模态融合预测6-24h路径与强度",
+     "support": "GraphCast上路径误差降15-44%、强度误差降3-6倍（vs TempestExtremes）；零样本Pangu-Weather/IFS HRES双指标仍领先；WN-C上全时效强度更优",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "为台风强度预报提供零样本可迁移多模态范式"
+   }
+  },
+  {
+   "id": "2609.02683",
+   "version": 1,
+   "title": "Genesis: A Generative Engine for Hierarchical Satellite Image Synthesis",
+   "abstract": "提出多尺度瓦片补全新任务，SR+外绘组合生成全局一致卫星金字塔",
+   "authors": [],
+   "published": "2026-09-04T04:00:00.000Z",
+   "updated": "2026-09-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.02683",
+   "pdf": "https://arxiv.org/pdf/2609.02683",
+   "announceType": "new",
+   "summary": "提出多尺度瓦片补全新任务，SR+外绘组合生成全局一致卫星金字塔",
+   "topic": "遥感与高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.02683"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为地学多尺度一致数据增强提供统一生成底座",
+   "repository": null,
+   "motivation": "地观本质多尺度，任务跨不同分辨率与瓦片金字塔",
+   "coreProblem": "现有卫星生成模型只能单轴zoom或pan，无法保金字塔跨尺度+空间一致",
+   "contributions": [
+    "定义多尺度瓦片补全任务与四叉树金字塔表示",
+    "Genesis引擎：垂直SR+水平mask外绘两SOTA算子组合",
+    "dense500全观测多尺度金字塔数据集+金字塔级指标"
+   ],
+   "innovations": [
+    "首次统一zoom与pan双轴的卫星影像生成",
+    "稀疏任意缩放种子瓦片生成完整一致金字塔",
+    "提出LR-PSNR/xLR-PSNR/RAPSD金字塔级一致性指标"
+   ],
+   "method": "在四叉树上组合两个子任务SOTA模型：垂直超分抬升子瓦片分辨率，水平mask外绘补全缺失区域，将稀疏种子传播为无缝多分辨率地图",
+   "results": "dense500上SR与外绘子任务均SOTA；FID 99.4（单种子）→64.4/62.2（3/4种子），CLIP-I 0.808→0.864，RAPSD 2.00→0.88",
+   "value": "为地学多尺度一致数据增强提供统一生成底座",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "定义多尺度瓦片补全任务与四叉树金字塔表示",
+    "agentChange": "在四叉树上组合两个子任务SOTA模型：垂直超分抬升子瓦片分辨率，水平mask外绘补全缺失区域，将稀疏种子传播为无缝多分辨率地图",
+    "selfEvolution": null,
+    "evidence": [
+     "dense500上SR与外绘子任务均SOTA；FID 99.4（单种子）→64.4/62.2（3/4种子），CLIP-I 0.808→0.864，RAPSD 2.00→0.88",
+     "稀疏任意缩放种子瓦片生成完整一致金字塔",
+     "提出LR-PSNR/xLR-PSNR/RAPSD金字塔级一致性指标"
+    ],
+    "faq": {
+     "problem": "提出多尺度瓦片补全新任务，SR+外绘组合生成全局一致卫星金字塔",
+     "mechanism": "在四叉树上组合两个子任务SOTA模型：垂直超分抬升子瓦片分辨率，水平mask外绘补全缺失区域，将稀疏种子传播为无缝多分辨率地图",
+     "agentChange": "在四叉树上组合两个子任务SOTA模型：垂直超分抬升子瓦片分辨率，水平mask外绘补全缺失区域，将稀疏种子传播为无缝多分辨率地图",
+     "support": "dense500上SR与外绘子任务均SOTA；FID 99.4（单种子）→64.4/62.2（3/4种子），CLIP-I 0.808→0.864，RAPSD 2.00→0.88",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "为地学多尺度一致数据增强提供统一生成底座"
+   }
+  },
+  {
+   "id": "2609.02766",
+   "version": 1,
+   "title": "Do Tabular Foundation Models Know Physics? Contamination, Units, and the Deterministic Limit",
+   "abstract": "系统探测表格FM物理先验：善内插物理，但无法表示无噪机制与单位",
+   "authors": [],
+   "published": "2026-09-04T04:00:00.000Z",
+   "updated": "2026-09-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.02766",
+   "pdf": "https://arxiv.org/pdf/2609.02766",
+   "announceType": "new",
+   "summary": "系统探测表格FM物理先验：善内插物理，但无法表示无噪机制与单位",
+   "topic": "基础模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.02766"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "划定表格FM作为物理模型的能力边界",
+   "repository": null,
+   "motivation": "物理测量多以表格形式到达，TFM是否学到物理存疑",
+   "coreProblem": "TFM构造上是贝叶斯模型，其先验的物理内容从未被直接检验",
+   "contributions": [
+    "316个物理方程采样数据集（域内+域外）",
+    "4个TFM对6个基线的系统评测",
+    "物理单位维度矩阵+确定性极限分析"
+   ],
+   "innovations": [
+    "首次直接检验表格FM先验的物理内容",
+    "区分数据污染与先验缺陷：外推失败源于先验本身",
+    "证明先验既不能表示无噪机制也不利用量纲结构"
+   ],
+   "method": "从316个物理方程采样域内/域外数据，评测TabPFN-3/TabICLv2/TabDPT/Real-TabPFN-2.5的内插外推、单位敏感性与无噪数据确定性极限",
+   "results": "域内插值上TFM开箱及调参后均胜过全部6个基线；无噪机制表示与单位分析全部失败，外推显著劣于内插",
+   "value": "划定表格FM作为物理模型的能力边界",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "316个物理方程采样数据集（域内+域外）",
+    "agentChange": "从316个物理方程采样域内/域外数据，评测TabPFN-3/TabICLv2/TabDPT/Real-TabPFN-2.5的内插外推、单位敏感性与无噪数据确定性极限",
+    "selfEvolution": null,
+    "evidence": [
+     "域内插值上TFM开箱及调参后均胜过全部6个基线；无噪机制表示与单位分析全部失败，外推显著劣于内插",
+     "区分数据污染与先验缺陷：外推失败源于先验本身",
+     "证明先验既不能表示无噪机制也不利用量纲结构"
+    ],
+    "faq": {
+     "problem": "系统探测表格FM物理先验：善内插物理，但无法表示无噪机制与单位",
+     "mechanism": "从316个物理方程采样域内/域外数据，评测TabPFN-3/TabICLv2/TabDPT/Real-TabPFN-2.5的内插外推、单位敏感性与无噪数据确定性极限",
+     "agentChange": "从316个物理方程采样域内/域外数据，评测TabPFN-3/TabICLv2/TabDPT/Real-TabPFN-2.5的内插外推、单位敏感性与无噪数据确定性极限",
+     "support": "域内插值上TFM开箱及调参后均胜过全部6个基线；无噪机制表示与单位分析全部失败，外推显著劣于内插",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "划定表格FM作为物理模型的能力边界"
+   }
+  },
+  {
+   "id": "2609.02264",
+   "version": 1,
+   "title": "Codebook Agent: Amortized Topology Design for LLM Multi-Agent Systems",
+   "abstract": "码本摊销多智能体拓扑设计，6基准均值84.6，2.4ms出拓扑，省21.9-33.2% token",
+   "authors": [],
+   "published": "2026-09-04T04:00:00.000Z",
+   "updated": "2026-09-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.02264",
+   "pdf": "https://arxiv.org/pdf/2609.02264",
+   "announceType": "new",
+   "summary": "码本摊销多智能体拓扑设计，6基准均值84.6，2.4ms出拓扑，省21.9-33.2% token",
+   "topic": "Agent与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.02264"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "揭示拓扑设计真实结构，给出极简有效方案",
+   "repository": null,
+   "motivation": "按查询定制通信拓扑可同时提升多智能体精度与效率",
+   "coreProblem": "生成-打分范式三假设全被证伪：设计空间小、边数反相关成本、打分器邻接不变",
+   "contributions": [
+    "实证：幸存拓扑坍缩至约6种；|E|与token消耗r≈-0.4",
+    "VQ自编码器16项码本+奖励加权MLP查询映射",
+    "代理MLP回归实测效用与归一化token成本"
+   ],
+   "innovations": [
+    "首次把拓扑设计从图生成重构为码本摊销",
+    "以实测token成本替代边数结构代理",
+    "测试时无采样循环、无消息传递"
+   ],
+   "method": "VQ-VAE将高奖励拓扑量化为16个查询无关码，MLP把查询嵌入映射为码分布，批量解码top码后由代理单次前向重排并执行优胜者",
+   "results": "6个基准平均84.6，超最强先前设计器83.0；拓扑生成2.4ms；LLM token消耗降21.9-33.2%",
+   "value": "揭示拓扑设计真实结构，给出极简有效方案",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "实证：幸存拓扑坍缩至约6种；|E|与token消耗r≈-0.4",
+    "agentChange": "VQ-VAE将高奖励拓扑量化为16个查询无关码，MLP把查询嵌入映射为码分布，批量解码top码后由代理单次前向重排并执行优胜者",
+    "selfEvolution": null,
+    "evidence": [
+     "6个基准平均84.6，超最强先前设计器83.0；拓扑生成2.4ms；LLM token消耗降21.9-33.2%",
+     "以实测token成本替代边数结构代理",
+     "测试时无采样循环、无消息传递"
+    ],
+    "faq": {
+     "problem": "码本摊销多智能体拓扑设计，6基准均值84.6，2.4ms出拓扑，省21.9-33.2% token",
+     "mechanism": "VQ-VAE将高奖励拓扑量化为16个查询无关码，MLP把查询嵌入映射为码分布，批量解码top码后由代理单次前向重排并执行优胜者",
+     "agentChange": "VQ-VAE将高奖励拓扑量化为16个查询无关码，MLP把查询嵌入映射为码分布，批量解码top码后由代理单次前向重排并执行优胜者",
+     "support": "6个基准平均84.6，超最强先前设计器83.0；拓扑生成2.4ms；LLM token消耗降21.9-33.2%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "揭示拓扑设计真实结构，给出极简有效方案"
+   }
+  },
+  {
+   "id": "2609.02088",
+   "version": 1,
+   "title": "Rendering-in-the-Loop: An Execution-Driven Agent for Interactive Web Development",
+   "abstract": "浏览器执行反馈闭环网页开发智能体，9B模型57.52%超GPT-5.5单次生成",
+   "authors": [],
+   "published": "2026-09-04T04:00:00.000Z",
+   "updated": "2026-09-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.02088",
+   "pdf": "https://arxiv.org/pdf/2609.02088",
+   "announceType": "new",
+   "summary": "浏览器执行反馈闭环网页开发智能体，9B模型57.52%超GPT-5.5单次生成",
+   "topic": "Agent与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.02088"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为交互式网页开发提供可验证的Agent执行范式",
+   "repository": null,
+   "motivation": "网页必须同时满足视觉保真与交互正确",
+   "coreProblem": "静态截图与文本日志看不见运行时事件绑定、状态迁移等交互失败",
+   "contributions": [
+    "AIV模块：真实浏览器重放参考交互轨迹逐步验证",
+    "ERS分数：交互正确性与视觉保真联合度量",
+    "执行验证数据合成管线，与推理时优化互补"
+   ],
+   "innovations": [
+    "首次把运行时交互观察接入网页生成-修复闭环",
+    "保留历史最佳实现，失败编辑不致退化",
+    "多模态批判模型把运行时观察转结构化修复建议"
+   ],
+   "method": "生成页→AIV浏览器重放交互收集执行观察→ERS打分+多模态批判→SWE工具定位修复代码，循环迭代至交互与视觉双达标",
+   "results": "IWR-Bench上Qwen3.5-9B从40.40%提至57.52%，超GPT-5.5（55.74）与1T参数Kimi-K2.6（55.61）",
+   "value": "为交互式网页开发提供可验证的Agent执行范式",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "AIV模块：真实浏览器重放参考交互轨迹逐步验证",
+    "agentChange": "生成页→AIV浏览器重放交互收集执行观察→ERS打分+多模态批判→SWE工具定位修复代码，循环迭代至交互与视觉双达标",
+    "selfEvolution": null,
+    "evidence": [
+     "IWR-Bench上Qwen3.5-9B从40.40%提至57.52%，超GPT-5.5（55.74）与1T参数Kimi-K2.6（55.61）",
+     "保留历史最佳实现，失败编辑不致退化",
+     "多模态批判模型把运行时观察转结构化修复建议"
+    ],
+    "faq": {
+     "problem": "浏览器执行反馈闭环网页开发智能体，9B模型57.52%超GPT-5.5单次生成",
+     "mechanism": "生成页→AIV浏览器重放交互收集执行观察→ERS打分+多模态批判→SWE工具定位修复代码，循环迭代至交互与视觉双达标",
+     "agentChange": "生成页→AIV浏览器重放交互收集执行观察→ERS打分+多模态批判→SWE工具定位修复代码，循环迭代至交互与视觉双达标",
+     "support": "IWR-Bench上Qwen3.5-9B从40.40%提至57.52%，超GPT-5.5（55.74）与1T参数Kimi-K2.6（55.61）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为交互式网页开发提供可验证的Agent执行范式"
+   }
+  },
+  {
+   "id": "2609.02849",
+   "version": 1,
+   "title": "Post-Training Language Models for Gold-Medal Performance in Coding Competitions",
+   "abstract": "SFT+RL+GenCorrect后训练，IOI 2026现场535.4分超最高分人类选手",
+   "authors": [],
+   "published": "2026-09-04T04:00:00.000Z",
+   "updated": "2026-09-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.02849",
+   "pdf": "https://arxiv.org/pdf/2609.02849",
+   "announceType": "new",
+   "summary": "SFT+RL+GenCorrect后训练，IOI 2026现场535.4分超最高分人类选手",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.02849"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明可复现后训练管线能推开源模型过人类金牌线",
+   "repository": null,
+   "motivation": "金牌级竞赛编程是LLM推理最强试金石，组件贡献难隔离",
+   "coreProblem": "现有金牌级系统封闭且混杂训练数据/规模/推理算力，无法归因",
+   "contributions": [
+    "2.2万题精选+120万合成推理轨迹管线",
+    "Nemotron-3-Nano-CC（30B-A3B）与Ultra-CC（550B-A55B）",
+    "GenCorrect：反馈驱动迭代测试时精炼"
+   ],
+   "innovations": [
+    "首个在IOI题集上超最高分人类选手的AI系统",
+    "公开隔离SFT、RL、测试时算力各自贡献",
+    "IOI 2026赛前按官方约束前瞻性现场评测"
+   ],
+   "method": "大规模题集SFT+RL后训练，GenCorrect用历史提交反馈迭代精炼多样解，50次提交上限内5轮收敛",
+   "results": "IOI 2025：Nano-CC 130→291（SFT+RL）→468（GenCorrect），超金牌线438.3，Ultra-CC达502；IOI 2026：535.4/600，超金牌线361.12与人类最高498.27",
+   "value": "证明可复现后训练管线能推开源模型过人类金牌线",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "2.2万题精选+120万合成推理轨迹管线",
+    "agentChange": "大规模题集SFT+RL后训练，GenCorrect用历史提交反馈迭代精炼多样解，50次提交上限内5轮收敛",
+    "selfEvolution": null,
+    "evidence": [
+     "IOI 2025：Nano-CC 130→291（SFT+RL）→468（GenCorrect），超金牌线438.3，Ultra-CC达502；IOI 2026：535.4/600，超金牌线361.12与人类最高498.27",
+     "公开隔离SFT、RL、测试时算力各自贡献",
+     "IOI 2026赛前按官方约束前瞻性现场评测"
+    ],
+    "faq": {
+     "problem": "SFT+RL+GenCorrect后训练，IOI 2026现场535.4分超最高分人类选手",
+     "mechanism": "大规模题集SFT+RL后训练，GenCorrect用历史提交反馈迭代精炼多样解，50次提交上限内5轮收敛",
+     "agentChange": "大规模题集SFT+RL后训练，GenCorrect用历史提交反馈迭代精炼多样解，50次提交上限内5轮收敛",
+     "support": "IOI 2025：Nano-CC 130→291（SFT+RL）→468（GenCorrect），超金牌线438.3，Ultra-CC达502；IOI 2026：535.4/600，超金牌线361.12与人类最高498.27",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "证明可复现后训练管线能推开源模型过人类金牌线"
+   }
+  },
+  {
+   "id": "2609.02089",
+   "version": 1,
+   "title": "IDEEA: training-free Input-Dependent stEEring via Activation cluster matching",
+   "abstract": "免训练输入相关激活引导，TruthfulQA真值×信息率平均升9.9%",
+   "authors": [],
+   "published": "2026-09-04T04:00:00.000Z",
+   "updated": "2026-09-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.02089",
+   "pdf": "https://arxiv.org/pdf/2609.02089",
+   "announceType": "new",
+   "summary": "免训练输入相关激活引导，TruthfulQA真值×信息率平均升9.9%",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.02089"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "以零训练成本获得输入自适应行为对齐",
+   "repository": null,
+   "motivation": "激活引导是比权重更新更省的对齐替代",
+   "coreProblem": "现有免训练引导对全部输入共享单一静态方向，失配多子区激活",
+   "contributions": [
+    "逐注意力头聚类正负激活支集",
+    "最优匹配构造簇条件方向池",
+    "推理时按输入自身激活自选方向"
+   ],
+   "innovations": [
+    "首个输入相关的免训练引导框架",
+    "证明概念激活占据多个离散子区而非单一方向",
+    "引导时保留输入原始表征"
+   ],
+   "method": "对每个注意力头的正负样本激活聚类，求解最优匹配得簇条件方向集；推理时选择与当前激活最匹配的方向施加线性偏置",
+   "results": "TruthfulQA上truth×info率较最佳输入无关基线平均+9.9%（最高+23.5%）",
+   "value": "以零训练成本获得输入自适应行为对齐",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "逐注意力头聚类正负激活支集",
+    "agentChange": "对每个注意力头的正负样本激活聚类，求解最优匹配得簇条件方向集；推理时选择与当前激活最匹配的方向施加线性偏置",
+    "selfEvolution": null,
+    "evidence": [
+     "TruthfulQA上truth×info率较最佳输入无关基线平均+9.9%（最高+23.5%）",
+     "证明概念激活占据多个离散子区而非单一方向",
+     "引导时保留输入原始表征"
+    ],
+    "faq": {
+     "problem": "免训练输入相关激活引导，TruthfulQA真值×信息率平均升9.9%",
+     "mechanism": "对每个注意力头的正负样本激活聚类，求解最优匹配得簇条件方向集；推理时选择与当前激活最匹配的方向施加线性偏置",
+     "agentChange": "对每个注意力头的正负样本激活聚类，求解最优匹配得簇条件方向集；推理时选择与当前激活最匹配的方向施加线性偏置",
+     "support": "TruthfulQA上truth×info率较最佳输入无关基线平均+9.9%（最高+23.5%）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "以零训练成本获得输入自适应行为对齐"
+   }
+  },
+  {
+   "id": "2609.02390",
+   "version": 1,
+   "title": "Seeing Beyond the Lesion: Disease Recognition from Reactive CNS Tissue",
+   "abstract": "从反应性非病变脑组织识别疾病，细粒度任务p≤1e-4显著超随机",
+   "authors": [],
+   "published": "2026-09-04T04:00:00.000Z",
+   "updated": "2026-09-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.02390",
+   "pdf": "https://arxiv.org/pdf/2609.02390",
+   "announceType": "new",
+   "summary": "从反应性非病变脑组织识别疾病，细粒度任务p≤1e-4显著超随机",
+   "topic": "医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.02390"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为\"废活检\"再诊断与病理基准审计提供依据",
+   "repository": null,
+   "motivation": "约14%脑活检采样误差只取到反应性组织，漏诊",
+   "coreProblem": "反应性脑实质能否编码疾病信号，且基准或被切片规模捷径污染",
+   "contributions": [
+    "4个病理FM冻结编码器+共享注意力MIL基准",
+    "245张WSI/186例确认诊断的层级诊断任务集",
+    "来源捷径审计：仅切片大小的对照基线"
+   ],
+   "innovations": [
+    "首次证明常规\"非诊断\"反应组织可弱监督预测疾病",
+    "提出采集捷径审计作为计算病理基准必备对照",
+    "4个SOTA编码器表现统计不可区分，表征非瓶颈"
+   ],
+   "method": "病理FM作冻结patch编码器，注意力MIL聚合切片表征，层级任务从粗类别到三个细粒度诊断区分，置换检验验证显著性",
+   "results": "粗类别可仅由切片大小基本复现（捷径）；去除该混杂后3个细粒度任务疾病标签仍可预测且p≤1e-4；4编码器间无显著差异",
+   "value": "为\"废活检\"再诊断与病理基准审计提供依据",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "4个病理FM冻结编码器+共享注意力MIL基准",
+    "agentChange": "病理FM作冻结patch编码器，注意力MIL聚合切片表征，层级任务从粗类别到三个细粒度诊断区分，置换检验验证显著性",
+    "selfEvolution": null,
+    "evidence": [
+     "粗类别可仅由切片大小基本复现（捷径）；去除该混杂后3个细粒度任务疾病标签仍可预测且p≤1e-4；4编码器间无显著差异",
+     "提出采集捷径审计作为计算病理基准必备对照",
+     "4个SOTA编码器表现统计不可区分，表征非瓶颈"
+    ],
+    "faq": {
+     "problem": "从反应性非病变脑组织识别疾病，细粒度任务p≤1e-4显著超随机",
+     "mechanism": "病理FM作冻结patch编码器，注意力MIL聚合切片表征，层级任务从粗类别到三个细粒度诊断区分，置换检验验证显著性",
+     "agentChange": "病理FM作冻结patch编码器，注意力MIL聚合切片表征，层级任务从粗类别到三个细粒度诊断区分，置换检验验证显著性",
+     "support": "粗类别可仅由切片大小基本复现（捷径）；去除该混杂后3个细粒度任务疾病标签仍可预测且p≤1e-4；4编码器间无显著差异",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为\"废活检\"再诊断与病理基准审计提供依据"
+   }
+  },
+  {
+   "id": "2609.02224",
+   "version": 1,
+   "title": "Signal or Noise? Auditing Rotation-Induced Saliency Drift in Medical and Aerial Imaging",
+   "abstract": "免训练等变显著性包装器，ViT等变率+247%，解释旋转可复现",
+   "authors": [],
+   "published": "2026-09-04T04:00:00.000Z",
+   "updated": "2026-09-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.02224",
+   "pdf": "https://arxiv.org/pdf/2609.02224",
+   "announceType": "new",
+   "summary": "免训练等变显著性包装器，ViT等变率+247%，解释旋转可复现",
+   "topic": "计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.02224"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让旋转敏感域的模型解释首次可作审计证据",
+   "repository": null,
+   "motivation": "组学病理与航拍等无标准朝向域，显著图漂移削弱审计证据",
+   "coreProblem": "Grad-CAM旋转漂移源自算子哪个阶段不明，无法判定信号或噪声",
+   "contributions": [
+    "逐阶段等变性测量：通道权重最稳，空间激活张量在动",
+    "因果测试：遮挡漂移像素损失小于遮挡随机像素",
+    "EquiGrad-CAM：多视图反旋转归一化平均包装器"
+   ],
+   "innovations": [
+    "首次逐阶段定位漂移源于CAM算子被丢弃的自由度",
+    "免训练超越旋转增强训练，无需重训",
+    "副产品PEUM按可复现性对解释排序"
+   ],
+   "method": "取T个旋转视图，将各视图显著性反旋转回公共规范帧后平均，消除分类器池化本就丢弃的自由度所携带的漂移",
+   "results": "ImageNet-1K上较单视图Grad-CAM等变性+36.0%（ResNet-50）/+87.5%（VGG-16）/+247%（ViT-B/16）；零样本CLIP+145%；PatchCamelyon与RESISC45验证",
+   "value": "让旋转敏感域的模型解释首次可作审计证据",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "逐阶段等变性测量：通道权重最稳，空间激活张量在动",
+    "agentChange": "取T个旋转视图，将各视图显著性反旋转回公共规范帧后平均，消除分类器池化本就丢弃的自由度所携带的漂移",
+    "selfEvolution": null,
+    "evidence": [
+     "ImageNet-1K上较单视图Grad-CAM等变性+36.0%（ResNet-50）/+87.5%（VGG-16）/+247%（ViT-B/16）；零样本CLIP+145%；PatchCamelyon与RESISC45验证",
+     "免训练超越旋转增强训练，无需重训",
+     "副产品PEUM按可复现性对解释排序"
+    ],
+    "faq": {
+     "problem": "免训练等变显著性包装器，ViT等变率+247%，解释旋转可复现",
+     "mechanism": "取T个旋转视图，将各视图显著性反旋转回公共规范帧后平均，消除分类器池化本就丢弃的自由度所携带的漂移",
+     "agentChange": "取T个旋转视图，将各视图显著性反旋转回公共规范帧后平均，消除分类器池化本就丢弃的自由度所携带的漂移",
+     "support": "ImageNet-1K上较单视图Grad-CAM等变性+36.0%（ResNet-50）/+87.5%（VGG-16）/+247%（ViT-B/16）；零样本CLIP+145%；PatchCamelyon与RESISC45验证",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "让旋转敏感域的模型解释首次可作审计证据"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-09-03",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-09-03 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-09-04T04:00:00.000Z",
+ "totalMatched": 365,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 365
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-09-04",
+ "historical": true
+}

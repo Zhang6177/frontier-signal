@@ -1,0 +1,756 @@
+{
+ "papers": [
+  {
+   "id": "2606.16302",
+   "version": 1,
+   "title": "Explainable Flood Segmentation on Sentinel-1 SAR Imagery Using CNN and Transformer Architectures",
+   "abstract": "系统比较了CNN和Transformer在Sentinel-1 SAR图像上的洪水分割性能，并首次在三分类设定下（背景/永久水体/洪泛陆地）进行了可解释性分析。",
+   "authors": [],
+   "published": "2026-07-30T04:00:00.000Z",
+   "updated": "2026-07-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2606.16302",
+   "pdf": "https://arxiv.org/pdf/2606.16302",
+   "announceType": "new",
+   "summary": "系统比较了CNN和Transformer在Sentinel-1 SAR图像上的洪水分割性能，并首次在三分类设定下（背景/永久水体/洪泛陆地）进行了可解释性分析。",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2606.16302"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为洪水灾害响应提供了更精细的水体分类基准，SegFormer架构在SAR洪水检测中展现出优越的空间一致性。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "首次在洪水分割中将永久水体与洪泛区域分离为独立类别（而非传统的二分类），更贴近实际应急响应需求"
+   ],
+   "innovations": [
+    "系统性地比较了3种CNN（U-Net、U-Net++、DeepLabV3）和3种SegFormer变体（b0/b1/b2）在两个基准数据集上的表现",
+    "结合了Grad-CAM和不确定性估计两种可解释性方法，揭示了Transformer和CNN在决策模式上的差异"
+   ],
+   "method": "使用Dice+Focal Loss组合训练多类别分割模型，以验证集flood IoU为early-stopping标准。在ETCI数据集上训练后迁移到SenFloods11进行微调。",
+   "results": "SegFormer-b2在ETCI数据集上flood IoU达0.313（F1=0.477），显著优于U-Net（IoU=0.248）；DeepLabV3在永久水体分割上表现最优。SegFormer-b2产生更聚焦的Grad-CAM激活，U-Net在边界处提供更丰富的不确定性估计。",
+   "value": "为洪水灾害响应提供了更精细的水体分类基准，SegFormer架构在SAR洪水检测中展现出优越的空间一致性。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "首次在洪水分割中将永久水体与洪泛区域分离为独立类别（而非传统的二分类），更贴近实际应急响应需求",
+    "agentChange": "使用Dice+Focal Loss组合训练多类别分割模型，以验证集flood IoU为early-stopping标准。在ETCI数据集上训练后迁移到SenFloods11进行微调。",
+    "selfEvolution": null,
+    "evidence": [
+     "SegFormer-b2在ETCI数据集上flood IoU达0.313（F1=0.477），显著优于U-Net（IoU=0.248）；DeepLabV3在永久水体分割上表现最优。SegFormer-b2产生更聚焦的Grad-CAM激活，U-Net在边界处提供更丰富的不确定性估计。",
+     "结合了Grad-CAM和不确定性估计两种可解释性方法，揭示了Transformer和CNN在决策模式上的差异"
+    ],
+    "faq": {
+     "problem": "系统比较了CNN和Transformer在Sentinel-1 SAR图像上的洪水分割性能，并首次在三分类设定下（背景/永久水体/洪泛陆地）进行了可解释性分析。",
+     "mechanism": "使用Dice+Focal Loss组合训练多类别分割模型，以验证集flood IoU为early-stopping标准。在ETCI数据集上训练后迁移到SenFloods11进行微调。",
+     "agentChange": "使用Dice+Focal Loss组合训练多类别分割模型，以验证集flood IoU为early-stopping标准。在ETCI数据集上训练后迁移到SenFloods11进行微调。",
+     "support": "SegFormer-b2在ETCI数据集上flood IoU达0.313（F1=0.477），显著优于U-Net（IoU=0.248）；DeepLabV3在永久水体分割上表现最优。SegFormer-b2产生更聚焦的Grad-CAM激活，U-Net在边界处提供更丰富的不确定性估计。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为洪水灾害响应提供了更精细的水体分类基准，SegFormer架构在SAR洪水检测中展现出优越的空间一致性。"
+   }
+  },
+  {
+   "id": "2607.26057",
+   "version": 1,
+   "title": "Pass the Baton: Trajectory-Relayed On-Policy Distillation",
+   "abstract": "通过让强教师模型在检测到学生推理方向偏离时短暂\"接手\"生成，解决了在线策略蒸馏中\"前缀失败\"的核心问题。",
+   "authors": [],
+   "published": "2026-07-30T04:00:00.000Z",
+   "updated": "2026-07-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.26057",
+   "pdf": "https://arxiv.org/pdf/2607.26057",
+   "announceType": "new",
+   "summary": "通过让强教师模型在检测到学生推理方向偏离时短暂\"接手\"生成，解决了在线策略蒸馏中\"前缀失败\"的核心问题。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.26057"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "首次从\"前缀失败\"角度系统解决OPD的问题，方法无需任何额外标签且训练效率提升一倍，为小型模型从大型教师模型学习提供了更可靠的路径。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "发现教师-学生在失败前缀上存在\"续写不对称性\"：教师倾向于重新导向，而学生继续原方向偏离"
+   ],
+   "innovations": [
+    "提出无需标签的手动触发器（handoff trigger），通过关键词列表检测推理方向分歧",
+    "设计了\"有限中继预算\"机制，将教师干预集中在训练早期关键位置，同时限制偏离学生策略"
+   ],
+   "method": "Relay-OPD在训练中检测触发点 → 教师短暂接管生成教师段 → 学生恢复并优化混合轨迹。无需外部验证器、过程监督标签或答案正确性标签。使用Qwen3-4B教师+Qwen3-0.6B/1.7B学生，在DAPO-Math-17K上训练。",
+   "results": "在8个数学推理基准上，Relay-OPD比标准OPD平均提升+5.73%，比最强基线FastOPD提升+1.49%（1.7B模型），0.6B模型也有稳定提升。训练轨迹长度减少超过50%。",
+   "value": "首次从\"前缀失败\"角度系统解决OPD的问题，方法无需任何额外标签且训练效率提升一倍，为小型模型从大型教师模型学习提供了更可靠的路径。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "发现教师-学生在失败前缀上存在\"续写不对称性\"：教师倾向于重新导向，而学生继续原方向偏离",
+    "agentChange": "Relay-OPD在训练中检测触发点 → 教师短暂接管生成教师段 → 学生恢复并优化混合轨迹。无需外部验证器、过程监督标签或答案正确性标签。使用Qwen3-4B教师+Qwen3-0.6B/1.7B学生，在DAPO-Math-17K上训练。",
+    "selfEvolution": null,
+    "evidence": [
+     "在8个数学推理基准上，Relay-OPD比标准OPD平均提升+5.73%，比最强基线FastOPD提升+1.49%（1.7B模型），0.6B模型也有稳定提升。训练轨迹长度减少超过50%。",
+     "设计了\"有限中继预算\"机制，将教师干预集中在训练早期关键位置，同时限制偏离学生策略"
+    ],
+    "faq": {
+     "problem": "通过让强教师模型在检测到学生推理方向偏离时短暂\"接手\"生成，解决了在线策略蒸馏中\"前缀失败\"的核心问题。",
+     "mechanism": "Relay-OPD在训练中检测触发点 → 教师短暂接管生成教师段 → 学生恢复并优化混合轨迹。无需外部验证器、过程监督标签或答案正确性标签。使用Qwen3-4B教师+Qwen3-0.6B/1.7B学生，在DAPO-Math-17K上训练。",
+     "agentChange": "Relay-OPD在训练中检测触发点 → 教师短暂接管生成教师段 → 学生恢复并优化混合轨迹。无需外部验证器、过程监督标签或答案正确性标签。使用Qwen3-4B教师+Qwen3-0.6B/1.7B学生，在DAPO-Math-17K上训练。",
+     "support": "在8个数学推理基准上，Relay-OPD比标准OPD平均提升+5.73%，比最强基线FastOPD提升+1.49%（1.7B模型），0.6B模型也有稳定提升。训练轨迹长度减少超过50%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "首次从\"前缀失败\"角度系统解决OPD的问题，方法无需任何额外标签且训练效率提升一倍，为小型模型从大型教师模型学习提供了更可靠的路径。"
+   }
+  },
+  {
+   "id": "2607.18292",
+   "version": 1,
+   "title": "Reliability Scales Inversely: Hallucinations Snowball Faster in Bigger Language Models",
+   "abstract": "证明了幻觉不是知识缺陷而是自回归解码风险——更大的模型知识更丰富但一旦出错，错误会以指数速度累积。",
+   "authors": [],
+   "published": "2026-07-30T04:00:00.000Z",
+   "updated": "2026-07-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.18292",
+   "pdf": "https://arxiv.org/pdf/2607.18292",
+   "announceType": "new",
+   "summary": "证明了幻觉不是知识缺陷而是自回归解码风险——更大的模型知识更丰富但一旦出错，错误会以指数速度累积。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.18292"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "颠覆了\"幻觉=知识差距\"的主流观点，揭示了缩放定律在可靠性维度的负面效应，为未来的幻觉缓解指明了\"控制解码风险\"而非\"填充知识\"的方向。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "将每位置误差分解为可解释的bias²（知识差距）+ variance（解码风险）两项，证明风险项占主导且随规模增大"
+   ],
+   "innovations": [
+    "首次通过on-policy因果实验证明\"自条件化\"（self-conditioning）是幻觉累积的根源",
+    "发现模型自身无法读取的风险项随规模从31%增至49%（1.7B→14B）"
+   ],
+   "method": "使用三组模型家族、三个基准、六个规模层级，通过固定模型对完整生成轨迹进行per-token分析。构建(bias, entropy, risk)状态模型对每个token评分，通过因果干预（在固定KL下移除风险）验证假设。",
+   "results": "缩放使开头知识差距缩小7倍，但内部知识退化增长39倍。消除风险后减少了35-74%的网页可验证幻觉。幻觉之间的\"风险桥梁\"在14B模型上增长+69%，语义熵在此分支上触发减少约30%但携带近4倍的伪造内容。",
+   "value": "颠覆了\"幻觉=知识差距\"的主流观点，揭示了缩放定律在可靠性维度的负面效应，为未来的幻觉缓解指明了\"控制解码风险\"而非\"填充知识\"的方向。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "将每位置误差分解为可解释的bias²（知识差距）+ variance（解码风险）两项，证明风险项占主导且随规模增大",
+    "agentChange": "使用三组模型家族、三个基准、六个规模层级，通过固定模型对完整生成轨迹进行per-token分析。构建(bias, entropy, risk)状态模型对每个token评分，通过因果干预（在固定KL下移除风险）验证假设。",
+    "selfEvolution": null,
+    "evidence": [
+     "缩放使开头知识差距缩小7倍，但内部知识退化增长39倍。消除风险后减少了35-74%的网页可验证幻觉。幻觉之间的\"风险桥梁\"在14B模型上增长+69%，语义熵在此分支上触发减少约30%但携带近4倍的伪造内容。",
+     "发现模型自身无法读取的风险项随规模从31%增至49%（1.7B→14B）"
+    ],
+    "faq": {
+     "problem": "证明了幻觉不是知识缺陷而是自回归解码风险——更大的模型知识更丰富但一旦出错，错误会以指数速度累积。",
+     "mechanism": "使用三组模型家族、三个基准、六个规模层级，通过固定模型对完整生成轨迹进行per-token分析。构建(bias, entropy, risk)状态模型对每个token评分，通过因果干预（在固定KL下移除风险）验证假设。",
+     "agentChange": "使用三组模型家族、三个基准、六个规模层级，通过固定模型对完整生成轨迹进行per-token分析。构建(bias, entropy, risk)状态模型对每个token评分，通过因果干预（在固定KL下移除风险）验证假设。",
+     "support": "缩放使开头知识差距缩小7倍，但内部知识退化增长39倍。消除风险后减少了35-74%的网页可验证幻觉。幻觉之间的\"风险桥梁\"在14B模型上增长+69%，语义熵在此分支上触发减少约30%但携带近4倍的伪造内容。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "颠覆了\"幻觉=知识差距\"的主流观点，揭示了缩放定律在可靠性维度的负面效应，为未来的幻觉缓解指明了\"控制解码风险\"而非\"填充知识\"的方向。"
+   }
+  },
+  {
+   "id": "2607.26052",
+   "version": 1,
+   "title": "Spend Experts Where You Are Unsure: Confidence-Adaptive Routing for MoE LoRA",
+   "abstract": "将MoE-LoRA中固定k个专家的路由替换为基于per-token不确定性的核自适应路由，难样本分配更多专家，简单样本节省计算。",
+   "authors": [],
+   "published": "2026-07-30T04:00:00.000Z",
+   "updated": "2026-07-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.26052",
+   "pdf": "https://arxiv.org/pdf/2607.26052",
+   "announceType": "new",
+   "summary": "将MoE-LoRA中固定k个专家的路由替换为基于per-token不确定性的核自适应路由，难样本分配更多专家，简单样本节省计算。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.26052"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为PEFT提供了一种\"按需分配计算\"的思路，理论保证了核保真度、预算最优性和分歧的epistemic解读，对资源受限场景尤其有价值。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "将路由器输出分布视为per-token不确定性信号：峰值分布=自信→少专家，平坦分布=歧义→多专家"
+   ],
+   "innovations": [
+    "引入\"epistemic disagreement\"扩展：即使路由器自信，如果选中的专家意见不一致，也额外增加专家",
+    "\"预算恒温器\"设计：通过二分搜索校准阈值，使平均激活专家数精确匹配目标计算预算"
+   ],
+   "method": "CARE按路由器权重降序累加专家直至累积质量达到阈值τ → 检测专家间分歧→扩展专家数→激活top-k专家。零额外参数，单次前向传递，可无缝替换现有MoE-LoRA的固定k策略。",
+   "results": "在LLaMA-3.1-8B和Qwen2.5-7B上，8个常识推理基准+数学/代码/知识任务，CARE在匹配计算下优于固定top-k MoE-LoRA；同时激活更少专家即可匹配k=4的基线性能。OOD检测也优于MSP、熵和多遍代理方法。",
+   "value": "为PEFT提供了一种\"按需分配计算\"的思路，理论保证了核保真度、预算最优性和分歧的epistemic解读，对资源受限场景尤其有价值。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "将路由器输出分布视为per-token不确定性信号：峰值分布=自信→少专家，平坦分布=歧义→多专家",
+    "agentChange": "CARE按路由器权重降序累加专家直至累积质量达到阈值τ → 检测专家间分歧→扩展专家数→激活top-k专家。零额外参数，单次前向传递，可无缝替换现有MoE-LoRA的固定k策略。",
+    "selfEvolution": null,
+    "evidence": [
+     "在LLaMA-3.1-8B和Qwen2.5-7B上，8个常识推理基准+数学/代码/知识任务，CARE在匹配计算下优于固定top-k MoE-LoRA；同时激活更少专家即可匹配k=4的基线性能。OOD检测也优于MSP、熵和多遍代理方法。",
+     "\"预算恒温器\"设计：通过二分搜索校准阈值，使平均激活专家数精确匹配目标计算预算"
+    ],
+    "faq": {
+     "problem": "将MoE-LoRA中固定k个专家的路由替换为基于per-token不确定性的核自适应路由，难样本分配更多专家，简单样本节省计算。",
+     "mechanism": "CARE按路由器权重降序累加专家直至累积质量达到阈值τ → 检测专家间分歧→扩展专家数→激活top-k专家。零额外参数，单次前向传递，可无缝替换现有MoE-LoRA的固定k策略。",
+     "agentChange": "CARE按路由器权重降序累加专家直至累积质量达到阈值τ → 检测专家间分歧→扩展专家数→激活top-k专家。零额外参数，单次前向传递，可无缝替换现有MoE-LoRA的固定k策略。",
+     "support": "在LLaMA-3.1-8B和Qwen2.5-7B上，8个常识推理基准+数学/代码/知识任务，CARE在匹配计算下优于固定top-k MoE-LoRA；同时激活更少专家即可匹配k=4的基线性能。OOD检测也优于MSP、熵和多遍代理方法。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为PEFT提供了一种\"按需分配计算\"的思路，理论保证了核保真度、预算最优性和分歧的epistemic解读，对资源受限场景尤其有价值。"
+   }
+  },
+  {
+   "id": "2607.25948",
+   "version": 1,
+   "title": "MODUS: Decoder-Only Any-to-Any Modeling of Diverse Modalities",
+   "abstract": "将解码器唯一（decoder-only）范式从文本+图像扩展到15种模态，实现统一架构下任意输入到任意输出的生成。",
+   "authors": [],
+   "published": "2026-07-30T04:00:00.000Z",
+   "updated": "2026-07-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.25948",
+   "pdf": "https://arxiv.org/pdf/2607.25948",
+   "announceType": "new",
+   "summary": "将解码器唯一（decoder-only）范式从文本+图像扩展到15种模态，实现统一架构下任意输入到任意输出的生成。",
+   "topic": "多模态与基础模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.25948"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为\"一个模型处理所有模态\"提供了decoder-only架构的可行性证明，扩展新模态主要取决于数据构建而非架构修改。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "首次证明decoder-only架构可以原生支持任意模态组合，无需模态特定head或任务pipeline"
+   ],
+   "innovations": [
+    "统一的tokenization方案：所有模态都映射为统一的token序列，通过special tokens标记模态边界",
+    "提出\"uniform timestep sampling\"避免模态混合，以及分阶段训练策略高效扩展新模态"
+   ],
+   "method": "统一tokenization将15种模态（RGB、深度、表面法向、Canny边缘、语义分割、DINO特征、文本等）编码为token序列。使用Modus-15modality-14B-A7B和77B-A13B两个版本，在Modus-Dataset上三阶段训练（约5,664 GH200 GPU-hours）。",
+   "results": "在零-shot模式下支持视觉问答、文本到图像生成、深度估计、表面法向估计、视觉定位、检索等任务。性能与单任务专家模型和多任务any-to-any基线相当，同时支持链式生成和跨模态自验证等独特能力。",
+   "value": "为\"一个模型处理所有模态\"提供了decoder-only架构的可行性证明，扩展新模态主要取决于数据构建而非架构修改。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "首次证明decoder-only架构可以原生支持任意模态组合，无需模态特定head或任务pipeline",
+    "agentChange": "统一tokenization将15种模态（RGB、深度、表面法向、Canny边缘、语义分割、DINO特征、文本等）编码为token序列。使用Modus-15modality-14B-A7B和77B-A13B两个版本，在Modus-Dataset上三阶段训练（约5,664 GH200 GPU-hours）。",
+    "selfEvolution": null,
+    "evidence": [
+     "在零-shot模式下支持视觉问答、文本到图像生成、深度估计、表面法向估计、视觉定位、检索等任务。性能与单任务专家模型和多任务any-to-any基线相当，同时支持链式生成和跨模态自验证等独特能力。",
+     "提出\"uniform timestep sampling\"避免模态混合，以及分阶段训练策略高效扩展新模态"
+    ],
+    "faq": {
+     "problem": "将解码器唯一（decoder-only）范式从文本+图像扩展到15种模态，实现统一架构下任意输入到任意输出的生成。",
+     "mechanism": "统一tokenization将15种模态（RGB、深度、表面法向、Canny边缘、语义分割、DINO特征、文本等）编码为token序列。使用Modus-15modality-14B-A7B和77B-A13B两个版本，在Modus-Dataset上三阶段训练（约5,664 GH200 GPU-hours）。",
+     "agentChange": "统一tokenization将15种模态（RGB、深度、表面法向、Canny边缘、语义分割、DINO特征、文本等）编码为token序列。使用Modus-15modality-14B-A7B和77B-A13B两个版本，在Modus-Dataset上三阶段训练（约5,664 GH200 GPU-hours）。",
+     "support": "在零-shot模式下支持视觉问答、文本到图像生成、深度估计、表面法向估计、视觉定位、检索等任务。性能与单任务专家模型和多任务any-to-any基线相当，同时支持链式生成和跨模态自验证等独特能力。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为\"一个模型处理所有模态\"提供了decoder-only架构的可行性证明，扩展新模态主要取决于数据构建而非架构修改。"
+   }
+  },
+  {
+   "id": "2607.25962",
+   "version": 1,
+   "title": "LaP-Forensics: Latent-Pixel Consistency Guided Multimodal Reasoning for Deepfake Detection",
+   "abstract": "利用Stable Diffusion的DDIM重建残差作为法证证据，结合多模态大语言模型实现可解释的AI生成图像检测与伪影定位。",
+   "authors": [],
+   "published": "2026-07-30T04:00:00.000Z",
+   "updated": "2026-07-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.25962",
+   "pdf": "https://arxiv.org/pdf/2607.25962",
+   "announceType": "new",
+   "summary": "利用Stable Diffusion的DDIM重建残差作为法证证据，结合多模态大语言模型实现可解释的AI生成图像检测与伪影定位。",
+   "topic": "多模态与基础模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.25962"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "弥合了\"检测精度\"与\"可解释性\"之间的鸿沟，为AI生成内容鉴定提供了既准确又可信的框架。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "使用冻结的Stable Diffusion进行DDIM逆-重建，生成的残差图量化了局部像素与扩散先验的兼容性"
+   ],
+   "innovations": [
+    "双流架构：RGB语义流 + DDIM残差法证流，通过独立projector编码后送入Where-What-Why推理模型",
+    "引入GRPO强化学习优化，奖励函数结合mask重叠度、输出结构一致性和证据引用质量"
+   ],
+   "method": "冻结SD的DDIM反转-重建产生残差图 → 独立projector编码RGB和残差 → Where-What-Why结构化推理输出文本分析和伪影mask → GRPO联合优化定位质量和输出结构。",
+   "results": "在SynthScars基准上，LaP-Forensics在跨生成器检测（UniversalFakeDetect）上表现强劲，伪影定位性能在官方SynthScars基准上具有竞争力。控制实验验证了残差流的有效性。",
+   "value": "弥合了\"检测精度\"与\"可解释性\"之间的鸿沟，为AI生成内容鉴定提供了既准确又可信的框架。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "使用冻结的Stable Diffusion进行DDIM逆-重建，生成的残差图量化了局部像素与扩散先验的兼容性",
+    "agentChange": "冻结SD的DDIM反转-重建产生残差图 → 独立projector编码RGB和残差 → Where-What-Why结构化推理输出文本分析和伪影mask → GRPO联合优化定位质量和输出结构。",
+    "selfEvolution": null,
+    "evidence": [
+     "在SynthScars基准上，LaP-Forensics在跨生成器检测（UniversalFakeDetect）上表现强劲，伪影定位性能在官方SynthScars基准上具有竞争力。控制实验验证了残差流的有效性。",
+     "引入GRPO强化学习优化，奖励函数结合mask重叠度、输出结构一致性和证据引用质量"
+    ],
+    "faq": {
+     "problem": "利用Stable Diffusion的DDIM重建残差作为法证证据，结合多模态大语言模型实现可解释的AI生成图像检测与伪影定位。",
+     "mechanism": "冻结SD的DDIM反转-重建产生残差图 → 独立projector编码RGB和残差 → Where-What-Why结构化推理输出文本分析和伪影mask → GRPO联合优化定位质量和输出结构。",
+     "agentChange": "冻结SD的DDIM反转-重建产生残差图 → 独立projector编码RGB和残差 → Where-What-Why结构化推理输出文本分析和伪影mask → GRPO联合优化定位质量和输出结构。",
+     "support": "在SynthScars基准上，LaP-Forensics在跨生成器检测（UniversalFakeDetect）上表现强劲，伪影定位性能在官方SynthScars基准上具有竞争力。控制实验验证了残差流的有效性。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "弥合了\"检测精度\"与\"可解释性\"之间的鸿沟，为AI生成内容鉴定提供了既准确又可信的框架。"
+   }
+  },
+  {
+   "id": "2607.26055",
+   "version": 1,
+   "title": "πR²: Reactive Real-time Flow Policies",
+   "abstract": "通过异步视觉处理和延迟自适应流调度，将大型VLA基础模型改造为4倍更快的实时闭环策略，在真实机器人上达到25Hz闭环频率。",
+   "authors": [],
+   "published": "2026-07-30T04:00:00.000Z",
+   "updated": "2026-07-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.26055",
+   "pdf": "https://arxiv.org/pdf/2607.26055",
+   "announceType": "new",
+   "summary": "通过异步视觉处理和延迟自适应流调度，将大型VLA基础模型改造为4倍更快的实时闭环策略，在真实机器人上达到25Hz闭环频率。",
+   "topic": "强化学习与机器人",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.26055"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "解决了当前\"大型VLA基础模型无法实时反应\"的核心瓶颈，使机器人能够在动态环境中做出实时响应。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "将条件输入分为\"快通道\"（本体感知，每tick更新）和\"慢通道\"（视觉-语言特征，异步更新），使策略在chunk内对本体感知做出反应"
+   ],
+   "innovations": [
+    "延迟自适应流调度：将飞行中的动作作为inpainting条件，每次调用仅需一步denoising",
+    "一个训练好的模型自适应不同硬件延迟，无需重新训练"
+   ],
+   "method": "基于diffusion forcing的per-position噪声调度，视觉特征异步更新，本体感知每tick刷新。从GR00T-N1.7微调，在xArm6+XHand平台上部署。",
+   "results": "在A5000 GPU上闭环重规划约4倍快于基线（~25Hz，每40ms一次新鲜观测）。仿真成功率达+23%，真实世界提升30%，在需要高反应性的非抓取、接触密集型操作任务中优势尤为明显。",
+   "value": "解决了当前\"大型VLA基础模型无法实时反应\"的核心瓶颈，使机器人能够在动态环境中做出实时响应。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "将条件输入分为\"快通道\"（本体感知，每tick更新）和\"慢通道\"（视觉-语言特征，异步更新），使策略在chunk内对本体感知做出反应",
+    "agentChange": "基于diffusion forcing的per-position噪声调度，视觉特征异步更新，本体感知每tick刷新。从GR00T-N1.7微调，在xArm6+XHand平台上部署。",
+    "selfEvolution": null,
+    "evidence": [
+     "在A5000 GPU上闭环重规划约4倍快于基线（~25Hz，每40ms一次新鲜观测）。仿真成功率达+23%，真实世界提升30%，在需要高反应性的非抓取、接触密集型操作任务中优势尤为明显。",
+     "一个训练好的模型自适应不同硬件延迟，无需重新训练"
+    ],
+    "faq": {
+     "problem": "通过异步视觉处理和延迟自适应流调度，将大型VLA基础模型改造为4倍更快的实时闭环策略，在真实机器人上达到25Hz闭环频率。",
+     "mechanism": "基于diffusion forcing的per-position噪声调度，视觉特征异步更新，本体感知每tick刷新。从GR00T-N1.7微调，在xArm6+XHand平台上部署。",
+     "agentChange": "基于diffusion forcing的per-position噪声调度，视觉特征异步更新，本体感知每tick刷新。从GR00T-N1.7微调，在xArm6+XHand平台上部署。",
+     "support": "在A5000 GPU上闭环重规划约4倍快于基线（~25Hz，每40ms一次新鲜观测）。仿真成功率达+23%，真实世界提升30%，在需要高反应性的非抓取、接触密集型操作任务中优势尤为明显。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "解决了当前\"大型VLA基础模型无法实时反应\"的核心瓶颈，使机器人能够在动态环境中做出实时响应。"
+   }
+  },
+  {
+   "id": "2607.25967",
+   "version": 1,
+   "title": "Quasi-SVD: Learning a Lie-constrained Matrix Factorisation for Real-time Imaging",
+   "abstract": "提出完全并行化的矩阵分解框架，替代传统的SVD算法，在GPU上实现3-20倍加速，支持实时医学影像处理。",
+   "authors": [],
+   "published": "2026-07-30T04:00:00.000Z",
+   "updated": "2026-07-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.25967",
+   "pdf": "https://arxiv.org/pdf/2607.25967",
+   "announceType": "new",
+   "summary": "提出完全并行化的矩阵分解框架，替代传统的SVD算法，在GPU上实现3-20倍加速，支持实时医学影像处理。",
+   "topic": "⏱ 实时计算与医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.25967"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "使传统SVD受限的实时医学影像管线（如术中肿瘤边界分割）成为可能，为临床实时引导手术提供了计算基础。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "放弃对两个因子的正交性约束，仅对一个李群参数化的因子保证精确正交性"
+   ],
+   "innovations": [
+    "通过软约束恢复剩余分量，避免迭代奇异向量优化",
+    "设计上可证明足以支撑有效分解，优先下游重建保真度而非精确谱恢复"
+   ],
+   "method": "Quasi-SVD使用神经网络学习矩阵分解，一个因子用李群流形参数化保证正交性，另一个因子通过软约束优化。完全并行化设计充分利用GPU数千核心。",
+   "results": "重建保真度SSIM=0.89-0.94，计算加速3-20倍（对比cuSOLVER和随机化SVD），吞吐量超过25 FPS。在超声定位显微术（时空背景减除）和穆勒矩阵偏振术（神经外科手术组织表征）两个任务上均验证有效。",
+   "value": "使传统SVD受限的实时医学影像管线（如术中肿瘤边界分割）成为可能，为临床实时引导手术提供了计算基础。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "放弃对两个因子的正交性约束，仅对一个李群参数化的因子保证精确正交性",
+    "agentChange": "Quasi-SVD使用神经网络学习矩阵分解，一个因子用李群流形参数化保证正交性，另一个因子通过软约束优化。完全并行化设计充分利用GPU数千核心。",
+    "selfEvolution": null,
+    "evidence": [
+     "重建保真度SSIM=0.89-0.94，计算加速3-20倍（对比cuSOLVER和随机化SVD），吞吐量超过25 FPS。在超声定位显微术（时空背景减除）和穆勒矩阵偏振术（神经外科手术组织表征）两个任务上均验证有效。",
+     "设计上可证明足以支撑有效分解，优先下游重建保真度而非精确谱恢复"
+    ],
+    "faq": {
+     "problem": "提出完全并行化的矩阵分解框架，替代传统的SVD算法，在GPU上实现3-20倍加速，支持实时医学影像处理。",
+     "mechanism": "Quasi-SVD使用神经网络学习矩阵分解，一个因子用李群流形参数化保证正交性，另一个因子通过软约束优化。完全并行化设计充分利用GPU数千核心。",
+     "agentChange": "Quasi-SVD使用神经网络学习矩阵分解，一个因子用李群流形参数化保证正交性，另一个因子通过软约束优化。完全并行化设计充分利用GPU数千核心。",
+     "support": "重建保真度SSIM=0.89-0.94，计算加速3-20倍（对比cuSOLVER和随机化SVD），吞吐量超过25 FPS。在超声定位显微术（时空背景减除）和穆勒矩阵偏振术（神经外科手术组织表征）两个任务上均验证有效。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "使传统SVD受限的实时医学影像管线（如术中肿瘤边界分割）成为可能，为临床实时引导手术提供了计算基础。"
+   }
+  },
+  {
+   "id": "2607.25947",
+   "version": 1,
+   "title": "ClinPRISM: A Cost-Effective Multimodal LLM Reasoning Framework for Question Answering over Irregular Clinical Time Series",
+   "abstract": "专为不规则临床时间序列设计的多模态LLM框架，用仅16个token压缩多尺度时间信息，在11个临床任务上达到SOTA。",
+   "authors": [],
+   "published": "2026-07-30T04:00:00.000Z",
+   "updated": "2026-07-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.25947",
+   "pdf": "https://arxiv.org/pdf/2607.25947",
+   "announceType": "new",
+   "summary": "专为不规则临床时间序列设计的多模态LLM框架，用仅16个token压缩多尺度时间信息，在11个临床任务上达到SOTA。",
+   "topic": "医疗AI",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.25947"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为临床时间序列QA提供了兼具高效性和准确性的方案，在ICU监控、智能健康助手等场景有直接应用价值。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "不规则感知多尺度编码器：同时捕获全局、事件级和点级时间表征，处理临床数据的稀疏性和异步性"
+   ],
+   "innovations": [
+    "时间证据蒸馏器：将多尺度表征压缩为仅16个LLM兼容token，大幅降低推理开销",
+    "渐进式对齐策略：依次将不规则轨迹对齐到LLM文本嵌入空间"
+   ],
+   "method": "三阶段训练：(1)时间编码器在30,000个不规则时间序列上预训练；(2)多尺度描述数据训练时间-文本连接器；(3)41,000个指令调优实例微调。使用4B参数LLM骨干。",
+   "results": "在CLIR-Bench（11个任务涵盖时间理解、推理、预测、决策四个维度）上达到SOTA性能。平均推理延迟仅0.15秒/问题，使用的token数量仅为16个（对比其他方法的数十到数百个）。",
+   "value": "为临床时间序列QA提供了兼具高效性和准确性的方案，在ICU监控、智能健康助手等场景有直接应用价值。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "不规则感知多尺度编码器：同时捕获全局、事件级和点级时间表征，处理临床数据的稀疏性和异步性",
+    "agentChange": "三阶段训练：(1)时间编码器在30,000个不规则时间序列上预训练；(2)多尺度描述数据训练时间-文本连接器；(3)41,000个指令调优实例微调。使用4B参数LLM骨干。",
+    "selfEvolution": null,
+    "evidence": [
+     "在CLIR-Bench（11个任务涵盖时间理解、推理、预测、决策四个维度）上达到SOTA性能。平均推理延迟仅0.15秒/问题，使用的token数量仅为16个（对比其他方法的数十到数百个）。",
+     "渐进式对齐策略：依次将不规则轨迹对齐到LLM文本嵌入空间"
+    ],
+    "faq": {
+     "problem": "专为不规则临床时间序列设计的多模态LLM框架，用仅16个token压缩多尺度时间信息，在11个临床任务上达到SOTA。",
+     "mechanism": "三阶段训练：(1)时间编码器在30,000个不规则时间序列上预训练；(2)多尺度描述数据训练时间-文本连接器；(3)41,000个指令调优实例微调。使用4B参数LLM骨干。",
+     "agentChange": "三阶段训练：(1)时间编码器在30,000个不规则时间序列上预训练；(2)多尺度描述数据训练时间-文本连接器；(3)41,000个指令调优实例微调。使用4B参数LLM骨干。",
+     "support": "在CLIR-Bench（11个任务涵盖时间理解、推理、预测、决策四个维度）上达到SOTA性能。平均推理延迟仅0.15秒/问题，使用的token数量仅为16个（对比其他方法的数十到数百个）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为临床时间序列QA提供了兼具高效性和准确性的方案，在ICU监控、智能健康助手等场景有直接应用价值。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-07-28",
+  "newCount": 9,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-07-28 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-07-30T04:00:00.000Z",
+ "totalMatched": 9,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 9
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-07-30",
+ "historical": true
+}

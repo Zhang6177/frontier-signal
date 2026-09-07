@@ -1,0 +1,925 @@
+{
+ "papers": [
+  {
+   "id": "2608.23746",
+   "version": 1,
+   "title": "CRISP: Calibration-Aware Visual State Space Duality for Remote Sensing Semantic Segmentation",
+   "abstract": "提出CRISP校准框架解决VSSD边界平滑问题，遥感分割mIoU提升2.1-3.4%",
+   "authors": [],
+   "published": "2026-08-28T04:00:00.000Z",
+   "updated": "2026-08-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.23746",
+   "pdf": "https://arxiv.org/pdf/2608.23746",
+   "announceType": "new",
+   "summary": "提出CRISP校准框架解决VSSD边界平滑问题，遥感分割mIoU提升2.1-3.4%",
+   "topic": "遥感与计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.23746"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为高效线性复杂度模型在遥感精细分割中的应用铺平道路",
+   "repository": null,
+   "motivation": "VSSD模型在遥感分割中过度平滑边界，影响精细结构识别",
+   "coreProblem": "VSSD的全局聚合抑制高频响应，导致边界模糊和细节丢失",
+   "contributions": [
+    "提出对偶校准算子DCO，通过可学习调制恢复局部对比度",
+    "设计边界增强模块BEM，跨尺度融合细化分割边缘"
+   ],
+   "innovations": [
+    "首次针对VSSD的前向-后向扫描路径进行显式校准",
+    "将边界感知监督引入状态空间模型的分割任务"
+   ],
+   "method": "通过DCO重校准多尺度空间特征，结合BEM的跨尺度融合和边界监督",
+   "results": "ISPRS Potsdam 92.3% mIoU (+2.1%)，LoveDA 58.7% mIoU (+3.4%)，速度快2.3倍",
+   "value": "为高效线性复杂度模型在遥感精细分割中的应用铺平道路",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出对偶校准算子DCO，通过可学习调制恢复局部对比度",
+    "agentChange": "通过DCO重校准多尺度空间特征，结合BEM的跨尺度融合和边界监督",
+    "selfEvolution": null,
+    "evidence": [
+     "ISPRS Potsdam 92.3% mIoU (+2.1%)，LoveDA 58.7% mIoU (+3.4%)，速度快2.3倍",
+     "将边界感知监督引入状态空间模型的分割任务"
+    ],
+    "faq": {
+     "problem": "提出CRISP校准框架解决VSSD边界平滑问题，遥感分割mIoU提升2.1-3.4%",
+     "mechanism": "通过DCO重校准多尺度空间特征，结合BEM的跨尺度融合和边界监督",
+     "agentChange": "通过DCO重校准多尺度空间特征，结合BEM的跨尺度融合和边界监督",
+     "support": "ISPRS Potsdam 92.3% mIoU (+2.1%)，LoveDA 58.7% mIoU (+3.4%)，速度快2.3倍",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为高效线性复杂度模型在遥感精细分割中的应用铺平道路"
+   }
+  },
+  {
+   "id": "2608.25701",
+   "version": 1,
+   "title": "Skeleton-based Zero-Shot Spatio-Temporal Action Localization via Weakly-Supervised Pretraining",
+   "abstract": "弱监督预训练实现零样本骨架动作定位，HMR提升6.3-8.7%",
+   "authors": [],
+   "published": "2026-08-28T04:00:00.000Z",
+   "updated": "2026-08-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.25701",
+   "pdf": "https://arxiv.org/pdf/2608.25701",
+   "announceType": "new",
+   "summary": "弱监督预训练实现零样本骨架动作定位，HMR提升6.3-8.7%",
+   "topic": "遥感与计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.25701"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "大幅降低动作识别系统的标注成本，支持开放词汇动作理解",
+   "repository": null,
+   "motivation": "新动作标注成本高，需要无需目标域标注的零样本定位方法",
+   "coreProblem": "现有零样本方法缺乏时序精确定位能力，依赖大量配对数据",
+   "contributions": [
+    "提出骨架-语言特征池化切换机制SLPS",
+    "利用预训练LLM嵌入提供未见面动作的语义指导"
+   ],
+   "innovations": [
+    "首次将池化核从全局序列聚合切换到局部时间窗口",
+    "弱监督视觉-语言预训练无需额外骨架标注"
+   ],
+   "method": "预训练阶段全局聚合帧级特征，微调阶段切换到局部时间窗口精确定位",
+   "results": "NTU-120 45.2% HMR (+8.7%)，PKU-MMD v2 38.9% HMR (+6.3%)",
+   "value": "大幅降低动作识别系统的标注成本，支持开放词汇动作理解",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出骨架-语言特征池化切换机制SLPS",
+    "agentChange": "预训练阶段全局聚合帧级特征，微调阶段切换到局部时间窗口精确定位",
+    "selfEvolution": null,
+    "evidence": [
+     "NTU-120 45.2% HMR (+8.7%)，PKU-MMD v2 38.9% HMR (+6.3%)",
+     "弱监督视觉-语言预训练无需额外骨架标注"
+    ],
+    "faq": {
+     "problem": "弱监督预训练实现零样本骨架动作定位，HMR提升6.3-8.7%",
+     "mechanism": "预训练阶段全局聚合帧级特征，微调阶段切换到局部时间窗口精确定位",
+     "agentChange": "预训练阶段全局聚合帧级特征，微调阶段切换到局部时间窗口精确定位",
+     "support": "NTU-120 45.2% HMR (+8.7%)，PKU-MMD v2 38.9% HMR (+6.3%)",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "大幅降低动作识别系统的标注成本，支持开放词汇动作理解"
+   }
+  },
+  {
+   "id": "2608.26859",
+   "version": 1,
+   "title": "A Geometry-Driven, Framework-Agnostic Optimization for Object Pose Estimation",
+   "abstract": "GeoPose通过几何一致性优化提升姿态估计，ADD提升4.2-7.8%",
+   "authors": [],
+   "published": "2026-08-28T04:00:00.000Z",
+   "updated": "2026-08-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.26859",
+   "pdf": "https://arxiv.org/pdf/2608.26859",
+   "announceType": "new",
+   "summary": "GeoPose通过几何一致性优化提升姿态估计，ADD提升4.2-7.8%",
+   "topic": "遥感与计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.26859"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为任意姿态估计器提供即插即用的几何校正，无需类别先验",
+   "repository": null,
+   "motivation": "当前姿态估计过度关注模型架构，忽视数据层面的几何约束",
+   "coreProblem": "现有方法依赖类别特定CAD模型或昂贵迭代优化，泛化性差",
+   "contributions": [
+    "提出GeoPose框架无关的几何优化管道",
+    "通过可微重投影损失强制3D关键点与2D投影的几何一致性"
+   ],
+   "innovations": [
+    "首次将姿态误差建模为系统性几何不一致性",
+    "无需重新训练即可跨物体类别泛化"
+   ],
+   "method": "基于梯度优化相机-物体变换，修正预测中的几何不一致",
+   "results": "YCB-V 89.4% ADD(+4.2%)，LINEMOD 76.8% (+5.1%)，T-LESS 62.3% (+7.8%)，仅增15ms",
+   "value": "为任意姿态估计器提供即插即用的几何校正，无需类别先验",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出GeoPose框架无关的几何优化管道",
+    "agentChange": "基于梯度优化相机-物体变换，修正预测中的几何不一致",
+    "selfEvolution": null,
+    "evidence": [
+     "YCB-V 89.4% ADD(+4.2%)，LINEMOD 76.8% (+5.1%)，T-LESS 62.3% (+7.8%)，仅增15ms",
+     "无需重新训练即可跨物体类别泛化"
+    ],
+    "faq": {
+     "problem": "GeoPose通过几何一致性优化提升姿态估计，ADD提升4.2-7.8%",
+     "mechanism": "基于梯度优化相机-物体变换，修正预测中的几何不一致",
+     "agentChange": "基于梯度优化相机-物体变换，修正预测中的几何不一致",
+     "support": "YCB-V 89.4% ADD(+4.2%)，LINEMOD 76.8% (+5.1%)，T-LESS 62.3% (+7.8%)，仅增15ms",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "为任意姿态估计器提供即插即用的几何校正，无需类别先验"
+   }
+  },
+  {
+   "id": "2608.24563",
+   "version": 1,
+   "title": "X-MULTI: VLM-based Imaging Factor Disentanglement for Factor-Aware Image Synthesis",
+   "abstract": "X-MULTI解耦成像因子实现可控图像生成，解耦分数达0.87",
+   "authors": [],
+   "published": "2026-08-28T04:00:00.000Z",
+   "updated": "2026-08-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.24563",
+   "pdf": "https://arxiv.org/pdf/2608.24563",
+   "announceType": "new",
+   "summary": "X-MULTI解耦成像因子实现可控图像生成，解耦分数达0.87",
+   "topic": "遥感与计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.24563"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "实现摄影级精确控制的AI图像合成，支撑专业内容创作",
+   "repository": null,
+   "motivation": "现有文本生成图像方法无法独立控制镜头、传感器等成像参数",
+   "coreProblem": "成像因子高度纠缠，缺乏对光学、传感器、几何因素的显式控制",
+   "contributions": [
+    "构建230万带标注成像元数据的图像对数据集",
+    "提出因子感知注意力机制条件化图像生成"
+   ],
+   "innovations": [
+    "首次用VLM引导对比学习解耦正交成像因子维度",
+    "覆盖15种相机、8种镜头、12种光照条件的系统化分解"
+   ],
+   "method": "通过对比学习提取正交潜在表示，因子感知注意力条件化生成过程",
+   "results": "FactorBench解耦分数0.87 (+0.19)，成像因子准确率0.82 (+0.15)，FID 12.4",
+   "value": "实现摄影级精确控制的AI图像合成，支撑专业内容创作",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "构建230万带标注成像元数据的图像对数据集",
+    "agentChange": "通过对比学习提取正交潜在表示，因子感知注意力条件化生成过程",
+    "selfEvolution": null,
+    "evidence": [
+     "FactorBench解耦分数0.87 (+0.19)，成像因子准确率0.82 (+0.15)，FID 12.4",
+     "覆盖15种相机、8种镜头、12种光照条件的系统化分解"
+    ],
+    "faq": {
+     "problem": "X-MULTI解耦成像因子实现可控图像生成，解耦分数达0.87",
+     "mechanism": "通过对比学习提取正交潜在表示，因子感知注意力条件化生成过程",
+     "agentChange": "通过对比学习提取正交潜在表示，因子感知注意力条件化生成过程",
+     "support": "FactorBench解耦分数0.87 (+0.19)，成像因子准确率0.82 (+0.15)，FID 12.4",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "实现摄影级精确控制的AI图像合成，支撑专业内容创作"
+   }
+  },
+  {
+   "id": "2608.24154",
+   "version": 1,
+   "title": "Rethinking Pre-Training and Augmentation for Zero-Shot Cross-City Object Detection",
+   "abstract": "CityAug实现零样本跨城检测，mAP提升9.7-12.3%无需目标域标注",
+   "authors": [],
+   "published": "2026-08-28T04:00:00.000Z",
+   "updated": "2026-08-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.24154",
+   "pdf": "https://arxiv.org/pdf/2608.24154",
+   "announceType": "new",
+   "summary": "CityAug实现零样本跨城检测，mAP提升9.7-12.3%无需目标域标注",
+   "topic": "遥感与计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.24154"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "使交通AI系统能够快速低成本部署到新城市，推动智慧城市规模化",
+   "repository": null,
+   "motivation": "交通监控系统部署受地理域偏移限制，目标城市标注成本 prohibitive",
+   "coreProblem": "传统域适应需要目标域标注，每个新城市都需重新收集数据",
+   "contributions": [
+    "提出地理感知合成增强结合自监督对比学习",
+    "通过程序化场景合成生成多样化天气、光照、城市布局变化"
+   ],
+   "innovations": [
+    "首次通过实例判别跨城市学习域不变表示",
+    "完全消除目标域微调需求且无推理开销"
+   ],
+   "method": "程序化增强生成多样性，跨城市实例判别学习不变特征",
+   "results": "CrossCity基准67.8% mAP (+12.3%)，BDD100K→Cityscapes 58.9% mAP (+9.7%)",
+   "value": "使交通AI系统能够快速低成本部署到新城市，推动智慧城市规模化",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出地理感知合成增强结合自监督对比学习",
+    "agentChange": "程序化增强生成多样性，跨城市实例判别学习不变特征",
+    "selfEvolution": null,
+    "evidence": [
+     "CrossCity基准67.8% mAP (+12.3%)，BDD100K→Cityscapes 58.9% mAP (+9.7%)",
+     "完全消除目标域微调需求且无推理开销"
+    ],
+    "faq": {
+     "problem": "CityAug实现零样本跨城检测，mAP提升9.7-12.3%无需目标域标注",
+     "mechanism": "程序化增强生成多样性，跨城市实例判别学习不变特征",
+     "agentChange": "程序化增强生成多样性，跨城市实例判别学习不变特征",
+     "support": "CrossCity基准67.8% mAP (+12.3%)，BDD100K→Cityscapes 58.9% mAP (+9.7%)",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "使交通AI系统能够快速低成本部署到新城市，推动智慧城市规模化"
+   }
+  },
+  {
+   "id": "2608.23691",
+   "version": 1,
+   "title": "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
+   "abstract": "多智能体环境Station实现自主数学发现，72小时验证8个新定理",
+   "authors": [],
+   "published": "2026-08-28T04:00:00.000Z",
+   "updated": "2026-08-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.23691",
+   "pdf": "https://arxiv.org/pdf/2608.23691",
+   "announceType": "new",
+   "summary": "多智能体环境Station实现自主数学发现，72小时验证8个新定理",
+   "topic": "Agent与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.23691"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "展示异构多智能体协作在科学发现中的潜力，超越单智能体基线",
+   "repository": null,
+   "motivation": "单一AI代理难以完成复杂数学发现的协作和批判过程",
+   "coreProblem": "缺乏去中心化多智能体协作框架支持开放式数学探索",
+   "contributions": [
+    "构建Station开放世界多智能体环境支持异步协作",
+    "实现持久知识图谱积累已验证结果和研究方向"
+   ],
+   "innovations": [
+    "首次混合不同模型家族智能体无中央协调器协作",
+    "异步批判循环显著提升猜想验证率至34.8%"
+   ],
+   "method": "智能体自主提出猜想、尝试证明、批判同行工作并综合发现",
+   "results": "72小时发现23个新猜想，8个被自动证明器验证，3个复现已知结果",
+   "value": "展示异构多智能体协作在科学发现中的潜力，超越单智能体基线",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "构建Station开放世界多智能体环境支持异步协作",
+    "agentChange": "智能体自主提出猜想、尝试证明、批判同行工作并综合发现",
+    "selfEvolution": null,
+    "evidence": [
+     "72小时发现23个新猜想，8个被自动证明器验证，3个复现已知结果",
+     "异步批判循环显著提升猜想验证率至34.8%"
+    ],
+    "faq": {
+     "problem": "多智能体环境Station实现自主数学发现，72小时验证8个新定理",
+     "mechanism": "智能体自主提出猜想、尝试证明、批判同行工作并综合发现",
+     "agentChange": "智能体自主提出猜想、尝试证明、批判同行工作并综合发现",
+     "support": "72小时发现23个新猜想，8个被自动证明器验证，3个复现已知结果",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "展示异构多智能体协作在科学发现中的潜力，超越单智能体基线"
+   }
+  },
+  {
+   "id": "2608.23956",
+   "version": 1,
+   "title": "Recursive Agentic Reasoning",
+   "abstract": "RAR统一框架组合多种推理策略，MATH提升6.2%跨所有模型规模",
+   "authors": [],
+   "published": "2026-08-28T04:00:00.000Z",
+   "updated": "2026-08-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.23956",
+   "pdf": "https://arxiv.org/pdf/2608.23956",
+   "announceType": "new",
+   "summary": "RAR统一框架组合多种推理策略，MATH提升6.2%跨所有模型规模",
+   "topic": "Agent与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.23956"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "捕获基本推理原理而非模型特定优化，适用于7B到70B所有规模",
+   "repository": null,
+   "motivation": "测试时推理方法孤立评估，难以跨模型和基准比较增益",
+   "coreProblem": "现有方法缺乏统一的推理策略选择和递归组合机制",
+   "contributions": [
+    "提出RAR将推理视为元问题的统一框架",
+    "支持CoT、ToT、自一致性和程序辅助推理即插即用集成"
+   ],
+   "innovations": [
+    "首次让智能体决定使用何种推理策略及何时递归",
+    "递归分解贡献60%增益，策略选择占25%"
+   ],
+   "method": "智能体选择推理策略、决定递归时机、聚合子结果形成最终答案",
+   "results": "MATH 78.4% (+6.2%)，GSM8K 92.1% (+3.8%)，HumanEval 68.7% (+8.4%)，BBH 84.3% (+5.9%)",
+   "value": "捕获基本推理原理而非模型特定优化，适用于7B到70B所有规模",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出RAR将推理视为元问题的统一框架",
+    "agentChange": "智能体选择推理策略、决定递归时机、聚合子结果形成最终答案",
+    "selfEvolution": null,
+    "evidence": [
+     "MATH 78.4% (+6.2%)，GSM8K 92.1% (+3.8%)，HumanEval 68.7% (+8.4%)，BBH 84.3% (+5.9%)",
+     "递归分解贡献60%增益，策略选择占25%"
+    ],
+    "faq": {
+     "problem": "RAR统一框架组合多种推理策略，MATH提升6.2%跨所有模型规模",
+     "mechanism": "智能体选择推理策略、决定递归时机、聚合子结果形成最终答案",
+     "agentChange": "智能体选择推理策略、决定递归时机、聚合子结果形成最终答案",
+     "support": "MATH 78.4% (+6.2%)，GSM8K 92.1% (+3.8%)，HumanEval 68.7% (+8.4%)，BBH 84.3% (+5.9%)",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "捕获基本推理原理而非模型特定优化，适用于7B到70B所有规模"
+   }
+  },
+  {
+   "id": "2608.24007",
+   "version": 1,
+   "title": "Revenge of Monosemanticity: Specialized Neurons Improve Data Efficiency in MLPs",
+   "abstract": "强制单语义神经元提升数据效率，CIFAR-10减少40%训练样本",
+   "authors": [],
+   "published": "2026-08-28T04:00:00.000Z",
+   "updated": "2026-08-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.24007",
+   "pdf": "https://arxiv.org/pdf/2608.24007",
+   "announceType": "new",
+   "summary": "强制单语义神经元提升数据效率，CIFAR-10减少40%训练样本",
+   "topic": "机器学习理论与基础",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.24007"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "重塑对神经网络特征组织的理解，指导更高效架构设计",
+   "repository": null,
+   "motivation": "现有理论假设多语义神经元对效率必要，挑战这一假设",
+   "coreProblem": "缺乏对单语义结构与数据效率关系的系统性实证研究",
+   "contributions": [
+    "通过稀疏门控强制MLP单语义结构",
+    "理论分析揭示单语义性减少无关特征间的梯度干扰"
+   ],
+   "innovations": [
+    "首次证明单语义性优于多语义性的数据效率优势",
+    "揭示网络多语义性可能反映优化动力学而非表示必要性"
+   ],
+   "method": "稀疏门控确保每神经元仅响应单一特征，加速收敛",
+   "results": "CIFAR-10用20k样本达91.2%准确率，标准MLP需35k样本",
+   "value": "重塑对神经网络特征组织的理解，指导更高效架构设计",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "通过稀疏门控强制MLP单语义结构",
+    "agentChange": "稀疏门控确保每神经元仅响应单一特征，加速收敛",
+    "selfEvolution": null,
+    "evidence": [
+     "CIFAR-10用20k样本达91.2%准确率，标准MLP需35k样本",
+     "揭示网络多语义性可能反映优化动力学而非表示必要性"
+    ],
+    "faq": {
+     "problem": "强制单语义神经元提升数据效率，CIFAR-10减少40%训练样本",
+     "mechanism": "稀疏门控确保每神经元仅响应单一特征，加速收敛",
+     "agentChange": "稀疏门控确保每神经元仅响应单一特征，加速收敛",
+     "support": "CIFAR-10用20k样本达91.2%准确率，标准MLP需35k样本",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "重塑对神经网络特征组织的理解，指导更高效架构设计"
+   }
+  },
+  {
+   "id": "2608.25350",
+   "version": 1,
+   "title": "Beyond Pairwise Feedback: Listwise Vision-Language Supervision for Preference-Based Reward Learning",
+   "abstract": "ListVL-Reward列表式偏好监督提升机器人任务成功率6.8-8.2%",
+   "authors": [],
+   "published": "2026-08-28T04:00:00.000Z",
+   "updated": "2026-08-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.25350",
+   "pdf": "https://arxiv.org/pdf/2608.25350",
+   "announceType": "new",
+   "summary": "ListVL-Reward列表式偏好监督提升机器人任务成功率6.8-8.2%",
+   "topic": "机器学习理论与基础",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.25350"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "提升VLM作为RL监督源的可靠性和效率，推动具身智能发展",
+   "repository": null,
+   "motivation": "成对VLM反馈方差大，不能充分反映人类判断过程",
+   "coreProblem": "成对比较忽略候选项间相对偏好结构，奖励估计不稳定",
+   "contributions": [
+    "提出ListVL-Reward构建长度4-8的偏好元组",
+    "优化Plackett-Luce似然捕捉整个列表的相对偏好"
+   ],
+   "innovations": [
+    "首次将信息检索列表式排序损失引入VLM奖励学习",
+    "对30%噪声标签保持鲁棒，成对方法下降超15%"
+   ],
+   "method": "列表式偏好优化替代成对比较，降低方差加速收敛",
+   "results": "CALVIN 73.8%成功 (+8.2%)，LIBERO 68.4% (+7.1%)，HM3D 54.2% (+6.8%)，收敛快2.3倍",
+   "value": "提升VLM作为RL监督源的可靠性和效率，推动具身智能发展",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出ListVL-Reward构建长度4-8的偏好元组",
+    "agentChange": "列表式偏好优化替代成对比较，降低方差加速收敛",
+    "selfEvolution": null,
+    "evidence": [
+     "CALVIN 73.8%成功 (+8.2%)，LIBERO 68.4% (+7.1%)，HM3D 54.2% (+6.8%)，收敛快2.3倍",
+     "对30%噪声标签保持鲁棒，成对方法下降超15%"
+    ],
+    "faq": {
+     "problem": "ListVL-Reward列表式偏好监督提升机器人任务成功率6.8-8.2%",
+     "mechanism": "列表式偏好优化替代成对比较，降低方差加速收敛",
+     "agentChange": "列表式偏好优化替代成对比较，降低方差加速收敛",
+     "support": "CALVIN 73.8%成功 (+8.2%)，LIBERO 68.4% (+7.1%)，HM3D 54.2% (+6.8%)，收敛快2.3倍",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "提升VLM作为RL监督源的可靠性和效率，推动具身智能发展"
+   }
+  },
+  {
+   "id": "2608.26516",
+   "version": 1,
+   "title": "Algorithmic Principles For Multiclass Learning Are Hard To Come By: Limits of Regularization and Proper Learning",
+   "abstract": "证明多分类学习无简单组合维度刻画，适当学习需指数级样本",
+   "authors": [],
+   "published": "2026-08-28T04:00:00.000Z",
+   "updated": "2026-08-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.26516",
+   "pdf": "https://arxiv.org/pdf/2608.26516",
+   "announceType": "new",
+   "summary": "证明多分类学习无简单组合维度刻画，适当学习需指数级样本",
+   "topic": "机器学习理论与基础",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.26516"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "解释设计通用多分类算法的经验困难，指导实际问题特定假设",
+   "repository": null,
+   "motivation": "多分类学习缺乏像二分类VC维那样清晰的理论刻画",
+   "coreProblem": "现有维度理论无法完整表征多分类可学习性",
+   "contributions": [
+    "证明任何基于维度的刻画要么失效要么需超多项式样本",
+    "显示适当学习算法无法达到最优样本复杂度"
+   ],
+   "innovations": [
+    "首次建立Natarjan维度d的多分类问题需Ω(d log k)样本的下界",
+    "揭示不当学习仅需O(d)样本，建立指数级差距"
+   ],
+   "method": "构造特定多分类问题族证明理论和算法局限性",
+   "results": "确立适当学习与不当学习的样本复杂度指数差距",
+   "value": "解释设计通用多分类算法的经验困难，指导实际问题特定假设",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "证明任何基于维度的刻画要么失效要么需超多项式样本",
+    "agentChange": "构造特定多分类问题族证明理论和算法局限性",
+    "selfEvolution": null,
+    "evidence": [
+     "确立适当学习与不当学习的样本复杂度指数差距",
+     "揭示不当学习仅需O(d)样本，建立指数级差距"
+    ],
+    "faq": {
+     "problem": "证明多分类学习无简单组合维度刻画，适当学习需指数级样本",
+     "mechanism": "构造特定多分类问题族证明理论和算法局限性",
+     "agentChange": "构造特定多分类问题族证明理论和算法局限性",
+     "support": "确立适当学习与不当学习的样本复杂度指数差距",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "解释设计通用多分类算法的经验困难，指导实际问题特定假设"
+   }
+  },
+  {
+   "id": "2608.26833",
+   "version": 1,
+   "title": "Rethinking Image Processing for the Age of AI: A Problem-First Framework for Scientific Progress",
+   "abstract": "问题优先框架减少60%参数量，未知退化泛化保持85%性能",
+   "authors": [],
+   "published": "2026-08-28T04:00:00.000Z",
+   "updated": "2026-08-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.26833",
+   "pdf": "https://arxiv.org/pdf/2608.26833",
+   "announceType": "new",
+   "summary": "问题优先框架减少60%参数量，未知退化泛化保持85%性能",
+   "topic": "系统与基础设施",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.26833"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "重建图像处理的科学方法论，提升模型可解释性和泛化能力",
+   "repository": null,
+   "motivation": "AI时代图像研究过度关注模型架构，忽视底层图像形成问题",
+   "coreProblem": "模式优先文化阻碍科学进步，端到端深度学习泛化性差",
+   "contributions": [
+    "提出三阶段问题优先框架：问题形式化、算法设计、学习 refinement",
+    "发布ProbImg基准套件包含12个带显式前向模型的任务"
+   ],
+   "innovations": [
+    "首次系统性倡导在引入学习方案前明确建模图像退化和获取物理",
+    "仅在解析解不可行时使用学习 refinement"
+   ],
+   "method": "先指定前向模型和噪声特性，设计尊重物理约束的算法，最后学习补充",
+   "results": "参数减少60%，训练数据减少3.2倍，未知退化性能保持>85% vs <60%",
+   "value": "重建图像处理的科学方法论，提升模型可解释性和泛化能力",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出三阶段问题优先框架：问题形式化、算法设计、学习 refinement",
+    "agentChange": "先指定前向模型和噪声特性，设计尊重物理约束的算法，最后学习补充",
+    "selfEvolution": null,
+    "evidence": [
+     "参数减少60%，训练数据减少3.2倍，未知退化性能保持>85% vs <60%",
+     "仅在解析解不可行时使用学习 refinement"
+    ],
+    "faq": {
+     "problem": "问题优先框架减少60%参数量，未知退化泛化保持85%性能",
+     "mechanism": "先指定前向模型和噪声特性，设计尊重物理约束的算法，最后学习补充",
+     "agentChange": "先指定前向模型和噪声特性，设计尊重物理约束的算法，最后学习补充",
+     "support": "参数减少60%，训练数据减少3.2倍，未知退化性能保持>85% vs <60%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "重建图像处理的科学方法论，提升模型可解释性和泛化能力"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-08-18",
+  "newCount": 11,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-08-18 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-08-28T04:00:00.000Z",
+ "totalMatched": 11,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 11
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-08-28",
+ "historical": true
+}

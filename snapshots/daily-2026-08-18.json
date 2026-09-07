@@ -1,0 +1,1025 @@
+{
+ "papers": [
+  {
+   "id": "2608.15456",
+   "version": 1,
+   "title": "AlignJEPA: Predictive Vision-Language Alignment for Remote Sensing Foundation Models",
+   "abstract": "提出 JEPA 式预测对齐框架，参数高效地将遥感基础模型与自然语言打通。",
+   "authors": [],
+   "published": "2026-08-18T04:00:00.000Z",
+   "updated": "2026-08-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.15456",
+   "pdf": "https://arxiv.org/pdf/2608.15456",
+   "announceType": "new",
+   "summary": "提出 JEPA 式预测对齐框架，参数高效地将遥感基础模型与自然语言打通。",
+   "topic": "遥感 / 地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.15456"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为地球观测基础模型提供参数高效的 language 对齐路径。",
+   "repository": null,
+   "motivation": "遥感基础模型与语言弱对齐，制约文本检索与问题条件分析。",
+   "coreProblem": "现有对齐依赖全局图文对比，未利用掩码视觉 token 的多尺度信息。",
+   "contributions": [
+    "提出 AlignJEPA 框架，仅训练轻量预测对齐网络",
+    "掩码感知多尺度对齐器，聚合细粒度/区域/全局 token",
+    "在 BigEarthNet.txt、RSICD、RSVQA 上训练与评估"
+   ],
+   "innovations": [
+    "首次将 JEPA 式预测对齐引入遥感基础模型",
+    "用掩码视觉 token 预测文本嵌入，替代纯对比学习",
+    "冻结 AnySat+RemoteCLIP，小网络实现跨域对齐"
+   ],
+   "method": "从掩码视觉 token 预测遥感文本嵌入，跨尺度 Transformer 建模，学习式 query pooling 投影到文本空间，语义预测与双向对比检索联合训练。",
+   "results": "在 BigEarthNet.txt 自然语言 Sentinel 检索与 RSICD 跨数据集适应上评估（具体指标见论文正文，摘要未披露数值）。",
+   "value": "为地球观测基础模型提供参数高效的 language 对齐路径。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出 AlignJEPA 框架，仅训练轻量预测对齐网络",
+    "agentChange": "从掩码视觉 token 预测遥感文本嵌入，跨尺度 Transformer 建模，学习式 query pooling 投影到文本空间，语义预测与双向对比检索联合训练。",
+    "selfEvolution": null,
+    "evidence": [
+     "在 BigEarthNet.txt 自然语言 Sentinel 检索与 RSICD 跨数据集适应上评估（具体指标见论文正文，摘要未披露数值）。",
+     "用掩码视觉 token 预测文本嵌入，替代纯对比学习",
+     "冻结 AnySat+RemoteCLIP，小网络实现跨域对齐"
+    ],
+    "faq": {
+     "problem": "提出 JEPA 式预测对齐框架，参数高效地将遥感基础模型与自然语言打通。",
+     "mechanism": "从掩码视觉 token 预测遥感文本嵌入，跨尺度 Transformer 建模，学习式 query pooling 投影到文本空间，语义预测与双向对比检索联合训练。",
+     "agentChange": "从掩码视觉 token 预测遥感文本嵌入，跨尺度 Transformer 建模，学习式 query pooling 投影到文本空间，语义预测与双向对比检索联合训练。",
+     "support": "在 BigEarthNet.txt 自然语言 Sentinel 检索与 RSICD 跨数据集适应上评估（具体指标见论文正文，摘要未披露数值）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为地球观测基础模型提供参数高效的 language 对齐路径。"
+   }
+  },
+  {
+   "id": "2608.15683",
+   "version": 1,
+   "title": "BASeg: Boundary-Aware Remote Sensing Segmentation with Structural Penalties",
+   "abstract": "提出马氏角边界损失与 10 城市数据集，遥感分割 mIoU 最高提升 2.8%。",
+   "authors": [],
+   "published": "2026-08-18T04:00:00.000Z",
+   "updated": "2026-08-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.15683",
+   "pdf": "https://arxiv.org/pdf/2608.15683",
+   "announceType": "new",
+   "summary": "提出马氏角边界损失与 10 城市数据集，遥感分割 mIoU 最高提升 2.8%。",
+   "topic": "遥感 / 地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.15683"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "边界感知损失+新数据集，推动遥感分割走向边界精确与生成图像场景。",
+   "repository": null,
+   "motivation": "遥感分割难以捕捉细粒度物体边界与形状细节。",
+   "coreProblem": "现有损失忽略边界朝向与结构重要性；数据集缺乏城市形态多样性。",
+   "contributions": [
+    "提出 MABL 边界损失，联合建模结构重要性与边界角度",
+    "构建 BASeg：全局视觉状态空间模块+跨特征融合",
+    "发布全球 10 城市建筑/道路分割基准 GCD-25k"
+   ],
+   "innovations": [
+    "马氏距离加权+角度感知惩罚，即插即用提升任意分割网络",
+    "首次将生成图像纳入遥感分割基准",
+    "城市形态多样性数据集填补现有基准空白"
+   ],
+   "method": "马氏距离度量结构重要性、角度惩罚约束边界朝向；GSM 捕获长程上下文，CFM 融合局部细节，MABL 提供结构先验。",
+   "results": "四个遥感基准上 mIoU 最高 +2.8%；MABL 接入多个现有架构均一致提升。",
+   "value": "边界感知损失+新数据集，推动遥感分割走向边界精确与生成图像场景。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出 MABL 边界损失，联合建模结构重要性与边界角度",
+    "agentChange": "马氏距离度量结构重要性、角度惩罚约束边界朝向；GSM 捕获长程上下文，CFM 融合局部细节，MABL 提供结构先验。",
+    "selfEvolution": null,
+    "evidence": [
+     "四个遥感基准上 mIoU 最高 +2.8%；MABL 接入多个现有架构均一致提升。",
+     "首次将生成图像纳入遥感分割基准",
+     "城市形态多样性数据集填补现有基准空白"
+    ],
+    "faq": {
+     "problem": "提出马氏角边界损失与 10 城市数据集，遥感分割 mIoU 最高提升 2.8%。",
+     "mechanism": "马氏距离度量结构重要性、角度惩罚约束边界朝向；GSM 捕获长程上下文，CFM 融合局部细节，MABL 提供结构先验。",
+     "agentChange": "马氏距离度量结构重要性、角度惩罚约束边界朝向；GSM 捕获长程上下文，CFM 融合局部细节，MABL 提供结构先验。",
+     "support": "四个遥感基准上 mIoU 最高 +2.8%；MABL 接入多个现有架构均一致提升。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "边界感知损失+新数据集，推动遥感分割走向边界精确与生成图像场景。"
+   }
+  },
+  {
+   "id": "2608.16614",
+   "version": 1,
+   "title": "Beyond Accuracy: Assessing Calibration of Geospatial Foundation Models and Their Sensitivity to Distribution Shifts",
+   "abstract": "系统评测 16 个地理空间基础模型校准，发现 EO 预训练在分布漂移下无额外稳健性。",
+   "authors": [],
+   "published": "2026-08-18T04:00:00.000Z",
+   "updated": "2026-08-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.16614",
+   "pdf": "https://arxiv.org/pdf/2608.16614",
+   "announceType": "new",
+   "summary": "系统评测 16 个地理空间基础模型校准，发现 EO 预训练在分布漂移下无额外稳健性。",
+   "topic": "遥感 / 地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.16614"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "推动地理空间基础模型评测从精度走向真实条件可靠性。",
+   "repository": null,
+   "motivation": "GeoFM 选型仅看标准基准精度，缺乏部署级可靠性评估。",
+   "coreProblem": "云层等分布漂移下模型置信度与正确性的关系未被检验。",
+   "contributions": [
+    "构建校准+分布漂移双轴压力评测协议",
+    "16 个冻结编码器×9 个数据集系统评测",
+    "CKA 表征分析+三种 UQ 方法与选择性预测评估"
+   ],
+   "innovations": [
+    "首次证明 EO 预训练校准与漂移稳健性均不优于 ImageNet",
+    "用 CKA 将过度自信归因于表征刚性",
+    "揭示基于置信度的弃判无法回避\"自信的错判\""
+   ],
+   "method": "两条正交压力轴测试编码器退化；CKA 量化表征漂移；对比温度缩放/深度集成/GP 探针三种不确定性量化。",
+   "results": "漂移下 GeoFM 过度自信程度超过 ImageNet 编码器（各等级、各损坏族均如此）；GP 探针重度云层下 ECE 减半，但干净数据上增至 3 倍。",
+   "value": "推动地理空间基础模型评测从精度走向真实条件可靠性。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "构建校准+分布漂移双轴压力评测协议",
+    "agentChange": "两条正交压力轴测试编码器退化；CKA 量化表征漂移；对比温度缩放/深度集成/GP 探针三种不确定性量化。",
+    "selfEvolution": null,
+    "evidence": [
+     "漂移下 GeoFM 过度自信程度超过 ImageNet 编码器（各等级、各损坏族均如此）；GP 探针重度云层下 ECE 减半，但干净数据上增至 3 倍。",
+     "用 CKA 将过度自信归因于表征刚性",
+     "揭示基于置信度的弃判无法回避\"自信的错判\""
+    ],
+    "faq": {
+     "problem": "系统评测 16 个地理空间基础模型校准，发现 EO 预训练在分布漂移下无额外稳健性。",
+     "mechanism": "两条正交压力轴测试编码器退化；CKA 量化表征漂移；对比温度缩放/深度集成/GP 探针三种不确定性量化。",
+     "agentChange": "两条正交压力轴测试编码器退化；CKA 量化表征漂移；对比温度缩放/深度集成/GP 探针三种不确定性量化。",
+     "support": "漂移下 GeoFM 过度自信程度超过 ImageNet 编码器（各等级、各损坏族均如此）；GP 探针重度云层下 ECE 减半，但干净数据上增至 3 倍。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "推动地理空间基础模型评测从精度走向真实条件可靠性。"
+   }
+  },
+  {
+   "id": "2608.16658",
+   "version": 1,
+   "title": "X²Localizer: Cross-grained Alignment for Progressive Cross-view Video Geo-localization",
+   "abstract": "提出渐进式跨视角视频地理定位，单帧粗定位 R@1 +4.7、R@10 +11.5。",
+   "authors": [],
+   "published": "2026-08-18T04:00:00.000Z",
+   "updated": "2026-08-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.16658",
+   "pdf": "https://arxiv.org/pdf/2608.16658",
+   "announceType": "new",
+   "summary": "提出渐进式跨视角视频地理定位，单帧粗定位 R@1 +4.7、R@10 +11.5。",
+   "topic": "遥感 / 地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.16658"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让跨视角定位从离线基准走向真实在线部署。",
+   "repository": null,
+   "motivation": "跨视角定位依赖固定长度输入与离线精化，无法在线部署。",
+   "coreProblem": "现有方法无法应对部分观测、随机起点与长程中断定位。",
+   "contributions": [
+    "提出 PCVG 渐进式定位协议（时间预算/前缀推理/随机起点）",
+    "跨粒度对齐框架：全局前缀检索+token 级帧-瓦片匹配",
+    "SWRL 滑动窗口重定位策略，无需全序列重处理"
+   ],
+   "innovations": [
+    "首次将跨视角地理定位形式化为渐进式在线问题",
+    "预算依赖非对称目标，平衡时间预算与定位精度",
+    "动态刷新候选区域实现失败恢复与长程部署"
+   ],
+   "method": "全局前缀-航拍检索与 token 聚合帧-瓦片匹配联合监督，预算依赖非对称损失；SWRL 滑动窗口动态刷新候选区域。",
+   "results": "单帧设定粗定位较前 SOTA R@1 +4.7、R@10 +11.5；全视频保持性能（R@1 +0.1、R@10 +0.3）。",
+   "value": "让跨视角定位从离线基准走向真实在线部署。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出 PCVG 渐进式定位协议（时间预算/前缀推理/随机起点）",
+    "agentChange": "全局前缀-航拍检索与 token 聚合帧-瓦片匹配联合监督，预算依赖非对称损失；SWRL 滑动窗口动态刷新候选区域。",
+    "selfEvolution": null,
+    "evidence": [
+     "单帧设定粗定位较前 SOTA R@1 +4.7、R@10 +11.5；全视频保持性能（R@1 +0.1、R@10 +0.3）。",
+     "预算依赖非对称目标，平衡时间预算与定位精度",
+     "动态刷新候选区域实现失败恢复与长程部署"
+    ],
+    "faq": {
+     "problem": "提出渐进式跨视角视频地理定位，单帧粗定位 R@1 +4.7、R@10 +11.5。",
+     "mechanism": "全局前缀-航拍检索与 token 聚合帧-瓦片匹配联合监督，预算依赖非对称损失；SWRL 滑动窗口动态刷新候选区域。",
+     "agentChange": "全局前缀-航拍检索与 token 聚合帧-瓦片匹配联合监督，预算依赖非对称损失；SWRL 滑动窗口动态刷新候选区域。",
+     "support": "单帧设定粗定位较前 SOTA R@1 +4.7、R@10 +11.5；全视频保持性能（R@1 +0.1、R@10 +0.3）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "让跨视角定位从离线基准走向真实在线部署。"
+   }
+  },
+  {
+   "id": "2608.16380",
+   "version": 1,
+   "title": "Synthetic Data Augmentation for Satellite-Based Analysis of Battle-Damaged Agricultural Fields in Ukraine",
+   "abstract": "用 GAN/DDPM 合成数据增强卫星战损农田分析，平衡精度 67%→81%。",
+   "authors": [],
+   "published": "2026-08-18T04:00:00.000Z",
+   "updated": "2026-08-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.16380",
+   "pdf": "https://arxiv.org/pdf/2608.16380",
+   "announceType": "new",
+   "summary": "用 GAN/DDPM 合成数据增强卫星战损农田分析，平衡精度 67%→81%。",
+   "topic": "遥感 / 地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.16380"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为数据稀缺的战损/灾害遥感监测提供可行增强范式。",
+   "repository": null,
+   "motivation": "战争损毁农田监测受标注卫星影像稀缺与类别不平衡制约。",
+   "coreProblem": "小样本不平衡下\"未轰炸\"少数类召回率仅 41%。",
+   "contributions": [
+    "对比类条件 GAN 与 DDPM 两种合成增强策略",
+    "多种真实+合成数据组合训练 ViT 分类器",
+    "评测全部在纯真实测试集上进行"
+   ],
+   "innovations": [
+    "在战损遥感这一数据稀缺场景验证生成模型增强实用价值",
+    "均衡 DDPM 增强组合显著优于 GAN 组合"
+   ],
+   "method": "用真实卫星图训练类条件 GAN/DDPM 生成额外样本，仅用于训练；ViT 分类器在多种数据配比下评估。",
+   "results": "均衡 DDPM 增强：精度 84%→88%、平衡精度 67%→81%、macro F1 65%→78%、少数类召回 41%→69%。",
+   "value": "为数据稀缺的战损/灾害遥感监测提供可行增强范式。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "对比类条件 GAN 与 DDPM 两种合成增强策略",
+    "agentChange": "用真实卫星图训练类条件 GAN/DDPM 生成额外样本，仅用于训练；ViT 分类器在多种数据配比下评估。",
+    "selfEvolution": null,
+    "evidence": [
+     "均衡 DDPM 增强：精度 84%→88%、平衡精度 67%→81%、macro F1 65%→78%、少数类召回 41%→69%。",
+     "均衡 DDPM 增强组合显著优于 GAN 组合"
+    ],
+    "faq": {
+     "problem": "用 GAN/DDPM 合成数据增强卫星战损农田分析，平衡精度 67%→81%。",
+     "mechanism": "用真实卫星图训练类条件 GAN/DDPM 生成额外样本，仅用于训练；ViT 分类器在多种数据配比下评估。",
+     "agentChange": "用真实卫星图训练类条件 GAN/DDPM 生成额外样本，仅用于训练；ViT 分类器在多种数据配比下评估。",
+     "support": "均衡 DDPM 增强：精度 84%→88%、平衡精度 67%→81%、macro F1 65%→78%、少数类召回 41%→69%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为数据稀缺的战损/灾害遥感监测提供可行增强范式。"
+   }
+  },
+  {
+   "id": "2608.16241",
+   "version": 1,
+   "title": "Convolution-Free Holistic Multivariance Decomposition Layer for Efficient Hyperspectral Image Classification",
+   "abstract": "提出无卷积 HMD 张量分解层，参数量远低于 CNN 且泛化持平。",
+   "authors": [],
+   "published": "2026-08-18T04:00:00.000Z",
+   "updated": "2026-08-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.16241",
+   "pdf": "https://arxiv.org/pdf/2608.16241",
+   "announceType": "new",
+   "summary": "提出无卷积 HMD 张量分解层，参数量远低于 CNN 且泛化持平。",
+   "topic": "遥感 / 地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.16241"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为高光谱分类提供替代卷积的参数高效结构选择。",
+   "repository": null,
+   "motivation": "刚性张量分解难建模空谱耦合，CNN 参数开销大。",
+   "coreProblem": "现有方法无法分离单模态独立变化与高阶协同交互。",
+   "contributions": [
+    "提出端到端可微 HMD 层（HMD-0/1/2 三级近似）",
+    "可学习矩阵值支撑分离单模态变化与高阶交互项",
+    "三个 HS 基准与 Tucker/CP/TT 系统对比"
+   ],
+   "innovations": [
+    "首次将 HMD 分解改造为可训练可微网络层",
+    "以分解结构替代卷积，实现结构鲁棒的高参数效率"
+   ],
+   "method": "可学习矩阵支撑显式分离单模态变化与高阶协同项，HMD 近似器与下游分类器端到端反向传播联合优化。",
+   "results": "三个 HS 基准上 HMD-1/2 优于 Tucker/CP/TT，泛化与训练稳定性与 2D/3D-CNN 相当而特征提取参数显著更少（具体精度见正文）。",
+   "value": "为高光谱分类提供替代卷积的参数高效结构选择。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出端到端可微 HMD 层（HMD-0/1/2 三级近似）",
+    "agentChange": "可学习矩阵支撑显式分离单模态变化与高阶协同项，HMD 近似器与下游分类器端到端反向传播联合优化。",
+    "selfEvolution": null,
+    "evidence": [
+     "三个 HS 基准上 HMD-1/2 优于 Tucker/CP/TT，泛化与训练稳定性与 2D/3D-CNN 相当而特征提取参数显著更少（具体精度见正文）。",
+     "以分解结构替代卷积，实现结构鲁棒的高参数效率"
+    ],
+    "faq": {
+     "problem": "提出无卷积 HMD 张量分解层，参数量远低于 CNN 且泛化持平。",
+     "mechanism": "可学习矩阵支撑显式分离单模态变化与高阶协同项，HMD 近似器与下游分类器端到端反向传播联合优化。",
+     "agentChange": "可学习矩阵支撑显式分离单模态变化与高阶协同项，HMD 近似器与下游分类器端到端反向传播联合优化。",
+     "support": "三个 HS 基准上 HMD-1/2 优于 Tucker/CP/TT，泛化与训练稳定性与 2D/3D-CNN 相当而特征提取参数显著更少（具体精度见正文）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为高光谱分类提供替代卷积的参数高效结构选择。"
+   }
+  },
+  {
+   "id": "2608.16110",
+   "version": 1,
+   "title": "SUGFW+: An Uncertainty-guided Feature Weighting Framework for Cold Start Active Adaptation of SAM",
+   "abstract": "提出不确定性引导 SAM 冷启动主动适应框架，四公开数据集 SOTA。",
+   "authors": [],
+   "published": "2026-08-18T04:00:00.000Z",
+   "updated": "2026-08-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.16110",
+   "pdf": "https://arxiv.org/pdf/2608.16110",
+   "announceType": "new",
+   "summary": "提出不确定性引导 SAM 冷启动主动适应框架，四公开数据集 SOTA。",
+   "topic": "医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.16110"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "降低医学分割基础模型低预算适应的标注成本。",
+   "repository": null,
+   "motivation": "低标注预算下需高效利用 SAM 预训练特征做样本选择。",
+   "coreProblem": "现有 CSAL 依赖低效的逐数据集 SSL，SAM 内嵌表征未被系统利用。",
+   "contributions": [
+    "提出 SUGFW+：块级特征与不确定性计算（PFUC）",
+    "PGDR 模块聚合块嵌入为不确定性感知图像级特征",
+    "GSCU 贪心选择 + UPFT 不确定性引导微调耦合选样与训练"
+   ],
+   "innovations": [
+    "首次系统利用 SAM 内嵌表征做冷启动样本选择",
+    "打破选样-训练解耦范式，UPFT 将两阶段统一"
+   ],
+   "method": "SAM 计算块级特征与不确定性，PGDR 聚合为图像级判别特征；GSCU 结合聚类多样性与不确定性贪心选样，再不确定性提示微调 SAM。",
+   "results": "四个公开医学分割数据集上对现有 CSAL 方法取得 SOTA（具体数值见正文）；代码已开源。",
+   "value": "降低医学分割基础模型低预算适应的标注成本。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出 SUGFW+：块级特征与不确定性计算（PFUC）",
+    "agentChange": "SAM 计算块级特征与不确定性，PGDR 聚合为图像级判别特征；GSCU 结合聚类多样性与不确定性贪心选样，再不确定性提示微调 SAM。",
+    "selfEvolution": null,
+    "evidence": [
+     "四个公开医学分割数据集上对现有 CSAL 方法取得 SOTA（具体数值见正文）；代码已开源。",
+     "打破选样-训练解耦范式，UPFT 将两阶段统一"
+    ],
+    "faq": {
+     "problem": "提出不确定性引导 SAM 冷启动主动适应框架，四公开数据集 SOTA。",
+     "mechanism": "SAM 计算块级特征与不确定性，PGDR 聚合为图像级判别特征；GSCU 结合聚类多样性与不确定性贪心选样，再不确定性提示微调 SAM。",
+     "agentChange": "SAM 计算块级特征与不确定性，PGDR 聚合为图像级判别特征；GSCU 结合聚类多样性与不确定性贪心选样，再不确定性提示微调 SAM。",
+     "support": "四个公开医学分割数据集上对现有 CSAL 方法取得 SOTA（具体数值见正文）；代码已开源。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "降低医学分割基础模型低预算适应的标注成本。"
+   }
+  },
+  {
+   "id": "2608.16268",
+   "version": 1,
+   "title": "CoM³eT: A foundation model for medical image analysis through federated, multidimensional context integration",
+   "abstract": "提出多维医学视觉基础模型，统一病理+放射与稀疏/密集任务并赢得开放竞赛。",
+   "authors": [],
+   "published": "2026-08-18T04:00:00.000Z",
+   "updated": "2026-08-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.16268",
+   "pdf": "https://arxiv.org/pdf/2608.16268",
+   "announceType": "new",
+   "summary": "提出多维医学视觉基础模型，统一病理+放射与稀疏/密集任务并赢得开放竞赛。",
+   "topic": "医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.16268"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让无高性能 GPU 的小团队也能使用通用医学基础模型。",
+   "repository": null,
+   "motivation": "医学基础模型局限于单一专科与单一输出类型。",
+   "coreProblem": "现有模型无法同时覆盖病理/放射、稀疏/密集预测与多维输入。",
+   "contributions": [
+    "提出 CoM³eT，统一病理+放射、稀疏+密集、2D+高维输入",
+    "在 5 个断层、4 个全切片、3 个 2D 数据集开放竞赛中胜出",
+    "验证 <2.5% 参数微调等效全量微调；联邦训练等效池化数据"
+   ],
+   "innovations": [
+    "单一基础模型统一病理与放射两大模态",
+    "消费级硬件+互联网带宽下联邦训练达到池化数据水平"
+   ],
+   "method": "注意力建模多维上下文；低参数量（<2.5%）适配临床任务；跨医院联邦学习验证。",
+   "results": "赢得涵盖 12 个数据集（含报告生成）的开放竞赛；<2.5% 参数达全量微调水平；联邦训练性能等同池化数据训练。",
+   "value": "让无高性能 GPU 的小团队也能使用通用医学基础模型。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出 CoM³eT，统一病理+放射、稀疏+密集、2D+高维输入",
+    "agentChange": "注意力建模多维上下文；低参数量（<2.5%）适配临床任务；跨医院联邦学习验证。",
+    "selfEvolution": null,
+    "evidence": [
+     "赢得涵盖 12 个数据集（含报告生成）的开放竞赛；<2.5% 参数达全量微调水平；联邦训练性能等同池化数据训练。",
+     "消费级硬件+互联网带宽下联邦训练达到池化数据水平"
+    ],
+    "faq": {
+     "problem": "提出多维医学视觉基础模型，统一病理+放射与稀疏/密集任务并赢得开放竞赛。",
+     "mechanism": "注意力建模多维上下文；低参数量（<2.5%）适配临床任务；跨医院联邦学习验证。",
+     "agentChange": "注意力建模多维上下文；低参数量（<2.5%）适配临床任务；跨医院联邦学习验证。",
+     "support": "赢得涵盖 12 个数据集（含报告生成）的开放竞赛；<2.5% 参数达全量微调水平；联邦训练性能等同池化数据训练。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "让无高性能 GPU 的小团队也能使用通用医学基础模型。"
+   }
+  },
+  {
+   "id": "2608.16709",
+   "version": 1,
+   "title": "MIRROR: Multimodal Intelligent Radiology Reasoning and Observation Reporter",
+   "abstract": "提出解耦式放射报告生成原型，揭示\"判别真实、决策无效\"的评测陷阱。",
+   "authors": [],
+   "published": "2026-08-18T04:00:00.000Z",
+   "updated": "2026-08-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.16709",
+   "pdf": "https://arxiv.org/pdf/2608.16709",
+   "announceType": "new",
+   "summary": "提出解耦式放射报告生成原型，揭示\"判别真实、决策无效\"的评测陷阱。",
+   "topic": "医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.16709"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为放射 AI 提供可审计报告范式与聚合指标警示。",
+   "repository": null,
+   "motivation": "放射模型只输出数值无依据，报告生成易添加模型未做出的判断。",
+   "coreProblem": "语言层无法区分\"分类器判断\"与\"系统实际测量\"的边界。",
+   "contributions": [
+    "三阶段链路：多标签分类器+Grad-CAM 解剖定位+盲语言报告器",
+    "单一注册表统一胸片/脑 MRI/头 CT 三模态的术语与措辞",
+    "提出对\"什么都不做的预测器\"的基线对照评测观"
+   ],
+   "innovations": [
+    "语言层看不到像素，报告 findings 可对概率向量审计",
+    "首次量化类不平衡下聚合指标对\"无操作模型\"的虚假抬升"
+   ],
+   "method": "报告器仅接收标签、概率与解剖区域而不接收图像，保证 findings 可审计；注册表化使新增模态仅需数据变更。",
+   "results": "ChestMNIST macro AUROC 0.729，14 标签排序精度超随机 1.6–6.8 倍；但 0.5 阈值下 11 标签零阳性预测，Brier 0.045 与忽略图像的预测器 0.047 几乎相同。",
+   "value": "为放射 AI 提供可审计报告范式与聚合指标警示。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "三阶段链路：多标签分类器+Grad-CAM 解剖定位+盲语言报告器",
+    "agentChange": "报告器仅接收标签、概率与解剖区域而不接收图像，保证 findings 可审计；注册表化使新增模态仅需数据变更。",
+    "selfEvolution": null,
+    "evidence": [
+     "ChestMNIST macro AUROC 0.729，14 标签排序精度超随机 1.6–6.8 倍；但 0.5 阈值下 11 标签零阳性预测，Brier 0.045 与忽略图像的预测器 0.047 几乎相同。",
+     "首次量化类不平衡下聚合指标对\"无操作模型\"的虚假抬升"
+    ],
+    "faq": {
+     "problem": "提出解耦式放射报告生成原型，揭示\"判别真实、决策无效\"的评测陷阱。",
+     "mechanism": "报告器仅接收标签、概率与解剖区域而不接收图像，保证 findings 可审计；注册表化使新增模态仅需数据变更。",
+     "agentChange": "报告器仅接收标签、概率与解剖区域而不接收图像，保证 findings 可审计；注册表化使新增模态仅需数据变更。",
+     "support": "ChestMNIST macro AUROC 0.729，14 标签排序精度超随机 1.6–6.8 倍；但 0.5 阈值下 11 标签零阳性预测，Brier 0.045 与忽略图像的预测器 0.047 几乎相同。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为放射 AI 提供可审计报告范式与聚合指标警示。"
+   }
+  },
+  {
+   "id": "2608.16386",
+   "version": 1,
+   "title": "Mint-Agent: Introducing Finance-Native Agentic Foundation Models",
+   "abstract": "提出金融原生 Agentic 基础模型，RFC-Bench 98.33% 超 GPT-5.6-Sol。",
+   "authors": [],
+   "published": "2026-08-18T04:00:00.000Z",
+   "updated": "2026-08-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.16386",
+   "pdf": "https://arxiv.org/pdf/2608.16386",
+   "announceType": "new",
+   "summary": "提出金融原生 Agentic 基础模型，RFC-Bench 98.33% 超 GPT-5.6-Sol。",
+   "topic": "Agent / 强化学习 / 具身",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.16386"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "确立证据链可审计的可靠金融 Agent 技术路线。",
+   "repository": null,
+   "motivation": "金融 Agent 需兼顾可靠精确操作与可审计长程研究。",
+   "coreProblem": "通用 LLM 在金融操作上缺乏可靠性与长程执行能力。",
+   "contributions": [
+    "数据引擎+MintHarness 环境+SFT/OPD/RLVR 训练配方",
+    "金融推理与 Agent 执行双专家，经模型合并+多教师蒸馏统一",
+    "发布 Mint-Cu（9B）与 Mint-Ag（27B）两个旗舰模型"
+   ],
+   "innovations": [
+    "将可靠性与可执行性并列为金融基础模型的一等设计目标",
+    "关键步 OPD+RLVR 分训专家，再合并+在线蒸馏成通用 Agent"
+   ],
+   "method": "从真实金融源构建原子能力与长程任务；推理与执行专家独立训练，模型合并+多教师在线策略蒸馏压缩为紧凑通用模型，Harness 维护可审计证据链。",
+   "results": "RFC-Bench 98.33%（超 GPT-5.6-Sol 3.66、Claude-Opus-4.8 3.00）；FinSearchComp T2 Mint-Cu 69.86%（+22.83/+12.78）；FinanceAgentBench v1.1/v2 Mint-Ag 76.00%/60.49%。",
+   "value": "确立证据链可审计的可靠金融 Agent 技术路线。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "数据引擎+MintHarness 环境+SFT/OPD/RLVR 训练配方",
+    "agentChange": "从真实金融源构建原子能力与长程任务；推理与执行专家独立训练，模型合并+多教师在线策略蒸馏压缩为紧凑通用模型，Harness 维护可审计证据链。",
+    "selfEvolution": null,
+    "evidence": [
+     "RFC-Bench 98.33%（超 GPT-5.6-Sol 3.66、Claude-Opus-4.8 3.00）；FinSearchComp T2 Mint-Cu 69.86%（+22.83/+12.78）；FinanceAgentBench v1.1/v2 Mint-Ag 76.00%/60.49%。",
+     "关键步 OPD+RLVR 分训专家，再合并+在线蒸馏成通用 Agent"
+    ],
+    "faq": {
+     "problem": "提出金融原生 Agentic 基础模型，RFC-Bench 98.33% 超 GPT-5.6-Sol。",
+     "mechanism": "从真实金融源构建原子能力与长程任务；推理与执行专家独立训练，模型合并+多教师在线策略蒸馏压缩为紧凑通用模型，Harness 维护可审计证据链。",
+     "agentChange": "从真实金融源构建原子能力与长程任务；推理与执行专家独立训练，模型合并+多教师在线策略蒸馏压缩为紧凑通用模型，Harness 维护可审计证据链。",
+     "support": "RFC-Bench 98.33%（超 GPT-5.6-Sol 3.66、Claude-Opus-4.8 3.00）；FinSearchComp T2 Mint-Cu 69.86%（+22.83/+12.78）；FinanceAgentBench v1.1/v2 Mint-Ag 76.00%/60.49%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "确立证据链可审计的可靠金融 Agent 技术路线。"
+   }
+  },
+  {
+   "id": "2608.16739",
+   "version": 1,
+   "title": "Le Critique: Privileged Value Functions for LLM Reinforcement Learning",
+   "abstract": "提出特权值函数 PVF 与 TETHER 插值基线，使值函数 RL 比肩 GRPO。",
+   "authors": [],
+   "published": "2026-08-18T04:00:00.000Z",
+   "updated": "2026-08-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.16739",
+   "pdf": "https://arxiv.org/pdf/2608.16739",
+   "announceType": "new",
+   "summary": "提出特权值函数 PVF 与 TETHER 插值基线，使值函数 RL 比肩 GRPO。",
+   "topic": "Agent / 强化学习 / 具身",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.16739"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让 token 级信用分配重新进入 LLM RL 实用管线。",
+   "repository": null,
+   "motivation": "GRPO 仅序列级信用且被慢 rollout 阻塞；值函数 RL 落地难。",
+   "coreProblem": "值函数缺 token 级任务信号，精度不稳定难以实用化。",
+   "contributions": [
+    "PVF：向值函数注入 token 级任务信号且不偏策略目标",
+    "TETHER：按值函数精度自适应插值组相对/值基线",
+    "多个推理任务上与 mean-baseline GRPO 系统对比"
+   ],
+   "innovations": [
+    "以\"特权信息\"非对称机制向 critic 注入任务信号",
+    "按 critic 精度动态混合两类基线，稳定超越标准值函数 RL"
+   ],
+   "method": "PVF 用特权信息为值函数提供额外 token 级监督；TETHER 依据值函数在线精度自适应插值 group-relative 与 value 基线。",
+   "results": "多个推理任务一致优于标准值函数基线，与 mean-baseline GRPO 持平或超越（具体分值见正文）。",
+   "value": "让 token 级信用分配重新进入 LLM RL 实用管线。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "PVF：向值函数注入 token 级任务信号且不偏策略目标",
+    "agentChange": "PVF 用特权信息为值函数提供额外 token 级监督；TETHER 依据值函数在线精度自适应插值 group-relative 与 value 基线。",
+    "selfEvolution": null,
+    "evidence": [
+     "多个推理任务一致优于标准值函数基线，与 mean-baseline GRPO 持平或超越（具体分值见正文）。",
+     "按 critic 精度动态混合两类基线，稳定超越标准值函数 RL"
+    ],
+    "faq": {
+     "problem": "提出特权值函数 PVF 与 TETHER 插值基线，使值函数 RL 比肩 GRPO。",
+     "mechanism": "PVF 用特权信息为值函数提供额外 token 级监督；TETHER 依据值函数在线精度自适应插值 group-relative 与 value 基线。",
+     "agentChange": "PVF 用特权信息为值函数提供额外 token 级监督；TETHER 依据值函数在线精度自适应插值 group-relative 与 value 基线。",
+     "support": "多个推理任务一致优于标准值函数基线，与 mean-baseline GRPO 持平或超越（具体分值见正文）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "让 token 级信用分配重新进入 LLM RL 实用管线。"
+   }
+  },
+  {
+   "id": "2608.16837",
+   "version": 1,
+   "title": "HAF: Adapting Generalist VLAs to Humanoid Whole-Body Loco-manipulation via Hierarchical Action Flow and Spectral Latent RL",
+   "abstract": "用分层动作流+谱潜空间 RL 将通用 VLA 适配人形全身运动操作。",
+   "authors": [],
+   "published": "2026-08-18T04:00:00.000Z",
+   "updated": "2026-08-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.16837",
+   "pdf": "https://arxiv.org/pdf/2608.16837",
+   "announceType": "new",
+   "summary": "用分层动作流+谱潜空间 RL 将通用 VLA 适配人形全身运动操作。",
+   "topic": "Agent / 强化学习 / 具身",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.16837"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为通用 VLA 安全高效迁移到人形机器人提供范式。",
+   "repository": null,
+   "motivation": "通用 VLA 难以协调人形机器人高维耦合全身动作。",
+   "coreProblem": "一次性动作生成全身不连贯；真机上直接调 VLA 昂贵且有安全风险。",
+   "contributions": [
+    "HAF-VLA：三阶段分层动作流生成器（阶段嵌入+跨阶段 KV cache）",
+    "HAF-Steer：潜空间离线到在线 RL，仅更新噪声子空间",
+    "七个真实人形运动操作任务实测"
+   ],
+   "innovations": [
+    "首次利用流匹配可逆性+DCT 降维将 RL 限制在紧凑噪声子空间",
+    "冻结 VLA 主干只训小型 SAC 策略，规避真机探索风险"
+   ],
+   "method": "全身动作去噪拆为三阶段序贯生成，跨阶段 KV 缓存保留运动学依赖；流匹配逆映射+DCT 降维后在谱潜空间做正则化 SAC 离线到在线精化。",
+   "results": "七个真实人形任务上超越 vanilla 单阶段 VLA 基线，全身协调与任务表现提升（具体数值见正文）。",
+   "value": "为通用 VLA 安全高效迁移到人形机器人提供范式。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "HAF-VLA：三阶段分层动作流生成器（阶段嵌入+跨阶段 KV cache）",
+    "agentChange": "全身动作去噪拆为三阶段序贯生成，跨阶段 KV 缓存保留运动学依赖；流匹配逆映射+DCT 降维后在谱潜空间做正则化 SAC 离线到在线精化。",
+    "selfEvolution": null,
+    "evidence": [
+     "七个真实人形任务上超越 vanilla 单阶段 VLA 基线，全身协调与任务表现提升（具体数值见正文）。",
+     "冻结 VLA 主干只训小型 SAC 策略，规避真机探索风险"
+    ],
+    "faq": {
+     "problem": "用分层动作流+谱潜空间 RL 将通用 VLA 适配人形全身运动操作。",
+     "mechanism": "全身动作去噪拆为三阶段序贯生成，跨阶段 KV 缓存保留运动学依赖；流匹配逆映射+DCT 降维后在谱潜空间做正则化 SAC 离线到在线精化。",
+     "agentChange": "全身动作去噪拆为三阶段序贯生成，跨阶段 KV 缓存保留运动学依赖；流匹配逆映射+DCT 降维后在谱潜空间做正则化 SAC 离线到在线精化。",
+     "support": "七个真实人形任务上超越 vanilla 单阶段 VLA 基线，全身协调与任务表现提升（具体数值见正文）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为通用 VLA 安全高效迁移到人形机器人提供范式。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-08-16",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-08-16 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-08-18T04:00:00.000Z",
+ "totalMatched": 1951,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 1951
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-08-18",
+ "historical": true
+}

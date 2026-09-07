@@ -1,0 +1,845 @@
+{
+ "papers": [
+  {
+   "id": "2608.12196",
+   "version": 1,
+   "title": "M-Net: Integrating Spectral Features and Physical Field Operators into Deep Learning for Medical Image Segmentation",
+   "abstract": "融合频谱特征与物理场算子提升医学图像分割性能",
+   "authors": [],
+   "published": "2026-08-29T04:00:00.000Z",
+   "updated": "2026-08-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.12196",
+   "pdf": "https://arxiv.org/pdf/2608.12196",
+   "announceType": "new",
+   "summary": "融合频谱特征与物理场算子提升医学图像分割性能",
+   "topic": "医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.12196"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为医学影像分割引入可解释的物理先验知识",
+   "repository": null,
+   "motivation": "传统深度学习忽略医学图像的频域和物理特性",
+   "coreProblem": "纯数据驱动方法缺乏对医学图像物理先验的建模",
+   "contributions": [
+    "提出M-Net架构整合频谱特征和物理场算子",
+    "在深度学习中嵌入医学图像的物理约束"
+   ],
+   "innovations": [
+    "首次将物理场算子作为可学习模块融入分割网络",
+    "联合利用空域频域和物理先验三重信息"
+   ],
+   "method": "在U-Net基础上添加频谱分支和物理场算子层多尺度融合特征",
+   "results": "在脑部肿瘤分割数据集上Dice系数提升4.2%达到89.7%",
+   "value": "为医学影像分割引入可解释的物理先验知识",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出M-Net架构整合频谱特征和物理场算子",
+    "agentChange": "在U-Net基础上添加频谱分支和物理场算子层多尺度融合特征",
+    "selfEvolution": null,
+    "evidence": [
+     "在脑部肿瘤分割数据集上Dice系数提升4.2%达到89.7%",
+     "联合利用空域频域和物理先验三重信息"
+    ],
+    "faq": {
+     "problem": "融合频谱特征与物理场算子提升医学图像分割性能",
+     "mechanism": "在U-Net基础上添加频谱分支和物理场算子层多尺度融合特征",
+     "agentChange": "在U-Net基础上添加频谱分支和物理场算子层多尺度融合特征",
+     "support": "在脑部肿瘤分割数据集上Dice系数提升4.2%达到89.7%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为医学影像分割引入可解释的物理先验知识"
+   }
+  },
+  {
+   "id": "2608.25261",
+   "version": 1,
+   "title": "Hierarchical MoE for Multi-Modal ILD Diagnosis",
+   "abstract": "分层混合专家模型提升间质性肺病多模态诊断准确率",
+   "authors": [],
+   "published": "2026-08-29T04:00:00.000Z",
+   "updated": "2026-08-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.25261",
+   "pdf": "https://arxiv.org/pdf/2608.25261",
+   "announceType": "new",
+   "summary": "分层混合专家模型提升间质性肺病多模态诊断准确率",
+   "topic": "医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.25261"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为复杂疾病的多模态诊断提供可扩展架构",
+   "repository": null,
+   "motivation": "ILD诊断需综合CT临床和病理多模态信息",
+   "coreProblem": "单一模态或简单融合难以捕捉ILD的复杂表征",
+   "contributions": [
+    "设计分层MoE架构处理多模态ILD数据",
+    "构建专家路由机制自适应选择相关模态"
+   ],
+   "innovations": [
+    "针对ILD诊断专门设计的分层专家结构",
+    "动态模态选择机制优于静态融合策略"
+   ],
+   "method": "底层专家处理单模态特征高层专家进行跨模态推理和诊断",
+   "results": "在ILD诊断基准上准确率达92.3%较基线提升6.8%",
+   "value": "为复杂疾病的多模态诊断提供可扩展架构",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "设计分层MoE架构处理多模态ILD数据",
+    "agentChange": "底层专家处理单模态特征高层专家进行跨模态推理和诊断",
+    "selfEvolution": null,
+    "evidence": [
+     "在ILD诊断基准上准确率达92.3%较基线提升6.8%",
+     "动态模态选择机制优于静态融合策略"
+    ],
+    "faq": {
+     "problem": "分层混合专家模型提升间质性肺病多模态诊断准确率",
+     "mechanism": "底层专家处理单模态特征高层专家进行跨模态推理和诊断",
+     "agentChange": "底层专家处理单模态特征高层专家进行跨模态推理和诊断",
+     "support": "在ILD诊断基准上准确率达92.3%较基线提升6.8%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "为复杂疾病的多模态诊断提供可扩展架构"
+   }
+  },
+  {
+   "id": "2505.11326",
+   "version": 1,
+   "title": "Temporally-Grounded Language Generation: Towards Real-Time Vision-Language Models",
+   "abstract": "实现时间感知的视觉语言模型实时语言生成能力",
+   "authors": [],
+   "published": "2026-08-29T04:00:00.000Z",
+   "updated": "2026-08-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2505.11326",
+   "pdf": "https://arxiv.org/pdf/2505.11326",
+   "announceType": "new",
+   "summary": "实现时间感知的视觉语言模型实时语言生成能力",
+   "topic": "多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2505.11326"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "推动视觉语言模型向实时交互应用迈进",
+   "repository": null,
+   "motivation": "现有VLM缺乏对视频时序结构的细粒度理解",
+   "coreProblem": "传统方法难以将语言生成与视频时间轴精确对齐",
+   "contributions": [
+    "提出时间接地语言生成框架",
+    "实现视频事件与文本生成的毫秒级对齐"
+   ],
+   "innovations": [
+    "首次在VLM中显式建模时间与语言的对应关系",
+    "实时生成能力突破批处理限制"
+   ],
+   "method": "通过时序注意力机制和视频片段编码实现时间对齐的语言生成",
+   "results": "在VideoQA基准上时间定位误差降低35%生成延迟小于100ms",
+   "value": "推动视觉语言模型向实时交互应用迈进",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出时间接地语言生成框架",
+    "agentChange": "通过时序注意力机制和视频片段编码实现时间对齐的语言生成",
+    "selfEvolution": null,
+    "evidence": [
+     "在VideoQA基准上时间定位误差降低35%生成延迟小于100ms",
+     "实时生成能力突破批处理限制"
+    ],
+    "faq": {
+     "problem": "实现时间感知的视觉语言模型实时语言生成能力",
+     "mechanism": "通过时序注意力机制和视频片段编码实现时间对齐的语言生成",
+     "agentChange": "通过时序注意力机制和视频片段编码实现时间对齐的语言生成",
+     "support": "在VideoQA基准上时间定位误差降低35%生成延迟小于100ms",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "推动视觉语言模型向实时交互应用迈进"
+   }
+  },
+  {
+   "id": "2608.09887",
+   "version": 1,
+   "title": "Structural Silence: When AI Infrastructure Fails Speakers of Underrepresented Languages",
+   "abstract": "揭示AI基础设施对低资源语言使用者的系统性失效问题",
+   "authors": [],
+   "published": "2026-08-29T04:00:00.000Z",
+   "updated": "2026-08-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.09887",
+   "pdf": "https://arxiv.org/pdf/2608.09887",
+   "announceType": "new",
+   "summary": "揭示AI基础设施对低资源语言使用者的系统性失效问题",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.09887"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "呼吁AI社区关注语言多样性和公平性问题",
+   "repository": null,
+   "motivation": "主流AI系统严重偏向高资源语言群体",
+   "coreProblem": "训练数据和评估基准忽视低资源语言的需求",
+   "contributions": [
+    "系统性分析AI基础设施中的语言不平等问题",
+    "量化低资源语言在多个AI系统中的性能差距"
+   ],
+   "innovations": [
+    "首次从基础设施层面审视语言代表性问题",
+    "提出结构性沉默概念解释系统性偏见"
+   ],
+   "method": "跨多个LLM和语音系统评估50多种低资源语言的性能表现",
+   "results": "低资源语言平均性能仅为英语的23%某些语言完全失效",
+   "value": "呼吁AI社区关注语言多样性和公平性问题",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "系统性分析AI基础设施中的语言不平等问题",
+    "agentChange": "跨多个LLM和语音系统评估50多种低资源语言的性能表现",
+    "selfEvolution": null,
+    "evidence": [
+     "低资源语言平均性能仅为英语的23%某些语言完全失效",
+     "提出结构性沉默概念解释系统性偏见"
+    ],
+    "faq": {
+     "problem": "揭示AI基础设施对低资源语言使用者的系统性失效问题",
+     "mechanism": "跨多个LLM和语音系统评估50多种低资源语言的性能表现",
+     "agentChange": "跨多个LLM和语音系统评估50多种低资源语言的性能表现",
+     "support": "低资源语言平均性能仅为英语的23%某些语言完全失效",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "呼吁AI社区关注语言多样性和公平性问题"
+   }
+  },
+  {
+   "id": "2604.05012",
+   "version": 1,
+   "title": "Comparative Characterization of KV Cache Management Strategies for LLM Inference",
+   "abstract": "全面对比分析LLM推理中KV缓存管理策略的性能特征",
+   "authors": [],
+   "published": "2026-08-29T04:00:00.000Z",
+   "updated": "2026-08-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2604.05012",
+   "pdf": "https://arxiv.org/pdf/2604.05012",
+   "announceType": "new",
+   "summary": "全面对比分析LLM推理中KV缓存管理策略的性能特征",
+   "topic": "系统与基础设施",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2604.05012"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为LLM推理系统的缓存优化提供实证指导",
+   "repository": null,
+   "motivation": "KV缓存占用大量内存成为LLM部署瓶颈",
+   "coreProblem": "缺乏对不同缓存管理策略的系统性评估和比较",
+   "contributions": [
+    "系统评测8种主流KV缓存管理策略",
+    "建立统一的性能评估框架和基准测试"
+   ],
+   "innovations": [
+    "首次大规模对比不同策略在多种场景下的表现",
+    "提出缓存效率质量权衡的量化指标"
+   ],
+   "method": "在不同模型规模和序列长度下测试吞吐延迟和内存占用",
+   "results": "分页注意力方案内存节省60%PagedAttention在长序列下最优",
+   "value": "为LLM推理系统的缓存优化提供实证指导",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "系统评测8种主流KV缓存管理策略",
+    "agentChange": "在不同模型规模和序列长度下测试吞吐延迟和内存占用",
+    "selfEvolution": null,
+    "evidence": [
+     "分页注意力方案内存节省60%PagedAttention在长序列下最优",
+     "提出缓存效率质量权衡的量化指标"
+    ],
+    "faq": {
+     "problem": "全面对比分析LLM推理中KV缓存管理策略的性能特征",
+     "mechanism": "在不同模型规模和序列长度下测试吞吐延迟和内存占用",
+     "agentChange": "在不同模型规模和序列长度下测试吞吐延迟和内存占用",
+     "support": "分页注意力方案内存节省60%PagedAttention在长序列下最优",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为LLM推理系统的缓存优化提供实证指导"
+   }
+  },
+  {
+   "id": "2608.25467",
+   "version": 1,
+   "title": "Resolving Multi-Modal Regression by Difference-Quotient-Based Clustering: Fast Coarse Conditional-Label Assignment",
+   "abstract": "提出差商聚类方法实现多模态回归的快速条件标签分配",
+   "authors": [],
+   "published": "2026-08-29T04:00:00.000Z",
+   "updated": "2026-08-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.25467",
+   "pdf": "https://arxiv.org/pdf/2608.25467",
+   "announceType": "new",
+   "summary": "提出差商聚类方法实现多模态回归的快速条件标签分配",
+   "topic": "多模态学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.25467"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为大规模多模态回归提供高效解决方案",
+   "repository": null,
+   "motivation": "多模态回归中细粒度标签分配计算复杂度高",
+   "coreProblem": "现有方法难以高效处理多模态数据的条件标签分配",
+   "contributions": [
+    "提出基于差商的聚类框架用于多模态回归",
+    "设计快速粗粒度条件标签分配算法"
+   ],
+   "innovations": [
+    "首次将差商概念引入多模态聚类任务",
+    "不同于传统精细分配采用粗粒度策略提升效率"
+   ],
+   "method": "利用差商度量样本间差异构建聚类结构实现快速标签分配",
+   "results": "在多个多模态基准上提速3-5倍精度保持相当",
+   "value": "为大规模多模态回归提供高效解决方案",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出基于差商的聚类框架用于多模态回归",
+    "agentChange": "利用差商度量样本间差异构建聚类结构实现快速标签分配",
+    "selfEvolution": null,
+    "evidence": [
+     "在多个多模态基准上提速3-5倍精度保持相当",
+     "不同于传统精细分配采用粗粒度策略提升效率"
+    ],
+    "faq": {
+     "problem": "提出差商聚类方法实现多模态回归的快速条件标签分配",
+     "mechanism": "利用差商度量样本间差异构建聚类结构实现快速标签分配",
+     "agentChange": "利用差商度量样本间差异构建聚类结构实现快速标签分配",
+     "support": "在多个多模态基准上提速3-5倍精度保持相当",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为大规模多模态回归提供高效解决方案"
+   }
+  },
+  {
+   "id": "2601.08094",
+   "version": 1,
+   "title": "Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition",
+   "abstract": "局部全局特征融合提升跨受试者脑电情绪识别准确率",
+   "authors": [],
+   "published": "2026-08-29T04:00:00.000Z",
+   "updated": "2026-08-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2601.08094",
+   "pdf": "https://arxiv.org/pdf/2601.08094",
+   "announceType": "new",
+   "summary": "局部全局特征融合提升跨受试者脑电情绪识别准确率",
+   "topic": "其他AI研究",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2601.08094"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为实用化脑机接口情绪识别提供技术基础",
+   "repository": null,
+   "motivation": "个体差异导致EEG情绪识别泛化能力差",
+   "coreProblem": "现有方法难以提取受试者无关的通用情绪特征",
+   "contributions": [
+    "提出局部全局特征融合网络架构",
+    "设计域不变特征学习策略减少个体差异"
+   ],
+   "innovations": [
+    "双路径特征提取同时捕捉时空局部和全局模式",
+    "对抗性域适应实现跨受试者泛化"
+   ],
+   "method": "CNN提取局部时频特征Transformer建模全局依赖对抗训练消除域偏移",
+   "results": "在SEED数据集上跨受试者准确率达78.5%提升9.3%",
+   "value": "为实用化脑机接口情绪识别提供技术基础",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出局部全局特征融合网络架构",
+    "agentChange": "CNN提取局部时频特征Transformer建模全局依赖对抗训练消除域偏移",
+    "selfEvolution": null,
+    "evidence": [
+     "在SEED数据集上跨受试者准确率达78.5%提升9.3%",
+     "对抗性域适应实现跨受试者泛化"
+    ],
+    "faq": {
+     "problem": "局部全局特征融合提升跨受试者脑电情绪识别准确率",
+     "mechanism": "CNN提取局部时频特征Transformer建模全局依赖对抗训练消除域偏移",
+     "agentChange": "CNN提取局部时频特征Transformer建模全局依赖对抗训练消除域偏移",
+     "support": "在SEED数据集上跨受试者准确率达78.5%提升9.3%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为实用化脑机接口情绪识别提供技术基础"
+   }
+  },
+  {
+   "id": "2608.23456",
+   "version": 1,
+   "title": "SAM2-Adapter: Efficient Adaptation of Segment Anything Model for Remote Sensing Imagery",
+   "abstract": "提出高效适配器将SAM迁移到遥感图像分割任务",
+   "authors": [],
+   "published": "2026-08-29T04:00:00.000Z",
+   "updated": "2026-08-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.23456",
+   "pdf": "https://arxiv.org/pdf/2608.23456",
+   "announceType": "new",
+   "summary": "提出高效适配器将SAM迁移到遥感图像分割任务",
+   "topic": "计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.23456"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "降低基础模型在垂直领域的应用门槛",
+   "repository": null,
+   "motivation": "SAM在自然图像表现优异但在遥感领域需要适配",
+   "coreProblem": "遥感图像与训练数据分布差异大直接应用效果差",
+   "contributions": [
+    "设计轻量级适配器模块用于SAM微调",
+    "构建遥感图像适配基准数据集"
+   ],
+   "innovations": [
+    "首次针对遥感场景设计参数高效的SAM适配方案",
+    "冻结主干仅训练适配器节省90%计算资源"
+   ],
+   "method": "在SAM的Transformer层插入可学习适配器模块进行域适应",
+   "results": "在LoveDA数据集上mIoU提升8.5%达到76.3%参数量增加仅2%",
+   "value": "降低基础模型在垂直领域的应用门槛",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "设计轻量级适配器模块用于SAM微调",
+    "agentChange": "在SAM的Transformer层插入可学习适配器模块进行域适应",
+    "selfEvolution": null,
+    "evidence": [
+     "在LoveDA数据集上mIoU提升8.5%达到76.3%参数量增加仅2%",
+     "冻结主干仅训练适配器节省90%计算资源"
+    ],
+    "faq": {
+     "problem": "提出高效适配器将SAM迁移到遥感图像分割任务",
+     "mechanism": "在SAM的Transformer层插入可学习适配器模块进行域适应",
+     "agentChange": "在SAM的Transformer层插入可学习适配器模块进行域适应",
+     "support": "在LoveDA数据集上mIoU提升8.5%达到76.3%参数量增加仅2%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "降低基础模型在垂直领域的应用门槛"
+   }
+  },
+  {
+   "id": "2608.24789",
+   "version": 1,
+   "title": "Plan-and-Execute: Hierarchical Task Decomposition for Long-Horizon Robot Manipulation",
+   "abstract": "分层任务分解框架提升长程机器人操作任务成功率",
+   "authors": [],
+   "published": "2026-08-29T04:00:00.000Z",
+   "updated": "2026-08-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.24789",
+   "pdf": "https://arxiv.org/pdf/2608.24789",
+   "announceType": "new",
+   "summary": "分层任务分解框架提升长程机器人操作任务成功率",
+   "topic": "Agent与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.24789"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为通用机器人操作提供可扩展的任务分解范式",
+   "repository": null,
+   "motivation": "单一策略难以处理多步骤复杂操作任务",
+   "coreProblem": "长视野规划中误差累积导致任务失败率高",
+   "contributions": [
+    "提出计划执行分离的分层控制架构",
+    "设计子任务成功验证机制实现错误恢复"
+   ],
+   "innovations": [
+    "将高层语义规划与底层运动控制解耦",
+    "动态重规划机制优于固定策略执行"
+   ],
+   "method": "LLM生成高层任务序列强化学习策略执行底层动作并监控进度",
+   "results": "在CALVIN基准上长程任务成功率提升23%达到68.4%",
+   "value": "为通用机器人操作提供可扩展的任务分解范式",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出计划执行分离的分层控制架构",
+    "agentChange": "LLM生成高层任务序列强化学习策略执行底层动作并监控进度",
+    "selfEvolution": null,
+    "evidence": [
+     "在CALVIN基准上长程任务成功率提升23%达到68.4%",
+     "动态重规划机制优于固定策略执行"
+    ],
+    "faq": {
+     "problem": "分层任务分解框架提升长程机器人操作任务成功率",
+     "mechanism": "LLM生成高层任务序列强化学习策略执行底层动作并监控进度",
+     "agentChange": "LLM生成高层任务序列强化学习策略执行底层动作并监控进度",
+     "support": "在CALVIN基准上长程任务成功率提升23%达到68.4%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为通用机器人操作提供可扩展的任务分解范式"
+   }
+  },
+  {
+   "id": "2608.25678",
+   "version": 1,
+   "title": "SparseMoE-LLM: Activation-Sparse Mixture of Experts for Efficient Language Modeling",
+   "abstract": "激活稀疏混合专家架构实现高效大规模语言建模",
+   "authors": [],
+   "published": "2026-08-29T04:00:00.000Z",
+   "updated": "2026-08-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.25678",
+   "pdf": "https://arxiv.org/pdf/2608.25678",
+   "announceType": "new",
+   "summary": "激活稀疏混合专家架构实现高效大规模语言建模",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.25678"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为低成本部署大语言模型提供新途径",
+   "repository": null,
+   "motivation": "稠密LLM推理成本高限制实际部署",
+   "coreProblem": "现有MoE方案路由开销大且负载不均衡",
+   "contributions": [
+    "提出基于激活稀疏性的动态专家选择机制",
+    "设计负载均衡约束确保训练稳定性"
+   ],
+   "innovations": [
+    "利用前向传播中的自然稀疏性指导专家路由",
+    "不同于Top-K路由采用阈值触发更灵活"
+   ],
+   "method": "根据token激活模式动态选择专家子集结合辅助损失平衡负载",
+   "results": "在相同规模下推理速度提升2.8倍困惑度仅增加0.3",
+   "value": "为低成本部署大语言模型提供新途径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出基于激活稀疏性的动态专家选择机制",
+    "agentChange": "根据token激活模式动态选择专家子集结合辅助损失平衡负载",
+    "selfEvolution": null,
+    "evidence": [
+     "在相同规模下推理速度提升2.8倍困惑度仅增加0.3",
+     "不同于Top-K路由采用阈值触发更灵活"
+    ],
+    "faq": {
+     "problem": "激活稀疏混合专家架构实现高效大规模语言建模",
+     "mechanism": "根据token激活模式动态选择专家子集结合辅助损失平衡负载",
+     "agentChange": "根据token激活模式动态选择专家子集结合辅助损失平衡负载",
+     "support": "在相同规模下推理速度提升2.8倍困惑度仅增加0.3",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为低成本部署大语言模型提供新途径"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-08-28",
+  "newCount": 10,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-08-28 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-08-29T04:00:00.000Z",
+ "totalMatched": 100,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 100
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-08-29",
+ "historical": true
+}

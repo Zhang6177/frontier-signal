@@ -1,0 +1,1355 @@
+{
+ "papers": [
+  {
+   "id": "2608.02483",
+   "version": 1,
+   "title": "Fermat Active Laplace Learning for Semi-Supervised Hyperspectral Image Classification",
+   "abstract": "提出结合密度感知 Fermat 距离与 Poisson 重加权调和标签传播的半监督高光谱图像分类方法。",
+   "authors": [],
+   "published": "2026-08-04T04:00:00.000Z",
+   "updated": "2026-08-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "stat.ML"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.02483",
+   "pdf": "https://arxiv.org/pdf/2608.02483",
+   "announceType": "new",
+   "summary": "提出结合密度感知 Fermat 距离与 Poisson 重加权调和标签传播的半监督高光谱图像分类方法。",
+   "topic": "高优推荐",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.02483"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为高光谱图像分类提供了数据高效的半监督框架，特别适用于标注获取成本极高的遥感场景。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "使用 Fermat 距离替代欧氏距离构建亲和矩阵，对高维光谱数据的非线性结构更鲁棒"
+   ],
+   "innovations": [
+    "将不确定性采样策略与 PWLL 标签传播相结合，主动查询最信息丰富的样本",
+    "提出近似版本 A-FALL 通过局部邻居计算大幅降低计算复杂度"
+   ],
+   "method": "FALL 算法构建全局 Fermat 距离亲和矩阵 + PWLL 对角扰动；A-FALL 仅计算局部邻居的近似 Fermat 距离，实现可扩展的主动学习循环。",
+   "results": "在多个标准 HSI 数据集上，使用极少标注样本（<5%）即可达到或超过全监督基线的分类精度。",
+   "value": "为高光谱图像分类提供了数据高效的半监督框架，特别适用于标注获取成本极高的遥感场景。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "使用 Fermat 距离替代欧氏距离构建亲和矩阵，对高维光谱数据的非线性结构更鲁棒",
+    "agentChange": "FALL 算法构建全局 Fermat 距离亲和矩阵 + PWLL 对角扰动；A-FALL 仅计算局部邻居的近似 Fermat 距离，实现可扩展的主动学习循环。",
+    "selfEvolution": null,
+    "evidence": [
+     "在多个标准 HSI 数据集上，使用极少标注样本（<5%）即可达到或超过全监督基线的分类精度。",
+     "提出近似版本 A-FALL 通过局部邻居计算大幅降低计算复杂度"
+    ],
+    "faq": {
+     "problem": "提出结合密度感知 Fermat 距离与 Poisson 重加权调和标签传播的半监督高光谱图像分类方法。",
+     "mechanism": "FALL 算法构建全局 Fermat 距离亲和矩阵 + PWLL 对角扰动；A-FALL 仅计算局部邻居的近似 Fermat 距离，实现可扩展的主动学习循环。",
+     "agentChange": "FALL 算法构建全局 Fermat 距离亲和矩阵 + PWLL 对角扰动；A-FALL 仅计算局部邻居的近似 Fermat 距离，实现可扩展的主动学习循环。",
+     "support": "在多个标准 HSI 数据集上，使用极少标注样本（<5%）即可达到或超过全监督基线的分类精度。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为高光谱图像分类提供了数据高效的半监督框架，特别适用于标注获取成本极高的遥感场景。"
+   }
+  },
+  {
+   "id": "2608.02470",
+   "version": 1,
+   "title": "Grounding Agentic VLMs with Dedicated Segmentation for Fine-Grained Vehicle Damage Assessment",
+   "abstract": "发现 VLM 在细粒度视觉评估中的空间定位能力不可靠，提出专用分割模块增强 agentic VLM 的精准定位。",
+   "authors": [],
+   "published": "2026-08-04T04:00:00.000Z",
+   "updated": "2026-08-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "stat.ML"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.02470",
+   "pdf": "https://arxiv.org/pdf/2608.02470",
+   "announceType": "new",
+   "summary": "发现 VLM 在细粒度视觉评估中的空间定位能力不可靠，提出专用分割模块增强 agentic VLM 的精准定位。",
+   "topic": "高优推荐",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.02470"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "揭示了 VLM 作为视觉推理 agent 在实际工业应用中的定位瓶颈，为 VLM + 专用视觉模块的混合架构提供了实证依据。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "揭示 Qwen-VL 等 SOTA VLM 在语义分类（87.3% 准确率）与空间定位之间存在显著鸿沟"
+   ],
+   "innovations": [
+    "划痕和微裂纹等细粒度目标占像素极少、梯度信号微弱，容易被 VLM 与反光/纹理混淆",
+    "通过引入专用分割分支提供像素级 grounding signal，大幅提升 VLM agent 的定位可靠性"
+   ],
+   "method": "设计两阶段 pipeline —— VLM 进行语义推理与损伤类型分类，专用分割网络提供像素级定位，两者信息融合输出结构化评估报告。",
+   "results": "Qwen-VL 单独使用达到 87.3% 语义分类准确率，但系统性地低估损伤范围；加入分割 grounding 后，定位精度显著提升，误报/漏报率降低。",
+   "value": "揭示了 VLM 作为视觉推理 agent 在实际工业应用中的定位瓶颈，为 VLM + 专用视觉模块的混合架构提供了实证依据。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "揭示 Qwen-VL 等 SOTA VLM 在语义分类（87.3% 准确率）与空间定位之间存在显著鸿沟",
+    "agentChange": "设计两阶段 pipeline —— VLM 进行语义推理与损伤类型分类，专用分割网络提供像素级定位，两者信息融合输出结构化评估报告。",
+    "selfEvolution": null,
+    "evidence": [
+     "Qwen-VL 单独使用达到 87.3% 语义分类准确率，但系统性地低估损伤范围；加入分割 grounding 后，定位精度显著提升，误报/漏报率降低。",
+     "通过引入专用分割分支提供像素级 grounding signal，大幅提升 VLM agent 的定位可靠性"
+    ],
+    "faq": {
+     "problem": "发现 VLM 在细粒度视觉评估中的空间定位能力不可靠，提出专用分割模块增强 agentic VLM 的精准定位。",
+     "mechanism": "设计两阶段 pipeline —— VLM 进行语义推理与损伤类型分类，专用分割网络提供像素级定位，两者信息融合输出结构化评估报告。",
+     "agentChange": "设计两阶段 pipeline —— VLM 进行语义推理与损伤类型分类，专用分割网络提供像素级定位，两者信息融合输出结构化评估报告。",
+     "support": "Qwen-VL 单独使用达到 87.3% 语义分类准确率，但系统性地低估损伤范围；加入分割 grounding 后，定位精度显著提升，误报/漏报率降低。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "揭示了 VLM 作为视觉推理 agent 在实际工业应用中的定位瓶颈，为 VLM + 专用视觉模块的混合架构提供了实证依据。"
+   }
+  },
+  {
+   "id": "2608.02603",
+   "version": 1,
+   "title": "WorldExam: Benchmarking World Models from Apparent Appearance to Inherent Reactivity",
+   "abstract": "提出 WorldExam 基准，从\"视觉外观\"到\"内在反应性\"系统评估可控视频生成模型作为世界模型的能力。",
+   "authors": [],
+   "published": "2026-08-04T04:00:00.000Z",
+   "updated": "2026-08-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "stat.ML"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.02603",
+   "pdf": "https://arxiv.org/pdf/2608.02603",
+   "announceType": "new",
+   "summary": "提出 WorldExam 基准，从\"视觉外观\"到\"内在反应性\"系统评估可控视频生成模型作为世界模型的能力。",
+   "topic": "计算机视觉 / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.02603"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为可控视频生成模型的世界模型能力提供了首个系统评估框架，推动该领域从\"外观真实\"向\"因果合理\"演进。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "指出现有基准主要评估视觉质量或显式指令完成率，忽视了\"内在反应性\"——模型能否推断场景状态并生成合理后果"
+   ],
+   "innovations": [
+    "设计了超越显式指令的评估维度，测试模型对未明确描述的输入能否产生合理的物理/因果反应",
+    "将世界模型评估从\"是否做了被要求的事\"推进到\"是否理解了场景并做出合理推断\""
+   ],
+   "method": "构建多层级测试集，包含显式指令执行测试（baseline）和隐式因果推理测试（novel），通过自动和人工评估双管齐下。",
+   "results": "在多个 SOTA 可控视频生成模型上系统评测，发现多数模型在隐式反应性任务上表现远差于显式指令任务，揭示了世界模型研究的关键瓶颈。",
+   "value": "为可控视频生成模型的世界模型能力提供了首个系统评估框架，推动该领域从\"外观真实\"向\"因果合理\"演进。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "指出现有基准主要评估视觉质量或显式指令完成率，忽视了\"内在反应性\"——模型能否推断场景状态并生成合理后果",
+    "agentChange": "构建多层级测试集，包含显式指令执行测试（baseline）和隐式因果推理测试（novel），通过自动和人工评估双管齐下。",
+    "selfEvolution": null,
+    "evidence": [
+     "在多个 SOTA 可控视频生成模型上系统评测，发现多数模型在隐式反应性任务上表现远差于显式指令任务，揭示了世界模型研究的关键瓶颈。",
+     "将世界模型评估从\"是否做了被要求的事\"推进到\"是否理解了场景并做出合理推断\""
+    ],
+    "faq": {
+     "problem": "提出 WorldExam 基准，从\"视觉外观\"到\"内在反应性\"系统评估可控视频生成模型作为世界模型的能力。",
+     "mechanism": "构建多层级测试集，包含显式指令执行测试（baseline）和隐式因果推理测试（novel），通过自动和人工评估双管齐下。",
+     "agentChange": "构建多层级测试集，包含显式指令执行测试（baseline）和隐式因果推理测试（novel），通过自动和人工评估双管齐下。",
+     "support": "在多个 SOTA 可控视频生成模型上系统评测，发现多数模型在隐式反应性任务上表现远差于显式指令任务，揭示了世界模型研究的关键瓶颈。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "为可控视频生成模型的世界模型能力提供了首个系统评估框架，推动该领域从\"外观真实\"向\"因果合理\"演进。"
+   }
+  },
+  {
+   "id": "2608.02589",
+   "version": 1,
+   "title": "CAPEval: A Decoupled Caption Evaluation across Understanding and Generation",
+   "abstract": "将图像描述质量解耦为\"视觉覆盖度\"和\"声明精确度\"两个独立维度，提供跨理解与生成任务的对齐评估。",
+   "authors": [],
+   "published": "2026-08-04T04:00:00.000Z",
+   "updated": "2026-08-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "stat.ML"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.02589",
+   "pdf": "https://arxiv.org/pdf/2608.02589",
+   "announceType": "new",
+   "summary": "将图像描述质量解耦为\"视觉覆盖度\"和\"声明精确度\"两个独立维度，提供跨理解与生成任务的对齐评估。",
+   "topic": "计算机视觉 / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.02589"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为多模态模型评估提供了更精细的诊断工具，帮助研究者理解理解-生成之间的质量差异。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "发现现有描述评估将质量压缩为单一标量，混淆了\"覆盖多少视觉信息\"和\"所述内容是否可靠\"两个正交属性"
+   ],
+   "innovations": [
+    "设计 Coverage And Precision Evaluation (CAPEval) 基准，包含人工撰写 ground-truth 描述和人工验证的原子检查清单",
+    "首次在同一框架下对齐评估多模态理解（captioning）和文本到图像生成两个方向"
+   ],
+   "method": "构建人类撰写的参考描述集 + 原子级 checklist 验证，分别计算覆盖度（coverage）和精确度（precision）两个指标。",
+   "results": "在主流 VLM 和文生图模型上评测，发现不同模型在覆盖度和精确度上呈现截然不同的 trade-off 模式，单一标量无法反映真实能力分布。",
+   "value": "为多模态模型评估提供了更精细的诊断工具，帮助研究者理解理解-生成之间的质量差异。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "发现现有描述评估将质量压缩为单一标量，混淆了\"覆盖多少视觉信息\"和\"所述内容是否可靠\"两个正交属性",
+    "agentChange": "构建人类撰写的参考描述集 + 原子级 checklist 验证，分别计算覆盖度（coverage）和精确度（precision）两个指标。",
+    "selfEvolution": null,
+    "evidence": [
+     "在主流 VLM 和文生图模型上评测，发现不同模型在覆盖度和精确度上呈现截然不同的 trade-off 模式，单一标量无法反映真实能力分布。",
+     "首次在同一框架下对齐评估多模态理解（captioning）和文本到图像生成两个方向"
+    ],
+    "faq": {
+     "problem": "将图像描述质量解耦为\"视觉覆盖度\"和\"声明精确度\"两个独立维度，提供跨理解与生成任务的对齐评估。",
+     "mechanism": "构建人类撰写的参考描述集 + 原子级 checklist 验证，分别计算覆盖度（coverage）和精确度（precision）两个指标。",
+     "agentChange": "构建人类撰写的参考描述集 + 原子级 checklist 验证，分别计算覆盖度（coverage）和精确度（precision）两个指标。",
+     "support": "在主流 VLM 和文生图模型上评测，发现不同模型在覆盖度和精确度上呈现截然不同的 trade-off 模式，单一标量无法反映真实能力分布。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为多模态模型评估提供了更精细的诊断工具，帮助研究者理解理解-生成之间的质量差异。"
+   }
+  },
+  {
+   "id": "2608.02504",
+   "version": 1,
+   "title": "Token Radius Attention for Efficient Video Generation",
+   "abstract": "提出 Token Radius Attention (TRA)，通过查询熵动态分配注意力计算预算，无需训练即可加速视频扩散 Transformer。",
+   "authors": [],
+   "published": "2026-08-04T04:00:00.000Z",
+   "updated": "2026-08-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "stat.ML"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.02504",
+   "pdf": "https://arxiv.org/pdf/2608.02504",
+   "announceType": "new",
+   "summary": "提出 Token Radius Attention (TRA)，通过查询熵动态分配注意力计算预算，无需训练即可加速视频扩散 Transformer。",
+   "topic": "计算机视觉 / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.02504"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为视频扩散 Transformer 提供了即插即用的注意力加速方案，降低了高保真视频生成的计算门槛。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "发现视频 VDiT 中各查询的保留密度不同但与其注意力熵呈对数线性相关"
+   ],
+   "innovations": [
+    "主导注意力交互形成以查询为中心的邻域，且具有 token 相关的半径",
+    "现有稀疏方法在查询间平均分配预算，TRA 则根据每个查询的实际需求动态分配"
+   ],
+   "method": "将查询熵映射为解析式 token 预算，自适应确定每个查询的注意力半径，完全 training-free，直接替换标准注意力。",
+   "results": "在视频生成任务上显著降低计算成本（减少 O(N²) 到近似 O(N)），同时保持生成质量，速度提升显著。",
+   "value": "为视频扩散 Transformer 提供了即插即用的注意力加速方案，降低了高保真视频生成的计算门槛。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "发现视频 VDiT 中各查询的保留密度不同但与其注意力熵呈对数线性相关",
+    "agentChange": "将查询熵映射为解析式 token 预算，自适应确定每个查询的注意力半径，完全 training-free，直接替换标准注意力。",
+    "selfEvolution": null,
+    "evidence": [
+     "在视频生成任务上显著降低计算成本（减少 O(N²) 到近似 O(N)），同时保持生成质量，速度提升显著。",
+     "现有稀疏方法在查询间平均分配预算，TRA 则根据每个查询的实际需求动态分配"
+    ],
+    "faq": {
+     "problem": "提出 Token Radius Attention (TRA)，通过查询熵动态分配注意力计算预算，无需训练即可加速视频扩散 Transformer。",
+     "mechanism": "将查询熵映射为解析式 token 预算，自适应确定每个查询的注意力半径，完全 training-free，直接替换标准注意力。",
+     "agentChange": "将查询熵映射为解析式 token 预算，自适应确定每个查询的注意力半径，完全 training-free，直接替换标准注意力。",
+     "support": "在视频生成任务上显著降低计算成本（减少 O(N²) 到近似 O(N)），同时保持生成质量，速度提升显著。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为视频扩散 Transformer 提供了即插即用的注意力加速方案，降低了高保真视频生成的计算门槛。"
+   }
+  },
+  {
+   "id": "2608.02495",
+   "version": 1,
+   "title": "DyFrDet: Towards Accurate Small Object Detection via Dynamic Frequency Suppression with Label Disambiguation",
+   "abstract": "提出 DyFrDet，通过动态频率域背景抑制和标签消歧提升小目标检测精度。",
+   "authors": [],
+   "published": "2026-08-04T04:00:00.000Z",
+   "updated": "2026-08-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "stat.ML"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.02495",
+   "pdf": "https://arxiv.org/pdf/2608.02495",
+   "announceType": "new",
+   "summary": "提出 DyFrDet，通过动态频率域背景抑制和标签消歧提升小目标检测精度。",
+   "topic": "计算机视觉 / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.02495"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "将频率域分析与深度学习检测器结合，为小目标检测提供了新的有效思路。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "指出小目标检测中两个被忽视的问题：频域噪声范围广和标签歧义严重"
+   ],
+   "innovations": [
+    "设计动态频率抑制模块，根据输入自适应抑制背景频域噪声，保留小目标的频谱特征",
+    "引入标签消歧机制，减少类别混淆对小目标定位的干扰"
+   ],
+   "method": "基于 DETR 架构，在特征提取后引入频率域滤波分支（动态权重）和标签消歧头，端到端训练。",
+   "results": "在 COCO 等基准的小目标检测子集上取得显著提升，在极小目标（<32×32）类别上领先现有方法。",
+   "value": "将频率域分析与深度学习检测器结合，为小目标检测提供了新的有效思路。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "指出小目标检测中两个被忽视的问题：频域噪声范围广和标签歧义严重",
+    "agentChange": "基于 DETR 架构，在特征提取后引入频率域滤波分支（动态权重）和标签消歧头，端到端训练。",
+    "selfEvolution": null,
+    "evidence": [
+     "在 COCO 等基准的小目标检测子集上取得显著提升，在极小目标（<32×32）类别上领先现有方法。",
+     "引入标签消歧机制，减少类别混淆对小目标定位的干扰"
+    ],
+    "faq": {
+     "problem": "提出 DyFrDet，通过动态频率域背景抑制和标签消歧提升小目标检测精度。",
+     "mechanism": "基于 DETR 架构，在特征提取后引入频率域滤波分支（动态权重）和标签消歧头，端到端训练。",
+     "agentChange": "基于 DETR 架构，在特征提取后引入频率域滤波分支（动态权重）和标签消歧头，端到端训练。",
+     "support": "在 COCO 等基准的小目标检测子集上取得显著提升，在极小目标（<32×32）类别上领先现有方法。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "将频率域分析与深度学习检测器结合，为小目标检测提供了新的有效思路。"
+   }
+  },
+  {
+   "id": "2608.02602",
+   "version": 1,
+   "title": "AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling",
+   "abstract": "提出 AURORA-LM，将文本建模从离散 token 推进到连续潜在空间，用扩散模型直接学习高容量可解码文本潜在的分布。",
+   "authors": [],
+   "published": "2026-08-04T04:00:00.000Z",
+   "updated": "2026-08-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "stat.ML"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.02602",
+   "pdf": "https://arxiv.org/pdf/2608.02602",
+   "announceType": "new",
+   "summary": "提出 AURORA-LM，将文本建模从离散 token 推进到连续潜在空间，用扩散模型直接学习高容量可解码文本潜在的分布。",
+   "topic": "大语言模型 / 基础方法",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.02602"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为将文本纳入统一的连续潜在生成范式提供了可行路径，有望弥合视觉与语言生成之间的鸿沟。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "指出语言生成仍是生成式建模中的\"异类\"——图像/视频/音频已转向连续潜在空间，而文本仍依赖离散 token"
+   ],
+   "innovations": [
+    "现有连续语言模型要么继承非为联合生成设计的嵌入空间，要么压缩自编码潜在以降低扩散难度（牺牲 token 级保真度）",
+    "AURORA 反其道而行：保留高容量可解码的文本潜在，让扩散模型直接学习其分布"
+   ],
+   "method": "设计自编码统一表示空间 + 扩散模型联合训练，保持 token 级重建精度的同时实现连续潜在空间的流畅采样。",
+   "results": "在语言生成基准上展示与离散 token 模型相当甚至更好的 perplexity 和样本质量，同时支持连续插值等操作。",
+   "value": "为将文本纳入统一的连续潜在生成范式提供了可行路径，有望弥合视觉与语言生成之间的鸿沟。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "指出语言生成仍是生成式建模中的\"异类\"——图像/视频/音频已转向连续潜在空间，而文本仍依赖离散 token",
+    "agentChange": "设计自编码统一表示空间 + 扩散模型联合训练，保持 token 级重建精度的同时实现连续潜在空间的流畅采样。",
+    "selfEvolution": null,
+    "evidence": [
+     "在语言生成基准上展示与离散 token 模型相当甚至更好的 perplexity 和样本质量，同时支持连续插值等操作。",
+     "AURORA 反其道而行：保留高容量可解码的文本潜在，让扩散模型直接学习其分布"
+    ],
+    "faq": {
+     "problem": "提出 AURORA-LM，将文本建模从离散 token 推进到连续潜在空间，用扩散模型直接学习高容量可解码文本潜在的分布。",
+     "mechanism": "设计自编码统一表示空间 + 扩散模型联合训练，保持 token 级重建精度的同时实现连续潜在空间的流畅采样。",
+     "agentChange": "设计自编码统一表示空间 + 扩散模型联合训练，保持 token 级重建精度的同时实现连续潜在空间的流畅采样。",
+     "support": "在语言生成基准上展示与离散 token 模型相当甚至更好的 perplexity 和样本质量，同时支持连续插值等操作。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为将文本纳入统一的连续潜在生成范式提供了可行路径，有望弥合视觉与语言生成之间的鸿沟。"
+   }
+  },
+  {
+   "id": "2608.02585",
+   "version": 1,
+   "title": "GradCuit: Credit-Assigned Gradient Flow Enables Robust and Interpretable Test-Time Latent Reasoning",
+   "abstract": "提出 GradCuit，通过在 Transformer 层间插入可优化潜在状态实现端到端梯度信用分配，改进测试时推理。",
+   "authors": [],
+   "published": "2026-08-04T04:00:00.000Z",
+   "updated": "2026-08-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "stat.ML"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.02585",
+   "pdf": "https://arxiv.org/pdf/2608.02585",
+   "announceType": "new",
+   "summary": "提出 GradCuit，通过在 Transformer 层间插入可优化潜在状态实现端到端梯度信用分配，改进测试时推理。",
+   "topic": "大语言模型 / 基础方法",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.02585"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为 LLM 测试时推理提供了更直接、更可控的优化路径，同时增强了推理过程的可解释性。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "现有基于优化的测试时推理方法通过解码 token 连接潜在状态与推理轨迹，导致序列级信用分配间接且不透明"
+   ],
+   "innovations": [
+    "GradCuit 直接在 prompt 和生成续写的隐藏表示之间插入可优化潜在层，梯度直接流过这些状态",
+    "提供可解释的\"梯度电路\"——可以看到每个潜在状态如何具体影响后续推理步骤"
+   ],
+   "method": "在选定 Transformer 层插入可优化 latent states，冻结模型参数，通过梯度优化这些 states 来改善输出，同时记录梯度流路径。",
+   "results": "在多项推理基准上超越现有测试时优化方法，同时提供细粒度的推理过程可解释性。",
+   "value": "为 LLM 测试时推理提供了更直接、更可控的优化路径，同时增强了推理过程的可解释性。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "现有基于优化的测试时推理方法通过解码 token 连接潜在状态与推理轨迹，导致序列级信用分配间接且不透明",
+    "agentChange": "在选定 Transformer 层插入可优化 latent states，冻结模型参数，通过梯度优化这些 states 来改善输出，同时记录梯度流路径。",
+    "selfEvolution": null,
+    "evidence": [
+     "在多项推理基准上超越现有测试时优化方法，同时提供细粒度的推理过程可解释性。",
+     "提供可解释的\"梯度电路\"——可以看到每个潜在状态如何具体影响后续推理步骤"
+    ],
+    "faq": {
+     "problem": "提出 GradCuit，通过在 Transformer 层间插入可优化潜在状态实现端到端梯度信用分配，改进测试时推理。",
+     "mechanism": "在选定 Transformer 层插入可优化 latent states，冻结模型参数，通过梯度优化这些 states 来改善输出，同时记录梯度流路径。",
+     "agentChange": "在选定 Transformer 层插入可优化 latent states，冻结模型参数，通过梯度优化这些 states 来改善输出，同时记录梯度流路径。",
+     "support": "在多项推理基准上超越现有测试时优化方法，同时提供细粒度的推理过程可解释性。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为 LLM 测试时推理提供了更直接、更可控的优化路径，同时增强了推理过程的可解释性。"
+   }
+  },
+  {
+   "id": "2608.02583",
+   "version": 1,
+   "title": "UEmbed: Unified Sparse and Dense Multimodal Embeddings",
+   "abstract": "提出 UEmbed，首个纯解码器架构的统一多模态嵌入模型，在一次因果前向传播中同时生成稀疏和稠密表示。",
+   "authors": [],
+   "published": "2026-08-04T04:00:00.000Z",
+   "updated": "2026-08-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "stat.ML"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.02583",
+   "pdf": "https://arxiv.org/pdf/2608.02583",
+   "announceType": "new",
+   "summary": "提出 UEmbed，首个纯解码器架构的统一多模态嵌入模型，在一次因果前向传播中同时生成稀疏和稠密表示。",
+   "topic": "大语言模型 / 基础方法",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.02583"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "简化了多模态检索架构，为 RAG 等下游应用提供了统一的嵌入接口。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "现有 Learned Sparse Retrieval (LSR) 局限于编码器式双向架构，扩展到多模态需要额外的跨模态模块"
+   ],
+   "innovations": [
+    "UEmbed 采用纯解码器架构，在单次因果前向传播中同时产出稀疏词汇表示和稠密语义向量",
+    "无需额外的跨模态对齐模块，原生支持多模态统一检索"
+   ],
+   "method": "基于 Transformer 解码器设计，同时学习 sparse term weights 和 dense embedding vectors，通过对比学习和交叉编码器联合训练。",
+   "results": "在多模态检索基准（如 Multimodal BEIR）上超越现有 LSR 方法，同时推理速度更快、部署更简单。",
+   "value": "简化了多模态检索架构，为 RAG 等下游应用提供了统一的嵌入接口。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "现有 Learned Sparse Retrieval (LSR) 局限于编码器式双向架构，扩展到多模态需要额外的跨模态模块",
+    "agentChange": "基于 Transformer 解码器设计，同时学习 sparse term weights 和 dense embedding vectors，通过对比学习和交叉编码器联合训练。",
+    "selfEvolution": null,
+    "evidence": [
+     "在多模态检索基准（如 Multimodal BEIR）上超越现有 LSR 方法，同时推理速度更快、部署更简单。",
+     "无需额外的跨模态对齐模块，原生支持多模态统一检索"
+    ],
+    "faq": {
+     "problem": "提出 UEmbed，首个纯解码器架构的统一多模态嵌入模型，在一次因果前向传播中同时生成稀疏和稠密表示。",
+     "mechanism": "基于 Transformer 解码器设计，同时学习 sparse term weights 和 dense embedding vectors，通过对比学习和交叉编码器联合训练。",
+     "agentChange": "基于 Transformer 解码器设计，同时学习 sparse term weights 和 dense embedding vectors，通过对比学习和交叉编码器联合训练。",
+     "support": "在多模态检索基准（如 Multimodal BEIR）上超越现有 LSR 方法，同时推理速度更快、部署更简单。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "简化了多模态检索架构，为 RAG 等下游应用提供了统一的嵌入接口。"
+   }
+  },
+  {
+   "id": "2608.02502",
+   "version": 1,
+   "title": "CMuon: Accelerating and Stabilizing Diffusion Transformer Training via Chunked Momentum Orthogonalization",
+   "abstract": "发现 Muon 优化器在 DiT 上的后期收敛瓶颈，提出 CMuon 通过对函数不同权重解耦分块正交化来加速稳定训练。",
+   "authors": [],
+   "published": "2026-08-04T04:00:00.000Z",
+   "updated": "2026-08-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "stat.ML"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.02502",
+   "pdf": "https://arxiv.org/pdf/2608.02502",
+   "announceType": "new",
+   "summary": "发现 Muon 优化器在 DiT 上的后期收敛瓶颈，提出 CMuon 通过对函数不同权重解耦分块正交化来加速稳定训练。",
+   "topic": "训练方法 / 优化器",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.02502"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为扩散 Transformer 训练提供了更高效的优化方案，降低了 DiT 训练的计算成本。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "定位 Muon 在 DiT 上收敛不佳的根本原因：标准 DiT 将功能不同的权重（如 AdaLN 和 QKV）融合为统一张量以优化计算"
+   ],
+   "innovations": [
+    "对融合张量应用 Muon 正交化会混合不同功能的权重更新方向，导致后期训练不稳定",
+    "提出 CMuon 对融合张量进行功能感知的分块正交化"
+   ],
+   "method": "在 Muon 优化器中引入分块机制，识别并分离不同功能模块（AdaLN、QKV 等），对每个功能块独立应用动量正交化。",
+   "results": "在图像和视频扩散 Transformer 训练上，CMuon 显著缩短收敛时间并提升最终生成质量，超越标准 Muon 和 AdamW。",
+   "value": "为扩散 Transformer 训练提供了更高效的优化方案，降低了 DiT 训练的计算成本。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "定位 Muon 在 DiT 上收敛不佳的根本原因：标准 DiT 将功能不同的权重（如 AdaLN 和 QKV）融合为统一张量以优化计算",
+    "agentChange": "在 Muon 优化器中引入分块机制，识别并分离不同功能模块（AdaLN、QKV 等），对每个功能块独立应用动量正交化。",
+    "selfEvolution": null,
+    "evidence": [
+     "在图像和视频扩散 Transformer 训练上，CMuon 显著缩短收敛时间并提升最终生成质量，超越标准 Muon 和 AdamW。",
+     "提出 CMuon 对融合张量进行功能感知的分块正交化"
+    ],
+    "faq": {
+     "problem": "发现 Muon 优化器在 DiT 上的后期收敛瓶颈，提出 CMuon 通过对函数不同权重解耦分块正交化来加速稳定训练。",
+     "mechanism": "在 Muon 优化器中引入分块机制，识别并分离不同功能模块（AdaLN、QKV 等），对每个功能块独立应用动量正交化。",
+     "agentChange": "在 Muon 优化器中引入分块机制，识别并分离不同功能模块（AdaLN、QKV 等），对每个功能块独立应用动量正交化。",
+     "support": "在图像和视频扩散 Transformer 训练上，CMuon 显著缩短收敛时间并提升最终生成质量，超越标准 Muon 和 AdamW。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为扩散 Transformer 训练提供了更高效的优化方案，降低了 DiT 训练的计算成本。"
+   }
+  },
+  {
+   "id": "2608.02558",
+   "version": 1,
+   "title": "Benchmarking Sheaf Neural Networks for Inductive Tasks",
+   "abstract": "首次系统评估 Sheaf 神经网络在归纳学习协议下的表现，填补 SNN 从传递学习到归纳学习的评价空白。",
+   "authors": [],
+   "published": "2026-08-04T04:00:00.000Z",
+   "updated": "2026-08-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "stat.ML"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.02558",
+   "pdf": "https://arxiv.org/pdf/2608.02558",
+   "announceType": "new",
+   "summary": "首次系统评估 Sheaf 神经网络在归纳学习协议下的表现，填补 SNN 从传递学习到归纳学习的评价空白。",
+   "topic": "图神经网络 / 基础理论",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.02558"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为拓扑方法图神经网络的归纳学习提供了首次系统评价，帮助理解 SNN 的实际适用边界。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "SNN 用可学习、边依赖的限制映射替代标准 GNN 的标量边权重，具有强理论基础，但此前几乎只在传递学习节点分类上评估"
+   ],
+   "innovations": [
+    "首次对 SNN 的设计空间进行系统基准测试，评估三种扩散机制（neural sheaf diffusion、sheaf attention、sheaf attentive diffusion）",
+    "全面对比 SNN 与标准 GNN 在归纳协议下的表现"
+   ],
+   "method": "在多个 OGB 和自定义图数据集上，系统评估不同 SNN 变体在不同图结构（homophilic/heterophilic）和不同任务类型上的归纳学习性能。",
+   "results": "发现 SNN 在某些异配图上超越标准 GNN，但在其他场景下表现相当或略差；sheaf attention 变体在归纳任务上最为稳健。",
+   "value": "为拓扑方法图神经网络的归纳学习提供了首次系统评价，帮助理解 SNN 的实际适用边界。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "SNN 用可学习、边依赖的限制映射替代标准 GNN 的标量边权重，具有强理论基础，但此前几乎只在传递学习节点分类上评估",
+    "agentChange": "在多个 OGB 和自定义图数据集上，系统评估不同 SNN 变体在不同图结构（homophilic/heterophilic）和不同任务类型上的归纳学习性能。",
+    "selfEvolution": null,
+    "evidence": [
+     "发现 SNN 在某些异配图上超越标准 GNN，但在其他场景下表现相当或略差；sheaf attention 变体在归纳任务上最为稳健。",
+     "全面对比 SNN 与标准 GNN 在归纳协议下的表现"
+    ],
+    "faq": {
+     "problem": "首次系统评估 Sheaf 神经网络在归纳学习协议下的表现，填补 SNN 从传递学习到归纳学习的评价空白。",
+     "mechanism": "在多个 OGB 和自定义图数据集上，系统评估不同 SNN 变体在不同图结构（homophilic/heterophilic）和不同任务类型上的归纳学习性能。",
+     "agentChange": "在多个 OGB 和自定义图数据集上，系统评估不同 SNN 变体在不同图结构（homophilic/heterophilic）和不同任务类型上的归纳学习性能。",
+     "support": "发现 SNN 在某些异配图上超越标准 GNN，但在其他场景下表现相当或略差；sheaf attention 变体在归纳任务上最为稳健。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为拓扑方法图神经网络的归纳学习提供了首次系统评价，帮助理解 SNN 的实际适用边界。"
+   }
+  },
+  {
+   "id": "2608.02561",
+   "version": 1,
+   "title": "ReMiX-MAE: Learning Missing-Channel Cross-Modal Representations from RGB-Only Clinical Facial Videos for Sympathetic-Mediated Pain Assessment",
+   "abstract": "提出 ReMiX-MAE，从多模态（RGB+热成像+深度）临床视频自监督预训练，然后在仅有 RGB 的部署环境下实现疼痛评估。",
+   "authors": [],
+   "published": "2026-08-04T04:00:00.000Z",
+   "updated": "2026-08-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "stat.ML"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.02561",
+   "pdf": "https://arxiv.org/pdf/2608.02561",
+   "announceType": "new",
+   "summary": "提出 ReMiX-MAE，从多模态（RGB+热成像+深度）临床视频自监督预训练，然后在仅有 RGB 的部署环境下实现疼痛评估。",
+   "topic": "医疗 / 生物视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.02561"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为医疗 AI 部署中的模态可用性鸿沟提供了实用的解决方案——用多模态预训练、单模态部署的范式提升临床实用性。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "疼痛线索在 RGB 中可能微弱或接近中性，而热成像和深度信号信息丰富但临床部署不实际"
+   ],
+   "innovations": [
+    "ReMiX-MAE 设计\"缺失通道\"重建目标：在预训练阶段使用多模态数据，但强制 RGB-only 分支重建缺失的热成像/深度通道",
+    "学习到的表征在仅有 RGB 输入时仍能编码跨模态信息"
+   ],
+   "method": "多模态 Masked Autoencoder 预训练 + 缺失通道重建损失 + 下游疼痛评估微调。预训练使用同步 RGB/热成像/深度视频。",
+   "results": "在临床面部视频疼痛评估数据集上，ReMiX-MAE 在仅有 RGB 输入时显著超越 RGB-only 预训练基线，接近多模态推理的上界。",
+   "value": "为医疗 AI 部署中的模态可用性鸿沟提供了实用的解决方案——用多模态预训练、单模态部署的范式提升临床实用性。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "疼痛线索在 RGB 中可能微弱或接近中性，而热成像和深度信号信息丰富但临床部署不实际",
+    "agentChange": "多模态 Masked Autoencoder 预训练 + 缺失通道重建损失 + 下游疼痛评估微调。预训练使用同步 RGB/热成像/深度视频。",
+    "selfEvolution": null,
+    "evidence": [
+     "在临床面部视频疼痛评估数据集上，ReMiX-MAE 在仅有 RGB 输入时显著超越 RGB-only 预训练基线，接近多模态推理的上界。",
+     "学习到的表征在仅有 RGB 输入时仍能编码跨模态信息"
+    ],
+    "faq": {
+     "problem": "提出 ReMiX-MAE，从多模态（RGB+热成像+深度）临床视频自监督预训练，然后在仅有 RGB 的部署环境下实现疼痛评估。",
+     "mechanism": "多模态 Masked Autoencoder 预训练 + 缺失通道重建损失 + 下游疼痛评估微调。预训练使用同步 RGB/热成像/深度视频。",
+     "agentChange": "多模态 Masked Autoencoder 预训练 + 缺失通道重建损失 + 下游疼痛评估微调。预训练使用同步 RGB/热成像/深度视频。",
+     "support": "在临床面部视频疼痛评估数据集上，ReMiX-MAE 在仅有 RGB 输入时显著超越 RGB-only 预训练基线，接近多模态推理的上界。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为医疗 AI 部署中的模态可用性鸿沟提供了实用的解决方案——用多模态预训练、单模态部署的范式提升临床实用性。"
+   }
+  },
+  {
+   "id": "unknown-2026-08-04-13",
+   "version": 1,
+   "title": "VR3D** (2608.02598) — 航空-地面行人重识别的视图鲁棒 3D 表征学习",
+   "abstract": "",
+   "authors": [],
+   "published": "2026-08-04T04:00:00.000Z",
+   "updated": "2026-08-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "stat.ML"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "",
+   "pdf": "",
+   "announceType": "new",
+   "summary": "VR3D** (2608.02598) — 航空-地面行人重识别的视图鲁棒 3D 表征学习",
+   "topic": "其他值得关注",
+   "comments": "",
+   "links": [],
+   "hotScore": 62,
+   "scoreParts": {
+    "relevance": 55,
+    "evidence": 45,
+    "noveltyClaim": 50,
+    "actionability": 52,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [],
+   "innovations": [],
+   "method": "",
+   "results": "",
+   "value": "",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "",
+    "agentChange": "",
+    "selfEvolution": null,
+    "evidence": [],
+    "faq": {
+     "problem": "",
+     "mechanism": "",
+     "agentChange": "",
+     "support": "",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 13,
+    "editorialScore": 62,
+    "editorialTier": "skim",
+    "recommendationReason": ""
+   }
+  },
+  {
+   "id": "unknown-2026-08-04-14",
+   "version": 1,
+   "title": "TokTier** (2607.29678) — 面向 Agentic LLM 服务的精确 CPU+GPU tokenization",
+   "abstract": "",
+   "authors": [],
+   "published": "2026-08-04T04:00:00.000Z",
+   "updated": "2026-08-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "stat.ML"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "",
+   "pdf": "",
+   "announceType": "new",
+   "summary": "TokTier** (2607.29678) — 面向 Agentic LLM 服务的精确 CPU+GPU tokenization",
+   "topic": "其他值得关注",
+   "comments": "",
+   "links": [],
+   "hotScore": 62,
+   "scoreParts": {
+    "relevance": 55,
+    "evidence": 45,
+    "noveltyClaim": 50,
+    "actionability": 52,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [],
+   "innovations": [],
+   "method": "",
+   "results": "",
+   "value": "",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "",
+    "agentChange": "",
+    "selfEvolution": null,
+    "evidence": [],
+    "faq": {
+     "problem": "",
+     "mechanism": "",
+     "agentChange": "",
+     "support": "",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 14,
+    "editorialScore": 62,
+    "editorialTier": "skim",
+    "recommendationReason": ""
+   }
+  },
+  {
+   "id": "unknown-2026-08-04-15",
+   "version": 1,
+   "title": "LiveMem** (2608.02515) — 长运行 LLM 推理中的记忆状态连续性维持",
+   "abstract": "",
+   "authors": [],
+   "published": "2026-08-04T04:00:00.000Z",
+   "updated": "2026-08-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "stat.ML"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "",
+   "pdf": "",
+   "announceType": "new",
+   "summary": "LiveMem** (2608.02515) — 长运行 LLM 推理中的记忆状态连续性维持",
+   "topic": "其他值得关注",
+   "comments": "",
+   "links": [],
+   "hotScore": 62,
+   "scoreParts": {
+    "relevance": 55,
+    "evidence": 45,
+    "noveltyClaim": 50,
+    "actionability": 52,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [],
+   "innovations": [],
+   "method": "",
+   "results": "",
+   "value": "",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "",
+    "agentChange": "",
+    "selfEvolution": null,
+    "evidence": [],
+    "faq": {
+     "problem": "",
+     "mechanism": "",
+     "agentChange": "",
+     "support": "",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 15,
+    "editorialScore": 62,
+    "editorialTier": "skim",
+    "recommendationReason": ""
+   }
+  },
+  {
+   "id": "unknown-2026-08-04-16",
+   "version": 1,
+   "title": "EchoCache** (2608.02474) — 音频驱动视频生成的跨模态缓存加速",
+   "abstract": "",
+   "authors": [],
+   "published": "2026-08-04T04:00:00.000Z",
+   "updated": "2026-08-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "stat.ML"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "",
+   "pdf": "",
+   "announceType": "new",
+   "summary": "EchoCache** (2608.02474) — 音频驱动视频生成的跨模态缓存加速",
+   "topic": "其他值得关注",
+   "comments": "",
+   "links": [],
+   "hotScore": 62,
+   "scoreParts": {
+    "relevance": 55,
+    "evidence": 45,
+    "noveltyClaim": 50,
+    "actionability": 52,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [],
+   "innovations": [],
+   "method": "",
+   "results": "",
+   "value": "",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "",
+    "agentChange": "",
+    "selfEvolution": null,
+    "evidence": [],
+    "faq": {
+     "problem": "",
+     "mechanism": "",
+     "agentChange": "",
+     "support": "",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 16,
+    "editorialScore": 62,
+    "editorialTier": "skim",
+    "recommendationReason": ""
+   }
+  },
+  {
+   "id": "unknown-2026-08-04-17",
+   "version": 1,
+   "title": "Chart Specification** (2602.10880) — 图表到代码生成中的 VLM 推理结构化表示",
+   "abstract": "",
+   "authors": [],
+   "published": "2026-08-04T04:00:00.000Z",
+   "updated": "2026-08-04T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV",
+    "stat.ML"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "",
+   "pdf": "",
+   "announceType": "new",
+   "summary": "Chart Specification** (2602.10880) — 图表到代码生成中的 VLM 推理结构化表示",
+   "topic": "其他值得关注",
+   "comments": "",
+   "links": [],
+   "hotScore": 62,
+   "scoreParts": {
+    "relevance": 55,
+    "evidence": 45,
+    "noveltyClaim": 50,
+    "actionability": 52,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [],
+   "innovations": [],
+   "method": "",
+   "results": "",
+   "value": "",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "",
+    "agentChange": "",
+    "selfEvolution": null,
+    "evidence": [],
+    "faq": {
+     "problem": "",
+     "mechanism": "",
+     "agentChange": "",
+     "support": "",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 17,
+    "editorialScore": 62,
+    "editorialTier": "skim",
+    "recommendationReason": ""
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-08-02",
+  "newCount": 17,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-08-02 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-08-04T04:00:00.000Z",
+ "totalMatched": 60,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 60
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-08-04",
+ "historical": true
+}

@@ -1,0 +1,991 @@
+{
+ "papers": [
+  {
+   "id": "2608.06377",
+   "version": 1,
+   "title": "Learning When to Trust via Selective Context Preference Optimization",
+   "abstract": "提出了 SCOPE 方法，让 LLM 学会\"选择性信任\"外部上下文信号——在有用时利用，在误导时抵抗，而非一味忽略。",
+   "authors": [],
+   "published": "2026-08-07T04:00:00.000Z",
+   "updated": "2026-08-07T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.06377",
+   "pdf": "https://arxiv.org/pdf/2608.06377",
+   "announceType": "new",
+   "summary": "提出了 SCOPE 方法，让 LLM 学会\"选择性信任\"外部上下文信号——在有用时利用，在误导时抵抗，而非一味忽略。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06377"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "当前 LLM 安全训练倾向于让模型\"抵抗所有外部信号\"，但这导致模型在有用上下文面前也变得无用。SCOPE 提出了更精细的选择性信任范式，对 RAG、工具调用等依赖外部上下文的场景至关重要。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "MIST 基准: 首次构建四条件匹配基准（clean/misleading/correct-context/irrelevant-context），量化模型对误导上下文的脆弱性"
+   ],
+   "innovations": [
+    "SC2W 指标: \"Susceptibility of Clean-to-Wrong\"，衡量误导信号将正确答案翻错的频率，揭示该脆弱性在所有模型中普遍存在",
+    "SCOPE 方法: 基于 DPO 的偏好优化，在四类条件上均衡采样 preference pairs，而非仅对 misleading 样本优化"
+   ],
+   "method": "挖掘 clean-correct/misleading-wrong 失败对，构建标准 DPO 偏好目标，在四个条件上均衡优化",
+   "results": "在主流开源模型上显著降低 SC2W 分数，同时保持 clean/correct/irrelevant 上下文下的准确率不下降",
+   "value": "当前 LLM 安全训练倾向于让模型\"抵抗所有外部信号\"，但这导致模型在有用上下文面前也变得无用。SCOPE 提出了更精细的选择性信任范式，对 RAG、工具调用等依赖外部上下文的场景至关重要。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "MIST 基准: 首次构建四条件匹配基准（clean/misleading/correct-context/irrelevant-context），量化模型对误导上下文的脆弱性",
+    "agentChange": "挖掘 clean-correct/misleading-wrong 失败对，构建标准 DPO 偏好目标，在四个条件上均衡优化",
+    "selfEvolution": null,
+    "evidence": [
+     "在主流开源模型上显著降低 SC2W 分数，同时保持 clean/correct/irrelevant 上下文下的准确率不下降",
+     "SCOPE 方法: 基于 DPO 的偏好优化，在四类条件上均衡采样 preference pairs，而非仅对 misleading 样本优化"
+    ],
+    "faq": {
+     "problem": "提出了 SCOPE 方法，让 LLM 学会\"选择性信任\"外部上下文信号——在有用时利用，在误导时抵抗，而非一味忽略。",
+     "mechanism": "挖掘 clean-correct/misleading-wrong 失败对，构建标准 DPO 偏好目标，在四个条件上均衡优化",
+     "agentChange": "挖掘 clean-correct/misleading-wrong 失败对，构建标准 DPO 偏好目标，在四个条件上均衡优化",
+     "support": "在主流开源模型上显著降低 SC2W 分数，同时保持 clean/correct/irrelevant 上下文下的准确率不下降",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "当前 LLM 安全训练倾向于让模型\"抵抗所有外部信号\"，但这导致模型在有用上下文面前也变得无用。SCOPE 提出了更精细的选择性信任范式，对 RAG、工具调用等依赖外部上下文的场景至关重要。"
+   }
+  },
+  {
+   "id": "2608.06370",
+   "version": 1,
+   "title": "The Bitter Lesson of Tool Calling: Programmatic Tool Calling",
+   "abstract": "系统性评估了\"编程式工具调用\"(PTC) vs 原生 JSON 工具调用，发现 PTC 在大多数模型上匹配或超越 JSON 调用。",
+   "authors": [],
+   "published": "2026-08-07T04:00:00.000Z",
+   "updated": "2026-08-07T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.06370",
+   "pdf": "https://arxiv.org/pdf/2608.06370",
+   "announceType": "new",
+   "summary": "系统性评估了\"编程式工具调用\"(PTC) vs 原生 JSON 工具调用，发现 PTC 在大多数模型上匹配或超越 JSON 调用。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06370"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "挑战了 JSON 工具调用的默认范式，为代码能力模型提供了更自然的工具集成方式，对 agent 系统设计有直接影响。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "PTC 范式: 将工具暴露为类型化的 Python 存根，模型通过代码而非 JSON 调用工具，执行和结果在同一 agent turn 内完成"
+   ],
+   "innovations": [
+    "跨代评估: 在 14 个语言模型（含当前和先前代）上统一评估，在 BFCL v4 基准上比较",
+    "鲁棒性分析: 在 context rot 条件下 PTC 保持稳定，而 JSON baseline 平均下降 2.3%"
+   ],
+   "method": "将工具定义为 Python stubs，模型生成代码调用，系统在沙箱中执行并返回结果",
+   "results": "PTC 在 14 个模型中的 11 个上匹配或超越 JSON 调用；GPT-5.6 家族提升 10.6%；在并行 fan-out 场景 13/14 模型胜出",
+   "value": "挑战了 JSON 工具调用的默认范式，为代码能力模型提供了更自然的工具集成方式，对 agent 系统设计有直接影响。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "PTC 范式: 将工具暴露为类型化的 Python 存根，模型通过代码而非 JSON 调用工具，执行和结果在同一 agent turn 内完成",
+    "agentChange": "将工具定义为 Python stubs，模型生成代码调用，系统在沙箱中执行并返回结果",
+    "selfEvolution": null,
+    "evidence": [
+     "PTC 在 14 个模型中的 11 个上匹配或超越 JSON 调用；GPT-5.6 家族提升 10.6%；在并行 fan-out 场景 13/14 模型胜出",
+     "鲁棒性分析: 在 context rot 条件下 PTC 保持稳定，而 JSON baseline 平均下降 2.3%"
+    ],
+    "faq": {
+     "problem": "系统性评估了\"编程式工具调用\"(PTC) vs 原生 JSON 工具调用，发现 PTC 在大多数模型上匹配或超越 JSON 调用。",
+     "mechanism": "将工具定义为 Python stubs，模型生成代码调用，系统在沙箱中执行并返回结果",
+     "agentChange": "将工具定义为 Python stubs，模型生成代码调用，系统在沙箱中执行并返回结果",
+     "support": "PTC 在 14 个模型中的 11 个上匹配或超越 JSON 调用；GPT-5.6 家族提升 10.6%；在并行 fan-out 场景 13/14 模型胜出",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "挑战了 JSON 工具调用的默认范式，为代码能力模型提供了更自然的工具集成方式，对 agent 系统设计有直接影响。"
+   }
+  },
+  {
+   "id": "2608.04872",
+   "version": 1,
+   "title": "A-SR: Self-Evolving Agentic LLMs for Symbolic Regression",
+   "abstract": "提出了自演化的多智能体框架 A-SR，通过角色协调而非统一的表达式编辑循环来发现符号回归公式。",
+   "authors": [],
+   "published": "2026-08-07T04:00:00.000Z",
+   "updated": "2026-08-07T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.04872",
+   "pdf": "https://arxiv.org/pdf/2608.04872",
+   "announceType": "new",
+   "summary": "提出了自演化的多智能体框架 A-SR，通过角色协调而非统一的表达式编辑循环来发现符号回归公式。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.04872"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "突破了 LLM 符号回归的统一循环范式，为复杂科学发现任务提供了可扩展的 agent 协调框架。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "角色条件化证据视图: 将控制单元从\"表达式编辑\"改为\"角色条件的证据视图\"，不同角色处理不同类型的搜索信号"
+   ],
+   "innovations": [
+    "双时尺自演化: 运行内自适应搜索过程（不更新 LLM 参数），运行间将轨迹蒸馏为开源 LLM 的角色条件化先验",
+    "状态路由的过程记忆: evaluator 反馈评估可靠性和生产力，更新角色效用，路由 elite motifs、failure traces 到不同 agent"
+   ],
+   "method": "协调协议路由 + 在线 evaluator-reward 角色策略 + 状态路由过程记忆",
+   "results": "LLM-SRBench 四个科学领域，Acc@0.01 从 25.79% 提升至 48.30%（Llama3.1-8B）；A-SR-LoRA 使 Qwen3-4B 从 24.58% 提升至 38.29%；真实科学发现任务 8 个指标中 7 个最优",
+   "value": "突破了 LLM 符号回归的统一循环范式，为复杂科学发现任务提供了可扩展的 agent 协调框架。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "角色条件化证据视图: 将控制单元从\"表达式编辑\"改为\"角色条件的证据视图\"，不同角色处理不同类型的搜索信号",
+    "agentChange": "协调协议路由 + 在线 evaluator-reward 角色策略 + 状态路由过程记忆",
+    "selfEvolution": null,
+    "evidence": [
+     "LLM-SRBench 四个科学领域，Acc@0.01 从 25.79% 提升至 48.30%（Llama3.1-8B）；A-SR-LoRA 使 Qwen3-4B 从 24.58% 提升至 38.29%；真实科学发现任务 8 个指标中 7 个最优",
+     "状态路由的过程记忆: evaluator 反馈评估可靠性和生产力，更新角色效用，路由 elite motifs、failure traces 到不同 agent"
+    ],
+    "faq": {
+     "problem": "提出了自演化的多智能体框架 A-SR，通过角色协调而非统一的表达式编辑循环来发现符号回归公式。",
+     "mechanism": "协调协议路由 + 在线 evaluator-reward 角色策略 + 状态路由过程记忆",
+     "agentChange": "协调协议路由 + 在线 evaluator-reward 角色策略 + 状态路由过程记忆",
+     "support": "LLM-SRBench 四个科学领域，Acc@0.01 从 25.79% 提升至 48.30%（Llama3.1-8B）；A-SR-LoRA 使 Qwen3-4B 从 24.58% 提升至 38.29%；真实科学发现任务 8 个指标中 7 个最优",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "突破了 LLM 符号回归的统一循环范式，为复杂科学发现任务提供了可扩展的 agent 协调框架。"
+   }
+  },
+  {
+   "id": "2608.06310",
+   "version": 1,
+   "title": "RRC: Unlocking Generative Reward Models in LLM Reinforcement Learning",
+   "abstract": "提出了基于排序的奖励构造方法 RRC，解决生成式奖励模型与 RL 标量评分范式之间的不匹配问题。",
+   "authors": [],
+   "published": "2026-08-07T04:00:00.000Z",
+   "updated": "2026-08-07T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.06310",
+   "pdf": "https://arxiv.org/pdf/2608.06310",
+   "announceType": "new",
+   "summary": "提出了基于排序的奖励构造方法 RRC，解决生成式奖励模型与 RL 标量评分范式之间的不匹配问题。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06310"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "生成式 RM 是奖励建模的新范式，但此前在 RL 训练中潜力未被释放。RRC 打通了这一通道，对 GRPO 等算法有直接影响。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "发现问题: 生成式奖励模型擅长响应排序，但现有 RL 算法需要标量奖励，二者存在范式不匹配"
+   ],
+   "innovations": [
+    "自竞争排序: 利用采样响应间的相对比较构造奖励信号",
+    "锚点引导排序: 用少量参考响应实现可扩展的排序基础奖励构造"
+   ],
+   "method": "从生成式 RM 的排序输出推导偏好奖励，而非直接标量化",
+   "results": "在开放对话和推理基准上均显著超越现有奖励构造方法",
+   "value": "生成式 RM 是奖励建模的新范式，但此前在 RL 训练中潜力未被释放。RRC 打通了这一通道，对 GRPO 等算法有直接影响。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "发现问题: 生成式奖励模型擅长响应排序，但现有 RL 算法需要标量奖励，二者存在范式不匹配",
+    "agentChange": "从生成式 RM 的排序输出推导偏好奖励，而非直接标量化",
+    "selfEvolution": null,
+    "evidence": [
+     "在开放对话和推理基准上均显著超越现有奖励构造方法",
+     "锚点引导排序: 用少量参考响应实现可扩展的排序基础奖励构造"
+    ],
+    "faq": {
+     "problem": "提出了基于排序的奖励构造方法 RRC，解决生成式奖励模型与 RL 标量评分范式之间的不匹配问题。",
+     "mechanism": "从生成式 RM 的排序输出推导偏好奖励，而非直接标量化",
+     "agentChange": "从生成式 RM 的排序输出推导偏好奖励，而非直接标量化",
+     "support": "在开放对话和推理基准上均显著超越现有奖励构造方法",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "生成式 RM 是奖励建模的新范式，但此前在 RL 训练中潜力未被释放。RRC 打通了这一通道，对 GRPO 等算法有直接影响。"
+   }
+  },
+  {
+   "id": "2608.06347",
+   "version": 1,
+   "title": "RP-OPSD: Reasoning-Pivot-Guided On-Policy Self-Distillation",
+   "abstract": "提出\"推理枢轴\"(reasoning pivots) 概念，引导多语言推理蒸馏聚焦于推理控制的关键 token。",
+   "authors": [],
+   "published": "2026-08-07T04:00:00.000Z",
+   "updated": "2026-08-07T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.06347",
+   "pdf": "https://arxiv.org/pdf/2608.06347",
+   "announceType": "new",
+   "summary": "提出\"推理枢轴\"(reasoning pivots) 概念，引导多语言推理蒸馏聚焦于推理控制的关键 token。",
+   "topic": "大语言模型 / LLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06347"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "揭示了多语言推理蒸馏的关键在于聚焦推理控制点而非均匀蒸馏，为跨语言推理迁移提供了新的理论理解。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "推理枢轴: 将目标语言推理分解为\"表面文本\"和\"推理枢轴\"（推动或重定向推理的关键决策点）"
+   ],
+   "innovations": [
+    "分布偏移代理: 用\"有无英语参考解\"的教师视图分布偏移作为推理枢轴的操作性代理",
+    "有选择性的蒸馏权重: 对推理控制和状态更新 token 赋予更高蒸馏权重，对表面实现 token 降低权重"
+   ],
+   "method": "在 OPSD 蒸馏框架中加入推理枢轴引导的 privileged distillation",
+   "results": "在覆盖 17 种语言、多个难度等级的数学推理基准上超越强基线",
+   "value": "揭示了多语言推理蒸馏的关键在于聚焦推理控制点而非均匀蒸馏，为跨语言推理迁移提供了新的理论理解。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "推理枢轴: 将目标语言推理分解为\"表面文本\"和\"推理枢轴\"（推动或重定向推理的关键决策点）",
+    "agentChange": "在 OPSD 蒸馏框架中加入推理枢轴引导的 privileged distillation",
+    "selfEvolution": null,
+    "evidence": [
+     "在覆盖 17 种语言、多个难度等级的数学推理基准上超越强基线",
+     "有选择性的蒸馏权重: 对推理控制和状态更新 token 赋予更高蒸馏权重，对表面实现 token 降低权重"
+    ],
+    "faq": {
+     "problem": "提出\"推理枢轴\"(reasoning pivots) 概念，引导多语言推理蒸馏聚焦于推理控制的关键 token。",
+     "mechanism": "在 OPSD 蒸馏框架中加入推理枢轴引导的 privileged distillation",
+     "agentChange": "在 OPSD 蒸馏框架中加入推理枢轴引导的 privileged distillation",
+     "support": "在覆盖 17 种语言、多个难度等级的数学推理基准上超越强基线",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "揭示了多语言推理蒸馏的关键在于聚焦推理控制点而非均匀蒸馏，为跨语言推理迁移提供了新的理论理解。"
+   }
+  },
+  {
+   "id": "2607.28609",
+   "version": 1,
+   "title": "OSReward: Standardized Evaluation for Computer-Use Reward Models",
+   "abstract": "首次系统评估 VLM 作为计算机使用代理(CUA)轨迹裁判的可靠性，发现系统性宽松偏差，并开源低成本替代方案。",
+   "authors": [],
+   "published": "2026-08-07T04:00:00.000Z",
+   "updated": "2026-08-07T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28609",
+   "pdf": "https://arxiv.org/pdf/2607.28609",
+   "announceType": "new",
+   "summary": "首次系统评估 VLM 作为计算机使用代理(CUA)轨迹裁判的可靠性，发现系统性宽松偏差，并开源低成本替代方案。",
+   "topic": "AI Agent 系统",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28609"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为 computer-use agent 的评估和 RL 训练提供了标准化、可信赖的裁判基础设施，填补了该领域的关键空白。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "OSReward 基准: 多平台、多 agent backbone 的真实 CUA 轨迹，经过多阶段人工标注"
+   ],
+   "innovations": [
+    "发现宽松偏差: 甚至最强 VLM 裁判也系统性地将失败运行误标为成功",
+    "OS-Shepherd: 开源 9B/35B 奖励模型，在 30-60x 更低成本下匹配商业裁判"
+   ],
+   "method": "构建 OSReward/OSReward-Hard/OSReward-Multi 三级基准，训练 OS-Shepherd 奖励模型",
+   "results": "发布了 OS-Shepherd-100K 开源标注数据集和 OS-Shepherd (9B/35B) 模型",
+   "value": "为 computer-use agent 的评估和 RL 训练提供了标准化、可信赖的裁判基础设施，填补了该领域的关键空白。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "OSReward 基准: 多平台、多 agent backbone 的真实 CUA 轨迹，经过多阶段人工标注",
+    "agentChange": "构建 OSReward/OSReward-Hard/OSReward-Multi 三级基准，训练 OS-Shepherd 奖励模型",
+    "selfEvolution": null,
+    "evidence": [
+     "发布了 OS-Shepherd-100K 开源标注数据集和 OS-Shepherd (9B/35B) 模型",
+     "OS-Shepherd: 开源 9B/35B 奖励模型，在 30-60x 更低成本下匹配商业裁判"
+    ],
+    "faq": {
+     "problem": "首次系统评估 VLM 作为计算机使用代理(CUA)轨迹裁判的可靠性，发现系统性宽松偏差，并开源低成本替代方案。",
+     "mechanism": "构建 OSReward/OSReward-Hard/OSReward-Multi 三级基准，训练 OS-Shepherd 奖励模型",
+     "agentChange": "构建 OSReward/OSReward-Hard/OSReward-Multi 三级基准，训练 OS-Shepherd 奖励模型",
+     "support": "发布了 OS-Shepherd-100K 开源标注数据集和 OS-Shepherd (9B/35B) 模型",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为 computer-use agent 的评估和 RL 训练提供了标准化、可信赖的裁判基础设施，填补了该领域的关键空白。"
+   }
+  },
+  {
+   "id": "2608.06352",
+   "version": 1,
+   "title": "CalibForge: Adversarial Solver Calibration for Terminal Agent Training",
+   "abstract": "通过对抗式 solver 校准自动生成终端 agent 训练任务，使任务难度与 solver 能力匹配。",
+   "authors": [],
+   "published": "2026-08-07T04:00:00.000Z",
+   "updated": "2026-08-07T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.06352",
+   "pdf": "https://arxiv.org/pdf/2608.06352",
+   "announceType": "new",
+   "summary": "通过对抗式 solver 校准自动生成终端 agent 训练任务，使任务难度与 solver 能力匹配。",
+   "topic": "AI Agent 系统",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06352"
+   ],
+   "hotScore": 70,
+   "scoreParts": {
+    "relevance": 62,
+    "evidence": 70,
+    "noveltyClaim": 58,
+    "actionability": 60,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "解决了 agent 训练中\"任务构造\"的关键瓶颈，证明了 solver 相对可学习性是构建有效训练数据的实用目标。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "solver 相对学习区: 多 solver 校准（利用 solver 池内分歧）+ 对比 solver 校准（强通过/弱失败的对照）"
+   ],
+   "innovations": [
+    "自动任务合成: 不仅验证任务可解，还确保任务对给定 solver 具有适当的学习挑战性"
+   ],
+   "method": "验证 solver 行为驱动的任务修订 + 两种校准策略",
+   "results": "构建了 5,431 个校准后的终端任务；在 Terminal-Bench 2.0 达到 32.58% 和 47.57%；相比基线最大提升 24.71 分（Terminal-Bench）、27.68 分（SWE-bench Pro）、30.04 分（Doc2Repo）",
+   "value": "解决了 agent 训练中\"任务构造\"的关键瓶颈，证明了 solver 相对可学习性是构建有效训练数据的实用目标。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "solver 相对学习区: 多 solver 校准（利用 solver 池内分歧）+ 对比 solver 校准（强通过/弱失败的对照）",
+    "agentChange": "验证 solver 行为驱动的任务修订 + 两种校准策略",
+    "selfEvolution": null,
+    "evidence": [
+     "构建了 5,431 个校准后的终端任务；在 Terminal-Bench 2.0 达到 32.58% 和 47.57%；相比基线最大提升 24.71 分（Terminal-Bench）、27.68 分（SWE-bench Pro）、30.04 分（Doc2Repo）"
+    ],
+    "faq": {
+     "problem": "通过对抗式 solver 校准自动生成终端 agent 训练任务，使任务难度与 solver 能力匹配。",
+     "mechanism": "验证 solver 行为驱动的任务修订 + 两种校准策略",
+     "agentChange": "验证 solver 行为驱动的任务修订 + 两种校准策略",
+     "support": "构建了 5,431 个校准后的终端任务；在 Terminal-Bench 2.0 达到 32.58% 和 47.57%；相比基线最大提升 24.71 分（Terminal-Bench）、27.68 分（SWE-bench Pro）、30.04 分（Doc2Repo）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 70,
+    "editorialTier": "skim",
+    "recommendationReason": "解决了 agent 训练中\"任务构造\"的关键瓶颈，证明了 solver 相对可学习性是构建有效训练数据的实用目标。"
+   }
+  },
+  {
+   "id": "2608.06362",
+   "version": 1,
+   "title": "AV-AIVAT: 74x Cheaper Agent Evaluation",
+   "abstract": "提出 AV-AIVAT，在不完美信息游戏中实现 anytime-valid 的代理评估早期停止，中位节省 74 倍成本。",
+   "authors": [],
+   "published": "2026-08-07T04:00:00.000Z",
+   "updated": "2026-08-07T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.06362",
+   "pdf": "https://arxiv.org/pdf/2608.06362",
+   "announceType": "new",
+   "summary": "提出 AV-AIVAT，在不完美信息游戏中实现 anytime-valid 的代理评估早期停止，中位节省 74 倍成本。",
+   "topic": "AI Agent 系统",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06362"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "将方差缩减转化为高效、可审计的早期停止，对 agent 评估成本和效率有数量级影响。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "AIVAT 方差缩减: 通过条件零均值修正，在 15 种 LLM agent 配置上中位缩减 54 倍方差"
+   ],
+   "innovations": [
+    "Anytime-Valid 停止: 结合置信序列(CS)，证据充分时即可停止，保证统计有效性",
+    "渐近筛选+精确认证分离: AsympCS 快速筛选 + EB-CS 精确有限样本认证"
+   ],
+   "method": "AIVAT 方差缩减 + 持续监控的置信序列 + 在线价值模型",
+   "results": "在 95% 置信水平、1 Big Blind 精度目标下，原始结果需要中位 74x 更多牌局才能停止；Leduc hold'em 的结构化界限证明",
+   "value": "将方差缩减转化为高效、可审计的早期停止，对 agent 评估成本和效率有数量级影响。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "AIVAT 方差缩减: 通过条件零均值修正，在 15 种 LLM agent 配置上中位缩减 54 倍方差",
+    "agentChange": "AIVAT 方差缩减 + 持续监控的置信序列 + 在线价值模型",
+    "selfEvolution": null,
+    "evidence": [
+     "在 95% 置信水平、1 Big Blind 精度目标下，原始结果需要中位 74x 更多牌局才能停止；Leduc hold'em 的结构化界限证明",
+     "渐近筛选+精确认证分离: AsympCS 快速筛选 + EB-CS 精确有限样本认证"
+    ],
+    "faq": {
+     "problem": "提出 AV-AIVAT，在不完美信息游戏中实现 anytime-valid 的代理评估早期停止，中位节省 74 倍成本。",
+     "mechanism": "AIVAT 方差缩减 + 持续监控的置信序列 + 在线价值模型",
+     "agentChange": "AIVAT 方差缩减 + 持续监控的置信序列 + 在线价值模型",
+     "support": "在 95% 置信水平、1 Big Blind 精度目标下，原始结果需要中位 74x 更多牌局才能停止；Leduc hold'em 的结构化界限证明",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "将方差缩减转化为高效、可审计的早期停止，对 agent 评估成本和效率有数量级影响。"
+   }
+  },
+  {
+   "id": "2606.14299",
+   "version": 1,
+   "title": "What Drives Test-Time Adaptation for CLIP?",
+   "abstract": "系统性研究 CLIP 测试时适应(TTA)的核心驱动因素，发现没有银弹——最优范式取决于分布偏移的类型。",
+   "authors": [],
+   "published": "2026-08-07T04:00:00.000Z",
+   "updated": "2026-08-07T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2606.14299",
+   "pdf": "https://arxiv.org/pdf/2606.14299",
+   "announceType": "new",
+   "summary": "系统性研究 CLIP 测试时适应(TTA)的核心驱动因素，发现没有银弹——最优范式取决于分布偏移的类型。",
+   "topic": "计算机视觉 / CV",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2606.14299"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为 TTA4CLIP 领域提供了清晰的理论理解和标准化评估基准，帮助研究者选择正确的适应范式。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "三范式统一: 将现有 TTA4CLIP 方法统一为参数基、状态基、推理基三大范式"
+   ],
+   "innovations": [
+    "TTABC 基准: 开源 TTA Benchmark for CLIP，集成 20+ 代表性方法",
+    "核心发现: 适应增益主要由测试时证据和可靠代理驱动，而非重度优化"
+   ],
+   "method": "受控实证分析，比较不同范式在不同分布偏移下的表现",
+   "results": "证明了通过跨样本/当前样本证据和轻量原型更新即可实现竞争性性能",
+   "value": "为 TTA4CLIP 领域提供了清晰的理论理解和标准化评估基准，帮助研究者选择正确的适应范式。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "三范式统一: 将现有 TTA4CLIP 方法统一为参数基、状态基、推理基三大范式",
+    "agentChange": "受控实证分析，比较不同范式在不同分布偏移下的表现",
+    "selfEvolution": null,
+    "evidence": [
+     "证明了通过跨样本/当前样本证据和轻量原型更新即可实现竞争性性能",
+     "核心发现: 适应增益主要由测试时证据和可靠代理驱动，而非重度优化"
+    ],
+    "faq": {
+     "problem": "系统性研究 CLIP 测试时适应(TTA)的核心驱动因素，发现没有银弹——最优范式取决于分布偏移的类型。",
+     "mechanism": "受控实证分析，比较不同范式在不同分布偏移下的表现",
+     "agentChange": "受控实证分析，比较不同范式在不同分布偏移下的表现",
+     "support": "证明了通过跨样本/当前样本证据和轻量原型更新即可实现竞争性性能",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为 TTA4CLIP 领域提供了清晰的理论理解和标准化评估基准，帮助研究者选择正确的适应范式。"
+   }
+  },
+  {
+   "id": "2508.11183",
+   "version": 1,
+   "title": "Versatile Video Representation via Feed-Forward 2D Gaussian Splatting",
+   "abstract": "提出 GVT，使用前馈式 2D 高斯溅射进行视频 tokenization，替代固定网格的 patch-wise tokenization。",
+   "authors": [],
+   "published": "2026-08-07T04:00:00.000Z",
+   "updated": "2026-08-07T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2508.11183",
+   "pdf": "https://arxiv.org/pdf/2508.11183",
+   "announceType": "new",
+   "summary": "提出 GVT，使用前馈式 2D 高斯溅射进行视频 tokenization，替代固定网格的 patch-wise tokenization。",
+   "topic": "计算机视觉 / CV",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2508.11183"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "解决了现有视频 tokenizer 的空间和时间僵化问题，为视频 foundation model 提供了更高效的表示方案。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "STGE 机制: Spatio-Temporal Gaussian Embedding，前馈式生成 2D 高斯表示，无需 per-video 优化"
+   ],
+   "innovations": [
+    "GSP 策略: 将 2D 高斯分为静态/动态集合，显式分离跨帧共享的静态内容和帧特异性动态内容",
+    "自适应空间分配: 高信息区域分配更高渲染权重，低信息区域分配更低权重"
+   ],
+   "method": "从视频片段提取潜在刚性特征，用 2D 高斯表示，进行时空分区",
+   "results": "在视频重建和压缩任务上达到 SOTA；动作识别性能提升；视频生成性能与 MAGVIT-v2 相当（UCF101/Kinetics/DAVIS）",
+   "value": "解决了现有视频 tokenizer 的空间和时间僵化问题，为视频 foundation model 提供了更高效的表示方案。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "STGE 机制: Spatio-Temporal Gaussian Embedding，前馈式生成 2D 高斯表示，无需 per-video 优化",
+    "agentChange": "从视频片段提取潜在刚性特征，用 2D 高斯表示，进行时空分区",
+    "selfEvolution": null,
+    "evidence": [
+     "在视频重建和压缩任务上达到 SOTA；动作识别性能提升；视频生成性能与 MAGVIT-v2 相当（UCF101/Kinetics/DAVIS）",
+     "自适应空间分配: 高信息区域分配更高渲染权重，低信息区域分配更低权重"
+    ],
+    "faq": {
+     "problem": "提出 GVT，使用前馈式 2D 高斯溅射进行视频 tokenization，替代固定网格的 patch-wise tokenization。",
+     "mechanism": "从视频片段提取潜在刚性特征，用 2D 高斯表示，进行时空分区",
+     "agentChange": "从视频片段提取潜在刚性特征，用 2D 高斯表示，进行时空分区",
+     "support": "在视频重建和压缩任务上达到 SOTA；动作识别性能提升；视频生成性能与 MAGVIT-v2 相当（UCF101/Kinetics/DAVIS）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "解决了现有视频 tokenizer 的空间和时间僵化问题，为视频 foundation model 提供了更高效的表示方案。"
+   }
+  },
+  {
+   "id": "2607.18540",
+   "version": 1,
+   "title": "Recti-Q: Feature-Space Rectification for OOD-Robust Quantized Perception",
+   "abstract": "发现了\"量化诱导鲁棒性差距\"，提出轻量特征空间修正框架 Recti-Q 恢复量化模型在分布外数据上的鲁棒性。",
+   "authors": [],
+   "published": "2026-08-07T04:00:00.000Z",
+   "updated": "2026-08-07T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.18540",
+   "pdf": "https://arxiv.org/pdf/2607.18540",
+   "announceType": "new",
+   "summary": "发现了\"量化诱导鲁棒性差距\"，提出轻量特征空间修正框架 Recti-Q 恢复量化模型在分布外数据上的鲁棒性。",
+   "topic": "计算机视觉 / CV",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.18540"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "对边缘机器人感知部署有直接应用价值，为量化模型的 OOD 鲁棒性提供了几乎零成本解决方案。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "QIRG 发现: 首次系统揭示 4-bit PTQ 在 ImageNet-C/PACS 上存在显著的 OOD 鲁棒性退化"
+   ],
+   "innovations": [
+    "Recti-Q 框架: 冻结量化 backbone，仅训练小 LoRA adapter（<1% 参数开销，小至 6KB）",
+    "OTA 弹性补丁: 支持低带宽 OTA 更新部署的机器人车队"
+   ],
+   "method": "特征空间修正 + 分类头 LoRA adapter + 仅需源数据的 teacher-free 训练",
+   "results": "在部分场景下匹配或超越 FP32 性能；保留 99% 以上 PTQ 内存节省",
+   "value": "对边缘机器人感知部署有直接应用价值，为量化模型的 OOD 鲁棒性提供了几乎零成本解决方案。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "QIRG 发现: 首次系统揭示 4-bit PTQ 在 ImageNet-C/PACS 上存在显著的 OOD 鲁棒性退化",
+    "agentChange": "特征空间修正 + 分类头 LoRA adapter + 仅需源数据的 teacher-free 训练",
+    "selfEvolution": null,
+    "evidence": [
+     "在部分场景下匹配或超越 FP32 性能；保留 99% 以上 PTQ 内存节省",
+     "OTA 弹性补丁: 支持低带宽 OTA 更新部署的机器人车队"
+    ],
+    "faq": {
+     "problem": "发现了\"量化诱导鲁棒性差距\"，提出轻量特征空间修正框架 Recti-Q 恢复量化模型在分布外数据上的鲁棒性。",
+     "mechanism": "特征空间修正 + 分类头 LoRA adapter + 仅需源数据的 teacher-free 训练",
+     "agentChange": "特征空间修正 + 分类头 LoRA adapter + 仅需源数据的 teacher-free 训练",
+     "support": "在部分场景下匹配或超越 FP32 性能；保留 99% 以上 PTQ 内存节省",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "对边缘机器人感知部署有直接应用价值，为量化模型的 OOD 鲁棒性提供了几乎零成本解决方案。"
+   }
+  },
+  {
+   "id": "2608.05122",
+   "version": 1,
+   "title": "IRIS: Visual Cortex-Inspired Analysis of Orientation Selectivity in ViTs",
+   "abstract": "用神经科学启发的指标系统研究 Vision Transformer 中方向选择性(orientation selectivity)的涌现机制。",
+   "authors": [],
+   "published": "2026-08-07T04:00:00.000Z",
+   "updated": "2026-08-07T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.05122",
+   "pdf": "https://arxiv.org/pdf/2608.05122",
+   "announceType": "new",
+   "summary": "用神经科学启发的指标系统研究 Vision Transformer 中方向选择性(orientation selectivity)的涌现机制。",
+   "topic": "计算机视觉 / CV",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.05122"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为理解 ViT 如何编码低级特征提供了新的分析框架，架起了生物视觉计算和深度学习之间的桥梁。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "RSS/ORS/Bandwidth 指标: 提出三个神经科学启发的量化指标，测量 ViT 表示几何中的方向编码"
+   ],
+   "innovations": [
+    "训练范式决定: 发现训练范式是最强决定因素，共享目标的模型在相对相同深度达到峰值",
+    "深度演化规律: 浅-中层随训练增加方向选择性单元，深层逐渐丧失选择性转向语义编码"
+   ],
+   "method": "使用 RSS、ORS、方向调谐带宽指标追踪不同深度的方向选择性演化",
+   "results": "为 unfreeze 多少层以获得最佳下游泛化提供了机制性启发",
+   "value": "为理解 ViT 如何编码低级特征提供了新的分析框架，架起了生物视觉计算和深度学习之间的桥梁。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "RSS/ORS/Bandwidth 指标: 提出三个神经科学启发的量化指标，测量 ViT 表示几何中的方向编码",
+    "agentChange": "使用 RSS、ORS、方向调谐带宽指标追踪不同深度的方向选择性演化",
+    "selfEvolution": null,
+    "evidence": [
+     "为 unfreeze 多少层以获得最佳下游泛化提供了机制性启发",
+     "深度演化规律: 浅-中层随训练增加方向选择性单元，深层逐渐丧失选择性转向语义编码"
+    ],
+    "faq": {
+     "problem": "用神经科学启发的指标系统研究 Vision Transformer 中方向选择性(orientation selectivity)的涌现机制。",
+     "mechanism": "使用 RSS、ORS、方向调谐带宽指标追踪不同深度的方向选择性演化",
+     "agentChange": "使用 RSS、ORS、方向调谐带宽指标追踪不同深度的方向选择性演化",
+     "support": "为 unfreeze 多少层以获得最佳下游泛化提供了机制性启发",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为理解 ViT 如何编码低级特征提供了新的分析框架，架起了生物视觉计算和深度学习之间的桥梁。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-08-06",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-08-06 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-08-07T04:00:00.000Z",
+ "totalMatched": 12,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 12
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-08-07",
+ "historical": true
+}

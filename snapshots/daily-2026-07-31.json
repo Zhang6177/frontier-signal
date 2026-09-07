@@ -1,0 +1,914 @@
+{
+ "papers": [
+  {
+   "id": "2607.28571",
+   "version": 1,
+   "title": "Finding Change in Satellite Archives from Text: How to Combine Before-and-After Images Efficiently",
+   "abstract": "系统对比了卫星图像变化检测中融合前后视图的8种方法，发现两阶段搜索可在保持召回率的同时将查询成本降低10-15倍。",
+   "authors": [],
+   "published": "2026-07-31T04:00:00.000Z",
+   "updated": "2026-07-31T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28571",
+   "pdf": "https://arxiv.org/pdf/2607.28571",
+   "announceType": "new",
+   "summary": "系统对比了卫星图像变化检测中融合前后视图的8种方法，发现两阶段搜索可在保持召回率的同时将查询成本降低10-15倍。",
+   "topic": "遥感 / Remote Sensing",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28571"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为遥感场景下的卫星图像变化检索提供了工程上可落地的方案，揭示了Mamba在实际视觉任务中的局限性，对大规模Earth Observation系统部署有直接指导意义。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "首次在同一训练框架下系统对比了Attention、Mamba（状态空间模型）和Temporal Bottleneck Fusion三类融合方法"
+   ],
+   "innovations": [
+    "发现Mamba在典型ViT patch数量(L=196)下无速度优势——其线性扫描受限于内存带宽而非计算",
+    "提出TBF压缩融合表示，参数量减少2.3x，延迟降低1.6x"
+   ],
+   "method": "冻结CLIP图像编码器，在LEVIR-CC和Dubai-CC两个基准上以10个随机种子评估8种融合设计，所有结果均经过统计验证。两阶段搜索先用廉价差异模型初筛，再用Attention融合重排。",
+   "results": "两阶段搜索在LEVIR-CC上匹配或超越全融合召回率，查询成本降低10-15倍 - 在Dubai-CC上R@1/R@5表现相当 - Mamba在L=196时无速度优势 - TBF参数量↓2.3x，延迟↓1.6x，BLEU-1代价仅0.007",
+   "value": "为遥感场景下的卫星图像变化检索提供了工程上可落地的方案，揭示了Mamba在实际视觉任务中的局限性，对大规模Earth Observation系统部署有直接指导意义。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "首次在同一训练框架下系统对比了Attention、Mamba（状态空间模型）和Temporal Bottleneck Fusion三类融合方法",
+    "agentChange": "冻结CLIP图像编码器，在LEVIR-CC和Dubai-CC两个基准上以10个随机种子评估8种融合设计，所有结果均经过统计验证。两阶段搜索先用廉价差异模型初筛，再用Attention融合重排。",
+    "selfEvolution": null,
+    "evidence": [
+     "两阶段搜索在LEVIR-CC上匹配或超越全融合召回率，查询成本降低10-15倍 - 在Dubai-CC上R@1/R@5表现相当 - Mamba在L=196时无速度优势 - TBF参数量↓2.3x，延迟↓1.6x，BLEU-1代价仅0.007",
+     "提出TBF压缩融合表示，参数量减少2.3x，延迟降低1.6x"
+    ],
+    "faq": {
+     "problem": "系统对比了卫星图像变化检测中融合前后视图的8种方法，发现两阶段搜索可在保持召回率的同时将查询成本降低10-15倍。",
+     "mechanism": "冻结CLIP图像编码器，在LEVIR-CC和Dubai-CC两个基准上以10个随机种子评估8种融合设计，所有结果均经过统计验证。两阶段搜索先用廉价差异模型初筛，再用Attention融合重排。",
+     "agentChange": "冻结CLIP图像编码器，在LEVIR-CC和Dubai-CC两个基准上以10个随机种子评估8种融合设计，所有结果均经过统计验证。两阶段搜索先用廉价差异模型初筛，再用Attention融合重排。",
+     "support": "两阶段搜索在LEVIR-CC上匹配或超越全融合召回率，查询成本降低10-15倍 - 在Dubai-CC上R@1/R@5表现相当 - Mamba在L=196时无速度优势 - TBF参数量↓2.3x，延迟↓1.6x，BLEU-1代价仅0.007",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为遥感场景下的卫星图像变化检索提供了工程上可落地的方案，揭示了Mamba在实际视觉任务中的局限性，对大规模Earth Observation系统部署有直接指导意义。"
+   }
+  },
+  {
+   "id": "2607.28611",
+   "version": 1,
+   "title": "Chimera: Designing and Chinchilla-Scaling Hybrid Visual Diffusion Transformers",
+   "abstract": "提出了一种混合视觉扩散Transformer架构，融合KDA、MLA和MoE等技术，并建立了Chinchilla风格的计算最优缩放定律。",
+   "authors": [],
+   "published": "2026-07-31T04:00:00.000Z",
+   "updated": "2026-07-31T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28611",
+   "pdf": "https://arxiv.org/pdf/2607.28611",
+   "announceType": "new",
+   "summary": "提出了一种混合视觉扩散Transformer架构，融合KDA、MLA和MoE等技术，并建立了Chinchilla风格的计算最优缩放定律。",
+   "topic": "视觉生成 / Visual Generation",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28611"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为高分辨率图像和长视频生成提供了一条计算高效的路径，Chinchilla缩放定律的建立为视觉扩散模型的系统化扩展提供了量化指导。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "将Kimi Delta Attention (KDA, O(N)复杂度)与Multi-head Latent Attention (MLA)交替使用，兼顾长程状态跟踪和全局交互"
+   ],
+   "innovations": [
+    "提出HeteroP——按张量功能扇入和模型深度进行模块级超参数迁移的缩放方案",
+    "首次为视觉扩散模型拟合Chinchilla-style计算最优定律，发现图像预训练将计算近乎均分于激活模型大小和训练token数，而视频预训练偏向模型大小"
+   ],
+   "method": "在单一流式中处理文本、图像、视频token，无需位置编码；加入模态感知短卷积捕获局部时空上下文；稀疏MoE扩展容量同时控制激活计算量。训练了11B参数、2B激活参数的Chimera模型。",
+   "results": "密集骨干比Wan-2.1 2B基线计算效率高1.7x，完整系统达7.3x - 零样本从5秒训练视频外推到30秒视频，最后5秒FID仅退化6.5% - 计算最优定律为高效长上下文扩散架构设计提供理论基础",
+   "value": "为高分辨率图像和长视频生成提供了一条计算高效的路径，Chinchilla缩放定律的建立为视觉扩散模型的系统化扩展提供了量化指导。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "将Kimi Delta Attention (KDA, O(N)复杂度)与Multi-head Latent Attention (MLA)交替使用，兼顾长程状态跟踪和全局交互",
+    "agentChange": "在单一流式中处理文本、图像、视频token，无需位置编码；加入模态感知短卷积捕获局部时空上下文；稀疏MoE扩展容量同时控制激活计算量。训练了11B参数、2B激活参数的Chimera模型。",
+    "selfEvolution": null,
+    "evidence": [
+     "密集骨干比Wan-2.1 2B基线计算效率高1.7x，完整系统达7.3x - 零样本从5秒训练视频外推到30秒视频，最后5秒FID仅退化6.5% - 计算最优定律为高效长上下文扩散架构设计提供理论基础",
+     "首次为视觉扩散模型拟合Chinchilla-style计算最优定律，发现图像预训练将计算近乎均分于激活模型大小和训练token数，而视频预训练偏向模型大小"
+    ],
+    "faq": {
+     "problem": "提出了一种混合视觉扩散Transformer架构，融合KDA、MLA和MoE等技术，并建立了Chinchilla风格的计算最优缩放定律。",
+     "mechanism": "在单一流式中处理文本、图像、视频token，无需位置编码；加入模态感知短卷积捕获局部时空上下文；稀疏MoE扩展容量同时控制激活计算量。训练了11B参数、2B激活参数的Chimera模型。",
+     "agentChange": "在单一流式中处理文本、图像、视频token，无需位置编码；加入模态感知短卷积捕获局部时空上下文；稀疏MoE扩展容量同时控制激活计算量。训练了11B参数、2B激活参数的Chimera模型。",
+     "support": "密集骨干比Wan-2.1 2B基线计算效率高1.7x，完整系统达7.3x - 零样本从5秒训练视频外推到30秒视频，最后5秒FID仅退化6.5% - 计算最优定律为高效长上下文扩散架构设计提供理论基础",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "为高分辨率图像和长视频生成提供了一条计算高效的路径，Chinchilla缩放定律的建立为视觉扩散模型的系统化扩展提供了量化指导。"
+   }
+  },
+  {
+   "id": "2607.23159",
+   "version": 1,
+   "title": "CachedSearch: Training-Free Cached Exploration for Test-Time Search in Video Diffusion",
+   "abstract": "提出训练-free的缓存搜索策略，在视频扩散模型的test-time search中实现2-3x加速，同时保留94.7%的性能增益。",
+   "authors": [],
+   "published": "2026-07-31T04:00:00.000Z",
+   "updated": "2026-07-31T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.23159",
+   "pdf": "https://arxiv.org/pdf/2607.23159",
+   "announceType": "new",
+   "summary": "提出训练-free的缓存搜索策略，在视频扩散模型的test-time search中实现2-3x加速，同时保留94.7%的性能增益。",
+   "topic": "视觉生成 / Visual Generation",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.23159"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为视频扩散模型的test-time缩放提供了一个即插即用的乘数，使得小模型在合理成本下可与大模型媲美，对视频生成商业化部署意义重大。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "首次研究缓存是否会破坏视频test-time search中的候选排名——发现Spearman秩相关高达0.905"
+   ],
+   "innovations": [
+    "提出\"先缓存探索所有候选，再完整重生成最优者\"的两阶段策略",
+    "中期轨迹裁剪将探索节省放大至3.11x，同时保留88.6%性能"
+   ],
+   "method": "自适应缓存包装器加速每个候选生成(~2x)，对所有候选进行缓存探索后，仅对最优者进行完整重生成。跨4个模型家族(Wan/LTX/CogVideoX/Hunyuan)、6个模型验证。",
+   "results": "N=8时捕获best-of-N的94.7%增益，成本仅为63% - 相同预算下可搜索2倍宽度，获得38%更多增益 - 72% top-1排名一致性（VBench） - Wan2.1-14B达到与1.3B相同的保真度",
+   "value": "为视频扩散模型的test-time缩放提供了一个即插即用的乘数，使得小模型在合理成本下可与大模型媲美，对视频生成商业化部署意义重大。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "首次研究缓存是否会破坏视频test-time search中的候选排名——发现Spearman秩相关高达0.905",
+    "agentChange": "自适应缓存包装器加速每个候选生成(~2x)，对所有候选进行缓存探索后，仅对最优者进行完整重生成。跨4个模型家族(Wan/LTX/CogVideoX/Hunyuan)、6个模型验证。",
+    "selfEvolution": null,
+    "evidence": [
+     "N=8时捕获best-of-N的94.7%增益，成本仅为63% - 相同预算下可搜索2倍宽度，获得38%更多增益 - 72% top-1排名一致性（VBench） - Wan2.1-14B达到与1.3B相同的保真度",
+     "中期轨迹裁剪将探索节省放大至3.11x，同时保留88.6%性能"
+    ],
+    "faq": {
+     "problem": "提出训练-free的缓存搜索策略，在视频扩散模型的test-time search中实现2-3x加速，同时保留94.7%的性能增益。",
+     "mechanism": "自适应缓存包装器加速每个候选生成(~2x)，对所有候选进行缓存探索后，仅对最优者进行完整重生成。跨4个模型家族(Wan/LTX/CogVideoX/Hunyuan)、6个模型验证。",
+     "agentChange": "自适应缓存包装器加速每个候选生成(~2x)，对所有候选进行缓存探索后，仅对最优者进行完整重生成。跨4个模型家族(Wan/LTX/CogVideoX/Hunyuan)、6个模型验证。",
+     "support": "N=8时捕获best-of-N的94.7%增益，成本仅为63% - 相同预算下可搜索2倍宽度，获得38%更多增益 - 72% top-1排名一致性（VBench） - Wan2.1-14B达到与1.3B相同的保真度",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "为视频扩散模型的test-time缩放提供了一个即插即用的乘数，使得小模型在合理成本下可与大模型媲美，对视频生成商业化部署意义重大。"
+   }
+  },
+  {
+   "id": "2607.28565",
+   "version": 1,
+   "title": "MIND: Multimodal Intent-Driven Network via Diffusion Transformers for Medical Image Fusion",
+   "abstract": "利用BioMedGPT生成诊断意图引导的融合文本，驱动Diffusion Transformer进行病理感知医学图像融合。",
+   "authors": [],
+   "published": "2026-07-31T04:00:00.000Z",
+   "updated": "2026-07-31T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28565",
+   "pdf": "https://arxiv.org/pdf/2607.28565",
+   "announceType": "new",
+   "summary": "利用BioMedGPT生成诊断意图引导的融合文本，驱动Diffusion Transformer进行病理感知医学图像融合。",
+   "topic": "医学影像 / Medical Imaging",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28565"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "打破了医学图像融合中\"一刀切\"的模式，使融合过程真正服务于临床诊断需求，为智能临床决策支持系统提供了新范式。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "首次将诊断意图（诊断目的）引入医学图像融合——不再是\"均匀融合\"，而是根据诊断需求智能融合"
+   ],
+   "innovations": [
+    "Multi-scale Latent Adapter解决DiT中1D序列化导致的2D空间连续性丢失问题",
+    "提出医学语义一致性损失，确保融合图像与诊断意图深度锁定"
+   ],
+   "method": "BioMedGPT生成融合文本→DiT进行意图驱动融合→Multi-scale Latent Adapter补充空间特征→医学语义一致性损失保证语义对齐。在Harvard、BraTS、GFP三个数据集上验证。",
+   "results": "在Harvard、BraTS、GFP上均达到最优融合质量 - 下游脑肿瘤分割精度显著提升 - 支持灵活的交互式融合",
+   "value": "打破了医学图像融合中\"一刀切\"的模式，使融合过程真正服务于临床诊断需求，为智能临床决策支持系统提供了新范式。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "首次将诊断意图（诊断目的）引入医学图像融合——不再是\"均匀融合\"，而是根据诊断需求智能融合",
+    "agentChange": "BioMedGPT生成融合文本→DiT进行意图驱动融合→Multi-scale Latent Adapter补充空间特征→医学语义一致性损失保证语义对齐。在Harvard、BraTS、GFP三个数据集上验证。",
+    "selfEvolution": null,
+    "evidence": [
+     "在Harvard、BraTS、GFP上均达到最优融合质量 - 下游脑肿瘤分割精度显著提升 - 支持灵活的交互式融合",
+     "提出医学语义一致性损失，确保融合图像与诊断意图深度锁定"
+    ],
+    "faq": {
+     "problem": "利用BioMedGPT生成诊断意图引导的融合文本，驱动Diffusion Transformer进行病理感知医学图像融合。",
+     "mechanism": "BioMedGPT生成融合文本→DiT进行意图驱动融合→Multi-scale Latent Adapter补充空间特征→医学语义一致性损失保证语义对齐。在Harvard、BraTS、GFP三个数据集上验证。",
+     "agentChange": "BioMedGPT生成融合文本→DiT进行意图驱动融合→Multi-scale Latent Adapter补充空间特征→医学语义一致性损失保证语义对齐。在Harvard、BraTS、GFP三个数据集上验证。",
+     "support": "在Harvard、BraTS、GFP上均达到最优融合质量 - 下游脑肿瘤分割精度显著提升 - 支持灵活的交互式融合",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "打破了医学图像融合中\"一刀切\"的模式，使融合过程真正服务于临床诊断需求，为智能临床决策支持系统提供了新范式。"
+   }
+  },
+  {
+   "id": "2605.19491",
+   "version": 1,
+   "title": "Thinking in Scales: Accelerating Gigapixel Pathology Image Analysis via Adaptive Continuous Reasoning",
+   "abstract": "提出PathCTM病理连续思考模型，通过从低倍到高倍的动态尺度推理，将全切片图像分析所需patches减少95.95%，推理时间缩短95.62%。",
+   "authors": [],
+   "published": "2026-07-31T04:00:00.000Z",
+   "updated": "2026-07-31T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2605.19491",
+   "pdf": "https://arxiv.org/pdf/2605.19491",
+   "announceType": "new",
+   "summary": "提出PathCTM病理连续思考模型，通过从低倍到高倍的动态尺度推理，将全切片图像分析所需patches减少95.95%，推理时间缩短95.62%。",
+   "topic": "医学影像 / Medical Imaging",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2605.19491"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "将全切片图像分析从\"暴力逐patch处理\"转向\"自适应连续推理\"，为计算病理学的大规模临床部署扫清了效率障碍。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "将WSI分析建模为\"动态序列信息追逐\"——从全局低倍逐步到局部高倍，类似病理学家思维方式"
+   ],
+   "innovations": [
+    "条件计算实现动态尺度切换 + 注意力引导的区域裁剪 + 置信感知的早停",
+    "填补了现有方法与病理学家认知流程之间的\"推理鸿沟\"（Reasoning Gap）"
+   ],
+   "method": "PathCTM采用连续思考机（CTM）框架，在尺度空间进行连续推理。当证据充分时自适应终止推理，有效约束决策不确定性。",
+   "results": "相比标准MIL方法，所需图像patches减少95.95% - 推理时间缩短95.62% - AUC无退化",
+   "value": "将全切片图像分析从\"暴力逐patch处理\"转向\"自适应连续推理\"，为计算病理学的大规模临床部署扫清了效率障碍。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "将WSI分析建模为\"动态序列信息追逐\"——从全局低倍逐步到局部高倍，类似病理学家思维方式",
+    "agentChange": "PathCTM采用连续思考机（CTM）框架，在尺度空间进行连续推理。当证据充分时自适应终止推理，有效约束决策不确定性。",
+    "selfEvolution": null,
+    "evidence": [
+     "相比标准MIL方法，所需图像patches减少95.95% - 推理时间缩短95.62% - AUC无退化",
+     "填补了现有方法与病理学家认知流程之间的\"推理鸿沟\"（Reasoning Gap）"
+    ],
+    "faq": {
+     "problem": "提出PathCTM病理连续思考模型，通过从低倍到高倍的动态尺度推理，将全切片图像分析所需patches减少95.95%，推理时间缩短95.62%。",
+     "mechanism": "PathCTM采用连续思考机（CTM）框架，在尺度空间进行连续推理。当证据充分时自适应终止推理，有效约束决策不确定性。",
+     "agentChange": "PathCTM采用连续思考机（CTM）框架，在尺度空间进行连续推理。当证据充分时自适应终止推理，有效约束决策不确定性。",
+     "support": "相比标准MIL方法，所需图像patches减少95.95% - 推理时间缩短95.62% - AUC无退化",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "将全切片图像分析从\"暴力逐patch处理\"转向\"自适应连续推理\"，为计算病理学的大规模临床部署扫清了效率障碍。"
+   }
+  },
+  {
+   "id": "2607.28627",
+   "version": 1,
+   "title": "ReToken: One Token to Improve Vision-Language Models for Visual Retrieval",
+   "abstract": "仅用一个可学习嵌入作为检索目标，从预填充的视觉KV缓存中选择与查询相关的稀疏视觉token，大幅提升VLM在长视觉上下文中的检索能力。",
+   "authors": [],
+   "published": "2026-07-31T04:00:00.000Z",
+   "updated": "2026-07-31T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28627",
+   "pdf": "https://arxiv.org/pdf/2607.28627",
+   "announceType": "new",
+   "summary": "仅用一个可学习嵌入作为检索目标，从预填充的视觉KV缓存中选择与查询相关的稀疏视觉token，大幅提升VLM在长视觉上下文中的检索能力。",
+   "topic": "多模态大模型 / Multimodal LLMs",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28627"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "以极低成本解决了VLM在长视觉上下文中的\"视觉干草堆\"问题，为VLM的视觉检索能力提供了一条极简有效的改进路径。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "极其简洁的设计——单个learnable embedding即可显著提升检索性能"
+   ],
+   "innovations": [
+    "从预填充KV缓存中进行稀疏token选择，无需重新计算",
+    "仅需小规模图像QA数据集训练即可零样本迁移到长视频任务"
+   ],
+   "method": "训练一个可学习embedding作为显式检索目标，使其与查询相关的视觉token在注意力上产生最大响应，从而从KV缓存中筛选出关键token。",
+   "results": "Visual Haystacks: Qwen3VL-8B提升+13.4分，InternVL3.5提升+12.4分（>20%相对提升） - LVBench: 零样本迁移到长视频，Qwen3VL-8B提升+8.0分 - 训练和长视频推理均可在单张H100上完成",
+   "value": "以极低成本解决了VLM在长视觉上下文中的\"视觉干草堆\"问题，为VLM的视觉检索能力提供了一条极简有效的改进路径。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "极其简洁的设计——单个learnable embedding即可显著提升检索性能",
+    "agentChange": "训练一个可学习embedding作为显式检索目标，使其与查询相关的视觉token在注意力上产生最大响应，从而从KV缓存中筛选出关键token。",
+    "selfEvolution": null,
+    "evidence": [
+     "Visual Haystacks: Qwen3VL-8B提升+13.4分，InternVL3.5提升+12.4分（>20%相对提升） - LVBench: 零样本迁移到长视频，Qwen3VL-8B提升+8.0分 - 训练和长视频推理均可在单张H100上完成",
+     "仅需小规模图像QA数据集训练即可零样本迁移到长视频任务"
+    ],
+    "faq": {
+     "problem": "仅用一个可学习嵌入作为检索目标，从预填充的视觉KV缓存中选择与查询相关的稀疏视觉token，大幅提升VLM在长视觉上下文中的检索能力。",
+     "mechanism": "训练一个可学习embedding作为显式检索目标，使其与查询相关的视觉token在注意力上产生最大响应，从而从KV缓存中筛选出关键token。",
+     "agentChange": "训练一个可学习embedding作为显式检索目标，使其与查询相关的视觉token在注意力上产生最大响应，从而从KV缓存中筛选出关键token。",
+     "support": "Visual Haystacks: Qwen3VL-8B提升+13.4分，InternVL3.5提升+12.4分（>20%相对提升） - LVBench: 零样本迁移到长视频，Qwen3VL-8B提升+8.0分 - 训练和长视频推理均可在单张H100上完成",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "以极低成本解决了VLM在长视觉上下文中的\"视觉干草堆\"问题，为VLM的视觉检索能力提供了一条极简有效的改进路径。"
+   }
+  },
+  {
+   "id": "2607.28595",
+   "version": 1,
+   "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
+   "abstract": "提出Beacon模型，通过强化学习中的\"必要性感知自适应奖励\"和\"提示引导的能力扩展\"机制，让MLLM知道何时需要工具辅助视觉推理。",
+   "authors": [],
+   "published": "2026-07-31T04:00:00.000Z",
+   "updated": "2026-07-31T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28595",
+   "pdf": "https://arxiv.org/pdf/2607.28595",
+   "announceType": "new",
+   "summary": "提出Beacon模型，通过强化学习中的\"必要性感知自适应奖励\"和\"提示引导的能力扩展\"机制，让MLLM知道何时需要工具辅助视觉推理。",
+   "topic": "多模态大模型 / Multimodal LLMs",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28595"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "重新定义了agentic视觉推理的核心问题——不是让模型\"永远使用工具\"，而是\"知道何时使用工具\"，这对多模态智能体的实际部署至关重要。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "定义并量化了两个关键维度：模式适应性（Mode Adaptiveness，知道何时需要工具）和工具效果（Tool Effect，工具真正带来提升）"
+   ],
+   "innovations": [
+    "发现现有模型的工具使用增益在困难样本上被简单样本上的额外错误所抵消",
+    "Necessity-Aware Adaptive Reward鼓励按需调用工具，Hint-Guided Capability Expansion强化最困难问题的工具使用能力"
+   ],
+   "method": "在强化学习阶段引入两个核心机制：①必要性感知自适应奖励——根据任务难度动态调整工具调用的奖励信号；②提示引导的能力扩展——在最困难的问题上增强模型的工具使用能力。",
+   "results": "在多个基准上展现出更强的整体性能、显著改善的模式适应性和真正的工具诱导性能增益。",
+   "value": "重新定义了agentic视觉推理的核心问题——不是让模型\"永远使用工具\"，而是\"知道何时使用工具\"，这对多模态智能体的实际部署至关重要。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "定义并量化了两个关键维度：模式适应性（Mode Adaptiveness，知道何时需要工具）和工具效果（Tool Effect，工具真正带来提升）",
+    "agentChange": "在强化学习阶段引入两个核心机制：①必要性感知自适应奖励——根据任务难度动态调整工具调用的奖励信号；②提示引导的能力扩展——在最困难的问题上增强模型的工具使用能力。",
+    "selfEvolution": null,
+    "evidence": [
+     "在多个基准上展现出更强的整体性能、显著改善的模式适应性和真正的工具诱导性能增益。",
+     "Necessity-Aware Adaptive Reward鼓励按需调用工具，Hint-Guided Capability Expansion强化最困难问题的工具使用能力"
+    ],
+    "faq": {
+     "problem": "提出Beacon模型，通过强化学习中的\"必要性感知自适应奖励\"和\"提示引导的能力扩展\"机制，让MLLM知道何时需要工具辅助视觉推理。",
+     "mechanism": "在强化学习阶段引入两个核心机制：①必要性感知自适应奖励——根据任务难度动态调整工具调用的奖励信号；②提示引导的能力扩展——在最困难的问题上增强模型的工具使用能力。",
+     "agentChange": "在强化学习阶段引入两个核心机制：①必要性感知自适应奖励——根据任务难度动态调整工具调用的奖励信号；②提示引导的能力扩展——在最困难的问题上增强模型的工具使用能力。",
+     "support": "在多个基准上展现出更强的整体性能、显著改善的模式适应性和真正的工具诱导性能增益。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "重新定义了agentic视觉推理的核心问题——不是让模型\"永远使用工具\"，而是\"知道何时使用工具\"，这对多模态智能体的实际部署至关重要。"
+   }
+  },
+  {
+   "id": "2607.28590",
+   "version": 1,
+   "title": "VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation",
+   "abstract": "提出视觉归因蒸馏（VAD），通过反事实目标重建方法估计教师校正中真正由视觉证据支持的部分，而非源混合信号。",
+   "authors": [],
+   "published": "2026-07-31T04:00:00.000Z",
+   "updated": "2026-07-31T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28590",
+   "pdf": "https://arxiv.org/pdf/2607.28590",
+   "announceType": "new",
+   "summary": "提出视觉归因蒸馏（VAD），通过反事实目标重建方法估计教师校正中真正由视觉证据支持的部分，而非源混合信号。",
+   "topic": "多模态大模型 / Multimodal LLMs",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28590"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为多模态知识蒸馏提供了一个更精确的监督信号提取方法，确保学生学到的是真正的视觉知识而非教师的语言偏见。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "发现多模态on-policy蒸馏的next-token校正存在\"源混合\"问题——混合了视觉信号、语言先验和教师特定效应"
+   ],
+   "innovations": [
+    "通过\"有证据vs无证据\"的反事实评估，提取出纯视觉归因的校正方向ut",
+    "将原始校正投影到ut上获得干预对齐分量，重建学生锚定的目标"
+   ],
+   "method": "在每个学生生成的前缀处，用同一固定教师在有/无相关证据的情况下评估，计算中心化对数概率的变化作为视觉证据方向的有符号代理ut。",
+   "results": "在6个细粒度视觉基准上（4B和9B规模），优于直接privileged-view蒸馏和视觉优势加权 - Token级分析显示ut对齐分量富含任务相关的视觉校正 - 当证据反驳错误答案时产生更强的目标偏移",
+   "value": "为多模态知识蒸馏提供了一个更精确的监督信号提取方法，确保学生学到的是真正的视觉知识而非教师的语言偏见。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "发现多模态on-policy蒸馏的next-token校正存在\"源混合\"问题——混合了视觉信号、语言先验和教师特定效应",
+    "agentChange": "在每个学生生成的前缀处，用同一固定教师在有/无相关证据的情况下评估，计算中心化对数概率的变化作为视觉证据方向的有符号代理ut。",
+    "selfEvolution": null,
+    "evidence": [
+     "在6个细粒度视觉基准上（4B和9B规模），优于直接privileged-view蒸馏和视觉优势加权 - Token级分析显示ut对齐分量富含任务相关的视觉校正 - 当证据反驳错误答案时产生更强的目标偏移",
+     "将原始校正投影到ut上获得干预对齐分量，重建学生锚定的目标"
+    ],
+    "faq": {
+     "problem": "提出视觉归因蒸馏（VAD），通过反事实目标重建方法估计教师校正中真正由视觉证据支持的部分，而非源混合信号。",
+     "mechanism": "在每个学生生成的前缀处，用同一固定教师在有/无相关证据的情况下评估，计算中心化对数概率的变化作为视觉证据方向的有符号代理ut。",
+     "agentChange": "在每个学生生成的前缀处，用同一固定教师在有/无相关证据的情况下评估，计算中心化对数概率的变化作为视觉证据方向的有符号代理ut。",
+     "support": "在6个细粒度视觉基准上（4B和9B规模），优于直接privileged-view蒸馏和视觉优势加权 - Token级分析显示ut对齐分量富含任务相关的视觉校正 - 当证据反驳错误答案时产生更强的目标偏移",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为多模态知识蒸馏提供了一个更精确的监督信号提取方法，确保学生学到的是真正的视觉知识而非教师的语言偏见。"
+   }
+  },
+  {
+   "id": "2607.28516",
+   "version": 1,
+   "title": "Beyond Frame Selection: Generative Latent Evidence Aggregation for Long-Video Understanding",
+   "abstract": "提出GenEvA框架，在帧选择之后、生成之前，将选定的帧组织成查询相关的跨帧证据，显著提升长视频理解性能。",
+   "authors": [],
+   "published": "2026-07-31T04:00:00.000Z",
+   "updated": "2026-07-31T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28516",
+   "pdf": "https://arxiv.org/pdf/2607.28516",
+   "announceType": "new",
+   "summary": "提出GenEvA框架，在帧选择之后、生成之前，将选定的帧组织成查询相关的跨帧证据，显著提升长视频理解性能。",
+   "topic": "多模态大模型 / Multimodal LLMs",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28516"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "在无需增加大量token开销的前提下，解决了长视频理解中\"证据分散\"的核心问题，为高效长视频推理提供了新的思路。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "指出帧选择≠证据整合——让证据\"可用\"不等于模型会\"利用\"互补线索"
+   ],
+   "innovations": [
+    "将后选择阶段建模为\"潜在证据接口\"，通过分布引导的跨帧聚合形成紧凑证据",
+    "自适应证据调用机制——根据任务需要决定是否插入跨帧整合"
+   ],
+   "method": "使用查询条件的证据分布聚焦相关帧的聚合，从帧特定信息形成紧凑的跨帧潜在证据。同一分布决定是否插入该潜在补充。",
+   "results": "4个基准+2个Video-MLLM骨干，始终提升匹配帧基线 - 8帧下LLaVA-Video四基准平均提升+5.2分 - Qwen2.5-VL在LVBench上提升+10.1分 - 仅需0.11%-0.40%平均视频token开销",
+   "value": "在无需增加大量token开销的前提下，解决了长视频理解中\"证据分散\"的核心问题，为高效长视频推理提供了新的思路。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "指出帧选择≠证据整合——让证据\"可用\"不等于模型会\"利用\"互补线索",
+    "agentChange": "使用查询条件的证据分布聚焦相关帧的聚合，从帧特定信息形成紧凑的跨帧潜在证据。同一分布决定是否插入该潜在补充。",
+    "selfEvolution": null,
+    "evidence": [
+     "4个基准+2个Video-MLLM骨干，始终提升匹配帧基线 - 8帧下LLaVA-Video四基准平均提升+5.2分 - Qwen2.5-VL在LVBench上提升+10.1分 - 仅需0.11%-0.40%平均视频token开销",
+     "自适应证据调用机制——根据任务需要决定是否插入跨帧整合"
+    ],
+    "faq": {
+     "problem": "提出GenEvA框架，在帧选择之后、生成之前，将选定的帧组织成查询相关的跨帧证据，显著提升长视频理解性能。",
+     "mechanism": "使用查询条件的证据分布聚焦相关帧的聚合，从帧特定信息形成紧凑的跨帧潜在证据。同一分布决定是否插入该潜在补充。",
+     "agentChange": "使用查询条件的证据分布聚焦相关帧的聚合，从帧特定信息形成紧凑的跨帧潜在证据。同一分布决定是否插入该潜在补充。",
+     "support": "4个基准+2个Video-MLLM骨干，始终提升匹配帧基线 - 8帧下LLaVA-Video四基准平均提升+5.2分 - Qwen2.5-VL在LVBench上提升+10.1分 - 仅需0.11%-0.40%平均视频token开销",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "在无需增加大量token开销的前提下，解决了长视频理解中\"证据分散\"的核心问题，为高效长视频推理提供了新的思路。"
+   }
+  },
+  {
+   "id": "2607.28589",
+   "version": 1,
+   "title": "MixFrag: Fragility-Guided Mixed-Precision Post-Training Quantization for Vision Transformers",
+   "abstract": "提出基于组件脆弱性的混合精度PTQ框架，通过KL散度量化各层对量化的敏感度，以多重选择背包问题实现自适应比特分配。",
+   "authors": [],
+   "published": "2026-07-31T04:00:00.000Z",
+   "updated": "2026-07-31T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28589",
+   "pdf": "https://arxiv.org/pdf/2607.28589",
+   "announceType": "new",
+   "summary": "提出基于组件脆弱性的混合精度PTQ框架，通过KL散度量化各层对量化的敏感度，以多重选择背包问题实现自适应比特分配。",
+   "topic": "模型效率 / Model Efficiency",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28589"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为ViT的边缘部署提供了更精细的量化方案，避免了\"一刀切\"均匀量化带来的精度浪费，在资源受限设备上具有重要应用价值。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "提出\"量化脆弱性\"指标——用KL散度度量全精度与隔离量化输出分布的差异"
+   ],
+   "innovations": [
+    "将比特分配建模为多重选择背包问题（MCKP），在目标比特预算下实现自适应层级精度分配",
+    "验证了脆弱性指标与学习到的比特分配之间的强相关性"
+   ],
+   "method": "小校准集估计组件级量化脆弱性→MCKP优化比特分配→混合精度量化部署。",
+   "results": "ImageNet-1K上多个ViT架构均达到竞争力的分类性能 - COCO目标检测和实例分割上达到SOTA混合精度PTQ性能 - 在MP3/MP3设置下比前一最佳方法提升高达9.6 AP",
+   "value": "为ViT的边缘部署提供了更精细的量化方案，避免了\"一刀切\"均匀量化带来的精度浪费，在资源受限设备上具有重要应用价值。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出\"量化脆弱性\"指标——用KL散度度量全精度与隔离量化输出分布的差异",
+    "agentChange": "小校准集估计组件级量化脆弱性→MCKP优化比特分配→混合精度量化部署。",
+    "selfEvolution": null,
+    "evidence": [
+     "ImageNet-1K上多个ViT架构均达到竞争力的分类性能 - COCO目标检测和实例分割上达到SOTA混合精度PTQ性能 - 在MP3/MP3设置下比前一最佳方法提升高达9.6 AP",
+     "验证了脆弱性指标与学习到的比特分配之间的强相关性"
+    ],
+    "faq": {
+     "problem": "提出基于组件脆弱性的混合精度PTQ框架，通过KL散度量化各层对量化的敏感度，以多重选择背包问题实现自适应比特分配。",
+     "mechanism": "小校准集估计组件级量化脆弱性→MCKP优化比特分配→混合精度量化部署。",
+     "agentChange": "小校准集估计组件级量化脆弱性→MCKP优化比特分配→混合精度量化部署。",
+     "support": "ImageNet-1K上多个ViT架构均达到竞争力的分类性能 - COCO目标检测和实例分割上达到SOTA混合精度PTQ性能 - 在MP3/MP3设置下比前一最佳方法提升高达9.6 AP",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为ViT的边缘部署提供了更精细的量化方案，避免了\"一刀切\"均匀量化带来的精度浪费，在资源受限设备上具有重要应用价值。"
+   }
+  },
+  {
+   "id": "2607.28581",
+   "version": 1,
+   "title": "ROAD: Reciprocal-Objective Alignment of Discriminative Semantics for 3D Shape Generation",
+   "abstract": "通过双向目标对齐策略将判别式3D基础模型的先验知识迁移到扩散Transformer，仅用1.5%的训练数据即可达到与工业基线相当的性能。",
+   "authors": [],
+   "published": "2026-07-31T04:00:00.000Z",
+   "updated": "2026-07-31T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2607.28581",
+   "pdf": "https://arxiv.org/pdf/2607.28581",
+   "announceType": "new",
+   "summary": "通过双向目标对齐策略将判别式3D基础模型的先验知识迁移到扩散Transformer，仅用1.5%的训练数据即可达到与工业基线相当的性能。",
+   "topic": "3D生成 / 3D Generation",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28581"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "打破了3D生成依赖大规模数据和计算的范式，为高效3D内容生成开辟了新路径，降低了3D生成的门槛。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "核心观点：利用判别式3D基础模型已有的丰富语义和结构先验，大幅降低生成式训练成本"
+   ],
+   "innovations": [
+    "双向目标对齐策略：整体语义凝聚（全局语义一致性）+ 结构最优对齐（二部匹配问题对齐微观几何细节）",
+    "3D基础模型仅用于训练时监督，推理阶段零额外成本"
+   ],
+   "method": "将判别式与生成式潜空间之间的语义-结构异质性通过\"整体语义凝聚\"和\"结构最优对齐\"两种互补目标进行协同对齐。",
+   "results": "与工业基线Step1X-3D相比，仅用1.5%的训练数据达到高度竞争力的生成性能 - 大幅降低高保真3D生成计算开销 - 推理阶段零额外成本",
+   "value": "打破了3D生成依赖大规模数据和计算的范式，为高效3D内容生成开辟了新路径，降低了3D生成的门槛。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "核心观点：利用判别式3D基础模型已有的丰富语义和结构先验，大幅降低生成式训练成本",
+    "agentChange": "将判别式与生成式潜空间之间的语义-结构异质性通过\"整体语义凝聚\"和\"结构最优对齐\"两种互补目标进行协同对齐。",
+    "selfEvolution": null,
+    "evidence": [
+     "与工业基线Step1X-3D相比，仅用1.5%的训练数据达到高度竞争力的生成性能 - 大幅降低高保真3D生成计算开销 - 推理阶段零额外成本",
+     "3D基础模型仅用于训练时监督，推理阶段零额外成本"
+    ],
+    "faq": {
+     "problem": "通过双向目标对齐策略将判别式3D基础模型的先验知识迁移到扩散Transformer，仅用1.5%的训练数据即可达到与工业基线相当的性能。",
+     "mechanism": "将判别式与生成式潜空间之间的语义-结构异质性通过\"整体语义凝聚\"和\"结构最优对齐\"两种互补目标进行协同对齐。",
+     "agentChange": "将判别式与生成式潜空间之间的语义-结构异质性通过\"整体语义凝聚\"和\"结构最优对齐\"两种互补目标进行协同对齐。",
+     "support": "与工业基线Step1X-3D相比，仅用1.5%的训练数据达到高度竞争力的生成性能 - 大幅降低高保真3D生成计算开销 - 推理阶段零额外成本",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "打破了3D生成依赖大规模数据和计算的范式，为高效3D内容生成开辟了新路径，降低了3D生成的门槛。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-07-30",
+  "newCount": 11,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-07-30 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-07-31T04:00:00.000Z",
+ "totalMatched": 11,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 11
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-07-31",
+ "historical": true
+}

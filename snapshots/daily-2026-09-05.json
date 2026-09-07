@@ -1,0 +1,1035 @@
+{
+ "papers": [
+  {
+   "id": "2609.03391",
+   "version": 1,
+   "title": "Exploring the Potential of Contrastive Language-Image Pre-training for Multi-Source Remote Sensing Data",
+   "abstract": "OmniRSCLIP 将 CLIP 扩展到 SAR/MSI/HSI 多源输入，构建首个四模态遥感图文语料",
+   "authors": [],
+   "published": "2026-09-05T04:00:00.000Z",
+   "updated": "2026-09-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.03391",
+   "pdf": "https://arxiv.org/pdf/2609.03391",
+   "announceType": "new",
+   "summary": "OmniRSCLIP 将 CLIP 扩展到 SAR/MSI/HSI 多源输入，构建首个四模态遥感图文语料",
+   "topic": "遥感与地学",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.03391"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为异质传感器体系提供统一视觉语言接口",
+   "repository": null,
+   "motivation": "遥感对比学习多建于 RGB CLIP 架构，难用 SAR/多光谱/高光谱",
+   "coreProblem": "固定三通道接口迫使光谱压入 RGB 空间，丢失高光谱物质吸收特征",
+   "contributions": [
+    "SSBD 谱空基分解：任意通道适配化为基重组问题",
+    "谱上下文感知掩码对比学习，抑制模态冗余特征",
+    "OmniRS5M：首个覆盖 RGB/SAR/MSI/HSI 大规模图文语料"
+   ],
+   "innovations": [
+    "预训练 CLIP patch 嵌入作可迁移空间基，免重学输入层",
+    "波长条件系数张成传感器内核，约束在视觉先验空间内",
+    "不同于 PCA 压三通道，保留带间光谱差异"
+   ],
+   "method": "CLIP patch 嵌入提供空间基，波长条件系数重组通道专属核，配掩码对比把异质传感器与文本对齐到统一语义空间",
+   "results": "ViT-B/16 多源均值 R@1/5/10：RGB 69.08、SAR 48.81、MSI 41.10、HSI 53.64，优于 PCA 基线（MSI 34.89、HSI 43.87）；RSITMD 图到文最佳、RSICD 全指标最佳",
+   "value": "为异质传感器体系提供统一视觉语言接口",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "SSBD 谱空基分解：任意通道适配化为基重组问题",
+    "agentChange": "CLIP patch 嵌入提供空间基，波长条件系数重组通道专属核，配掩码对比把异质传感器与文本对齐到统一语义空间",
+    "selfEvolution": null,
+    "evidence": [
+     "ViT-B/16 多源均值 R@1/5/10：RGB 69.08、SAR 48.81、MSI 41.10、HSI 53.64，优于 PCA 基线（MSI 34.89、HSI 43.87）；RSITMD 图到文最佳、RSICD 全指标最佳",
+     "波长条件系数张成传感器内核，约束在视觉先验空间内",
+     "不同于 PCA 压三通道，保留带间光谱差异"
+    ],
+    "faq": {
+     "problem": "OmniRSCLIP 将 CLIP 扩展到 SAR/MSI/HSI 多源输入，构建首个四模态遥感图文语料",
+     "mechanism": "CLIP patch 嵌入提供空间基，波长条件系数重组通道专属核，配掩码对比把异质传感器与文本对齐到统一语义空间",
+     "agentChange": "CLIP patch 嵌入提供空间基，波长条件系数重组通道专属核，配掩码对比把异质传感器与文本对齐到统一语义空间",
+     "support": "ViT-B/16 多源均值 R@1/5/10：RGB 69.08、SAR 48.81、MSI 41.10、HSI 53.64，优于 PCA 基线（MSI 34.89、HSI 43.87）；RSITMD 图到文最佳、RSICD 全指标最佳",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为异质传感器体系提供统一视觉语言接口"
+   }
+  },
+  {
+   "id": "2609.03582",
+   "version": 1,
+   "title": "WeatherNext 3: Increasing resolution and performance of global weather models with raw observations",
+   "abstract": "Google 全球天气模型小时级更新、0.1°分辨率，直接吃原始观测，概率中期预报 SOTA",
+   "authors": [],
+   "published": "2026-09-05T04:00:00.000Z",
+   "updated": "2026-09-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.03582",
+   "pdf": "https://arxiv.org/pdf/2609.03582",
+   "announceType": "new",
+   "summary": "Google 全球天气模型小时级更新、0.1°分辨率，直接吃原始观测，概率中期预报 SOTA",
+   "topic": "遥感与地学",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.03582"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "业务 AI 天气预报从\"模仿物理模式\"迈入\"直接吃原始观测\"",
+   "repository": null,
+   "motivation": "AI 天气模型仅用分析数据训练，继承其偏差且状态滞后 6-12 小时",
+   "coreProblem": "无法直接用卫星/地面站/台风原始观测，分析场偏差被继承",
+   "contributions": [
+    "小时级预报节奏（传统 6h），摄入低延迟静止卫星拼图",
+    "单层变量 0.1° 分辨率，追平物理全球模式",
+    "站点输出头：任意位置任意时刻预测 2m 气温/露点"
+   ],
+   "innovations": [
+    "全球 AI 天气模型首次直接条件于稀疏站点观测",
+    "模糊同化/预报/后处理三阶段边界，单模型端到端",
+    "卫星降水、台风与站点观测联合建模"
+   ],
+   "method": "两分析帧+最近 12 帧静止卫星拼图双路输入，潜空间插值实现时空连续输出，多阶段课程训练",
+   "results": "中期上层变量较 WN2 约 +5%（等价 +6h 时效）；短时效 2m 气温 CRPS 较 WN2 -30%、较 ENS -40%；降水 CRPS 较 IMERG 至多 -60%；小时初始化再赚 2-3h 时效",
+   "value": "业务 AI 天气预报从\"模仿物理模式\"迈入\"直接吃原始观测\"",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "小时级预报节奏（传统 6h），摄入低延迟静止卫星拼图",
+    "agentChange": "两分析帧+最近 12 帧静止卫星拼图双路输入，潜空间插值实现时空连续输出，多阶段课程训练",
+    "selfEvolution": null,
+    "evidence": [
+     "中期上层变量较 WN2 约 +5%（等价 +6h 时效）；短时效 2m 气温 CRPS 较 WN2 -30%、较 ENS -40%；降水 CRPS 较 IMERG 至多 -60%；小时初始化再赚 2-3h 时效",
+     "模糊同化/预报/后处理三阶段边界，单模型端到端",
+     "卫星降水、台风与站点观测联合建模"
+    ],
+    "faq": {
+     "problem": "Google 全球天气模型小时级更新、0.1°分辨率，直接吃原始观测，概率中期预报 SOTA",
+     "mechanism": "两分析帧+最近 12 帧静止卫星拼图双路输入，潜空间插值实现时空连续输出，多阶段课程训练",
+     "agentChange": "两分析帧+最近 12 帧静止卫星拼图双路输入，潜空间插值实现时空连续输出，多阶段课程训练",
+     "support": "中期上层变量较 WN2 约 +5%（等价 +6h 时效）；短时效 2m 气温 CRPS 较 WN2 -30%、较 ENS -40%；降水 CRPS 较 IMERG 至多 -60%；小时初始化再赚 2-3h 时效",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "业务 AI 天气预报从\"模仿物理模式\"迈入\"直接吃原始观测\""
+   }
+  },
+  {
+   "id": "2609.03480",
+   "version": 1,
+   "title": "Tree species mapping in Denmark: A comparison of spectral-temporal features with geospatial foundation model embeddings",
+   "abstract": "定量对比手搓谱时特征与地理空间基础模型嵌入，产出丹麦首幅 10m 全国树种图",
+   "authors": [],
+   "published": "2026-09-05T04:00:00.000Z",
+   "updated": "2026-09-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.03480",
+   "pdf": "https://arxiv.org/pdf/2609.03480",
+   "announceType": "new",
+   "summary": "定量对比手搓谱时特征与地理空间基础模型嵌入，产出丹麦首幅 10m 全国树种图",
+   "topic": "遥感与地学",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.03480"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给\"何时用遥感基础模型\"以明确可操作答案",
+   "repository": null,
+   "motivation": "评估遥感基础模型对大规模森林特征化的真实价值",
+   "coreProblem": "FM 嵌入未必胜过多时相 Sentinel 手工特征，缺乏定量边界",
+   "contributions": [
+    "STF 手工特征 vs TESSERA/AlphaEarth 嵌入三输入系统对比",
+    "RF/XGBoost/MLP 三分类器，纯林/混交林分开评估",
+    "全国尺度制图，开放发布丹麦首幅 10m 树种图"
+   ],
+   "innovations": [
+    "量化 FM 优势窗口：训练样点 <25% 时 TESSERA 反超",
+    "多年观测系统性优于单年输入"
+   ],
+   "method": "多时相 Sentinel-1/2 谱时特征与两种 FM 嵌入（均加冠层高度）输入分类器，最优模型全国制图",
+   "results": "STF+MLP macro F1 0.843（纯林）/0.653（混交）最佳；TESSERA 纯林距最佳 1.1pt；面积加权地图精度 79.9%",
+   "value": "给\"何时用遥感基础模型\"以明确可操作答案",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "STF 手工特征 vs TESSERA/AlphaEarth 嵌入三输入系统对比",
+    "agentChange": "多时相 Sentinel-1/2 谱时特征与两种 FM 嵌入（均加冠层高度）输入分类器，最优模型全国制图",
+    "selfEvolution": null,
+    "evidence": [
+     "STF+MLP macro F1 0.843（纯林）/0.653（混交）最佳；TESSERA 纯林距最佳 1.1pt；面积加权地图精度 79.9%",
+     "多年观测系统性优于单年输入"
+    ],
+    "faq": {
+     "problem": "定量对比手搓谱时特征与地理空间基础模型嵌入，产出丹麦首幅 10m 全国树种图",
+     "mechanism": "多时相 Sentinel-1/2 谱时特征与两种 FM 嵌入（均加冠层高度）输入分类器，最优模型全国制图",
+     "agentChange": "多时相 Sentinel-1/2 谱时特征与两种 FM 嵌入（均加冠层高度）输入分类器，最优模型全国制图",
+     "support": "STF+MLP macro F1 0.843（纯林）/0.653（混交）最佳；TESSERA 纯林距最佳 1.1pt；面积加权地图精度 79.9%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "给\"何时用遥感基础模型\"以明确可操作答案"
+   }
+  },
+  {
+   "id": "2609.03756",
+   "version": 1,
+   "title": "ENEAS: Embedding-guided Neural Ensemble for Adaptive Segmentation",
+   "abstract": "统一文本提示实例跟踪与开放概念发现，修复 SAM 3 的时空语义三大幻觉",
+   "authors": [],
+   "published": "2026-09-05T04:00:00.000Z",
+   "updated": "2026-09-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.03756",
+   "pdf": "https://arxiv.org/pdf/2609.03756",
+   "announceType": "new",
+   "summary": "统一文本提示实例跟踪与开放概念发现，修复 SAM 3 的时空语义三大幻觉",
+   "topic": "基础模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.03756"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "3D 重建获得能区分\"像但不是同一物\"的语义分割",
+   "repository": null,
+   "motivation": "SAM 3 等基础模型在 3D 重建管线中不可靠",
+   "coreProblem": "目标消失不报缺席、极近距只分割局部纹理、雕像画作被误分为人",
+   "contributions": [
+    "单一框架统一实例跟踪与开放概念发现",
+    "扩展 SeC 跟踪器支持文本提示，时序记忆维持身份",
+    "语义验证层：嵌入快速匹配+VLM 仅判模糊候选"
+   ],
+   "innovations": [
+    "首次系统针对\"缺席幻觉/碎片化/替身混淆\"三类失效",
+    "VLM 仅在不确定区间内调用，低延迟高精度",
+    "同时支持有序视频与无序图像集合"
+   ],
+   "method": "跟踪模式参考帧锚定+记忆传播、消失时报告缺席；发现模式候选提出→sigmoid 嵌入匹配→仅模糊者送 VLM 判定",
+   "results": "超写实雕像真实采集集上移除 SAM 3 假阳性、保留大部分召回；消融量化精度-延迟权衡（v1 HTML 未含结果表）",
+   "value": "3D 重建获得能区分\"像但不是同一物\"的语义分割",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "单一框架统一实例跟踪与开放概念发现",
+    "agentChange": "跟踪模式参考帧锚定+记忆传播、消失时报告缺席；发现模式候选提出→sigmoid 嵌入匹配→仅模糊者送 VLM 判定",
+    "selfEvolution": null,
+    "evidence": [
+     "超写实雕像真实采集集上移除 SAM 3 假阳性、保留大部分召回；消融量化精度-延迟权衡（v1 HTML 未含结果表）",
+     "VLM 仅在不确定区间内调用，低延迟高精度",
+     "同时支持有序视频与无序图像集合"
+    ],
+    "faq": {
+     "problem": "统一文本提示实例跟踪与开放概念发现，修复 SAM 3 的时空语义三大幻觉",
+     "mechanism": "跟踪模式参考帧锚定+记忆传播、消失时报告缺席；发现模式候选提出→sigmoid 嵌入匹配→仅模糊者送 VLM 判定",
+     "agentChange": "跟踪模式参考帧锚定+记忆传播、消失时报告缺席；发现模式候选提出→sigmoid 嵌入匹配→仅模糊者送 VLM 判定",
+     "support": "超写实雕像真实采集集上移除 SAM 3 假阳性、保留大部分召回；消融量化精度-延迟权衡（v1 HTML 未含结果表）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "3D 重建获得能区分\"像但不是同一物\"的语义分割"
+   }
+  },
+  {
+   "id": "2609.03796",
+   "version": 1,
+   "title": "LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes",
+   "abstract": "从零训 6B DiT 图像生成器，全开放配方，Qwen-Image-Bench 开源 SOTA",
+   "authors": [],
+   "published": "2026-09-05T04:00:00.000Z",
+   "updated": "2026-09-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.03796",
+   "pdf": "https://arxiv.org/pdf/2609.03796",
+   "announceType": "new",
+   "summary": "从零训 6B DiT 图像生成器，全开放配方，Qwen-Image-Bench 开源 SOTA",
+   "topic": "基础模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.03796"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为开源高质量图像生成提供完全可复现路径",
+   "repository": null,
+   "motivation": "强图像生成器的训练配方闭源，社区难以复现",
+   "coreProblem": "早期重度依赖图文配对数据，限制视觉生成先验质量",
+   "contributions": [
+    "6B DiT+冻结 LLaDA2.0-Mini 视觉语言理解统一框架",
+    "2.2 亿样本管线（98% 真实图）、Muon+无参 RMSNorm",
+    "TwinFlow 蒸馏出 Turbo，2-4 步采样"
+   ],
+   "innovations": [
+    "图像-only 预训练先行建立强视觉先验，降低配对依赖",
+    "权重、代码、逐阶段配方全开放，设计权衡可审计"
+   ],
+   "method": "图像-only 预训练/中训练建先验，再与冻结视觉语言模块对齐，生成+编辑联合训练，最后 TwinFlow 少步蒸馏",
+   "results": "Qwen-Image-Bench 英文 53.53/中文 53.38，超 Z-Image Turbo 1.87/0.67 分，开源 SOTA；4 步 Turbo 50.98（闭源 GPT-Image 2 65.23）",
+   "value": "为开源高质量图像生成提供完全可复现路径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "6B DiT+冻结 LLaDA2.0-Mini 视觉语言理解统一框架",
+    "agentChange": "图像-only 预训练/中训练建先验，再与冻结视觉语言模块对齐，生成+编辑联合训练，最后 TwinFlow 少步蒸馏",
+    "selfEvolution": null,
+    "evidence": [
+     "Qwen-Image-Bench 英文 53.53/中文 53.38，超 Z-Image Turbo 1.87/0.67 分，开源 SOTA；4 步 Turbo 50.98（闭源 GPT-Image 2 65.23）",
+     "权重、代码、逐阶段配方全开放，设计权衡可审计"
+    ],
+    "faq": {
+     "problem": "从零训 6B DiT 图像生成器，全开放配方，Qwen-Image-Bench 开源 SOTA",
+     "mechanism": "图像-only 预训练/中训练建先验，再与冻结视觉语言模块对齐，生成+编辑联合训练，最后 TwinFlow 少步蒸馏",
+     "agentChange": "图像-only 预训练/中训练建先验，再与冻结视觉语言模块对齐，生成+编辑联合训练，最后 TwinFlow 少步蒸馏",
+     "support": "Qwen-Image-Bench 英文 53.53/中文 53.38，超 Z-Image Turbo 1.87/0.67 分，开源 SOTA；4 步 Turbo 50.98（闭源 GPT-Image 2 65.23）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为开源高质量图像生成提供完全可复现路径"
+   }
+  },
+  {
+   "id": "2609.04094",
+   "version": 1,
+   "title": "DRACO: Fine-Grained Credit Assignment with Dynamic Rubrics for Long-Horizon Agent Training",
+   "abstract": "动态生成评分量规并按步再分配轨迹奖励，无验证器 AppWorld +15.9 分",
+   "authors": [],
+   "published": "2026-09-05T04:00:00.000Z",
+   "updated": "2026-09-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.04094",
+   "pdf": "https://arxiv.org/pdf/2609.04094",
+   "announceType": "new",
+   "summary": "动态生成评分量规并按步再分配轨迹奖励，无验证器 AppWorld +15.9 分",
+   "topic": "Agent与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.04094"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为无 checker 的长程 agent 域打开免验证器训练路径",
+   "repository": null,
+   "motivation": "长程 agent 域多无程序化验证器，需 outcome-blind 训练",
+   "coreProblem": "量规评分整条轨迹一个标量，几十步上信用信号过弱",
+   "contributions": [
+    "动态逐轨迹量规：裁判据任务与 rollout 提议准则并合并",
+    "闭式步级信用再分配，无需训练归因模块",
+    "AppWorld 训练、tau-bench 零样本迁移双验证"
+   ],
+   "innovations": [
+    "首次在 outcome-blind 体制下实现细粒度信用分配",
+    "符号保持权重：赢家强化好步、输家压制坏步",
+    "判别式 dropout 保留组内有区分度的准则"
+   ],
+   "method": "冻结裁判按量规打分得 R，GRPO 归一化得 A，再按各步被引用准则通过率把 A 再分配到步",
+   "results": "Qwen3.6-27B AppWorld TN 69.4→85.3（+15.9），比真值奖励 GRPO 高 5.3；TC 47.6→70.6；tau-bench 零样本 30.2→40.7",
+   "value": "为无 checker 的长程 agent 域打开免验证器训练路径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "动态逐轨迹量规：裁判据任务与 rollout 提议准则并合并",
+    "agentChange": "冻结裁判按量规打分得 R，GRPO 归一化得 A，再按各步被引用准则通过率把 A 再分配到步",
+    "selfEvolution": null,
+    "evidence": [
+     "Qwen3.6-27B AppWorld TN 69.4→85.3（+15.9），比真值奖励 GRPO 高 5.3；TC 47.6→70.6；tau-bench 零样本 30.2→40.7",
+     "符号保持权重：赢家强化好步、输家压制坏步",
+     "判别式 dropout 保留组内有区分度的准则"
+    ],
+    "faq": {
+     "problem": "动态生成评分量规并按步再分配轨迹奖励，无验证器 AppWorld +15.9 分",
+     "mechanism": "冻结裁判按量规打分得 R，GRPO 归一化得 A，再按各步被引用准则通过率把 A 再分配到步",
+     "agentChange": "冻结裁判按量规打分得 R，GRPO 归一化得 A，再按各步被引用准则通过率把 A 再分配到步",
+     "support": "Qwen3.6-27B AppWorld TN 69.4→85.3（+15.9），比真值奖励 GRPO 高 5.3；TC 47.6→70.6；tau-bench 零样本 30.2→40.7",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "为无 checker 的长程 agent 域打开免验证器训练路径"
+   }
+  },
+  {
+   "id": "2609.04063",
+   "version": 1,
+   "title": "Spurious Advantage Hidden in GRPO",
+   "abstract": "揭示 GRPO 把猜对奖励成推理的缺陷，提出组成无关的 SignBalance",
+   "authors": [],
+   "published": "2026-09-05T04:00:00.000Z",
+   "updated": "2026-09-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.04063",
+   "pdf": "https://arxiv.org/pdf/2609.04063",
+   "announceType": "new",
+   "summary": "揭示 GRPO 把猜对奖励成推理的缺陷，提出组成无关的 SignBalance",
+   "topic": "Agent与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.04063"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "戳破最常用 RLVR 基线学习信号的盲区",
+   "repository": null,
+   "motivation": "GRPO 是 RLVR 主流基线，其优势估计器存在隐性误奖",
+   "coreProblem": "蒙对答案的 rollout 与推理得出者获得同样高优势",
+   "contributions": [
+    "识别三类伪优势场景：有界答案/隐含有界子题/搜索预算",
+    "提出 SignBalance：保验证器符号+全局尺度+stop-grad 重标定",
+    "数学与搜索 agent 多规模基准验证"
+   ],
+   "innovations": [
+    "首次系统刻画 GRPO 梯度中的\"猜测成分\"",
+    "优势量级与组内对错组成解耦",
+    "无参数、不改 PPO 代理目标、零额外推理开销"
+   ],
+   "method": "用全局尺度替代组内统计量级，保留符号，stop-gradient 逐类重标定恢复零均值平衡",
+   "results": "开放答案数学与 GRPO 持平，有界答案数学与搜索 agent 上更优；MATH-7.5K 中 55.95% 题实为短答案子题",
+   "value": "戳破最常用 RLVR 基线学习信号的盲区",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "识别三类伪优势场景：有界答案/隐含有界子题/搜索预算",
+    "agentChange": "用全局尺度替代组内统计量级，保留符号，stop-gradient 逐类重标定恢复零均值平衡",
+    "selfEvolution": null,
+    "evidence": [
+     "开放答案数学与 GRPO 持平，有界答案数学与搜索 agent 上更优；MATH-7.5K 中 55.95% 题实为短答案子题",
+     "优势量级与组内对错组成解耦",
+     "无参数、不改 PPO 代理目标、零额外推理开销"
+    ],
+    "faq": {
+     "problem": "揭示 GRPO 把猜对奖励成推理的缺陷，提出组成无关的 SignBalance",
+     "mechanism": "用全局尺度替代组内统计量级，保留符号，stop-gradient 逐类重标定恢复零均值平衡",
+     "agentChange": "用全局尺度替代组内统计量级，保留符号，stop-gradient 逐类重标定恢复零均值平衡",
+     "support": "开放答案数学与 GRPO 持平，有界答案数学与搜索 agent 上更优；MATH-7.5K 中 55.95% 题实为短答案子题",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "戳破最常用 RLVR 基线学习信号的盲区"
+   }
+  },
+  {
+   "id": "2609.03528",
+   "version": 1,
+   "title": "LeanGRPO: Eliminating Redundant Recomputation in Diffusion RL",
+   "abstract": "证明扩散 RL 更新阶段重算在数学上冗余，免重算调度端到端提速 1.83×",
+   "authors": [],
+   "published": "2026-09-05T04:00:00.000Z",
+   "updated": "2026-09-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.03528",
+   "pdf": "https://arxiv.org/pdf/2609.03528",
+   "announceType": "new",
+   "summary": "证明扩散 RL 更新阶段重算在数学上冗余，免重算调度端到端提速 1.83×",
+   "topic": "Agent与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.03528"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "显著降低扩散生成模型 RL 后训练成本",
+   "repository": null,
+   "motivation": "DanceGRPO/FlowGRPO rollout 后重算是主要算力浪费",
+   "coreProblem": "重算冗余但保留计算图的显存开销不可接受",
+   "contributions": [
+    "论证 on-policy 同后端下重算数学冗余，核查公开实现",
+    "两种免重算调度：Retain 复用计算图 / Reweight 临时反传",
+    "重构数据并行布局：全 GPU 共享同一 prompt"
+   ],
+   "innovations": [
+    "首个目标保持的免重算轨迹-logprob 扩散 RL 框架",
+    "Reweight 把显存成本转移到临时梯度保持",
+    "双调度按模型规模分工，覆盖显存-算力权衡"
+   ],
+   "method": "共享 prompt 布局避免单卡多图；Retain 直接复用 rollout 计算图，Reweight 临时优势立即反传、轨迹结束后修正梯度",
+   "results": "FlowGRPO/DanceGRPO+FLUX.1-dev/Wan 上至多 1.83× 端到端加速，优化目标不变",
+   "value": "显著降低扩散生成模型 RL 后训练成本",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "论证 on-policy 同后端下重算数学冗余，核查公开实现",
+    "agentChange": "共享 prompt 布局避免单卡多图；Retain 直接复用 rollout 计算图，Reweight 临时优势立即反传、轨迹结束后修正梯度",
+    "selfEvolution": null,
+    "evidence": [
+     "FlowGRPO/DanceGRPO+FLUX.1-dev/Wan 上至多 1.83× 端到端加速，优化目标不变",
+     "Reweight 把显存成本转移到临时梯度保持",
+     "双调度按模型规模分工，覆盖显存-算力权衡"
+    ],
+    "faq": {
+     "problem": "证明扩散 RL 更新阶段重算在数学上冗余，免重算调度端到端提速 1.83×",
+     "mechanism": "共享 prompt 布局避免单卡多图；Retain 直接复用 rollout 计算图，Reweight 临时优势立即反传、轨迹结束后修正梯度",
+     "agentChange": "共享 prompt 布局避免单卡多图；Retain 直接复用 rollout 计算图，Reweight 临时优势立即反传、轨迹结束后修正梯度",
+     "support": "FlowGRPO/DanceGRPO+FLUX.1-dev/Wan 上至多 1.83× 端到端加速，优化目标不变",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "显著降低扩散生成模型 RL 后训练成本"
+   }
+  },
+  {
+   "id": "2609.04172",
+   "version": 1,
+   "title": "Rethinking On-Policy Distillation of LLMs II: One Training Example",
+   "abstract": "单条 query 做 OPD 即恢复全数据收益大部分，揭示数据过供算法饥饿",
+   "authors": [],
+   "published": "2026-09-05T04:00:00.000Z",
+   "updated": "2026-09-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.04172",
+   "pdf": "https://arxiv.org/pdf/2609.04172",
+   "announceType": "new",
+   "summary": "单条 query 做 OPD 即恢复全数据收益大部分，揭示数据过供算法饥饿",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.04172"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把 OPD 研究焦点从数据规模转向逐步吸收效率",
+   "repository": null,
+   "motivation": "OPD 广泛用于前沿后训练，但训练数据的作用从未被研究",
+   "coreProblem": "OPD 收益来自数据量还是算法吸收？机制不明",
+   "contributions": [
+    "One-shot OPD 对照实验：单 query 持续改进数百步",
+    "提出状态覆盖率指标，量化 query 集 rollout 可达状态",
+    "结论延伸至多教师 MOPD 与域外 query"
+   ],
+   "innovations": [
+    "首次把 OPD 推到数据极简极限（单 query 覆盖 71.5%）",
+    "提出\"数据过供、算法饥饿\"：瓶颈在监督吸收速率",
+    "任务内容与状态覆盖率可解耦，轻量模板亦有效"
+   ],
+   "method": "测 query rollout 到达全数据 OPD 所访状态的比例，逐步加语义相异 query 观察覆盖率-精度耦合",
+   "results": "单 query 状态覆盖 71.5%（前 100 步内）；16 query 达 98.9% 追平全数据；WildChat 域外 query 逼近真 query 基线",
+   "value": "把 OPD 研究焦点从数据规模转向逐步吸收效率",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "One-shot OPD 对照实验：单 query 持续改进数百步",
+    "agentChange": "测 query rollout 到达全数据 OPD 所访状态的比例，逐步加语义相异 query 观察覆盖率-精度耦合",
+    "selfEvolution": null,
+    "evidence": [
+     "单 query 状态覆盖 71.5%（前 100 步内）；16 query 达 98.9% 追平全数据；WildChat 域外 query 逼近真 query 基线",
+     "提出\"数据过供、算法饥饿\"：瓶颈在监督吸收速率",
+     "任务内容与状态覆盖率可解耦，轻量模板亦有效"
+    ],
+    "faq": {
+     "problem": "单条 query 做 OPD 即恢复全数据收益大部分，揭示数据过供算法饥饿",
+     "mechanism": "测 query rollout 到达全数据 OPD 所访状态的比例，逐步加语义相异 query 观察覆盖率-精度耦合",
+     "agentChange": "测 query rollout 到达全数据 OPD 所访状态的比例，逐步加语义相异 query 观察覆盖率-精度耦合",
+     "support": "单 query 状态覆盖 71.5%（前 100 步内）；16 query 达 98.9% 追平全数据；WildChat 域外 query 逼近真 query 基线",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "把 OPD 研究焦点从数据规模转向逐步吸收效率"
+   }
+  },
+  {
+   "id": "2609.04098",
+   "version": 1,
+   "title": "Why Gated DeltaNet Survives 4-Bit Quantization: NVFP4 W4A4 for the Recurrent Half of a Hybrid 27B LLM",
+   "abstract": "Qwen3.8-27B 全部 496 线性层含 GDN 全 4-bit，五项任务追平 BF16",
+   "authors": [],
+   "published": "2026-09-05T04:00:00.000Z",
+   "updated": "2026-09-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.04098",
+   "pdf": "https://arxiv.org/pdf/2609.04098",
+   "announceType": "new",
+   "summary": "Qwen3.8-27B 全部 496 线性层含 GDN 全 4-bit，五项任务追平 BF16",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.04098"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "\"全量化、随包发 KV 尺度\"的混合架构部署配方成立",
+   "repository": null,
+   "motivation": "社区 4-bit 配方因怕误差累积而把 GDN 循环层留在 8/16-bit",
+   "coreProblem": "循环层门控能否承受 4-bit 无实证依据",
+   "contributions": [
+    "Minima 检查点：496 线性层全 NVFP4 W4A4（含 48 GDN 层）",
+    "四部分机理解释循环层为何是\"好量化的一半\"",
+    "修复融合 GEMM 内核加载分模块校准检查点的全局尺度失配"
+   ],
+   "innovations": [
+    "首个实证：混合 LLM 的循环半部比注意力半部更易量化",
+    "机理：delta 规则沿当前 key 方向覆写状态，脉冲数百步内遗忘",
+    "软门控把约 11% GEMM 误差压缩为约 2% 输出误差"
+   ],
+   "method": "NVFP4 16 元素块缩放定位残差离群值，随检查点发布校准的 FP8 KV cache 尺度",
+   "results": "5 任务均值较 BF16 -0.52（种子噪声内）；17.5 GiB 最小体积、prefill +14-19%；32K 困惑度差距随位置缩小",
+   "value": "\"全量化、随包发 KV 尺度\"的混合架构部署配方成立",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "Minima 检查点：496 线性层全 NVFP4 W4A4（含 48 GDN 层）",
+    "agentChange": "NVFP4 16 元素块缩放定位残差离群值，随检查点发布校准的 FP8 KV cache 尺度",
+    "selfEvolution": null,
+    "evidence": [
+     "5 任务均值较 BF16 -0.52（种子噪声内）；17.5 GiB 最小体积、prefill +14-19%；32K 困惑度差距随位置缩小",
+     "机理：delta 规则沿当前 key 方向覆写状态，脉冲数百步内遗忘",
+     "软门控把约 11% GEMM 误差压缩为约 2% 输出误差"
+    ],
+    "faq": {
+     "problem": "Qwen3.8-27B 全部 496 线性层含 GDN 全 4-bit，五项任务追平 BF16",
+     "mechanism": "NVFP4 16 元素块缩放定位残差离群值，随检查点发布校准的 FP8 KV cache 尺度",
+     "agentChange": "NVFP4 16 元素块缩放定位残差离群值，随检查点发布校准的 FP8 KV cache 尺度",
+     "support": "5 任务均值较 BF16 -0.52（种子噪声内）；17.5 GiB 最小体积、prefill +14-19%；32K 困惑度差距随位置缩小",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "\"全量化、随包发 KV 尺度\"的混合架构部署配方成立"
+   }
+  },
+  {
+   "id": "2609.04071",
+   "version": 1,
+   "title": "TAP-Path: Task-Adaptive Structural and Token Pruning for Efficient and Trustworthy Pathology Foundation Models",
+   "abstract": "Virchow2 任务自适应块+token 剪枝，参数 -25% 而精度反升 1.1pt",
+   "authors": [],
+   "published": "2026-09-05T04:00:00.000Z",
+   "updated": "2026-09-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.04071",
+   "pdf": "https://arxiv.org/pdf/2609.04071",
+   "announceType": "new",
+   "summary": "Virchow2 任务自适应块+token 剪枝，参数 -25% 而精度反升 1.1pt",
+   "topic": "医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.04071"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "病理基础模型部署获得效率-精度双优路径",
+   "repository": null,
+   "motivation": "病理基础模型编码器数亿参数，WSI 推理成本成倍放大",
+   "coreProblem": "蒸馏到独立学生模型会丢失原编码器的任务自适应结构",
+   "contributions": [
+    "TAP-Path 直接重构预训练 Virchow2 编码器，无学生模型",
+    "验证驱动块选择+输入自适应 token 剪枝+多深度恢复",
+    "增补 Brier 分数与失败检测 AUROC 可靠性评估"
+   ],
+   "innovations": [
+    "物理移除冗余块（留 24/32），非蒸馏压缩",
+    "压缩后精度反超全模型与 UNI2-h，即\"越剪越好\""
+   ],
+   "method": "验证驱动选块→物理移除→输入自适应剪至 70% token→多深度特征恢复+轻量门控任务头",
+   "results": "32 类病理精度 87.98%（全 Virchow2 86.89%、UNI2-h 87.67%）；参数 631→474M、FLOPs -35.2%；外部 433 CPTAC 样本 91.22%",
+   "value": "病理基础模型部署获得效率-精度双优路径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "TAP-Path 直接重构预训练 Virchow2 编码器，无学生模型",
+    "agentChange": "验证驱动选块→物理移除→输入自适应剪至 70% token→多深度特征恢复+轻量门控任务头",
+    "selfEvolution": null,
+    "evidence": [
+     "32 类病理精度 87.98%（全 Virchow2 86.89%、UNI2-h 87.67%）；参数 631→474M、FLOPs -35.2%；外部 433 CPTAC 样本 91.22%",
+     "压缩后精度反超全模型与 UNI2-h，即\"越剪越好\""
+    ],
+    "faq": {
+     "problem": "Virchow2 任务自适应块+token 剪枝，参数 -25% 而精度反升 1.1pt",
+     "mechanism": "验证驱动选块→物理移除→输入自适应剪至 70% token→多深度特征恢复+轻量门控任务头",
+     "agentChange": "验证驱动选块→物理移除→输入自适应剪至 70% token→多深度特征恢复+轻量门控任务头",
+     "support": "32 类病理精度 87.98%（全 Virchow2 86.89%、UNI2-h 87.67%）；参数 631→474M、FLOPs -35.2%；外部 433 CPTAC 样本 91.22%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "病理基础模型部署获得效率-精度双优路径"
+   }
+  },
+  {
+   "id": "2609.04196",
+   "version": 1,
+   "title": "Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States",
+   "abstract": "统一多模态模型原生建模物理/几何/外观三态，相机标定 SOTA",
+   "authors": [],
+   "published": "2026-09-05T04:00:00.000Z",
+   "updated": "2026-09-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.04196",
+   "pdf": "https://arxiv.org/pdf/2609.04196",
+   "announceType": "new",
+   "summary": "统一多模态模型原生建模物理/几何/外观三态，相机标定 SOTA",
+   "topic": "计算机视觉与多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.04196"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为物理 AI 世界模型提供免离线管线的统一训练路径",
+   "repository": null,
+   "motivation": "3D 世界生成与重建长期依赖外部离线模块",
+   "coreProblem": "外观生成、相机标定、几何重建割裂，无统一原生 3D 状态",
+   "contributions": [
+    "三原生世界态：物理（重力/纬度）/几何（深度）/外观（图像）+Omni-Camera",
+    "Puffin-16M：1500 万视觉-语言-相机三元组+100 万轨迹",
+    "支撑模仿与自标定探索等闭环应用"
+   ],
+   "innovations": [
+    "首次把重力场与纬度作为模型原生\"物理态\"",
+    "单一生成过程联合合成外观并重建几何",
+    "绝对相机接地，补 Plücker 相对表示缺全局物理锚点"
+   ],
+   "method": "C-RADIO 视觉编码器+Qwen2.5 LLM+SD3.5 扩散骨干联合建模，物理动力学跨未来帧传播",
+   "results": "相机-世界理解 SOTA：Stanford2D3D roll 0.29°（AUC>5° 97.4）、pitch 0.53°、FoV 1.62°，超 GeoCalib 等；代码模型数据全开源",
+   "value": "为物理 AI 世界模型提供免离线管线的统一训练路径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "三原生世界态：物理（重力/纬度）/几何（深度）/外观（图像）+Omni-Camera",
+    "agentChange": "C-RADIO 视觉编码器+Qwen2.5 LLM+SD3.5 扩散骨干联合建模，物理动力学跨未来帧传播",
+    "selfEvolution": null,
+    "evidence": [
+     "相机-世界理解 SOTA：Stanford2D3D roll 0.29°（AUC>5° 97.4）、pitch 0.53°、FoV 1.62°，超 GeoCalib 等；代码模型数据全开源",
+     "单一生成过程联合合成外观并重建几何",
+     "绝对相机接地，补 Plücker 相对表示缺全局物理锚点"
+    ],
+    "faq": {
+     "problem": "统一多模态模型原生建模物理/几何/外观三态，相机标定 SOTA",
+     "mechanism": "C-RADIO 视觉编码器+Qwen2.5 LLM+SD3.5 扩散骨干联合建模，物理动力学跨未来帧传播",
+     "agentChange": "C-RADIO 视觉编码器+Qwen2.5 LLM+SD3.5 扩散骨干联合建模，物理动力学跨未来帧传播",
+     "support": "相机-世界理解 SOTA：Stanford2D3D roll 0.29°（AUC>5° 97.4）、pitch 0.53°、FoV 1.62°，超 GeoCalib 等；代码模型数据全开源",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为物理 AI 世界模型提供免离线管线的统一训练路径"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-09-04",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-09-04 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-09-05T04:00:00.000Z",
+ "totalMatched": 378,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 378
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-09-05",
+ "historical": true
+}

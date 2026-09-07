@@ -1,0 +1,905 @@
+{
+ "papers": [
+  {
+   "id": "2608.05137",
+   "version": 1,
+   "title": "SmartMage: Dynamic Modality Orchestration for 3D Scene Understanding",
+   "abstract": "提出了一种统一的MLLM框架，可根据查询语义动态选择和处理3D多模态输入（RGB、点云、BEV等），而非对所有查询使用固定模态组合。",
+   "authors": [],
+   "published": "2026-08-06T04:00:00.000Z",
+   "updated": "2026-08-06T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2608.05137",
+   "pdf": "https://arxiv.org/pdf/2608.05137",
+   "announceType": "new",
+   "summary": "提出了一种统一的MLLM框架，可根据查询语义动态选择和处理3D多模态输入（RGB、点云、BEV等），而非对所有查询使用固定模态组合。",
+   "topic": "多模态与视觉语言模型 / Multimodal & VLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.05137"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "首次证明了不同3D查询对模态的偏好差异（几何问题偏好点云、外观问题偏好RGB），为自适应多模态推理提供了新范式",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "SMART模块: 基于语义先验、文本-模态对齐和模态质量的自适应模态选择机制，自动为每个查询筛选最相关的模态"
+   ],
+   "innovations": [
+    "MAGE模块: 模态感知门控专家机制，利用模态先验引导MoE中专家激活，实现多模态推理的自适应专业化",
+    "ScanFacet诊断基准: 将3D问答按8种语义类别（颜色、位置、材质等）分类，揭示了模态-语义偏好模式"
+   ],
+   "method": "多模态3D特征提取 → 全局语义引导的模态选择 → 局部模态感知专家路由",
+   "results": "在5个3D场景理解基准（ScanQA、SQA3D、Scan2Cap、ScanRefer、Multi3DRefer）上达到SOTA；在RGB-only视频理解基准（VSI-Bench等）上也保持竞争力",
+   "value": "首次证明了不同3D查询对模态的偏好差异（几何问题偏好点云、外观问题偏好RGB），为自适应多模态推理提供了新范式",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "SMART模块: 基于语义先验、文本-模态对齐和模态质量的自适应模态选择机制，自动为每个查询筛选最相关的模态",
+    "agentChange": "多模态3D特征提取 → 全局语义引导的模态选择 → 局部模态感知专家路由",
+    "selfEvolution": null,
+    "evidence": [
+     "在5个3D场景理解基准（ScanQA、SQA3D、Scan2Cap、ScanRefer、Multi3DRefer）上达到SOTA；在RGB-only视频理解基准（VSI-Bench等）上也保持竞争力",
+     "ScanFacet诊断基准: 将3D问答按8种语义类别（颜色、位置、材质等）分类，揭示了模态-语义偏好模式"
+    ],
+    "faq": {
+     "problem": "提出了一种统一的MLLM框架，可根据查询语义动态选择和处理3D多模态输入（RGB、点云、BEV等），而非对所有查询使用固定模态组合。",
+     "mechanism": "多模态3D特征提取 → 全局语义引导的模态选择 → 局部模态感知专家路由",
+     "agentChange": "多模态3D特征提取 → 全局语义引导的模态选择 → 局部模态感知专家路由",
+     "support": "在5个3D场景理解基准（ScanQA、SQA3D、Scan2Cap、ScanRefer、Multi3DRefer）上达到SOTA；在RGB-only视频理解基准（VSI-Bench等）上也保持竞争力",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "首次证明了不同3D查询对模态的偏好差异（几何问题偏好点云、外观问题偏好RGB），为自适应多模态推理提供了新范式"
+   }
+  },
+  {
+   "id": "2608.05131",
+   "version": 1,
+   "title": "OPD-V: Visual On-Policy Self-Distillation with Modality Balance",
+   "abstract": "发现MLLM推理中存在\"模态不平衡\"问题（文本主导生成），并提出以模态平衡作为特权信息的视觉在策自我蒸馏方法。",
+   "authors": [],
+   "published": "2026-08-06T04:00:00.000Z",
+   "updated": "2026-08-06T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2608.05131",
+   "pdf": "https://arxiv.org/pdf/2608.05131",
+   "announceType": "new",
+   "summary": "发现MLLM推理中存在\"模态不平衡\"问题（文本主导生成），并提出以模态平衡作为特权信息的视觉在策自我蒸馏方法。",
+   "topic": "多模态与视觉语言模型 / Multimodal & VLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.05131"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "揭示了MLLM推理中一个被忽视的关键问题——模态不平衡，并提出了一种无需额外标注的自蒸馏解决方案",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "模态不平衡度量: 提出\"模态平衡注意力比率\"来量化MLLM对文本vs视觉的依赖偏差"
+   ],
+   "innovations": [
+    "正负教师构造: Zoom-In图像作为正教师（增强视觉信息），Mask图像作为负教师（削弱视觉信息），二者的logit差异作为模态平衡信号",
+    "模态平衡信任区域: 基于正负教师logit边际选择值得蒸馏的on-policy token"
+   ],
+   "method": "学生生成轨迹 → 正负教师分别打分 → 计算模态平衡logit边际 → 在信任区域内蒸馏正教师分布",
+   "results": "跨6个基准、4个MLLM骨干（Qwen3.5-4B/9B, Qwen3-VL-4B/8B）、5种后训练方法，OPD-V持续提升推理性能同时降低训练成本",
+   "value": "揭示了MLLM推理中一个被忽视的关键问题——模态不平衡，并提出了一种无需额外标注的自蒸馏解决方案",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "模态不平衡度量: 提出\"模态平衡注意力比率\"来量化MLLM对文本vs视觉的依赖偏差",
+    "agentChange": "学生生成轨迹 → 正负教师分别打分 → 计算模态平衡logit边际 → 在信任区域内蒸馏正教师分布",
+    "selfEvolution": null,
+    "evidence": [
+     "跨6个基准、4个MLLM骨干（Qwen3.5-4B/9B, Qwen3-VL-4B/8B）、5种后训练方法，OPD-V持续提升推理性能同时降低训练成本",
+     "模态平衡信任区域: 基于正负教师logit边际选择值得蒸馏的on-policy token"
+    ],
+    "faq": {
+     "problem": "发现MLLM推理中存在\"模态不平衡\"问题（文本主导生成），并提出以模态平衡作为特权信息的视觉在策自我蒸馏方法。",
+     "mechanism": "学生生成轨迹 → 正负教师分别打分 → 计算模态平衡logit边际 → 在信任区域内蒸馏正教师分布",
+     "agentChange": "学生生成轨迹 → 正负教师分别打分 → 计算模态平衡logit边际 → 在信任区域内蒸馏正教师分布",
+     "support": "跨6个基准、4个MLLM骨干（Qwen3.5-4B/9B, Qwen3-VL-4B/8B）、5种后训练方法，OPD-V持续提升推理性能同时降低训练成本",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "揭示了MLLM推理中一个被忽视的关键问题——模态不平衡，并提出了一种无需额外标注的自蒸馏解决方案"
+   }
+  },
+  {
+   "id": "2608.05000",
+   "version": 1,
+   "title": "Towards Physics of Multimodal Pretraining: Knowledge Flow, Modality Synergy, Early Unification, and Recipes",
+   "abstract": "系统研究统一多模态预训练的基础机制，揭示模态间知识流动、协同/竞争、统一时机等核心规律。",
+   "authors": [],
+   "published": "2026-08-06T04:00:00.000Z",
+   "updated": "2026-08-06T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2608.05000",
+   "pdf": "https://arxiv.org/pdf/2608.05000",
+   "announceType": "new",
+   "summary": "系统研究统一多模态预训练的基础机制，揭示模态间知识流动、协同/竞争、统一时机等核心规律。",
+   "topic": "多模态与视觉语言模型 / Multimodal & VLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.05000"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为统一多模态预训练提供了系统性的理论指导，挑战了\"先训练语言再对齐视觉\"的主流做法",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "发现1（知识流不对称）: 语言是通用增强器，对所有视觉任务有正迁移；视觉理解是生成的强先验；但视觉生成对其他能力中性"
+   ],
+   "innovations": [
+    "发现2（协同vs竞争）: 数据复杂度决定模态间关系——简单任务跨模态增强，复杂任务引发容量竞争；共享attention+归一化可促进协同",
+    "发现3（早期统一必要性）: 推迟视觉整合导致\"视觉惰性\"现象——模型过度依赖语言先验；从训练之初就统一模态效果最好",
+    "发现4（高效配方）: 仅用5%计算预算即可实现强生成性能的预训练配方"
+   ],
+   "method": "1.5B模型控制实验 → 合成数据因果分析 → 13.5B MoE在2T token上大规模验证",
+   "results": "在13.5B MoE模型上验证所有核心发现；高效配方仅用5%计算即可实现强生成性能",
+   "value": "为统一多模态预训练提供了系统性的理论指导，挑战了\"先训练语言再对齐视觉\"的主流做法",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "发现1（知识流不对称）: 语言是通用增强器，对所有视觉任务有正迁移；视觉理解是生成的强先验；但视觉生成对其他能力中性",
+    "agentChange": "1.5B模型控制实验 → 合成数据因果分析 → 13.5B MoE在2T token上大规模验证",
+    "selfEvolution": null,
+    "evidence": [
+     "在13.5B MoE模型上验证所有核心发现；高效配方仅用5%计算即可实现强生成性能",
+     "发现3（早期统一必要性）: 推迟视觉整合导致\"视觉惰性\"现象——模型过度依赖语言先验；从训练之初就统一模态效果最好",
+     "发现4（高效配方）: 仅用5%计算预算即可实现强生成性能的预训练配方"
+    ],
+    "faq": {
+     "problem": "系统研究统一多模态预训练的基础机制，揭示模态间知识流动、协同/竞争、统一时机等核心规律。",
+     "mechanism": "1.5B模型控制实验 → 合成数据因果分析 → 13.5B MoE在2T token上大规模验证",
+     "agentChange": "1.5B模型控制实验 → 合成数据因果分析 → 13.5B MoE在2T token上大规模验证",
+     "support": "在13.5B MoE模型上验证所有核心发现；高效配方仅用5%计算即可实现强生成性能",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "为统一多模态预训练提供了系统性的理论指导，挑战了\"先训练语言再对齐视觉\"的主流做法"
+   }
+  },
+  {
+   "id": "2608.05149",
+   "version": 1,
+   "title": "CoCo-IR: Contextual Composed Image Retrieval",
+   "abstract": "将组合图像检索从单轮扩展到多轮交互对话，提出可变换图像嵌入（TIE）模型和全自主数据引擎。",
+   "authors": [],
+   "published": "2026-08-06T04:00:00.000Z",
+   "updated": "2026-08-06T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2608.05149",
+   "pdf": "https://arxiv.org/pdf/2608.05149",
+   "announceType": "new",
+   "summary": "将组合图像检索从单轮扩展到多轮交互对话，提出可变换图像嵌入（TIE）模型和全自主数据引擎。",
+   "topic": "多模态与视觉语言模型 / Multimodal & VLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.05149"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "填补了多轮交互式视觉搜索的研究空白，为下一代交互式的图像搜索系统奠定基础",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "CoCo-IR新任务: 将指令基图像检索建模为交互式多轮对话，用户可基于历史结果逐步细化搜索"
+   ],
+   "innovations": [
+    "Transformable Image Embedding (TIE): LMM作为上下文感知推理器，理解完整对话历史生成随轮次演化的图像嵌入",
+    "全自主数据引擎: 利用LMM生成高质量多轮检索数据，结合模型引导验证挖掘困难负样本"
+   ],
+   "method": "对话历史编码 → 可变换图像嵌入生成 → 多轮上下文感知的检索匹配",
+   "results": "CIRCO单轮基准39.4 mAP@5达到SOTA；新CoCo-IR多轮基准44.1 R@1（4轮对话），远超现有方法28.2 R@1",
+   "value": "填补了多轮交互式视觉搜索的研究空白，为下一代交互式的图像搜索系统奠定基础",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "CoCo-IR新任务: 将指令基图像检索建模为交互式多轮对话，用户可基于历史结果逐步细化搜索",
+    "agentChange": "对话历史编码 → 可变换图像嵌入生成 → 多轮上下文感知的检索匹配",
+    "selfEvolution": null,
+    "evidence": [
+     "CIRCO单轮基准39.4 mAP@5达到SOTA；新CoCo-IR多轮基准44.1 R@1（4轮对话），远超现有方法28.2 R@1",
+     "全自主数据引擎: 利用LMM生成高质量多轮检索数据，结合模型引导验证挖掘困难负样本"
+    ],
+    "faq": {
+     "problem": "将组合图像检索从单轮扩展到多轮交互对话，提出可变换图像嵌入（TIE）模型和全自主数据引擎。",
+     "mechanism": "对话历史编码 → 可变换图像嵌入生成 → 多轮上下文感知的检索匹配",
+     "agentChange": "对话历史编码 → 可变换图像嵌入生成 → 多轮上下文感知的检索匹配",
+     "support": "CIRCO单轮基准39.4 mAP@5达到SOTA；新CoCo-IR多轮基准44.1 R@1（4轮对话），远超现有方法28.2 R@1",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "填补了多轮交互式视觉搜索的研究空白，为下一代交互式的图像搜索系统奠定基础"
+   }
+  },
+  {
+   "id": "2604.14888",
+   "version": 1,
+   "title": "Reasoning Dynamics and the Limits of Monitoring Modality Reliance in Vision-Language Models",
+   "abstract": "分析18个VLM的推理动态，发现模型容易\"答案惯性\"（早期承诺被强化而非修正），且CoT只能部分反映模态依赖。",
+   "authors": [],
+   "published": "2026-08-06T04:00:00.000Z",
+   "updated": "2026-08-06T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2604.14888",
+   "pdf": "https://arxiv.org/pdf/2604.14888",
+   "announceType": "new",
+   "summary": "分析18个VLM的推理动态，发现模型容易\"答案惯性\"（早期承诺被强化而非修正），且CoT只能部分反映模态依赖。",
+   "topic": "多模态与视觉语言模型 / Multimodal & VLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2604.14888"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "揭示了VLM推理透明度的根本局限性——CoT不能完全反映驱动决策的真实模态，对多模态系统的安全性和可解释性有重要启示",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "答案惯性发现: VLM在推理早期就已形成预测，后续CoT步骤主要强化而非修正这一预测"
+   ],
+   "innovations": [
+    "推理训练模型的双面性: 虽显示更强修正行为，但其更长、更流畅的CoT可能掩盖实际的文本依赖，使监控更困难",
+    "指令调优模型的矛盾: 虽较少显式引用文本提示，但其较短的CoT更易暴露与视觉输入的不一致"
+   ],
+   "method": "在MathVerse、PhyX、ScienceQA上评估18个VLM；注入误导性文本提示进行干预实验；追踪CoT置信度轨迹",
+   "results": "跨两个模型家族的18个VLM的系统分析；证明误导性文本提示即使在视觉证据充足时也能影响模型决策",
+   "value": "揭示了VLM推理透明度的根本局限性——CoT不能完全反映驱动决策的真实模态，对多模态系统的安全性和可解释性有重要启示",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "答案惯性发现: VLM在推理早期就已形成预测，后续CoT步骤主要强化而非修正这一预测",
+    "agentChange": "在MathVerse、PhyX、ScienceQA上评估18个VLM；注入误导性文本提示进行干预实验；追踪CoT置信度轨迹",
+    "selfEvolution": null,
+    "evidence": [
+     "跨两个模型家族的18个VLM的系统分析；证明误导性文本提示即使在视觉证据充足时也能影响模型决策",
+     "指令调优模型的矛盾: 虽较少显式引用文本提示，但其较短的CoT更易暴露与视觉输入的不一致"
+    ],
+    "faq": {
+     "problem": "分析18个VLM的推理动态，发现模型容易\"答案惯性\"（早期承诺被强化而非修正），且CoT只能部分反映模态依赖。",
+     "mechanism": "在MathVerse、PhyX、ScienceQA上评估18个VLM；注入误导性文本提示进行干预实验；追踪CoT置信度轨迹",
+     "agentChange": "在MathVerse、PhyX、ScienceQA上评估18个VLM；注入误导性文本提示进行干预实验；追踪CoT置信度轨迹",
+     "support": "跨两个模型家族的18个VLM的系统分析；证明误导性文本提示即使在视觉证据充足时也能影响模型决策",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "揭示了VLM推理透明度的根本局限性——CoT不能完全反映驱动决策的真实模态，对多模态系统的安全性和可解释性有重要启示"
+   }
+  },
+  {
+   "id": "2608.04935",
+   "version": 1,
+   "title": "Unleashing the Potential of Vision-Language Models for Generalizable AI-Generated Image Detection",
+   "abstract": "发现VLM Perception Encoder比DINOv3更适合AIGC检测，提出语义原型校准（SPC）方法实现更强的跨生成器泛化。",
+   "authors": [],
+   "published": "2026-08-06T04:00:00.000Z",
+   "updated": "2026-08-06T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2608.04935",
+   "pdf": "https://arxiv.org/pdf/2608.04935",
+   "announceType": "new",
+   "summary": "发现VLM Perception Encoder比DINOv3更适合AIGC检测，提出语义原型校准（SPC）方法实现更强的跨生成器泛化。",
+   "topic": "多模态与视觉语言模型 / Multimodal & VLM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.04935"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "挑战了DINOv3作为AIGC检测主导基线的地位，展示了语言对齐VLM在法证任务中的独特优势",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "PE vs DINOv3潜力分析: PE的语言对齐表征保留了更高层的来源语义，其冻结特征空间具有更强的局部来源组织性"
+   ],
+   "innovations": [
+    "语义原型校准（SPC）: 从法证语义信息构建类别原型并用监督数据校准，充分利用PE的语义结构",
+    "简单设计强泛化: SPC的简洁性使其跨生成器、后处理和野外场景都表现出更强的泛化能力"
+   ],
+   "method": "PE冻结特征空间 → 语义原型构建 → SPC校准 → 线性探测",
+   "results": "在跨生成器、后处理和in-the-wild基准上，PE-SPC超越DINOv3基线达到新SOTA（PE-Linear比DINOv3-Linear低4.1%）",
+   "value": "挑战了DINOv3作为AIGC检测主导基线的地位，展示了语言对齐VLM在法证任务中的独特优势",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "PE vs DINOv3潜力分析: PE的语言对齐表征保留了更高层的来源语义，其冻结特征空间具有更强的局部来源组织性",
+    "agentChange": "PE冻结特征空间 → 语义原型构建 → SPC校准 → 线性探测",
+    "selfEvolution": null,
+    "evidence": [
+     "在跨生成器、后处理和in-the-wild基准上，PE-SPC超越DINOv3基线达到新SOTA（PE-Linear比DINOv3-Linear低4.1%）",
+     "简单设计强泛化: SPC的简洁性使其跨生成器、后处理和野外场景都表现出更强的泛化能力"
+    ],
+    "faq": {
+     "problem": "发现VLM Perception Encoder比DINOv3更适合AIGC检测，提出语义原型校准（SPC）方法实现更强的跨生成器泛化。",
+     "mechanism": "PE冻结特征空间 → 语义原型构建 → SPC校准 → 线性探测",
+     "agentChange": "PE冻结特征空间 → 语义原型构建 → SPC校准 → 线性探测",
+     "support": "在跨生成器、后处理和in-the-wild基准上，PE-SPC超越DINOv3基线达到新SOTA（PE-Linear比DINOv3-Linear低4.1%）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "挑战了DINOv3作为AIGC检测主导基线的地位，展示了语言对齐VLM在法证任务中的独特优势"
+   }
+  },
+  {
+   "id": "2608.04995",
+   "version": 1,
+   "title": "Promptable Animal Pose Tracking Across Species",
+   "abstract": "利用视觉基础模型实现跨物种动物姿态跟踪，提供有监督（高精度）和无监督（强泛化）两条路线。",
+   "authors": [],
+   "published": "2026-08-06T04:00:00.000Z",
+   "updated": "2026-08-06T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2608.04995",
+   "pdf": "https://arxiv.org/pdf/2608.04995",
+   "announceType": "new",
+   "summary": "利用视觉基础模型实现跨物种动物姿态跟踪，提供有监督（高精度）和无监督（强泛化）两条路线。",
+   "topic": "计算机视觉 / Computer Vision",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.04995"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为野生动物监测和保护提供实用的动物行为分析工具，减少对大规模标注的依赖",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "有监督路线: 关键帧提示编码器将参考帧的结构先验显式注入特征匹配，实现高精度跟踪"
+   ],
+   "innovations": [
+    "无监督路线: 利用DINOv3、Diffusion Hyperfeatures等多种基础模型特征进行免训练对应匹配，实现跨物种鲁棒性",
+    "精度-泛化平衡: 两条路线互补——有监督路线在遮挡和外观变化下表现更好，无监督路线在类别迁移上更强"
+   ],
+   "method": "视频帧 → 基础模型提取密集特征 → 监督/无监督特征匹配 → 关键点轨迹估计",
+   "results": "在APTv2（30个物种）和TigDog基准上实现强性能；有监督路线在挑战性场景（遮挡、歧义）下精度显著优于现有方法",
+   "value": "为野生动物监测和保护提供实用的动物行为分析工具，减少对大规模标注的依赖",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "有监督路线: 关键帧提示编码器将参考帧的结构先验显式注入特征匹配，实现高精度跟踪",
+    "agentChange": "视频帧 → 基础模型提取密集特征 → 监督/无监督特征匹配 → 关键点轨迹估计",
+    "selfEvolution": null,
+    "evidence": [
+     "在APTv2（30个物种）和TigDog基准上实现强性能；有监督路线在挑战性场景（遮挡、歧义）下精度显著优于现有方法",
+     "精度-泛化平衡: 两条路线互补——有监督路线在遮挡和外观变化下表现更好，无监督路线在类别迁移上更强"
+    ],
+    "faq": {
+     "problem": "利用视觉基础模型实现跨物种动物姿态跟踪，提供有监督（高精度）和无监督（强泛化）两条路线。",
+     "mechanism": "视频帧 → 基础模型提取密集特征 → 监督/无监督特征匹配 → 关键点轨迹估计",
+     "agentChange": "视频帧 → 基础模型提取密集特征 → 监督/无监督特征匹配 → 关键点轨迹估计",
+     "support": "在APTv2（30个物种）和TigDog基准上实现强性能；有监督路线在挑战性场景（遮挡、歧义）下精度显著优于现有方法",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为野生动物监测和保护提供实用的动物行为分析工具，减少对大规模标注的依赖"
+   }
+  },
+  {
+   "id": "2608.05136",
+   "version": 1,
+   "title": "The Loss Does Not See the Basis, but Adam Does",
+   "abstract": "从规范对称性视角解释了GD和Adam在分解模型中隐式正则化行为的根本差异——坐标自适应破坏了低秩归纳偏置。",
+   "authors": [],
+   "published": "2026-08-06T04:00:00.000Z",
+   "updated": "2026-08-06T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2608.05136",
+   "pdf": "https://arxiv.org/pdf/2608.05136",
+   "announceType": "new",
+   "summary": "从规范对称性视角解释了GD和Adam在分解模型中隐式正则化行为的根本差异——坐标自适应破坏了低秩归纳偏置。",
+   "topic": "基础理论与优化 / Theory & Optimization",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.05136"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "揭示了优化器选择的深层含义——不只是调参细节，而是决定了模型选择哪种插值解，为Transformer训练中Adam的广泛使用提供了理论反思",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "规范等变性分类器: 提出\"规范等变性\"作为判断优化器是否保持低秩偏置的判据——GD、动量、共享标量Adam、Muon满足；标准Adam、RMSProp不满足"
+   ],
+   "innovations": [
+    "结构定理: 记忆无等变性规则恰为Gram确定的左预条件器",
+    "注意力头中的规范对称: Adam在第一步就分离两个等价的初始化，最终导致per-head不变量相差56%"
+   ],
+   "method": "理论分析规范对称性 → 9种优化器在矩阵感知任务上的排序实验 → Transformer注意力头验证 → 高光谱数据集验证",
+   "results": "在两个高光谱数据集上匹配训练损失时，GD在最低采样密度下将测试误差降低43-44%；从坐标自适应到共享标量的连续体单调恢复低秩偏置",
+   "value": "揭示了优化器选择的深层含义——不只是调参细节，而是决定了模型选择哪种插值解，为Transformer训练中Adam的广泛使用提供了理论反思",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "规范等变性分类器: 提出\"规范等变性\"作为判断优化器是否保持低秩偏置的判据——GD、动量、共享标量Adam、Muon满足；标准Adam、RMSProp不满足",
+    "agentChange": "理论分析规范对称性 → 9种优化器在矩阵感知任务上的排序实验 → Transformer注意力头验证 → 高光谱数据集验证",
+    "selfEvolution": null,
+    "evidence": [
+     "在两个高光谱数据集上匹配训练损失时，GD在最低采样密度下将测试误差降低43-44%；从坐标自适应到共享标量的连续体单调恢复低秩偏置",
+     "注意力头中的规范对称: Adam在第一步就分离两个等价的初始化，最终导致per-head不变量相差56%"
+    ],
+    "faq": {
+     "problem": "从规范对称性视角解释了GD和Adam在分解模型中隐式正则化行为的根本差异——坐标自适应破坏了低秩归纳偏置。",
+     "mechanism": "理论分析规范对称性 → 9种优化器在矩阵感知任务上的排序实验 → Transformer注意力头验证 → 高光谱数据集验证",
+     "agentChange": "理论分析规范对称性 → 9种优化器在矩阵感知任务上的排序实验 → Transformer注意力头验证 → 高光谱数据集验证",
+     "support": "在两个高光谱数据集上匹配训练损失时，GD在最低采样密度下将测试误差降低43-44%；从坐标自适应到共享标量的连续体单调恢复低秩偏置",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "揭示了优化器选择的深层含义——不只是调参细节，而是决定了模型选择哪种插值解，为Transformer训练中Adam的广泛使用提供了理论反思"
+   }
+  },
+  {
+   "id": "2608.05103",
+   "version": 1,
+   "title": "Multimodal Spatiotemporal Atmospheric Data Assimilation with Latent Flow-matching",
+   "abstract": "用潜在视频流匹配替代传统数据同化方法，从稀疏观测中生成时空一致的大气全状态轨迹和集合预报。",
+   "authors": [],
+   "published": "2026-08-06T04:00:00.000Z",
+   "updated": "2026-08-06T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2608.05103",
+   "pdf": "https://arxiv.org/pdf/2608.05103",
+   "announceType": "new",
+   "summary": "用潜在视频流匹配替代传统数据同化方法，从稀疏观测中生成时空一致的大气全状态轨迹和集合预报。",
+   "topic": "科学AI / Scientific AI",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.05103"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为大气科学提供了一种从根本上不同的数据同化方法，将生成AI与气象预报深度结合",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "统一数据同化框架: 用潜在视频流匹配从ERA5先验中采样时空一致的轨迹，无需显式的数值天气预报模型"
+   ],
+   "innovations": [
+    "多模态观测融合: 支持从NOAA高空探空和地表数据库等多种观测源进行后验采样",
+    "灵活的任务切换: 同一模型只需改变观测帧即可执行滤波、平滑等多种数据同化任务"
+   ],
+   "method": "ERA5自编码器压缩 → 潜在流匹配训练先验 → 后验采样同化真实观测 → 全状态集合预报",
+   "results": "从稀疏观测直接生成全状态集合预报，性能与最先进的观测到预报模型相当；消融研究确定了推荐的采样超参数",
+   "value": "为大气科学提供了一种从根本上不同的数据同化方法，将生成AI与气象预报深度结合",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "统一数据同化框架: 用潜在视频流匹配从ERA5先验中采样时空一致的轨迹，无需显式的数值天气预报模型",
+    "agentChange": "ERA5自编码器压缩 → 潜在流匹配训练先验 → 后验采样同化真实观测 → 全状态集合预报",
+    "selfEvolution": null,
+    "evidence": [
+     "从稀疏观测直接生成全状态集合预报，性能与最先进的观测到预报模型相当；消融研究确定了推荐的采样超参数",
+     "灵活的任务切换: 同一模型只需改变观测帧即可执行滤波、平滑等多种数据同化任务"
+    ],
+    "faq": {
+     "problem": "用潜在视频流匹配替代传统数据同化方法，从稀疏观测中生成时空一致的大气全状态轨迹和集合预报。",
+     "mechanism": "ERA5自编码器压缩 → 潜在流匹配训练先验 → 后验采样同化真实观测 → 全状态集合预报",
+     "agentChange": "ERA5自编码器压缩 → 潜在流匹配训练先验 → 后验采样同化真实观测 → 全状态集合预报",
+     "support": "从稀疏观测直接生成全状态集合预报，性能与最先进的观测到预报模型相当；消融研究确定了推荐的采样超参数",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为大气科学提供了一种从根本上不同的数据同化方法，将生成AI与气象预报深度结合"
+   }
+  },
+  {
+   "id": "2608.05076",
+   "version": 1,
+   "title": "MultiPathFormer: Towards a Foundation Model for Multipath Wireless Propagation",
+   "abstract": "提出以多径传播为基础预训练对象的无线基础模型，在信道估计、波束预测、定位等下游任务上超越现有SOTA。",
+   "authors": [],
+   "published": "2026-08-06T04:00:00.000Z",
+   "updated": "2026-08-06T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2608.05076",
+   "pdf": "https://arxiv.org/pdf/2608.05076",
+   "announceType": "new",
+   "summary": "提出以多径传播为基础预训练对象的无线基础模型，在信道估计、波束预测、定位等下游任务上超越现有SOTA。",
+   "topic": "科学AI / Scientific AI",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.05076"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "首次证明路径级预训练可学习可复用的无线传播表征，为无线通信领域的基础模型提供了新方向",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "路径级预训练: 将每条发射-接收链路表示为连续值路径token序列，以\"下一路径预测\"为自回归预训练目标"
+   ],
+   "innovations": [
+    "环境RAG机制: 检索增强生成机制利用环境知识改进路径统计估计（延迟和功率提升达59%）",
+    "零样本迁移能力: 在27个环境预训练后可迁移到未见用户，场景微调优于从零训练"
+   ],
+   "method": "多径参数token化 → 自回归Transformer预训练 → 环境RAG增强 → 适配器微调下游任务",
+   "results": "定位误差5.57m均值、Top-3波束准确率0.914、LOS分类准确率0.994、信道估计NMSE 0.561",
+   "value": "首次证明路径级预训练可学习可复用的无线传播表征，为无线通信领域的基础模型提供了新方向",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "路径级预训练: 将每条发射-接收链路表示为连续值路径token序列，以\"下一路径预测\"为自回归预训练目标",
+    "agentChange": "多径参数token化 → 自回归Transformer预训练 → 环境RAG增强 → 适配器微调下游任务",
+    "selfEvolution": null,
+    "evidence": [
+     "定位误差5.57m均值、Top-3波束准确率0.914、LOS分类准确率0.994、信道估计NMSE 0.561",
+     "零样本迁移能力: 在27个环境预训练后可迁移到未见用户，场景微调优于从零训练"
+    ],
+    "faq": {
+     "problem": "提出以多径传播为基础预训练对象的无线基础模型，在信道估计、波束预测、定位等下游任务上超越现有SOTA。",
+     "mechanism": "多径参数token化 → 自回归Transformer预训练 → 环境RAG增强 → 适配器微调下游任务",
+     "agentChange": "多径参数token化 → 自回归Transformer预训练 → 环境RAG增强 → 适配器微调下游任务",
+     "support": "定位误差5.57m均值、Top-3波束准确率0.914、LOS分类准确率0.994、信道估计NMSE 0.561",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "首次证明路径级预训练可学习可复用的无线传播表征，为无线通信领域的基础模型提供了新方向"
+   }
+  },
+  {
+   "id": "2607.29677",
+   "version": 1,
+   "title": "ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction",
+   "abstract": "首个同时评估值准确率、记录完整性、溯源和成本的Schema引导文档提取基准，揭示VLM与编码代理的质量-成本权衡。",
+   "authors": [],
+   "published": "2026-08-06T04:00:00.000Z",
+   "updated": "2026-08-06T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2607.29677",
+   "pdf": "https://arxiv.org/pdf/2607.29677",
+   "announceType": "new",
+   "summary": "首个同时评估值准确率、记录完整性、溯源和成本的Schema引导文档提取基准，揭示VLM与编码代理的质量-成本权衡。",
+   "topic": "基准与评测 / Benchmark & Evaluation",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.29677"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为企业级文档提取提供了第一个全面的评估框架，明确了不同方法的质量-成本边界",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "全面评估体系: 4,869页/370文档/67类型/8领域，首次联合评估值F1、记录完整性、字/页级溯源F1和成本"
+   ],
+   "innovations": [
+    "挑战标签系统: 明确标注长文档、密集模式、扫描件、手写体等挑战场景",
+    "质量-成本前沿: 揭示直接VLM提取便宜但常截断长记录、编码代理更鲁棒但成本高的权衡"
+   ],
+   "method": "可扩展Schema和真值生成管道（独立系统一致性+已知值+人工验证）→ 14个系统评估",
+   "results": "LlamaExtract Agentic Plus在所有三个指标上排名第一；VLM在短文档表现好但长文档截断；编码代理准确但成本高",
+   "value": "为企业级文档提取提供了第一个全面的评估框架，明确了不同方法的质量-成本边界",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "全面评估体系: 4,869页/370文档/67类型/8领域，首次联合评估值F1、记录完整性、字/页级溯源F1和成本",
+    "agentChange": "可扩展Schema和真值生成管道（独立系统一致性+已知值+人工验证）→ 14个系统评估",
+    "selfEvolution": null,
+    "evidence": [
+     "LlamaExtract Agentic Plus在所有三个指标上排名第一；VLM在短文档表现好但长文档截断；编码代理准确但成本高",
+     "质量-成本前沿: 揭示直接VLM提取便宜但常截断长记录、编码代理更鲁棒但成本高的权衡"
+    ],
+    "faq": {
+     "problem": "首个同时评估值准确率、记录完整性、溯源和成本的Schema引导文档提取基准，揭示VLM与编码代理的质量-成本权衡。",
+     "mechanism": "可扩展Schema和真值生成管道（独立系统一致性+已知值+人工验证）→ 14个系统评估",
+     "agentChange": "可扩展Schema和真值生成管道（独立系统一致性+已知值+人工验证）→ 14个系统评估",
+     "support": "LlamaExtract Agentic Plus在所有三个指标上排名第一；VLM在短文档表现好但长文档截断；编码代理准确但成本高",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为企业级文档提取提供了第一个全面的评估框架，明确了不同方法的质量-成本边界"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-08-05",
+  "newCount": 11,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-08-05 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-08-06T04:00:00.000Z",
+ "totalMatched": 11,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 11
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-08-06",
+ "historical": true
+}

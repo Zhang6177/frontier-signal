@@ -1,0 +1,1041 @@
+{
+ "papers": [
+  {
+   "id": "2609.01060",
+   "version": 1,
+   "title": "Lightweight Interpretable RGB-Guided Hyperspectral Super-Resolution under Real Cross-resolution Misalignment",
+   "abstract": "面向近场双相机真实错位的RGB引导高光谱超分，置信门控细节注入",
+   "authors": [],
+   "published": "2026-09-02T04:00:00.000Z",
+   "updated": "2026-09-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.01060",
+   "pdf": "https://arxiv.org/pdf/2609.01060",
+   "announceType": "new",
+   "summary": "面向近场双相机真实错位的RGB引导高光谱超分，置信门控细节注入",
+   "topic": "遥感与高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.01060"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让低成本双相机HSR在真实错位下可靠落地",
+   "repository": null,
+   "motivation": "快照高光谱相机空间分辨率低，需高分RGB引导超分",
+   "coreProblem": "近场双相机存在视差/遮挡与跨分辨率错位，现有方法假设精确对齐",
+   "contributions": [
+    "将近场失配HSR建模为置信感知的配准-融合问题",
+    "提出可解释能量置信图（几何有效性+双向流一致性）",
+    "置信加权WLS光谱回归+Tikhonov正则扩展GSA框架"
+   ],
+   "innovations": [
+    "首次显式建模近场跨分辨率错位（突破远场遥感无旁向假设）",
+    "置信门控在HSI保持上采样估计与RGB引导估计间注入细节",
+    "免重训直接部署至51波段全VIS-NIR支持"
+   ],
+   "method": "估计RGB warping的置信图抑制不可靠区域，再做带权GSA光谱回归与门控细节注入，纯模型法轻量可解释",
+   "results": "自采集Ultris-SR5+RPi数据上×4：RMSE 0.0168、mPSNR 37.34dB、mSSIM 0.94、SAM 2.17°四项全优，较无门控变体RMSE降约33%，优于SSC-HSR/HSIFN/ESSAformer",
+   "value": "让低成本双相机HSR在真实错位下可靠落地",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "将近场失配HSR建模为置信感知的配准-融合问题",
+    "agentChange": "估计RGB warping的置信图抑制不可靠区域，再做带权GSA光谱回归与门控细节注入，纯模型法轻量可解释",
+    "selfEvolution": null,
+    "evidence": [
+     "自采集Ultris-SR5+RPi数据上×4：RMSE 0.0168、mPSNR 37.34dB、mSSIM 0.94、SAM 2.17°四项全优，较无门控变体RMSE降约33%，优于SSC-HSR/HSIFN/ESSAformer",
+     "置信门控在HSI保持上采样估计与RGB引导估计间注入细节",
+     "免重训直接部署至51波段全VIS-NIR支持"
+    ],
+    "faq": {
+     "problem": "面向近场双相机真实错位的RGB引导高光谱超分，置信门控细节注入",
+     "mechanism": "估计RGB warping的置信图抑制不可靠区域，再做带权GSA光谱回归与门控细节注入，纯模型法轻量可解释",
+     "agentChange": "估计RGB warping的置信图抑制不可靠区域，再做带权GSA光谱回归与门控细节注入，纯模型法轻量可解释",
+     "support": "自采集Ultris-SR5+RPi数据上×4：RMSE 0.0168、mPSNR 37.34dB、mSSIM 0.94、SAM 2.17°四项全优，较无门控变体RMSE降约33%，优于SSC-HSR/HSIFN/ESSAformer",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "让低成本双相机HSR在真实错位下可靠落地"
+   }
+  },
+  {
+   "id": "2608.30817",
+   "version": 1,
+   "title": "A Composition-Aware Pretraining Framework for Geospatial Foundation Models",
+   "abstract": "用地表组分纹理直方图预训练地理空间基础模型，检索mAP@10升20.5%",
+   "authors": [],
+   "published": "2026-09-02T04:00:00.000Z",
+   "updated": "2026-09-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.30817",
+   "pdf": "https://arxiv.org/pdf/2608.30817",
+   "announceType": "new",
+   "summary": "用地表组分纹理直方图预训练地理空间基础模型，检索mAP@10升20.5%",
+   "topic": "遥感与高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.30817"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为地理空间基础模型提供组分感知的预训练新范式",
+   "repository": null,
+   "motivation": "卫星影像天然是多地表组分混合，单概念视角预训练失真",
+   "coreProblem": "MAE/对比学习预训练以单一概念处理影像，无法建模组分混合",
+   "contributions": [
+    "提出\"composition vector\"（组分覆盖纹理直方图）预训练目标",
+    "EMD蒸馏+MIL-NCE辅助损失的稳健损失组合",
+    "在Mamba架构DynamicVis上验证小模型超越大模型"
+   ],
+   "innovations": [
+    "首次把组分直方图显式编码为地理空间预训练监督信号",
+    "36.8M参数超越SatMAE(303M)与Prithvi-EO-2.0(600M)区域级任务",
+    "零样本迁移检索/分类/变化检测，无需下游微调"
+   ],
+   "method": "每个影像单元映射为组分纹理直方图，用EMD度量+多实例对比损失训练Mamba编码器学习组分间语义距离",
+   "results": "AID零样本检索mAP@10 0.670→0.808（相对+20.5%），UC Merced分类0.928（基线0.864），NWPU-RESISC45达81.60%（DynamicVis-B 69.2%）",
+   "value": "为地理空间基础模型提供组分感知的预训练新范式",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出\"composition vector\"（组分覆盖纹理直方图）预训练目标",
+    "agentChange": "每个影像单元映射为组分纹理直方图，用EMD度量+多实例对比损失训练Mamba编码器学习组分间语义距离",
+    "selfEvolution": null,
+    "evidence": [
+     "AID零样本检索mAP@10 0.670→0.808（相对+20.5%），UC Merced分类0.928（基线0.864），NWPU-RESISC45达81.60%（DynamicVis-B 69.2%）",
+     "36.8M参数超越SatMAE(303M)与Prithvi-EO-2.0(600M)区域级任务",
+     "零样本迁移检索/分类/变化检测，无需下游微调"
+    ],
+    "faq": {
+     "problem": "用地表组分纹理直方图预训练地理空间基础模型，检索mAP@10升20.5%",
+     "mechanism": "每个影像单元映射为组分纹理直方图，用EMD度量+多实例对比损失训练Mamba编码器学习组分间语义距离",
+     "agentChange": "每个影像单元映射为组分纹理直方图，用EMD度量+多实例对比损失训练Mamba编码器学习组分间语义距离",
+     "support": "AID零样本检索mAP@10 0.670→0.808（相对+20.5%），UC Merced分类0.928（基线0.864），NWPU-RESISC45达81.60%（DynamicVis-B 69.2%）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "为地理空间基础模型提供组分感知的预训练新范式"
+   }
+  },
+  {
+   "id": "2609.00968",
+   "version": 1,
+   "title": "ReFlowSET: Representation-Aligned Latent Flow Matching for SAR-to-EO Image Translation",
+   "abstract": "系统评测VAE重建上限并用FLUX.2隐空间流匹配做SAR到EO翻译",
+   "authors": [],
+   "published": "2026-09-02T04:00:00.000Z",
+   "updated": "2026-09-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.00968",
+   "pdf": "https://arxiv.org/pdf/2609.00968",
+   "announceType": "new",
+   "summary": "系统评测VAE重建上限并用FLUX.2隐空间流匹配做SAR到EO翻译",
+   "topic": "遥感与高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.00968"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "揭示编解码器选择是被忽视的SAR-EO翻译关键设计",
+   "repository": null,
+   "motivation": "SAR影像难解读，SAR→EO翻译可在无光学数据时辅助判读",
+   "coreProblem": "现有潜空间方法沿用SD2.1固定编解码器，未验证其跨模态适配性",
+   "contributions": [
+    "系统评测6种预训练VAE在SAR/EO上的重建上限",
+    "提出ReFlowSET：双路SAR条件的潜空间流匹配框架",
+    "仅训练期用EO派生VFM表示对齐，推理零开销"
+   ],
+   "innovations": [
+    "首次量化SAR/EO编解码器重建上限（FLUX.2均值较SD2.1高7.49dB）",
+    "证明仅换编解码器即大幅提升（QXS FID 25.5→19.1）",
+    "训练期VFM对齐替代复杂推理期条件注入"
+   ],
+   "method": "选FLUX.2 VAE作潜空间，双流注入SAR条件，训练时向EO侧VFM特征对齐，流匹配生成EO目标",
+   "results": "SAR2Opt上FID 71.8→66.3（相对-7.7%）、DISTS 0.211→0.185（-12.3%）、LPIPS最优；QXS-SAROPT FID 25.5→19.1",
+   "value": "揭示编解码器选择是被忽视的SAR-EO翻译关键设计",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "系统评测6种预训练VAE在SAR/EO上的重建上限",
+    "agentChange": "选FLUX.2 VAE作潜空间，双流注入SAR条件，训练时向EO侧VFM特征对齐，流匹配生成EO目标",
+    "selfEvolution": null,
+    "evidence": [
+     "SAR2Opt上FID 71.8→66.3（相对-7.7%）、DISTS 0.211→0.185（-12.3%）、LPIPS最优；QXS-SAROPT FID 25.5→19.1",
+     "证明仅换编解码器即大幅提升（QXS FID 25.5→19.1）",
+     "训练期VFM对齐替代复杂推理期条件注入"
+    ],
+    "faq": {
+     "problem": "系统评测VAE重建上限并用FLUX.2隐空间流匹配做SAR到EO翻译",
+     "mechanism": "选FLUX.2 VAE作潜空间，双流注入SAR条件，训练时向EO侧VFM特征对齐，流匹配生成EO目标",
+     "agentChange": "选FLUX.2 VAE作潜空间，双流注入SAR条件，训练时向EO侧VFM特征对齐，流匹配生成EO目标",
+     "support": "SAR2Opt上FID 71.8→66.3（相对-7.7%）、DISTS 0.211→0.185（-12.3%）、LPIPS最优；QXS-SAROPT FID 25.5→19.1",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "揭示编解码器选择是被忽视的SAR-EO翻译关键设计"
+   }
+  },
+  {
+   "id": "2609.00712",
+   "version": 1,
+   "title": "EarthLD: Towards Unified Open-World Landslide Understanding via Vision-Language Guided Diffusion Models",
+   "abstract": "视觉语言引导的变分扩散框架统一滑坡识别/测绘/触发解释",
+   "authors": [],
+   "published": "2026-09-02T04:00:00.000Z",
+   "updated": "2026-09-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.00712",
+   "pdf": "https://arxiv.org/pdf/2609.00712",
+   "announceType": "new",
+   "summary": "视觉语言引导的变分扩散框架统一滑坡识别/测绘/触发解释",
+   "topic": "遥感与高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.00712"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为全球地质灾害监测提供可扩展统一框架",
+   "repository": null,
+   "motivation": "滑坡形态不规则、跨平台域差大，全球自动检测困难",
+   "coreProblem": "现有方法难兼顾不规则形态识别、跨传感器域偏移与不确定度量",
+   "contributions": [
+    "EarthLD统一框架：识别+范围测绘+触发解释+统计报告",
+    "构建全球开放世界滑坡基准（6洲17国28区）",
+    "生成式预训练支持迁移学习连续强化"
+   ],
+   "innovations": [
+    "将滑坡理解重构为逐步去噪的扩散过程（范式转变）",
+    "检测框引导的二值语义分割实现像素级测绘",
+    "光学到SAR跨模态迁移的滑坡检测"
+   ],
+   "method": "CLIP引导变分扩散模型做置信感知检测，BiFPN多尺度特征精炼去噪，proposal-guided分割完成测绘",
+   "results": "10个全球区域基准上检测与测绘均达最优，超过DINO/YOLOv11/DiffusionDet/SegFormer/DINOv2等12个基线（具体数值见原文图5-7）；可迁移SAR与大尺度影像",
+   "value": "为全球地质灾害监测提供可扩展统一框架",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "EarthLD统一框架：识别+范围测绘+触发解释+统计报告",
+    "agentChange": "CLIP引导变分扩散模型做置信感知检测，BiFPN多尺度特征精炼去噪，proposal-guided分割完成测绘",
+    "selfEvolution": null,
+    "evidence": [
+     "10个全球区域基准上检测与测绘均达最优，超过DINO/YOLOv11/DiffusionDet/SegFormer/DINOv2等12个基线（具体数值见原文图5-7）；可迁移SAR与大尺度影像",
+     "检测框引导的二值语义分割实现像素级测绘",
+     "光学到SAR跨模态迁移的滑坡检测"
+    ],
+    "faq": {
+     "problem": "视觉语言引导的变分扩散框架统一滑坡识别/测绘/触发解释",
+     "mechanism": "CLIP引导变分扩散模型做置信感知检测，BiFPN多尺度特征精炼去噪，proposal-guided分割完成测绘",
+     "agentChange": "CLIP引导变分扩散模型做置信感知检测，BiFPN多尺度特征精炼去噪，proposal-guided分割完成测绘",
+     "support": "10个全球区域基准上检测与测绘均达最优，超过DINO/YOLOv11/DiffusionDet/SegFormer/DINOv2等12个基线（具体数值见原文图5-7）；可迁移SAR与大尺度影像",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "为全球地质灾害监测提供可扩展统一框架"
+   }
+  },
+  {
+   "id": "2609.00628",
+   "version": 1,
+   "title": "Restrict, Don't Retrain: Inference-Time VLM Guidance for Zero-Shot Aerial Segmentation",
+   "abstract": "单消费级GPU推理期VLM引导，零样本航空影像语义分割",
+   "authors": [],
+   "published": "2026-09-02T04:00:00.000Z",
+   "updated": "2026-09-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.00628",
+   "pdf": "https://arxiv.org/pdf/2609.00628",
+   "announceType": "new",
+   "summary": "单消费级GPU推理期VLM引导，零样本航空影像语义分割",
+   "topic": "遥感与高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.00628"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让无标注领域也能零样本部署像素级分割",
+   "repository": null,
+   "motivation": "领域基础模型需大量标注与算力，类集变化即过时",
+   "coreProblem": "通用基础模型直接推理漏检小目标、误选无关类别",
+   "contributions": [
+    "ACW：VLM选类并加权提升分数（自动类选择）",
+    "MCI：VLM定位小目标后实例分割补全",
+    "四航空数据集零样本评估与完整消融"
+   ],
+   "innovations": [
+    "用\"词表限制+VLM引导\"替代域内重新训练",
+    "双模型互补：冻结模型管像素，VLM管选择与定位",
+    "输出结构化可审计证据链"
+   ],
+   "method": "冻结基础模型标全像素，VLM两次查询（选类/框小目标）分别做类加权与实例修复，单GPU推理",
+   "results": "Aeroscapes mIoU 63.4→78.5（+15.07，p<0.0001），DroneSeg 51.3→66.0（+14.68），UDD6 31.6→39.5（全流程）",
+   "value": "让无标注领域也能零样本部署像素级分割",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "ACW：VLM选类并加权提升分数（自动类选择）",
+    "agentChange": "冻结基础模型标全像素，VLM两次查询（选类/框小目标）分别做类加权与实例修复，单GPU推理",
+    "selfEvolution": null,
+    "evidence": [
+     "Aeroscapes mIoU 63.4→78.5（+15.07，p<0.0001），DroneSeg 51.3→66.0（+14.68），UDD6 31.6→39.5（全流程）",
+     "双模型互补：冻结模型管像素，VLM管选择与定位",
+     "输出结构化可审计证据链"
+    ],
+    "faq": {
+     "problem": "单消费级GPU推理期VLM引导，零样本航空影像语义分割",
+     "mechanism": "冻结基础模型标全像素，VLM两次查询（选类/框小目标）分别做类加权与实例修复，单GPU推理",
+     "agentChange": "冻结基础模型标全像素，VLM两次查询（选类/框小目标）分别做类加权与实例修复，单GPU推理",
+     "support": "Aeroscapes mIoU 63.4→78.5（+15.07，p<0.0001），DroneSeg 51.3→66.0（+14.68），UDD6 31.6→39.5（全流程）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "让无标注领域也能零样本部署像素级分割"
+   }
+  },
+  {
+   "id": "2608.30537",
+   "version": 1,
+   "title": "Minerals in the Wild: A Hyperspectral-XRF Dataset for Elemental Composition Estimation",
+   "abstract": "发布1132块岩石的高光谱-XRF元素组分配对数据集并定义新任务",
+   "authors": [],
+   "published": "2026-09-02T04:00:00.000Z",
+   "updated": "2026-09-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.30537",
+   "pdf": "https://arxiv.org/pdf/2608.30537",
+   "announceType": "new",
+   "summary": "发布1132块岩石的高光谱-XRF元素组分配对数据集并定义新任务",
+   "topic": "遥感与高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.30537"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "支撑矿产勘探与自动分选的HSI算法研究",
+   "repository": null,
+   "motivation": "关键矿产快速表征依赖高光谱，但缺少可靠真值数据",
+   "coreProblem": "公开高光谱矿物数据集缺乏XRF级元素真值标签",
+   "contributions": [
+    "发布Minerals in the Wild：1132块岩石HSI+XRF双模态",
+    "定义HSI元素组分估计任务",
+    "USGS字典剪枝+凸优化光谱匹配管线"
+   ],
+   "innovations": [
+    "首个大规模HSI-XRF配对公开数据集（欧洲多站点采集）",
+    "先剪枝远端签名再凸优化，替代朴素内积匹配",
+    "面向秒级自动分选的低延迟近似推断场景"
+   ],
+   "method": "用USGS光谱字典剪枝排除远端签名后，凸优化匹配HSI像素与光谱签名估计元素比例",
+   "results": "对比MaxCorr基线，中位余弦相似度0.577→0.773，中位L2 0.221→0.150，Cos与L2双指标最优",
+   "value": "支撑矿产勘探与自动分选的HSI算法研究",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "发布Minerals in the Wild：1132块岩石HSI+XRF双模态",
+    "agentChange": "用USGS光谱字典剪枝排除远端签名后，凸优化匹配HSI像素与光谱签名估计元素比例",
+    "selfEvolution": null,
+    "evidence": [
+     "对比MaxCorr基线，中位余弦相似度0.577→0.773，中位L2 0.221→0.150，Cos与L2双指标最优",
+     "先剪枝远端签名再凸优化，替代朴素内积匹配",
+     "面向秒级自动分选的低延迟近似推断场景"
+    ],
+    "faq": {
+     "problem": "发布1132块岩石的高光谱-XRF元素组分配对数据集并定义新任务",
+     "mechanism": "用USGS光谱字典剪枝排除远端签名后，凸优化匹配HSI像素与光谱签名估计元素比例",
+     "agentChange": "用USGS光谱字典剪枝排除远端签名后，凸优化匹配HSI像素与光谱签名估计元素比例",
+     "support": "对比MaxCorr基线，中位余弦相似度0.577→0.773，中位L2 0.221→0.150，Cos与L2双指标最优",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "支撑矿产勘探与自动分选的HSI算法研究"
+   }
+  },
+  {
+   "id": "2609.00469",
+   "version": 1,
+   "title": "SAM3-LoRA: Parameter-Efficient Adaptation of a Concept-Promptable Foundation Model for Multi-Class Structural Defect Segmentation",
+   "abstract": "LoRA高效适配概念提示式SAM3做多类结构缺陷分割，省98.6%参数",
+   "authors": [],
+   "published": "2026-09-02T04:00:00.000Z",
+   "updated": "2026-09-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.00469",
+   "pdf": "https://arxiv.org/pdf/2609.00469",
+   "announceType": "new",
+   "summary": "LoRA高效适配概念提示式SAM3做多类结构缺陷分割，省98.6%参数",
+   "topic": "基础模型与SAM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.00469"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让中小机构低成本复用概念提示式分割基础模型",
+   "repository": null,
+   "motivation": "概念提示式分割基础模型全量微调对中小机构成本过高",
+   "coreProblem": "COCO类标注无法直接监督概念提示模型，且仅正提示会致提示失效",
+   "contributions": [
+    "用类别名作提示直接从COCO标注训练SAM3",
+    "穷举硬负提示（缺失类别零检测查询）防退化",
+    "系统对比两种LoRA插入位置（0.121%/1.341%参数）"
+   ],
+   "innovations": [
+    "首次把LoRA适配扩展到概念提示式模型SAM3（前作仅限SAM1单类裂缝）",
+    "发现\"仅正提示监督导致存在性预测与文本解耦\"并给出零标注成本解法",
+    "跨数据集泛化验证（自建隧道衬砌+公开S2DS）"
+   ],
+   "method": "冻结SAM3主干，低秩适配注意力/MLP投影，类名提示+穷举硬负提示监督多类缺陷分割",
+   "results": "隧道衬砌像素IoU 0.017→0.338、实例召回0.375→0.672；S2DS像素IoU 0.017→0.855、实例召回0.574→1.000",
+   "value": "让中小机构低成本复用概念提示式分割基础模型",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "用类别名作提示直接从COCO标注训练SAM3",
+    "agentChange": "冻结SAM3主干，低秩适配注意力/MLP投影，类名提示+穷举硬负提示监督多类缺陷分割",
+    "selfEvolution": null,
+    "evidence": [
+     "隧道衬砌像素IoU 0.017→0.338、实例召回0.375→0.672；S2DS像素IoU 0.017→0.855、实例召回0.574→1.000",
+     "发现\"仅正提示监督导致存在性预测与文本解耦\"并给出零标注成本解法",
+     "跨数据集泛化验证（自建隧道衬砌+公开S2DS）"
+    ],
+    "faq": {
+     "problem": "LoRA高效适配概念提示式SAM3做多类结构缺陷分割，省98.6%参数",
+     "mechanism": "冻结SAM3主干，低秩适配注意力/MLP投影，类名提示+穷举硬负提示监督多类缺陷分割",
+     "agentChange": "冻结SAM3主干，低秩适配注意力/MLP投影，类名提示+穷举硬负提示监督多类缺陷分割",
+     "support": "隧道衬砌像素IoU 0.017→0.338、实例召回0.375→0.672；S2DS像素IoU 0.017→0.855、实例召回0.574→1.000",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "让中小机构低成本复用概念提示式分割基础模型"
+   }
+  },
+  {
+   "id": "2609.00661",
+   "version": 1,
+   "title": "Do Satellites See Commuters? A Critical Benchmark of Vision Foundation Models",
+   "abstract": "受控消融4种卫星视觉基础模型生成通勤OD矩阵的能力",
+   "authors": [],
+   "published": "2026-09-02T04:00:00.000Z",
+   "updated": "2026-09-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.00661",
+   "pdf": "https://arxiv.org/pdf/2609.00661",
+   "announceType": "new",
+   "summary": "受控消融4种卫星视觉基础模型生成通勤OD矩阵的能力",
+   "topic": "基础模型与SAM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.00661"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为卫星基础模型选型提供首个实证依据",
+   "repository": null,
+   "motivation": "传统OD数据（普查/调查/信令）昂贵、更新慢、隐私受限",
+   "coreProblem": "尚无研究在统一下游管线内比较不同编码器范式的影响",
+   "contributions": [
+    "在WeDAN图扩散管线内消融4类卫星视觉编码器",
+    "澄清WeDAN普查噪声参数η的真实语义（数据可用性）",
+    "1925美国县+325英国区+14全球城市零样本评估"
+   ],
+   "innovations": [
+    "首个受控对比：语言对齐/自监督/地理接地/多传感物理嵌入",
+    "发现更大预训练不一定更好（DINOv3 CPC 0.511 vs RemoteCLIP 0.602）",
+    "量化跨大洲零样本迁移差距（全球城市开放问题）"
+   ],
+   "method": "固定WeDAN图扩散与训练协议，仅替换卫星影像编码器，5随机种子评估CPC",
+   "results": "美国分布内RemoteCLIP最佳（CPC 0.602，达全普查WeDAN 94.9%）；英国零样本AlphaEarth 0.515（较RemoteCLIP+33%）；全球城市最佳仅0.122",
+   "value": "为卫星基础模型选型提供首个实证依据",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "在WeDAN图扩散管线内消融4类卫星视觉编码器",
+    "agentChange": "固定WeDAN图扩散与训练协议，仅替换卫星影像编码器，5随机种子评估CPC",
+    "selfEvolution": null,
+    "evidence": [
+     "美国分布内RemoteCLIP最佳（CPC 0.602，达全普查WeDAN 94.9%）；英国零样本AlphaEarth 0.515（较RemoteCLIP+33%）；全球城市最佳仅0.122",
+     "发现更大预训练不一定更好（DINOv3 CPC 0.511 vs RemoteCLIP 0.602）",
+     "量化跨大洲零样本迁移差距（全球城市开放问题）"
+    ],
+    "faq": {
+     "problem": "受控消融4种卫星视觉基础模型生成通勤OD矩阵的能力",
+     "mechanism": "固定WeDAN图扩散与训练协议，仅替换卫星影像编码器，5随机种子评估CPC",
+     "agentChange": "固定WeDAN图扩散与训练协议，仅替换卫星影像编码器，5随机种子评估CPC",
+     "support": "美国分布内RemoteCLIP最佳（CPC 0.602，达全普查WeDAN 94.9%）；英国零样本AlphaEarth 0.515（较RemoteCLIP+33%）；全球城市最佳仅0.122",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为卫星基础模型选型提供首个实证依据"
+   }
+  },
+  {
+   "id": "2609.00111",
+   "version": 1,
+   "title": "Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving",
+   "abstract": "不改预训练VLM架构，统一3D感知/驾驶问答/运动规划的驾驶基础模型",
+   "authors": [],
+   "published": "2026-09-02T04:00:00.000Z",
+   "updated": "2026-09-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.00111",
+   "pdf": "https://arxiv.org/pdf/2609.00111",
+   "announceType": "new",
+   "summary": "不改预训练VLM架构，统一3D感知/驾驶问答/运动规划的驾驶基础模型",
+   "topic": "基础模型与SAM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.00111"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为端到端驾驶提供可解释的统一基础模型路线",
+   "repository": null,
+   "motivation": "驾驶VLA方法靠VQA文本监督引入域知识，缺乏显式3D约束",
+   "coreProblem": "文本VQA不约束3D布局/深度/占用，且域适配易灾难性遗忘",
+   "contributions": [
+    "Qwen-Drive-1.0统一框架：3D感知+VQA+规划",
+    "外部BEV头联合3D检测/语义占用/地图分割",
+    "分阶段训练+数据配方（5.53M→3.09M，保留55.9%）"
+   ],
+   "innovations": [
+    "首个不改VLM架构统一三任务的驾驶视觉语言基础模型",
+    "外部BEV头作3D探针：显式可检查感知且不损VLM能力",
+    "流匹配Planning Expert联合多公开数据集轨迹标注训练"
+   ],
+   "method": "共享视觉编码器与VLM做文本生成，外挂BEV头与规划专家输出几何预测与未来轨迹，分阶段混合驾驶+通用VQA数据",
+   "results": "NAVSIM PDM 90.7；WOD-E2E RFS 7.91；nuScenes超BEVFormerV2* 2.01 mAP、超BEVFormerV2 3.05 NDS、超PETRv2 3.37 map mIoU",
+   "value": "为端到端驾驶提供可解释的统一基础模型路线",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "Qwen-Drive-1.0统一框架：3D感知+VQA+规划",
+    "agentChange": "共享视觉编码器与VLM做文本生成，外挂BEV头与规划专家输出几何预测与未来轨迹，分阶段混合驾驶+通用VQA数据",
+    "selfEvolution": null,
+    "evidence": [
+     "NAVSIM PDM 90.7；WOD-E2E RFS 7.91；nuScenes超BEVFormerV2* 2.01 mAP、超BEVFormerV2 3.05 NDS、超PETRv2 3.37 map mIoU",
+     "外部BEV头作3D探针：显式可检查感知且不损VLM能力",
+     "流匹配Planning Expert联合多公开数据集轨迹标注训练"
+    ],
+    "faq": {
+     "problem": "不改预训练VLM架构，统一3D感知/驾驶问答/运动规划的驾驶基础模型",
+     "mechanism": "共享视觉编码器与VLM做文本生成，外挂BEV头与规划专家输出几何预测与未来轨迹，分阶段混合驾驶+通用VQA数据",
+     "agentChange": "共享视觉编码器与VLM做文本生成，外挂BEV头与规划专家输出几何预测与未来轨迹，分阶段混合驾驶+通用VQA数据",
+     "support": "NAVSIM PDM 90.7；WOD-E2E RFS 7.91；nuScenes超BEVFormerV2* 2.01 mAP、超BEVFormerV2 3.05 NDS、超PETRv2 3.37 map mIoU",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为端到端驾驶提供可解释的统一基础模型路线"
+   }
+  },
+  {
+   "id": "2609.01045",
+   "version": 1,
+   "title": "AgentFactory: Towards Automated Agentic System Design and Optimization",
+   "abstract": "LLM作优化器，联合优化微调模型与工作流的智能体系统工厂",
+   "authors": [],
+   "published": "2026-09-02T04:00:00.000Z",
+   "updated": "2026-09-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.01045",
+   "pdf": "https://arxiv.org/pdf/2609.01045",
+   "announceType": "new",
+   "summary": "LLM作优化器，联合优化微调模型与工作流的智能体系统工厂",
+   "topic": "Agent与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.01045"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "迈向智能体系统的自动化设计与部署",
+   "repository": null,
+   "motivation": "智能体系统设计与调优依赖人工经验，难以规模化",
+   "coreProblem": "现有自动优化只调提示/工作流，忽视模型能力与部署多目标",
+   "contributions": [
+    "AgentFactory联合优化基础模型与工作流结构",
+    "三阶段LLM优化器管线（迭代搜索+评估+选择）",
+    "多目标：性能+成本+效率同寻优"
+   ],
+   "innovations": [
+    "首次把模型微调与工作流设计放进同一搜索空间",
+    "以部署成本/效率为一等目标而非单一性能指标",
+    "跨5域8基准验证（推理/编码/数学/医学/金融）"
+   ],
+   "method": "用强LLM当优化器，迭代地微调候选模型、变异评估工作流，按多目标选择最优组合",
+   "results": "8基准平均+9.1%；MedQA +19.6%、FinEval +18.7%；用GPT-4o-mini时成本最高降68%；FinEval案例从IO 62.3%进化出多专家交叉验证工作流",
+   "value": "迈向智能体系统的自动化设计与部署",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "AgentFactory联合优化基础模型与工作流结构",
+    "agentChange": "用强LLM当优化器，迭代地微调候选模型、变异评估工作流，按多目标选择最优组合",
+    "selfEvolution": null,
+    "evidence": [
+     "8基准平均+9.1%；MedQA +19.6%、FinEval +18.7%；用GPT-4o-mini时成本最高降68%；FinEval案例从IO 62.3%进化出多专家交叉验证工作流",
+     "以部署成本/效率为一等目标而非单一性能指标",
+     "跨5域8基准验证（推理/编码/数学/医学/金融）"
+    ],
+    "faq": {
+     "problem": "LLM作优化器，联合优化微调模型与工作流的智能体系统工厂",
+     "mechanism": "用强LLM当优化器，迭代地微调候选模型、变异评估工作流，按多目标选择最优组合",
+     "agentChange": "用强LLM当优化器，迭代地微调候选模型、变异评估工作流，按多目标选择最优组合",
+     "support": "8基准平均+9.1%；MedQA +19.6%、FinEval +18.7%；用GPT-4o-mini时成本最高降68%；FinEval案例从IO 62.3%进化出多专家交叉验证工作流",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "迈向智能体系统的自动化设计与部署"
+   }
+  },
+  {
+   "id": "2608.30672",
+   "version": 1,
+   "title": "HiRS-Agent: A Hierarchical Multi-Agent System for Reliable Long-Horizon Remote Sensing Task Solving",
+   "abstract": "分层多智能体+验证引导分层RL，提升长程遥感任务可靠性（ACM MM'26）",
+   "authors": [],
+   "published": "2026-09-02T04:00:00.000Z",
+   "updated": "2026-09-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.30672",
+   "pdf": "https://arxiv.org/pdf/2608.30672",
+   "announceType": "new",
+   "summary": "分层多智能体+验证引导分层RL，提升长程遥感任务可靠性（ACM MM'26）",
+   "topic": "Agent与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.30672"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为可靠遥感智能体提供结构化协作范式",
+   "repository": null,
+   "motivation": "长程遥感任务需多步推理、工具调用与迭代决策",
+   "coreProblem": "单体式智能体执行不稳、工具误用、错误跨阶段传播",
+   "contributions": [
+    "两层架构：Manager（路由/验证/重规划）+Specialist（工具执行）",
+    "两阶段监督微调+验证引导分层强化学习（VG-HRL）",
+    "Earth-Bench与ThinkGeo系统评估"
+   ],
+   "innovations": [
+    "把验证器信号接入分层RL做步级组相对优势信用分配",
+    "按RS工作流组织领域专家智能体",
+    "免任务特定优化仍一致超越同尺寸Qwen3基座"
+   ],
+   "method": "Manager动态路由与步级验证重规划，Specialist按工作流组织工具执行，VG-HRL联合优化协调与工具策略",
+   "results": "Earth-Bench Qwen3-4B准确率15.73→43.95（AP）、工具精确匹配0→31.67；总体分73.35→87.60；Qwen3-8B达48.39/53.62",
+   "value": "为可靠遥感智能体提供结构化协作范式",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "两层架构：Manager（路由/验证/重规划）+Specialist（工具执行）",
+    "agentChange": "Manager动态路由与步级验证重规划，Specialist按工作流组织工具执行，VG-HRL联合优化协调与工具策略",
+    "selfEvolution": null,
+    "evidence": [
+     "Earth-Bench Qwen3-4B准确率15.73→43.95（AP）、工具精确匹配0→31.67；总体分73.35→87.60；Qwen3-8B达48.39/53.62",
+     "按RS工作流组织领域专家智能体",
+     "免任务特定优化仍一致超越同尺寸Qwen3基座"
+    ],
+    "faq": {
+     "problem": "分层多智能体+验证引导分层RL，提升长程遥感任务可靠性（ACM MM'26）",
+     "mechanism": "Manager动态路由与步级验证重规划，Specialist按工作流组织工具执行，VG-HRL联合优化协调与工具策略",
+     "agentChange": "Manager动态路由与步级验证重规划，Specialist按工作流组织工具执行，VG-HRL联合优化协调与工具策略",
+     "support": "Earth-Bench Qwen3-4B准确率15.73→43.95（AP）、工具精确匹配0→31.67；总体分73.35→87.60；Qwen3-8B达48.39/53.62",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为可靠遥感智能体提供结构化协作范式"
+   }
+  },
+  {
+   "id": "2609.01117",
+   "version": 1,
+   "title": "Latent Recurrent Thoughts: Recurrent Refinement of Proposed Latents for Reasoning with Frozen LLMs",
+   "abstract": "冻结LLM+约11M循环潜变量推理器，符号推理大幅超CoT基线",
+   "authors": [],
+   "published": "2026-09-02T04:00:00.000Z",
+   "updated": "2026-09-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.01117",
+   "pdf": "https://arxiv.org/pdf/2609.01117",
+   "announceType": "new",
+   "summary": "冻结LLM+约11M循环潜变量推理器，符号推理大幅超CoT基线",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.01117"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "低成本解锁连续空间推理，无需微调大模型",
+   "repository": null,
+   "motivation": "CoT在离散token空间推理，误差传播且需模仿轨迹",
+   "coreProblem": "冻结解码器方案中通用助手提议的潜变量反而误导解码",
+   "contributions": [
+    "LRT框架：任务专用提议器+循环精化器",
+    "有界残差校正使计算深度与模型规模解耦",
+    "符号推理+自然语言推理同解码器全面对比"
+   ],
+   "innovations": [
+    "首次用多步循环精化（而非单次前向）产生潜思维",
+    "任务专用提议器解决\"通用潜变量不如无潜变量\"问题",
+    "<0.2%可训练参数（8B解码器全程冻结）"
+   ],
+   "method": "小型循环网络多步有界残差精化潜向量，作为soft token注入冻结8B解码器",
+   "results": "5基准平均54.1（零样本CoT 35.0、EBM-CoT 33.5、SoftCoT 29.5）；Countdown-4 56.7（两基线仅5.9/8.4）、Sudoku 49.2，超专用扩散求解器MGDM（52.0）",
+   "value": "低成本解锁连续空间推理，无需微调大模型",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "LRT框架：任务专用提议器+循环精化器",
+    "agentChange": "小型循环网络多步有界残差精化潜向量，作为soft token注入冻结8B解码器",
+    "selfEvolution": null,
+    "evidence": [
+     "5基准平均54.1（零样本CoT 35.0、EBM-CoT 33.5、SoftCoT 29.5）；Countdown-4 56.7（两基线仅5.9/8.4）、Sudoku 49.2，超专用扩散求解器MGDM（52.0）",
+     "任务专用提议器解决\"通用潜变量不如无潜变量\"问题",
+     "<0.2%可训练参数（8B解码器全程冻结）"
+    ],
+    "faq": {
+     "problem": "冻结LLM+约11M循环潜变量推理器，符号推理大幅超CoT基线",
+     "mechanism": "小型循环网络多步有界残差精化潜向量，作为soft token注入冻结8B解码器",
+     "agentChange": "小型循环网络多步有界残差精化潜向量，作为soft token注入冻结8B解码器",
+     "support": "5基准平均54.1（零样本CoT 35.0、EBM-CoT 33.5、SoftCoT 29.5）；Countdown-4 56.7（两基线仅5.9/8.4）、Sudoku 49.2，超专用扩散求解器MGDM（52.0）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "低成本解锁连续空间推理，无需微调大模型"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-08-29",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-08-29 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-09-02T04:00:00.000Z",
+ "totalMatched": 722,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 722
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-09-02",
+ "historical": true
+}

@@ -1,0 +1,927 @@
+{
+ "papers": [
+  {
+   "id": "2608.13341",
+   "version": 1,
+   "title": "UltraIR: 红外光谱化学感知的仿真-真实迁移基础模型",
+   "abstract": "1 亿+参数红外光谱基础模型，6000 万模拟谱预训练，零样本跨实验室迁移。",
+   "authors": [],
+   "published": "2026-08-16T04:00:00.000Z",
+   "updated": "2026-08-16T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13341",
+   "pdf": "https://arxiv.org/pdf/2608.13341",
+   "announceType": "new",
+   "summary": "1 亿+参数红外光谱基础模型，6000 万模拟谱预训练，零样本跨实验室迁移。",
+   "topic": "基础模型 / 光谱感知",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13341"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为复杂真实样本提供数据高效、可跨设备迁移的化学感知底座。",
+   "repository": null,
+   "motivation": "红外光谱解析费时、依赖先验参考谱且难以规模化。",
+   "coreProblem": "现有 ML 方法针对单任务定制、需大量标注、跨数据集迁移差。",
+   "contributions": [
+    "提出 UltraIR：100M+ 参数红外光谱基础模型，仿真-真实迁移学习",
+    "以约 6000 万模拟谱预训练，适配 8 类下游分析任务",
+    "覆盖官能团预测、分子结构解析、混合定量、微生物分类、土壤属性等"
+   ],
+   "innovations": [
+    "首次以\"仿真-真实迁移\"统一从分子到复杂样本的红外化学感知",
+    "三任务联合预训练：光谱重建 + 指纹相似度对齐 + 官能团预测",
+    "实现跨 FTIR 光谱仪/实验室的零样本迁移推理"
+   ],
+   "method": "大规模模拟谱自监督预训练学通用表征，再以少量任务标签微调适配下游。",
+   "results": "在 8 类任务上均超传统 ML 与任务定制 DL 基线；少标注与跨设备零样本下表现稳健（论文未给单一 SOTA 数字）。",
+   "value": "为复杂真实样本提供数据高效、可跨设备迁移的化学感知底座。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出 UltraIR：100M+ 参数红外光谱基础模型，仿真-真实迁移学习",
+    "agentChange": "大规模模拟谱自监督预训练学通用表征，再以少量任务标签微调适配下游。",
+    "selfEvolution": null,
+    "evidence": [
+     "在 8 类任务上均超传统 ML 与任务定制 DL 基线；少标注与跨设备零样本下表现稳健（论文未给单一 SOTA 数字）。",
+     "三任务联合预训练：光谱重建 + 指纹相似度对齐 + 官能团预测",
+     "实现跨 FTIR 光谱仪/实验室的零样本迁移推理"
+    ],
+    "faq": {
+     "problem": "1 亿+参数红外光谱基础模型，6000 万模拟谱预训练，零样本跨实验室迁移。",
+     "mechanism": "大规模模拟谱自监督预训练学通用表征，再以少量任务标签微调适配下游。",
+     "agentChange": "大规模模拟谱自监督预训练学通用表征，再以少量任务标签微调适配下游。",
+     "support": "在 8 类任务上均超传统 ML 与任务定制 DL 基线；少标注与跨设备零样本下表现稳健（论文未给单一 SOTA 数字）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为复杂真实样本提供数据高效、可跨设备迁移的化学感知底座。"
+   }
+  },
+  {
+   "id": "2608.13309",
+   "version": 1,
+   "title": "跨时间点多视角纵向 MRI 推理基准",
+   "abstract": "首个纵向多视角 MRI 推理基准，16 个 VLM 系统失败于变化方向识别。",
+   "authors": [],
+   "published": "2026-08-16T04:00:00.000Z",
+   "updated": "2026-08-16T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13309",
+   "pdf": "https://arxiv.org/pdf/2608.13309",
+   "announceType": "new",
+   "summary": "首个纵向多视角 MRI 推理基准，16 个 VLM 系统失败于变化方向识别。",
+   "topic": "医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13309"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为临床部署所需的进展跟踪与区间变化定位提供系统评测框架。",
+   "repository": null,
+   "motivation": "MRI 诊断需跨时间点、多视角整合并精确定位区间变化。",
+   "coreProblem": "现有 VLM 基准限于单时间点单视角，无法捕捉临床所需的时间-空间推理。",
+   "contributions": [
+    "提出 Time-Aware Multi-View MRI 基准：3,920 专家核验 QA、890 患者、3,200+ 纵向时间点",
+    "统一多视角解剖输入、纵向时间推理与结构化定位引导",
+    "覆盖胶质瘤、神经退行、前庭神经鞘瘤、脑转移等 7 临床队列"
+   ],
+   "innovations": [
+    "首次把\"纵向时间推理 + 多视角 + 定位\"统一进单一评测框架",
+    "要求输出结构化引导（边界、影像特征、混杂因素）而非仅答案"
+   ],
+   "method": "开放/多选/二值三类任务，要求识别最大变化区域、刻画进展并给定位引导。",
+   "results": "16 个 VLM 时间对齐中等，但变化方向识别与体积量化系统失败；多视角输入提升空间定位却损害紧凑架构的时间推理。",
+   "value": "为临床部署所需的进展跟踪与区间变化定位提供系统评测框架。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出 Time-Aware Multi-View MRI 基准：3,920 专家核验 QA、890 患者、3,200+ 纵向时间点",
+    "agentChange": "开放/多选/二值三类任务，要求识别最大变化区域、刻画进展并给定位引导。",
+    "selfEvolution": null,
+    "evidence": [
+     "16 个 VLM 时间对齐中等，但变化方向识别与体积量化系统失败；多视角输入提升空间定位却损害紧凑架构的时间推理。",
+     "要求输出结构化引导（边界、影像特征、混杂因素）而非仅答案"
+    ],
+    "faq": {
+     "problem": "首个纵向多视角 MRI 推理基准，16 个 VLM 系统失败于变化方向识别。",
+     "mechanism": "开放/多选/二值三类任务，要求识别最大变化区域、刻画进展并给定位引导。",
+     "agentChange": "开放/多选/二值三类任务，要求识别最大变化区域、刻画进展并给定位引导。",
+     "support": "16 个 VLM 时间对齐中等，但变化方向识别与体积量化系统失败；多视角输入提升空间定位却损害紧凑架构的时间推理。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "为临床部署所需的进展跟踪与区间变化定位提供系统评测框架。"
+   }
+  },
+  {
+   "id": "2608.13518",
+   "version": 1,
+   "title": "干预感知的临床世界模型：心内术后结局预测",
+   "abstract": "隐态随术后事件时间序演化的临床世界模型，预测消融术后复发。",
+   "authors": [],
+   "published": "2026-08-16T04:00:00.000Z",
+   "updated": "2026-08-16T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13518",
+   "pdf": "https://arxiv.org/pdf/2608.13518",
+   "announceType": "new",
+   "summary": "隐态随术后事件时间序演化的临床世界模型，预测消融术后复发。",
+   "topic": "医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13518"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为术后风险提供可解释、可回溯编辑的动态隐态轨迹机制。",
+   "repository": null,
+   "motivation": "术后恢复是不规则轨迹，风险随时间动态变化。",
+   "coreProblem": "现有临床预测把术后结局当\"基线→终点\"单步映射，忽略异步术后轨迹。",
+   "contributions": [
+    "提出干预感知临床世界模型：基线影像编码为 3D 空间隐态",
+    "用术式、协变量、时间、事件期生理嵌入逐事件更新隐态",
+    "随访影像仅作训练期隐态预测监督"
+   ],
+   "innovations": [
+    "将\"临床世界模型\"用于术后风险动态演化建模",
+    "支持多时点风险查询与空白期记录的回溯编辑"
+   ],
+   "method": "隐态时序演化 + 训练期潜空间预测目标，推理期无需随访 MRI。",
+   "results": "DECAAF-II 交叉验证，房颤消融复发预测 AUROC 0.756 / AUPRC 0.777；疤痕范围 MAE 2.971 个百分点。",
+   "value": "为术后风险提供可解释、可回溯编辑的动态隐态轨迹机制。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出干预感知临床世界模型：基线影像编码为 3D 空间隐态",
+    "agentChange": "隐态时序演化 + 训练期潜空间预测目标，推理期无需随访 MRI。",
+    "selfEvolution": null,
+    "evidence": [
+     "DECAAF-II 交叉验证，房颤消融复发预测 AUROC 0.756 / AUPRC 0.777；疤痕范围 MAE 2.971 个百分点。",
+     "支持多时点风险查询与空白期记录的回溯编辑"
+    ],
+    "faq": {
+     "problem": "隐态随术后事件时间序演化的临床世界模型，预测消融术后复发。",
+     "mechanism": "隐态时序演化 + 训练期潜空间预测目标，推理期无需随访 MRI。",
+     "agentChange": "隐态时序演化 + 训练期潜空间预测目标，推理期无需随访 MRI。",
+     "support": "DECAAF-II 交叉验证，房颤消融复发预测 AUROC 0.756 / AUPRC 0.777；疤痕范围 MAE 2.971 个百分点。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "为术后风险提供可解释、可回溯编辑的动态隐态轨迹机制。"
+   }
+  },
+  {
+   "id": "2608.13455",
+   "version": 1,
+   "title": "基于基础模型隐空间的临床可导视网膜图像生成评估",
+   "abstract": "评估 4 个视网膜基础模型隐空间可控生成，揭示合成-真实表征差距。",
+   "authors": [],
+   "published": "2026-08-16T04:00:00.000Z",
+   "updated": "2026-08-16T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13455",
+   "pdf": "https://arxiv.org/pdf/2608.13455",
+   "announceType": "new",
+   "summary": "评估 4 个视网膜基础模型隐空间可控生成，揭示合成-真实表征差距。",
+   "topic": "医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13455"
+   ],
+   "hotScore": 77,
+   "scoreParts": {
+    "relevance": 69,
+    "evidence": 70,
+    "noveltyClaim": 65,
+    "actionability": 67,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为可控医学图像生成指出合成-真实对齐这一关键待解问题。",
+   "repository": null,
+   "motivation": "医学基础模型隐空间能否支撑可控图像生成尚不清楚。",
+   "coreProblem": "隐空间中编码的临床表型能否在合成图像生成中被忠实保留未被检验。",
+   "contributions": [
+    "在表征 tokenizer 框架下评估 4 个视网膜基础模型的可控生成",
+    "系统检验人口学/临床表型在合成表征中的保留程度"
+   ],
+   "innovations": [
+    "首次刻画\"合成-真实表征差距\"（synthetic-to-real representation gap）"
+   ],
+   "method": "用基础模型自身与真实图像训练的分类器分别评估生成表征的下游预测性能。",
+   "results": "源自模型内评估下生成表征继承表型、多任务超常规隐扩散；换真实图像分类器后收益基本消失。",
+   "value": "为可控医学图像生成指出合成-真实对齐这一关键待解问题。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "在表征 tokenizer 框架下评估 4 个视网膜基础模型的可控生成",
+    "agentChange": "用基础模型自身与真实图像训练的分类器分别评估生成表征的下游预测性能。",
+    "selfEvolution": null,
+    "evidence": [
+     "源自模型内评估下生成表征继承表型、多任务超常规隐扩散；换真实图像分类器后收益基本消失。"
+    ],
+    "faq": {
+     "problem": "评估 4 个视网膜基础模型隐空间可控生成，揭示合成-真实表征差距。",
+     "mechanism": "用基础模型自身与真实图像训练的分类器分别评估生成表征的下游预测性能。",
+     "agentChange": "用基础模型自身与真实图像训练的分类器分别评估生成表征的下游预测性能。",
+     "support": "源自模型内评估下生成表征继承表型、多任务超常规隐扩散；换真实图像分类器后收益基本消失。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 77,
+    "editorialTier": "recommended",
+    "recommendationReason": "为可控医学图像生成指出合成-真实对齐这一关键待解问题。"
+   }
+  },
+  {
+   "id": "2608.13558",
+   "version": 1,
+   "title": "OmniScientist: 全模态全学科 AI 科学家",
+   "abstract": "从原始异构证据直接做研究的全模态 AI 科学家，36 例全流程完成。",
+   "authors": [],
+   "published": "2026-08-16T04:00:00.000Z",
+   "updated": "2026-08-16T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13558",
+   "pdf": "https://arxiv.org/pdf/2608.13558",
+   "announceType": "new",
+   "summary": "从原始异构证据直接做研究的全模态 AI 科学家，36 例全流程完成。",
+   "topic": "Agent / 强化学习 / AI 科学家",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13558"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明全周期直接感知是证据驱动科学发现的必要条件。",
+   "repository": null,
+   "motivation": "科研工作流覆盖不等于能访问发现所需的全部证据。",
+   "coreProblem": "现有系统只推理文本/代码/预计算摘要，丢失时空与跨通道关系。",
+   "contributions": [
+    "提出感知层 + 构思/实验/写作 3 个 Agent 的确定性管线",
+    "用代码执行 idea/rigour/claim 检查，强制新颖性、统计有效性与数值可溯源",
+    "在 36 个真实案例（5 学科、4 证据族、9 种模态）上评测"
+   ],
+   "innovations": [
+    "让 Agent 直接感知原始数据（而非预计算标量特征）驱动研究全周期",
+    "将新颖性筛查/统计有效性/执行溯源以代码形式硬约束"
+   ],
+   "method": "生命周期内持续感知，观测贯穿塑造研究问题、实验决策与最终结论。",
+   "results": "36 例 100% 完成原始数据→编译论文；均分 6.3；对盲变体 7 维全改进、85% 两两对比获胜。",
+   "value": "证明全周期直接感知是证据驱动科学发现的必要条件。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出感知层 + 构思/实验/写作 3 个 Agent 的确定性管线",
+    "agentChange": "生命周期内持续感知，观测贯穿塑造研究问题、实验决策与最终结论。",
+    "selfEvolution": null,
+    "evidence": [
+     "36 例 100% 完成原始数据→编译论文；均分 6.3；对盲变体 7 维全改进、85% 两两对比获胜。",
+     "将新颖性筛查/统计有效性/执行溯源以代码形式硬约束"
+    ],
+    "faq": {
+     "problem": "从原始异构证据直接做研究的全模态 AI 科学家，36 例全流程完成。",
+     "mechanism": "生命周期内持续感知，观测贯穿塑造研究问题、实验决策与最终结论。",
+     "agentChange": "生命周期内持续感知，观测贯穿塑造研究问题、实验决策与最终结论。",
+     "support": "36 例 100% 完成原始数据→编译论文；均分 6.3；对盲变体 7 维全改进、85% 两两对比获胜。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "证明全周期直接感知是证据驱动科学发现的必要条件。"
+   }
+  },
+  {
+   "id": "2608.13560",
+   "version": 1,
+   "title": "AutoDesign: 长程 Agent 设计的元 Harness 优化",
+   "abstract": "元 harness 优化器让代码 Agent 递归自改进，论文转海报超商用系统。",
+   "authors": [],
+   "published": "2026-08-16T04:00:00.000Z",
+   "updated": "2026-08-16T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13560",
+   "pdf": "https://arxiv.org/pdf/2608.13560",
+   "announceType": "new",
+   "summary": "元 harness 优化器让代码 Agent 递归自改进，论文转海报超商用系统。",
+   "topic": "Agent / 强化学习 / AI 科学家",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13560"
+   ],
+   "hotScore": 77,
+   "scoreParts": {
+    "relevance": 69,
+    "evidence": 70,
+    "noveltyClaim": 65,
+    "actionability": 67,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "展示 harness 层递归自改进可带来稳定、可迁移的性能增益。",
+   "repository": null,
+   "motivation": "多模态源→结构化媒体输出是长程 Agent 过程，harness 应能自改进。",
+   "coreProblem": "现有 Agent 设计范式静态，无法积累经验并递归自我改进。",
+   "contributions": [
+    "提出 AutoDesign：元 harness 优化器基于 rollout 反馈递归改进 harness",
+    "构建 PosterBench（100 篇论文/5 学科 + 10 篇 mini 集）"
+   ],
+   "innovations": [
+    "把\"harness\"本身当作可优化对象，用元优化器闭环驱动其进化"
+   ],
+   "method": "论文转海报任务实例化，元优化器引导代码 Agent 迭代编辑 DesignHarness。",
+   "results": "Main Track 78.32 分，超 Claude Design 7.45 分；7 种 Agent 配置平均 54.99→67.39（+12.4%）；40 分钟 253 次工具调用 < $3。",
+   "value": "展示 harness 层递归自改进可带来稳定、可迁移的性能增益。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出 AutoDesign：元 harness 优化器基于 rollout 反馈递归改进 harness",
+    "agentChange": "论文转海报任务实例化，元优化器引导代码 Agent 迭代编辑 DesignHarness。",
+    "selfEvolution": null,
+    "evidence": [
+     "Main Track 78.32 分，超 Claude Design 7.45 分；7 种 Agent 配置平均 54.99→67.39（+12.4%）；40 分钟 253 次工具调用 < $3。"
+    ],
+    "faq": {
+     "problem": "元 harness 优化器让代码 Agent 递归自改进，论文转海报超商用系统。",
+     "mechanism": "论文转海报任务实例化，元优化器引导代码 Agent 迭代编辑 DesignHarness。",
+     "agentChange": "论文转海报任务实例化，元优化器引导代码 Agent 迭代编辑 DesignHarness。",
+     "support": "Main Track 78.32 分，超 Claude Design 7.45 分；7 种 Agent 配置平均 54.99→67.39（+12.4%）；40 分钟 253 次工具调用 < $3。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 77,
+    "editorialTier": "recommended",
+    "recommendationReason": "展示 harness 层递归自改进可带来稳定、可迁移的性能增益。"
+   }
+  },
+  {
+   "id": "2608.13552",
+   "version": 1,
+   "title": "PlayWorld: 用 Agent 玩家评测长程世界模型",
+   "abstract": "171 个长程目标场景，用多模态 Agent 玩家交互评测 9 个世界模型。",
+   "authors": [],
+   "published": "2026-08-16T04:00:00.000Z",
+   "updated": "2026-08-16T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13552",
+   "pdf": "https://arxiv.org/pdf/2608.13552",
+   "announceType": "new",
+   "summary": "171 个长程目标场景，用多模态 Agent 玩家交互评测 9 个世界模型。",
+   "topic": "Agent / 强化学习 / AI 科学家",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13552"
+   ],
+   "hotScore": 70,
+   "scoreParts": {
+    "relevance": 62,
+    "evidence": 70,
+    "noveltyClaim": 58,
+    "actionability": 60,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为交互式世界模型提供可跨模型比较的长程评测新标准。",
+   "repository": null,
+   "motivation": "公平比较交互式世界模型困难，需模拟真人玩家长程探索。",
+   "coreProblem": "固定动作序列评估无法跨模型比较，同一目标动作序列因模型而异。",
+   "contributions": [
+    "提出 PlayWorld：171 个带长程目标的场景基准",
+    "用多模态 Agent 玩家与世界模型交互达成目标来评测",
+    "定义几何一致性、交互保真、视野外演化、洞察演化 4 维度"
+   ],
+   "innovations": [
+    "将\"Agent 玩家 + 长程目标\"引入世界模型评测范式"
+   ],
+   "method": "Agent 玩家自主探索，从 4 核心维度 + 基础质量/可控性指标综合打分。",
+   "results": "9 个 SOTA 世界模型评测显示：长程交互目标仍不可靠，尤以空间一致性与持久状态演化为甚。",
+   "value": "为交互式世界模型提供可跨模型比较的长程评测新标准。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出 PlayWorld：171 个带长程目标的场景基准",
+    "agentChange": "Agent 玩家自主探索，从 4 核心维度 + 基础质量/可控性指标综合打分。",
+    "selfEvolution": null,
+    "evidence": [
+     "9 个 SOTA 世界模型评测显示：长程交互目标仍不可靠，尤以空间一致性与持久状态演化为甚。"
+    ],
+    "faq": {
+     "problem": "171 个长程目标场景，用多模态 Agent 玩家交互评测 9 个世界模型。",
+     "mechanism": "Agent 玩家自主探索，从 4 核心维度 + 基础质量/可控性指标综合打分。",
+     "agentChange": "Agent 玩家自主探索，从 4 核心维度 + 基础质量/可控性指标综合打分。",
+     "support": "9 个 SOTA 世界模型评测显示：长程交互目标仍不可靠，尤以空间一致性与持久状态演化为甚。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 70,
+    "editorialTier": "skim",
+    "recommendationReason": "为交互式世界模型提供可跨模型比较的长程评测新标准。"
+   }
+  },
+  {
+   "id": "2608.13555",
+   "version": 1,
+   "title": "HumanTracker: 与人类感知对齐的类人运动跟踪基准",
+   "abstract": "153 小时专业表演轨迹 + 偏好对齐 HumanScore 指标（ECCV 2026）。",
+   "authors": [],
+   "published": "2026-08-16T04:00:00.000Z",
+   "updated": "2026-08-16T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13555",
+   "pdf": "https://arxiv.org/pdf/2608.13555",
+   "announceType": "new",
+   "summary": "153 小时专业表演轨迹 + 偏好对齐 HumanScore 指标（ECCV 2026）。",
+   "topic": "计算机视觉 / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13555"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为遥操作/全身模仿提供与人类感知一致的可扩展跟踪评测。",
+   "repository": null,
+   "motivation": "类人运动跟踪评估常与人眼在视频中的感知不一致。",
+   "coreProblem": "运动学误差平均逐帧姿态差，遗漏脚滑/支撑不稳等物理故障；测试集小且多样性不足。",
+   "contributions": [
+    "构建 HumanTracker：约 153 小时多表演者光学轨迹，4 运动族 + 文本标签",
+    "提出 HumanScore：基于 12K 运动对（24K 运动）训练的偏好对齐指标"
+   ],
+   "innovations": [
+    "以偏好学习替代纯运动学误差，对齐人类感知",
+    "用大规模多样轨迹压测接触密集长程行为"
+   ],
+   "method": "偏好对齐打分器在运动对上训练，用于细粒度诊断接触/稳定性故障。",
+   "results": "跨多个 SOTA 跟踪器，HumanScore 更准确预测人类偏好，揭示运动学指标常漏掉的接触与稳定性失败。",
+   "value": "为遥操作/全身模仿提供与人类感知一致的可扩展跟踪评测。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "构建 HumanTracker：约 153 小时多表演者光学轨迹，4 运动族 + 文本标签",
+    "agentChange": "偏好对齐打分器在运动对上训练，用于细粒度诊断接触/稳定性故障。",
+    "selfEvolution": null,
+    "evidence": [
+     "跨多个 SOTA 跟踪器，HumanScore 更准确预测人类偏好，揭示运动学指标常漏掉的接触与稳定性失败。",
+     "用大规模多样轨迹压测接触密集长程行为"
+    ],
+    "faq": {
+     "problem": "153 小时专业表演轨迹 + 偏好对齐 HumanScore 指标（ECCV 2026）。",
+     "mechanism": "偏好对齐打分器在运动对上训练，用于细粒度诊断接触/稳定性故障。",
+     "agentChange": "偏好对齐打分器在运动对上训练，用于细粒度诊断接触/稳定性故障。",
+     "support": "跨多个 SOTA 跟踪器，HumanScore 更准确预测人类偏好，揭示运动学指标常漏掉的接触与稳定性失败。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为遥操作/全身模仿提供与人类感知一致的可扩展跟踪评测。"
+   }
+  },
+  {
+   "id": "2608.13416",
+   "version": 1,
+   "title": "StreamTTT: 统一流式 VLM 的实时感知与长程记忆",
+   "abstract": "长程历史写入快速权重，4B 模型同时强实时感知与长程回溯。",
+   "authors": [],
+   "published": "2026-08-16T04:00:00.000Z",
+   "updated": "2026-08-16T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13416",
+   "pdf": "https://arxiv.org/pdf/2608.13416",
+   "announceType": "new",
+   "summary": "长程历史写入快速权重，4B 模型同时强实时感知与长程回溯。",
+   "topic": "计算机视觉 / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13416"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给出流式视频\"边看当前边记过去\"的低成本兼得方案。",
+   "repository": null,
+   "motivation": "流式 VLM 常在实时感知与长程记忆间顾此失彼。",
+   "coreProblem": "缩短上下文提升当前场景感知却损害长程回忆，二者难兼得。",
+   "contributions": [
+    "提出 StreamTTT：长程历史写入注意力外的在线快速权重",
+    "新建实时 QA 语料，联合离线长视频 QA 训练"
+   ],
+   "innovations": [
+    "将 Test-Time-Training 式快速权重用于流式视频长程记忆",
+    "短滑动 KV 缓存专留近期证据以缓解注意力稀释"
+   ],
+   "method": "快速权重存长程 + 短 KV 存近期，双通道解耦实时与长程。",
+   "results": "OVO-Bench 上 StreamTTT-4B 比 SimpleStream-4B 实时感知 +1.4、回溯 +3.7；RTVU 子集媲美 SimpleStream-8B。",
+   "value": "给出流式视频\"边看当前边记过去\"的低成本兼得方案。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出 StreamTTT：长程历史写入注意力外的在线快速权重",
+    "agentChange": "快速权重存长程 + 短 KV 存近期，双通道解耦实时与长程。",
+    "selfEvolution": null,
+    "evidence": [
+     "OVO-Bench 上 StreamTTT-4B 比 SimpleStream-4B 实时感知 +1.4、回溯 +3.7；RTVU 子集媲美 SimpleStream-8B。",
+     "短滑动 KV 缓存专留近期证据以缓解注意力稀释"
+    ],
+    "faq": {
+     "problem": "长程历史写入快速权重，4B 模型同时强实时感知与长程回溯。",
+     "mechanism": "快速权重存长程 + 短 KV 存近期，双通道解耦实时与长程。",
+     "agentChange": "快速权重存长程 + 短 KV 存近期，双通道解耦实时与长程。",
+     "support": "OVO-Bench 上 StreamTTT-4B 比 SimpleStream-4B 实时感知 +1.4、回溯 +3.7；RTVU 子集媲美 SimpleStream-8B。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "给出流式视频\"边看当前边记过去\"的低成本兼得方案。"
+   }
+  },
+  {
+   "id": "2608.13546",
+   "version": 1,
+   "title": "Alaya-EVOKE: 线性扩展监督通往无尽世界",
+   "abstract": "外部世界状态 + 线性扩展教师监督，3 步生成长程交互世界模型。",
+   "authors": [],
+   "published": "2026-08-16T04:00:00.000Z",
+   "updated": "2026-08-16T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13546",
+   "pdf": "https://arxiv.org/pdf/2608.13546",
+   "announceType": "new",
+   "summary": "外部世界状态 + 线性扩展教师监督，3 步生成长程交互世界模型。",
+   "topic": "世界模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13546"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "以有界上下文 + 循环外存支持开放式、持续演化的世界生成。",
+   "repository": null,
+   "motivation": "交互世界模型需同时满足持久记忆、实时交互与长程生成。",
+   "coreProblem": "历史存去噪器上下文/KV 成本随会话增长；少步生成交互受教师上界限制。",
+   "contributions": [
+    "提出 Evoke：外部相机索引世界状态库 + 面向长程监督的稀疏注意力教师",
+    "30 秒分布匹配目标在自强制 rollout 下蒸馏到 3 步学生"
+   ],
+   "innovations": [
+    "将持久世界状态外置为可检索库，去噪器上下文有界",
+    "线性注意力 + 远帧检索 + 块分组，内存/计算随会话线性增长"
+   ],
+   "method": "外存维持场景几何，长程教师暴露短窗内不可见的内容漂移并蒸馏。",
+   "results": "单 H200 @ 384×640，1.5s 块 2.11s 生成；WBench 达 SOTA，VBench-Long/2.0 保持竞争力。",
+   "value": "以有界上下文 + 循环外存支持开放式、持续演化的世界生成。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出 Evoke：外部相机索引世界状态库 + 面向长程监督的稀疏注意力教师",
+    "agentChange": "外存维持场景几何，长程教师暴露短窗内不可见的内容漂移并蒸馏。",
+    "selfEvolution": null,
+    "evidence": [
+     "单 H200 @ 384×640，1.5s 块 2.11s 生成；WBench 达 SOTA，VBench-Long/2.0 保持竞争力。",
+     "线性注意力 + 远帧检索 + 块分组，内存/计算随会话线性增长"
+    ],
+    "faq": {
+     "problem": "外部世界状态 + 线性扩展教师监督，3 步生成长程交互世界模型。",
+     "mechanism": "外存维持场景几何，长程教师暴露短窗内不可见的内容漂移并蒸馏。",
+     "agentChange": "外存维持场景几何，长程教师暴露短窗内不可见的内容漂移并蒸馏。",
+     "support": "单 H200 @ 384×640，1.5s 块 2.11s 生成；WBench 达 SOTA，VBench-Long/2.0 保持竞争力。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "以有界上下文 + 循环外存支持开放式、持续演化的世界生成。"
+   }
+  },
+  {
+   "id": "2608.13426",
+   "version": 1,
+   "title": "RMM: 输入自适应矩阵乘缩减加速 LLM 推理",
+   "abstract": "免训练按输入选取信息切片缩减矩阵乘，长序列下实测提速。",
+   "authors": [],
+   "published": "2026-08-16T04:00:00.000Z",
+   "updated": "2026-08-16T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.13426",
+   "pdf": "https://arxiv.org/pdf/2608.13426",
+   "announceType": "new",
+   "summary": "免训练按输入选取信息切片缩减矩阵乘，长序列下实测提速。",
+   "topic": "系统 / 基础设施",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.13426"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为输入自适应的推理期优化提供可扩展方向。",
+   "repository": null,
+   "motivation": "Transformer 反复高维矩阵乘带来高昂推理成本。",
+   "coreProblem": "现有加速多需改权重或固定截断，无法按输入自适应平衡精度与效率。",
+   "contributions": [
+    "提出 RMM：免训练、输入自适应，沿收缩维选信息切片缩减矩阵乘",
+    "在 1B–70B 模型上给出可预测的保留率-精度权衡",
+    "证明该原则可推广至多模态视觉-语言推理"
+   ],
+   "innovations": [
+    "不改权重、按输入动态选切片，提供平滑可预测的精度-效率曲线",
+    "机制消融揭示 Transformer 内部结构不对称：注意力侧远比 MLP 可缩减"
+   ],
+   "method": "保留率控制选信息切片，配自研 kernel 在 A100 上实测墙钟收益。",
+   "results": "跨判别/自回归生成长上下文稳健；A100 实测长序列下算力节省转化为实际运行提速（论文未给统一倍数）。",
+   "value": "为输入自适应的推理期优化提供可扩展方向。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "提出 RMM：免训练、输入自适应，沿收缩维选信息切片缩减矩阵乘",
+    "agentChange": "保留率控制选信息切片，配自研 kernel 在 A100 上实测墙钟收益。",
+    "selfEvolution": null,
+    "evidence": [
+     "跨判别/自回归生成长上下文稳健；A100 实测长序列下算力节省转化为实际运行提速（论文未给统一倍数）。",
+     "机制消融揭示 Transformer 内部结构不对称：注意力侧远比 MLP 可缩减"
+    ],
+    "faq": {
+     "problem": "免训练按输入选取信息切片缩减矩阵乘，长序列下实测提速。",
+     "mechanism": "保留率控制选信息切片，配自研 kernel 在 A100 上实测墙钟收益。",
+     "agentChange": "保留率控制选信息切片，配自研 kernel 在 A100 上实测墙钟收益。",
+     "support": "跨判别/自回归生成长上下文稳健；A100 实测长序列下算力节省转化为实际运行提速（论文未给统一倍数）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为输入自适应的推理期优化提供可扩展方向。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-08-15",
+  "newCount": 11,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-08-15 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-08-16T04:00:00.000Z",
+ "totalMatched": 389,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 389
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-08-16",
+ "historical": true
+}

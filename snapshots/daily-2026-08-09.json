@@ -1,0 +1,1003 @@
+{
+ "papers": [
+  {
+   "id": "2606.09772",
+   "version": 1,
+   "title": "SemDINO: Foundation Prior-Guided Cross-Temporal Semantic Alignment Network for Remote Sensing Change Detection",
+   "abstract": "将冻结的 DINOv3 视觉基础模型先验注入 CNN 金字塔特征中，实现遥感语义变化检测（SCD）中的跨时间语义对齐。",
+   "authors": [],
+   "published": "2026-08-09T04:00:00.000Z",
+   "updated": "2026-08-09T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG",
+    "cs.AI",
+    "cs.MM"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2606.09772",
+   "pdf": "https://arxiv.org/pdf/2606.09772",
+   "announceType": "new",
+   "summary": "将冻结的 DINOv3 视觉基础模型先验注入 CNN 金字塔特征中，实现遥感语义变化检测（SCD）中的跨时间语义对齐。",
+   "topic": "遥感 / 多光谱 / 计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2606.09772"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "首次将大规模自监督预训练的视觉基础模型先验系统地引入遥感语义变化检测，解决了\"基础模型表示与任务特定空间特征不匹配\"的核心难题",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "Gated Pyramid Fusion (PyFu): 用 Separate Adaptation Block (SepAB) 自适应适配冻结的 DINOv3 特征，再通过 GatedFusion 注入 CNN 多尺度特征，兼顾局部空间细节与预训练语义先验，同时抑制域噪声"
+   ],
+   "innovations": [
+    "Multi-scale Temporal Bi-directional Transformer (M-TBTT): 在金字塔各层执行双向时序交互，同时对 T1/T2 两个时间状态进行校准，统一支持\"未变化区域一致性\"和\"变化区域判别性\"",
+    "SCD 导向的精细化预测管线: #FeaCE 增强真变化、抑制伪变化；ChangeFusion + 解耦多任务 CD-Head 从 Change Map、S1/S2 Head 和 Edge Map 合成最终预测，可即插即用地切换到二分类变化检测（BCD）"
+   ],
+   "method": "冻结 DINOv3 提供高层语义先验 → PyFu 模块将其与 CNN 金字塔特征门控融合 → M-TBTT 执行跨时间、跨尺度的双向 Transformer 交互 → #FeaCE 精细化 → 多任务 CD-Head 输出",
+   "results": "在 HRSCD 和 SECOND 两个公开 SCD 基准上验证，SCD 性能优于现有方法；切换至 BCD 任务时（不改架构）同样取得竞争力结果，证明特征的多任务通用性",
+   "value": "首次将大规模自监督预训练的视觉基础模型先验系统地引入遥感语义变化检测，解决了\"基础模型表示与任务特定空间特征不匹配\"的核心难题",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "Gated Pyramid Fusion (PyFu): 用 Separate Adaptation Block (SepAB) 自适应适配冻结的 DINOv3 特征，再通过 GatedFusion 注入 CNN 多尺度特征，兼顾局部空间细节与预训练语义先验，同时抑制域噪声",
+    "agentChange": "冻结 DINOv3 提供高层语义先验 → PyFu 模块将其与 CNN 金字塔特征门控融合 → M-TBTT 执行跨时间、跨尺度的双向 Transformer 交互 → #FeaCE 精细化 → 多任务 CD-Head 输出",
+    "selfEvolution": null,
+    "evidence": [
+     "在 HRSCD 和 SECOND 两个公开 SCD 基准上验证，SCD 性能优于现有方法；切换至 BCD 任务时（不改架构）同样取得竞争力结果，证明特征的多任务通用性",
+     "SCD 导向的精细化预测管线: #FeaCE 增强真变化、抑制伪变化；ChangeFusion + 解耦多任务 CD-Head 从 Change Map、S1/S2 Head 和 Edge Map 合成最终预测，可即插即用地切换到二分类变化检测（BCD）"
+    ],
+    "faq": {
+     "problem": "将冻结的 DINOv3 视觉基础模型先验注入 CNN 金字塔特征中，实现遥感语义变化检测（SCD）中的跨时间语义对齐。",
+     "mechanism": "冻结 DINOv3 提供高层语义先验 → PyFu 模块将其与 CNN 金字塔特征门控融合 → M-TBTT 执行跨时间、跨尺度的双向 Transformer 交互 → #FeaCE 精细化 → 多任务 CD-Head 输出",
+     "agentChange": "冻结 DINOv3 提供高层语义先验 → PyFu 模块将其与 CNN 金字塔特征门控融合 → M-TBTT 执行跨时间、跨尺度的双向 Transformer 交互 → #FeaCE 精细化 → 多任务 CD-Head 输出",
+     "support": "在 HRSCD 和 SECOND 两个公开 SCD 基准上验证，SCD 性能优于现有方法；切换至 BCD 任务时（不改架构）同样取得竞争力结果，证明特征的多任务通用性",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "首次将大规模自监督预训练的视觉基础模型先验系统地引入遥感语义变化检测，解决了\"基础模型表示与任务特定空间特征不匹配\"的核心难题"
+   }
+  },
+  {
+   "id": "2608.06205",
+   "version": 1,
+   "title": "CFGPNet: Cross-Attention-Based Fused Gradient Programmed Network for RGB-T 多光谱目标检测",
+   "abstract": "面向可见光-红外多光谱目标检测，提出计算高效的跨模态交互与梯度编程融合框架。",
+   "authors": [],
+   "published": "2026-08-09T04:00:00.000Z",
+   "updated": "2026-08-09T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG",
+    "cs.AI",
+    "cs.MM"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2608.06205",
+   "pdf": "https://arxiv.org/pdf/2608.06205",
+   "announceType": "new",
+   "summary": "面向可见光-红外多光谱目标检测，提出计算高效的跨模态交互与梯度编程融合框架。",
+   "topic": "遥感 / 多光谱 / 计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06205"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "多光谱检测在低光照、恶劣天气下至关重要，该方法以轻量设计实现高效跨模态融合",
+   "repository": null,
+   "motivation": "面向可见光-红外多光谱目标检测",
+   "coreProblem": "",
+   "contributions": [
+    "改进 GELAN + RepViT 重参数化: 用 RepViT 风格的可重参数化块增强特征表达，同时保持推理效率"
+   ],
+   "innovations": [
+    "Cross Computation Efficient Attention (CrossCEA): 减少可见光与红外分支间的冗余信息传输，强化有效的跨模态交互",
+    "Attention Selection and Aggregation (ASA): 生成紧凑且具有判别力的融合表示"
+   ],
+   "method": "改进 GELAN 骨干提取可见光/红外特征 → CrossCEA 模块进行高效跨模态注意力交互 → ASA 模块选择并聚合最佳融合特征 → 梯度编程策略优化多尺度检测头",
+   "results": "在标准 RGB-T 检测数据集上优于现有 SOTA 方法，同时参数量和 FLOPs 显著低于重型注意力架构",
+   "value": "多光谱检测在低光照、恶劣天气下至关重要，该方法以轻量设计实现高效跨模态融合",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "改进 GELAN + RepViT 重参数化: 用 RepViT 风格的可重参数化块增强特征表达，同时保持推理效率",
+    "agentChange": "改进 GELAN 骨干提取可见光/红外特征 → CrossCEA 模块进行高效跨模态注意力交互 → ASA 模块选择并聚合最佳融合特征 → 梯度编程策略优化多尺度检测头",
+    "selfEvolution": null,
+    "evidence": [
+     "在标准 RGB-T 检测数据集上优于现有 SOTA 方法，同时参数量和 FLOPs 显著低于重型注意力架构",
+     "Attention Selection and Aggregation (ASA): 生成紧凑且具有判别力的融合表示"
+    ],
+    "faq": {
+     "problem": "面向可见光-红外多光谱目标检测，提出计算高效的跨模态交互与梯度编程融合框架。",
+     "mechanism": "改进 GELAN 骨干提取可见光/红外特征 → CrossCEA 模块进行高效跨模态注意力交互 → ASA 模块选择并聚合最佳融合特征 → 梯度编程策略优化多尺度检测头",
+     "agentChange": "改进 GELAN 骨干提取可见光/红外特征 → CrossCEA 模块进行高效跨模态注意力交互 → ASA 模块选择并聚合最佳融合特征 → 梯度编程策略优化多尺度检测头",
+     "support": "在标准 RGB-T 检测数据集上优于现有 SOTA 方法，同时参数量和 FLOPs 显著低于重型注意力架构",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "多光谱检测在低光照、恶劣天气下至关重要，该方法以轻量设计实现高效跨模态融合"
+   }
+  },
+  {
+   "id": "2508.11183",
+   "version": 1,
+   "title": "Versatile Video Representation via Feed-Forward 2D Gaussian Splatting Tokenization",
+   "abstract": "将 2D 高斯溅射引入视频标记化，通过内容自适应采样实现空间-时间双重高效视频表示。",
+   "authors": [],
+   "published": "2026-08-09T04:00:00.000Z",
+   "updated": "2026-08-09T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG",
+    "cs.AI",
+    "cs.MM"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2508.11183",
+   "pdf": "https://arxiv.org/pdf/2508.11183",
+   "announceType": "new",
+   "summary": "将 2D 高斯溅射引入视频标记化，通过内容自适应采样实现空间-时间双重高效视频表示。",
+   "topic": "遥感 / 多光谱 / 计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2508.11183"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "突破了固定网格视频 tokenization 的空间/时间冗余瓶颈，为视频基础模型提供了更高效的底层表示范式",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "Spatio-Temporal Gaussian Embedding (STGE): 以 feed-forward 方式将视频潜空间刚性特征投影为 2D 高斯溅射参数（位置、协方差、系数），信息密集区域分配更高渲染权重"
+   ],
+   "innovations": [
+    "Gaussian Set Partitioning (GSP): 可学习策略将 2D 高斯分为静态/动态两组，静态组跨帧复用，大幅减少时间冗余",
+    "GVT 端到端框架: 集成 STGE + GSP，无需逐视频优化即可实现自适应标记化"
+   ],
+   "method": "视频片段 → 提取潜空间刚性特征 → STGE 生成 2D 高斯参数 → GSP 分离静/动态高斯 → rasterization 生成自适应视频 tokens → VQ-VAE 量化",
+   "results": "在视频重建上超过 MAGVIT-v2 基线；动作识别任务中取得 SOTA；视频压缩性能与基线相当，验证了语义编码效率",
+   "value": "突破了固定网格视频 tokenization 的空间/时间冗余瓶颈，为视频基础模型提供了更高效的底层表示范式",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "Spatio-Temporal Gaussian Embedding (STGE): 以 feed-forward 方式将视频潜空间刚性特征投影为 2D 高斯溅射参数（位置、协方差、系数），信息密集区域分配更高渲染权重",
+    "agentChange": "视频片段 → 提取潜空间刚性特征 → STGE 生成 2D 高斯参数 → GSP 分离静/动态高斯 → rasterization 生成自适应视频 tokens → VQ-VAE 量化",
+    "selfEvolution": null,
+    "evidence": [
+     "在视频重建上超过 MAGVIT-v2 基线；动作识别任务中取得 SOTA；视频压缩性能与基线相当，验证了语义编码效率",
+     "GVT 端到端框架: 集成 STGE + GSP，无需逐视频优化即可实现自适应标记化"
+    ],
+    "faq": {
+     "problem": "将 2D 高斯溅射引入视频标记化，通过内容自适应采样实现空间-时间双重高效视频表示。",
+     "mechanism": "视频片段 → 提取潜空间刚性特征 → STGE 生成 2D 高斯参数 → GSP 分离静/动态高斯 → rasterization 生成自适应视频 tokens → VQ-VAE 量化",
+     "agentChange": "视频片段 → 提取潜空间刚性特征 → STGE 生成 2D 高斯参数 → GSP 分离静/动态高斯 → rasterization 生成自适应视频 tokens → VQ-VAE 量化",
+     "support": "在视频重建上超过 MAGVIT-v2 基线；动作识别任务中取得 SOTA；视频压缩性能与基线相当，验证了语义编码效率",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "突破了固定网格视频 tokenization 的空间/时间冗余瓶颈，为视频基础模型提供了更高效的底层表示范式"
+   }
+  },
+  {
+   "id": "2608.06310",
+   "version": 1,
+   "title": "RRC: Unlocking Generative Reward Models in LLM Reinforcement Learning via Ranking-Based Reward Construction",
+   "abstract": "通过基于排序的奖励构建，打通生成式奖励模型（GRM）在 LLM 强化学习中的潜力。",
+   "authors": [],
+   "published": "2026-08-09T04:00:00.000Z",
+   "updated": "2026-08-09T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG",
+    "cs.AI",
+    "cs.MM"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2608.06310",
+   "pdf": "https://arxiv.org/pdf/2608.06310",
+   "announceType": "new",
+   "summary": "通过基于排序的奖励构建，打通生成式奖励模型（GRM）在 LLM 强化学习中的潜力。",
+   "topic": "大语言模型 / 强化学习 / 对齐",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06310"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为\"生成式奖励模型如何在 RL 中发挥作用\"这个开放问题提供了直接、有效的解决方案，推动了奖励建模范式从判别式向生成式的迁移",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "发现核心矛盾: 生成式奖励模型擅长比较排序，但现有 RL 算法依赖标量评分，这种\"比较 vs 标量\"的不匹配是 GRM 在 RL 中失效的根本原因"
+   ],
+   "innovations": [
+    "Self-competitive Ranking: 对模型自身采样的多个响应进行内部排序，从相对偏好中推导奖励信号",
+    "Anchor-guided Ranking: 用少量参考响应作为锚点，实现可扩展的排序到奖励转换"
+   ],
+   "method": "GRM 生成对采样响应的相对排序 → RRC 将排序转化为标量奖励 → 输入 PPO 等 RL 算法进行策略更新",
+   "results": "在开放对话和推理基准上，RRC + GRM 的 RL 训练显著优于直接使用判别式奖励模型的方法，证明 GRM 的排序能力可有效转化为 RL 信号",
+   "value": "为\"生成式奖励模型如何在 RL 中发挥作用\"这个开放问题提供了直接、有效的解决方案，推动了奖励建模范式从判别式向生成式的迁移",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "发现核心矛盾: 生成式奖励模型擅长比较排序，但现有 RL 算法依赖标量评分，这种\"比较 vs 标量\"的不匹配是 GRM 在 RL 中失效的根本原因",
+    "agentChange": "GRM 生成对采样响应的相对排序 → RRC 将排序转化为标量奖励 → 输入 PPO 等 RL 算法进行策略更新",
+    "selfEvolution": null,
+    "evidence": [
+     "在开放对话和推理基准上，RRC + GRM 的 RL 训练显著优于直接使用判别式奖励模型的方法，证明 GRM 的排序能力可有效转化为 RL 信号",
+     "Anchor-guided Ranking: 用少量参考响应作为锚点，实现可扩展的排序到奖励转换"
+    ],
+    "faq": {
+     "problem": "通过基于排序的奖励构建，打通生成式奖励模型（GRM）在 LLM 强化学习中的潜力。",
+     "mechanism": "GRM 生成对采样响应的相对排序 → RRC 将排序转化为标量奖励 → 输入 PPO 等 RL 算法进行策略更新",
+     "agentChange": "GRM 生成对采样响应的相对排序 → RRC 将排序转化为标量奖励 → 输入 PPO 等 RL 算法进行策略更新",
+     "support": "在开放对话和推理基准上，RRC + GRM 的 RL 训练显著优于直接使用判别式奖励模型的方法，证明 GRM 的排序能力可有效转化为 RL 信号",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为\"生成式奖励模型如何在 RL 中发挥作用\"这个开放问题提供了直接、有效的解决方案，推动了奖励建模范式从判别式向生成式的迁移"
+   }
+  },
+  {
+   "id": "2608.06370",
+   "version": 1,
+   "title": "The Bitter Lesson of Tool Calling",
+   "abstract": "大规模实验证明：对代码能力模型而言，以 Python 代码形式调用工具（Programmatic Tool Calling）优于传统 JSON 格式。",
+   "authors": [],
+   "published": "2026-08-09T04:00:00.000Z",
+   "updated": "2026-08-09T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG",
+    "cs.AI",
+    "cs.MM"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2608.06370",
+   "pdf": "https://arxiv.org/pdf/2608.06370",
+   "announceType": "new",
+   "summary": "大规模实验证明：对代码能力模型而言，以 Python 代码形式调用工具（Programmatic Tool Calling）优于传统 JSON 格式。",
+   "topic": "大语言模型 / 强化学习 / 对齐",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06370"
+   ],
+   "hotScore": 77,
+   "scoreParts": {
+    "relevance": 69,
+    "evidence": 70,
+    "noveltyClaim": 65,
+    "actionability": 67,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "呼应 Rich Sutton \"bitter lesson\" 的思想——让模型发挥其核心能力（写代码）而非强迫适应结构化格式，是提升 Agent 工具使用效率的直观而有效的方向",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "Programmatic Tool Calling (PTC): 工具以类型化 Python stub 暴露，模型生成代码调用而非 JSON；执行和结果在同一 Agent turn 内完成"
+   ],
+   "innovations": [
+    "14 个模型的系统对比: 在 BFCL v4 基准上全面对比 PTC 与原生 JSON tool calling"
+   ],
+   "method": "将工具 API 转换为 Python stub → 模型生成调用代码 → 代码执行引擎运行并返回结果 → 单轮完成",
+   "results": "14 个模型中 11 个 PTC ≥ JSON baseline；GPT-5.6 系列 PTC 比 JSON 提升 10.6%；并行 fan-out 场景下 13/14 模型 PTC ≥ baseline",
+   "value": "呼应 Rich Sutton \"bitter lesson\" 的思想——让模型发挥其核心能力（写代码）而非强迫适应结构化格式，是提升 Agent 工具使用效率的直观而有效的方向",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "Programmatic Tool Calling (PTC): 工具以类型化 Python stub 暴露，模型生成代码调用而非 JSON；执行和结果在同一 Agent turn 内完成",
+    "agentChange": "将工具 API 转换为 Python stub → 模型生成调用代码 → 代码执行引擎运行并返回结果 → 单轮完成",
+    "selfEvolution": null,
+    "evidence": [
+     "14 个模型中 11 个 PTC ≥ JSON baseline；GPT-5.6 系列 PTC 比 JSON 提升 10.6%；并行 fan-out 场景下 13/14 模型 PTC ≥ baseline"
+    ],
+    "faq": {
+     "problem": "大规模实验证明：对代码能力模型而言，以 Python 代码形式调用工具（Programmatic Tool Calling）优于传统 JSON 格式。",
+     "mechanism": "将工具 API 转换为 Python stub → 模型生成调用代码 → 代码执行引擎运行并返回结果 → 单轮完成",
+     "agentChange": "将工具 API 转换为 Python stub → 模型生成调用代码 → 代码执行引擎运行并返回结果 → 单轮完成",
+     "support": "14 个模型中 11 个 PTC ≥ JSON baseline；GPT-5.6 系列 PTC 比 JSON 提升 10.6%；并行 fan-out 场景下 13/14 模型 PTC ≥ baseline",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 77,
+    "editorialTier": "recommended",
+    "recommendationReason": "呼应 Rich Sutton \"bitter lesson\" 的思想——让模型发挥其核心能力（写代码）而非强迫适应结构化格式，是提升 Agent 工具使用效率的直观而有效的方向"
+   }
+  },
+  {
+   "id": "2608.06377",
+   "version": 1,
+   "title": "Learning When to Trust via Selective Context Preference Optimization",
+   "abstract": "训练 LLM 选择性信任外部上下文——既不盲目跟随误导性信息，也不一概排斥有用上下文。",
+   "authors": [],
+   "published": "2026-08-09T04:00:00.000Z",
+   "updated": "2026-08-09T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG",
+    "cs.AI",
+    "cs.MM"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2608.06377",
+   "pdf": "https://arxiv.org/pdf/2608.06377",
+   "announceType": "new",
+   "summary": "训练 LLM 选择性信任外部上下文——既不盲目跟随误导性信息，也不一概排斥有用上下文。",
+   "topic": "大语言模型 / 强化学习 / 对齐",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06377"
+   ],
+   "hotScore": 77,
+   "scoreParts": {
+    "relevance": 69,
+    "evidence": 70,
+    "noveltyClaim": 65,
+    "actionability": 67,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "RAG 和检索增强生成场景中\"幻觉上下文污染\"是核心痛点，SCOPE 为选择性信任提供了可操作的训练框架",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "MIST 基准: 人工标注，每个推理项在四种条件下呈现（clean、misleading、correct-context、irrelevant-context），配对指标 SC2W 量化\"误导性信号翻转正确答案\"的频率"
+   ],
+   "innovations": [
+    "SCOPE 方法: 挖掘 clean-correct / misleading-wrong 失败对，在四种条件下均衡采样的偏好对上运行标准 DPO，而非仅对误导性项优化"
+   ],
+   "method": "构建四条件匹配数据 → SCOPE 挖掘偏好对 → 均衡 DPO 训练 → 模型学会\"可信时信任，不可信时抵抗\"",
+   "results": "显著提升抗误导能力（SC2W 下降），同时保持对正确上下文的利用率，避免\"拒绝一切上下文\"的退化",
+   "value": "RAG 和检索增强生成场景中\"幻觉上下文污染\"是核心痛点，SCOPE 为选择性信任提供了可操作的训练框架",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "MIST 基准: 人工标注，每个推理项在四种条件下呈现（clean、misleading、correct-context、irrelevant-context），配对指标 SC2W 量化\"误导性信号翻转正确答案\"的频率",
+    "agentChange": "构建四条件匹配数据 → SCOPE 挖掘偏好对 → 均衡 DPO 训练 → 模型学会\"可信时信任，不可信时抵抗\"",
+    "selfEvolution": null,
+    "evidence": [
+     "显著提升抗误导能力（SC2W 下降），同时保持对正确上下文的利用率，避免\"拒绝一切上下文\"的退化"
+    ],
+    "faq": {
+     "problem": "训练 LLM 选择性信任外部上下文——既不盲目跟随误导性信息，也不一概排斥有用上下文。",
+     "mechanism": "构建四条件匹配数据 → SCOPE 挖掘偏好对 → 均衡 DPO 训练 → 模型学会\"可信时信任，不可信时抵抗\"",
+     "agentChange": "构建四条件匹配数据 → SCOPE 挖掘偏好对 → 均衡 DPO 训练 → 模型学会\"可信时信任，不可信时抵抗\"",
+     "support": "显著提升抗误导能力（SC2W 下降），同时保持对正确上下文的利用率，避免\"拒绝一切上下文\"的退化",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 77,
+    "editorialTier": "recommended",
+    "recommendationReason": "RAG 和检索增强生成场景中\"幻觉上下文污染\"是核心痛点，SCOPE 为选择性信任提供了可操作的训练框架"
+   }
+  },
+  {
+   "id": "2607.28609",
+   "version": 1,
+   "title": "OSReward: Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+   "abstract": "首次系统评估 VLM 作为计算机使用 Agent 轨迹裁判的可靠性，并构建标准化基准 OSReward。",
+   "authors": [],
+   "published": "2026-08-09T04:00:00.000Z",
+   "updated": "2026-08-09T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG",
+    "cs.AI",
+    "cs.MM"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2607.28609",
+   "pdf": "https://arxiv.org/pdf/2607.28609",
+   "announceType": "new",
+   "summary": "首次系统评估 VLM 作为计算机使用 Agent 轨迹裁判的可靠性，并构建标准化基准 OSReward。",
+   "topic": "大语言模型 / 强化学习 / 对齐",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2607.28609"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "Computer-use Agent 是当前最活跃的方向之一，奖励模型/裁判的可靠性直接影响 RL 训练质量，此前该问题长期未被系统研究",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "OSReward 基准: 跨平台（桌面、移动端、Web）的高质量 CUA 轨迹数据集，经多阶段人工标注获得真实判决"
+   ],
+   "innovations": [
+    "OSReward-Hard: 聚焦真正困难案例的挑战集",
+    "发现: 即使最强 VLM 裁判与现有基准自有验证器的意见分歧率约 25%（桌面场景）"
+   ],
+   "method": "构建跨平台 Agent 基础设施 → 收集多样化 Agent 轨迹 → 多阶段人工标注 → 评估各 VLM 裁判的可靠性 → 提出 OS-Shepherd 训练范式",
+   "results": "揭示了当前 VLM 裁判在 CUA 轨迹评估中的系统性偏差，为 Agent RL 中的奖励建模提供了可信评估基础",
+   "value": "Computer-use Agent 是当前最活跃的方向之一，奖励模型/裁判的可靠性直接影响 RL 训练质量，此前该问题长期未被系统研究",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "OSReward 基准: 跨平台（桌面、移动端、Web）的高质量 CUA 轨迹数据集，经多阶段人工标注获得真实判决",
+    "agentChange": "构建跨平台 Agent 基础设施 → 收集多样化 Agent 轨迹 → 多阶段人工标注 → 评估各 VLM 裁判的可靠性 → 提出 OS-Shepherd 训练范式",
+    "selfEvolution": null,
+    "evidence": [
+     "揭示了当前 VLM 裁判在 CUA 轨迹评估中的系统性偏差，为 Agent RL 中的奖励建模提供了可信评估基础",
+     "发现: 即使最强 VLM 裁判与现有基准自有验证器的意见分歧率约 25%（桌面场景）"
+    ],
+    "faq": {
+     "problem": "首次系统评估 VLM 作为计算机使用 Agent 轨迹裁判的可靠性，并构建标准化基准 OSReward。",
+     "mechanism": "构建跨平台 Agent 基础设施 → 收集多样化 Agent 轨迹 → 多阶段人工标注 → 评估各 VLM 裁判的可靠性 → 提出 OS-Shepherd 训练范式",
+     "agentChange": "构建跨平台 Agent 基础设施 → 收集多样化 Agent 轨迹 → 多阶段人工标注 → 评估各 VLM 裁判的可靠性 → 提出 OS-Shepherd 训练范式",
+     "support": "揭示了当前 VLM 裁判在 CUA 轨迹评估中的系统性偏差，为 Agent RL 中的奖励建模提供了可信评估基础",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "Computer-use Agent 是当前最活跃的方向之一，奖励模型/裁判的可靠性直接影响 RL 训练质量，此前该问题长期未被系统研究"
+   }
+  },
+  {
+   "id": "2604.21395",
+   "version": 1,
+   "title": "Supervised Learning Has a Geometric Blind Spot",
+   "abstract": "证明了所有基于经验风险最小化（ERM）的监督学习都必然在标签相关干扰方向上保留非零敏感性——这是数学约束，非工程缺陷。",
+   "authors": [],
+   "published": "2026-08-09T04:00:00.000Z",
+   "updated": "2026-08-09T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG",
+    "cs.AI",
+    "cs.MM"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2604.21395",
+   "pdf": "https://arxiv.org/pdf/2604.21395",
+   "announceType": "new",
+   "summary": "证明了所有基于经验风险最小化（ERM）的监督学习都必然在标签相关干扰方向上保留非零敏感性——这是数学约束，非工程缺陷。",
+   "topic": "基础理论 / 多模态 / 方法学",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2604.21395"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "从理论层面统一了鲁棒性领域的多个经验现象，并指出基础模型（CLIP/DINO/SAM 同属 ViT-B/16 家族）同样存在几何盲点",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "ERM Encoder Non-Isometry 定理: 任何 ERM 最小化器在标签相关的干扰方向上必然保持严格正的路径长度畸变，与模型容量和数据量无关"
+   ],
+   "innovations": [
+    "一理通四: 非鲁棒特征、纹理偏好、噪声脆弱性、鲁棒-准确权衡统一为该结构机制的推论",
+    "Trajectory Deviation Index (TDI): 新的机制诊断工具，揭示了 PGD/PMH 在几何各向同性上的差异（PGD: 低 Frobenius 范数 2.91 但 TDI 最差 1.336；PMH: TDI 最优 0.904）"
+   ],
+   "method": "理论证明 ERM 的几何盲点 → 提出 Isotropic Encoder Matching (PMH)：在任务损失约束下惩罚高斯扰动下的特征位移 → 七个任务验证",
+   "results": "CIFAR-10 ViT 上 PMH 以最低 TDI 超越 PGD；在 BERT/SST-2 和 ImageNet ViT-B/16 上盲点可测量、可修复；PMH 在非高斯噪声（模糊/亮度/对比度）上也领先，无需特定噪声训练",
+   "value": "从理论层面统一了鲁棒性领域的多个经验现象，并指出基础模型（CLIP/DINO/SAM 同属 ViT-B/16 家族）同样存在几何盲点",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "ERM Encoder Non-Isometry 定理: 任何 ERM 最小化器在标签相关的干扰方向上必然保持严格正的路径长度畸变，与模型容量和数据量无关",
+    "agentChange": "理论证明 ERM 的几何盲点 → 提出 Isotropic Encoder Matching (PMH)：在任务损失约束下惩罚高斯扰动下的特征位移 → 七个任务验证",
+    "selfEvolution": null,
+    "evidence": [
+     "CIFAR-10 ViT 上 PMH 以最低 TDI 超越 PGD；在 BERT/SST-2 和 ImageNet ViT-B/16 上盲点可测量、可修复；PMH 在非高斯噪声（模糊/亮度/对比度）上也领先，无需特定噪声训练",
+     "Trajectory Deviation Index (TDI): 新的机制诊断工具，揭示了 PGD/PMH 在几何各向同性上的差异（PGD: 低 Frobenius 范数 2.91 但 TDI 最差 1.336；PMH: TDI 最优 0.904）"
+    ],
+    "faq": {
+     "problem": "证明了所有基于经验风险最小化（ERM）的监督学习都必然在标签相关干扰方向上保留非零敏感性——这是数学约束，非工程缺陷。",
+     "mechanism": "理论证明 ERM 的几何盲点 → 提出 Isotropic Encoder Matching (PMH)：在任务损失约束下惩罚高斯扰动下的特征位移 → 七个任务验证",
+     "agentChange": "理论证明 ERM 的几何盲点 → 提出 Isotropic Encoder Matching (PMH)：在任务损失约束下惩罚高斯扰动下的特征位移 → 七个任务验证",
+     "support": "CIFAR-10 ViT 上 PMH 以最低 TDI 超越 PGD；在 BERT/SST-2 和 ImageNet ViT-B/16 上盲点可测量、可修复；PMH 在非高斯噪声（模糊/亮度/对比度）上也领先，无需特定噪声训练",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "从理论层面统一了鲁棒性领域的多个经验现象，并指出基础模型（CLIP/DINO/SAM 同属 ViT-B/16 家族）同样存在几何盲点"
+   }
+  },
+  {
+   "id": "2608.05000",
+   "version": 1,
+   "title": "Towards Physics of Multimodal Pretraining",
+   "abstract": "通过系统性控制实验揭示多模态预训练的四个基本\"物理定律\"：知识流、模态协同、早期统一、实用配方。",
+   "authors": [],
+   "published": "2026-08-09T04:00:00.000Z",
+   "updated": "2026-08-09T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG",
+    "cs.AI",
+    "cs.MM"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2608.05000",
+   "pdf": "https://arxiv.org/pdf/2608.05000",
+   "announceType": "new",
+   "summary": "通过系统性控制实验揭示多模态预训练的四个基本\"物理定律\"：知识流、模态协同、早期统一、实用配方。",
+   "topic": "基础理论 / 多模态 / 方法学",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.05000"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为 natively unified 多模态预训练提供了第一份系统性\"物理学\"分析，指导未来多模态基础模型的设计",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "Knowledge Flow: 分离语言→视觉理解、视觉理解→语言生成、视觉生成→理解等跨模态知识迁移的不对称模式"
+   ],
+   "innovations": [
+    "Synergy vs Competition: 数据\"复杂度\"决定模态间是协同还是竞争；共享 attention + normalization + 模态特定 FFN 的架构促进协同",
+    "Early Unification: 发现早期统一预训练比后期拼接带来更好的跨模态泛化",
+    "Recipes: 总结可复现的多模态预训练实用指南"
+   ],
+   "method": "在合成数据集和大规模真实数据集上进行受控实验，系统性比较不同架构和数据配比",
+   "results": "揭示了架构选择和数据复杂度对多模态协同的定量影响，结论在不同规模和架构上具有泛化性",
+   "value": "为 natively unified 多模态预训练提供了第一份系统性\"物理学\"分析，指导未来多模态基础模型的设计",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "Knowledge Flow: 分离语言→视觉理解、视觉理解→语言生成、视觉生成→理解等跨模态知识迁移的不对称模式",
+    "agentChange": "在合成数据集和大规模真实数据集上进行受控实验，系统性比较不同架构和数据配比",
+    "selfEvolution": null,
+    "evidence": [
+     "揭示了架构选择和数据复杂度对多模态协同的定量影响，结论在不同规模和架构上具有泛化性",
+     "Early Unification: 发现早期统一预训练比后期拼接带来更好的跨模态泛化",
+     "Recipes: 总结可复现的多模态预训练实用指南"
+    ],
+    "faq": {
+     "problem": "通过系统性控制实验揭示多模态预训练的四个基本\"物理定律\"：知识流、模态协同、早期统一、实用配方。",
+     "mechanism": "在合成数据集和大规模真实数据集上进行受控实验，系统性比较不同架构和数据配比",
+     "agentChange": "在合成数据集和大规模真实数据集上进行受控实验，系统性比较不同架构和数据配比",
+     "support": "揭示了架构选择和数据复杂度对多模态协同的定量影响，结论在不同规模和架构上具有泛化性",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为 natively unified 多模态预训练提供了第一份系统性\"物理学\"分析，指导未来多模态基础模型的设计"
+   }
+  },
+  {
+   "id": "2606.14299",
+   "version": 1,
+   "title": "What Drives Test-Time Adaptation for CLIP? A Controlled Empirical Study",
+   "abstract": "对 CLIP 的测试时适应（TTA4CLIP）进行系统性控制实验，回答\"什么真正驱动了适应效果\"。",
+   "authors": [],
+   "published": "2026-08-09T04:00:00.000Z",
+   "updated": "2026-08-09T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG",
+    "cs.AI",
+    "cs.MM"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2606.14299",
+   "pdf": "https://arxiv.org/pdf/2606.14299",
+   "announceType": "new",
+   "summary": "对 CLIP 的测试时适应（TTA4CLIP）进行系统性控制实验，回答\"什么真正驱动了适应效果\"。",
+   "topic": "基础理论 / 多模态 / 方法学",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2606.14299"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "TTA4CLIP 领域快速发展但缺乏理解基础，本研究为后续方法设计提供了清晰的实证基础",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "三大范式统一: 将现有 TTA4CLIP 方法按\"测试时更新什么\"分为三类统一框架"
+   ],
+   "innovations": [
+    "TTABC 基准: 开源 TTA 基准，集成 20+ 代表性方法，标准化评估协议",
+    "三维度控制分析: 适应增益的来源、不同分布偏移下的可靠性、各范式的有效性边界"
+   ],
+   "method": "构建统一评估框架 → 控制变量分析各 TTA 方法的核心组件贡献 → 跨数据集/偏移类型系统性比较",
+   "results": "揭示了 TTA4CLIP 的核心增益来源和在不同分布偏移下的可靠性边界，为方法选择提供了实证指南",
+   "value": "TTA4CLIP 领域快速发展但缺乏理解基础，本研究为后续方法设计提供了清晰的实证基础",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "三大范式统一: 将现有 TTA4CLIP 方法按\"测试时更新什么\"分为三类统一框架",
+    "agentChange": "构建统一评估框架 → 控制变量分析各 TTA 方法的核心组件贡献 → 跨数据集/偏移类型系统性比较",
+    "selfEvolution": null,
+    "evidence": [
+     "揭示了 TTA4CLIP 的核心增益来源和在不同分布偏移下的可靠性边界，为方法选择提供了实证指南",
+     "三维度控制分析: 适应增益的来源、不同分布偏移下的可靠性、各范式的有效性边界"
+    ],
+    "faq": {
+     "problem": "对 CLIP 的测试时适应（TTA4CLIP）进行系统性控制实验，回答\"什么真正驱动了适应效果\"。",
+     "mechanism": "构建统一评估框架 → 控制变量分析各 TTA 方法的核心组件贡献 → 跨数据集/偏移类型系统性比较",
+     "agentChange": "构建统一评估框架 → 控制变量分析各 TTA 方法的核心组件贡献 → 跨数据集/偏移类型系统性比较",
+     "support": "揭示了 TTA4CLIP 的核心增益来源和在不同分布偏移下的可靠性边界，为方法选择提供了实证指南",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "TTA4CLIP 领域快速发展但缺乏理解基础，本研究为后续方法设计提供了清晰的实证基础"
+   }
+  },
+  {
+   "id": "2608.06240",
+   "version": 1,
+   "title": "PRISM: Distribution-Gated Flow Matching for Controllable Unpaired Image Translation",
+   "abstract": "用每特征门控替代全局噪声/引导值，实现无配对图像翻译中的可控\"保留什么 vs 改变什么\"。",
+   "authors": [],
+   "published": "2026-08-09T04:00:00.000Z",
+   "updated": "2026-08-09T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG",
+    "cs.AI",
+    "cs.MM"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2608.06240",
+   "pdf": "https://arxiv.org/pdf/2608.06240",
+   "announceType": "new",
+   "summary": "用每特征门控替代全局噪声/引导值，实现无配对图像翻译中的可控\"保留什么 vs 改变什么\"。",
+   "topic": "基础理论 / 多模态 / 方法学",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.06240"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "无配对图像翻译（如风格迁移、域适应）的核心难题是\"保内容换风格\"的粒度控制，PRISM 首次实现特征级别的自适应门控",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "Per-feature Gate: 每个源特征的标准化距离到目标特征分布决定门控值——远离目标的特征被释放（可改变），接近目标的特征被保留"
+   ],
+   "innovations": [
+    "门控控制两端: 初始化（混合真实源潜变量与任务匹配噪声）和 ODE 积分过程中的传输时机",
+    "GAN-free flow matching: 无需对抗训练，通过流匹配实现可控翻译"
+   ],
+   "method": "计算源→目标分布距离 → 生成门控信号 → 门控控制初始化噪声混合比例 → 门控控制 ODE 传输 → 输出翻译结果",
+   "results": "在四个基准上取得最佳 Inception FID 和 KID；病理学数据集上核数量比率最接近理想值，证明在目标真实性和结构保留间的良好平衡",
+   "value": "无配对图像翻译（如风格迁移、域适应）的核心难题是\"保内容换风格\"的粒度控制，PRISM 首次实现特征级别的自适应门控",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "Per-feature Gate: 每个源特征的标准化距离到目标特征分布决定门控值——远离目标的特征被释放（可改变），接近目标的特征被保留",
+    "agentChange": "计算源→目标分布距离 → 生成门控信号 → 门控控制初始化噪声混合比例 → 门控控制 ODE 传输 → 输出翻译结果",
+    "selfEvolution": null,
+    "evidence": [
+     "在四个基准上取得最佳 Inception FID 和 KID；病理学数据集上核数量比率最接近理想值，证明在目标真实性和结构保留间的良好平衡",
+     "GAN-free flow matching: 无需对抗训练，通过流匹配实现可控翻译"
+    ],
+    "faq": {
+     "problem": "用每特征门控替代全局噪声/引导值，实现无配对图像翻译中的可控\"保留什么 vs 改变什么\"。",
+     "mechanism": "计算源→目标分布距离 → 生成门控信号 → 门控控制初始化噪声混合比例 → 门控控制 ODE 传输 → 输出翻译结果",
+     "agentChange": "计算源→目标分布距离 → 生成门控信号 → 门控控制初始化噪声混合比例 → 门控控制 ODE 传输 → 输出翻译结果",
+     "support": "在四个基准上取得最佳 Inception FID 和 KID；病理学数据集上核数量比率最接近理想值，证明在目标真实性和结构保留间的良好平衡",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "无配对图像翻译（如风格迁移、域适应）的核心难题是\"保内容换风格\"的粒度控制，PRISM 首次实现特征级别的自适应门控"
+   }
+  },
+  {
+   "id": "2606.13460",
+   "version": 1,
+   "title": "VISA: VLM-Guided Instance Semantic Auditing for 3D Occupancy World Models",
+   "abstract": "用 VLM 在训练时对 3D 占用模型中的每个物体实例进行语义审计，提升自动驾驶世界模型的语义精度。",
+   "authors": [],
+   "published": "2026-08-09T04:00:00.000Z",
+   "updated": "2026-08-09T04:00:00.000Z",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG",
+    "cs.AI",
+    "cs.MM"
+   ],
+   "primaryCategory": "cs.CV",
+   "link": "https://arxiv.org/abs/2606.13460",
+   "pdf": "https://arxiv.org/pdf/2606.13460",
+   "announceType": "new",
+   "summary": "用 VLM 在训练时对 3D 占用模型中的每个物体实例进行语义审计，提升自动驾驶世界模型的语义精度。",
+   "topic": "基础理论 / 多模态 / 方法学",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2606.13460"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "3D 占用世界模型的语义错误直接影响自动驾驶碰撞检测和自由空间判断，VISA 提供了一种零推理开销的语义增强方案",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [
+    "发现: 将 3D 特征与 crop-caption 对齐可提升文本空间相似度，但不一定能提升封闭集占用 mIoU——两者不匹配"
+   ],
+   "innovations": [
+    "VISA 审计管线: 离线 VLM 对代表性 crop 进行审计（类别假设、可能混淆、可靠性、属性、证据）→ 沿目标轨迹传播 → 匹配到 3D 体素",
+    "蒸馏损失: 可靠性加权分类损失 + 属性因子损失 + 场景级审计图损失，推理阶段零开销"
+   ],
+   "method": "训练时 VLM 审计每个实例 → 结构化审计结果蒸馏到 3D 占用 logits → 推理时直接输出，无需 VLM",
+   "results": "在现有占用世界模型上直接提升语义精度，特别是稀有类别和易混淆类别",
+   "value": "3D 占用世界模型的语义错误直接影响自动驾驶碰撞检测和自由空间判断，VISA 提供了一种零推理开销的语义增强方案",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "发现: 将 3D 特征与 crop-caption 对齐可提升文本空间相似度，但不一定能提升封闭集占用 mIoU——两者不匹配",
+    "agentChange": "训练时 VLM 审计每个实例 → 结构化审计结果蒸馏到 3D 占用 logits → 推理时直接输出，无需 VLM",
+    "selfEvolution": null,
+    "evidence": [
+     "在现有占用世界模型上直接提升语义精度，特别是稀有类别和易混淆类别",
+     "蒸馏损失: 可靠性加权分类损失 + 属性因子损失 + 场景级审计图损失，推理阶段零开销"
+    ],
+    "faq": {
+     "problem": "用 VLM 在训练时对 3D 占用模型中的每个物体实例进行语义审计，提升自动驾驶世界模型的语义精度。",
+     "mechanism": "训练时 VLM 审计每个实例 → 结构化审计结果蒸馏到 3D 占用 logits → 推理时直接输出，无需 VLM",
+     "agentChange": "训练时 VLM 审计每个实例 → 结构化审计结果蒸馏到 3D 占用 logits → 推理时直接输出，无需 VLM",
+     "support": "在现有占用世界模型上直接提升语义精度，特别是稀有类别和易混淆类别",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "3D 占用世界模型的语义错误直接影响自动驾驶碰撞检测和自由空间判断，VISA 提供了一种零推理开销的语义增强方案"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-08-08",
+  "newCount": 8,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-08-08 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-08-09T04:00:00.000Z",
+ "totalMatched": 12,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 12
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-08-09",
+ "historical": true
+}

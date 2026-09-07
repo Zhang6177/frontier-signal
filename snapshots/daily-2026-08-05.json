@@ -1,0 +1,489 @@
+{
+ "papers": [
+  {
+   "id": "unknown-2026-08-05-1",
+   "version": 1,
+   "title": "UniEvo-RS: Omni-Prompt Unified Remote Sensing Segmentation with Representative Exemplar-Driven Prototype Evolution",
+   "abstract": "",
+   "authors": [],
+   "published": "2026-08-05T04:00:00.000Z",
+   "updated": "2026-08-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "",
+   "pdf": "",
+   "announceType": "new",
+   "summary": "UniEvo-RS: Omni-Prompt Unified Remote Sensing Segmentation with Representative Exemplar-Driven Prototype Evolution",
+   "topic": "遥感 / 计算机视觉 / Foundation Models",
+   "comments": "",
+   "links": [],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 45,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [],
+   "innovations": [],
+   "method": "",
+   "results": "",
+   "value": "",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "",
+    "agentChange": "",
+    "selfEvolution": null,
+    "evidence": [],
+    "faq": {
+     "problem": "",
+     "mechanism": "",
+     "agentChange": "",
+     "support": "",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": ""
+   }
+  },
+  {
+   "id": "2608.03911",
+   "version": 1,
+   "title": "统一遥感分割：全提示驱动与代表性样本引导的原型演化",
+   "abstract": "提出 UniEvo-RS，一个支持文本/视觉多提示的统一遥感分割框架，通过少量样本反馈即可实现无需训练的精度持续提升。",
+   "authors": [],
+   "published": "2026-08-05T04:00:00.000Z",
+   "updated": "2026-08-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.03911",
+   "pdf": "https://arxiv.org/pdf/2608.03911",
+   "announceType": "new",
+   "summary": "提出 UniEvo-RS，一个支持文本/视觉多提示的统一遥感分割框架，通过少量样本反馈即可实现无需训练的精度持续提升。",
+   "topic": "遥感 / 计算机视觉 / Foundation Models",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.03911"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "这是遥感领域首个统一多模态提示的分割框架，将 foundation model 的自适应能力引入遥感标注流程，大幅降低大规模标注成本。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "现有的 prompt-driven VLM 在遥感场景中面对新场景、未见类别或复杂背景时性能急剧下降；且缺乏灵活的 task routing 机制来适应多意图标注工作流。",
+   "contributions": [
+    "多指令提示数据集：统一文本驱动和视觉驱动提示于单一架构，建立动态任务路由机制"
+   ],
+   "innovations": [
+    "无训练原型演化机制：通过对代表性样本的初始预测与人工标注对比，提炼正负原型，增强 LLM 查询召回并抑制空间背景噪声",
+    "固定预算聚类记忆：在有限计算预算下实现原型的高效存储和更新"
+   ],
+   "method": "构建统一架构处理 text/visual prompt，利用 exemplar-driven prototype evolution 从少数样本反馈中蒸馏预测误差为原型，在 clustering memory 中动态更新。",
+   "results": "在多数设置下达到 SOTA 性能；仅需少量 exemplar 交互即可实现 unseen category 的渐进式精度提升，且无需重新训练。",
+   "value": "这是遥感领域首个统一多模态提示的分割框架，将 foundation model 的自适应能力引入遥感标注流程，大幅降低大规模标注成本。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "多指令提示数据集：统一文本驱动和视觉驱动提示于单一架构，建立动态任务路由机制",
+    "agentChange": "构建统一架构处理 text/visual prompt，利用 exemplar-driven prototype evolution 从少数样本反馈中蒸馏预测误差为原型，在 clustering memory 中动态更新。",
+    "selfEvolution": null,
+    "evidence": [
+     "在多数设置下达到 SOTA 性能；仅需少量 exemplar 交互即可实现 unseen category 的渐进式精度提升，且无需重新训练。",
+     "固定预算聚类记忆：在有限计算预算下实现原型的高效存储和更新"
+    ],
+    "faq": {
+     "problem": "提出 UniEvo-RS，一个支持文本/视觉多提示的统一遥感分割框架，通过少量样本反馈即可实现无需训练的精度持续提升。",
+     "mechanism": "构建统一架构处理 text/visual prompt，利用 exemplar-driven prototype evolution 从少数样本反馈中蒸馏预测误差为原型，在 clustering memory 中动态更新。",
+     "agentChange": "构建统一架构处理 text/visual prompt，利用 exemplar-driven prototype evolution 从少数样本反馈中蒸馏预测误差为原型，在 clustering memory 中动态更新。",
+     "support": "在多数设置下达到 SOTA 性能；仅需少量 exemplar 交互即可实现 unseen category 的渐进式精度提升，且无需重新训练。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "这是遥感领域首个统一多模态提示的分割框架，将 foundation model 的自适应能力引入遥感标注流程，大幅降低大规模标注成本。"
+   }
+  },
+  {
+   "id": "unknown-2026-08-05-3",
+   "version": 1,
+   "title": "ParVL: Parallel Scaling and Expandable Compute Allocation for Multimodal LLMs",
+   "abstract": "",
+   "authors": [],
+   "published": "2026-08-05T04:00:00.000Z",
+   "updated": "2026-08-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "",
+   "pdf": "",
+   "announceType": "new",
+   "summary": "ParVL: Parallel Scaling and Expandable Compute Allocation for Multimodal LLMs",
+   "topic": "遥感 / 计算机视觉 / Foundation Models",
+   "comments": "",
+   "links": [],
+   "hotScore": 76,
+   "scoreParts": {
+    "relevance": 68,
+    "evidence": 45,
+    "noveltyClaim": 64,
+    "actionability": 66,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [],
+   "innovations": [],
+   "method": "",
+   "results": "",
+   "value": "",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "",
+    "agentChange": "",
+    "selfEvolution": null,
+    "evidence": [],
+    "faq": {
+     "problem": "",
+     "mechanism": "",
+     "agentChange": "",
+     "support": "",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 76,
+    "editorialTier": "must-read",
+    "recommendationReason": ""
+   }
+  },
+  {
+   "id": "2608.04010",
+   "version": 1,
+   "title": "ParVL：多模态大语言模型的并行缩放与可扩展计算分配",
+   "abstract": "提出 ParVL 框架，通过在 ViT 和 LLM 间并行复用共享骨干参数来缩放多模态计算，突破传统串行扩展的瓶颈。",
+   "authors": [],
+   "published": "2026-08-05T04:00:00.000Z",
+   "updated": "2026-08-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.04010",
+   "pdf": "https://arxiv.org/pdf/2608.04010",
+   "announceType": "new",
+   "summary": "提出 ParVL 框架，通过在 ViT 和 LLM 间并行复用共享骨干参数来缩放多模态计算，突破传统串行扩展的瓶颈。",
+   "topic": "遥感 / 计算机视觉 / Foundation Models",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.04010"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "首次探索多模态模型中并行计算缩放的可能性，打破了 ViT-LLM 串行架构的固有假设，为多模态扩展提供了新方向。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "现有 MLLM 扩展策略要么增加参数量要么增加串行推理计算，带来巨大内存或延迟开销；且 Vision Transformer 与 LLM 之间的计算分配是固定的，无法按任务优化。",
+   "contributions": [
+    "并行视觉-语言扩展：复用共享的 ViT 和 LLM 骨干参数，跨多个视觉和语言分支并行扩展计算"
+   ],
+   "innovations": [
+    "分支特定前缀参数：每个并行计算流使用 branch-specific prefix parameters 覆盖共享骨干",
+    "端到端全参数微调：在约 13B tokens 上进行全参数 SFT，系统研究 ViT encoder 与 LLM decoder 之间的计算分配权衡"
+   ],
+   "method": "用共享 backbone + 分支特定 prefix 参数构建并行计算流，固定 backbone 参数预算下研究视觉/语言模态间的最优计算分配策略。",
+   "results": "相同配方下优于单分支基线，最优视觉-语言分配比随任务变化。",
+   "value": "首次探索多模态模型中并行计算缩放的可能性，打破了 ViT-LLM 串行架构的固有假设，为多模态扩展提供了新方向。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "并行视觉-语言扩展：复用共享的 ViT 和 LLM 骨干参数，跨多个视觉和语言分支并行扩展计算",
+    "agentChange": "用共享 backbone + 分支特定 prefix 参数构建并行计算流，固定 backbone 参数预算下研究视觉/语言模态间的最优计算分配策略。",
+    "selfEvolution": null,
+    "evidence": [
+     "相同配方下优于单分支基线，最优视觉-语言分配比随任务变化。",
+     "端到端全参数微调：在约 13B tokens 上进行全参数 SFT，系统研究 ViT encoder 与 LLM decoder 之间的计算分配权衡"
+    ],
+    "faq": {
+     "problem": "提出 ParVL 框架，通过在 ViT 和 LLM 间并行复用共享骨干参数来缩放多模态计算，突破传统串行扩展的瓶颈。",
+     "mechanism": "用共享 backbone + 分支特定 prefix 参数构建并行计算流，固定 backbone 参数预算下研究视觉/语言模态间的最优计算分配策略。",
+     "agentChange": "用共享 backbone + 分支特定 prefix 参数构建并行计算流，固定 backbone 参数预算下研究视觉/语言模态间的最优计算分配策略。",
+     "support": "相同配方下优于单分支基线，最优视觉-语言分配比随任务变化。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "首次探索多模态模型中并行计算缩放的可能性，打破了 ViT-LLM 串行架构的固有假设，为多模态扩展提供了新方向。"
+   }
+  },
+  {
+   "id": "unknown-2026-08-05-5",
+   "version": 1,
+   "title": "Latent Reward Registers for Diffusion Preference Alignment",
+   "abstract": "",
+   "authors": [],
+   "published": "2026-08-05T04:00:00.000Z",
+   "updated": "2026-08-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "",
+   "pdf": "",
+   "announceType": "new",
+   "summary": "Latent Reward Registers for Diffusion Preference Alignment",
+   "topic": "遥感 / 计算机视觉 / Foundation Models",
+   "comments": "",
+   "links": [],
+   "hotScore": 69,
+   "scoreParts": {
+    "relevance": 61,
+    "evidence": 45,
+    "noveltyClaim": 57,
+    "actionability": 59,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "",
+   "contributions": [],
+   "innovations": [],
+   "method": "",
+   "results": "",
+   "value": "",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "",
+    "agentChange": "",
+    "selfEvolution": null,
+    "evidence": [],
+    "faq": {
+     "problem": "",
+     "mechanism": "",
+     "agentChange": "",
+     "support": "",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 69,
+    "editorialTier": "recommended",
+    "recommendationReason": ""
+   }
+  },
+  {
+   "id": "2608.03929",
+   "version": 1,
+   "title": "扩散模型偏好对齐的潜在奖励寄存器",
+   "abstract": "通过在冻结 DiT 模型中引入可学习寄存器 token，从中间噪声 latent 直接估计终端偏好，实现高效扩散模型偏好对齐。",
+   "authors": [],
+   "published": "2026-08-05T04:00:00.000Z",
+   "updated": "2026-08-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2608.03929",
+   "pdf": "https://arxiv.org/pdf/2608.03929",
+   "announceType": "new",
+   "summary": "通过在冻结 DiT 模型中引入可学习寄存器 token，从中间噪声 latent 直接估计终端偏好，实现高效扩散模型偏好对齐。",
+   "topic": "遥感 / 计算机视觉 / Foundation Models",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2608.03929"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为扩散模型提供了一种无需修改生成器架构即可实现全程偏好对齐的新范式，训练效率提升 33 倍。",
+   "repository": null,
+   "motivation": "",
+   "coreProblem": "扩散模型偏好对齐通常依赖在最终生成样本上评估的稀疏终端奖励，在多步去噪过程中存在严重的时序信用分配难题。",
+   "contributions": [
+    "潜在奖励寄存器：将可学习的 position-free register tokens 预置于冻结 DiT 的输入序列，从中间噪声 latent 直接估计终端偏好，不改变生成器的隐状态或速度场"
+   ],
+   "innovations": [
+    "Reward-Gradient On-Policy Distillation (RG-OPD)：沿 on-policy 轨迹蒸馏奖励引导更新，绕过标准策略梯度昂贵的 rollout 计算",
+    "Reward-Guided Sampling (RGS)：推理时通过幅度匹配的奖励梯度引导轨迹，无需参数更新"
+   ],
+   "method": "在 DiT 输入序列中 prepend 独立可读出的 register tokens，提取全程 dense 且可微的奖励信号，支持 RG-OPD 训练和 RGS 推理两种对齐策略。",
+   "results": "在高噪声水平(��=0.8)下寄存器达到最高成对准确率；RG-OPD 优于在线 RL 基线同时 GPU 耗时减少高达 33x；RGS 在 training-free 方法中建立新 SOTA，同时提升对齐和感知指标。",
+   "value": "为扩散模型提供了一种无需修改生成器架构即可实现全程偏好对齐的新范式，训练效率提升 33 倍。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-07T21:33:46.000Z",
+    "keyContribution": "潜在奖励寄存器：将可学习的 position-free register tokens 预置于冻结 DiT 的输入序列，从中间噪声 latent 直接估计终端偏好，不改变生成器的隐状态或速度场",
+    "agentChange": "在 DiT 输入序列中 prepend 独立可读出的 register tokens，提取全程 dense 且可微的奖励信号，支持 RG-OPD 训练和 RGS 推理两种对齐策略。",
+    "selfEvolution": null,
+    "evidence": [
+     "在高噪声水平(��=0.8)下寄存器达到最高成对准确率；RG-OPD 优于在线 RL 基线同时 GPU 耗时减少高达 33x；RGS 在 training-free 方法中建立新 SOTA，同时提升对齐和感知指标。",
+     "Reward-Guided Sampling (RGS)：推理时通过幅度匹配的奖励梯度引导轨迹，无需参数更新"
+    ],
+    "faq": {
+     "problem": "通过在冻结 DiT 模型中引入可学习寄存器 token，从中间噪声 latent 直接估计终端偏好，实现高效扩散模型偏好对齐。",
+     "mechanism": "在 DiT 输入序列中 prepend 独立可读出的 register tokens，提取全程 dense 且可微的奖励信号，支持 RG-OPD 训练和 RGS 推理两种对齐策略。",
+     "agentChange": "在 DiT 输入序列中 prepend 独立可读出的 register tokens，提取全程 dense 且可微的奖励信号，支持 RG-OPD 训练和 RGS 推理两种对齐策略。",
+     "support": "在高噪声水平(��=0.8)下寄存器达到最高成对准确率；RG-OPD 优于在线 RL 基线同时 GPU 耗时减少高达 33x；RGS 在 training-free 方法中建立新 SOTA，同时提升对齐和感知指标。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为扩散模型提供了一种无需修改生成器架构即可实现全程偏好对齐的新范式，训练效率提升 33 倍。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-08-04",
+  "newCount": 6,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-08-04 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-07T21:33:46.000Z",
+ "latestPaperAt": "2026-08-05T04:00:00.000Z",
+ "totalMatched": 6,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 6
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 24,
+ "trends": {
+  "status": "accumulating",
+  "days": 24,
+  "minimumDays": 15,
+  "message": "已积累 24/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-07T21:33:46.000Z",
+ "snapshotDay": "2026-08-05",
+ "historical": true
+}
