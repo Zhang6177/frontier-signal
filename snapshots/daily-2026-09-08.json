@@ -1,0 +1,1015 @@
+{
+ "papers": [
+  {
+   "id": "2609.05351",
+   "version": 1,
+   "title": "MEOX: Compact Multimodal Mixture-of-Experts for Earth Observation",
+   "abstract": "3.1M 参数紧凑 S1/S2 多模态 MoE，冻结迁移 EuroSAT 与 cashew 分割超 CSMoE",
+   "authors": [],
+   "published": "2026-09-08T04:00:00.000Z",
+   "updated": "2026-09-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.05351",
+   "pdf": "https://arxiv.org/pdf/2609.05351",
+   "announceType": "new",
+   "summary": "3.1M 参数紧凑 S1/S2 多模态 MoE，冻结迁移 EuroSAT 与 cashew 分割超 CSMoE",
+   "topic": "遥感与地学",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.05351"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "多传感器 EO 表征可压缩到 3M 级且路由可诊断，显著降低部署成本",
+   "repository": null,
+   "motivation": "兼容异构传感器与缺失观测，同时控制参数量与推理成本",
+   "coreProblem": "现有方法依赖 271M+ 参数大架构才能兼容多传感器与缺失观测",
+   "contributions": [
+    "2.94M 参数编码器：共享传感器块+有效性感知融合+稀疏专家",
+    "模态均衡掩码重建预训练+六任务冻结迁移与路由诊断评估"
+   ],
+   "innovations": [
+    "参数量约 1/87 即达 CSMoE 同级冻结迁移水平（紧凑稀疏 MoE）",
+    "延迟有效性感知融合：共享块分传感器处理，patch 级门控合并单序列"
+   ],
+   "method": "S1/S2 各经共享权重 Transformer-MoE 块（band adapter+零初始化有效性嵌入），按有效性先验门控融合为单空间序列，4 个元数据 token（经纬度/月份/ERA5）+轴向 RoPE 支持可变网格；预训练 75% 掩码+10% 六种传感器缺失组合。",
+   "results": "GEO-Bench 冻结迁移：64px EuroSAT 89.70% AA/cashew 64.42% mIoU，超最强 CSMoE 变体（88.3/59.4）1.40/5.02 点；224px EuroSAT 90.56%、cashew 64.08%；BigEarthNet 微调 72.95% mAP；64px FLOPs 较 CSMoE P=32 少 2.84×。",
+   "value": "多传感器 EO 表征可压缩到 3M 级且路由可诊断，显著降低部署成本",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-14T01:24:34.000Z",
+    "keyContribution": "2.94M 参数编码器：共享传感器块+有效性感知融合+稀疏专家",
+    "agentChange": "S1/S2 各经共享权重 Transformer-MoE 块（band adapter+零初始化有效性嵌入），按有效性先验门控融合为单空间序列，4 个元数据 token（经纬度/月份/ERA5）+轴向 RoPE 支持可变网格；预训练 75% 掩码+10% 六种传感器缺失组合。",
+    "selfEvolution": null,
+    "evidence": [
+     "GEO-Bench 冻结迁移：64px EuroSAT 89.70% AA/cashew 64.42% mIoU，超最强 CSMoE 变体（88.3/59.4）1.40/5.02 点；224px EuroSAT 90.56%、cashew 64.08%；BigEarthNet 微调 72.95% mAP；64px FLOPs 较 CSMoE P=32 少 2.84×。",
+     "延迟有效性感知融合：共享块分传感器处理，patch 级门控合并单序列"
+    ],
+    "faq": {
+     "problem": "3.1M 参数紧凑 S1/S2 多模态 MoE，冻结迁移 EuroSAT 与 cashew 分割超 CSMoE",
+     "mechanism": "S1/S2 各经共享权重 Transformer-MoE 块（band adapter+零初始化有效性嵌入），按有效性先验门控融合为单空间序列，4 个元数据 token（经纬度/月份/ERA5）+轴向 RoPE 支持可变网格；预训练 75% 掩码+10% 六种传感器缺失组合。",
+     "agentChange": "S1/S2 各经共享权重 Transformer-MoE 块（band adapter+零初始化有效性嵌入），按有效性先验门控融合为单空间序列，4 个元数据 token（经纬度/月份/ERA5）+轴向 RoPE 支持可变网格；预训练 75% 掩码+10% 六种传感器缺失组合。",
+     "support": "GEO-Bench 冻结迁移：64px EuroSAT 89.70% AA/cashew 64.42% mIoU，超最强 CSMoE 变体（88.3/59.4）1.40/5.02 点；224px EuroSAT 90.56%、cashew 64.08%；BigEarthNet 微调 72.95% mAP；64px FLOPs 较 CSMoE P=32 少 2.84×。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "多传感器 EO 表征可压缩到 3M 级且路由可诊断，显著降低部署成本"
+   }
+  },
+  {
+   "id": "2609.04726",
+   "version": 1,
+   "title": "BMT: A Unified Hierarchical ViT for SAR-to-Optical Translation and Semantic Segmentation",
+   "abstract": "共享分层 ViT 联合 SAR→光学转换与语义分割，paired 转换四项指标全优",
+   "authors": [],
+   "published": "2026-09-08T04:00:00.000Z",
+   "updated": "2026-09-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.04726",
+   "pdf": "https://arxiv.org/pdf/2609.04726",
+   "announceType": "new",
+   "summary": "共享分层 ViT 联合 SAR→光学转换与语义分割，paired 转换四项指标全优",
+   "topic": "遥感与地学",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.04726"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明生成与分割共享表征可互相增益，为 S2O 服务下游任务给出范式",
+   "repository": null,
+   "motivation": "SAR 图斑点噪声重、散射机制不直观，光学图更易解读",
+   "coreProblem": "现有 S2O 方法追视觉效果牺牲语义结构，生成图下游分割精度甚至低于原 SAR",
+   "contributions": [
+    "共享分层 ViT 双分支框架，联合训练 S2O 转换与语义分割",
+    "小波特征+分割标签零初始化卷积逐层注入+有界 Kendall 不确定性加权"
+   ],
+   "innovations": [
+    "不同于 HVTC-GAN 串行流水线，双分支经共享编码器并行双向协作",
+    "逐层多尺度条件注入（初期恒等），而非仅在瓶颈注入全局向量"
+   ],
+   "method": "四级共享 ViT 编码器（LocalViTBlock 门控融合自注意力与深度卷积）接生成/分割双解码器；SAR 三级 db2 小波分解成多尺度金字塔逐层注入；paired/unpaired 分别按 pix2pix/CycleGAN 训练。",
+   "results": "WHU-OPT-SAR（paired）：SSIM 45.54%/PSNR 22.40dB/FID 156.31/KID 6.18 四项超最强基线 HVTC-GAN（43.54/22.18/171.11/6.34）；生成图接 FCN-32s 的 mIoU 14.72（HVTC-GAN 12.65、原 SAR 仅 1.99）；HRSID-DIOR（unpaired）分割 mIoU 88.51%/mPA 93.07% 为源 SAR 最优（unpaired FID 161.8 列第 3）。",
+   "value": "证明生成与分割共享表征可互相增益，为 S2O 服务下游任务给出范式",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-14T01:24:34.000Z",
+    "keyContribution": "共享分层 ViT 双分支框架，联合训练 S2O 转换与语义分割",
+    "agentChange": "四级共享 ViT 编码器（LocalViTBlock 门控融合自注意力与深度卷积）接生成/分割双解码器；SAR 三级 db2 小波分解成多尺度金字塔逐层注入；paired/unpaired 分别按 pix2pix/CycleGAN 训练。",
+    "selfEvolution": null,
+    "evidence": [
+     "WHU-OPT-SAR（paired）：SSIM 45.54%/PSNR 22.40dB/FID 156.31/KID 6.18 四项超最强基线 HVTC-GAN（43.54/22.18/171.11/6.34）；生成图接 FCN-32s 的 mIoU 14.72（HVTC-GAN 12.65、原 SAR 仅 1.99）；HRSID-DIOR（unpaired）分割 mIoU 88.51%/mPA 93.07% 为源 SAR 最优（unpaired FID 161.8 列第 3）。",
+     "逐层多尺度条件注入（初期恒等），而非仅在瓶颈注入全局向量"
+    ],
+    "faq": {
+     "problem": "共享分层 ViT 联合 SAR→光学转换与语义分割，paired 转换四项指标全优",
+     "mechanism": "四级共享 ViT 编码器（LocalViTBlock 门控融合自注意力与深度卷积）接生成/分割双解码器；SAR 三级 db2 小波分解成多尺度金字塔逐层注入；paired/unpaired 分别按 pix2pix/CycleGAN 训练。",
+     "agentChange": "四级共享 ViT 编码器（LocalViTBlock 门控融合自注意力与深度卷积）接生成/分割双解码器；SAR 三级 db2 小波分解成多尺度金字塔逐层注入；paired/unpaired 分别按 pix2pix/CycleGAN 训练。",
+     "support": "WHU-OPT-SAR（paired）：SSIM 45.54%/PSNR 22.40dB/FID 156.31/KID 6.18 四项超最强基线 HVTC-GAN（43.54/22.18/171.11/6.34）；生成图接 FCN-32s 的 mIoU 14.72（HVTC-GAN 12.65、原 SAR 仅 1.99）；HRSID-DIOR（unpaired）分割 mIoU 88.51%/mPA 93.07% 为源 SAR 最优（unpaired FID 161.8 列第 3）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "证明生成与分割共享表征可互相增益，为 S2O 服务下游任务给出范式"
+   }
+  },
+  {
+   "id": "2609.04965",
+   "version": 1,
+   "title": "ARC-Loc: Leveraging Azimuthal Ray Convergence for Direct Cross-View Localization",
+   "abstract": "方位射线交汇做跨视角定位，免 BEV 与深度模型，VIGOR 非 BEV 类最优",
+   "authors": [],
+   "published": "2026-09-08T04:00:00.000Z",
+   "updated": "2026-09-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.04965",
+   "pdf": "https://arxiv.org/pdf/2609.04965",
+   "announceType": "new",
+   "summary": "方位射线交汇做跨视角定位，免 BEV 与深度模型，VIGOR 非 BEV 类最优",
+   "topic": "遥感与地学",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.04965"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "免深度/BEV 轻量方案精度接近 SOTA，适合 GNSS 拒止下实时车载定位",
+   "repository": null,
+   "motivation": "借鉴测绘后方交会（resection）：量测地标方位角即可反推自身位置",
+   "coreProblem": "BEV/3D 提升依赖病态单目深度，需外部深度模型，几何畸变且计算重",
+   "contributions": [
+    "ARC-Loc：免 BEV 与外部深度模型的直接地面-卫星匹配定位",
+    "最小两约束可微 ARC 解算器+免稠密标签的 ARC 训练损失"
+   ],
+   "innovations": [
+    "定位重构为线-点对应：地面关键点变方位射线，位置=射线交汇",
+    "纯 2D 原生域求解：绕开单目深度病态问题，匹配显式可解释"
+   ],
+   "method": "冻结 RADIOv3-L 做 2D-2D 匹配（top-512），每对匹配在卫星图生成方位射线，加权最小二乘闭式解求交汇点+RANSAC；损失=位置损失+0.5×射线距离损失。",
+   "results": "VIGOR（已知朝向）：同区均值 2.52m/跨区 3.11m，Non-BEV 类最优，较 Loc2 均值降 17.6%/9.3%；KITTI（±10° 朝向噪声）同区均值 0.79m，与 FG²（0.75m）相当；匹配时延 58.7ms（FG² 187.6ms）、显存 906MB（Loc2 2168MB）。",
+   "value": "免深度/BEV 轻量方案精度接近 SOTA，适合 GNSS 拒止下实时车载定位",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-14T01:24:34.000Z",
+    "keyContribution": "ARC-Loc：免 BEV 与外部深度模型的直接地面-卫星匹配定位",
+    "agentChange": "冻结 RADIOv3-L 做 2D-2D 匹配（top-512），每对匹配在卫星图生成方位射线，加权最小二乘闭式解求交汇点+RANSAC；损失=位置损失+0.5×射线距离损失。",
+    "selfEvolution": null,
+    "evidence": [
+     "VIGOR（已知朝向）：同区均值 2.52m/跨区 3.11m，Non-BEV 类最优，较 Loc2 均值降 17.6%/9.3%；KITTI（±10° 朝向噪声）同区均值 0.79m，与 FG²（0.75m）相当；匹配时延 58.7ms（FG² 187.6ms）、显存 906MB（Loc2 2168MB）。",
+     "纯 2D 原生域求解：绕开单目深度病态问题，匹配显式可解释"
+    ],
+    "faq": {
+     "problem": "方位射线交汇做跨视角定位，免 BEV 与深度模型，VIGOR 非 BEV 类最优",
+     "mechanism": "冻结 RADIOv3-L 做 2D-2D 匹配（top-512），每对匹配在卫星图生成方位射线，加权最小二乘闭式解求交汇点+RANSAC；损失=位置损失+0.5×射线距离损失。",
+     "agentChange": "冻结 RADIOv3-L 做 2D-2D 匹配（top-512），每对匹配在卫星图生成方位射线，加权最小二乘闭式解求交汇点+RANSAC；损失=位置损失+0.5×射线距离损失。",
+     "support": "VIGOR（已知朝向）：同区均值 2.52m/跨区 3.11m，Non-BEV 类最优，较 Loc2 均值降 17.6%/9.3%；KITTI（±10° 朝向噪声）同区均值 0.79m，与 FG²（0.75m）相当；匹配时延 58.7ms（FG² 187.6ms）、显存 906MB（Loc2 2168MB）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "免深度/BEV 轻量方案精度接近 SOTA，适合 GNSS 拒止下实时车载定位"
+   }
+  },
+  {
+   "id": "2609.04369",
+   "version": 1,
+   "title": "AdaptVPR: Route-Aware Hard Positive Generation for Robust Visual Place Recognition",
+   "abstract": "路由感知生成增广构造 160K 已验证同地点难正样本，域偏移 R@1 最高 +9.2%",
+   "authors": [],
+   "published": "2026-09-08T04:00:00.000Z",
+   "updated": "2026-09-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.04369",
+   "pdf": "https://arxiv.org/pdf/2609.04369",
+   "announceType": "new",
+   "summary": "路由感知生成增广构造 160K 已验证同地点难正样本，域偏移 R@1 最高 +9.2%",
+   "topic": "计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.04369"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "纯训练数据级、模型无关的增广，不改模型即提升遮挡/跨季/夜间鲁棒性",
+   "repository": null,
+   "motivation": "VPR 在天气、时段、遮挡等域偏移下脆弱，真实回访数据昂贵难扩展",
+   "coreProblem": "训练数据同地点外观多样性不足，朴素生成增广易因地标漂移产生假正样本",
+   "contributions": [
+    "VPR 生成增广形式化为同地点难正构造：扩外观多样性+压身份漂移",
+    "AdaptVPR：VLM 场景解析+规则路由调度+全局/局部遮挡/双重三路由",
+    "构建 AdaptCities：160K 已验证难正样本（4 基线×10 基准验证通用性）"
+   ],
+   "innovations": [
+    "路由感知调度：按图级可编辑性评分+配额约束定路线",
+    "VPR 导向验证：RANSAC 几何一致性+CLIP 外观多样性双门控",
+    "非对称闭环反思：局部/双路由用验证反馈改写 prompt 重试，全局单次拒绝"
+   ],
+   "method": "Qwen3-VL-4B 解析场景可编辑性，规则调度器分配路线（全局 IC-Light/局部 Qwen-LightX2V）；候选经 SuperPoint+LightGlue+RANSAC 几何门控与 CLIP 多样性门控，局部/双路由最多 3 轮反思再生成。",
+   "results": "4 基线（SALAD/BoQ/EDTformer/ImAge）×5 标准基准 R@1 全升；BoQ（DINOv2-B）SF-XL-Occlusion R@1 43.4→52.6（+9.2）、跨季 Nordland-X 81.3→89.6（+8.3）；真实:合成 batch 8:1 最优。",
+   "value": "纯训练数据级、模型无关的增广，不改模型即提升遮挡/跨季/夜间鲁棒性",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-14T01:24:34.000Z",
+    "keyContribution": "VPR 生成增广形式化为同地点难正构造：扩外观多样性+压身份漂移",
+    "agentChange": "Qwen3-VL-4B 解析场景可编辑性，规则调度器分配路线（全局 IC-Light/局部 Qwen-LightX2V）；候选经 SuperPoint+LightGlue+RANSAC 几何门控与 CLIP 多样性门控，局部/双路由最多 3 轮反思再生成。",
+    "selfEvolution": null,
+    "evidence": [
+     "4 基线（SALAD/BoQ/EDTformer/ImAge）×5 标准基准 R@1 全升；BoQ（DINOv2-B）SF-XL-Occlusion R@1 43.4→52.6（+9.2）、跨季 Nordland-X 81.3→89.6（+8.3）；真实:合成 batch 8:1 最优。",
+     "VPR 导向验证：RANSAC 几何一致性+CLIP 外观多样性双门控",
+     "非对称闭环反思：局部/双路由用验证反馈改写 prompt 重试，全局单次拒绝"
+    ],
+    "faq": {
+     "problem": "路由感知生成增广构造 160K 已验证同地点难正样本，域偏移 R@1 最高 +9.2%",
+     "mechanism": "Qwen3-VL-4B 解析场景可编辑性，规则调度器分配路线（全局 IC-Light/局部 Qwen-LightX2V）；候选经 SuperPoint+LightGlue+RANSAC 几何门控与 CLIP 多样性门控，局部/双路由最多 3 轮反思再生成。",
+     "agentChange": "Qwen3-VL-4B 解析场景可编辑性，规则调度器分配路线（全局 IC-Light/局部 Qwen-LightX2V）；候选经 SuperPoint+LightGlue+RANSAC 几何门控与 CLIP 多样性门控，局部/双路由最多 3 轮反思再生成。",
+     "support": "4 基线（SALAD/BoQ/EDTformer/ImAge）×5 标准基准 R@1 全升；BoQ（DINOv2-B）SF-XL-Occlusion R@1 43.4→52.6（+9.2）、跨季 Nordland-X 81.3→89.6（+8.3）；真实:合成 batch 8:1 最优。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "纯训练数据级、模型无关的增广，不改模型即提升遮挡/跨季/夜间鲁棒性"
+   }
+  },
+  {
+   "id": "2609.05415",
+   "version": 1,
+   "title": "UniMate: One Unified Model to Animate Diverse Skeletons",
+   "abstract": "统一模型由绑定资产+文本生成任意拓扑动画，未见骨架 FID 0.757 刷新 SOTA",
+   "authors": [],
+   "published": "2026-09-08T04:00:00.000Z",
+   "updated": "2026-09-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.05415",
+   "pdf": "https://arxiv.org/pdf/2609.05415",
+   "announceType": "new",
+   "summary": "统一模型由绑定资产+文本生成任意拓扑动画，未见骨架 FID 0.757 刷新 SOTA",
+   "topic": "计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.05415"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "打通 3D 内容自动化生产的动画环节，任意绑定资产可被统一模型即时驱动",
+   "repository": null,
+   "motivation": "3D 自动绑定已规模化，但驱动这些资产的动画生成仍是最后瓶颈",
+   "coreProblem": "现有学习式动画器依赖类别模板，或需按骨架微调/推理时喂参考动作",
+   "contributions": [
+    "统一基础模型：绑定资产+文本→任意拓扑动画，免测试时优化与再训练",
+    "TADiT：图注意力偏置+Spec-RoPE 谱旋转位置编码+全局拓扑条件",
+    "UniML3D：13,006 条多形态骨骼动作序列（二足/四足/鸟类/海洋等）"
+   ],
+   "innovations": [
+    "首个单模型覆盖人类/动物/关节物体，推理无需目标骨架参考动作",
+    "Spec-RoPE 由图拉普拉斯谱定义旋转角，具可证置换等变性"
+   ],
+   "method": "骨骼 BFS 序列化+12D 关节特征，8 层 flow-matching Transformer 对\"关节×帧\" token 联合注意力，logits 注入图距离偏置，文本与全局拓扑条件经 AdaLN-Zero 注入，FK+LBS 驱动网格。",
+   "results": "7 类未见 Truebones 骨架 FID 0.757 vs AnyTop 2.711（−72%）、多样性 9.20 vs 8.14；文本驱动网格动画 1.21s/样本（AnimateAnyMesh 15.5s、V2M4 1.64h）；32 人用户研究 4.615 vs 2.808/2.413。",
+   "value": "打通 3D 内容自动化生产的动画环节，任意绑定资产可被统一模型即时驱动",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-14T01:24:34.000Z",
+    "keyContribution": "统一基础模型：绑定资产+文本→任意拓扑动画，免测试时优化与再训练",
+    "agentChange": "骨骼 BFS 序列化+12D 关节特征，8 层 flow-matching Transformer 对\"关节×帧\" token 联合注意力，logits 注入图距离偏置，文本与全局拓扑条件经 AdaLN-Zero 注入，FK+LBS 驱动网格。",
+    "selfEvolution": null,
+    "evidence": [
+     "7 类未见 Truebones 骨架 FID 0.757 vs AnyTop 2.711（−72%）、多样性 9.20 vs 8.14；文本驱动网格动画 1.21s/样本（AnimateAnyMesh 15.5s、V2M4 1.64h）；32 人用户研究 4.615 vs 2.808/2.413。",
+     "Spec-RoPE 由图拉普拉斯谱定义旋转角，具可证置换等变性"
+    ],
+    "faq": {
+     "problem": "统一模型由绑定资产+文本生成任意拓扑动画，未见骨架 FID 0.757 刷新 SOTA",
+     "mechanism": "骨骼 BFS 序列化+12D 关节特征，8 层 flow-matching Transformer 对\"关节×帧\" token 联合注意力，logits 注入图距离偏置，文本与全局拓扑条件经 AdaLN-Zero 注入，FK+LBS 驱动网格。",
+     "agentChange": "骨骼 BFS 序列化+12D 关节特征，8 层 flow-matching Transformer 对\"关节×帧\" token 联合注意力，logits 注入图距离偏置，文本与全局拓扑条件经 AdaLN-Zero 注入，FK+LBS 驱动网格。",
+     "support": "7 类未见 Truebones 骨架 FID 0.757 vs AnyTop 2.711（−72%）、多样性 9.20 vs 8.14；文本驱动网格动画 1.21s/样本（AnimateAnyMesh 15.5s、V2M4 1.64h）；32 人用户研究 4.615 vs 2.808/2.413。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "打通 3D 内容自动化生产的动画环节，任意绑定资产可被统一模型即时驱动"
+   }
+  },
+  {
+   "id": "2609.05275",
+   "version": 1,
+   "title": "Don't Drop Dropout: Optimizing Layer Sparsity for Efficient LLM Training and Inference",
+   "abstract": "证明 LLM 预训练应保留 layer dropout：省 25% FLOPs、推理加速 1.55x、近无损",
+   "authors": [],
+   "published": "2026-09-08T04:00:00.000Z",
+   "updated": "2026-09-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.05275",
+   "pdf": "https://arxiv.org/pdf/2609.05275",
+   "announceType": "new",
+   "summary": "证明 LLM 预训练应保留 layer dropout：省 25% FLOPs、推理加速 1.55x、近无损",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.05275"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "标准预训练零侵入配方，同省训练算力并解锁灵活深度推理，可直接采用",
+   "repository": null,
+   "motivation": "规模化后 layer dropout 被 LLM 预训练抛弃，却无人量化过这一放弃的代价",
+   "coreProblem": "既有负面报告或源于次优 schedule/超参，无人系统量化其代价与收益",
+   "contributions": [
+    "2400+ 实验（271M–8.2B、160B tokens）首次系统研究 LLM 层 dropout",
+    "确立 ILD+DTS 最优配方：同 FLOPs 更低 loss，省最多 25% FLOPs",
+    "建立 r_train=1/ρ 缩放规则，解锁 early exit/层跳过/self-speculative decoding"
+   ],
+   "innovations": [
+    "反转此前负面结论：现代单 epoch 大预训练应保留层 dropout",
+    "零侵入诱导弹性深度，无需改架构或加辅助损失（区别于 Balcony/MoD 路线）",
+    "模型越大越耐受高 dropout，p_max 激进至 0.6–0.99"
+   ],
+   "method": "对每个 dropout rate 联合调 LR/batch/WD（r_train=1/ρ 保证超参跨 rate 迁移），消融粒度（整层+per-sequence）、分布（ILD：底层 0 线性增至顶层 p_max）与 schedule（DTS：第 0 步全速率线性衰减至 0）。",
+   "results": "Cerebras CS-3 上：906M ILD+DTS 同 FLOPs val loss 1.9514 < dense 1.9526；8.2B p_max=0.99 省 25% FLOPs（loss 1.663）；self-speculative decoding 270M 1.35x→8.2B 1.55x（接受率 86–98%）；3.9B 隔层跳过 loss 2.129 vs dense 6.446。",
+   "value": "标准预训练零侵入配方，同省训练算力并解锁灵活深度推理，可直接采用",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-14T01:24:34.000Z",
+    "keyContribution": "2400+ 实验（271M–8.2B、160B tokens）首次系统研究 LLM 层 dropout",
+    "agentChange": "对每个 dropout rate 联合调 LR/batch/WD（r_train=1/ρ 保证超参跨 rate 迁移），消融粒度（整层+per-sequence）、分布（ILD：底层 0 线性增至顶层 p_max）与 schedule（DTS：第 0 步全速率线性衰减至 0）。",
+    "selfEvolution": null,
+    "evidence": [
+     "Cerebras CS-3 上：906M ILD+DTS 同 FLOPs val loss 1.9514 < dense 1.9526；8.2B p_max=0.99 省 25% FLOPs（loss 1.663）；self-speculative decoding 270M 1.35x→8.2B 1.55x（接受率 86–98%）；3.9B 隔层跳过 loss 2.129 vs dense 6.446。",
+     "零侵入诱导弹性深度，无需改架构或加辅助损失（区别于 Balcony/MoD 路线）",
+     "模型越大越耐受高 dropout，p_max 激进至 0.6–0.99"
+    ],
+    "faq": {
+     "problem": "证明 LLM 预训练应保留 layer dropout：省 25% FLOPs、推理加速 1.55x、近无损",
+     "mechanism": "对每个 dropout rate 联合调 LR/batch/WD（r_train=1/ρ 保证超参跨 rate 迁移），消融粒度（整层+per-sequence）、分布（ILD：底层 0 线性增至顶层 p_max）与 schedule（DTS：第 0 步全速率线性衰减至 0）。",
+     "agentChange": "对每个 dropout rate 联合调 LR/batch/WD（r_train=1/ρ 保证超参跨 rate 迁移），消融粒度（整层+per-sequence）、分布（ILD：底层 0 线性增至顶层 p_max）与 schedule（DTS：第 0 步全速率线性衰减至 0）。",
+     "support": "Cerebras CS-3 上：906M ILD+DTS 同 FLOPs val loss 1.9514 < dense 1.9526；8.2B p_max=0.99 省 25% FLOPs（loss 1.663）；self-speculative decoding 270M 1.35x→8.2B 1.55x（接受率 86–98%）；3.9B 隔层跳过 loss 2.129 vs dense 6.446。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "标准预训练零侵入配方，同省训练算力并解锁灵活深度推理，可直接采用"
+   }
+  },
+  {
+   "id": "2609.05295",
+   "version": 1,
+   "title": "RISE: Recursive Improvement via Self-Extrapolating Policy Distillation",
+   "abstract": "外推自身 RLVR 轨迹构造教师做自蒸馏，数学/代码/Agent 全面超 GRPO",
+   "authors": [],
+   "published": "2026-09-08T04:00:00.000Z",
+   "updated": "2026-09-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.05295",
+   "pdf": "https://arxiv.org/pdf/2609.05295",
+   "announceType": "new",
+   "summary": "外推自身 RLVR 轨迹构造教师做自蒸馏，数学/代码/Agent 全面超 GRPO",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.05295"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "无需外部模型与特权数据，把稀疏结果信号转成密集 token 级监督",
+   "repository": null,
+   "motivation": "RLVR 只有序列级稀疏奖励，无法做 token 级信用分配",
+   "coreProblem": "外部教师有前缀分布失配，特权自蒸馏受 ICL 能力限制",
+   "contributions": [
+    "RISE：外推自身 RLVR 训练轨迹构造合成教师，免外部模型与特权信息",
+    "统一权重/logit 两空间外推构造，给出 KL 分解与收敛理论"
+   ],
+   "innovations": [
+    "教师由自身轨迹外推（β>1），区别于插值式模型汤与静态教师",
+    "教师随学生每轮刷新，消除静态教师天花板，蒸馏变递归改进机制"
+   ],
+   "method": "每轮先 GRPO 更新到 θ′，再以 β>1 沿\"当前检查点−锚点\"位移外推构造未来教师（权重空间线性外推或 logit 空间几何混合），top-K JSD 损失把教师逐 token 分布蒸馏回学生；β 从 1.2 线性衰减至 1，锚点为 EMA。",
+   "results": "Qwen3-8B Math Avg 60.0→62.7、AIME'25 42.9→46.7；OLMo3-7B AIME'24 30.2→46.9（+16.7）；Agent：ALFWorld 75.0→84.4（+9.4）、WebShop 63.3→74.2（+10.9）；仍超 2× 计算匹配 GRPO 2.2–2.9 点；开销仅 1.3–1.6× 墙钟、零额外采样。",
+   "value": "无需外部模型与特权数据，把稀疏结果信号转成密集 token 级监督",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-14T01:24:34.000Z",
+    "keyContribution": "RISE：外推自身 RLVR 训练轨迹构造合成教师，免外部模型与特权信息",
+    "agentChange": "每轮先 GRPO 更新到 θ′，再以 β>1 沿\"当前检查点−锚点\"位移外推构造未来教师（权重空间线性外推或 logit 空间几何混合），top-K JSD 损失把教师逐 token 分布蒸馏回学生；β 从 1.2 线性衰减至 1，锚点为 EMA。",
+    "selfEvolution": null,
+    "evidence": [
+     "Qwen3-8B Math Avg 60.0→62.7、AIME'25 42.9→46.7；OLMo3-7B AIME'24 30.2→46.9（+16.7）；Agent：ALFWorld 75.0→84.4（+9.4）、WebShop 63.3→74.2（+10.9）；仍超 2× 计算匹配 GRPO 2.2–2.9 点；开销仅 1.3–1.6× 墙钟、零额外采样。",
+     "教师随学生每轮刷新，消除静态教师天花板，蒸馏变递归改进机制"
+    ],
+    "faq": {
+     "problem": "外推自身 RLVR 轨迹构造教师做自蒸馏，数学/代码/Agent 全面超 GRPO",
+     "mechanism": "每轮先 GRPO 更新到 θ′，再以 β>1 沿\"当前检查点−锚点\"位移外推构造未来教师（权重空间线性外推或 logit 空间几何混合），top-K JSD 损失把教师逐 token 分布蒸馏回学生；β 从 1.2 线性衰减至 1，锚点为 EMA。",
+     "agentChange": "每轮先 GRPO 更新到 θ′，再以 β>1 沿\"当前检查点−锚点\"位移外推构造未来教师（权重空间线性外推或 logit 空间几何混合），top-K JSD 损失把教师逐 token 分布蒸馏回学生；β 从 1.2 线性衰减至 1，锚点为 EMA。",
+     "support": "Qwen3-8B Math Avg 60.0→62.7、AIME'25 42.9→46.7；OLMo3-7B AIME'24 30.2→46.9（+16.7）；Agent：ALFWorld 75.0→84.4（+9.4）、WebShop 63.3→74.2（+10.9）；仍超 2× 计算匹配 GRPO 2.2–2.9 点；开销仅 1.3–1.6× 墙钟、零额外采样。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "无需外部模型与特权数据，把稀疏结果信号转成密集 token 级监督"
+   }
+  },
+  {
+   "id": "2609.05171",
+   "version": 1,
+   "title": "WeAgent-MMGenEdit: A Full-Stack Recipe for Multimodal Agentic Image Generation and Editing",
+   "abstract": "多模态 agentic 图像生成/编辑全栈配方，3B 激活策略逼近 1T 参数 agent",
+   "authors": [],
+   "published": "2026-09-08T04:00:00.000Z",
+   "updated": "2026-09-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.05171",
+   "pdf": "https://arxiv.org/pdf/2609.05171",
+   "announceType": "new",
+   "summary": "多模态 agentic 图像生成/编辑全栈配方，3B 激活策略逼近 1T 参数 agent",
+   "topic": "多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.05171"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "知识密集图像生成/编辑的可复现全栈配方，小 MoE 策略逼近顶级 agent",
+   "repository": null,
+   "motivation": "知识密集生图/编辑需外部事实与视觉外观，参数化知识无法恢复长尾",
+   "coreProblem": "已有 agentic 方法缺视觉校验、策略模型过载、检索文图证据融合弱",
+   "contributions": [
+    "WeAgent-Harness 多模态运行时：持久证据库+像素级验证/集成工具",
+    "可验证数据管线：23K SFT 轨迹+14.7K 三层检查表 RL 任务",
+    "300 例双语 WeBench 基准+双侧后训练（策略 SFT+RL/编辑后端 SFT+RL）"
+   ],
+   "innovations": [
+    "证据按 ID 寻址+显式像素级视觉校验，解耦策略缓解上下文过载",
+    "双侧后训练：RL 奖励落地检查表过程级，已有 agentic 方法无图像侧后训练"
+   ],
+   "method": "策略在\"检索-验证-集成-交付\"工具链上运行，证据以稳定 ID 存工作区而非堆入上下文，已验证文图渲染成密集载体图作为生成输入；策略 SFT+GSPO 检查表奖励 RL，编辑后端 LoRA SFT+Diffusion-NFT RL。",
+   "results": "WeBench（300 例）：WeAgent-RL+GPT-Image-2 生成 64.31/编辑 62.52，较未训练 Qwen3-VL 基线 +12.45/+16.72，以约 3% 参数量逼近 1T 参数 Kimi-K2.6（65.73/65.50）；全开源栈 47.39/49.98 大幅超 MindBrush（25.35/24.64）。",
+   "value": "知识密集图像生成/编辑的可复现全栈配方，小 MoE 策略逼近顶级 agent",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-14T01:24:34.000Z",
+    "keyContribution": "WeAgent-Harness 多模态运行时：持久证据库+像素级验证/集成工具",
+    "agentChange": "策略在\"检索-验证-集成-交付\"工具链上运行，证据以稳定 ID 存工作区而非堆入上下文，已验证文图渲染成密集载体图作为生成输入；策略 SFT+GSPO 检查表奖励 RL，编辑后端 LoRA SFT+Diffusion-NFT RL。",
+    "selfEvolution": null,
+    "evidence": [
+     "WeBench（300 例）：WeAgent-RL+GPT-Image-2 生成 64.31/编辑 62.52，较未训练 Qwen3-VL 基线 +12.45/+16.72，以约 3% 参数量逼近 1T 参数 Kimi-K2.6（65.73/65.50）；全开源栈 47.39/49.98 大幅超 MindBrush（25.35/24.64）。",
+     "双侧后训练：RL 奖励落地检查表过程级，已有 agentic 方法无图像侧后训练"
+    ],
+    "faq": {
+     "problem": "多模态 agentic 图像生成/编辑全栈配方，3B 激活策略逼近 1T 参数 agent",
+     "mechanism": "策略在\"检索-验证-集成-交付\"工具链上运行，证据以稳定 ID 存工作区而非堆入上下文，已验证文图渲染成密集载体图作为生成输入；策略 SFT+GSPO 检查表奖励 RL，编辑后端 LoRA SFT+Diffusion-NFT RL。",
+     "agentChange": "策略在\"检索-验证-集成-交付\"工具链上运行，证据以稳定 ID 存工作区而非堆入上下文，已验证文图渲染成密集载体图作为生成输入；策略 SFT+GSPO 检查表奖励 RL，编辑后端 LoRA SFT+Diffusion-NFT RL。",
+     "support": "WeBench（300 例）：WeAgent-RL+GPT-Image-2 生成 64.31/编辑 62.52，较未训练 Qwen3-VL 基线 +12.45/+16.72，以约 3% 参数量逼近 1T 参数 Kimi-K2.6（65.73/65.50）；全开源栈 47.39/49.98 大幅超 MindBrush（25.35/24.64）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "知识密集图像生成/编辑的可复现全栈配方，小 MoE 策略逼近顶级 agent"
+   }
+  },
+  {
+   "id": "2609.04773",
+   "version": 1,
+   "title": "Persistent Teacher Anchoring for Tool-Using Agents",
+   "abstract": "工具调用须先经教师整轮核验才执行，macro best@4 提升 2.5/2.8 分",
+   "authors": [],
+   "published": "2026-09-08T04:00:00.000Z",
+   "updated": "2026-09-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.04773",
+   "pdf": "https://arxiv.org/pdf/2609.04773",
+   "announceType": "new",
+   "summary": "工具调用须先经教师整轮核验才执行，macro best@4 提升 2.5/2.8 分",
+   "topic": "Agent/强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.04773"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给下游 RL 一个未被未验证调用污染的工具轨迹初始策略",
+   "repository": null,
+   "motivation": "在线蒸馏中师生 gap 沿长 rollout 累积，工具观测进一步放大偏差",
+   "coreProblem": "工具调用先于监督执行，现有验证只管文本，调用执行时机未定义",
+   "contributions": [
+    "教师锚定：学生提议、教师承诺，决定轨迹内容与哪个调用进环境",
+    "持久前瞻调度：未完成样本跨学生更新携带，吞吐提升 24%"
+   ],
+   "innovations": [
+    "验证管束从文本延伸到工具执行：仅承诺轮可触发环境转移",
+    "保持在线：学生提全部内容，教师只定去留与修正，而非教师写轨迹"
+   ],
+   "method": "双层门控——chunk 级验证（教师逐 token 核验，已验证 chunk 为原子单元）+turn 级承诺（到达 EOS 或调用闭合标签才整体 commit，运行时才解析执行）；固定 verifier 下前瞻样本跨更新 carryover，绝不在已承诺调用与其观测间切断。",
+   "results": "检索（NQ/PopQA/HotpotQA/Musique）：macro best@4 34.59 vs OPKD 32.07（+2.52），Musique best@4 13.94→18.78；感知（VStar/HRBench4K/8K）：macro best@4 70.00 vs 67.20（+2.80）；吞吐 0.519→0.644 samples/s（+24%）。",
+   "value": "给下游 RL 一个未被未验证调用污染的工具轨迹初始策略",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-14T01:24:34.000Z",
+    "keyContribution": "教师锚定：学生提议、教师承诺，决定轨迹内容与哪个调用进环境",
+    "agentChange": "双层门控——chunk 级验证（教师逐 token 核验，已验证 chunk 为原子单元）+turn 级承诺（到达 EOS 或调用闭合标签才整体 commit，运行时才解析执行）；固定 verifier 下前瞻样本跨更新 carryover，绝不在已承诺调用与其观测间切断。",
+    "selfEvolution": null,
+    "evidence": [
+     "检索（NQ/PopQA/HotpotQA/Musique）：macro best@4 34.59 vs OPKD 32.07（+2.52），Musique best@4 13.94→18.78；感知（VStar/HRBench4K/8K）：macro best@4 70.00 vs 67.20（+2.80）；吞吐 0.519→0.644 samples/s（+24%）。",
+     "保持在线：学生提全部内容，教师只定去留与修正，而非教师写轨迹"
+    ],
+    "faq": {
+     "problem": "工具调用须先经教师整轮核验才执行，macro best@4 提升 2.5/2.8 分",
+     "mechanism": "双层门控——chunk 级验证（教师逐 token 核验，已验证 chunk 为原子单元）+turn 级承诺（到达 EOS 或调用闭合标签才整体 commit，运行时才解析执行）；固定 verifier 下前瞻样本跨更新 carryover，绝不在已承诺调用与其观测间切断。",
+     "agentChange": "双层门控——chunk 级验证（教师逐 token 核验，已验证 chunk 为原子单元）+turn 级承诺（到达 EOS 或调用闭合标签才整体 commit，运行时才解析执行）；固定 verifier 下前瞻样本跨更新 carryover，绝不在已承诺调用与其观测间切断。",
+     "support": "检索（NQ/PopQA/HotpotQA/Musique）：macro best@4 34.59 vs OPKD 32.07（+2.52），Musique best@4 13.94→18.78；感知（VStar/HRBench4K/8K）：macro best@4 70.00 vs 67.20（+2.80）；吞吐 0.519→0.644 samples/s（+24%）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "给下游 RL 一个未被未验证调用污染的工具轨迹初始策略"
+   }
+  },
+  {
+   "id": "2609.04611",
+   "version": 1,
+   "title": "τ^τ-Bench: An Environment for End-To-End, Realistic Agent Construction",
+   "abstract": "把构建客服 agent 本身设为评测任务，最强 Opus 5 仅过 23.9%，专家上限 82.2%",
+   "authors": [],
+   "published": "2026-09-08T04:00:00.000Z",
+   "updated": "2026-09-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.04611",
+   "pdf": "https://arxiv.org/pdf/2609.04611",
+   "announceType": "new",
+   "summary": "把构建客服 agent 本身设为评测任务，最强 Opus 5 仅过 23.9%，专家上限 82.2%",
+   "topic": "Agent/强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.04611"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把协作式 agent 构建变成可量化目标，量化编码 agent 距生产级交付的差距",
+   "repository": null,
+   "motivation": "企业 agent 构建日益交给编码 agent，却缺衡量其能否真实交付的基准",
+   "coreProblem": "现有基准只评已给定 agent 的运行表现，从不考编码 agent 能否从零构建",
+   "contributions": [
+    "τ^τ-bench：端到端构建客服 agent 本身作为评测任务",
+    "发布 53 任务/4 域+专家参考上限，用留出模拟用户部署打分"
+   ],
+   "innovations": [
+    "评测对象由「运行 agent」反转为「构建 agent」本身",
+    "规格须从 2,868 份多模态业务档案与需追问的模拟客户中恢复"
+   ],
+   "method": "把 τ-bench 域策略拆成原子事实，转生成为手册/工单/表格/截图/录音等业务档案；开发者 agent 在沙箱内恢复需求、在约 20 个模型菜单与每会话成本预算下实现完整客服 agent，再由留出模拟用户部署评分。",
+   "results": "53 任务/4 域（airline/retail/telecom/banking）：Claude Opus 5+Claude Code 23.9%、GPT-5.6-sol+Codex 22.0%、GPT-5.6-terra+Codex 18.0%、Kimi K3+OpenCode 17.9%、Sonnet 5+Claude Code 14.9%；专家上限 82.2%（约最强 3.4×）；banking 最难（最强仅 5.9%）。",
+   "value": "把协作式 agent 构建变成可量化目标，量化编码 agent 距生产级交付的差距",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-14T01:24:34.000Z",
+    "keyContribution": "τ^τ-bench：端到端构建客服 agent 本身作为评测任务",
+    "agentChange": "把 τ-bench 域策略拆成原子事实，转生成为手册/工单/表格/截图/录音等业务档案；开发者 agent 在沙箱内恢复需求、在约 20 个模型菜单与每会话成本预算下实现完整客服 agent，再由留出模拟用户部署评分。",
+    "selfEvolution": null,
+    "evidence": [
+     "53 任务/4 域（airline/retail/telecom/banking）：Claude Opus 5+Claude Code 23.9%、GPT-5.6-sol+Codex 22.0%、GPT-5.6-terra+Codex 18.0%、Kimi K3+OpenCode 17.9%、Sonnet 5+Claude Code 14.9%；专家上限 82.2%（约最强 3.4×）；banking 最难（最强仅 5.9%）。",
+     "规格须从 2,868 份多模态业务档案与需追问的模拟客户中恢复"
+    ],
+    "faq": {
+     "problem": "把构建客服 agent 本身设为评测任务，最强 Opus 5 仅过 23.9%，专家上限 82.2%",
+     "mechanism": "把 τ-bench 域策略拆成原子事实，转生成为手册/工单/表格/截图/录音等业务档案；开发者 agent 在沙箱内恢复需求、在约 20 个模型菜单与每会话成本预算下实现完整客服 agent，再由留出模拟用户部署评分。",
+     "agentChange": "把 τ-bench 域策略拆成原子事实，转生成为手册/工单/表格/截图/录音等业务档案；开发者 agent 在沙箱内恢复需求、在约 20 个模型菜单与每会话成本预算下实现完整客服 agent，再由留出模拟用户部署评分。",
+     "support": "53 任务/4 域（airline/retail/telecom/banking）：Claude Opus 5+Claude Code 23.9%、GPT-5.6-sol+Codex 22.0%、GPT-5.6-terra+Codex 18.0%、Kimi K3+OpenCode 17.9%、Sonnet 5+Claude Code 14.9%；专家上限 82.2%（约最强 3.4×）；banking 最难（最强仅 5.9%）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "把协作式 agent 构建变成可量化目标，量化编码 agent 距生产级交付的差距"
+   }
+  },
+  {
+   "id": "2609.04355",
+   "version": 1,
+   "title": "VLA-Precision: Asymmetric Co-Bootstrapping for Efficient Real-World Online RL of VLAs",
+   "abstract": "ACoB+ACoB-Stream 做大 VLA 真机在线 RL，9 个化学精密任务 98.3% 成功率",
+   "authors": [],
+   "published": "2026-09-08T04:00:00.000Z",
+   "updated": "2026-09-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.04355",
+   "pdf": "https://arxiv.org/pdf/2609.04355",
+   "announceType": "new",
+   "summary": "ACoB+ACoB-Stream 做大 VLA 真机在线 RL，9 个化学精密任务 98.3% 成功率",
+   "topic": "Agent/强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.04355"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "大 VLA 真机在线 RL 首次稳定高效用于高危精密操作，精度提升不侵蚀既有能力",
+   "repository": null,
+   "motivation": "预训练 VLA 泛化广但精密重复任务不可靠，行为克隆受示范质量上限约束",
+   "coreProblem": "真机在线 RL 中 value 估计不可靠引发策略漂移，大 VLA 推理开销压低吞吐",
+   "contributions": [
+    "ACoB：干预引导行为学习与渐进价值校准的跨时间尺度协同自举",
+    "ACoB-Stream 闭环经验-策略架构，吞吐与计算效率最高提升 10.9×"
+   ],
+   "innovations": [
+    "用相对优势成对比较取代绝对 Q 最大化，从信号层抑漂而非仅靠 BC 约束",
+    "冻结前缀 KV 跨更新复用+按需流式，大 VLA 更新从逐样本重算变为按需取用"
+   ],
+   "method": "先以示教流匹配全量微调 π0.5 得任务先验，再冻结多模态前缀与动作专家底参，在线 RL 只训动作专家 LoRA；快尺度干预引导 BC 吸行为，慢尺度 K-critic 集成渐进校准价值，仅全部 critic 一致认可才计正优势。",
+   "results": "9 化学任务（4 类）×4 本体（UR5e/LinkerHand/双臂 UR5e/Franka）：平均成功率 98.3%（7 任务 100%）、在线训练 45.8 min/task；成功 episode 27.6s，比 π0（32.0s）快 1.2×、比 HIL-SERL（50.4s）快 1.8×；较最强 RL 基线 Robo-Dopamine（10.0%）成功率 +88.3pp。",
+   "value": "大 VLA 真机在线 RL 首次稳定高效用于高危精密操作，精度提升不侵蚀既有能力",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-14T01:24:34.000Z",
+    "keyContribution": "ACoB：干预引导行为学习与渐进价值校准的跨时间尺度协同自举",
+    "agentChange": "先以示教流匹配全量微调 π0.5 得任务先验，再冻结多模态前缀与动作专家底参，在线 RL 只训动作专家 LoRA；快尺度干预引导 BC 吸行为，慢尺度 K-critic 集成渐进校准价值，仅全部 critic 一致认可才计正优势。",
+    "selfEvolution": null,
+    "evidence": [
+     "9 化学任务（4 类）×4 本体（UR5e/LinkerHand/双臂 UR5e/Franka）：平均成功率 98.3%（7 任务 100%）、在线训练 45.8 min/task；成功 episode 27.6s，比 π0（32.0s）快 1.2×、比 HIL-SERL（50.4s）快 1.8×；较最强 RL 基线 Robo-Dopamine（10.0%）成功率 +88.3pp。",
+     "冻结前缀 KV 跨更新复用+按需流式，大 VLA 更新从逐样本重算变为按需取用"
+    ],
+    "faq": {
+     "problem": "ACoB+ACoB-Stream 做大 VLA 真机在线 RL，9 个化学精密任务 98.3% 成功率",
+     "mechanism": "先以示教流匹配全量微调 π0.5 得任务先验，再冻结多模态前缀与动作专家底参，在线 RL 只训动作专家 LoRA；快尺度干预引导 BC 吸行为，慢尺度 K-critic 集成渐进校准价值，仅全部 critic 一致认可才计正优势。",
+     "agentChange": "先以示教流匹配全量微调 π0.5 得任务先验，再冻结多模态前缀与动作专家底参，在线 RL 只训动作专家 LoRA；快尺度干预引导 BC 吸行为，慢尺度 K-critic 集成渐进校准价值，仅全部 critic 一致认可才计正优势。",
+     "support": "9 化学任务（4 类）×4 本体（UR5e/LinkerHand/双臂 UR5e/Franka）：平均成功率 98.3%（7 任务 100%）、在线训练 45.8 min/task；成功 episode 27.6s，比 π0（32.0s）快 1.2×、比 HIL-SERL（50.4s）快 1.8×；较最强 RL 基线 Robo-Dopamine（10.0%）成功率 +88.3pp。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "大 VLA 真机在线 RL 首次稳定高效用于高危精密操作，精度提升不侵蚀既有能力"
+   }
+  },
+  {
+   "id": "2609.04852",
+   "version": 1,
+   "title": "KVMem: Virtualizing Million-Token Agent Workspaces on a Consumer GPU",
+   "abstract": "智能体工作区 KV 虚拟化：24GB 笔记本跑 1M token，DeepSWE 43.8%→48.4%",
+   "authors": [],
+   "published": "2026-09-08T04:00:00.000Z",
+   "updated": "2026-09-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.04852",
+   "pdf": "https://arxiv.org/pdf/2609.04852",
+   "announceType": "new",
+   "summary": "智能体工作区 KV 虚拟化：24GB 笔记本跑 1M token，DeepSWE 43.8%→48.4%",
+   "topic": "系统/基础设施",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.04852"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "解耦可寻址工作区与原生窗口，百万 token 智能体工作区在消费级硬件可行",
+   "repository": null,
+   "motivation": "智能体累积的工作区历史超过 GPU KV 容量与模型原生上下文窗口",
+   "coreProblem": "压缩在未知未来相关性时决定保留而丢证据，文本检索重复 prefill 已处理内容",
+   "contributions": [
+    "KV 上下文虚拟化抽象：解耦可寻址工作区与 GPU 驻留 KV 集",
+    "KVMem：步级调度+Mean-K 注意力空间块检索+三层 KV 分页重物化"
+   ],
+   "innovations": [
+    "将虚拟内存范式搬入智能体 KV 上下文：地址空间远超 GPU 物理驻留集",
+    "历史以可复用 KV 块而非文本留存：选块+re-RoPE 恢复，免重 prefill",
+    "模型原生检索：Mean-K 块级索引在服务模型自身注意力空间打分"
+   ],
+   "method": "溢出历史按 32 token 分页 KV 存 GPU/主机内存/NVMe 三层，每个 agent 步以每块每层每 KV 头一个去 RoPE Mean-K 向量对当前 query softmax 选块，再经页表+re-RoPE 重组成紧凑执行视图。",
+   "results": "LongMemEval-S 85.6%（Full Context 86.6%、Compact+RAG 86.2%、Compact-only 45.6%）；AgentLongBench 1M 50.0%（超 C+RAG +8pp）；恢复延迟 0.38–1.81s，比 C+RAG 快 11.4–53.8×；DeepSWE（Qwen3.8-27B）Pass@1 43.8%→48.4%、Pass@4 81.3%→93.8%；24GB 笔记本 ~50 tokens/s。",
+   "value": "解耦可寻址工作区与原生窗口，百万 token 智能体工作区在消费级硬件可行",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-14T01:24:34.000Z",
+    "keyContribution": "KV 上下文虚拟化抽象：解耦可寻址工作区与 GPU 驻留 KV 集",
+    "agentChange": "溢出历史按 32 token 分页 KV 存 GPU/主机内存/NVMe 三层，每个 agent 步以每块每层每 KV 头一个去 RoPE Mean-K 向量对当前 query softmax 选块，再经页表+re-RoPE 重组成紧凑执行视图。",
+    "selfEvolution": null,
+    "evidence": [
+     "LongMemEval-S 85.6%（Full Context 86.6%、Compact+RAG 86.2%、Compact-only 45.6%）；AgentLongBench 1M 50.0%（超 C+RAG +8pp）；恢复延迟 0.38–1.81s，比 C+RAG 快 11.4–53.8×；DeepSWE（Qwen3.8-27B）Pass@1 43.8%→48.4%、Pass@4 81.3%→93.8%；24GB 笔记本 ~50 tokens/s。",
+     "历史以可复用 KV 块而非文本留存：选块+re-RoPE 恢复，免重 prefill",
+     "模型原生检索：Mean-K 块级索引在服务模型自身注意力空间打分"
+    ],
+    "faq": {
+     "problem": "智能体工作区 KV 虚拟化：24GB 笔记本跑 1M token，DeepSWE 43.8%→48.4%",
+     "mechanism": "溢出历史按 32 token 分页 KV 存 GPU/主机内存/NVMe 三层，每个 agent 步以每块每层每 KV 头一个去 RoPE Mean-K 向量对当前 query softmax 选块，再经页表+re-RoPE 重组成紧凑执行视图。",
+     "agentChange": "溢出历史按 32 token 分页 KV 存 GPU/主机内存/NVMe 三层，每个 agent 步以每块每层每 KV 头一个去 RoPE Mean-K 向量对当前 query softmax 选块，再经页表+re-RoPE 重组成紧凑执行视图。",
+     "support": "LongMemEval-S 85.6%（Full Context 86.6%、Compact+RAG 86.2%、Compact-only 45.6%）；AgentLongBench 1M 50.0%（超 C+RAG +8pp）；恢复延迟 0.38–1.81s，比 C+RAG 快 11.4–53.8×；DeepSWE（Qwen3.8-27B）Pass@1 43.8%→48.4%、Pass@4 81.3%→93.8%；24GB 笔记本 ~50 tokens/s。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "解耦可寻址工作区与原生窗口，百万 token 智能体工作区在消费级硬件可行"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-09-07",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-09-07 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-14T01:24:34.000Z",
+ "latestPaperAt": "2026-09-08T04:00:00.000Z",
+ "totalMatched": 392,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 392
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 29,
+ "trends": {
+  "status": "accumulating",
+  "days": 29,
+  "minimumDays": 15,
+  "message": "已积累 29/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-14T01:24:34.000Z",
+ "snapshotDay": "2026-09-08",
+ "historical": true
+}
