@@ -1,0 +1,1022 @@
+{
+ "papers": [
+  {
+   "id": "2609.21219",
+   "version": 1,
+   "title": "事件相机多视角地理定位",
+   "abstract": "I2E 把五套 RGB 地理定位数据转事件流训练事件 ViT，三基准平均 R@1 达 82%",
+   "authors": [],
+   "published": "2026-09-21T04:00:00.000Z",
+   "updated": "2026-09-21T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.21219",
+   "pdf": "https://arxiv.org/pdf/2609.21219",
+   "announceType": "new",
+   "summary": "I2E 把五套 RGB 地理定位数据转事件流训练事件 ViT，三基准平均 R@1 达 82%",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.21219"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "合成事件流补足真实数据稀缺，让视角鲁棒定位可大规模训练",
+   "repository": null,
+   "motivation": "事件相机定位省电抗模糊，但现有系统只覆盖小规模固定路线",
+   "coreProblem": "事件 VPR 数据集比百万级 RGB 数据小几个数量级，模型不抗视角与朝向变化",
+   "contributions": [
+    "提出 MegaEvent：完全由合成事件流训练的事件 VPR 系统",
+    "构建 Springfield-Event-VPR：3.7 km 路线 × 3 机位，共 11.1 km"
+   ],
+   "innovations": [
+    "首次把 MegaLoc 多数据集训练范式迁到事件域，产出超 800 万帧地理标注事件",
+    "首个同时含视角与朝向变化的真实事件 VPR 评测集"
+   ],
+   "method": "Image-to-Event 转换五套地理标注数据集，微调事件 ViT 全部 12 层并接 SALAD 聚合器，用分通道多相似度损失训练",
+   "results": "平均 R@1 82%（Brisbane 0.79 / NSAVP 0.83 / NYC 0.91），超次优事件法 EventGeM 20 个召回点、超 RGB 法 8–26 点；新集 Springfield R@1 0.50 对最强基线 0.41",
+   "value": "合成事件流补足真实数据稀缺，让视角鲁棒定位可大规模训练",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 MegaEvent：完全由合成事件流训练的事件 VPR 系统",
+    "agentChange": "Image-to-Event 转换五套地理标注数据集，微调事件 ViT 全部 12 层并接 SALAD 聚合器，用分通道多相似度损失训练",
+    "selfEvolution": null,
+    "evidence": [
+     "平均 R@1 82%（Brisbane 0.79 / NSAVP 0.83 / NYC 0.91），超次优事件法 EventGeM 20 个召回点、超 RGB 法 8–26 点；新集 Springfield R@1 0.50 对最强基线 0.41",
+     "首个同时含视角与朝向变化的真实事件 VPR 评测集"
+    ],
+    "faq": {
+     "problem": "I2E 把五套 RGB 地理定位数据转事件流训练事件 ViT，三基准平均 R@1 达 82%",
+     "mechanism": "Image-to-Event 转换五套地理标注数据集，微调事件 ViT 全部 12 层并接 SALAD 聚合器，用分通道多相似度损失训练",
+     "agentChange": "Image-to-Event 转换五套地理标注数据集，微调事件 ViT 全部 12 层并接 SALAD 聚合器，用分通道多相似度损失训练",
+     "support": "平均 R@1 82%（Brisbane 0.79 / NSAVP 0.83 / NYC 0.91），超次优事件法 EventGeM 20 个召回点、超 RGB 法 8–26 点；新集 Springfield R@1 0.50 对最强基线 0.41",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "合成事件流补足真实数据稀缺，让视角鲁棒定位可大规模训练"
+   }
+  },
+  {
+   "id": "2609.21304",
+   "version": 1,
+   "title": "检测 + 几何聚类区分无人机影像中的重叠植株",
+   "abstract": "检测后按质心与径向交点聚类判别单株或双株重叠，茄子 F1 0.89、番茄 0.75",
+   "authors": [],
+   "published": "2026-09-21T04:00:00.000Z",
+   "updated": "2026-09-21T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.21304",
+   "pdf": "https://arxiv.org/pdf/2609.21304",
+   "announceType": "new",
+   "summary": "检测后按质心与径向交点聚类判别单株或双株重叠，茄子 F1 0.89、番茄 0.75",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.21304"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "低成本后处理改善密植农田株级监测，可直接接入现有 RGB 流程",
+   "repository": null,
+   "motivation": "密植冠层中相邻植株常被检成一个目标，株级计数与表型测量失真",
+   "coreProblem": "现有解法依赖 RGB-D、双目或主动视角，需额外硬件、标定或重训检测器",
+   "contributions": [
+    "提出检测后几何聚类框架，判别 bush 区域含 1 株还是 2 株重叠",
+    "引入质心与径向交点（RIP）两类特征，并加密度滤波与集成判据"
+   ],
+   "innovations": [
+    "不改检测器、不加传感器，仅用二维影像几何解重叠歧义",
+    "依叶片/枝条沿茎径向分布的先验构造 RIP 特征"
+   ],
+   "method": "YOLOv8 检测 bush 与叶片/枝条 OBB，对 ROI 内特征点做固定 k=2 的 K-means/GMM 聚类，silhouette>0.5 判为双株",
+   "results": "茄子质心法准确率 0.90 / F1 0.89 / 精确率 1.00；番茄质心法 F1 仅 0.67，叠加密度滤波 RIP 后达 0.80 / 1.00 / 0.75（RIP 无滤波 F1 仅 0.31）",
+   "value": "低成本后处理改善密植农田株级监测，可直接接入现有 RGB 流程",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出检测后几何聚类框架，判别 bush 区域含 1 株还是 2 株重叠",
+    "agentChange": "YOLOv8 检测 bush 与叶片/枝条 OBB，对 ROI 内特征点做固定 k=2 的 K-means/GMM 聚类，silhouette>0.5 判为双株",
+    "selfEvolution": null,
+    "evidence": [
+     "茄子质心法准确率 0.90 / F1 0.89 / 精确率 1.00；番茄质心法 F1 仅 0.67，叠加密度滤波 RIP 后达 0.80 / 1.00 / 0.75（RIP 无滤波 F1 仅 0.31）",
+     "依叶片/枝条沿茎径向分布的先验构造 RIP 特征"
+    ],
+    "faq": {
+     "problem": "检测后按质心与径向交点聚类判别单株或双株重叠，茄子 F1 0.89、番茄 0.75",
+     "mechanism": "YOLOv8 检测 bush 与叶片/枝条 OBB，对 ROI 内特征点做固定 k=2 的 K-means/GMM 聚类，silhouette>0.5 判为双株",
+     "agentChange": "YOLOv8 检测 bush 与叶片/枝条 OBB，对 ROI 内特征点做固定 k=2 的 K-means/GMM 聚类，silhouette>0.5 判为双株",
+     "support": "茄子质心法准确率 0.90 / F1 0.89 / 精确率 1.00；番茄质心法 F1 仅 0.67，叠加密度滤波 RIP 后达 0.80 / 1.00 / 0.75（RIP 无滤波 F1 仅 0.31）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "低成本后处理改善密植农田株级监测，可直接接入现有 RGB 流程"
+   }
+  },
+  {
+   "id": "2609.21241",
+   "version": 1,
+   "title": "上下文感知复制粘贴增强的野火多类语义分割",
+   "abstract": "按灰烬–植被组成选火簇粘贴位置做增强，野火分割漏检率降至 6.75%",
+   "authors": [],
+   "published": "2026-09-21T04:00:00.000Z",
+   "updated": "2026-09-21T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.21241",
+   "pdf": "https://arxiv.org/pdf/2609.21241",
+   "announceType": "new",
+   "summary": "按灰烬–植被组成选火簇粘贴位置做增强，野火分割漏检率降至 6.75%",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.21241"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "提升小样本野火分割可信度，服务火线判读与可燃物制图",
+   "repository": null,
+   "motivation": "野火标注稀缺昂贵，随机复制粘贴会造出\"火烧沥青\"这类失真样本",
+   "coreProblem": "原 CCPDA 随机选址会压盖已有火区，或把火簇贴到道路、水面等不可燃区",
+   "contributions": [
+    "提出 Context-Aware CCPDA：语义约束 + 灰烬–植被组成匹配选址",
+    "用加权和 MOO 打分横向对比四种增强，并在四种分割网络上验证"
+   ],
+   "innovations": [
+    "以源火簇框与候选区 Ash–Vegetation 组成的欧氏距离作选址代价",
+    "语义约束禁止压盖 Fire 与不可燃 Background，无解则递缩窗口重搜"
+   ],
+   "method": "统计源火簇框内 Ash/Vegetation 占比，滑窗排除压盖区后取组成最接近处粘贴，逐张迭代更新目标图",
+   "results": "U-Net 上 Fire 漏检率 6.75% 对非上下文 CCPDA 8.24%（相对降 18.1%），加权分 F(x) 0.8458 对 0.8271；SegNet 上 10.17%→7.78%",
+   "value": "提升小样本野火分割可信度，服务火线判读与可燃物制图",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 Context-Aware CCPDA：语义约束 + 灰烬–植被组成匹配选址",
+    "agentChange": "统计源火簇框内 Ash/Vegetation 占比，滑窗排除压盖区后取组成最接近处粘贴，逐张迭代更新目标图",
+    "selfEvolution": null,
+    "evidence": [
+     "U-Net 上 Fire 漏检率 6.75% 对非上下文 CCPDA 8.24%（相对降 18.1%），加权分 F(x) 0.8458 对 0.8271；SegNet 上 10.17%→7.78%",
+     "语义约束禁止压盖 Fire 与不可燃 Background，无解则递缩窗口重搜"
+    ],
+    "faq": {
+     "problem": "按灰烬–植被组成选火簇粘贴位置做增强，野火分割漏检率降至 6.75%",
+     "mechanism": "统计源火簇框内 Ash/Vegetation 占比，滑窗排除压盖区后取组成最接近处粘贴，逐张迭代更新目标图",
+     "agentChange": "统计源火簇框内 Ash/Vegetation 占比，滑窗排除压盖区后取组成最接近处粘贴，逐张迭代更新目标图",
+     "support": "U-Net 上 Fire 漏检率 6.75% 对非上下文 CCPDA 8.24%（相对降 18.1%），加权分 F(x) 0.8458 对 0.8271；SegNet 上 10.17%→7.78%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "提升小样本野火分割可信度，服务火线判读与可燃物制图"
+   }
+  },
+  {
+   "id": "2609.21424",
+   "version": 1,
+   "title": "P³-SAM：面向小样本带钢表面缺陷分割的感知并行提示",
+   "abstract": "用感知编码加并行提示改造 SAM，小样本带钢缺陷分割 mIoU 最高 +12.00%",
+   "authors": [],
+   "published": "2026-09-21T04:00:00.000Z",
+   "updated": "2026-09-21T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.21424",
+   "pdf": "https://arxiv.org/pdf/2609.21424",
+   "announceType": "new",
+   "summary": "用感知编码加并行提示改造 SAM，小样本带钢缺陷分割 mIoU 最高 +12.00%",
+   "topic": "基础模型 / SAM / 3D",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.21424"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为低对比度工业缺陷的小样本分割提供可复用的提示式范式",
+   "repository": null,
+   "motivation": "带钢缺陷标注昂贵，自然图像上有效的小样本分割方法难以直接迁移",
+   "coreProblem": "现有方法只用稀疏语义提示、丢弃空间结构，且依赖深层特征而忽略低对比度微纹理",
+   "contributions": [
+    "提出 P³-SAM，在三个小样本带钢缺陷基准上取得 SOTA",
+    "设计 POE：多尺度 Retinex 优化 + 原型/伪掩码引导的浅层特征增强",
+    "设计 PPG：并行生成语义提示与空间提示嵌入"
+   ],
+   "innovations": [
+    "不同于只从增强特征采样稀疏提示，同时由查询特征生成稠密空间提示",
+    "把感知优化直接加在 SAM 浅层编码以保留微纹理，而非只靠深层语义特征"
+   ],
+   "method": "冻结 SAM；POE 增强支持/查询特征，PPG 并行产出语义与空间提示送入掩码解码器",
+   "results": "Surface Defects-4i 1-shot mIoU 43.41→55.41（+12.00）、FB-IoU 62.79→69.54；FSSD-12 1-shot 71.82→75.12",
+   "value": "为低对比度工业缺陷的小样本分割提供可复用的提示式范式",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 P³-SAM，在三个小样本带钢缺陷基准上取得 SOTA",
+    "agentChange": "冻结 SAM；POE 增强支持/查询特征，PPG 并行产出语义与空间提示送入掩码解码器",
+    "selfEvolution": null,
+    "evidence": [
+     "Surface Defects-4i 1-shot mIoU 43.41→55.41（+12.00）、FB-IoU 62.79→69.54；FSSD-12 1-shot 71.82→75.12",
+     "把感知优化直接加在 SAM 浅层编码以保留微纹理，而非只靠深层语义特征"
+    ],
+    "faq": {
+     "problem": "用感知编码加并行提示改造 SAM，小样本带钢缺陷分割 mIoU 最高 +12.00%",
+     "mechanism": "冻结 SAM；POE 增强支持/查询特征，PPG 并行产出语义与空间提示送入掩码解码器",
+     "agentChange": "冻结 SAM；POE 增强支持/查询特征，PPG 并行产出语义与空间提示送入掩码解码器",
+     "support": "Surface Defects-4i 1-shot mIoU 43.41→55.41（+12.00）、FB-IoU 62.79→69.54；FSSD-12 1-shot 71.82→75.12",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为低对比度工业缺陷的小样本分割提供可复用的提示式范式"
+   }
+  },
+  {
+   "id": "2609.21502",
+   "version": 1,
+   "title": "AWM-3DFM：自适应世界记忆的 3D 基础模型",
+   "abstract": "用自适应世界记忆加子图 SL(4) 优化，统一 3D 定位、重建与高斯渲染",
+   "authors": [],
+   "published": "2026-09-21T04:00:00.000Z",
+   "updated": "2026-09-21T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.21502",
+   "pdf": "https://arxiv.org/pdf/2609.21502",
+   "announceType": "new",
+   "summary": "用自适应世界记忆加子图 SL(4) 优化，统一 3D 定位、重建与高斯渲染",
+   "topic": "基础模型 / SAM / 3D",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.21502"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把 3D 基础模型从短窗几何预测推进为持久的机器人世界模型",
+   "repository": null,
+   "motivation": "3D 基础模型缺乏持久、可扩展且可渲染的长期世界记忆",
+   "coreProblem": "循环记忆状态被动均匀更新，低质观测会污染记忆并累积位姿漂移",
+   "contributions": [
+    "提出以共享自适应世界记忆为核心的 3D 基础模型，统一位姿、稠密点云与高斯",
+    "设计门控循环更新 + 测试时时空调节的双阶段记忆机制",
+    "引入子图记忆组织、回环与 SL(4) 全局优化，并加高斯重建头"
+   ],
+   "innovations": [
+    "不同于被动均匀更新，以时序演化与观测一致性逐 token 调节记忆的更新/保留/遗忘",
+    "把 SL(4) 流形优化用于子图全局对齐，使同一份记忆可解码为可渲染高斯"
+   ],
+   "method": "共享编码器出 token，经双阶段记忆调节后分别解码位姿、度量点图与高斯；子图 + 回环 + SL(4) 保全局一致",
+   "results": "ScanNet/BundleFusion 渲染平均 PSNR 21.52 对 Flash-Mono 18.79（+2.7 dB），LPIPS 0.33 对 0.455，11 场景中 10 个 PSNR 最优；自采长轨迹 RMSE-ATE 0.50 m，优于 MASt3R-SLAM 0.57 m",
+   "value": "把 3D 基础模型从短窗几何预测推进为持久的机器人世界模型",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出以共享自适应世界记忆为核心的 3D 基础模型，统一位姿、稠密点云与高斯",
+    "agentChange": "共享编码器出 token，经双阶段记忆调节后分别解码位姿、度量点图与高斯；子图 + 回环 + SL(4) 保全局一致",
+    "selfEvolution": null,
+    "evidence": [
+     "ScanNet/BundleFusion 渲染平均 PSNR 21.52 对 Flash-Mono 18.79（+2.7 dB），LPIPS 0.33 对 0.455，11 场景中 10 个 PSNR 最优；自采长轨迹 RMSE-ATE 0.50 m，优于 MASt3R-SLAM 0.57 m",
+     "把 SL(4) 流形优化用于子图全局对齐，使同一份记忆可解码为可渲染高斯"
+    ],
+    "faq": {
+     "problem": "用自适应世界记忆加子图 SL(4) 优化，统一 3D 定位、重建与高斯渲染",
+     "mechanism": "共享编码器出 token，经双阶段记忆调节后分别解码位姿、度量点图与高斯；子图 + 回环 + SL(4) 保全局一致",
+     "agentChange": "共享编码器出 token，经双阶段记忆调节后分别解码位姿、度量点图与高斯；子图 + 回环 + SL(4) 保全局一致",
+     "support": "ScanNet/BundleFusion 渲染平均 PSNR 21.52 对 Flash-Mono 18.79（+2.7 dB），LPIPS 0.33 对 0.455，11 场景中 10 个 PSNR 最优；自采长轨迹 RMSE-ATE 0.50 m，优于 MASt3R-SLAM 0.57 m",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "把 3D 基础模型从短窗几何预测推进为持久的机器人世界模型"
+   }
+  },
+  {
+   "id": "2609.21461",
+   "version": 1,
+   "title": "AtomEgo：自我中心数据与机器人数据的具身预训练融合",
+   "abstract": "系统对比三种 ego–机器人协同预训练范式，最优真机成功率 42.86%→64.29%",
+   "authors": [],
+   "published": "2026-09-21T04:00:00.000Z",
+   "updated": "2026-09-21T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.21461",
+   "pdf": "https://arxiv.org/pdf/2609.21461",
+   "announceType": "new",
+   "summary": "系统对比三种 ego–机器人协同预训练范式，最优真机成功率 42.86%→64.29%",
+   "topic": "基础模型 / SAM / 3D",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.21461"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给出可操作准则——ego 数据的对齐质量比数据量更决定增益",
+   "repository": null,
+   "motivation": "机器人演示稀缺同质，第一人称人类交互视频可低成本扩展监督",
+   "coreProblem": "人手动作与机器人指令在形态、运动学与坐标系上不匹配，朴素混数据引发负迁移",
+   "contributions": [
+    "构建 2,659 小时 ego–机器人预训练语料（原始 3,033 小时过滤而来）及处理流水线",
+    "实现三条路线：领域动作头协同、具身对齐渐进迁移、联合视频–动作建模",
+    "在匹配数据与算力下完成受控预训练 + 真机与跨具身评测"
+   ],
+   "innovations": [
+    "此前 ego 数据利用机制多在微调阶段被孤立研究，本文首次在预训练规模做统一受控对比",
+    "用最优传输做轨迹级具身对齐；并揭示朴素视频–动作共训反而损害 WAM 模型"
+   ],
+   "method": "以 Atom-DH / Atom-CL / Atom-WAM 三条路线把 ego 数据接入 VLA 与 world–action 预训练，再真机评测",
+   "results": "七任务真机 ID：Atom-CL 42.86%→64.29%、OOD 22.86%→42.86%；Atom-DH 仅 45.71%；Atom-WAM 反降 28.57%→20.71%",
+   "value": "给出可操作准则——ego 数据的对齐质量比数据量更决定增益",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "构建 2,659 小时 ego–机器人预训练语料（原始 3,033 小时过滤而来）及处理流水线",
+    "agentChange": "以 Atom-DH / Atom-CL / Atom-WAM 三条路线把 ego 数据接入 VLA 与 world–action 预训练，再真机评测",
+    "selfEvolution": null,
+    "evidence": [
+     "七任务真机 ID：Atom-CL 42.86%→64.29%、OOD 22.86%→42.86%；Atom-DH 仅 45.71%；Atom-WAM 反降 28.57%→20.71%",
+     "用最优传输做轨迹级具身对齐；并揭示朴素视频–动作共训反而损害 WAM 模型"
+    ],
+    "faq": {
+     "problem": "系统对比三种 ego–机器人协同预训练范式，最优真机成功率 42.86%→64.29%",
+     "mechanism": "以 Atom-DH / Atom-CL / Atom-WAM 三条路线把 ego 数据接入 VLA 与 world–action 预训练，再真机评测",
+     "agentChange": "以 Atom-DH / Atom-CL / Atom-WAM 三条路线把 ego 数据接入 VLA 与 world–action 预训练，再真机评测",
+     "support": "七任务真机 ID：Atom-CL 42.86%→64.29%、OOD 22.86%→42.86%；Atom-DH 仅 45.71%；Atom-WAM 反降 28.57%→20.71%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "给出可操作准则——ego 数据的对齐质量比数据量更决定增益"
+   }
+  },
+  {
+   "id": "2609.21378",
+   "version": 1,
+   "title": "ArenaFlow：开放智能体 RL 的分层信用传播",
+   "abstract": "把轨迹级偏好反馈分层传给关键步与可复用技能，Open-Travel 35.9→55.4",
+   "authors": [],
+   "published": "2026-09-21T04:00:00.000Z",
+   "updated": "2026-09-21T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.21378",
+   "pdf": "https://arxiv.org/pdf/2609.21378",
+   "announceType": "new",
+   "summary": "把轨迹级偏好反馈分层传给关键步与可复用技能，Open-Travel 35.9→55.4",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.21378"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为无可验证奖励的开放智能体提供细粒度优化与经验复用路径",
+   "repository": null,
+   "motivation": "开放任务解空间大、评分主观，难以构造可靠的标量奖励",
+   "coreProblem": "成对评估仍把丰富反馈压成单条轨迹奖励，关键中间步被淹没，成功行为无法沉淀",
+   "contributions": [
+    "把开放任务优化建模为分层信用传播问题",
+    "提出锦标赛深度加权的步级信用传播，细化关键步优势",
+    "提出用量归因驱动的技能演化，维护全局技能记忆"
+   ],
+   "innovations": [
+    "以锦标赛存活深度作关键步置信度，越深越可信",
+    "裁判除胜负外还给出关键步、可复用技能与技能用量归因",
+    "不同于轨迹级偏好 RL，反馈同时向轨迹内与跨轨迹两个方向传播"
+   ],
+   "method": "锦标赛排序得轨迹奖励，按存活深度加权回传关键步；群组用量归因估技能效用，剪枝后检索为探索先验",
+   "results": "Open-Travel 35.9→55.4、Open-DeepResearch 54.7→69.1（超 ArenaRL）；DeepResearch Bench 43.2 对 ArenaRL 37.6、对 Pref-GRPO 高 23.2；裁判关键步/技能归因 F1 79.5/76.1",
+   "value": "为无可验证奖励的开放智能体提供细粒度优化与经验复用路径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "把开放任务优化建模为分层信用传播问题",
+    "agentChange": "锦标赛排序得轨迹奖励，按存活深度加权回传关键步；群组用量归因估技能效用，剪枝后检索为探索先验",
+    "selfEvolution": null,
+    "evidence": [
+     "Open-Travel 35.9→55.4、Open-DeepResearch 54.7→69.1（超 ArenaRL）；DeepResearch Bench 43.2 对 ArenaRL 37.6、对 Pref-GRPO 高 23.2；裁判关键步/技能归因 F1 79.5/76.1",
+     "裁判除胜负外还给出关键步、可复用技能与技能用量归因",
+     "不同于轨迹级偏好 RL，反馈同时向轨迹内与跨轨迹两个方向传播"
+    ],
+    "faq": {
+     "problem": "把轨迹级偏好反馈分层传给关键步与可复用技能，Open-Travel 35.9→55.4",
+     "mechanism": "锦标赛排序得轨迹奖励，按存活深度加权回传关键步；群组用量归因估技能效用，剪枝后检索为探索先验",
+     "agentChange": "锦标赛排序得轨迹奖励，按存活深度加权回传关键步；群组用量归因估技能效用，剪枝后检索为探索先验",
+     "support": "Open-Travel 35.9→55.4、Open-DeepResearch 54.7→69.1（超 ArenaRL）；DeepResearch Bench 43.2 对 ArenaRL 37.6、对 Pref-GRPO 高 23.2；裁判关键步/技能归因 F1 79.5/76.1",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为无可验证奖励的开放智能体提供细粒度优化与经验复用路径"
+   }
+  },
+  {
+   "id": "2609.21533",
+   "version": 1,
+   "title": "MACE：多智能体系统的记忆–智能体共演化",
+   "abstract": "让记忆组织与智能体用法随执行反馈共演化，八基准均值 81.11% 超 SAGE 78.97%",
+   "authors": [],
+   "published": "2026-09-21T04:00:00.000Z",
+   "updated": "2026-09-21T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.21533",
+   "pdf": "https://arxiv.org/pdf/2609.21533",
+   "announceType": "new",
+   "summary": "让记忆组织与智能体用法随执行反馈共演化，八基准均值 81.11% 超 SAGE 78.97%",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.21533"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把多智能体记忆从静态检索升级为随执行反馈自我改进的机制",
+   "repository": null,
+   "motivation": "复用多智能体协作轨迹，须保留动作前置条件与后续智能体所需输出",
+   "coreProblem": "现有记忆系统按独立条目或统一图检索，单元内依赖与跨经验链路大量丢失",
+   "contributions": [
+    "四项实证研究：按功能单元分组可把内部依赖保留率从约 68% 提到 83%",
+    "提出 MACE：MemGoG 记忆图 + 需求感知组合 + 自适应耦合 + 反馈共演化",
+    "在八个基准上与十个基线对比验证"
+   ],
+   "innovations": [
+    "以\"条件–动作–输出\"子图作功能记忆单元，并用支持/冲突/修复三类关系连接",
+    "反馈成对记录\"单元组合 + 呈现格式\"，而非对两者分别打分",
+    "记忆组织与智能体的记忆使用由同一反馈闭环共同演化"
+   ],
+   "method": "MemGoG 从协作轨迹构建功能单元与类型化关系；MACE Loop 在预算内选单元，按各智能体当前操作以指令或清单投递，并据结果更新分数与关系",
+   "results": "八基准均值 81.11%，SAGE 78.97%、Direct 71.53%（相对 +13.40%）；6.87K token/查询、44.28 查询/分钟，延迟低于 SAGE 的 2.41 秒",
+   "value": "把多智能体记忆从静态检索升级为随执行反馈自我改进的机制",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "四项实证研究：按功能单元分组可把内部依赖保留率从约 68% 提到 83%",
+    "agentChange": "MemGoG 从协作轨迹构建功能单元与类型化关系；MACE Loop 在预算内选单元，按各智能体当前操作以指令或清单投递，并据结果更新分数与关系",
+    "selfEvolution": null,
+    "evidence": [
+     "八基准均值 81.11%，SAGE 78.97%、Direct 71.53%（相对 +13.40%）；6.87K token/查询、44.28 查询/分钟，延迟低于 SAGE 的 2.41 秒",
+     "反馈成对记录\"单元组合 + 呈现格式\"，而非对两者分别打分",
+     "记忆组织与智能体的记忆使用由同一反馈闭环共同演化"
+    ],
+    "faq": {
+     "problem": "让记忆组织与智能体用法随执行反馈共演化，八基准均值 81.11% 超 SAGE 78.97%",
+     "mechanism": "MemGoG 从协作轨迹构建功能单元与类型化关系；MACE Loop 在预算内选单元，按各智能体当前操作以指令或清单投递，并据结果更新分数与关系",
+     "agentChange": "MemGoG 从协作轨迹构建功能单元与类型化关系；MACE Loop 在预算内选单元，按各智能体当前操作以指令或清单投递，并据结果更新分数与关系",
+     "support": "八基准均值 81.11%，SAGE 78.97%、Direct 71.53%（相对 +13.40%）；6.87K token/查询、44.28 查询/分钟，延迟低于 SAGE 的 2.41 秒",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "把多智能体记忆从静态检索升级为随执行反馈自我改进的机制"
+   }
+  },
+  {
+   "id": "2609.21859",
+   "version": 1,
+   "title": "TrialAtlas：临床试验设计的多智能体研究组织",
+   "abstract": "多智能体组织加 FDA 回复函基准，缺陷检测 F1 50.0%、超基线 6.1 点",
+   "authors": [],
+   "published": "2026-09-21T04:00:00.000Z",
+   "updated": "2026-09-21T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.21859",
+   "pdf": "https://arxiv.org/pdf/2609.21859",
+   "announceType": "new",
+   "summary": "多智能体组织加 FDA 回复函基准，缺陷检测 F1 50.0%、超基线 6.1 点",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.21859"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把临床 AI 从结果预测推向可追溯、可行动的合规设计支持",
+   "repository": null,
+   "motivation": "药物临床开发失败率近 90%，设计决策依赖多学科专家手工综合证据",
+   "coreProblem": "现有模型只凭试验摘要预测成败，失败分类过粗、不给可执行修改、未纳入监管审评",
+   "contributions": [
+    "构建 TrialAtlasBench：291 份 FDA 完整回复函对齐试验记录，含三个任务",
+    "提出 TrialAtlas：Director–部门–工作智能体的层级组织，共享法规先例记忆",
+    "增设回溯适应阶段，从历史回复函与结果持续自改进"
+   ],
+   "innovations": [
+    "首次以 FDA 完整回复函作权威标注，把评估从结果预测转向设计层面",
+    "评的是能否定位具体缺陷并给出可执行修改，而非通过/失败判定",
+    "按药企多部门协作方式组织智能体，对齐真实开发流程"
+   ],
+   "method": "Director 拆解与整合；三部门分别做竞争试验情报、文献证据综合与药物基准；法规记忆库提供先例，结论附带可追溯证据链",
+   "results": "缺陷检测 F1 50.0%，超最强基线 TrialGenie 43.9% 达 6.1 点；成败预测平衡准确率 85.3%（基线最高 78.6%）、Cohen's kappa 0.694 对 ≤0.574；专家判定有效率 86.4%，高于 OpenAI DeepResearch 83.1% 与 Gemini DeepResearch 59.3%",
+   "value": "把临床 AI 从结果预测推向可追溯、可行动的合规设计支持",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "构建 TrialAtlasBench：291 份 FDA 完整回复函对齐试验记录，含三个任务",
+    "agentChange": "Director 拆解与整合；三部门分别做竞争试验情报、文献证据综合与药物基准；法规记忆库提供先例，结论附带可追溯证据链",
+    "selfEvolution": null,
+    "evidence": [
+     "缺陷检测 F1 50.0%，超最强基线 TrialGenie 43.9% 达 6.1 点；成败预测平衡准确率 85.3%（基线最高 78.6%）、Cohen's kappa 0.694 对 ≤0.574；专家判定有效率 86.4%，高于 OpenAI DeepResearch 83.1% 与 Gemini DeepResearch 59.3%",
+     "评的是能否定位具体缺陷并给出可执行修改，而非通过/失败判定",
+     "按药企多部门协作方式组织智能体，对齐真实开发流程"
+    ],
+    "faq": {
+     "problem": "多智能体组织加 FDA 回复函基准，缺陷检测 F1 50.0%、超基线 6.1 点",
+     "mechanism": "Director 拆解与整合；三部门分别做竞争试验情报、文献证据综合与药物基准；法规记忆库提供先例，结论附带可追溯证据链",
+     "agentChange": "Director 拆解与整合；三部门分别做竞争试验情报、文献证据综合与药物基准；法规记忆库提供先例，结论附带可追溯证据链",
+     "support": "缺陷检测 F1 50.0%，超最强基线 TrialGenie 43.9% 达 6.1 点；成败预测平衡准确率 85.3%（基线最高 78.6%）、Cohen's kappa 0.694 对 ≤0.574；专家判定有效率 86.4%，高于 OpenAI DeepResearch 83.1% 与 Gemini DeepResearch 59.3%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "把临床 AI 从结果预测推向可追溯、可行动的合规设计支持"
+   }
+  },
+  {
+   "id": "2609.21190",
+   "version": 1,
+   "title": "SWE-Proof：用机器校验的证明解真实仓库 issue",
+   "abstract": "为真实 issue 配形式规格与证明，正确规格使 Opus 解决率 85.0%→96.2%",
+   "authors": [],
+   "published": "2026-09-21T04:00:00.000Z",
+   "updated": "2026-09-21T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.21190",
+   "pdf": "https://arxiv.org/pdf/2609.21190",
+   "announceType": "new",
+   "summary": "为真实 issue 配形式规格与证明，正确规格使 Opus 解决率 85.0%→96.2%",
+   "topic": "大语言模型 / 代码验证",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.21190"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "指出忠实规格合成才是验证式代码生成的核心瓶颈",
+   "repository": null,
+   "motivation": "隐藏测试不完整且可被记忆，无法担保 LLM 生成代码真的正确",
+   "coreProblem": "已有形式验证只覆盖规格给定的独立小题，无法用于大仓库真实 issue",
+   "contributions": [
+    "构建 SWE-Proof：500 条 SWE-bench Verified 各配形式规格与可验证实现",
+    "提出 Benchproofer 流水线：写规格、用公理摘要被调函数，经机械与对抗双门禁准入",
+    "扩展到 SWE-bench Pro 的 242/266 条 Python 任务"
+   ],
+   "innovations": [
+    "首个把形式验证 oracle 接到真实仓库级 issue 的基准",
+    "只对新增代码建模、以公理概括未改的被调函数，使仓库级验证变得可行",
+    "用对抗审计反查规格忠实性，而不仅是跑测试"
+   ],
+   "method": "为新增代码写形式规格、以公理摘要被调用函数，经四阶段门禁准入，在 Nagini、Velvet、Lean 三后端验证",
+   "results": "500 题中 26.8% 通过测试的补丁被对抗审计推翻；给真值规格后 Opus 85.0%→96.2%、GPT-5.5 81.2%→94.4%；模型自写规格不优于基线且仅 62% 过审，忠实性失败占 42.5%",
+   "value": "指出忠实规格合成才是验证式代码生成的核心瓶颈",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "构建 SWE-Proof：500 条 SWE-bench Verified 各配形式规格与可验证实现",
+    "agentChange": "为新增代码写形式规格、以公理摘要被调用函数，经四阶段门禁准入，在 Nagini、Velvet、Lean 三后端验证",
+    "selfEvolution": null,
+    "evidence": [
+     "500 题中 26.8% 通过测试的补丁被对抗审计推翻；给真值规格后 Opus 85.0%→96.2%、GPT-5.5 81.2%→94.4%；模型自写规格不优于基线且仅 62% 过审，忠实性失败占 42.5%",
+     "只对新增代码建模、以公理概括未改的被调函数，使仓库级验证变得可行",
+     "用对抗审计反查规格忠实性，而不仅是跑测试"
+    ],
+    "faq": {
+     "problem": "为真实 issue 配形式规格与证明，正确规格使 Opus 解决率 85.0%→96.2%",
+     "mechanism": "为新增代码写形式规格、以公理摘要被调用函数，经四阶段门禁准入，在 Nagini、Velvet、Lean 三后端验证",
+     "agentChange": "为新增代码写形式规格、以公理摘要被调用函数，经四阶段门禁准入，在 Nagini、Velvet、Lean 三后端验证",
+     "support": "500 题中 26.8% 通过测试的补丁被对抗审计推翻；给真值规格后 Opus 85.0%→96.2%、GPT-5.5 81.2%→94.4%；模型自写规格不优于基线且仅 62% 过审，忠实性失败占 42.5%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "指出忠实规格合成才是验证式代码生成的核心瓶颈"
+   }
+  },
+  {
+   "id": "2609.21228",
+   "version": 1,
+   "title": "FOCAL-VLA：子任务引导的几何蒸馏与隐式世界建模",
+   "abstract": "子任务几何蒸馏加隐式世界建模，RoboCasa 成功率 63.4%（+8.2 点）",
+   "authors": [],
+   "published": "2026-09-21T04:00:00.000Z",
+   "updated": "2026-09-21T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.21228",
+   "pdf": "https://arxiv.org/pdf/2609.21228",
+   "announceType": "new",
+   "summary": "子任务几何蒸馏加隐式世界建模，RoboCasa 成功率 63.4%（+8.2 点）",
+   "topic": "多模态与具身智能",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.21228"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "说明监督信号的空间聚焦比堆叠更多监督源更能决定成败",
+   "repository": null,
+   "motivation": "VLA 直接把 2D 观测映射为动作，缺空间结构与时间演化理解",
+   "coreProblem": "已有几何/未来监督对齐全图 token，掺入无关区域，干扰当前交互所需的学习",
+   "contributions": [
+    "提出 FOCAL-VLA，融合子任务引导几何蒸馏与隐式世界建模",
+    "构造随交互实体变化的子任务相关区域蒸馏目标",
+    "在仿真基准与真机任务上完成验证"
+   ],
+   "innovations": [
+    "监督只聚合当前子任务实体的区域，此前方法对齐全部视觉 token",
+    "未来运动潜变量仅由当前观测预测，推理时无需运行 VGGT/Track4World"
+   ],
+   "method": "冻结教师特征离线缓存，按子任务掩码聚合为几何与未来运动潜变量，共同条件化动作专家",
+   "results": "RoboCasa 63.4%（超 π0.5 8.2 点；换全图监督降至 58.7%、去掉未来运动 59.6%）；LIBERO 97.9%（Long 92.4%→95.0%）；真机四任务 47.5%→63.8%",
+   "value": "说明监督信号的空间聚焦比堆叠更多监督源更能决定成败",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 FOCAL-VLA，融合子任务引导几何蒸馏与隐式世界建模",
+    "agentChange": "冻结教师特征离线缓存，按子任务掩码聚合为几何与未来运动潜变量，共同条件化动作专家",
+    "selfEvolution": null,
+    "evidence": [
+     "RoboCasa 63.4%（超 π0.5 8.2 点；换全图监督降至 58.7%、去掉未来运动 59.6%）；LIBERO 97.9%（Long 92.4%→95.0%）；真机四任务 47.5%→63.8%",
+     "未来运动潜变量仅由当前观测预测，推理时无需运行 VGGT/Track4World"
+    ],
+    "faq": {
+     "problem": "子任务几何蒸馏加隐式世界建模，RoboCasa 成功率 63.4%（+8.2 点）",
+     "mechanism": "冻结教师特征离线缓存，按子任务掩码聚合为几何与未来运动潜变量，共同条件化动作专家",
+     "agentChange": "冻结教师特征离线缓存，按子任务掩码聚合为几何与未来运动潜变量，共同条件化动作专家",
+     "support": "RoboCasa 63.4%（超 π0.5 8.2 点；换全图监督降至 58.7%、去掉未来运动 59.6%）；LIBERO 97.9%（Long 92.4%→95.0%）；真机四任务 47.5%→63.8%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "说明监督信号的空间聚焦比堆叠更多监督源更能决定成败"
+   }
+  },
+  {
+   "id": "2609.21763",
+   "version": 1,
+   "title": "医学视觉–语言模型的结核筛查可靠性审计",
+   "abstract": "审计四个视觉–语言模型的胸片结核筛查，基准分数不支撑临床可移植性",
+   "authors": [],
+   "published": "2026-09-21T04:00:00.000Z",
+   "updated": "2026-09-21T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.21763",
+   "pdf": "https://arxiv.org/pdf/2609.21763",
+   "announceType": "new",
+   "summary": "审计四个视觉–语言模型的胸片结核筛查，基准分数不支撑临床可移植性",
+   "topic": "医学影像 / 模型审计",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.21763"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "提醒临床 AI 报告必须锁定完整评估规格，不能把可移植性归于权重",
+   "repository": null,
+   "motivation": "基准分数无法保证换一种评估设定后同一结论仍然成立",
+   "coreProblem": "高 AUROC 不指明阴性对照谱、提示族与阈值，模型排名还掩盖分数可靠性差异",
+   "contributions": [
+    "用评估规格 E=(模型,提示,队列,阴性谱,患病率,阈值,判据) 组织审计，把结论绑定到条件",
+    "审计三个医学 VLM 加 OpenCLIP：12,200 张胸片、5 提示族、244,000 条分数",
+    "分别检验判别力、分数可靠性与阈值保持三类可移植性主张"
+   ],
+   "innovations": [
+    "评估对象由\"模型能力\"转为\"结论可移植性\"，要求报告完整评估规格",
+    "配对比较把提示词效应与阴性谱效应从阳性样本变化中分离"
+   ],
+   "method": "固定影像与阳性病例，只改提示族与阴性类别定义，配配对 DeLong 检验、患病率标准化与源阈值搬运",
+   "results": "48 个校正比较中 21 个 AUROC 随提示族显著变化；换成病态非结核对照使 AUROC 降 0.075–0.306；VinDr-CXR 对肺炎/肺瘤 AUROC <0.5；95% 敏感度阈值仅 4/16 迁移保持；有监督模型 0.999→0.629",
+   "value": "提醒临床 AI 报告必须锁定完整评估规格，不能把可移植性归于权重",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "用评估规格 E=(模型,提示,队列,阴性谱,患病率,阈值,判据) 组织审计，把结论绑定到条件",
+    "agentChange": "固定影像与阳性病例，只改提示族与阴性类别定义，配配对 DeLong 检验、患病率标准化与源阈值搬运",
+    "selfEvolution": null,
+    "evidence": [
+     "48 个校正比较中 21 个 AUROC 随提示族显著变化；换成病态非结核对照使 AUROC 降 0.075–0.306；VinDr-CXR 对肺炎/肺瘤 AUROC <0.5；95% 敏感度阈值仅 4/16 迁移保持；有监督模型 0.999→0.629",
+     "配对比较把提示词效应与阴性谱效应从阳性样本变化中分离"
+    ],
+    "faq": {
+     "problem": "审计四个视觉–语言模型的胸片结核筛查，基准分数不支撑临床可移植性",
+     "mechanism": "固定影像与阳性病例，只改提示族与阴性类别定义，配配对 DeLong 检验、患病率标准化与源阈值搬运",
+     "agentChange": "固定影像与阳性病例，只改提示族与阴性类别定义，配配对 DeLong 检验、患病率标准化与源阈值搬运",
+     "support": "48 个校正比较中 21 个 AUROC 随提示族显著变化；换成病态非结核对照使 AUROC 降 0.075–0.306；VinDr-CXR 对肺炎/肺瘤 AUROC <0.5；95% 敏感度阈值仅 4/16 迁移保持；有监督模型 0.999→0.629",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "提醒临床 AI 报告必须锁定完整评估规格，不能把可移植性归于权重"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-09-19",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-09-19 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-23T21:30:10.000Z",
+ "latestPaperAt": "2026-09-21T04:00:00.000Z",
+ "totalMatched": 12,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 12
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 35,
+ "trends": {
+  "status": "accumulating",
+  "days": 35,
+  "minimumDays": 15,
+  "message": "已积累 35/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-23T21:30:10.000Z",
+ "snapshotDay": "2026-09-21",
+ "historical": true
+}

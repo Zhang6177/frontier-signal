@@ -1,0 +1,1041 @@
+{
+ "papers": [
+  {
+   "id": "2609.09876",
+   "version": 1,
+   "title": "从像素到层级序列：四叉树掩码编码用于视觉语言二值变化检测",
+   "abstract": "四叉树语法编码变化掩码，VLM 原生生成像素级变化图，F1 78.31%",
+   "authors": [],
+   "published": "2026-09-12T04:00:00.000Z",
+   "updated": "2026-09-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.09876",
+   "pdf": "https://arxiv.org/pdf/2609.09876",
+   "announceType": "new",
+   "summary": "四叉树语法编码变化掩码，VLM 原生生成像素级变化图，F1 78.31%",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.09876"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为 VLM 原生稠密预测提供可验证结构化生成的新路线",
+   "repository": null,
+   "motivation": "VLM 应用需要输出像素级空间足迹，而非仅文字描述",
+   "coreProblem": "平面 text-as-mask 序列化对破碎变化 token 分配均等，实例粘连",
+   "contributions": [
+    "提出 QUAKE 四叉树掩码语法：压缩均匀区、保边界细节",
+    "构建 QUAKE-CoT：掩码序列配对双时相视觉证据思维链",
+    "课程学习+语法门控双奖励 RL 联合优化推理与稠密预测"
+   ],
+   "innovations": [
+    "首次把稠密变化预测变为语法可校验的自回归生成，错误可检",
+    "四叉树层级 token 取代平面网格，与稀疏变化天然对齐",
+    "语法可校验性直接转化为规则化 RL 奖励，免外部解码器"
+   ],
+   "method": "VLM 在 AR 空间内生成受文法约束的四叉树序列，先学合法序列再引入 CoT，最后用 Quadtree Reward+推理奖励做 RL 对齐。",
+   "results": "QUAKE-CoT 基准累计 F1 78.31%，超解码器式与平面 text-as-mask VLM",
+   "value": "为 VLM 原生稠密预测提供可验证结构化生成的新路线",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 QUAKE 四叉树掩码语法：压缩均匀区、保边界细节",
+    "agentChange": "VLM 在 AR 空间内生成受文法约束的四叉树序列，先学合法序列再引入 CoT，最后用 Quadtree Reward+推理奖励做 RL 对齐。",
+    "selfEvolution": null,
+    "evidence": [
+     "QUAKE-CoT 基准累计 F1 78.31%，超解码器式与平面 text-as-mask VLM",
+     "四叉树层级 token 取代平面网格，与稀疏变化天然对齐",
+     "语法可校验性直接转化为规则化 RL 奖励，免外部解码器"
+    ],
+    "faq": {
+     "problem": "四叉树语法编码变化掩码，VLM 原生生成像素级变化图，F1 78.31%",
+     "mechanism": "VLM 在 AR 空间内生成受文法约束的四叉树序列，先学合法序列再引入 CoT，最后用 Quadtree Reward+推理奖励做 RL 对齐。",
+     "agentChange": "VLM 在 AR 空间内生成受文法约束的四叉树序列，先学合法序列再引入 CoT，最后用 Quadtree Reward+推理奖励做 RL 对齐。",
+     "support": "QUAKE-CoT 基准累计 F1 78.31%，超解码器式与平面 text-as-mask VLM",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为 VLM 原生稠密预测提供可验证结构化生成的新路线"
+   }
+  },
+  {
+   "id": "2609.11040",
+   "version": 1,
+   "title": "迈向可解释多模态融合：M2Heat 高光谱-LiDAR 热传导建模联合分类",
+   "abstract": "热传导算子建模 HSI-LiDAR 融合，Houston OA 91.2% 居首",
+   "authors": [],
+   "published": "2026-09-12T04:00:00.000Z",
+   "updated": "2026-09-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.11040",
+   "pdf": "https://arxiv.org/pdf/2609.11040",
+   "announceType": "new",
+   "summary": "热传导算子建模 HSI-LiDAR 融合，Houston OA 91.2% 居首",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.11040"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给遥感融合提供高效且物理可解释的注意力替代机制",
+   "repository": null,
+   "motivation": "HSI+LiDAR 融合需同时建模长程依赖、异构交互与效率",
+   "coreProblem": "CNN 局部性强、Attention 平方复杂度、Mamba 缺可解释性",
+   "contributions": [
+    "提出 M2Heat：热传导算子 (HCO) 驱动的融合框架",
+    "设计频率值嵌入 FVE 与跨频率融合模块 CFF",
+    "Trento/Houston2013/Augsburg 三基准开源可复现"
+   ],
+   "innovations": [
+    "将物理热传导方程引入多模态融合替代注意力的先例",
+    "信息扩散过程兼得全局感受野、次二次复杂度与物理解释",
+    "空间-频率混合融合优于单一频率表示消融验证"
+   ],
+   "method": "各模态 patch 特征经 vHeat 模块模拟各向异性热扩散捕获全局依赖，CFF 在空间与频域双路互补融合后分类。",
+   "results": "Houston2013 OA 91.20%（vs 最强基线 Cross-HL 89.07，+2.13pp），κ 0.9045；Trento OA 99.64%",
+   "value": "给遥感融合提供高效且物理可解释的注意力替代机制",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 M2Heat：热传导算子 (HCO) 驱动的融合框架",
+    "agentChange": "各模态 patch 特征经 vHeat 模块模拟各向异性热扩散捕获全局依赖，CFF 在空间与频域双路互补融合后分类。",
+    "selfEvolution": null,
+    "evidence": [
+     "Houston2013 OA 91.20%（vs 最强基线 Cross-HL 89.07，+2.13pp），κ 0.9045；Trento OA 99.64%",
+     "信息扩散过程兼得全局感受野、次二次复杂度与物理解释",
+     "空间-频率混合融合优于单一频率表示消融验证"
+    ],
+    "faq": {
+     "problem": "热传导算子建模 HSI-LiDAR 融合，Houston OA 91.2% 居首",
+     "mechanism": "各模态 patch 特征经 vHeat 模块模拟各向异性热扩散捕获全局依赖，CFF 在空间与频域双路互补融合后分类。",
+     "agentChange": "各模态 patch 特征经 vHeat 模块模拟各向异性热扩散捕获全局依赖，CFF 在空间与频域双路互补融合后分类。",
+     "support": "Houston2013 OA 91.20%（vs 最强基线 Cross-HL 89.07，+2.13pp），κ 0.9045；Trento OA 99.64%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "给遥感融合提供高效且物理可解释的注意力替代机制"
+   }
+  },
+  {
+   "id": "2609.09482",
+   "version": 1,
+   "title": "Infra-Bench CLS：基于地球观测基础模型的全球关键基础设施分类基准",
+   "abstract": "首个设施级基础设施 EO 基础模型基准，最佳 FM 超监督基线 48%",
+   "authors": [],
+   "published": "2026-09-12T04:00:00.000Z",
+   "updated": "2026-09-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.09482",
+   "pdf": "https://arxiv.org/pdf/2609.09482",
+   "announceType": "new",
+   "summary": "首个设施级基础设施 EO 基础模型基准，最佳 FM 超监督基线 48%",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.09482"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "定量划出 EO 基础模型能力边界：地物易、语义设施难",
+   "repository": null,
+   "motivation": "全球关键基础设施地理数据稀疏不均，尤其发展中地区",
+   "coreProblem": "EO 基础模型从未在跨行业设施级分类任务上被检验",
+   "contributions": [
+    "发布 18,756 张 Sentinel-1/2 双传感器设施级图像基准",
+    "覆盖 7 大洲、能源/水利/交通/电信 4 部门 13 类",
+    "系统评测 7 个 EO FM 的线性探测与微调两种范式"
+   ],
+   "innovations": [
+    "首个全球范围、多部门、设施尺度的基础设施 FM 评测",
+    "双传感器 (SAR+光学) 与 1.0x/0.3x 两级数据量对照设计",
+    "揭示土地覆盖预训练先验向语义目标的迁移边界"
+   ],
+   "method": "对 SatlasPretrain、CROMA、Prithvi-EO-2.0、AlphaEarth、OlmoEarth、DINOv3 等做 linear probing 与微调，对比 ResNet-18 监督基线。",
+   "results": "最佳 FM macro F1 57.9% vs ResNet-18 39.2%（+48%）；机场 85.3 最高，电力类 27.5–46.2 垫底",
+   "value": "定量划出 EO 基础模型能力边界：地物易、语义设施难",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "发布 18,756 张 Sentinel-1/2 双传感器设施级图像基准",
+    "agentChange": "对 SatlasPretrain、CROMA、Prithvi-EO-2.0、AlphaEarth、OlmoEarth、DINOv3 等做 linear probing 与微调，对比 ResNet-18 监督基线。",
+    "selfEvolution": null,
+    "evidence": [
+     "最佳 FM macro F1 57.9% vs ResNet-18 39.2%（+48%）；机场 85.3 最高，电力类 27.5–46.2 垫底",
+     "双传感器 (SAR+光学) 与 1.0x/0.3x 两级数据量对照设计",
+     "揭示土地覆盖预训练先验向语义目标的迁移边界"
+    ],
+    "faq": {
+     "problem": "首个设施级基础设施 EO 基础模型基准，最佳 FM 超监督基线 48%",
+     "mechanism": "对 SatlasPretrain、CROMA、Prithvi-EO-2.0、AlphaEarth、OlmoEarth、DINOv3 等做 linear probing 与微调，对比 ResNet-18 监督基线。",
+     "agentChange": "对 SatlasPretrain、CROMA、Prithvi-EO-2.0、AlphaEarth、OlmoEarth、DINOv3 等做 linear probing 与微调，对比 ResNet-18 监督基线。",
+     "support": "最佳 FM macro F1 57.9% vs ResNet-18 39.2%（+48%）；机场 85.3 最高，电力类 27.5–46.2 垫底",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "定量划出 EO 基础模型能力边界：地物易、语义设施难"
+   }
+  },
+  {
+   "id": "2609.05953",
+   "version": 1,
+   "title": "ProtoRAG：基于原型检索增强的少样本细粒度遥感目标检测",
+   "abstract": "给 MLLM 外挂原型视觉记忆，MAR20 少样本检测 mAP50 提升 14.8",
+   "authors": [],
+   "published": "2026-09-12T04:00:00.000Z",
+   "updated": "2026-09-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.05953",
+   "pdf": "https://arxiv.org/pdf/2609.05953",
+   "announceType": "new",
+   "summary": "给 MLLM 外挂原型视觉记忆，MAR20 少样本检测 mAP50 提升 14.8",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.05953"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "用显式视觉证据弥补 MLLM 细粒度判别短板的范式样板",
+   "repository": null,
+   "motivation": "少标注下要同时定位并区分机型、船型等相似子类",
+   "coreProblem": "MLLM 粗定位强但细粒度判别缺显式视觉参照，混淆相似子类",
+   "contributions": [
+    "提出 ProtoRAG：粗定位与细识别解耦的检索增强框架",
+    "构建对象级视觉记忆与判别原型空间学习方法 DPSL",
+    "不确定性引导的候选受限推理策略，仅模糊样本调用 MLLM"
+   ],
+   "innovations": [
+    "将 RAG 从文本检索移植为对象级视觉原型检索的先例",
+    "监督对比+原型一致性正则解决少样本原型不稳定",
+    "不确定性门控按需推理，绕开全样本 MLLM 高开销"
+   ],
+   "method": "DPSL 把少量支持样本编码为高判别原型库；查询时检索候选类参照注入 MLLM，仅对置信不足的实例触发多模态推理。",
+   "results": "九种少样本设置全面领先，超最强基线 mAP50：MAR20 +14.80、HRSC2016 +2.27、FAIR1M-2.0 +4.04",
+   "value": "用显式视觉证据弥补 MLLM 细粒度判别短板的范式样板",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 ProtoRAG：粗定位与细识别解耦的检索增强框架",
+    "agentChange": "DPSL 把少量支持样本编码为高判别原型库；查询时检索候选类参照注入 MLLM，仅对置信不足的实例触发多模态推理。",
+    "selfEvolution": null,
+    "evidence": [
+     "九种少样本设置全面领先，超最强基线 mAP50：MAR20 +14.80、HRSC2016 +2.27、FAIR1M-2.0 +4.04",
+     "监督对比+原型一致性正则解决少样本原型不稳定",
+     "不确定性门控按需推理，绕开全样本 MLLM 高开销"
+    ],
+    "faq": {
+     "problem": "给 MLLM 外挂原型视觉记忆，MAR20 少样本检测 mAP50 提升 14.8",
+     "mechanism": "DPSL 把少量支持样本编码为高判别原型库；查询时检索候选类参照注入 MLLM，仅对置信不足的实例触发多模态推理。",
+     "agentChange": "DPSL 把少量支持样本编码为高判别原型库；查询时检索候选类参照注入 MLLM，仅对置信不足的实例触发多模态推理。",
+     "support": "九种少样本设置全面领先，超最强基线 mAP50：MAR20 +14.80、HRSC2016 +2.27、FAIR1M-2.0 +4.04",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "用显式视觉证据弥补 MLLM 细粒度判别短板的范式样板"
+   }
+  },
+  {
+   "id": "2609.07753",
+   "version": 1,
+   "title": "利用光学视觉基础模型跨模态学习做 SAR 目标识别",
+   "abstract": "光学 DINOv3 类原型蒸馏 SAR 分类器，免配对，7 类 +11.1pp",
+   "authors": [],
+   "published": "2026-09-12T04:00:00.000Z",
+   "updated": "2026-09-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.07753",
+   "pdf": "https://arxiv.org/pdf/2609.07753",
+   "announceType": "new",
+   "summary": "光学 DINOv3 类原型蒸馏 SAR 分类器，免配对，7 类 +11.1pp",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.07753"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "打开\"光学大模型养雷达小数据\"的跨模态蒸馏路径",
+   "repository": null,
+   "motivation": "SAR 标注稀缺、斑点噪声重，与光学域差距大",
+   "coreProblem": "现有 EO→SAR 迁移要求同一场景严格配对样本，实际难获取",
+   "contributions": [
+    "提出 EO→SAR 类级原型对齐框架，类原型代替样本配对",
+    "冻结光学 DINOv3 编码器聚合类原型作监督信号",
+    "UNICORNv2 民用车辆基准上四基线系统对照+控制实验"
+   ],
+   "innovations": [
+    "把光学基础模型表征优势转给 SAR 且推理期零光学依赖",
+    "类级监督只需同类 EO 图像，彻底放宽配对假设",
+    "合成等距原型对照证明增益来自类结构而非仅正则化"
+   ],
+   "method": "SAR 侧用 DINOv3+LoRA 训练，分类损失之外对齐每类 EO 原型向量；推理仅保留 SAR 分类器。",
+   "results": "UNICORNv2 十类 acc 33.3% vs 冻结 26.9%/SAR-only 29.8%/MMD 31.8%；七类 52.2% vs 41.1%（+11.1pp）",
+   "value": "打开\"光学大模型养雷达小数据\"的跨模态蒸馏路径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 EO→SAR 类级原型对齐框架，类原型代替样本配对",
+    "agentChange": "SAR 侧用 DINOv3+LoRA 训练，分类损失之外对齐每类 EO 原型向量；推理仅保留 SAR 分类器。",
+    "selfEvolution": null,
+    "evidence": [
+     "UNICORNv2 十类 acc 33.3% vs 冻结 26.9%/SAR-only 29.8%/MMD 31.8%；七类 52.2% vs 41.1%（+11.1pp）",
+     "类级监督只需同类 EO 图像，彻底放宽配对假设",
+     "合成等距原型对照证明增益来自类结构而非仅正则化"
+    ],
+    "faq": {
+     "problem": "光学 DINOv3 类原型蒸馏 SAR 分类器，免配对，7 类 +11.1pp",
+     "mechanism": "SAR 侧用 DINOv3+LoRA 训练，分类损失之外对齐每类 EO 原型向量；推理仅保留 SAR 分类器。",
+     "agentChange": "SAR 侧用 DINOv3+LoRA 训练，分类损失之外对齐每类 EO 原型向量；推理仅保留 SAR 分类器。",
+     "support": "UNICORNv2 十类 acc 33.3% vs 冻结 26.9%/SAR-only 29.8%/MMD 31.8%；七类 52.2% vs 41.1%（+11.1pp）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "打开\"光学大模型养雷达小数据\"的跨模态蒸馏路径"
+   }
+  },
+  {
+   "id": "2609.08867",
+   "version": 1,
+   "title": "SeGDeP：语义-几何感知解耦提示用于推理分割",
+   "abstract": "语义-几何双路提示条件化 SAM 3 解码器，RefCOCO cIoU 82.7",
+   "authors": [],
+   "published": "2026-09-12T04:00:00.000Z",
+   "updated": "2026-09-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.08867",
+   "pdf": "https://arxiv.org/pdf/2609.08867",
+   "announceType": "new",
+   "summary": "语义-几何双路提示条件化 SAM 3 解码器，RefCOCO cIoU 82.7",
+   "topic": "计算机视觉与多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.08867"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "用接口解耦消除语义-几何干扰，推理分割设计有据可依",
+   "repository": null,
+   "motivation": "推理分割既要语义推断又要空间落地，接口是枢纽",
+   "coreProblem": "单隐式触发或耦合上下文使语义与几何梯度 37–46% 样本互相对抗",
+   "contributions": [
+    "提出显式 what-where 双分支可执行接口 SeGDeP",
+    "语义提示支+独立几何投影 (DETR box) 联合条件化掩码解码",
+    "GDPO 解耦格式/box-IoU/mask-IoU 三路奖励训练"
+   ],
+   "innovations": [
+    "首次以梯度冲突测量暴露耦合接口的失败归因困难",
+    "先对齐接口再 RL 的两阶段训练区别于端到端一把梭",
+    "仅调 0.38% Qwen3-VL 参数达同规模领先"
+   ],
+   "method": "MLLM 解析后的状态分两路：语义特征支与 DETR 框投影支，共同条件化 SAM 3 mask decoder；阶段一接口对齐，阶段二 GDPO 强化。",
+   "results": "8 个 RefCOCO 系 split 平均 cIoU 82.7；ReasonSeg val/test gIoU 66.0/59.6",
+   "value": "用接口解耦消除语义-几何干扰，推理分割设计有据可依",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出显式 what-where 双分支可执行接口 SeGDeP",
+    "agentChange": "MLLM 解析后的状态分两路：语义特征支与 DETR 框投影支，共同条件化 SAM 3 mask decoder；阶段一接口对齐，阶段二 GDPO 强化。",
+    "selfEvolution": null,
+    "evidence": [
+     "8 个 RefCOCO 系 split 平均 cIoU 82.7；ReasonSeg val/test gIoU 66.0/59.6",
+     "先对齐接口再 RL 的两阶段训练区别于端到端一把梭",
+     "仅调 0.38% Qwen3-VL 参数达同规模领先"
+    ],
+    "faq": {
+     "problem": "语义-几何双路提示条件化 SAM 3 解码器，RefCOCO cIoU 82.7",
+     "mechanism": "MLLM 解析后的状态分两路：语义特征支与 DETR 框投影支，共同条件化 SAM 3 mask decoder；阶段一接口对齐，阶段二 GDPO 强化。",
+     "agentChange": "MLLM 解析后的状态分两路：语义特征支与 DETR 框投影支，共同条件化 SAM 3 mask decoder；阶段一接口对齐，阶段二 GDPO 强化。",
+     "support": "8 个 RefCOCO 系 split 平均 cIoU 82.7；ReasonSeg val/test gIoU 66.0/59.6",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "用接口解耦消除语义-几何干扰，推理分割设计有据可依"
+   }
+  },
+  {
+   "id": "2609.11310",
+   "version": 1,
+   "title": "你的模型早已知道答案：软提示用于视觉语言模型少样本适应",
+   "abstract": "仅训 7168 参数的跨模态边界软提示即匹配 LoRA 检测精度，且零灾难遗忘",
+   "authors": [],
+   "published": "2026-09-12T04:00:00.000Z",
+   "updated": "2026-09-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.11310",
+   "pdf": "https://arxiv.org/pdf/2609.11310",
+   "announceType": "new",
+   "summary": "仅训 7168 参数的跨模态边界软提示即匹配 LoRA 检测精度，且零灾难遗忘",
+   "topic": "计算机视觉与多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.11310"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明\"学会提问\"可替代\"微调教学\"，适应成本骤降",
+   "repository": null,
+   "motivation": "航空/工业/医学等专业域仅约 10 张标注可用",
+   "coreProblem": "LoRA 改骨干权重致 VQA 相对下降至 56%，rank 还须逐任务选",
+   "contributions": [
+    "软提示引入 VLM 检测适应，定位两个 NLP 遗留默认值的错配",
+    "确定最优设计：跨模态边界放置+空格 token 初始化",
+    "验证学习 token 可跨模型迁移、可蒸馏为自然语言"
+   ],
+   "innovations": [
+    "提示插在视文 token 之间而非前缀（10.0 vs 8.4 mAP）",
+    "空格初始化令起点语义不变，优于全部语义/随机初始化",
+    "用 2 万倍更少参数打平 LoRA 且骨干权重零改动"
+   ],
+   "method": "冻结整个 VLM 骨干，仅在视觉 token 与文本查询之间插入 L=1–3 个连续软 token、以空格 embedding 初始化后梯度训练；软 prompt 可跨模型迁移并蒸馏回可读文本提示。",
+   "results": "Roboflow20-VL 10-shot mAP 14.2，追平 r=64 LoRA（1.7 亿参数）；NaturalBench VQA 掉 0% vs LoRA 35%；迁移 Qwen3.5-9B 再 +0.8 mAP",
+   "value": "证明\"学会提问\"可替代\"微调教学\"，适应成本骤降",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "软提示引入 VLM 检测适应，定位两个 NLP 遗留默认值的错配",
+    "agentChange": "冻结整个 VLM 骨干，仅在视觉 token 与文本查询之间插入 L=1–3 个连续软 token、以空格 embedding 初始化后梯度训练；软 prompt 可跨模型迁移并蒸馏回可读文本提示。",
+    "selfEvolution": null,
+    "evidence": [
+     "Roboflow20-VL 10-shot mAP 14.2，追平 r=64 LoRA（1.7 亿参数）；NaturalBench VQA 掉 0% vs LoRA 35%；迁移 Qwen3.5-9B 再 +0.8 mAP",
+     "空格初始化令起点语义不变，优于全部语义/随机初始化",
+     "用 2 万倍更少参数打平 LoRA 且骨干权重零改动"
+    ],
+    "faq": {
+     "problem": "仅训 7168 参数的跨模态边界软提示即匹配 LoRA 检测精度，且零灾难遗忘",
+     "mechanism": "冻结整个 VLM 骨干，仅在视觉 token 与文本查询之间插入 L=1–3 个连续软 token、以空格 embedding 初始化后梯度训练；软 prompt 可跨模型迁移并蒸馏回可读文本提示。",
+     "agentChange": "冻结整个 VLM 骨干，仅在视觉 token 与文本查询之间插入 L=1–3 个连续软 token、以空格 embedding 初始化后梯度训练；软 prompt 可跨模型迁移并蒸馏回可读文本提示。",
+     "support": "Roboflow20-VL 10-shot mAP 14.2，追平 r=64 LoRA（1.7 亿参数）；NaturalBench VQA 掉 0% vs LoRA 35%；迁移 Qwen3.5-9B 再 +0.8 mAP",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "证明\"学会提问\"可替代\"微调教学\"，适应成本骤降"
+   }
+  },
+  {
+   "id": "2609.06702",
+   "version": 1,
+   "title": "PARSER：面向长上下文 LLM 智能体的并行读取与深度推理",
+   "abstract": "并行读、顺序问解耦长文档推理，896K 多跳 QA +12 分省 11× 延迟",
+   "authors": [],
+   "published": "2026-09-12T04:00:00.000Z",
+   "updated": "2026-09-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.06702",
+   "pdf": "https://arxiv.org/pdf/2609.06702",
+   "announceType": "new",
+   "summary": "并行读、顺序问解耦长文档推理，896K 多跳 QA +12 分省 11× 延迟",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.06702"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "长上下文智能体从\"读完再答\"进化为\"并行问询\"",
+   "repository": null,
+   "motivation": "长文档多跳证据散落数十万 token，context rot 严重",
+   "coreProblem": "顺序记忆代理单遍按序读，证据位置敏感且延迟随长度线性涨",
+   "contributions": [
+    "提出 PARSER：chunk 子代理并行读+主代理深度推理",
+    "主代理 RL 优化，子代理冻结，可学习行为全集中",
+    "位置/顺序/距离扰动对照实验证明鲁棒性"
+   ],
+   "innovations": [
+    "把\"文档规定的读取顺序\"与\"问题规定的推理顺序\"解耦",
+    "顺序深度只由问题决定，延迟与文档长度脱钩",
+    "scatter-gather 多轮聚焦查询取代单遍压缩记忆"
+   ],
+   "method": "每个 chunk 绑一个轻量子代理查证据；lead agent 不见原文，ReAct 式广播查询、聚合、追问，RL 只训该 lead。",
+   "results": "7K–896K 多跳 QA：4B 模型较最强顺序记忆基线平均 +5.7 分、896K +12.0 分；9B 超 DeepSeek-V4-Pro 6.3 分；推理延迟最高降 11 倍",
+   "value": "长上下文智能体从\"读完再答\"进化为\"并行问询\"",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 PARSER：chunk 子代理并行读+主代理深度推理",
+    "agentChange": "每个 chunk 绑一个轻量子代理查证据；lead agent 不见原文，ReAct 式广播查询、聚合、追问，RL 只训该 lead。",
+    "selfEvolution": null,
+    "evidence": [
+     "7K–896K 多跳 QA：4B 模型较最强顺序记忆基线平均 +5.7 分、896K +12.0 分；9B 超 DeepSeek-V4-Pro 6.3 分；推理延迟最高降 11 倍",
+     "顺序深度只由问题决定，延迟与文档长度脱钩",
+     "scatter-gather 多轮聚焦查询取代单遍压缩记忆"
+    ],
+    "faq": {
+     "problem": "并行读、顺序问解耦长文档推理，896K 多跳 QA +12 分省 11× 延迟",
+     "mechanism": "每个 chunk 绑一个轻量子代理查证据；lead agent 不见原文，ReAct 式广播查询、聚合、追问，RL 只训该 lead。",
+     "agentChange": "每个 chunk 绑一个轻量子代理查证据；lead agent 不见原文，ReAct 式广播查询、聚合、追问，RL 只训该 lead。",
+     "support": "7K–896K 多跳 QA：4B 模型较最强顺序记忆基线平均 +5.7 分、896K +12.0 分；9B 超 DeepSeek-V4-Pro 6.3 分；推理延迟最高降 11 倍",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "长上下文智能体从\"读完再答\"进化为\"并行问询\""
+   }
+  },
+  {
+   "id": "2609.11318",
+   "version": 1,
+   "title": "Mr.LHDR：面向多模态真实世界长时程深度研究智能体的基准",
+   "abstract": "用依赖深度定义长时程的研究基准，最强系统正确率仅 43.1%，暴露长链崩塌",
+   "authors": [],
+   "published": "2026-09-12T04:00:00.000Z",
+   "updated": "2026-09-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.11318",
+   "pdf": "https://arxiv.org/pdf/2609.11318",
+   "announceType": "new",
+   "summary": "用依赖深度定义长时程的研究基准，最强系统正确率仅 43.1%，暴露长链崩塌",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.11318"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "终答准确率显著虚高，链条评测才是深研刚需",
+   "repository": null,
+   "motivation": "真实研究需长链、跨源、跨模态维持中间结论并验证",
+   "coreProblem": "现有基准重检索轻链条，平均仅 3 项检查点测不到依赖链",
+   "contributions": [
+    "构建 102 题、8 类、隐藏节点关系图驱动的评测集",
+    "平均 12.1 个必需中间结论、依赖深度 10.4",
+    "提出 OA/SA/CS/DACS 四指标同评终答与链条"
+   ],
+   "innovations": [
+    "以\"不可归约的证据依赖结构\"而非输入输出长度定义 horizon",
+    "每题含至少一个改变推理状态的非文本证据",
+    "检查表+依赖标注使部分成功可度量、错误可定位"
+   ],
+   "method": "从公开网页/PDF/地图/图表/视频帧构造有唯一短答案的长链问题；分别评通用模型、深度研究系统与 agent 框架。",
+   "results": "最强系统 Overall Acc 仅 43.1%、严格 34.3%；去图像使 DACS 掉 12.6 分",
+   "value": "终答准确率显著虚高，链条评测才是深研刚需",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "构建 102 题、8 类、隐藏节点关系图驱动的评测集",
+    "agentChange": "从公开网页/PDF/地图/图表/视频帧构造有唯一短答案的长链问题；分别评通用模型、深度研究系统与 agent 框架。",
+    "selfEvolution": null,
+    "evidence": [
+     "最强系统 Overall Acc 仅 43.1%、严格 34.3%；去图像使 DACS 掉 12.6 分",
+     "每题含至少一个改变推理状态的非文本证据",
+     "检查表+依赖标注使部分成功可度量、错误可定位"
+    ],
+    "faq": {
+     "problem": "用依赖深度定义长时程的研究基准，最强系统正确率仅 43.1%，暴露长链崩塌",
+     "mechanism": "从公开网页/PDF/地图/图表/视频帧构造有唯一短答案的长链问题；分别评通用模型、深度研究系统与 agent 框架。",
+     "agentChange": "从公开网页/PDF/地图/图表/视频帧构造有唯一短答案的长链问题；分别评通用模型、深度研究系统与 agent 框架。",
+     "support": "最强系统 Overall Acc 仅 43.1%、严格 34.3%；去图像使 DACS 掉 12.6 分",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "终答准确率显著虚高，链条评测才是深研刚需"
+   }
+  },
+  {
+   "id": "2609.08402",
+   "version": 1,
+   "title": "迈向空地协同具身目标搜索：AGOS-Bench 基准、数据集与智能体方法",
+   "abstract": "首个 UAV-UGV 协同搜物基准，免训练 agent 困难集成功率 8.6→55.7%",
+   "authors": [],
+   "published": "2026-09-12T04:00:00.000Z",
+   "updated": "2026-09-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.08402",
+   "pdf": "https://arxiv.org/pdf/2609.08402",
+   "announceType": "new",
+   "summary": "首个 UAV-UGV 协同搜物基准，免训练 agent 困难集成功率 8.6→55.7%",
+   "topic": "Agent 与具身智能",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.08402"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "免训练协议让通用 VLM 直接胜任异构具身协作",
+   "repository": null,
+   "motivation": "应急救援需空中广域发现+地面抵近确认异质协作",
+   "coreProblem": "现有城市具身基准无 UAV-UGV 闭环协同的目标搜索任务",
+   "contributions": [
+    "定义 AGOS 任务并发布首个空地协同搜索基准",
+    "发布配套数据集：7.7k 回合、5 个 CARLA 城镇、3 难度",
+    "提出免训练 AGOS-Agent：搜索-交接-验证协议"
+   ],
+   "innovations": [
+    "多智能体闭环+目标指定式搜索，区别单智能体 QA 基准",
+    "VLM 只管感知决策，规划/投影/校验全交给专用工具",
+    "训练-测试用不相交城镇并保证可解性，防过拟合记忆"
+   ],
+   "method": "角色化实例化 VLM 为 UAV/UGV 决策器，按搜索-交接-验证协议协同；阶段化指标定位失败环节。",
+   "results": "9 个 VLM 中 8 个成功率升，平均 +22.5pp、决策步数 -33.3；Gemini-3.6-Flash 困难集 SR 8.6→55.7%、SPL 7.6→44.0%",
+   "value": "免训练协议让通用 VLM 直接胜任异构具身协作",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "定义 AGOS 任务并发布首个空地协同搜索基准",
+    "agentChange": "角色化实例化 VLM 为 UAV/UGV 决策器，按搜索-交接-验证协议协同；阶段化指标定位失败环节。",
+    "selfEvolution": null,
+    "evidence": [
+     "9 个 VLM 中 8 个成功率升，平均 +22.5pp、决策步数 -33.3；Gemini-3.6-Flash 困难集 SR 8.6→55.7%、SPL 7.6→44.0%",
+     "VLM 只管感知决策，规划/投影/校验全交给专用工具",
+     "训练-测试用不相交城镇并保证可解性，防过拟合记忆"
+    ],
+    "faq": {
+     "problem": "首个 UAV-UGV 协同搜物基准，免训练 agent 困难集成功率 8.6→55.7%",
+     "mechanism": "角色化实例化 VLM 为 UAV/UGV 决策器，按搜索-交接-验证协议协同；阶段化指标定位失败环节。",
+     "agentChange": "角色化实例化 VLM 为 UAV/UGV 决策器，按搜索-交接-验证协议协同；阶段化指标定位失败环节。",
+     "support": "9 个 VLM 中 8 个成功率升，平均 +22.5pp、决策步数 -33.3；Gemini-3.6-Flash 困难集 SR 8.6→55.7%、SPL 7.6→44.0%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "免训练协议让通用 VLM 直接胜任异构具身协作"
+   }
+  },
+  {
+   "id": "2609.08025",
+   "version": 1,
+   "title": "SVRL：用强化学习激发多模态推理智能体的自我验证",
+   "abstract": "纯 RL 使 agent 轨迹内自验证据，InfoSeek +9 分且搜索更少",
+   "authors": [],
+   "published": "2026-09-12T04:00:00.000Z",
+   "updated": "2026-09-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.08025",
+   "pdf": "https://arxiv.org/pdf/2609.08025",
+   "announceType": "new",
+   "summary": "纯 RL 使 agent 轨迹内自验证据，InfoSeek +9 分且搜索更少",
+   "topic": "Agent 与具身智能",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.08025"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "小模型多模态搜索 agent 的准确率-成本折中标杆",
+   "repository": null,
+   "motivation": "多模态 agent 检索证据噪声大，稀疏结果监督不足",
+   "coreProblem": "工具输出无自动校验器，agent 盲信噪声或无差别调用搜索",
+   "contributions": [
+    "提出 SVRL：RL-only 训练自验证+自过滤检索证据",
+    "设计搜索感知惩罚抑制不必要工具调用",
+    "查询多样性奖励规范\"何时搜、搜什么\""
+   ],
+   "innovations": [
+    "验证能力内生于模型自身推理轨迹，推理期零外部校验器",
+    "搜索惩罚+多样性奖励构成细粒度过程奖励组合",
+    "仅 5K 训练样本即逼近大得多的专有模型水平"
+   ],
+   "method": "GRPO 变体上加入 verify 信号监督，模型在 think 流中给检索源打分、剔除冲突证据后再决定续搜或作答。",
+   "results": "FVQA-test 65.3 (+8.9)、InfoSeek 64.7 (+9.6) vs MMSearch-R1++；搜索精确率 89.9→97.7%、免搜索样本召回 54.6→70.8%，搜索率反而下降",
+   "value": "小模型多模态搜索 agent 的准确率-成本折中标杆",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 SVRL：RL-only 训练自验证+自过滤检索证据",
+    "agentChange": "GRPO 变体上加入 verify 信号监督，模型在 think 流中给检索源打分、剔除冲突证据后再决定续搜或作答。",
+    "selfEvolution": null,
+    "evidence": [
+     "FVQA-test 65.3 (+8.9)、InfoSeek 64.7 (+9.6) vs MMSearch-R1++；搜索精确率 89.9→97.7%、免搜索样本召回 54.6→70.8%，搜索率反而下降",
+     "搜索惩罚+多样性奖励构成细粒度过程奖励组合",
+     "仅 5K 训练样本即逼近大得多的专有模型水平"
+    ],
+    "faq": {
+     "problem": "纯 RL 使 agent 轨迹内自验证据，InfoSeek +9 分且搜索更少",
+     "mechanism": "GRPO 变体上加入 verify 信号监督，模型在 think 流中给检索源打分、剔除冲突证据后再决定续搜或作答。",
+     "agentChange": "GRPO 变体上加入 verify 信号监督，模型在 think 流中给检索源打分、剔除冲突证据后再决定续搜或作答。",
+     "support": "FVQA-test 65.3 (+8.9)、InfoSeek 64.7 (+9.6) vs MMSearch-R1++；搜索精确率 89.9→97.7%、免搜索样本召回 54.6→70.8%，搜索率反而下降",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "小模型多模态搜索 agent 的准确率-成本折中标杆"
+   }
+  },
+  {
+   "id": "2609.11677",
+   "version": 1,
+   "title": "Ecdysis：LLM 智能体运行时 Harness 的高效训练演化",
+   "abstract": "按跨实例复现模式归因失败再改 harness，训练提速 1.84× 且精度 +18.56%",
+   "authors": [],
+   "published": "2026-09-12T04:00:00.000Z",
+   "updated": "2026-09-12T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.11677",
+   "pdf": "https://arxiv.org/pdf/2609.11677",
+   "announceType": "new",
+   "summary": "按跨实例复现模式归因失败再改 harness，训练提速 1.84× 且精度 +18.56%",
+   "topic": "Agent 与具身智能",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.11677"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把失败归因确立为 agent 自演化系统的核心瓶颈解",
+   "repository": null,
+   "motivation": "固定 LLM 下运行时 harness 决定 agent 能力上限",
+   "coreProblem": "逐失败迭代修补把模型缺陷误当 harness 缺陷，过拟合泛化差",
+   "contributions": [
+    "提出 Ecdysis：批量级跨实例失败聚合演化框架",
+    "设计失败驱动协作精炼 FDCR 多角色诊断出修改规格",
+    "建立模型适应漂移的理论解释"
+   ],
+   "innovations": [
+    "以跨任务复发性区分模型特异 vs 系统性 harness 缺陷",
+    "多角色+主持人的结构化诊断取代单点试错迭代",
+    "演化偏向系统性修复，跨模型泛化反而更好"
+   ],
+   "method": "收集多实例失败→聚合复现模式→FDCR 多视角诊断→主持人合成结构化 harness 修改规格→实施验证。",
+   "results": "harness 训练最高提速 1.84×，所得 harness 推理准确率 +18.56%，token 消耗更低",
+   "value": "把失败归因确立为 agent 自演化系统的核心瓶颈解",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 Ecdysis：批量级跨实例失败聚合演化框架",
+    "agentChange": "收集多实例失败→聚合复现模式→FDCR 多视角诊断→主持人合成结构化 harness 修改规格→实施验证。",
+    "selfEvolution": null,
+    "evidence": [
+     "harness 训练最高提速 1.84×，所得 harness 推理准确率 +18.56%，token 消耗更低",
+     "多角色+主持人的结构化诊断取代单点试错迭代",
+     "演化偏向系统性修复，跨模型泛化反而更好"
+    ],
+    "faq": {
+     "problem": "按跨实例复现模式归因失败再改 harness，训练提速 1.84× 且精度 +18.56%",
+     "mechanism": "收集多实例失败→聚合复现模式→FDCR 多视角诊断→主持人合成结构化 harness 修改规格→实施验证。",
+     "agentChange": "收集多实例失败→聚合复现模式→FDCR 多视角诊断→主持人合成结构化 harness 修改规格→实施验证。",
+     "support": "harness 训练最高提速 1.84×，所得 harness 推理准确率 +18.56%，token 消耗更低",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "把失败归因确立为 agent 自演化系统的核心瓶颈解"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-09-10",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-09-10 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-23T21:30:10.000Z",
+ "latestPaperAt": "2026-09-12T04:00:00.000Z",
+ "totalMatched": 12,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 12
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 35,
+ "trends": {
+  "status": "accumulating",
+  "days": 35,
+  "minimumDays": 15,
+  "message": "已积累 35/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-23T21:30:10.000Z",
+ "snapshotDay": "2026-09-12",
+ "historical": true
+}

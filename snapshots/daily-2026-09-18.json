@@ -1,0 +1,1041 @@
+{
+ "papers": [
+  {
+   "id": "2609.18329",
+   "version": 1,
+   "title": "PDA++：遥感影像中场景感知的物理一致目标插入",
+   "abstract": "规划-解耦-同化三阶段插入框架，少样本识别 mAP50 提升 17.69 点",
+   "authors": [],
+   "published": "2026-09-18T04:00:00.000Z",
+   "updated": "2026-09-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.18329",
+   "pdf": "https://arxiv.org/pdf/2609.18329",
+   "announceType": "new",
+   "summary": "规划-解耦-同化三阶段插入框架，少样本识别 mAP50 提升 17.69 点",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.18329"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为少样本/长尾遥感识别提供物理一致的合成增广，SAR 同样适用",
+   "repository": null,
+   "motivation": "遥感稀有目标观测少、标注贵，长尾/少样本识别受限",
+   "coreProblem": "复制粘贴与自然图扩散编辑忽略成像条件，插入目标与目的场景物理不一致",
+   "contributions": [
+    "PDA++：统一的环境感知目标插入框架（ICML 2026 扩展版）",
+    "可供性场规划：几何间隙 + 结构/尺度线索定姿态",
+    "插入即产出像素级掩码，兼做分割增广"
+   ],
+   "innovations": [
+    "首次把位姿规划、外观解耦、纹理同化耦合为渐进适配链",
+    "位姿条件背景注入目的观测上下文，保身份、换成像状态",
+    "最优传输对齐多尺度纹理分布，消除插入边界伪影"
+   ],
+   "method": "可供性场先选场景兼容位姿，位姿条件背景引导扩散生成使参考目标适配目的观测，再以最优传输同化局部纹理；光学与 SAR 通用。",
+   "results": "光学基准整图 FID 6.28；少样本识别 mAP50 +17.69 点（较真实数据基线相对 +28.8%）；SAR 舰船检测 +4.10 mAP50，跨数据集迁移仍有效",
+   "value": "为少样本/长尾遥感识别提供物理一致的合成增广，SAR 同样适用",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "PDA++：统一的环境感知目标插入框架（ICML 2026 扩展版）",
+    "agentChange": "可供性场先选场景兼容位姿，位姿条件背景引导扩散生成使参考目标适配目的观测，再以最优传输同化局部纹理；光学与 SAR 通用。",
+    "selfEvolution": null,
+    "evidence": [
+     "光学基准整图 FID 6.28；少样本识别 mAP50 +17.69 点（较真实数据基线相对 +28.8%）；SAR 舰船检测 +4.10 mAP50，跨数据集迁移仍有效",
+     "位姿条件背景注入目的观测上下文，保身份、换成像状态",
+     "最优传输对齐多尺度纹理分布，消除插入边界伪影"
+    ],
+    "faq": {
+     "problem": "规划-解耦-同化三阶段插入框架，少样本识别 mAP50 提升 17.69 点",
+     "mechanism": "可供性场先选场景兼容位姿，位姿条件背景引导扩散生成使参考目标适配目的观测，再以最优传输同化局部纹理；光学与 SAR 通用。",
+     "agentChange": "可供性场先选场景兼容位姿，位姿条件背景引导扩散生成使参考目标适配目的观测，再以最优传输同化局部纹理；光学与 SAR 通用。",
+     "support": "光学基准整图 FID 6.28；少样本识别 mAP50 +17.69 点（较真实数据基线相对 +28.8%）；SAR 舰船检测 +4.10 mAP50，跨数据集迁移仍有效",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为少样本/长尾遥感识别提供物理一致的合成增广，SAR 同样适用"
+   }
+  },
+  {
+   "id": "2609.18773",
+   "version": 1,
+   "title": "DISTA-Net++：超越亚像素分离的红外密集小目标解混",
+   "abstract": "建 CSIST 解混首个开源生态，3× 网格划分超 7× SOTA 16.15%",
+   "authors": [],
+   "published": "2026-09-18T04:00:00.000Z",
+   "updated": "2026-09-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.18773",
+   "pdf": "https://arxiv.org/pdf/2609.18773",
+   "announceType": "new",
+   "summary": "建 CSIST 解混首个开源生态，3× 网格划分超 7× SOTA 16.15%",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.18773"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把 CSIST 解混从\"盲离散\"推向\"知情的连续\"范式，服务红外预警",
+   "repository": null,
+   "motivation": "远距红外目标簇在衍射极限下并成单斑，数量/位置/强度被埋没",
+   "coreProblem": "现有解混靠 ℓ1 稀疏盲解 + 固定网格离散，病态多解且精度被网格锁死",
+   "contributions": [
+    "CSIST-100K 基准 + 专用指标套件 + GrokCSO 工具箱",
+    "DISTA-Net++：动态深度展开解混骨干",
+    "计数引导先验与连续坐标校正两机制"
+   ],
+   "innovations": [
+    "填补该领域数据集/指标/基线的系统性基础设施空白",
+    "把全局目标数作为显式语义约束注入，正则化解空间",
+    "回归离网格偏移，定位精度与网格分辨率解耦"
+   ],
+   "method": "深度展开网络迭代求解逆问题，计数先验压缩歧义解，亚像素连续校正输出目标数、位置与辐射强度。",
+   "results": "最经济的 3× 划分下 CSO-mAP 超 7× 划分 SOTA +16.15%、计数准确率 +62.96%，计算量仅其 1/6",
+   "value": "把 CSIST 解混从\"盲离散\"推向\"知情的连续\"范式，服务红外预警",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "CSIST-100K 基准 + 专用指标套件 + GrokCSO 工具箱",
+    "agentChange": "深度展开网络迭代求解逆问题，计数先验压缩歧义解，亚像素连续校正输出目标数、位置与辐射强度。",
+    "selfEvolution": null,
+    "evidence": [
+     "最经济的 3× 划分下 CSO-mAP 超 7× 划分 SOTA +16.15%、计数准确率 +62.96%，计算量仅其 1/6",
+     "把全局目标数作为显式语义约束注入，正则化解空间",
+     "回归离网格偏移，定位精度与网格分辨率解耦"
+    ],
+    "faq": {
+     "problem": "建 CSIST 解混首个开源生态，3× 网格划分超 7× SOTA 16.15%",
+     "mechanism": "深度展开网络迭代求解逆问题，计数先验压缩歧义解，亚像素连续校正输出目标数、位置与辐射强度。",
+     "agentChange": "深度展开网络迭代求解逆问题，计数先验压缩歧义解，亚像素连续校正输出目标数、位置与辐射强度。",
+     "support": "最经济的 3× 划分下 CSO-mAP 超 7× 划分 SOTA +16.15%、计数准确率 +62.96%，计算量仅其 1/6",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "把 CSIST 解混从\"盲离散\"推向\"知情的连续\"范式，服务红外预警"
+   }
+  },
+  {
+   "id": "2609.18210",
+   "version": 1,
+   "title": "HARD：千兆像素级无人机广域时空场景理解基准",
+   "abstract": "首个 122MP 无人机时序数据集，检测/跟踪/场景 VQA 三级标注",
+   "authors": [],
+   "published": "2026-09-18T04:00:00.000Z",
+   "updated": "2026-09-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.18210",
+   "pdf": "https://arxiv.org/pdf/2609.18210",
+   "announceType": "new",
+   "summary": "首个 122MP 无人机时序数据集，检测/跟踪/场景 VQA 三级标注",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.18210"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "确立 WSTU 任务方向，暴露 VLM 时序身份绑定的根本短板",
+   "repository": null,
+   "motivation": "机载成像进入千兆像素时代，感知从认目标转向理解动态场景",
+   "coreProblem": "现有数据集无法同时满足广域覆盖、单目标分辨率与时间连续性",
+   "contributions": [
+    "HARD：3,549 帧 12768×9564 机载遥感时序数据",
+    "三级标注：138,830 审核框、跨帧身份、1,565 条 VQA",
+    "延迟感知跟踪指标 s-HOTA"
+   ],
+   "innovations": [
+    "唯一兼具 UAV 平台、122MP、时序、多类跟踪与场景级 VQA",
+    "把秒级处理延迟计入跟踪评分，离线最优可在流式下失冠",
+    "揭示 VLM 跨帧身份绑定与单帧感知是两条不互通的轴"
+   ],
+   "method": "50–355 m 高度、四种飞行模式采集，三级人工标注；s-HOTA 按管线延迟在线评分检测与关联两轴。",
+   "results": "12 个 VLM 单帧感知分差达 37 点，但 11/12 在跨帧身份绑定上挤在近随机的 13 点带内",
+   "value": "确立 WSTU 任务方向，暴露 VLM 时序身份绑定的根本短板",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "HARD：3,549 帧 12768×9564 机载遥感时序数据",
+    "agentChange": "50–355 m 高度、四种飞行模式采集，三级人工标注；s-HOTA 按管线延迟在线评分检测与关联两轴。",
+    "selfEvolution": null,
+    "evidence": [
+     "12 个 VLM 单帧感知分差达 37 点，但 11/12 在跨帧身份绑定上挤在近随机的 13 点带内",
+     "把秒级处理延迟计入跟踪评分，离线最优可在流式下失冠",
+     "揭示 VLM 跨帧身份绑定与单帧感知是两条不互通的轴"
+    ],
+    "faq": {
+     "problem": "首个 122MP 无人机时序数据集，检测/跟踪/场景 VQA 三级标注",
+     "mechanism": "50–355 m 高度、四种飞行模式采集，三级人工标注；s-HOTA 按管线延迟在线评分检测与关联两轴。",
+     "agentChange": "50–355 m 高度、四种飞行模式采集，三级人工标注；s-HOTA 按管线延迟在线评分检测与关联两轴。",
+     "support": "12 个 VLM 单帧感知分差达 37 点，但 11/12 在跨帧身份绑定上挤在近随机的 13 点带内",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "确立 WSTU 任务方向，暴露 VLM 时序身份绑定的根本短板"
+   }
+  },
+  {
+   "id": "2609.18037",
+   "version": 1,
+   "title": "SetPlanner：冻结 SAM 的轻量插件式点集规划器",
+   "abstract": "1.52M 参数点集规划插件让冻结 SAM 全自动分割内镜器械，Dice 0.934",
+   "authors": [],
+   "published": "2026-09-18T04:00:00.000Z",
+   "updated": "2026-09-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.18037",
+   "pdf": "https://arxiv.org/pdf/2609.18037",
+   "announceType": "new",
+   "summary": "1.52M 参数点集规划插件让冻结 SAM 全自动分割内镜器械，Dice 0.934",
+   "topic": "计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.18037"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给出冻结 SAM 适配手术视频的最省数据路径，且跨骨干可复用",
+   "repository": null,
+   "motivation": "内镜导航与安全监控需要逐帧无人工交互的器械分割",
+   "coreProblem": "SAM 依赖人工提示；器械细窄、关节化、反光遮挡，多种点配置均有效",
+   "contributions": [
+    "SetPlanner：冻结 SAM 之上的即插即用点集规划器",
+    "置换感知条件流生成完整无序 K 点集",
+    "8 候选共识读出 + 分歧度作免真值失败分"
+   ],
+   "innovations": [
+    "把自动提示形式化为点集规划，而非单点或掩码预测",
+    "冻结通路协议：解码器保坐标敏感，定位差距可测可归因",
+    "候选间分歧复用为测试期失败排序信号（AUROC 0.969）"
+   ],
+   "method": "从腐蚀前景与二阶矩坐标系提取几何感知目标点集，条件流采样 8 组完整点集，冻结 SAM 共享一次编码解码后共识选一。",
+   "results": "Kvasir-Instrument Dice 0.934，恢复 44.4 点定位差距的 96%；Kvasir/Endoscapes/EndoVis 六条迁移路线全胜 LoRA 微调系统",
+   "value": "给出冻结 SAM 适配手术视频的最省数据路径，且跨骨干可复用",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "SetPlanner：冻结 SAM 之上的即插即用点集规划器",
+    "agentChange": "从腐蚀前景与二阶矩坐标系提取几何感知目标点集，条件流采样 8 组完整点集，冻结 SAM 共享一次编码解码后共识选一。",
+    "selfEvolution": null,
+    "evidence": [
+     "Kvasir-Instrument Dice 0.934，恢复 44.4 点定位差距的 96%；Kvasir/Endoscapes/EndoVis 六条迁移路线全胜 LoRA 微调系统",
+     "冻结通路协议：解码器保坐标敏感，定位差距可测可归因",
+     "候选间分歧复用为测试期失败排序信号（AUROC 0.969）"
+    ],
+    "faq": {
+     "problem": "1.52M 参数点集规划插件让冻结 SAM 全自动分割内镜器械，Dice 0.934",
+     "mechanism": "从腐蚀前景与二阶矩坐标系提取几何感知目标点集，条件流采样 8 组完整点集，冻结 SAM 共享一次编码解码后共识选一。",
+     "agentChange": "从腐蚀前景与二阶矩坐标系提取几何感知目标点集，条件流采样 8 组完整点集，冻结 SAM 共享一次编码解码后共识选一。",
+     "support": "Kvasir-Instrument Dice 0.934，恢复 44.4 点定位差距的 96%；Kvasir/Endoscapes/EndoVis 六条迁移路线全胜 LoRA 微调系统",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "给出冻结 SAM 适配手术视频的最省数据路径，且跨骨干可复用"
+   }
+  },
+  {
+   "id": "2609.18920",
+   "version": 1,
+   "title": "PhysVGGT：单图前馈稠密物理属性估计",
+   "abstract": "单张 RGB 一次前馈预测摩擦/硬度/模量/密度稠密图与质量，快 27×",
+   "authors": [],
+   "published": "2026-09-18T04:00:00.000Z",
+   "updated": "2026-09-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.18920",
+   "pdf": "https://arxiv.org/pdf/2609.18920",
+   "announceType": "new",
+   "summary": "单张 RGB 一次前馈预测摩擦/硬度/模量/密度稠密图与质量，快 27×",
+   "topic": "计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.18920"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "物理属性感知从离线重建走向实时前馈，可直接驱动抓取力规划",
+   "repository": null,
+   "motivation": "摩擦、硬度等物理属性决定机器人抓取交互方式，却难以从图像观测",
+   "coreProblem": "NeRF/3DGS 路线需逐物体重建加测试时 VLM 查询，且依赖多视角输入",
+   "contributions": [
+    "PhysVGGT：前馈式稠密物理属性 + 物体级质量预测",
+    "跨属性耦合模块与共享解码器（解码参数省约 4×）",
+    "可扩展伪标签管线，免 3D 资产与实物测量"
+   ],
+   "innovations": [
+    "首次把物理属性估计表述为逐像素稠密预测问题",
+    "冻结 1.26B 几何骨干上仅训练约 32M 参数",
+    "伪标签产出可复用大规模语料（8,213 物体 ×15 视角）"
+   ],
+   "method": "VGGT 提取几何感知 token，稠密分支经跨通道注意力耦合预测四种属性图，全局 MLP 分支回归质量。",
+   "results": "ABO-500 质量估计 ADE 较 GaussianProperty −21%、ALDE/MnRE 较 AURA −43%；延迟 0.13 s/图、27× 加速；OOD 泛化到 NeRF2Physics 实测",
+   "value": "物理属性感知从离线重建走向实时前馈，可直接驱动抓取力规划",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "PhysVGGT：前馈式稠密物理属性 + 物体级质量预测",
+    "agentChange": "VGGT 提取几何感知 token，稠密分支经跨通道注意力耦合预测四种属性图，全局 MLP 分支回归质量。",
+    "selfEvolution": null,
+    "evidence": [
+     "ABO-500 质量估计 ADE 较 GaussianProperty −21%、ALDE/MnRE 较 AURA −43%；延迟 0.13 s/图、27× 加速；OOD 泛化到 NeRF2Physics 实测",
+     "冻结 1.26B 几何骨干上仅训练约 32M 参数",
+     "伪标签产出可复用大规模语料（8,213 物体 ×15 视角）"
+    ],
+    "faq": {
+     "problem": "单张 RGB 一次前馈预测摩擦/硬度/模量/密度稠密图与质量，快 27×",
+     "mechanism": "VGGT 提取几何感知 token，稠密分支经跨通道注意力耦合预测四种属性图，全局 MLP 分支回归质量。",
+     "agentChange": "VGGT 提取几何感知 token，稠密分支经跨通道注意力耦合预测四种属性图，全局 MLP 分支回归质量。",
+     "support": "ABO-500 质量估计 ADE 较 GaussianProperty −21%、ALDE/MnRE 较 AURA −43%；延迟 0.13 s/图、27× 加速；OOD 泛化到 NeRF2Physics 实测",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "物理属性感知从离线重建走向实时前馈，可直接驱动抓取力规划"
+   }
+  },
+  {
+   "id": "2609.17895",
+   "version": 1,
+   "title": "TabPFN-3.5：表格基础模型技术报告",
+   "abstract": "新旗舰表格基础模型横扫 7 项基准 SOTA，挺进非 i.i.d. 真实脏数据",
+   "authors": [],
+   "published": "2026-09-18T04:00:00.000Z",
+   "updated": "2026-09-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.17895",
+   "pdf": "https://arxiv.org/pdf/2609.17895",
+   "announceType": "new",
+   "summary": "新旗舰表格基础模型横扫 7 项基准 SOTA，挺进非 i.i.d. 真实脏数据",
+   "topic": "基础模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.17895"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "表格基础模型首次全面对齐从业者真实数据，动摇 GBDT 最后阵地",
+   "repository": null,
+   "motivation": "TFM 已胜过梯度提升树，但真实业务表格上仍落后调优传统模型",
+   "coreProblem": "现有 TFM 在时序/分组切分、字符串、高基数特征与宽表上失效且越大越慢",
+   "contributions": [
+    "TabPFN-3.5：220M 参数单检查点同做分类与回归",
+    "支持 1M 行 × 6k 特征，缓存推理亚秒级",
+    "Fast/Plus/Thinking 三变体覆盖延迟、多模态、测试时扩展"
+   ],
+   "innovations": [
+    "把 TFM 领先从干净 i.i.d. 扩到分组/时序/文本/高基数数据",
+    "宽度翻倍而缓存大小不变，部署成本不涨",
+    "合成先验定向调优高基数、宽表与分组结构"
+   ],
+   "method": "修订逐单元编码，分类回归联合训练单一检查点；Fast 蒸馏至 84M；Thinking 做推理时计算扩展。",
+   "results": "TabArena/BeyondArena/STRABLE/MulTaBench/ScoringBench/RelArena/TALENT（300 数据集）全部第一；Fast 比 TabPFN-3 快至 3× 仍领先约 150 Elo；Thinking 提速至 12×",
+   "value": "表格基础模型首次全面对齐从业者真实数据，动摇 GBDT 最后阵地",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "TabPFN-3.5：220M 参数单检查点同做分类与回归",
+    "agentChange": "修订逐单元编码，分类回归联合训练单一检查点；Fast 蒸馏至 84M；Thinking 做推理时计算扩展。",
+    "selfEvolution": null,
+    "evidence": [
+     "TabArena/BeyondArena/STRABLE/MulTaBench/ScoringBench/RelArena/TALENT（300 数据集）全部第一；Fast 比 TabPFN-3 快至 3× 仍领先约 150 Elo；Thinking 提速至 12×",
+     "宽度翻倍而缓存大小不变，部署成本不涨",
+     "合成先验定向调优高基数、宽表与分组结构"
+    ],
+    "faq": {
+     "problem": "新旗舰表格基础模型横扫 7 项基准 SOTA，挺进非 i.i.d. 真实脏数据",
+     "mechanism": "修订逐单元编码，分类回归联合训练单一检查点；Fast 蒸馏至 84M；Thinking 做推理时计算扩展。",
+     "agentChange": "修订逐单元编码，分类回归联合训练单一检查点；Fast 蒸馏至 84M；Thinking 做推理时计算扩展。",
+     "support": "TabArena/BeyondArena/STRABLE/MulTaBench/ScoringBench/RelArena/TALENT（300 数据集）全部第一；Fast 比 TabPFN-3 快至 3× 仍领先约 150 Elo；Thinking 提速至 12×",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "表格基础模型首次全面对齐从业者真实数据，动摇 GBDT 最后阵地"
+   }
+  },
+  {
+   "id": "2609.18471",
+   "version": 1,
+   "title": "First Token Matters：大推理模型安全性坍塌机理与 SafeToken",
+   "abstract": "定位推理模型首个生成 token 的拒答信号坍塌，单 token 锚注入即修复",
+   "authors": [],
+   "published": "2026-09-18T04:00:00.000Z",
+   "updated": "2026-09-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.18471",
+   "pdf": "https://arxiv.org/pdf/2609.18471",
+   "announceType": "new",
+   "summary": "定位推理模型首个生成 token 的拒答信号坍塌，单 token 锚注入即修复",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.18471"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为推理模型安全给出机制解释与近零成本缓解，CICAI 2026 录用",
+   "repository": null,
+   "motivation": "大推理模型（LRM）处理有害查询时安全对齐显著退化",
+   "coreProblem": "现有防御把 LRM 当黑箱靠额外训练，说不清安全失效的内部机制",
+   "contributions": [
+    "发现起始拒答坍塌（ORC）：拒答投影在首生成 token 骤降",
+    "SafeToken：推理起始处注入习得连续安全锚",
+    "仅优化 1 个 token 嵌入（约 4k 参数）、1000 条样本"
+   ],
+   "innovations": [
+    "首次把 LRM 安全失效定位到\"理解转生成\"的临界 token",
+    "借同骨干指令模型的共享拒答向量做逐 token 时序投影分析",
+    "即插即用，可与 SafePath/STAR-1 等推理时防御叠加增益"
+   ],
+   "method": "将隐状态投影到共享拒答向量追踪强度曲线，确认起始坍塌后，在该位置注入以\"Safety\"初始化的可学习连续嵌入。",
+   "results": "R1-8B StrongReject ASR 37.3→2.2、AdvBench 35.0→0.6；R1-7B AIME 46.7→53.3 不降反升；叠加 SafePath 再降（6.4→2.6）",
+   "value": "为推理模型安全给出机制解释与近零成本缓解，CICAI 2026 录用",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "发现起始拒答坍塌（ORC）：拒答投影在首生成 token 骤降",
+    "agentChange": "将隐状态投影到共享拒答向量追踪强度曲线，确认起始坍塌后，在该位置注入以\"Safety\"初始化的可学习连续嵌入。",
+    "selfEvolution": null,
+    "evidence": [
+     "R1-8B StrongReject ASR 37.3→2.2、AdvBench 35.0→0.6；R1-7B AIME 46.7→53.3 不降反升；叠加 SafePath 再降（6.4→2.6）",
+     "借同骨干指令模型的共享拒答向量做逐 token 时序投影分析",
+     "即插即用，可与 SafePath/STAR-1 等推理时防御叠加增益"
+    ],
+    "faq": {
+     "problem": "定位推理模型首个生成 token 的拒答信号坍塌，单 token 锚注入即修复",
+     "mechanism": "将隐状态投影到共享拒答向量追踪强度曲线，确认起始坍塌后，在该位置注入以\"Safety\"初始化的可学习连续嵌入。",
+     "agentChange": "将隐状态投影到共享拒答向量追踪强度曲线，确认起始坍塌后，在该位置注入以\"Safety\"初始化的可学习连续嵌入。",
+     "support": "R1-8B StrongReject ASR 37.3→2.2、AdvBench 35.0→0.6；R1-7B AIME 46.7→53.3 不降反升；叠加 SafePath 再降（6.4→2.6）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为推理模型安全给出机制解释与近零成本缓解，CICAI 2026 录用"
+   }
+  },
+  {
+   "id": "2609.17848",
+   "version": 1,
+   "title": "工具调用 Agent 该用 SFT 还是 RL？数据×方法×规模受控研究",
+   "abstract": "受控对比 SFT/GRPO/串联：LoRA-SFT 赢 18 个分布内设置中的 15 个",
+   "authors": [],
+   "published": "2026-09-18T04:00:00.000Z",
+   "updated": "2026-09-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.17848",
+   "pdf": "https://arxiv.org/pdf/2609.17848",
+   "announceType": "new",
+   "summary": "受控对比 SFT/GRPO/串联：LoRA-SFT 赢 18 个分布内设置中的 15 个",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.17848"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给 Agent 训练落地提供可直接执行的选型规则，避免无谓 RL 算力",
+   "repository": null,
+   "motivation": "工具调用训练缺少数据、方法、规模三因素的受控证据",
+   "coreProblem": "已有研究混淆语料选择、后训练策略与模型规模，结论互不可比",
+   "contributions": [
+    "3 策略 × 3 公开语料 + 均匀混合 × Qwen3 0.6B–32B 全对比",
+    "分布内与跨数据集迁移（54 设置）双维度评测",
+    "LoRA 对全参微调的额外消融"
+   ],
+   "innovations": [
+    "首次系统回答选型问题：分布内选 SFT，迁移略偏 GRPO",
+    "揭示语料选择影响达 55 点，与方法选择同量级",
+    "LoRA 胜全参：低秩更新更好保留预训练 agentic 行为"
+   ],
+   "method": "统一提示格式、去近重复防污染，三语料分别训练后在彼此保留测试集交叉评测。",
+   "results": "LoRA-SFT 在 15/18 分布内设置最优；GRPO 赢 29/54 迁移设置但平均优势 <1 点；SFT→GRPO 两头很少最强；混合语料是最稳部署默认",
+   "value": "给 Agent 训练落地提供可直接执行的选型规则，避免无谓 RL 算力",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "3 策略 × 3 公开语料 + 均匀混合 × Qwen3 0.6B–32B 全对比",
+    "agentChange": "统一提示格式、去近重复防污染，三语料分别训练后在彼此保留测试集交叉评测。",
+    "selfEvolution": null,
+    "evidence": [
+     "LoRA-SFT 在 15/18 分布内设置最优；GRPO 赢 29/54 迁移设置但平均优势 <1 点；SFT→GRPO 两头很少最强；混合语料是最稳部署默认",
+     "揭示语料选择影响达 55 点，与方法选择同量级",
+     "LoRA 胜全参：低秩更新更好保留预训练 agentic 行为"
+    ],
+    "faq": {
+     "problem": "受控对比 SFT/GRPO/串联：LoRA-SFT 赢 18 个分布内设置中的 15 个",
+     "mechanism": "统一提示格式、去近重复防污染，三语料分别训练后在彼此保留测试集交叉评测。",
+     "agentChange": "统一提示格式、去近重复防污染，三语料分别训练后在彼此保留测试集交叉评测。",
+     "support": "LoRA-SFT 在 15/18 分布内设置最优；GRPO 赢 29/54 迁移设置但平均优势 <1 点；SFT→GRPO 两头很少最强；混合语料是最稳部署默认",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "给 Agent 训练落地提供可直接执行的选型规则，避免无谓 RL 算力"
+   }
+  },
+  {
+   "id": "2609.18520",
+   "version": 1,
+   "title": "AeroWeaver：把无人机技能编织成分布式蜂群执行的具身 Agent 框架",
+   "abstract": "LLM Agent 运行时打通语义决策与分布式飞行执行，9 任务全胜省 52–70% token",
+   "authors": [],
+   "published": "2026-09-18T04:00:00.000Z",
+   "updated": "2026-09-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.18520",
+   "pdf": "https://arxiv.org/pdf/2609.18520",
+   "announceType": "new",
+   "summary": "LLM Agent 运行时打通语义决策与分布式飞行执行，9 任务全胜省 52–70% token",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.18520"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为 LLM Agent 落地具身蜂群给出可复用运行时范式，适配免训练",
+   "repository": null,
+   "motivation": "LLM 高层规划与无人机蜂群分布式物理执行之间存在断层",
+   "coreProblem": "中央规划器聚合全局状态出联合动作，与分布式观测/执行拓扑脱节",
+   "contributions": [
+    "具身 Agent 框架：skill.md + 可执行对象的类型化技能包",
+    "角色条件局部 Agent 绑定单机，无中央动作控制器",
+    "角色索引的状态-动作-奖励经验库在线更新技能偏好"
+   ],
+   "innovations": [
+    "用运行时（harness）层显式解决语义选择到可执行能力的接地",
+    "定向同伴消息注入下一轮局部决策，实现机体本地协调",
+    "免训练经验强化：从相似经验估计技能级优势修正选择"
+   ],
+   "method": "任务文本派生角色提示与活动技能子集，局部 Agent 经机体作用域执行器调用技能，奖励写回技能评分形成闭环。",
+   "results": "MPE 风格 9 项任务平均回合奖励全部第一（胜 Centralized 与 HMAS-2）；token 消耗较 HMAS-2 少 52.0–70.0%",
+   "value": "为 LLM Agent 落地具身蜂群给出可复用运行时范式，适配免训练",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "具身 Agent 框架：skill.md + 可执行对象的类型化技能包",
+    "agentChange": "任务文本派生角色提示与活动技能子集，局部 Agent 经机体作用域执行器调用技能，奖励写回技能评分形成闭环。",
+    "selfEvolution": null,
+    "evidence": [
+     "MPE 风格 9 项任务平均回合奖励全部第一（胜 Centralized 与 HMAS-2）；token 消耗较 HMAS-2 少 52.0–70.0%",
+     "定向同伴消息注入下一轮局部决策，实现机体本地协调",
+     "免训练经验强化：从相似经验估计技能级优势修正选择"
+    ],
+    "faq": {
+     "problem": "LLM Agent 运行时打通语义决策与分布式飞行执行，9 任务全胜省 52–70% token",
+     "mechanism": "任务文本派生角色提示与活动技能子集，局部 Agent 经机体作用域执行器调用技能，奖励写回技能评分形成闭环。",
+     "agentChange": "任务文本派生角色提示与活动技能子集，局部 Agent 经机体作用域执行器调用技能，奖励写回技能评分形成闭环。",
+     "support": "MPE 风格 9 项任务平均回合奖励全部第一（胜 Centralized 与 HMAS-2）；token 消耗较 HMAS-2 少 52.0–70.0%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为 LLM Agent 落地具身蜂群给出可复用运行时范式，适配免训练"
+   }
+  },
+  {
+   "id": "2609.18708",
+   "version": 1,
+   "title": "重思 PPO Critic：价值平坦化的发现与 SP³O 稀疏监督",
+   "abstract": "发现 PPO critic 系统性\"价值平坦化\"，仅 3 个锚点监督即稳定提升策略",
+   "authors": [],
+   "published": "2026-09-18T04:00:00.000Z",
+   "updated": "2026-09-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.18708",
+   "pdf": "https://arxiv.org/pdf/2609.18708",
+   "announceType": "new",
+   "summary": "发现 PPO critic 系统性\"价值平坦化\"，仅 3 个锚点监督即稳定提升策略",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.18708"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "揭示 LLM-RL 中 PPO 被忽视的失效模式，修复几乎零额外成本",
+   "repository": null,
+   "motivation": "长程推理 RL 依赖 critic 做细粒度信用分配与优势估计",
+   "coreProblem": "稠密 token 级 MSE 监督下 critic 预测平坦，跟不上真实状态值剧变",
+   "contributions": [
+    "识别 Value Flattening：MC 值剧变而 critic 平坦甚至反向",
+    "归因两机制：隐式方差惩罚 + 时序相关状态的冗余更新",
+    "SP³O：每条响应只挑少数分离良好的状态施加值损失"
+   ],
+   "innovations": [
+    "首次以多次续写 MC 值为诊断参照，揭示 critic 学习病灶",
+    "损失分解证明稠密监督隐式惩罚响应内价值变化",
+    "状态空间越大平坦化越重（FrozenLake 受控实验验证）"
+   ],
+   "method": "每响应选 K=3 个按相对位置 0.3/0.6/0.9 分布的锚点状态监督 critic，含尾部锚以覆盖轨迹末端。",
+   "results": "Qwen3-8B-Base 数学 avg@32：SP³O 50.51 vs PPO 48.50、GRPO 47.91；尾锚使 44.10→45.57、重复率 18.33%→1.12%，OOD 推理同向提升",
+   "value": "揭示 LLM-RL 中 PPO 被忽视的失效模式，修复几乎零额外成本",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "识别 Value Flattening：MC 值剧变而 critic 平坦甚至反向",
+    "agentChange": "每响应选 K=3 个按相对位置 0.3/0.6/0.9 分布的锚点状态监督 critic，含尾部锚以覆盖轨迹末端。",
+    "selfEvolution": null,
+    "evidence": [
+     "Qwen3-8B-Base 数学 avg@32：SP³O 50.51 vs PPO 48.50、GRPO 47.91；尾锚使 44.10→45.57、重复率 18.33%→1.12%，OOD 推理同向提升",
+     "损失分解证明稠密监督隐式惩罚响应内价值变化",
+     "状态空间越大平坦化越重（FrozenLake 受控实验验证）"
+    ],
+    "faq": {
+     "problem": "发现 PPO critic 系统性\"价值平坦化\"，仅 3 个锚点监督即稳定提升策略",
+     "mechanism": "每响应选 K=3 个按相对位置 0.3/0.6/0.9 分布的锚点状态监督 critic，含尾部锚以覆盖轨迹末端。",
+     "agentChange": "每响应选 K=3 个按相对位置 0.3/0.6/0.9 分布的锚点状态监督 critic，含尾部锚以覆盖轨迹末端。",
+     "support": "Qwen3-8B-Base 数学 avg@32：SP³O 50.51 vs PPO 48.50、GRPO 47.91；尾锚使 44.10→45.57、重复率 18.33%→1.12%，OOD 推理同向提升",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "揭示 LLM-RL 中 PPO 被忽视的失效模式，修复几乎零额外成本"
+   }
+  },
+  {
+   "id": "2609.18688",
+   "version": 1,
+   "title": "GS-MoE：多模态影像罕见病理检测的通才-专才混合专家",
+   "abstract": "通才+专才双流 MoE 复活 6 种所有基线 F1=0 的低患病率病理",
+   "authors": [],
+   "published": "2026-09-18T04:00:00.000Z",
+   "updated": "2026-09-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.18688",
+   "pdf": "https://arxiv.org/pdf/2609.18688",
+   "announceType": "new",
+   "summary": "通才+专才双流 MoE 复活 6 种所有基线 F1=0 的低患病率病理",
+   "topic": "医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.18688"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给多模态医学 AI 的负/正迁移冲突提供架构解，兼顾罕见病与成本",
+   "repository": null,
+   "motivation": "多模态医学影像联合训练须兼顾模态专精与跨模态共享表征",
+   "coreProblem": "纯 MoE 按模态路由切断跨模态正迁移，低患病率病理率先坍塌为零",
+   "contributions": [
+    "GS-MoE：跨模态通才分支 + 模态专才专家双流架构",
+    "域约束特征融合耦合两分支",
+    "RadImageNet（1.35M 图、165 病理、3 模态）系统验证"
+   ],
+   "innovations": [
+    "区别于既有医学 MoE：在路由专家外加通才保住正迁移",
+    "把低患病率坍塌归因为跨域梯度干扰并架构级隔离",
+    "尾部增益不以整体为代价：MCC 领先且激活参数省约 53%"
+   ],
+   "method": "按成像模态做实例级路由至专才专家，通才分支在全量多模态数据训练，域约束融合输出。",
+   "results": "6 种所有稠密/纯专家基线 F1=0 的病理被恢复检测，单类最高 +0.60 F1；整体 MCC 0.770 超全部基线，推理激活参数 −53%",
+   "value": "给多模态医学 AI 的负/正迁移冲突提供架构解，兼顾罕见病与成本",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "GS-MoE：跨模态通才分支 + 模态专才专家双流架构",
+    "agentChange": "按成像模态做实例级路由至专才专家，通才分支在全量多模态数据训练，域约束融合输出。",
+    "selfEvolution": null,
+    "evidence": [
+     "6 种所有稠密/纯专家基线 F1=0 的病理被恢复检测，单类最高 +0.60 F1；整体 MCC 0.770 超全部基线，推理激活参数 −53%",
+     "把低患病率坍塌归因为跨域梯度干扰并架构级隔离",
+     "尾部增益不以整体为代价：MCC 领先且激活参数省约 53%"
+    ],
+    "faq": {
+     "problem": "通才+专才双流 MoE 复活 6 种所有基线 F1=0 的低患病率病理",
+     "mechanism": "按成像模态做实例级路由至专才专家，通才分支在全量多模态数据训练，域约束融合输出。",
+     "agentChange": "按成像模态做实例级路由至专才专家，通才分支在全量多模态数据训练，域约束融合输出。",
+     "support": "6 种所有稠密/纯专家基线 F1=0 的病理被恢复检测，单类最高 +0.60 F1；整体 MCC 0.770 超全部基线，推理激活参数 −53%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "给多模态医学 AI 的负/正迁移冲突提供架构解，兼顾罕见病与成本"
+   }
+  },
+  {
+   "id": "2609.18063",
+   "version": 1,
+   "title": "Edge0：训练路由预测让 35B MoE 从 SSD 上跑起来",
+   "abstract": "预路由器 + SSD 流式专家加载，24GB 桌面 3GiB 内存跑 35B MoE 20 tok/s",
+   "authors": [],
+   "published": "2026-09-18T04:00:00.000Z",
+   "updated": "2026-09-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.18063",
+   "pdf": "https://arxiv.org/pdf/2609.18063",
+   "announceType": "new",
+   "summary": "预路由器 + SSD 流式专家加载，24GB 桌面 3GiB 内存跑 35B MoE 20 tok/s",
+   "topic": "系统 / 基础设施",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.18063"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把权重内存墙重定义为存储放置问题，无数据中心也能本地跑大 MoE",
+   "repository": null,
+   "motivation": "35B 级 MoE 权重 19.5GB（int4），消费级硬件被权重内存墙卡死",
+   "coreProblem": "层 N+1 路由依赖层 N 输出，SSD 读取无法提前发起、步步停顿",
+   "contributions": [
+    "Edge0：专家权重驻 SSD、mmap 按需流式载入的推理引擎",
+    "逐层预路由头提前一个 token 预测下层路由",
+    "未合并恢复 LoRA 偿还 int4 量化与路由替换的质量损失"
+   ],
+   "innovations": [
+    "\"预测即路由\"：预载专家集恒等于实际路由集，零丢 token",
+    "近似代价一次付清在训练期，而非推理期回退加载",
+    "发现 LoRA 并入 int4 再量化会失效，须以并行增量服务"
+   ],
+   "method": "预路由器让专家读取与前向计算重叠；恢复 LoRA 冻结 int4 基座、按学生路由从 fp16 教师蒸馏。",
+   "results": "35B-A3B 单台 24GB 机器 20 tok/s、峰值活跃内存 3 GiB，5 项公开基准平均距 fp16 教师仅数点；8B 档 28 tok/s / 1.5 GiB；解码较朴素流式 +80–84%；Apache-2.0 全开源",
+   "value": "把权重内存墙重定义为存储放置问题，无数据中心也能本地跑大 MoE",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "Edge0：专家权重驻 SSD、mmap 按需流式载入的推理引擎",
+    "agentChange": "预路由器让专家读取与前向计算重叠；恢复 LoRA 冻结 int4 基座、按学生路由从 fp16 教师蒸馏。",
+    "selfEvolution": null,
+    "evidence": [
+     "35B-A3B 单台 24GB 机器 20 tok/s、峰值活跃内存 3 GiB，5 项公开基准平均距 fp16 教师仅数点；8B 档 28 tok/s / 1.5 GiB；解码较朴素流式 +80–84%；Apache-2.0 全开源",
+     "近似代价一次付清在训练期，而非推理期回退加载",
+     "发现 LoRA 并入 int4 再量化会失效，须以并行增量服务"
+    ],
+    "faq": {
+     "problem": "预路由器 + SSD 流式专家加载，24GB 桌面 3GiB 内存跑 35B MoE 20 tok/s",
+     "mechanism": "预路由器让专家读取与前向计算重叠；恢复 LoRA 冻结 int4 基座、按学生路由从 fp16 教师蒸馏。",
+     "agentChange": "预路由器让专家读取与前向计算重叠；恢复 LoRA 冻结 int4 基座、按学生路由从 fp16 教师蒸馏。",
+     "support": "35B-A3B 单台 24GB 机器 20 tok/s、峰值活跃内存 3 GiB，5 项公开基准平均距 fp16 教师仅数点；8B 档 28 tok/s / 1.5 GiB；解码较朴素流式 +80–84%；Apache-2.0 全开源",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "把权重内存墙重定义为存储放置问题，无数据中心也能本地跑大 MoE"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-09-13",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-09-13 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-23T21:30:10.000Z",
+ "latestPaperAt": "2026-09-18T04:00:00.000Z",
+ "totalMatched": 404,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 404
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 35,
+ "trends": {
+  "status": "accumulating",
+  "days": 35,
+  "minimumDays": 15,
+  "message": "已积累 35/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-23T21:30:10.000Z",
+ "snapshotDay": "2026-09-18",
+ "historical": true
+}

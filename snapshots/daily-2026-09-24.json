@@ -1,0 +1,1039 @@
+{
+ "papers": [
+  {
+   "id": "2609.25584",
+   "version": 1,
+   "title": "Hi-OPD: Hierarchy-Aware Open-Prompt Detection for Remote Sensing Images",
+   "abstract": "层级感知开放提示检测器，父类 AP50 由 7.2 升至 71.5。",
+   "authors": [],
+   "published": "2026-09-24T04:00:00.000Z",
+   "updated": "2026-09-24T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.25584",
+   "pdf": "https://arxiv.org/pdf/2609.25584",
+   "announceType": "new",
+   "summary": "层级感知开放提示检测器，父类 AP50 由 7.2 升至 71.5。",
+   "topic": "遥感 / 对地观测 / 农业",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.25584"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让粗到细的遥感开放词汇检索真正可用。",
+   "repository": null,
+   "motivation": "遥感标注粒度不一，用户需按粗粒度类名检索目标。",
+   "coreProblem": "扁平训练下父类提示召回仅 7.2 AP50，车能检出而\"车辆\"不能。",
+   "contributions": [
+    "构建 RS153-HierOPD：12 源、153 原子类层级基准",
+    "层级安全负采样＋路径多正样本＋单向向上一致性",
+    "ConvVPE：用检测器自身特征编码 K-shot 支持框"
+   ],
+   "innovations": [
+    "首次把祖先提示召回后代框做成显式监督目标",
+    "将父类/别名/源风险显式建模为\"不安全负样本\"",
+    "复用检测器原生特征做视觉提示，无需外部编码器"
+   ],
+   "method": "WeDetect-tiny 基座：祖先提示走正样本路径、风险类屏蔽出负采样并加单向 logit 排序约束，视觉路另训 ConvVPE。",
+   "results": "DIOR 79.7 / DOTA-v2.0 72.3 AP50（OpenRSD 76.7/71.8）；父类 AP50 7.2→71.5、祖父类 31.6→71.4；VEDAI 75.9 超 OpenRSD 6.2 点。",
+   "value": "让粗到细的遥感开放词汇检索真正可用。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "构建 RS153-HierOPD：12 源、153 原子类层级基准",
+    "agentChange": "WeDetect-tiny 基座：祖先提示走正样本路径、风险类屏蔽出负采样并加单向 logit 排序约束，视觉路另训 ConvVPE。",
+    "selfEvolution": null,
+    "evidence": [
+     "DIOR 79.7 / DOTA-v2.0 72.3 AP50（OpenRSD 76.7/71.8）；父类 AP50 7.2→71.5、祖父类 31.6→71.4；VEDAI 75.9 超 OpenRSD 6.2 点。",
+     "将父类/别名/源风险显式建模为\"不安全负样本\"",
+     "复用检测器原生特征做视觉提示，无需外部编码器"
+    ],
+    "faq": {
+     "problem": "层级感知开放提示检测器，父类 AP50 由 7.2 升至 71.5。",
+     "mechanism": "WeDetect-tiny 基座：祖先提示走正样本路径、风险类屏蔽出负采样并加单向 logit 排序约束，视觉路另训 ConvVPE。",
+     "agentChange": "WeDetect-tiny 基座：祖先提示走正样本路径、风险类屏蔽出负采样并加单向 logit 排序约束，视觉路另训 ConvVPE。",
+     "support": "DIOR 79.7 / DOTA-v2.0 72.3 AP50（OpenRSD 76.7/71.8）；父类 AP50 7.2→71.5、祖父类 31.6→71.4；VEDAI 75.9 超 OpenRSD 6.2 点。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "让粗到细的遥感开放词汇检索真正可用。"
+   }
+  },
+  {
+   "id": "2609.26549",
+   "version": 1,
+   "title": "Latent Commonality Expectation-Maximisation for Box-supervised Tree Crown Instance Segmentation",
+   "abstract": "纯框监督树冠分割 AP50 达 0.663，反超掩码监督基线。",
+   "authors": [],
+   "published": "2026-09-24T04:00:00.000Z",
+   "updated": "2026-09-24T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.26549",
+   "pdf": "https://arxiv.org/pdf/2609.26549",
+   "announceType": "new",
+   "summary": "纯框监督树冠分割 AP50 达 0.663，反超掩码监督基线。",
+   "topic": "遥感 / 对地观测 / 农业",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.26549"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "免多边形标注即可测树冠，降低旱地碳汇监测成本。",
+   "repository": null,
+   "motivation": "树冠分割依赖昂贵多边形标注，且在稀树旱地退化。",
+   "coreProblem": "现有模型只在密林训练，稀树样地标注缺失，掩码监督又贵。",
+   "contributions": [
+    "提出 LACE 框监督树冠实例分割模型",
+    "冻结 DINOv3-web ViT-L/16 四偏移交错成稠密特征网格",
+    "隐空间 EM 闭式分离框内\"树性\"共性"
+   ],
+   "innovations": [
+    "显式闭式共性混合拟合冻结特征，而非把 E 步摊销进 CNN",
+    "证明纯框监督可超过全掩码监督模型",
+    "四偏移交错得真实稠密网格，而非插值上采样"
+   ],
+   "method": "冻结编码器取四偏移特征交错→仅用框训练 CenterNet 式检测头→白化特征空间 EM 生成掩码后验并与检测分联合排序。",
+   "results": "OAM-TCD 掩码 AP50 0.663 超 Restor Mask R-CNN 0.626（900 框 vs 4.2k 掩码图）；稀树留出 0.691 vs Detectree2 0.612；NEON F1 0.728≈DeepForest 0.719。",
+   "value": "免多边形标注即可测树冠，降低旱地碳汇监测成本。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 LACE 框监督树冠实例分割模型",
+    "agentChange": "冻结编码器取四偏移特征交错→仅用框训练 CenterNet 式检测头→白化特征空间 EM 生成掩码后验并与检测分联合排序。",
+    "selfEvolution": null,
+    "evidence": [
+     "OAM-TCD 掩码 AP50 0.663 超 Restor Mask R-CNN 0.626（900 框 vs 4.2k 掩码图）；稀树留出 0.691 vs Detectree2 0.612；NEON F1 0.728≈DeepForest 0.719。",
+     "证明纯框监督可超过全掩码监督模型",
+     "四偏移交错得真实稠密网格，而非插值上采样"
+    ],
+    "faq": {
+     "problem": "纯框监督树冠分割 AP50 达 0.663，反超掩码监督基线。",
+     "mechanism": "冻结编码器取四偏移特征交错→仅用框训练 CenterNet 式检测头→白化特征空间 EM 生成掩码后验并与检测分联合排序。",
+     "agentChange": "冻结编码器取四偏移特征交错→仅用框训练 CenterNet 式检测头→白化特征空间 EM 生成掩码后验并与检测分联合排序。",
+     "support": "OAM-TCD 掩码 AP50 0.663 超 Restor Mask R-CNN 0.626（900 框 vs 4.2k 掩码图）；稀树留出 0.691 vs Detectree2 0.612；NEON F1 0.728≈DeepForest 0.719。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "免多边形标注即可测树冠，降低旱地碳汇监测成本。"
+   }
+  },
+  {
+   "id": "2609.25578",
+   "version": 1,
+   "title": "Agentic Building-Aware Satellite Gaussian Splatting for Auditable Urban DSM Reconstruction",
+   "abstract": "SAM 建筑掩码加权卫星高斯泼溅，建筑 DSM MAE 降至 0.806 m。",
+   "authors": [],
+   "published": "2026-09-24T04:00:00.000Z",
+   "updated": "2026-09-24T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.25578",
+   "pdf": "https://arxiv.org/pdf/2609.25578",
+   "announceType": "new",
+   "summary": "SAM 建筑掩码加权卫星高斯泼溅，建筑 DSM MAE 降至 0.806 m。",
+   "topic": "遥感 / 对地观测 / 农业",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.25578"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让语义先验与决策可复核，服务可审计城市 DSM。",
+   "repository": null,
+   "motivation": "卫星神经重建只优化平均视觉保真，忽视建筑这类关键结构。",
+   "coreProblem": "EOGS 用全局光度损失，无建筑语义先验与分区指标，建筑误差被均值掩盖。",
+   "contributions": [
+    "把 SAM 建筑掩码作为卫星 GS 的任务先验",
+    "区域加权光度目标＋1.3→1.5→2.0 分阶段权重调度",
+    "引入 Agentic 重建控制器选策略留痕"
+   ],
+   "innovations": [
+    "首次把基础分割掩码用作卫星 GS 的可控重建先验",
+    "Agent 依掩码质量与验证指标选策略并记决策，而非固定权重",
+    "按应用区域评 DSM 误差，输出可审计 GIS 产品"
+   ],
+   "method": "每视图 SAM 掩码给建筑像素更高光度权重；控制器按掩码覆盖度与验证指标在 baseline / staged / 建筑专用间选择并记录决策。",
+   "results": "DFC2019 JAX_004 建筑 MAE 0.844→0.806 m；分阶段调度全场景 1.362→1.349 m 且保留建筑增益；四场景 Agent 平均 MAE 1.4352 优于固定 baseline 1.4386。",
+   "value": "让语义先验与决策可复核，服务可审计城市 DSM。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "把 SAM 建筑掩码作为卫星 GS 的任务先验",
+    "agentChange": "每视图 SAM 掩码给建筑像素更高光度权重；控制器按掩码覆盖度与验证指标在 baseline / staged / 建筑专用间选择并记录决策。",
+    "selfEvolution": null,
+    "evidence": [
+     "DFC2019 JAX_004 建筑 MAE 0.844→0.806 m；分阶段调度全场景 1.362→1.349 m 且保留建筑增益；四场景 Agent 平均 MAE 1.4352 优于固定 baseline 1.4386。",
+     "Agent 依掩码质量与验证指标选策略并记决策，而非固定权重",
+     "按应用区域评 DSM 误差，输出可审计 GIS 产品"
+    ],
+    "faq": {
+     "problem": "SAM 建筑掩码加权卫星高斯泼溅，建筑 DSM MAE 降至 0.806 m。",
+     "mechanism": "每视图 SAM 掩码给建筑像素更高光度权重；控制器按掩码覆盖度与验证指标在 baseline / staged / 建筑专用间选择并记录决策。",
+     "agentChange": "每视图 SAM 掩码给建筑像素更高光度权重；控制器按掩码覆盖度与验证指标在 baseline / staged / 建筑专用间选择并记录决策。",
+     "support": "DFC2019 JAX_004 建筑 MAE 0.844→0.806 m；分阶段调度全场景 1.362→1.349 m 且保留建筑增益；四场景 Agent 平均 MAE 1.4352 优于固定 baseline 1.4386。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "让语义先验与决策可复核，服务可审计城市 DSM。"
+   }
+  },
+  {
+   "id": "2609.26561",
+   "version": 1,
+   "title": "Vision Foundation Models with Synthetic-Only Training for Monocular Spacecraft Pose Estimation",
+   "abstract": "DINOv3 替换小编码器，纯合成航天器位姿旋转误差降至 1.17°。",
+   "authors": [],
+   "published": "2026-09-24T04:00:00.000Z",
+   "updated": "2026-09-24T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.26561",
+   "pdf": "https://arxiv.org/pdf/2609.26561",
+   "announceType": "new",
+   "summary": "DINOv3 替换小编码器，纯合成航天器位姿旋转误差降至 1.17°。",
+   "topic": "遥感 / 对地观测 / 农业",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.26561"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明星载算力足以支撑大模型高精度位姿估计。",
+   "repository": null,
+   "motivation": "非合作目标 6D 位姿真实训练影像稀缺，须依赖合成数据。",
+   "coreProblem": "既往模型编码器仅 22–89M 参数，以缩小模型规避星载算力约束。",
+   "contributions": [
+    "把 DINOv3 经 LoRA 适配进 SPNv3 热图＋PnP 流程",
+    "编码器由 300M 扩到 840M 且精度未见饱和",
+    "在 Jetson Orin NX 上实测时延与整板功耗"
+   ],
+   "innovations": [
+    "首次证明位姿精度随编码器 300M→840M 持续提升",
+    "冻结编码器完全失效，必须低秩适配（0.5–3% 参数）",
+    "给出含功耗的星载可用嵌入式部署基准"
+   ],
+   "method": "沿用检测—关键点—PnP 架构，仅用 SPEED+ 合成集训练，以 LoRA/DoRA 替换 ViTPose 骨干、热图头从零训练，配四旋转 TTA 与三种子集成。",
+   "results": "SPEED+ lightbox/sunlamp 平均旋转误差 1.17°/1.56°，优于 EagerNet 1.75°/2.66°；Orin NX 单遍 133.8 ms / 32.0 W。",
+   "value": "证明星载算力足以支撑大模型高精度位姿估计。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "把 DINOv3 经 LoRA 适配进 SPNv3 热图＋PnP 流程",
+    "agentChange": "沿用检测—关键点—PnP 架构，仅用 SPEED+ 合成集训练，以 LoRA/DoRA 替换 ViTPose 骨干、热图头从零训练，配四旋转 TTA 与三种子集成。",
+    "selfEvolution": null,
+    "evidence": [
+     "SPEED+ lightbox/sunlamp 平均旋转误差 1.17°/1.56°，优于 EagerNet 1.75°/2.66°；Orin NX 单遍 133.8 ms / 32.0 W。",
+     "冻结编码器完全失效，必须低秩适配（0.5–3% 参数）",
+     "给出含功耗的星载可用嵌入式部署基准"
+    ],
+    "faq": {
+     "problem": "DINOv3 替换小编码器，纯合成航天器位姿旋转误差降至 1.17°。",
+     "mechanism": "沿用检测—关键点—PnP 架构，仅用 SPEED+ 合成集训练，以 LoRA/DoRA 替换 ViTPose 骨干、热图头从零训练，配四旋转 TTA 与三种子集成。",
+     "agentChange": "沿用检测—关键点—PnP 架构，仅用 SPEED+ 合成集训练，以 LoRA/DoRA 替换 ViTPose 骨干、热图头从零训练，配四旋转 TTA 与三种子集成。",
+     "support": "SPEED+ lightbox/sunlamp 平均旋转误差 1.17°/1.56°，优于 EagerNet 1.75°/2.66°；Orin NX 单遍 133.8 ms / 32.0 W。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "证明星载算力足以支撑大模型高精度位姿估计。"
+   }
+  },
+  {
+   "id": "2609.26315",
+   "version": 1,
+   "title": "ArborSplat: Online Semantic Gaussian Splatting SLAM for Orchards",
+   "abstract": "首个果园在线语义高斯 SLAM，12 条路径 ATE<0.5 m 且快 1.7–7.5 倍。",
+   "authors": [],
+   "published": "2026-09-24T04:00:00.000Z",
+   "updated": "2026-09-24T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.26315",
+   "pdf": "https://arxiv.org/pdf/2609.26315",
+   "announceType": "new",
+   "summary": "首个果园在线语义高斯 SLAM，12 条路径 ATE<0.5 m 且快 1.7–7.5 倍。",
+   "topic": "遥感 / 对地观测 / 农业",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.26315"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为修剪、喷洒与采收提供可推理的果园语义地图。",
+   "repository": null,
+   "motivation": "果园机器人需要保留树干、棚架、果实等细小结构的语义地图。",
+   "coreProblem": "语义高斯 SLAM 仅限室内 RGB-D，细结构像素取到背景深度致标签错。",
+   "contributions": [
+    "提出首个果园在线语义高斯 SLAM",
+    "在线语义点云：多视图投票＋单目深度与地面高度门控",
+    "类约束细化预算为稀疏类别预留高斯容量"
+   ],
+   "innovations": [
+    "首次把在线语义高斯 SLAM 从室内 RGB-D 推向 LiDAR 果园",
+    "用类别高度带先验否决分割器误标签",
+    "以不透明度归一语义渲染替代细结构上衰减的原始合成"
+   ],
+   "method": "LiDAR 里程计供位姿与关键帧，SAM 3 文本提示出类概率并按拟合地面高度带约束；高斯携带视角无关语义 logits，做不透明度归一渲染并以交叉熵监督。",
+   "results": "6 段 301 帧：训练视图 mIoU 领先 0.23–0.50、留出帧 0.15–0.36，快 1.7–7.5 倍；段内 ATE 0.06–0.14 m vs 基线漂移 3.06–22.15 m。",
+   "value": "为修剪、喷洒与采收提供可推理的果园语义地图。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出首个果园在线语义高斯 SLAM",
+    "agentChange": "LiDAR 里程计供位姿与关键帧，SAM 3 文本提示出类概率并按拟合地面高度带约束；高斯携带视角无关语义 logits，做不透明度归一渲染并以交叉熵监督。",
+    "selfEvolution": null,
+    "evidence": [
+     "6 段 301 帧：训练视图 mIoU 领先 0.23–0.50、留出帧 0.15–0.36，快 1.7–7.5 倍；段内 ATE 0.06–0.14 m vs 基线漂移 3.06–22.15 m。",
+     "用类别高度带先验否决分割器误标签",
+     "以不透明度归一语义渲染替代细结构上衰减的原始合成"
+    ],
+    "faq": {
+     "problem": "首个果园在线语义高斯 SLAM，12 条路径 ATE<0.5 m 且快 1.7–7.5 倍。",
+     "mechanism": "LiDAR 里程计供位姿与关键帧，SAM 3 文本提示出类概率并按拟合地面高度带约束；高斯携带视角无关语义 logits，做不透明度归一渲染并以交叉熵监督。",
+     "agentChange": "LiDAR 里程计供位姿与关键帧，SAM 3 文本提示出类概率并按拟合地面高度带约束；高斯携带视角无关语义 logits，做不透明度归一渲染并以交叉熵监督。",
+     "support": "6 段 301 帧：训练视图 mIoU 领先 0.23–0.50、留出帧 0.15–0.36，快 1.7–7.5 倍；段内 ATE 0.06–0.14 m vs 基线漂移 3.06–22.15 m。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "为修剪、喷洒与采收提供可推理的果园语义地图。"
+   }
+  },
+  {
+   "id": "2609.25567",
+   "version": 1,
+   "title": "RootQuantV2: Adapting a Vision Foundation Model for Root-Trait Regression from Minirhizotron Imagery",
+   "abstract": "冻结 DINOv3 回归根系性状，R² 0.950、RMSE 降 24.3%。",
+   "authors": [],
+   "published": "2026-09-24T04:00:00.000Z",
+   "updated": "2026-09-24T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.25567",
+   "pdf": "https://arxiv.org/pdf/2609.25567",
+   "announceType": "new",
+   "summary": "冻结 DINOv3 回归根系性状，R² 0.950、RMSE 降 24.3%。",
+   "topic": "遥感 / 对地观测 / 农业",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.25567"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "复用既有数值档案，零新增标注放大根系表型。",
+   "repository": null,
+   "motivation": "田间根系表型缺高通量方案，人工描摹标注又难以获得。",
+   "coreProblem": "商业软件只导出标量总量，拿不到像素级标注来训分割模型。",
+   "contributions": [
+    "把冻结 DINOv3 ViT-L/16 适配为根系性状整体回归器",
+    "DoRA＋Mona 混合参数高效适配，仅训 11.9M 参数",
+    "逐 patch 密度求和的广延性 readout 匹配性状累加"
+   ],
+   "innovations": [
+    "首次把自监督视觉基础模型用于微根管根系性状回归",
+    "用多尺度卷积适配器补回 ViT 缺失的二维局部性",
+    "以可加求和替代强度型池化读取随内容累加的广延量"
+   ],
+   "method": "冻结骨干上注意力投影加 DoRA、MLP 分支加 Mona 多尺度深度卷积；池化分支与逐 patch 密度分支门控融合，配 D4 八视图 TTA 与 EMA。",
+   "results": "全测试集长度/面积 R² 0.950/0.930，RMSE 2.68→2.03 mm 与 3.97→3.15 mm²（降 24.3%/20.7%），仅训 3.78% 参数；可见根子集 combined R² 0.858→0.914。",
+   "value": "复用既有数值档案，零新增标注放大根系表型。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "把冻结 DINOv3 ViT-L/16 适配为根系性状整体回归器",
+    "agentChange": "冻结骨干上注意力投影加 DoRA、MLP 分支加 Mona 多尺度深度卷积；池化分支与逐 patch 密度分支门控融合，配 D4 八视图 TTA 与 EMA。",
+    "selfEvolution": null,
+    "evidence": [
+     "全测试集长度/面积 R² 0.950/0.930，RMSE 2.68→2.03 mm 与 3.97→3.15 mm²（降 24.3%/20.7%），仅训 3.78% 参数；可见根子集 combined R² 0.858→0.914。",
+     "用多尺度卷积适配器补回 ViT 缺失的二维局部性",
+     "以可加求和替代强度型池化读取随内容累加的广延量"
+    ],
+    "faq": {
+     "problem": "冻结 DINOv3 回归根系性状，R² 0.950、RMSE 降 24.3%。",
+     "mechanism": "冻结骨干上注意力投影加 DoRA、MLP 分支加 Mona 多尺度深度卷积；池化分支与逐 patch 密度分支门控融合，配 D4 八视图 TTA 与 EMA。",
+     "agentChange": "冻结骨干上注意力投影加 DoRA、MLP 分支加 Mona 多尺度深度卷积；池化分支与逐 patch 密度分支门控融合，配 D4 八视图 TTA 与 EMA。",
+     "support": "全测试集长度/面积 R² 0.950/0.930，RMSE 2.68→2.03 mm 与 3.97→3.15 mm²（降 24.3%/20.7%），仅训 3.78% 参数；可见根子集 combined R² 0.858→0.914。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "复用既有数值档案，零新增标注放大根系表型。"
+   }
+  },
+  {
+   "id": "2609.25832",
+   "version": 1,
+   "title": "PartLLM: A Unified Multimodal Foundation for 3D Part Segmentation",
+   "abstract": "把 3D 部件分割统一为自回归语义分解，3DCoMPaT200 超基线 34.5 mIoU。",
+   "authors": [],
+   "published": "2026-09-24T04:00:00.000Z",
+   "updated": "2026-09-24T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.25832",
+   "pdf": "https://arxiv.org/pdf/2609.25832",
+   "announceType": "new",
+   "summary": "把 3D 部件分割统一为自回归语义分解，3DCoMPaT200 超基线 34.5 mIoU。",
+   "topic": "视觉基础模型 / SAM / 3D",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.25832"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "单模型支持三类提示，3D 部件标注可规模复用。",
+   "repository": null,
+   "motivation": "文本引导、交互点击与全形状分解被割裂成互不相通的任务。",
+   "coreProblem": "现有方法只覆盖单一设定：语义法要用户给部件名，无类别法无身份。",
+   "contributions": [
+    "提出 PartLLM，把部件分割统一为自回归语义分解",
+    "分解感知解码器对每点做联合分配而非独立二值掩膜",
+    "扩到 1.1M 统一样本支撑多任务混合训练"
+   ],
+   "innovations": [
+    "首次用 LLM 自回归生成部件假设，形成动态开放词表",
+    "掩膜由独立 sigmoid 改为 N+1 类 softmax 竞争，保证互斥",
+    "任务差异只编码在 prompt，异构数据互相增益"
+   ],
+   "method": "点云编码器加 Qwen3-VL-4B 生成\"标签＋3D 框＋部件符\"假设，其隐状态作查询，经 two-way transformer 对每点做 N+1 类分配。",
+   "results": "3DCoMPaT200 粗/细 86.1/74.2，超最强基线 34.5/32.0 mIoU；PartNeXt 56.7 vs PartSAM 37.2；文本引导 +40.8，七次点击 +18.5。",
+   "value": "单模型支持三类提示，3D 部件标注可规模复用。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 PartLLM，把部件分割统一为自回归语义分解",
+    "agentChange": "点云编码器加 Qwen3-VL-4B 生成\"标签＋3D 框＋部件符\"假设，其隐状态作查询，经 two-way transformer 对每点做 N+1 类分配。",
+    "selfEvolution": null,
+    "evidence": [
+     "3DCoMPaT200 粗/细 86.1/74.2，超最强基线 34.5/32.0 mIoU；PartNeXt 56.7 vs PartSAM 37.2；文本引导 +40.8，七次点击 +18.5。",
+     "掩膜由独立 sigmoid 改为 N+1 类 softmax 竞争，保证互斥",
+     "任务差异只编码在 prompt，异构数据互相增益"
+    ],
+    "faq": {
+     "problem": "把 3D 部件分割统一为自回归语义分解，3DCoMPaT200 超基线 34.5 mIoU。",
+     "mechanism": "点云编码器加 Qwen3-VL-4B 生成\"标签＋3D 框＋部件符\"假设，其隐状态作查询，经 two-way transformer 对每点做 N+1 类分配。",
+     "agentChange": "点云编码器加 Qwen3-VL-4B 生成\"标签＋3D 框＋部件符\"假设，其隐状态作查询，经 two-way transformer 对每点做 N+1 类分配。",
+     "support": "3DCoMPaT200 粗/细 86.1/74.2，超最强基线 34.5/32.0 mIoU；PartNeXt 56.7 vs PartSAM 37.2；文本引导 +40.8，七次点击 +18.5。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "单模型支持三类提示，3D 部件标注可规模复用。"
+   }
+  },
+  {
+   "id": "2609.25743",
+   "version": 1,
+   "title": "SAMI3D-DW: Interactive Segmentation of Any 3D Medical Images",
+   "abstract": "交互式 3D 医学分割登顶 CT/MR 基准，单点类别宏 Dice 0.5764。",
+   "authors": [],
+   "published": "2026-09-24T04:00:00.000Z",
+   "updated": "2026-09-24T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.25743",
+   "pdf": "https://arxiv.org/pdf/2609.25743",
+   "announceType": "new",
+   "summary": "交互式 3D 医学分割登顶 CT/MR 基准，单点类别宏 Dice 0.5764。",
+   "topic": "视觉基础模型 / SAM / 3D",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.25743"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "少点击即可覆盖解剖与病变，服务临床定量分析。",
+   "repository": null,
+   "motivation": "通用交互式 3D 分割在复杂解剖结构与长尾病变上仍不可靠。",
+   "coreProblem": "基线单点 Dice 仅 0.5315，复杂血管树与罕见病变纠正增益有限。",
+   "contributions": [
+    "建 219 源、4326 例、107 类的 CT/MR 交互分割基准",
+    "提出 SAMI3D-DW，支持点提示与 2D 框＋纠正点击",
+    "两种交互协议下均取得最高类别宏平均 Dice"
+   ],
+   "innovations": [
+    "首个按医学分类学对齐、类别等权宏平均的评估协议",
+    "所有方法共用初始提示、交互预算与度量，严格配对比较"
+   ],
+   "method": "全容积提示式 3D 分割模型（架构未公开），把正交视图点/框提示与上轮掩膜反馈转为全景掩膜，两阶段训练。",
+   "results": "类别宏 Dice 单点 0.5764 vs 0.5315、五点 0.7771 vs 0.7494、框初始化 0.7130 vs 0.6530；NF1 肿瘤标注耗时约人工 1/15。",
+   "value": "少点击即可覆盖解剖与病变，服务临床定量分析。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "建 219 源、4326 例、107 类的 CT/MR 交互分割基准",
+    "agentChange": "全容积提示式 3D 分割模型（架构未公开），把正交视图点/框提示与上轮掩膜反馈转为全景掩膜，两阶段训练。",
+    "selfEvolution": null,
+    "evidence": [
+     "类别宏 Dice 单点 0.5764 vs 0.5315、五点 0.7771 vs 0.7494、框初始化 0.7130 vs 0.6530；NF1 肿瘤标注耗时约人工 1/15。",
+     "所有方法共用初始提示、交互预算与度量，严格配对比较"
+    ],
+    "faq": {
+     "problem": "交互式 3D 医学分割登顶 CT/MR 基准，单点类别宏 Dice 0.5764。",
+     "mechanism": "全容积提示式 3D 分割模型（架构未公开），把正交视图点/框提示与上轮掩膜反馈转为全景掩膜，两阶段训练。",
+     "agentChange": "全容积提示式 3D 分割模型（架构未公开），把正交视图点/框提示与上轮掩膜反馈转为全景掩膜，两阶段训练。",
+     "support": "类别宏 Dice 单点 0.5764 vs 0.5315、五点 0.7771 vs 0.7494、框初始化 0.7130 vs 0.6530；NF1 肿瘤标注耗时约人工 1/15。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "少点击即可覆盖解剖与病变，服务临床定量分析。"
+   }
+  },
+  {
+   "id": "2609.25515",
+   "version": 1,
+   "title": "Real-World Perception for Autonomous Driving in Adverse Weather: Enhancing Standard Detectors via Foundation-Guided Auto-Annotation",
+   "abstract": "用 SAM3 离线伪标注微调 YOLOv8，恶劣天气整体 mAP 提升 16.04 点。",
+   "authors": [],
+   "published": "2026-09-24T04:00:00.000Z",
+   "updated": "2026-09-24T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.25515",
+   "pdf": "https://arxiv.org/pdf/2609.25515",
+   "announceType": "new",
+   "summary": "用 SAM3 离线伪标注微调 YOLOv8，恶劣天气整体 mAP 提升 16.04 点。",
+   "topic": "视觉基础模型 / SAM / 3D",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.25515"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为恶劣天气自动驾驶提供免人工标注的检测器增强路径。",
+   "repository": null,
+   "motivation": "基础模型零样本鲁棒但算力过高，标准检测器依赖大量人工标注。",
+   "coreProblem": "基线在高速雾天仅 16.83% mAP，CNN 局部感受野被雨雾噪声破坏。",
+   "contributions": [
+    "在自建 25 场景真实驾驶数据上对比三种检测架构",
+    "实现 SAM3 离线伪标注流水线，免去人工标注",
+    "仅微调把 YOLOv8 整体 mAP 从 34.19% 提到 50.23%"
+   ],
+   "innovations": [
+    "把 SAM3 当离线标注器，将其抗噪能力蒸馏进实时检测器",
+    "不改架构、不增推理延迟，仅凭伪标签获跨环境稳定性",
+    "对开放词表 SAM3 用 14 类细粒度 prompt 再归并为 8 类"
+   ],
+   "method": "在 750 帧人工标注子集上评测三模型，选定 SAM3 对未标注关键帧生成伪标签，再微调基线 YOLOv8l，人工集严格留作测试。",
+   "results": "SAM3 56.14%、Co-DETR 53.21%、YOLOv8 34.19%；微调后 50.23%（+16.04），Residential Direct Sunlight +32.73、Highway Fog +28.65，mAP 标准差 10.68→9.96。",
+   "value": "为恶劣天气自动驾驶提供免人工标注的检测器增强路径。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "在自建 25 场景真实驾驶数据上对比三种检测架构",
+    "agentChange": "在 750 帧人工标注子集上评测三模型，选定 SAM3 对未标注关键帧生成伪标签，再微调基线 YOLOv8l，人工集严格留作测试。",
+    "selfEvolution": null,
+    "evidence": [
+     "SAM3 56.14%、Co-DETR 53.21%、YOLOv8 34.19%；微调后 50.23%（+16.04），Residential Direct Sunlight +32.73、Highway Fog +28.65，mAP 标准差 10.68→9.96。",
+     "不改架构、不增推理延迟，仅凭伪标签获跨环境稳定性",
+     "对开放词表 SAM3 用 14 类细粒度 prompt 再归并为 8 类"
+    ],
+    "faq": {
+     "problem": "用 SAM3 离线伪标注微调 YOLOv8，恶劣天气整体 mAP 提升 16.04 点。",
+     "mechanism": "在 750 帧人工标注子集上评测三模型，选定 SAM3 对未标注关键帧生成伪标签，再微调基线 YOLOv8l，人工集严格留作测试。",
+     "agentChange": "在 750 帧人工标注子集上评测三模型，选定 SAM3 对未标注关键帧生成伪标签，再微调基线 YOLOv8l，人工集严格留作测试。",
+     "support": "SAM3 56.14%、Co-DETR 53.21%、YOLOv8 34.19%；微调后 50.23%（+16.04），Residential Direct Sunlight +32.73、Highway Fog +28.65，mAP 标准差 10.68→9.96。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为恶劣天气自动驾驶提供免人工标注的检测器增强路径。"
+   }
+  },
+  {
+   "id": "2609.26355",
+   "version": 1,
+   "title": "PACT: From Credit Assignment to Critic Alignment",
+   "abstract": "证明 token 级信用唯一表示并据此提出 PACT，数学四基准均分 72.87%。",
+   "authors": [],
+   "published": "2026-09-24T04:00:00.000Z",
+   "updated": "2026-09-24T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.26355",
+   "pdf": "https://arxiv.org/pdf/2609.26355",
+   "announceType": "new",
+   "summary": "证明 token 级信用唯一表示并据此提出 PACT，数学四基准均分 72.87%。",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.26355"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为 LLM 强化学习信用分配提供可证明基础与低成本对齐方案。",
+   "repository": null,
+   "motivation": "轨迹末端才给标量奖励，却要在 token 级做优化更新。",
+   "coreProblem": "现有信用量依赖具体算法构造（GAE/RLOO），缺一般数学刻画。",
+   "contributions": [
+    "提出完整性／前缀一致性／中立性三条件并证信用唯一",
+    "统一导出 OPD 与 RLOO 的期望策略梯度等价",
+    "提出 PACT：Actor 先更新再校正对齐 critic"
+   ],
+   "innovations": [
+    "首次证明三条件下 token 级信用被唯一确定",
+    "PPO 两者独立更新，PACT 强制先 actor 后 critic 并校正",
+    "把 BCE 用于价值 critic，此前该类 critic 用 MSE"
+   ],
+   "method": "先证三条件下信用唯一，再在每轮 actor 更新后做一次续接重要性比校正 critic 目标并掩码异常比值，critic 损失改用 BCE。",
+   "results": "AIME 2025/2026、BeyondAIME、HMMT 均分 72.87%，超 GRPO 8.80、PPO 13.16 点；SWE-bench Verified 通过率 67.4%，超 PPO/GRPO/SAO 2.4/2.0/3.8 点。",
+   "value": "为 LLM 强化学习信用分配提供可证明基础与低成本对齐方案。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出完整性／前缀一致性／中立性三条件并证信用唯一",
+    "agentChange": "先证三条件下信用唯一，再在每轮 actor 更新后做一次续接重要性比校正 critic 目标并掩码异常比值，critic 损失改用 BCE。",
+    "selfEvolution": null,
+    "evidence": [
+     "AIME 2025/2026、BeyondAIME、HMMT 均分 72.87%，超 GRPO 8.80、PPO 13.16 点；SWE-bench Verified 通过率 67.4%，超 PPO/GRPO/SAO 2.4/2.0/3.8 点。",
+     "PPO 两者独立更新，PACT 强制先 actor 后 critic 并校正",
+     "把 BCE 用于价值 critic，此前该类 critic 用 MSE"
+    ],
+    "faq": {
+     "problem": "证明 token 级信用唯一表示并据此提出 PACT，数学四基准均分 72.87%。",
+     "mechanism": "先证三条件下信用唯一，再在每轮 actor 更新后做一次续接重要性比校正 critic 目标并掩码异常比值，critic 损失改用 BCE。",
+     "agentChange": "先证三条件下信用唯一，再在每轮 actor 更新后做一次续接重要性比校正 critic 目标并掩码异常比值，critic 损失改用 BCE。",
+     "support": "AIME 2025/2026、BeyondAIME、HMMT 均分 72.87%，超 GRPO 8.80、PPO 13.16 点；SWE-bench Verified 通过率 67.4%，超 PPO/GRPO/SAO 2.4/2.0/3.8 点。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为 LLM 强化学习信用分配提供可证明基础与低成本对齐方案。"
+   }
+  },
+  {
+   "id": "2609.26760",
+   "version": 1,
+   "title": "Grow the Harness, Not the Context: From Strategy-Free Scaffolds to Reusable Specialist Agents",
+   "abstract": "harness 从无策略脚手架按失败反馈生长为持久代码，LLM 调用降 76–92%。",
+   "authors": [],
+   "published": "2026-09-24T04:00:00.000Z",
+   "updated": "2026-09-24T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.26760",
+   "pdf": "https://arxiv.org/pdf/2609.26760",
+   "announceType": "new",
+   "summary": "harness 从无策略脚手架按失败反馈生长为持久代码，LLM 调用降 76–92%。",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.26760"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把重复控制移出上下文，使小模型也能部署低成本专用智能体。",
+   "repository": null,
+   "motivation": "同族任务反复让模型重建相同控制决策，调用与上下文成本高。",
+   "coreProblem": "既有 harness 优化需预设 ReAct 式控制器，整体优化使上下文随程序膨胀。",
+   "contributions": [
+    "把 agent 学习形式化为无策略脚手架上的可复用程序生长",
+    "函数级迹局部编辑＋失败窗口联合修复＋门控回滚",
+    "在两个 Web Agent 基准、三种模型规模上验证"
+   ],
+   "innovations": [
+    "持久产物是共享 harness 程序本身，而非文本经验或技能库",
+    "从无控制器脚手架全局生长，不同于给定结构的 AutoHarness",
+    "函数级执行 DAG 把失败定位到有界代码面，优化不随程序膨胀"
+   ],
+   "method": "从只暴露任务入口与固定 LLM/工具接口的脚手架出发，每轮用函数级执行 DAG 定位失败函数，离线优化器联合修复失败窗口，再由成功率门控接受或回滚。",
+   "results": "六个基准-模型设置中五个平均成功率最高、第六仅差 0.7 点；LLM 调用降 76.0–91.8%、在线成本降 74.4–98.6%；WebArena 上 4B 模型 44.7–45.3%，Tool-Calling 仅 6.7%。",
+   "value": "把重复控制移出上下文，使小模型也能部署低成本专用智能体。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "把 agent 学习形式化为无策略脚手架上的可复用程序生长",
+    "agentChange": "从只暴露任务入口与固定 LLM/工具接口的脚手架出发，每轮用函数级执行 DAG 定位失败函数，离线优化器联合修复失败窗口，再由成功率门控接受或回滚。",
+    "selfEvolution": null,
+    "evidence": [
+     "六个基准-模型设置中五个平均成功率最高、第六仅差 0.7 点；LLM 调用降 76.0–91.8%、在线成本降 74.4–98.6%；WebArena 上 4B 模型 44.7–45.3%，Tool-Calling 仅 6.7%。",
+     "从无控制器脚手架全局生长，不同于给定结构的 AutoHarness",
+     "函数级执行 DAG 把失败定位到有界代码面，优化不随程序膨胀"
+    ],
+    "faq": {
+     "problem": "harness 从无策略脚手架按失败反馈生长为持久代码，LLM 调用降 76–92%。",
+     "mechanism": "从只暴露任务入口与固定 LLM/工具接口的脚手架出发，每轮用函数级执行 DAG 定位失败函数，离线优化器联合修复失败窗口，再由成功率门控接受或回滚。",
+     "agentChange": "从只暴露任务入口与固定 LLM/工具接口的脚手架出发，每轮用函数级执行 DAG 定位失败函数，离线优化器联合修复失败窗口，再由成功率门控接受或回滚。",
+     "support": "六个基准-模型设置中五个平均成功率最高、第六仅差 0.7 点；LLM 调用降 76.0–91.8%、在线成本降 74.4–98.6%；WebArena 上 4B 模型 44.7–45.3%，Tool-Calling 仅 6.7%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "把重复控制移出上下文，使小模型也能部署低成本专用智能体。"
+   }
+  },
+  {
+   "id": "2609.25510",
+   "version": 1,
+   "title": "Hill Sampling for Test-Time Scaling: A Simple and Better Alternative to Repeated Sampling, Evolution, and Training",
+   "abstract": "只保留当前最优程序并据此继续编辑，圆堆积刷新已发表 SOTA。",
+   "authors": [],
+   "published": "2026-09-24T04:00:00.000Z",
+   "updated": "2026-09-24T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.25510",
+   "pdf": "https://arxiv.org/pdf/2609.25510",
+   "announceType": "new",
+   "summary": "只保留当前最优程序并据此继续编辑，圆堆积刷新已发表 SOTA。",
+   "topic": "测试时扩展 / 推理",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.25510"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "先做 best-so-far 条件采样即可，无需复杂演化或测试时训练。",
+   "repository": null,
+   "motivation": "测试时搜索愈趋复杂，需检验多少演化与训练机制真正必要。",
+   "coreProblem": "演化式搜索依赖存档、岛屿与交叉，却未验证这些机制是否必要。",
+   "contributions": [
+    "提出 Hill Sampling：唯一持久状态为 best-so-far 程序",
+    "建立迄今参数量最大的 LLM 权重进化策略测试管线",
+    "证明存档、多样性、熵控制等机制均无增益"
+   ],
+   "innovations": [
+    "唯一持久状态是当前最优程序，不维护存档与交叉",
+    "首次在可验证发现场景直接比较权重空间搜索与 token 采样",
+    "发现 ES 学习率置零反优于真实学习，暴露目标错配"
+   ],
+   "method": "冻结 LLM，每轮从 incumbent 程序采样 N 个编辑并执行验证，更优者成为新 incumbent 并作为下轮上下文；无存档、无交叉、无参数更新。",
+   "results": "26 圆堆积在 8×H100 上 4 小时 33 分刷新已发表 SOTA；Erdős 最小重叠 12 小时超越 AlphaEvolve 参考（gpt-oss-20b 达 0.38088232，归一化 1.0001）。",
+   "value": "先做 best-so-far 条件采样即可，无需复杂演化或测试时训练。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 Hill Sampling：唯一持久状态为 best-so-far 程序",
+    "agentChange": "冻结 LLM，每轮从 incumbent 程序采样 N 个编辑并执行验证，更优者成为新 incumbent 并作为下轮上下文；无存档、无交叉、无参数更新。",
+    "selfEvolution": null,
+    "evidence": [
+     "26 圆堆积在 8×H100 上 4 小时 33 分刷新已发表 SOTA；Erdős 最小重叠 12 小时超越 AlphaEvolve 参考（gpt-oss-20b 达 0.38088232，归一化 1.0001）。",
+     "首次在可验证发现场景直接比较权重空间搜索与 token 采样",
+     "发现 ES 学习率置零反优于真实学习，暴露目标错配"
+    ],
+    "faq": {
+     "problem": "只保留当前最优程序并据此继续编辑，圆堆积刷新已发表 SOTA。",
+     "mechanism": "冻结 LLM，每轮从 incumbent 程序采样 N 个编辑并执行验证，更优者成为新 incumbent 并作为下轮上下文；无存档、无交叉、无参数更新。",
+     "agentChange": "冻结 LLM，每轮从 incumbent 程序采样 N 个编辑并执行验证，更优者成为新 incumbent 并作为下轮上下文；无存档、无交叉、无参数更新。",
+     "support": "26 圆堆积在 8×H100 上 4 小时 33 分刷新已发表 SOTA；Erdős 最小重叠 12 小时超越 AlphaEvolve 参考（gpt-oss-20b 达 0.38088232，归一化 1.0001）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "先做 best-so-far 条件采样即可，无需复杂演化或测试时训练。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-09-23",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-09-23 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-23T21:30:10.000Z",
+ "latestPaperAt": "2026-09-24T04:00:00.000Z",
+ "totalMatched": 12,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 12
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 35,
+ "trends": {
+  "status": "accumulating",
+  "days": 35,
+  "minimumDays": 15,
+  "message": "已积累 35/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-23T21:30:10.000Z",
+ "snapshotDay": "2026-09-24",
+ "historical": true
+}

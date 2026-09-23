@@ -1,0 +1,1041 @@
+{
+ "papers": [
+  {
+   "id": "2609.20441",
+   "version": 1,
+   "title": "跨架构基础模型蒸馏：面向边缘端的洪水分割",
+   "abstract": "把 300M 地理基础模型蒸馏成 0.7M 学生，边缘端 5.57ms 分割洪水",
+   "authors": [],
+   "published": "2026-09-19T04:00:00.000Z",
+   "updated": "2026-09-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.20441",
+   "pdf": "https://arxiv.org/pdf/2609.20441",
+   "announceType": "new",
+   "summary": "把 300M 地理基础模型蒸馏成 0.7M 学生，边缘端 5.57ms 分割洪水",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.20441"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明基础模型监督能把固定标注预算放大成可部署的紧凑边缘模型",
+   "repository": null,
+   "motivation": "地理基础模型分割洪水精度高，但体积无法部署到内存受限的边缘硬件",
+   "coreProblem": "现有蒸馏要么同架构缩水、要么需大量人工标注，缺乏跨架构且免新标注的边缘方案",
+   "contributions": [
+    "提出跨架构蒸馏流程：冻结 Prithvi-EO-2.0 教师为 2.37 万张无标注 Sentinel-2 打伪标签",
+    "用 15 维光谱-教师描述子做多样性筛选，训练集从 252 扩到 2500 场景，零新增人工标注",
+    "经 ReLU6 重训 + 量化感知训练，导出 1.5MB INT8 TensorRT 引擎跑在 Jetson Xavier NX"
+   ],
+   "innovations": [
+    "首次把地理基础模型蒸馏为 INT8 可部署的洪水分割学生模型，且不获取任何新真值标注",
+    "教师侧用 One-for-All 分支规避 ViT→CNN 中间表征不兼容，而非直接做特征对齐",
+    "主动报告 MNDWI 固定阈值在外部基准上可比，把外部测试定性为泛化检验而非模型更优"
+   ],
+   "method": "教师伪标签 + 多样性筛选扩充训练池，OFA 分支跨架构蒸馏到 EfficientViT-B0，再量化部署",
+   "results": "Sen1Floods11 水体检出 IoU 0.787（教师 0.822）；STURM-Flood 与教师持平，WorldFloods-v2 仍落后；压缩约 430×，5.57ms/512²",
+   "value": "证明基础模型监督能把固定标注预算放大成可部署的紧凑边缘模型",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出跨架构蒸馏流程：冻结 Prithvi-EO-2.0 教师为 2.37 万张无标注 Sentinel-2 打伪标签",
+    "agentChange": "教师伪标签 + 多样性筛选扩充训练池，OFA 分支跨架构蒸馏到 EfficientViT-B0，再量化部署",
+    "selfEvolution": null,
+    "evidence": [
+     "Sen1Floods11 水体检出 IoU 0.787（教师 0.822）；STURM-Flood 与教师持平，WorldFloods-v2 仍落后；压缩约 430×，5.57ms/512²",
+     "教师侧用 One-for-All 分支规避 ViT→CNN 中间表征不兼容，而非直接做特征对齐",
+     "主动报告 MNDWI 固定阈值在外部基准上可比，把外部测试定性为泛化检验而非模型更优"
+    ],
+    "faq": {
+     "problem": "把 300M 地理基础模型蒸馏成 0.7M 学生，边缘端 5.57ms 分割洪水",
+     "mechanism": "教师伪标签 + 多样性筛选扩充训练池，OFA 分支跨架构蒸馏到 EfficientViT-B0，再量化部署",
+     "agentChange": "教师伪标签 + 多样性筛选扩充训练池，OFA 分支跨架构蒸馏到 EfficientViT-B0，再量化部署",
+     "support": "Sen1Floods11 水体检出 IoU 0.787（教师 0.822）；STURM-Flood 与教师持平，WorldFloods-v2 仍落后；压缩约 430×，5.57ms/512²",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "证明基础模型监督能把固定标注预算放大成可部署的紧凑边缘模型"
+   }
+  },
+  {
+   "id": "2609.20662",
+   "version": 1,
+   "title": "地球表层免疫系统：未知异常的快速监测",
+   "abstract": "仿生物免疫三阶段架构，开放词汇识别未知地表异常",
+   "authors": [],
+   "published": "2026-09-19T04:00:00.000Z",
+   "updated": "2026-09-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.20662",
+   "pdf": "https://arxiv.org/pdf/2609.20662",
+   "announceType": "new",
+   "summary": "仿生物免疫三阶段架构，开放词汇识别未知地表异常",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.20662"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "遥感异常监测从封闭类别检测转向面向未知异常的开放响应",
+   "repository": null,
+   "motivation": "地表异常频次与种类激增，历史样本稀缺、类别不可预知",
+   "coreProblem": "现有方法只覆盖特定异常类别或止步于定位，无法给出类别/面积/损毁度等可用信息",
+   "contributions": [
+    "提出 ESIA，按先天免疫/适应性免疫/突变三阶段约束架构",
+    "先天层把异常视为时序影像中的未观测变化，无需类别假设即输出二值定位图",
+    "适应性层用负选择过滤文本提示，与定位图块经多模态基础模型匹配，输出类别、受损面积、损毁程度"
+   ],
+   "innovations": [
+    "首次把生物免疫的\"非特异性→特异性\"分级原则引入遥感，区别于端到端单遍定类检测",
+    "用负选择机制剪枝提示词，实现无需已知类别训练的开放词汇归因",
+    "突变机制在测试时仅微调极少嵌入，单参考影像对即可适配新场景"
+   ],
+   "method": "时序无类别变化检测做定位，提示词负选择 + 多模态匹配做识别，测试时嵌入突变做适配",
+   "results": "定位 F1 41.58，较最强通用基线提升 37%；识别 F1 超 80%（漏油类 40→80）；19801.60 km²、六类异常、对比 22 个模型；定位速度 14.51 km²/s，适配 3.26s",
+   "value": "遥感异常监测从封闭类别检测转向面向未知异常的开放响应",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 ESIA，按先天免疫/适应性免疫/突变三阶段约束架构",
+    "agentChange": "时序无类别变化检测做定位，提示词负选择 + 多模态匹配做识别，测试时嵌入突变做适配",
+    "selfEvolution": null,
+    "evidence": [
+     "定位 F1 41.58，较最强通用基线提升 37%；识别 F1 超 80%（漏油类 40→80）；19801.60 km²、六类异常、对比 22 个模型；定位速度 14.51 km²/s，适配 3.26s",
+     "用负选择机制剪枝提示词，实现无需已知类别训练的开放词汇归因",
+     "突变机制在测试时仅微调极少嵌入，单参考影像对即可适配新场景"
+    ],
+    "faq": {
+     "problem": "仿生物免疫三阶段架构，开放词汇识别未知地表异常",
+     "mechanism": "时序无类别变化检测做定位，提示词负选择 + 多模态匹配做识别，测试时嵌入突变做适配",
+     "agentChange": "时序无类别变化检测做定位，提示词负选择 + 多模态匹配做识别，测试时嵌入突变做适配",
+     "support": "定位 F1 41.58，较最强通用基线提升 37%；识别 F1 超 80%（漏油类 40→80）；19801.60 km²、六类异常、对比 22 个模型；定位速度 14.51 km²/s，适配 3.26s",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "遥感异常监测从封闭类别检测转向面向未知异常的开放响应"
+   }
+  },
+  {
+   "id": "2609.20150",
+   "version": 1,
+   "title": "多任务卫星遥感的任务导向语义特征传输",
+   "abstract": "卫星直接传语义特征代替传图，低 SNR 下分类检测全面领先",
+   "authors": [],
+   "published": "2026-09-19T04:00:00.000Z",
+   "updated": "2026-09-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.20150",
+   "pdf": "https://arxiv.org/pdf/2609.20150",
+   "announceType": "new",
+   "summary": "卫星直接传语义特征代替传图，低 SNR 下分类检测全面领先",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.20150"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为星上语义通信给出与下游任务对齐的传输目标",
+   "repository": null,
+   "motivation": "LEO 卫星带宽与功率受限，低信噪比下传图再推理代价高",
+   "coreProblem": "\"先重建后推理\"范式优化像素保真度，与下游任务效用目标错配",
+   "contributions": [
+    "提出任务导向框架，跳过图像重建直接传输多任务预训练骨干的语义特征",
+    "设计轻量通道适配模块 CAM（特征压缩器 + 特征恢复器）压缩维度省带宽",
+    "冻结骨干，CAM 与任务头在随机 SNR 下联合优化，覆盖分类/水平框/旋转框检测三任务"
+   ],
+   "innovations": [
+    "把通信目标从像素域改为任务语义域，是\"为什么传\"而非\"怎么压得更好\"的范式替换",
+    "随机 SNR 训练让单一模型覆盖全信噪比区间，而非为每个 SNR 单独训练",
+    "定量指出检测比分类更依赖空间精确线索，故低 SNR 下语义传输收益更大"
+   ],
+   "method": "多任务预训练骨干提特征，CAM 压缩后过 AWGN 信道，恢复器重建后再接下游任务头",
+   "results": "EuroSAT/DIOR/DIOR-R 在相同压缩率下一致优于重建导向 JSCC，低 SNR 区间优势最大",
+   "value": "为星上语义通信给出与下游任务对齐的传输目标",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出任务导向框架，跳过图像重建直接传输多任务预训练骨干的语义特征",
+    "agentChange": "多任务预训练骨干提特征，CAM 压缩后过 AWGN 信道，恢复器重建后再接下游任务头",
+    "selfEvolution": null,
+    "evidence": [
+     "EuroSAT/DIOR/DIOR-R 在相同压缩率下一致优于重建导向 JSCC，低 SNR 区间优势最大",
+     "随机 SNR 训练让单一模型覆盖全信噪比区间，而非为每个 SNR 单独训练",
+     "定量指出检测比分类更依赖空间精确线索，故低 SNR 下语义传输收益更大"
+    ],
+    "faq": {
+     "problem": "卫星直接传语义特征代替传图，低 SNR 下分类检测全面领先",
+     "mechanism": "多任务预训练骨干提特征，CAM 压缩后过 AWGN 信道，恢复器重建后再接下游任务头",
+     "agentChange": "多任务预训练骨干提特征，CAM 压缩后过 AWGN 信道，恢复器重建后再接下游任务头",
+     "support": "EuroSAT/DIOR/DIOR-R 在相同压缩率下一致优于重建导向 JSCC，低 SNR 区间优势最大",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "为星上语义通信给出与下游任务对齐的传输目标"
+   }
+  },
+  {
+   "id": "2609.19542",
+   "version": 1,
+   "title": "PerSeM：面向长时程开放词汇 UAV 建图的持久语义记忆",
+   "abstract": "免训练体素语义记忆，UAV 建图 mIoU 41.90、闪烁降半",
+   "authors": [],
+   "published": "2026-09-19T04:00:00.000Z",
+   "updated": "2026-09-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.19542",
+   "pdf": "https://arxiv.org/pdf/2609.19542",
+   "announceType": "new",
+   "summary": "免训练体素语义记忆，UAV 建图 mIoU 41.90、闪烁降半",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.19542"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "长时程语义建图的评价重心从单帧精度转向时序记忆可靠性",
+   "repository": null,
+   "motivation": "UAV 开放词汇分割逐帧预测在视角变化与重复观测下时序不一致",
+   "coreProblem": "逐帧预测反复漂移；而主流语义建图只追求完整性，不把时序稳定性当目标",
+   "contributions": [
+    "提出 PerSeM，把逐帧语义观测关联到持久世界空间体素，构建多数投票语义记忆",
+    "设计保守精化：历史保留空间精化、信任感知证据重放、上下文引导验证",
+    "免训练、不增加神经网络推理，作为持久记忆之上的精化层"
+   ],
+   "innovations": [
+    "指出持久体素聚合已解决大部分帧级不稳定，真正剩余问题是\"如何修正不确定记忆\"",
+    "把时序稳定性作为一阶目标而非副产品，改变评价取向",
+    "信任重放仅作残差修正提案，需超出多数标签一定裕度才被采纳"
+   ],
+   "method": "体素级观测历史累积成多数记忆，再对不确定体素做保守邻域-重放-上下文三重校验",
+   "results": "Forest 上 PA 75.00→84.02、mIoU 37.31→39.84、Flicker 37.49→23.00；UAVScenes mIoU 41.90、Flicker 6.90（逐帧 13.73）；增益集中于语义困难与时序不稳区域",
+   "value": "长时程语义建图的评价重心从单帧精度转向时序记忆可靠性",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 PerSeM，把逐帧语义观测关联到持久世界空间体素，构建多数投票语义记忆",
+    "agentChange": "体素级观测历史累积成多数记忆，再对不确定体素做保守邻域-重放-上下文三重校验",
+    "selfEvolution": null,
+    "evidence": [
+     "Forest 上 PA 75.00→84.02、mIoU 37.31→39.84、Flicker 37.49→23.00；UAVScenes mIoU 41.90、Flicker 6.90（逐帧 13.73）；增益集中于语义困难与时序不稳区域",
+     "把时序稳定性作为一阶目标而非副产品，改变评价取向",
+     "信任重放仅作残差修正提案，需超出多数标签一定裕度才被采纳"
+    ],
+    "faq": {
+     "problem": "免训练体素语义记忆，UAV 建图 mIoU 41.90、闪烁降半",
+     "mechanism": "体素级观测历史累积成多数记忆，再对不确定体素做保守邻域-重放-上下文三重校验",
+     "agentChange": "体素级观测历史累积成多数记忆，再对不确定体素做保守邻域-重放-上下文三重校验",
+     "support": "Forest 上 PA 75.00→84.02、mIoU 37.31→39.84、Flicker 37.49→23.00；UAVScenes mIoU 41.90、Flicker 6.90（逐帧 13.73）；增益集中于语义困难与时序不稳区域",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "长时程语义建图的评价重心从单帧精度转向时序记忆可靠性"
+   }
+  },
+  {
+   "id": "2609.19358",
+   "version": 1,
+   "title": "基于可提示分割的开放词汇 3D 目标检测",
+   "abstract": "用 SAM3 文本提示做免训练开放词汇 3D 检测，mAP 0.298",
+   "authors": [],
+   "published": "2026-09-19T04:00:00.000Z",
+   "updated": "2026-09-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.19358",
+   "pdf": "https://arxiv.org/pdf/2609.19358",
+   "announceType": "new",
+   "summary": "用 SAM3 文本提示做免训练开放词汇 3D 检测，mAP 0.298",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.19358"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "3D 检测可能无需 3D 框标注，词表扩展成本降为零",
+   "repository": null,
+   "motivation": "自动驾驶 3D 检测依赖大量人工 3D 框标注，类别表固定、表外目标不可见",
+   "coreProblem": "监督检测器只能识别预定义类别，且需持续昂贵标注，无法零成本扩展词表",
+   "contributions": [
+    "提出免训练开放词汇流水线：SAM3 以类名作文本提示产出环视六路实例掩码，再几何化为米制 3D 框",
+    "在 nuScenes 做三阶段受控比较，固定 2D 检测、只替换 3D 几何来源",
+    "反向验证：同一掩码构造三态\"相机见证\"规则，免训练提升纯 LiDAR 检测器"
+   ],
+   "innovations": [
+    "把 3D 检测误差定位到\"测量精度\"而非 2D 检测，指出瓶颈所在并给出证据",
+    "用无标注 LiDAR 点云在掩码内拟合框，做到零标注成本 0.298 mAP",
+    "证明类混淆与置信度校准在借用监督几何后依然存活，说明语义部分已足够可靠"
+   ],
+   "method": "文本提示驱动的可提示分割给掩码，掩码内几何求解出 3D 框，全程无需训练",
+   "results": "nuScenes 几何自预测 0.183 mAP；掩码内 LiDAR 拟合 0.298 mAP / 0.348 NDS（零标注）；借用监督几何 0.413 mAP / 0.555 NDS；反哺 LiDAR 检测器 0.596→0.630 mAP；SAM3 覆盖 84% 在程目标",
+   "value": "3D 检测可能无需 3D 框标注，词表扩展成本降为零",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出免训练开放词汇流水线：SAM3 以类名作文本提示产出环视六路实例掩码，再几何化为米制 3D 框",
+    "agentChange": "文本提示驱动的可提示分割给掩码，掩码内几何求解出 3D 框，全程无需训练",
+    "selfEvolution": null,
+    "evidence": [
+     "nuScenes 几何自预测 0.183 mAP；掩码内 LiDAR 拟合 0.298 mAP / 0.348 NDS（零标注）；借用监督几何 0.413 mAP / 0.555 NDS；反哺 LiDAR 检测器 0.596→0.630 mAP；SAM3 覆盖 84% 在程目标",
+     "用无标注 LiDAR 点云在掩码内拟合框，做到零标注成本 0.298 mAP",
+     "证明类混淆与置信度校准在借用监督几何后依然存活，说明语义部分已足够可靠"
+    ],
+    "faq": {
+     "problem": "用 SAM3 文本提示做免训练开放词汇 3D 检测，mAP 0.298",
+     "mechanism": "文本提示驱动的可提示分割给掩码，掩码内几何求解出 3D 框，全程无需训练",
+     "agentChange": "文本提示驱动的可提示分割给掩码，掩码内几何求解出 3D 框，全程无需训练",
+     "support": "nuScenes 几何自预测 0.183 mAP；掩码内 LiDAR 拟合 0.298 mAP / 0.348 NDS（零标注）；借用监督几何 0.413 mAP / 0.555 NDS；反哺 LiDAR 检测器 0.596→0.630 mAP；SAM3 覆盖 84% 在程目标",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "3D 检测可能无需 3D 框标注，词表扩展成本降为零"
+   }
+  },
+  {
+   "id": "2609.20819",
+   "version": 1,
+   "title": "4D 基础模型会\"记住\"吗？",
+   "abstract": "提出 PersistBench：物体出视野后现有 4D 模型记忆大幅崩塌",
+   "authors": [],
+   "published": "2026-09-19T04:00:00.000Z",
+   "updated": "2026-09-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.20819",
+   "pdf": "https://arxiv.org/pdf/2609.20819",
+   "announceType": "new",
+   "summary": "提出 PersistBench：物体出视野后现有 4D 模型记忆大幅崩塌",
+   "topic": "计算机视觉与基础模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.20819"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "指出\"看见不等于记住\"，为 4D 基础模型指明记忆监督这一缺失维度",
+   "repository": null,
+   "motivation": "感知与记忆是导航交互的基础，但 4D 模型是否\"记得\"从未被检验",
+   "coreProblem": "现有基准只用像素级指标，且缺乏物体离开视野后的真值，无法按物体评估记忆",
+   "contributions": [
+    "提出 PersistBench：用 360° 视频作全知真值，构建物体中心评测集与指标套件",
+    "定义三个评测维度：物体永存性、运动连续性、外观保持",
+    "设计相机轨迹采样，使目标先可见后离开视野，从而分离\"看见\"与\"记住\""
+   ],
+   "innovations": [
+    "首次以 360° 全景真值提供物体离场后的参照，使记忆可被客观度量",
+    "评测对象中心化而非像素中心化，配合 VLM 判定外观同一性",
+    "定位到根因：训练视频中目标几乎始终可见，记忆能力缺乏监督信号"
+   ],
+   "method": "360-1M 构建可见/不可见分段序列，物体掩码 + DINOv2 特征余弦相似度等三指标评估",
+   "results": "所有模型在不可见分段显著掉分（如 CubeComposer 隐式 45.29% 对可见 99.27%）；显式投影类模型（GEN3C 等）记忆更强；360° 模型静态子集好、动态子集崩塌",
+   "value": "指出\"看见不等于记住\"，为 4D 基础模型指明记忆监督这一缺失维度",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 PersistBench：用 360° 视频作全知真值，构建物体中心评测集与指标套件",
+    "agentChange": "360-1M 构建可见/不可见分段序列，物体掩码 + DINOv2 特征余弦相似度等三指标评估",
+    "selfEvolution": null,
+    "evidence": [
+     "所有模型在不可见分段显著掉分（如 CubeComposer 隐式 45.29% 对可见 99.27%）；显式投影类模型（GEN3C 等）记忆更强；360° 模型静态子集好、动态子集崩塌",
+     "评测对象中心化而非像素中心化，配合 VLM 判定外观同一性",
+     "定位到根因：训练视频中目标几乎始终可见，记忆能力缺乏监督信号"
+    ],
+    "faq": {
+     "problem": "提出 PersistBench：物体出视野后现有 4D 模型记忆大幅崩塌",
+     "mechanism": "360-1M 构建可见/不可见分段序列，物体掩码 + DINOv2 特征余弦相似度等三指标评估",
+     "agentChange": "360-1M 构建可见/不可见分段序列，物体掩码 + DINOv2 特征余弦相似度等三指标评估",
+     "support": "所有模型在不可见分段显著掉分（如 CubeComposer 隐式 45.29% 对可见 99.27%）；显式投影类模型（GEN3C 等）记忆更强；360° 模型静态子集好、动态子集崩塌",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "指出\"看见不等于记住\"，为 4D 基础模型指明记忆监督这一缺失维度"
+   }
+  },
+  {
+   "id": "2609.20340",
+   "version": 1,
+   "title": "FreqDINO++：面向通用超声分析的频率引导多任务路由视觉基础模型",
+   "abstract": "频率引导多任务路由基础模型，27 个超声任务全面领先",
+   "authors": [],
+   "published": "2026-09-19T04:00:00.000Z",
+   "updated": "2026-09-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.20340",
+   "pdf": "https://arxiv.org/pdf/2609.20340",
+   "announceType": "new",
+   "summary": "频率引导多任务路由基础模型，27 个超声任务全面领先",
+   "topic": "计算机视觉与基础模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.20340"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "单一基础模型可同时服务多种超声临床任务，减少重复微调",
+   "repository": null,
+   "motivation": "超声筛查需同时做病灶分割与良恶性分类，但自然图像基础模型域差巨大",
+   "coreProblem": "现有方法为单任务微调重型编码器，算力开销大且忽视任务间共性",
+   "contributions": [
+    "提出 FreqDINO++，以多任务路由适配器 MR-Adapter 参数高效融合任务共性/特异知识",
+    "设计频率感知特征增强器 F²-Enhancer 捕获超声多尺度频率特性",
+    "设计任务对齐协同解码器 TC-Decoder，用全局-局部 token 交互连接密集与全局预测"
+   ],
+   "innovations": [
+    "把任务路由用于共享基础模型，替代\"一任务一编码器\"的孤立微调",
+    "显式建模超声的频域统计特性，而非沿用自然图像的空间先验",
+    "让分割与分类在解码阶段互相供给，而非简单多任务共享骨干"
+   ],
+   "method": "DINO 系基础模型冻结 + 路由适配器分化任务知识，频率增强与协同解码联合输出",
+   "results": "FMC-UIA 分割 DSC 领先且 ASD 最低；分类 AUC 91.24%、AP50 81.84%，较 LGFFM 提升 9%；单任务 BUSI 分类 AUC 91%+、F1 89.69%，超 Nora 2%+；27 个临床任务场景一致最优",
+   "value": "单一基础模型可同时服务多种超声临床任务，减少重复微调",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 FreqDINO++，以多任务路由适配器 MR-Adapter 参数高效融合任务共性/特异知识",
+    "agentChange": "DINO 系基础模型冻结 + 路由适配器分化任务知识，频率增强与协同解码联合输出",
+    "selfEvolution": null,
+    "evidence": [
+     "FMC-UIA 分割 DSC 领先且 ASD 最低；分类 AUC 91.24%、AP50 81.84%，较 LGFFM 提升 9%；单任务 BUSI 分类 AUC 91%+、F1 89.69%，超 Nora 2%+；27 个临床任务场景一致最优",
+     "显式建模超声的频域统计特性，而非沿用自然图像的空间先验",
+     "让分割与分类在解码阶段互相供给，而非简单多任务共享骨干"
+    ],
+    "faq": {
+     "problem": "频率引导多任务路由基础模型，27 个超声任务全面领先",
+     "mechanism": "DINO 系基础模型冻结 + 路由适配器分化任务知识，频率增强与协同解码联合输出",
+     "agentChange": "DINO 系基础模型冻结 + 路由适配器分化任务知识，频率增强与协同解码联合输出",
+     "support": "FMC-UIA 分割 DSC 领先且 ASD 最低；分类 AUC 91.24%、AP50 81.84%，较 LGFFM 提升 9%；单任务 BUSI 分类 AUC 91%+、F1 89.69%，超 Nora 2%+；27 个临床任务场景一致最优",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "单一基础模型可同时服务多种超声临床任务，减少重复微调"
+   }
+  },
+  {
+   "id": "2609.19969",
+   "version": 1,
+   "title": "DeepSeek-V4.1-Flash：推进 KV 缓存压缩的极限",
+   "abstract": "552B MoE 把每 token KV 压到 890 字节，约为前代 1/4",
+   "authors": [],
+   "published": "2026-09-19T04:00:00.000Z",
+   "updated": "2026-09-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.19969",
+   "pdf": "https://arxiv.org/pdf/2609.19969",
+   "announceType": "new",
+   "summary": "552B MoE 把每 token KV 压到 890 字节，约为前代 1/4",
+   "topic": "大语言模型与推理效率",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.19969"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把长上下文成本瓶颈从\"算不动\"转为可工程化解的存储放置问题",
+   "repository": null,
+   "motivation": "长时程 Agent 使负载转为输入密集型，预填充与 KV 缓存成为成本主瓶颈",
+   "coreProblem": "已有工作主要压缩长上下文计算，但预填充算力与 KV 的 HBM/SSD 容量、传输带宽仍受挤压",
+   "contributions": [
+    "发布 552B 骨干多模态 MoE，支持百万 token 上下文，检查点已开源",
+    "提出因果编解码架构 CED，解码激活 16B、预填充仅激活 8B",
+    "融合跨层 KV 复用 CSA2 与 FP4 KV 缓存，并提出 SWA Bounded Replay 做部署优化"
+   ],
+   "innovations": [
+    "预填充与解码激活参数解耦，直接针对 Agent 输入密集型负载省算力",
+    "跨层 KV/索引复用叠加 FP4 量化，把全局 KV 压到 890 字节/token",
+    "SWA Bounded Replay 把常驻 KV 放到 SSD/主机内存，常驻占用降至约 1/8"
+   ],
+   "method": "CED 架构 + CSA2 跨层复用 + FP4 KV 缓存 + SWA Bounded Replay，45T token 多模态语料预训练",
+   "results": "全局 KV 890 字节/token（约前代 1/4，较更早代际约 4 倍、437 倍降幅）；常驻 KV 约 1/8；在文本与多模态 Agent 场景全面优于基线",
+   "value": "把长上下文成本瓶颈从\"算不动\"转为可工程化解的存储放置问题",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "发布 552B 骨干多模态 MoE，支持百万 token 上下文，检查点已开源",
+    "agentChange": "CED 架构 + CSA2 跨层复用 + FP4 KV 缓存 + SWA Bounded Replay，45T token 多模态语料预训练",
+    "selfEvolution": null,
+    "evidence": [
+     "全局 KV 890 字节/token（约前代 1/4，较更早代际约 4 倍、437 倍降幅）；常驻 KV 约 1/8；在文本与多模态 Agent 场景全面优于基线",
+     "跨层 KV/索引复用叠加 FP4 量化，把全局 KV 压到 890 字节/token",
+     "SWA Bounded Replay 把常驻 KV 放到 SSD/主机内存，常驻占用降至约 1/8"
+    ],
+    "faq": {
+     "problem": "552B MoE 把每 token KV 压到 890 字节，约为前代 1/4",
+     "mechanism": "CED 架构 + CSA2 跨层复用 + FP4 KV 缓存 + SWA Bounded Replay，45T token 多模态语料预训练",
+     "agentChange": "CED 架构 + CSA2 跨层复用 + FP4 KV 缓存 + SWA Bounded Replay，45T token 多模态语料预训练",
+     "support": "全局 KV 890 字节/token（约前代 1/4，较更早代际约 4 倍、437 倍降幅）；常驻 KV 约 1/8；在文本与多模态 Agent 场景全面优于基线",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "把长上下文成本瓶颈从\"算不动\"转为可工程化解的存储放置问题"
+   }
+  },
+  {
+   "id": "2609.20734",
+   "version": 1,
+   "title": "按需注意力：语言模型知道自己何时该回忆",
+   "abstract": "只训一个回忆头，长上下文解码吞吐 75.5→149.5 tok/s",
+   "authors": [],
+   "published": "2026-09-19T04:00:00.000Z",
+   "updated": "2026-09-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.20734",
+   "pdf": "https://arxiv.org/pdf/2609.20734",
+   "announceType": "new",
+   "summary": "只训一个回忆头，长上下文解码吞吐 75.5→149.5 tok/s",
+   "topic": "大语言模型与推理效率",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.20734"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "长上下文推理可让模型自主决定读多少历史，而非固定稀疏",
+   "repository": null,
+   "motivation": "推理与 Agent 负载需长上下文，但全注意力每步都读全部历史，多数步并无收益",
+   "coreProblem": "现有稀疏注意力按固定模式或启发式跳过全局读取，不判断本次读取对预测是否真有价值",
+   "contributions": [
+    "发现预训练模型的解码状态在全局读取之前就已包含\"该不该回忆\"的预测信息",
+    "提出 ODA：本地优先解码，用轻量回忆头按预测收益动态决定是否调用全局注意力",
+    "在 vLLM 实现 GPU 侧条件执行，把减少的全局读取转成实际解码加速"
+   ],
+   "innovations": [
+    "让预训练模型自己指导信息访问，而非外挂固定稀疏模式",
+    "只训练回忆头，冻结全部预训练权重且保留完整历史 KV，未来仍可回忆",
+    "证明收益随上下文长度与回忆频率变化，并诚实报告 4K 短上下文反而慢 15.8%"
+   ],
+   "method": "冻结主干做本地注意力，回忆头逐步预测全局读取收益，条件触发全局注意力",
+   "results": "128K 输入/12.5% 全局调用率下，主解码算子 FLOPs 降约 76%，吞吐 75.54→149.52 tok/s；4K 时慢 15.8%；Qwen/Gemma 及混合注意力骨干上挽回了本地注意力的大部分性能损失",
+   "value": "长上下文推理可让模型自主决定读多少历史，而非固定稀疏",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "发现预训练模型的解码状态在全局读取之前就已包含\"该不该回忆\"的预测信息",
+    "agentChange": "冻结主干做本地注意力，回忆头逐步预测全局读取收益，条件触发全局注意力",
+    "selfEvolution": null,
+    "evidence": [
+     "128K 输入/12.5% 全局调用率下，主解码算子 FLOPs 降约 76%，吞吐 75.54→149.52 tok/s；4K 时慢 15.8%；Qwen/Gemma 及混合注意力骨干上挽回了本地注意力的大部分性能损失",
+     "只训练回忆头，冻结全部预训练权重且保留完整历史 KV，未来仍可回忆",
+     "证明收益随上下文长度与回忆频率变化，并诚实报告 4K 短上下文反而慢 15.8%"
+    ],
+    "faq": {
+     "problem": "只训一个回忆头，长上下文解码吞吐 75.5→149.5 tok/s",
+     "mechanism": "冻结主干做本地注意力，回忆头逐步预测全局读取收益，条件触发全局注意力",
+     "agentChange": "冻结主干做本地注意力，回忆头逐步预测全局读取收益，条件触发全局注意力",
+     "support": "128K 输入/12.5% 全局调用率下，主解码算子 FLOPs 降约 76%，吞吐 75.54→149.52 tok/s；4K 时慢 15.8%；Qwen/Gemma 及混合注意力骨干上挽回了本地注意力的大部分性能损失",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "长上下文推理可让模型自主决定读多少历史，而非固定稀疏"
+   }
+  },
+  {
+   "id": "2609.20784",
+   "version": 1,
+   "title": "RetireOPD：面向 Agent 强化学习的自退休在线策略蒸馏",
+   "abstract": "学生自判何时停用教师，ALFWorld 成功率较 RL 高 14.1–18.8%",
+   "authors": [],
+   "published": "2026-09-19T04:00:00.000Z",
+   "updated": "2026-09-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.20784",
+   "pdf": "https://arxiv.org/pdf/2609.20784",
+   "announceType": "new",
+   "summary": "学生自判何时停用教师，ALFWorld 成功率较 RL 高 14.1–18.8%",
+   "topic": "Agent 与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.20784"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "Agent 蒸馏从固定日程转向自适应退出，教师监督有明确有效期",
+   "repository": null,
+   "motivation": "多轮 Agent 的 RL 每轨迹只有标量奖励，需稠密 token 级监督",
+   "coreProblem": "现有自蒸馏假设特权信息必然造出可靠教师、且教师全程有用，这两个假设都不成立",
+   "contributions": [
+    "识别特权信息蒸馏在 Agent 任务上的两种失效：教师不可靠、教师收益随阶段变化",
+    "提出 RetireOPD：先用环境奖励优化解耦的技能条件教师，再联合 RL + OPD 训无技能学生",
+    "提出自适应退休：学生间差异不再缩小且达到教师成功率目标比例时自主弃用教师，此后纯 RL"
+   ],
+   "innovations": [
+    "用\"学生自判\"替代预设蒸馏日程，教师退出时机由训练动态决定而非人为设定",
+    "把教师可靠性作为一等问题先求解，而非默认特权信息即正确",
+    "学生最终超过自己的技能条件教师，说明教师应被超越而非被对齐"
+   ],
+   "method": "技能条件教师用环境奖励独立优化，学生联合 RL 与在线蒸馏，按差异与成功率触发退休",
+   "results": "Qwen2.5 1.5B–7B 上 ALFWorld 成功率较 GRPO 提升 14.1%–18.8%，WebShop 准确率提升 11.8%–19.0%，全部设置超过自身教师",
+   "value": "Agent 蒸馏从固定日程转向自适应退出，教师监督有明确有效期",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "识别特权信息蒸馏在 Agent 任务上的两种失效：教师不可靠、教师收益随阶段变化",
+    "agentChange": "技能条件教师用环境奖励独立优化，学生联合 RL 与在线蒸馏，按差异与成功率触发退休",
+    "selfEvolution": null,
+    "evidence": [
+     "Qwen2.5 1.5B–7B 上 ALFWorld 成功率较 GRPO 提升 14.1%–18.8%，WebShop 准确率提升 11.8%–19.0%，全部设置超过自身教师",
+     "把教师可靠性作为一等问题先求解，而非默认特权信息即正确",
+     "学生最终超过自己的技能条件教师，说明教师应被超越而非被对齐"
+    ],
+    "faq": {
+     "problem": "学生自判何时停用教师，ALFWorld 成功率较 RL 高 14.1–18.8%",
+     "mechanism": "技能条件教师用环境奖励独立优化，学生联合 RL 与在线蒸馏，按差异与成功率触发退休",
+     "agentChange": "技能条件教师用环境奖励独立优化，学生联合 RL 与在线蒸馏，按差异与成功率触发退休",
+     "support": "Qwen2.5 1.5B–7B 上 ALFWorld 成功率较 GRPO 提升 14.1%–18.8%，WebShop 准确率提升 11.8%–19.0%，全部设置超过自身教师",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "Agent 蒸馏从固定日程转向自适应退出，教师监督有明确有效期"
+   }
+  },
+  {
+   "id": "2609.20807",
+   "version": 1,
+   "title": "分数中心化稳定离策略强化学习",
+   "abstract": "加一项无超参修正项消除引擎漂移，量化下稳定优于重要性采样",
+   "authors": [],
+   "published": "2026-09-19T04:00:00.000Z",
+   "updated": "2026-09-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.20807",
+   "pdf": "https://arxiv.org/pdf/2609.20807",
+   "announceType": "new",
+   "summary": "加一项无超参修正项消除引擎漂移，量化下稳定优于重要性采样",
+   "topic": "Agent 与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.20807"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给出 RL 训练-推理失配的可解释机制与近乎零成本修正",
+   "repository": null,
+   "motivation": "LLM 的 RL 对训练-推理引擎间微小数值差异极度敏感，但完全消除不匹配代价过高",
+   "coreProblem": "现有重要性采样修正把 TIM 当方差问题处理，未消除随训练步累积的持久偏差",
+   "contributions": [
+    "给出解释：TIM 下策略梯度含漂移项，等价于向采样器持续蒸馏，故偏差随步数累积",
+    "推导加性\"分数中心化\"修正项，通过减去期望分数抵消漂移",
+    "证明其无超参、可写成标量损失，并与 TIS/MIS 等重要性采样方法正交可组合"
+   ],
+   "innovations": [
+    "把 RL 不稳归因从\"方差过大\"改为\"向漂移采样器蒸馏\"，解释离线蒸馏稳定而在线 RL 崩塌",
+    "指出组内中心化无法消除漂移，只有分数中心化可以，明确区分两者",
+    "加性形式使其与重要性采样叠加，而非二选一替换"
+   ],
+   "method": "在策略梯度目标中减去期望分数项以抵消引擎漂移，可与重要性采样比叠加",
+   "results": "0.6B–30B 训练中量化场景下单独使用即匹配或超过重要性采样，失配越严重领先越多；FP4 采样器下朴素策略梯度 200 步内崩溃，组合方案优于纯 IS 基线",
+   "value": "给出 RL 训练-推理失配的可解释机制与近乎零成本修正",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "给出解释：TIM 下策略梯度含漂移项，等价于向采样器持续蒸馏，故偏差随步数累积",
+    "agentChange": "在策略梯度目标中减去期望分数项以抵消引擎漂移，可与重要性采样比叠加",
+    "selfEvolution": null,
+    "evidence": [
+     "0.6B–30B 训练中量化场景下单独使用即匹配或超过重要性采样，失配越严重领先越多；FP4 采样器下朴素策略梯度 200 步内崩溃，组合方案优于纯 IS 基线",
+     "指出组内中心化无法消除漂移，只有分数中心化可以，明确区分两者",
+     "加性形式使其与重要性采样叠加，而非二选一替换"
+    ],
+    "faq": {
+     "problem": "加一项无超参修正项消除引擎漂移，量化下稳定优于重要性采样",
+     "mechanism": "在策略梯度目标中减去期望分数项以抵消引擎漂移，可与重要性采样比叠加",
+     "agentChange": "在策略梯度目标中减去期望分数项以抵消引擎漂移，可与重要性采样比叠加",
+     "support": "0.6B–30B 训练中量化场景下单独使用即匹配或超过重要性采样，失配越严重领先越多；FP4 采样器下朴素策略梯度 200 步内崩溃，组合方案优于纯 IS 基线",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "给出 RL 训练-推理失配的可解释机制与近乎零成本修正"
+   }
+  },
+  {
+   "id": "2609.20804",
+   "version": 1,
+   "title": "编码 Agent 的 Harness 设计实证研究",
+   "abstract": "176 组对照揭示 harness 各组件价值随模型能力反转",
+   "authors": [],
+   "published": "2026-09-19T04:00:00.000Z",
+   "updated": "2026-09-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.20804",
+   "pdf": "https://arxiv.org/pdf/2609.20804",
+   "announceType": "new",
+   "summary": "176 组对照揭示 harness 各组件价值随模型能力反转",
+   "topic": "Agent 与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.20804"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "Harness 应按模型能力与预算差异化设计，而非套用统一默认配置",
+   "repository": null,
+   "motivation": "Harness 决定 Agent 能力如何转化为长时程表现，但既有工作把 harness 当整体评估",
+   "coreProblem": "缺乏组件级对照，无法判断规划、动作空间、上下文管理各自贡献多少",
+   "contributions": [
+    "构建执行循环固定、仅变三个组件的轻量 harness，做组件级可比较研究",
+    "在 SWE-Bench Verified 与 Terminal-Bench 2.1 上评测 4 个模型、176 组匹配设置",
+    "覆盖 5 种上下文管理策略、4 档上下文预算、规划与动作空间的定向消融"
+   ],
+   "innovations": [
+    "把 harness 从黑盒整体拆成可独立消融的组件，提供模块化评测框架",
+    "发现价值反转规律：规划从弱模型的能力支架变为强模型的省成本手段",
+    "反直觉结论：让被裁剪内容可恢复只增加机制、几乎不被模型使用且无精度收益"
+   ],
+   "method": "固定执行循环，交叉变化规划/动作空间/上下文管理，配合轨迹级行为分析",
+   "results": "上下文预算越紧，上下文管理收益越大，收益主要来自避免上下文溢出；规则裁剪先于 LLM 摘要效率最优；弱 bash 能力模型靠预定义工具提升，bash 强模型仅用 bash 接口即可且成本显著更低；弱模型轨迹靠规划撑到发出编辑，强模型规划缩短轨迹",
+   "value": "Harness 应按模型能力与预算差异化设计，而非套用统一默认配置",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "构建执行循环固定、仅变三个组件的轻量 harness，做组件级可比较研究",
+    "agentChange": "固定执行循环，交叉变化规划/动作空间/上下文管理，配合轨迹级行为分析",
+    "selfEvolution": null,
+    "evidence": [
+     "上下文预算越紧，上下文管理收益越大，收益主要来自避免上下文溢出；规则裁剪先于 LLM 摘要效率最优；弱 bash 能力模型靠预定义工具提升，bash 强模型仅用 bash 接口即可且成本显著更低；弱模型轨迹靠规划撑到发出编辑，强模型规划缩短轨迹",
+     "发现价值反转规律：规划从弱模型的能力支架变为强模型的省成本手段",
+     "反直觉结论：让被裁剪内容可恢复只增加机制、几乎不被模型使用且无精度收益"
+    ],
+    "faq": {
+     "problem": "176 组对照揭示 harness 各组件价值随模型能力反转",
+     "mechanism": "固定执行循环，交叉变化规划/动作空间/上下文管理，配合轨迹级行为分析",
+     "agentChange": "固定执行循环，交叉变化规划/动作空间/上下文管理，配合轨迹级行为分析",
+     "support": "上下文预算越紧，上下文管理收益越大，收益主要来自避免上下文溢出；规则裁剪先于 LLM 摘要效率最优；弱 bash 能力模型靠预定义工具提升，bash 强模型仅用 bash 接口即可且成本显著更低；弱模型轨迹靠规划撑到发出编辑，强模型规划缩短轨迹",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "Harness 应按模型能力与预算差异化设计，而非套用统一默认配置"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-09-18",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-09-18 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-23T21:30:10.000Z",
+ "latestPaperAt": "2026-09-19T04:00:00.000Z",
+ "totalMatched": 405,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 405
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 35,
+ "trends": {
+  "status": "accumulating",
+  "days": 35,
+  "minimumDays": 15,
+  "message": "已积累 35/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-23T21:30:10.000Z",
+ "snapshotDay": "2026-09-19",
+ "historical": true
+}

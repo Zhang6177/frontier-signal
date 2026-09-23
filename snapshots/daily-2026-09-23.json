@@ -1,0 +1,1041 @@
+{
+ "papers": [
+  {
+   "id": "2609.22834",
+   "version": 1,
+   "title": "SatOV: Restoring Spatial Priors for Training-Free Open-Vocabulary Segmentation in Remote Sensing Imagery",
+   "abstract": "免训练恢复 CLIP 空间先验，遥感开放词汇分割 mIoU 达 43.3。",
+   "authors": [],
+   "published": "2026-09-23T04:00:00.000Z",
+   "updated": "2026-09-23T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.22834",
+   "pdf": "https://arxiv.org/pdf/2609.22834",
+   "announceType": "new",
+   "summary": "免训练恢复 CLIP 空间先验，遥感开放词汇分割 mIoU 达 43.3。",
+   "topic": "遥感 / 高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.22834"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "免训练即跨平台泛化，省去昂贵的遥感像素级标注。",
+   "repository": null,
+   "motivation": "CLIP 为图像级分类设计，用于遥感时丧失像素级空间结构。",
+   "coreProblem": "免训练法仅替换末层注意力，中间层空间关系已被全局注意力抹平。",
+   "contributions": [
+    "提出 SatOV 免训练遥感开放词汇分割框架",
+    "ResQQ：残差融合中间层 Q-K 注意力与末层 Q-Q 注意力",
+    "SatUp：以原始高分辨率 RGB 引导语义特征上采样"
+   ],
+   "innovations": [
+    "首次指出空间先验在\"深层变换\"与\"下采样\"两阶段分别退化",
+    "把中间层注意力当作先验源，而非只修末层注意力",
+    "用原图引导恢复纹理边界，替代邻域加权上采样"
+   ],
+   "method": "冻结 CLIP，ResQQ 注入中间层空间结构、SatUp 借高分辨率原图做空间调制上采样，全流程无需训练。",
+   "results": "UDD/DOTA/LoveDA/Vaihingen 平均 mIoU 43.3，较 SegEarth-OV（41.2）提升 2.1 点；LoveDA 39.8 vs 36.9。",
+   "value": "免训练即跨平台泛化，省去昂贵的遥感像素级标注。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 SatOV 免训练遥感开放词汇分割框架",
+    "agentChange": "冻结 CLIP，ResQQ 注入中间层空间结构、SatUp 借高分辨率原图做空间调制上采样，全流程无需训练。",
+    "selfEvolution": null,
+    "evidence": [
+     "UDD/DOTA/LoveDA/Vaihingen 平均 mIoU 43.3，较 SegEarth-OV（41.2）提升 2.1 点；LoveDA 39.8 vs 36.9。",
+     "把中间层注意力当作先验源，而非只修末层注意力",
+     "用原图引导恢复纹理边界，替代邻域加权上采样"
+    ],
+    "faq": {
+     "problem": "免训练恢复 CLIP 空间先验，遥感开放词汇分割 mIoU 达 43.3。",
+     "mechanism": "冻结 CLIP，ResQQ 注入中间层空间结构、SatUp 借高分辨率原图做空间调制上采样，全流程无需训练。",
+     "agentChange": "冻结 CLIP，ResQQ 注入中间层空间结构、SatUp 借高分辨率原图做空间调制上采样，全流程无需训练。",
+     "support": "UDD/DOTA/LoveDA/Vaihingen 平均 mIoU 43.3，较 SegEarth-OV（41.2）提升 2.1 点；LoveDA 39.8 vs 36.9。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "免训练即跨平台泛化，省去昂贵的遥感像素级标注。"
+   }
+  },
+  {
+   "id": "2609.23427",
+   "version": 1,
+   "title": "RSPDBench: Benchmarking Vision Foundation Models on Earth Observation Tasks Under Physically Grounded Remote-Sensing Product Degradations",
+   "abstract": "首个遥感产品级退化基准，复合退化额外掉点最高约 38 个百分点。",
+   "authors": [],
+   "published": "2026-09-23T04:00:00.000Z",
+   "updated": "2026-09-23T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.23427",
+   "pdf": "https://arxiv.org/pdf/2609.23427",
+   "announceType": "new",
+   "summary": "首个遥感产品级退化基准，复合退化额外掉点最高约 38 个百分点。",
+   "topic": "遥感 / 高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.23427"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "遥感鲁棒性不能用干净精度或通用扰动代表。",
+   "repository": null,
+   "motivation": "遥感基础模型只在干净数据评测，忽略产品自带缺陷。",
+   "coreProblem": "通用腐蚀与宽域偏移无法隔离真实产品的物理退化失效。",
+   "contributions": [
+    "提出 RSPDBench 物理化遥感产品退化基准",
+    "覆盖 5 数据集、7 个基础模型、2 个监督基线",
+    "设计 4 类基元退化与 2 条复合产品链"
+   ],
+   "innovations": [
+    "用配对\"干净—退化\"样本固定场景，只变产品缺陷",
+    "首次隔离分辨率/辐射增益/波段配准/噪声四轴敏感性",
+    "提出复合链超额掉点指标，量化放大与掩蔽效应"
+   ],
+   "method": "场景不变，用物理算子逐级退化输入，以相对自身干净基线的掉点衡量鲁棒性。",
+   "results": "复合退化超额掉点最高约 38 pp；分辨率损失为最强单轴压力。",
+   "value": "遥感鲁棒性不能用干净精度或通用扰动代表。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 RSPDBench 物理化遥感产品退化基准",
+    "agentChange": "场景不变，用物理算子逐级退化输入，以相对自身干净基线的掉点衡量鲁棒性。",
+    "selfEvolution": null,
+    "evidence": [
+     "复合退化超额掉点最高约 38 pp；分辨率损失为最强单轴压力。",
+     "首次隔离分辨率/辐射增益/波段配准/噪声四轴敏感性",
+     "提出复合链超额掉点指标，量化放大与掩蔽效应"
+    ],
+    "faq": {
+     "problem": "首个遥感产品级退化基准，复合退化额外掉点最高约 38 个百分点。",
+     "mechanism": "场景不变，用物理算子逐级退化输入，以相对自身干净基线的掉点衡量鲁棒性。",
+     "agentChange": "场景不变，用物理算子逐级退化输入，以相对自身干净基线的掉点衡量鲁棒性。",
+     "support": "复合退化超额掉点最高约 38 pp；分辨率损失为最强单轴压力。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "遥感鲁棒性不能用干净精度或通用扰动代表。"
+   }
+  },
+  {
+   "id": "2609.22716",
+   "version": 1,
+   "title": "ZIL: Zero-shot Image-to-LiDAR Registration",
+   "abstract": "首个零样本图像-LiDAR 配准基础模型，平移/旋转误差最高降 87%/76%。",
+   "authors": [],
+   "published": "2026-09-23T04:00:00.000Z",
+   "updated": "2026-09-23T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.22716",
+   "pdf": "https://arxiv.org/pdf/2609.22716",
+   "announceType": "new",
+   "summary": "首个零样本图像-LiDAR 配准基础模型，平移/旋转误差最高降 87%/76%。",
+   "topic": "遥感 / 高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.22716"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "单模型免微调跨传感器可用，降低自动驾驶标定成本。",
+   "repository": null,
+   "motivation": "图像与点云常不同帧采集，且需跨传感器无微调部署。",
+   "coreProblem": "现有方法假设同帧输入并依赖域内训练，跨数据集零样本即失效。",
+   "contributions": [
+    "提出 ZIL 零样本非同步图像-LiDAR 配准基础模型",
+    "引入 3D 坐标预测代理任务，免额外标注提升位姿精度",
+    "汇集 7 数据集、140 万 LiDAR 帧做规模训练"
+   ],
+   "innovations": [
+    "首次把该任务做成基础模型，单模型跨 5 个基准零样本",
+    "发现朴素混数据训练无法零样本，须归一化相机内参与 LiDAR 垂直原点",
+    "首个在 5 个数据集上全部达到亚米级精度"
+   ],
+   "method": "Vision/Point Transformer 编码图像与点云，回归相对位姿并预测像素 3D 坐标。",
+   "results": "KITTI-360/Lyft/PandaSet 召回 96.9%/98.3%/98.6%，平移与旋转误差相对 SOTA 最高降 87%、76%。",
+   "value": "单模型免微调跨传感器可用，降低自动驾驶标定成本。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 ZIL 零样本非同步图像-LiDAR 配准基础模型",
+    "agentChange": "Vision/Point Transformer 编码图像与点云，回归相对位姿并预测像素 3D 坐标。",
+    "selfEvolution": null,
+    "evidence": [
+     "KITTI-360/Lyft/PandaSet 召回 96.9%/98.3%/98.6%，平移与旋转误差相对 SOTA 最高降 87%、76%。",
+     "发现朴素混数据训练无法零样本，须归一化相机内参与 LiDAR 垂直原点",
+     "首个在 5 个数据集上全部达到亚米级精度"
+    ],
+    "faq": {
+     "problem": "首个零样本图像-LiDAR 配准基础模型，平移/旋转误差最高降 87%/76%。",
+     "mechanism": "Vision/Point Transformer 编码图像与点云，回归相对位姿并预测像素 3D 坐标。",
+     "agentChange": "Vision/Point Transformer 编码图像与点云，回归相对位姿并预测像素 3D 坐标。",
+     "support": "KITTI-360/Lyft/PandaSet 召回 96.9%/98.3%/98.6%，平移与旋转误差相对 SOTA 最高降 87%、76%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "单模型免微调跨传感器可用，降低自动驾驶标定成本。"
+   }
+  },
+  {
+   "id": "2609.23619",
+   "version": 1,
+   "title": "Compact Low-Cost Hyperspectral Imaging via Angular-to-Spectral Diversity Conversion",
+   "abstract": "万花筒加双折射滤光片实现低成本快照高光谱，重建 27.4 dB。",
+   "authors": [],
+   "published": "2026-09-23T04:00:00.000Z",
+   "updated": "2026-09-23T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.23619",
+   "pdf": "https://arxiv.org/pdf/2609.23619",
+   "announceType": "new",
+   "summary": "万花筒加双折射滤光片实现低成本快照高光谱，重建 27.4 dB。",
+   "topic": "遥感 / 高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.23619"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "现成元件降低高光谱门槛，利于农业与遥感普及。",
+   "repository": null,
+   "motivation": "快照高光谱难兼顾重建稳定、低成本与紧凑光学。",
+   "coreProblem": "定制滤光阵列需昂贵加工；RGB 加单棱镜调制弱、逆问题病态。",
+   "contributions": [
+    "提出角谱多样性转换的快照高光谱成像系统",
+    "锥形万花筒直接贴附双折射滤光片，省去中继光学",
+    "给出基于条件数的滤光片配置选择准则"
+   ],
+   "innovations": [
+    "把 BRF 的入射角依赖从误差源转为光谱调制机制",
+    "角多样性转谱响应多样性，单次曝光获得互补测量",
+    "保持逐像素线性模型，支持快速非学习重建"
+   ],
+   "method": "万花筒产生多视角复制，贴附 BRF 转为通道相关光谱透过率，按条件数选型后线性反演。",
+   "results": "25 波段重建 PSNR 27.4 dB，低噪声区优于 3Camera 与反射面阵列两个低成本基线。",
+   "value": "现成元件降低高光谱门槛，利于农业与遥感普及。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出角谱多样性转换的快照高光谱成像系统",
+    "agentChange": "万花筒产生多视角复制，贴附 BRF 转为通道相关光谱透过率，按条件数选型后线性反演。",
+    "selfEvolution": null,
+    "evidence": [
+     "25 波段重建 PSNR 27.4 dB，低噪声区优于 3Camera 与反射面阵列两个低成本基线。",
+     "角多样性转谱响应多样性，单次曝光获得互补测量",
+     "保持逐像素线性模型，支持快速非学习重建"
+    ],
+    "faq": {
+     "problem": "万花筒加双折射滤光片实现低成本快照高光谱，重建 27.4 dB。",
+     "mechanism": "万花筒产生多视角复制，贴附 BRF 转为通道相关光谱透过率，按条件数选型后线性反演。",
+     "agentChange": "万花筒产生多视角复制，贴附 BRF 转为通道相关光谱透过率，按条件数选型后线性反演。",
+     "support": "25 波段重建 PSNR 27.4 dB，低噪声区优于 3Camera 与反射面阵列两个低成本基线。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "现成元件降低高光谱门槛，利于农业与遥感普及。"
+   }
+  },
+  {
+   "id": "2609.23670",
+   "version": 1,
+   "title": "Hierarchical Filter Band Selection for Multispectral Object Classification",
+   "abstract": "层级滤光片波段选择将分类错误降 28.9%，相机数从 7 降到 4。",
+   "authors": [],
+   "published": "2026-09-23T04:00:00.000Z",
+   "updated": "2026-09-23T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.23670",
+   "pdf": "https://arxiv.org/pdf/2609.23670",
+   "announceType": "new",
+   "summary": "层级滤光片波段选择将分类错误降 28.9%，相机数从 7 降到 4。",
+   "topic": "遥感 / 高光谱",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.23670"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "少相机即达同等精度，直接压低多光谱成像成本。",
+   "repository": null,
+   "motivation": "多光谱相机阵列波段冗余，减少波段可直接降低硬件成本。",
+   "coreProblem": "现有 CFBS 只用物体标签选带，忽略了同样可得的材质类别先验。",
+   "contributions": [
+    "提出 HFBS 层级滤光片波段选择算法",
+    "增加第二级分类，在标签之外估计物体材质",
+    "用决策树融合标签与材质信息完成选带"
+   ],
+   "innovations": [
+    "首次把材质类别作为波段选择的额外监督信号",
+    "相比仅用光谱角或噪声的准则，引入语义层级判别",
+    "同精度下相机需求 7→4，逼近穷举最优"
+   ],
+   "method": "先按材质与标签训练分类器，再以决策树在两个层级间融合，选出低噪、非冗余波段组合。",
+   "results": "SMM50 上错误分类数平均 237 vs CFBS 334（相对降 28.9%）；n=7 时 73 vs 111。",
+   "value": "少相机即达同等精度，直接压低多光谱成像成本。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 HFBS 层级滤光片波段选择算法",
+    "agentChange": "先按材质与标签训练分类器，再以决策树在两个层级间融合，选出低噪、非冗余波段组合。",
+    "selfEvolution": null,
+    "evidence": [
+     "SMM50 上错误分类数平均 237 vs CFBS 334（相对降 28.9%）；n=7 时 73 vs 111。",
+     "相比仅用光谱角或噪声的准则，引入语义层级判别",
+     "同精度下相机需求 7→4，逼近穷举最优"
+    ],
+    "faq": {
+     "problem": "层级滤光片波段选择将分类错误降 28.9%，相机数从 7 降到 4。",
+     "mechanism": "先按材质与标签训练分类器，再以决策树在两个层级间融合，选出低噪、非冗余波段组合。",
+     "agentChange": "先按材质与标签训练分类器，再以决策树在两个层级间融合，选出低噪、非冗余波段组合。",
+     "support": "SMM50 上错误分类数平均 237 vs CFBS 334（相对降 28.9%）；n=7 时 73 vs 111。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "少相机即达同等精度，直接压低多光谱成像成本。"
+   }
+  },
+  {
+   "id": "2609.23541",
+   "version": 1,
+   "title": "Towards robust multimodal 3D object detection via visual foundation models",
+   "abstract": "用 SAM 等视觉基础模型蒸馏，雾雪退化下 3D 检测 AP 提升 24.13 点。",
+   "authors": [],
+   "published": "2026-09-23T04:00:00.000Z",
+   "updated": "2026-09-23T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.23541",
+   "pdf": "https://arxiv.org/pdf/2609.23541",
+   "announceType": "new",
+   "summary": "用 SAM 等视觉基础模型蒸馏，雾雪退化下 3D 检测 AP 提升 24.13 点。",
+   "topic": "视觉基础模型 / SAM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.23541"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为自动驾驶感知提供免额外标注的鲁棒性提升路径。",
+   "repository": null,
+   "motivation": "多模态 3D 检测在传感器噪声与恶劣天气下鲁棒性严重不足。",
+   "coreProblem": "现有方法在理想数据上开发，OOD 退化场景下精度大幅崩塌。",
+   "contributions": [
+    "提出 RoboDistill 多模态 3D 检测鲁棒框架",
+    "SAM-AD：在自动驾驶图像上做域适应预训练",
+    "DGWA：深度引导小波注意力抑制高频噪声",
+    "KD Fusion：以 SAM-AD 为教师蒸馏点云网络"
+   ],
+   "innovations": [
+    "首次把 SAM 语义先验系统性引入 3D 检测鲁棒性",
+    "AD-FPN 解决 VFM 特征分辨率与层级不匹配的融合难题",
+    "小波域深度引导滤波，压噪同时保留上下文"
+   ],
+   "method": "SAM-AD 抽取多尺度语义，经 AD-FPN 上采样后与 LiDAR 特征融合，并蒸馏至轻量点云网络。",
+   "results": "KITTI-C 雾雪车类中等难度 AP 86.71% vs LoGoNet 62.58%（+24.13 点）；27 种 OOD 设置普遍更优。",
+   "value": "为自动驾驶感知提供免额外标注的鲁棒性提升路径。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 RoboDistill 多模态 3D 检测鲁棒框架",
+    "agentChange": "SAM-AD 抽取多尺度语义，经 AD-FPN 上采样后与 LiDAR 特征融合，并蒸馏至轻量点云网络。",
+    "selfEvolution": null,
+    "evidence": [
+     "KITTI-C 雾雪车类中等难度 AP 86.71% vs LoGoNet 62.58%（+24.13 点）；27 种 OOD 设置普遍更优。",
+     "AD-FPN 解决 VFM 特征分辨率与层级不匹配的融合难题",
+     "小波域深度引导滤波，压噪同时保留上下文"
+    ],
+    "faq": {
+     "problem": "用 SAM 等视觉基础模型蒸馏，雾雪退化下 3D 检测 AP 提升 24.13 点。",
+     "mechanism": "SAM-AD 抽取多尺度语义，经 AD-FPN 上采样后与 LiDAR 特征融合，并蒸馏至轻量点云网络。",
+     "agentChange": "SAM-AD 抽取多尺度语义，经 AD-FPN 上采样后与 LiDAR 特征融合，并蒸馏至轻量点云网络。",
+     "support": "KITTI-C 雾雪车类中等难度 AP 86.71% vs LoGoNet 62.58%（+24.13 点）；27 种 OOD 设置普遍更优。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "为自动驾驶感知提供免额外标注的鲁棒性提升路径。"
+   }
+  },
+  {
+   "id": "2609.24564",
+   "version": 1,
+   "title": "HyperCLIP++: Fine-tuning CLIP for Open-vocabulary Semantic Segmentation in Hyperbolic Space",
+   "abstract": "双曲半径缩放对齐 CLIP 层级，开放词汇分割刷新 SOTA 仅调 5% 参数。",
+   "authors": [],
+   "published": "2026-09-23T04:00:00.000Z",
+   "updated": "2026-09-23T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.24564",
+   "pdf": "https://arxiv.org/pdf/2609.24564",
+   "announceType": "new",
+   "summary": "双曲半径缩放对齐 CLIP 层级，开放词汇分割刷新 SOTA 仅调 5% 参数。",
+   "topic": "视觉基础模型 / SAM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.24564"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "用层级几何解释并改进 CLIP 迁移，兼顾泛化与参数效率。",
+   "repository": null,
+   "motivation": "冻结文本编码器并非最优，双塔微调反能提升开放集分割。",
+   "coreProblem": "双塔微调为何有效缺乏解释，图-文粒度错配未被显式建模。",
+   "contributions": [
+    "提出 HyperCLIP++ 参数高效双曲适配策略",
+    "用缩放变换直接调整嵌入的双曲半径以对齐分割任务",
+    "提出 DCRC 模块同步视觉与文本通路的半径调整"
+   ],
+   "innovations": [
+    "首次从层级对齐角度解释\"双塔微调更优\"现象",
+    "观察到微调时文本嵌入双曲半径收缩，与像素级粒度对齐",
+    "在双曲空间做半径缩放而非欧式微调，参数量仅 5%"
+   ],
+   "method": "在庞加莱球模型中以块对角缩放矩阵调整双曲半径，DCRC 保证跨模态半径同步而不破坏图文对齐。",
+   "results": "PC-459 提升 6.6%、PC-59 提升 4.7%（ViT-B/16，对比 SAN）；Potsdam 44.8 vs CAT-Seg 42.7。",
+   "value": "用层级几何解释并改进 CLIP 迁移，兼顾泛化与参数效率。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 HyperCLIP++ 参数高效双曲适配策略",
+    "agentChange": "在庞加莱球模型中以块对角缩放矩阵调整双曲半径，DCRC 保证跨模态半径同步而不破坏图文对齐。",
+    "selfEvolution": null,
+    "evidence": [
+     "PC-459 提升 6.6%、PC-59 提升 4.7%（ViT-B/16，对比 SAN）；Potsdam 44.8 vs CAT-Seg 42.7。",
+     "观察到微调时文本嵌入双曲半径收缩，与像素级粒度对齐",
+     "在双曲空间做半径缩放而非欧式微调，参数量仅 5%"
+    ],
+    "faq": {
+     "problem": "双曲半径缩放对齐 CLIP 层级，开放词汇分割刷新 SOTA 仅调 5% 参数。",
+     "mechanism": "在庞加莱球模型中以块对角缩放矩阵调整双曲半径，DCRC 保证跨模态半径同步而不破坏图文对齐。",
+     "agentChange": "在庞加莱球模型中以块对角缩放矩阵调整双曲半径，DCRC 保证跨模态半径同步而不破坏图文对齐。",
+     "support": "PC-459 提升 6.6%、PC-59 提升 4.7%（ViT-B/16，对比 SAN）；Potsdam 44.8 vs CAT-Seg 42.7。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "用层级几何解释并改进 CLIP 迁移，兼顾泛化与参数效率。"
+   }
+  },
+  {
+   "id": "2609.24226",
+   "version": 1,
+   "title": "SRPR-Net: Semantic and Relational Prompt Refinement for Automated SAM-based Instance Segmentation",
+   "abstract": "语义加关系提示精修 SAM 框提示，实例分割 mAP 累计提升约 4 点。",
+   "authors": [],
+   "published": "2026-09-23T04:00:00.000Z",
+   "updated": "2026-09-23T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.24226",
+   "pdf": "https://arxiv.org/pdf/2609.24226",
+   "announceType": "new",
+   "summary": "语义加关系提示精修 SAM 框提示，实例分割 mAP 累计提升约 4 点。",
+   "topic": "视觉基础模型 / SAM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.24226"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "提示质量是 SAM 落地瓶颈，该法免重训即提升密集场景。",
+   "repository": null,
+   "motivation": "SAM 自动化提示缺乏语义引导与实例间依赖建模。",
+   "coreProblem": "框提示只有坐标与置信度，无全局视觉上下文，且逐实例独立精修。",
+   "contributions": [
+    "提出 SRPR-Net 自动化 SAM 实例分割框架",
+    "顺序精修：先注入 CLIP 视觉-语言语义，再建模实例依赖",
+    "输出分割导向的框偏移量供 SAM 使用"
+   ],
+   "innovations": [
+    "把冻结 CLIP 的全局视觉与类别文本特征引入实例 token",
+    "用 Transformer 建模同图实例间依赖，替代独立精修",
+    "精修与分割解耦，可插拔到任意检测器加 SAM 组合"
+   ],
+   "method": "检测器框先做语义增强，再由关系模块预测每个实例的框调整参数，最后送入冻结 SAM 出掩码。",
+   "results": "CLIP 语义增强带来 +2.87 mAP、+7.58 AP75；关系精修再增 +1.08 mAP、+2.05 AP75。",
+   "value": "提示质量是 SAM 落地瓶颈，该法免重训即提升密集场景。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 SRPR-Net 自动化 SAM 实例分割框架",
+    "agentChange": "检测器框先做语义增强，再由关系模块预测每个实例的框调整参数，最后送入冻结 SAM 出掩码。",
+    "selfEvolution": null,
+    "evidence": [
+     "CLIP 语义增强带来 +2.87 mAP、+7.58 AP75；关系精修再增 +1.08 mAP、+2.05 AP75。",
+     "用 Transformer 建模同图实例间依赖，替代独立精修",
+     "精修与分割解耦，可插拔到任意检测器加 SAM 组合"
+    ],
+    "faq": {
+     "problem": "语义加关系提示精修 SAM 框提示，实例分割 mAP 累计提升约 4 点。",
+     "mechanism": "检测器框先做语义增强，再由关系模块预测每个实例的框调整参数，最后送入冻结 SAM 出掩码。",
+     "agentChange": "检测器框先做语义增强，再由关系模块预测每个实例的框调整参数，最后送入冻结 SAM 出掩码。",
+     "support": "CLIP 语义增强带来 +2.87 mAP、+7.58 AP75；关系精修再增 +1.08 mAP、+2.05 AP75。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "提示质量是 SAM 落地瓶颈，该法免重训即提升密集场景。"
+   }
+  },
+  {
+   "id": "2609.23808",
+   "version": 1,
+   "title": "FLARE: A Full-Lifecycle Dense Supervision Paradigm for Long-Horizon Coding Agents via Generative Reward Model",
+   "abstract": "生成式奖励模型给出步级稠密监督，长程编码 Agent 单分支超越 5 分支。",
+   "authors": [],
+   "published": "2026-09-23T04:00:00.000Z",
+   "updated": "2026-09-23T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.23808",
+   "pdf": "https://arxiv.org/pdf/2609.23808",
+   "announceType": "new",
+   "summary": "生成式奖励模型给出步级稠密监督，长程编码 Agent 单分支超越 5 分支。",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.23808"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把失败轨迹转为监督信号，缓解长程 Agent 稀疏奖励瓶颈。",
+   "repository": null,
+   "motivation": "SWE 任务只有 Pass/Fail 二元奖励，信用分配危机严重。",
+   "coreProblem": "轨迹优化靠启发式状态复用或延迟标量打分，无法在线定位首次偏离。",
+   "contributions": [
+    "提出 FLARE 全生命周期稠密监督范式",
+    "RADAR 用因果链回溯蒸馏轻量生成式奖励模型 GRM",
+    "推理期截断高风险步局部重跑，训练期复用同一信号"
+   ],
+   "innovations": [
+    "用因果链回溯提取无后见之明的步级监督",
+    "同一 GRM 兼顾推理干预与训练奖励，无需两套系统",
+    "单分支即超过 5 分支全局重采样，token 消耗降 5 倍"
+   ],
+   "method": "离线训练 GRM 输出步级风险，推理时中断高风险生成并局部重跑，训练时作稠密奖励。",
+   "results": "四个 SWE 基准 SFT 提升 19.13%、RL 平均提升 9.19%；token 消耗降 5 倍。",
+   "value": "把失败轨迹转为监督信号，缓解长程 Agent 稀疏奖励瓶颈。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 FLARE 全生命周期稠密监督范式",
+    "agentChange": "离线训练 GRM 输出步级风险，推理时中断高风险生成并局部重跑，训练时作稠密奖励。",
+    "selfEvolution": null,
+    "evidence": [
+     "四个 SWE 基准 SFT 提升 19.13%、RL 平均提升 9.19%；token 消耗降 5 倍。",
+     "同一 GRM 兼顾推理干预与训练奖励，无需两套系统",
+     "单分支即超过 5 分支全局重采样，token 消耗降 5 倍"
+    ],
+    "faq": {
+     "problem": "生成式奖励模型给出步级稠密监督，长程编码 Agent 单分支超越 5 分支。",
+     "mechanism": "离线训练 GRM 输出步级风险，推理时中断高风险生成并局部重跑，训练时作稠密奖励。",
+     "agentChange": "离线训练 GRM 输出步级风险，推理时中断高风险生成并局部重跑，训练时作稠密奖励。",
+     "support": "四个 SWE 基准 SFT 提升 19.13%、RL 平均提升 9.19%；token 消耗降 5 倍。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "把失败轨迹转为监督信号，缓解长程 Agent 稀疏奖励瓶颈。"
+   }
+  },
+  {
+   "id": "2609.24259",
+   "version": 1,
+   "title": "MemCalib: Benchmarking and Optimizing Memory Use in LLM Agents",
+   "abstract": "首个 Agent 记忆使用标定基准，MemCalib-RL 双向纠偏 SCS 最高 +7.29。",
+   "authors": [],
+   "published": "2026-09-23T04:00:00.000Z",
+   "updated": "2026-09-23T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.24259",
+   "pdf": "https://arxiv.org/pdf/2609.24259",
+   "announceType": "new",
+   "summary": "首个 Agent 记忆使用标定基准，MemCalib-RL 双向纠偏 SCS 最高 +7.29。",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.24259"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让 Agent 记忆从\"检索更多\"转向\"用得更准\"。",
+   "repository": null,
+   "motivation": "记忆系统效果取决于模型是否给每条记忆恰当影响力。",
+   "coreProblem": "现有评测只看检索质量，忽略模型过度使用或欠使用记忆导致的偏见。",
+   "contributions": [
+    "提出 MemCalib 基准，覆盖真实记忆系统场景",
+    "定义 Ignore/Bound/Control 三级目标影响力标签",
+    "提出 MemCalib-RL 有序双向反事实信用分配算法"
+   ],
+   "innovations": [
+    "首次把\"记忆使用度\"当作可评测、可优化的独立能力",
+    "揭示 GRPO/OPSD 存在\"校准跷跷板\"：单向改善、反向恶化",
+    "用原子级消融把过度/欠使用信用精确定位到响应 token"
+   ],
+   "method": "以精确原子消融分离过度与欠使用信号，按序双向把信用分配到 token 后再做策略优化。",
+   "results": "Qwen3-8B / Ministral-3-8B / Qwen3.5-35B-A3B 上 SCS 提升 1.73–7.29、Exact 提升 0.87–9.98；外部 RPEval 免训练亦最佳。",
+   "value": "让 Agent 记忆从\"检索更多\"转向\"用得更准\"。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 MemCalib 基准，覆盖真实记忆系统场景",
+    "agentChange": "以精确原子消融分离过度与欠使用信号，按序双向把信用分配到 token 后再做策略优化。",
+    "selfEvolution": null,
+    "evidence": [
+     "Qwen3-8B / Ministral-3-8B / Qwen3.5-35B-A3B 上 SCS 提升 1.73–7.29、Exact 提升 0.87–9.98；外部 RPEval 免训练亦最佳。",
+     "揭示 GRPO/OPSD 存在\"校准跷跷板\"：单向改善、反向恶化",
+     "用原子级消融把过度/欠使用信用精确定位到响应 token"
+    ],
+    "faq": {
+     "problem": "首个 Agent 记忆使用标定基准，MemCalib-RL 双向纠偏 SCS 最高 +7.29。",
+     "mechanism": "以精确原子消融分离过度与欠使用信号，按序双向把信用分配到 token 后再做策略优化。",
+     "agentChange": "以精确原子消融分离过度与欠使用信号，按序双向把信用分配到 token 后再做策略优化。",
+     "support": "Qwen3-8B / Ministral-3-8B / Qwen3.5-35B-A3B 上 SCS 提升 1.73–7.29、Exact 提升 0.87–9.98；外部 RPEval 免训练亦最佳。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "让 Agent 记忆从\"检索更多\"转向\"用得更准\"。"
+   }
+  },
+  {
+   "id": "2609.24487",
+   "version": 1,
+   "title": "AgentSTAR: Agentic Shape Tracking and Reconstruction from Monocular Videos",
+   "abstract": "VLM Agent 渲染-比较闭环，单目视频 3D 跟踪误差降至 5.59 cm。",
+   "authors": [],
+   "published": "2026-09-23T04:00:00.000Z",
+   "updated": "2026-09-23T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.24487",
+   "pdf": "https://arxiv.org/pdf/2609.24487",
+   "announceType": "new",
+   "summary": "VLM Agent 渲染-比较闭环，单目视频 3D 跟踪误差降至 5.59 cm。",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.24487"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "输出可进仿真器的物体模型，服务机器人操纵与交互。",
+   "repository": null,
+   "motivation": "先估稠密对应再推物体运动的路线，遮挡下脆弱且表示无结构。",
+   "coreProblem": "点轨迹只说明视觉证据如何移动，不含部件、关节与状态变量。",
+   "contributions": [
+    "提出 AgentSTAR 智能体式分析-合成跟踪框架",
+    "VLM Agent 迭代精修形状与广义位姿的渲染-比较闭环",
+    "序列级位姿估计消除对称物体的帧间跳变"
+   ],
+   "innovations": [
+    "由\"点如何动\"转为\"哪个结构化 3D 物体生成了视频\"",
+    "把稠密点运动估计压缩为基座位姿加关节状态的紧凑估计",
+    "结构与运动联合重建，可导出可直接仿真的显式物体模型"
+   ],
+   "method": "VLM Agent 在渲染-比较循环中用视觉推理粗调、数值优化精修，联合拟合形状与逐帧位姿。",
+   "results": "ARCTIC 上 3D EPE 5.59 cm（V-DPM 7.65 cm，降约 27%）；几何 Chamfer 3.36 vs 4.72 cm。",
+   "value": "输出可进仿真器的物体模型，服务机器人操纵与交互。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 AgentSTAR 智能体式分析-合成跟踪框架",
+    "agentChange": "VLM Agent 在渲染-比较循环中用视觉推理粗调、数值优化精修，联合拟合形状与逐帧位姿。",
+    "selfEvolution": null,
+    "evidence": [
+     "ARCTIC 上 3D EPE 5.59 cm（V-DPM 7.65 cm，降约 27%）；几何 Chamfer 3.36 vs 4.72 cm。",
+     "把稠密点运动估计压缩为基座位姿加关节状态的紧凑估计",
+     "结构与运动联合重建，可导出可直接仿真的显式物体模型"
+    ],
+    "faq": {
+     "problem": "VLM Agent 渲染-比较闭环，单目视频 3D 跟踪误差降至 5.59 cm。",
+     "mechanism": "VLM Agent 在渲染-比较循环中用视觉推理粗调、数值优化精修，联合拟合形状与逐帧位姿。",
+     "agentChange": "VLM Agent 在渲染-比较循环中用视觉推理粗调、数值优化精修，联合拟合形状与逐帧位姿。",
+     "support": "ARCTIC 上 3D EPE 5.59 cm（V-DPM 7.65 cm，降约 27%）；几何 Chamfer 3.36 vs 4.72 cm。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "输出可进仿真器的物体模型，服务机器人操纵与交互。"
+   }
+  },
+  {
+   "id": "2609.24875",
+   "version": 1,
+   "title": "SPHQuant: Efficient extreme low bit weight quantization for Vision-Language Models",
+   "abstract": "球坐标权重量化免除旋转开销，2/3-bit VLM 解码吞吐高 30.3%。",
+   "authors": [],
+   "published": "2026-09-23T04:00:00.000Z",
+   "updated": "2026-09-23T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.24875",
+   "pdf": "https://arxiv.org/pdf/2609.24875",
+   "announceType": "new",
+   "summary": "球坐标权重量化免除旋转开销，2/3-bit VLM 解码吞吐高 30.3%。",
+   "topic": "多模态 / 高效推理",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.24875"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让 2–3 bit VLM 精度不降地部署到边缘。",
+   "repository": null,
+   "motivation": "VLM 边缘部署受显存与访存受限解码制约。",
+   "coreProblem": "免旋转法 2–3 bit 受离群值拖累，旋转法精度好但开销大。",
+   "contributions": [
+    "提出 SPHQuant 免旋转球面权重量化框架",
+    "将 8 维权重分解为符号、半径与单位方向"
+   ],
+   "innovations": [
+    "离群值幅度隔离到半径、方向有界，替代旋转去相关",
+    "给半径额外分配比特，补偿离群值造成的精度损失",
+    "8 维码本可入 SM 共享内存，规避旋转开销"
+   ],
+   "method": "球坐标下分别量化方向与半径，角度参数化微调维持单位球约束。",
+   "results": "MMMU-Pro 长推理 W2 53.1 vs QTIP 52.7、W3 61.9 vs 61.2；A6000 吞吐高 30.3%。",
+   "value": "让 2–3 bit VLM 精度不降地部署到边缘。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-09-23T21:30:10.000Z",
+    "keyContribution": "提出 SPHQuant 免旋转球面权重量化框架",
+    "agentChange": "球坐标下分别量化方向与半径，角度参数化微调维持单位球约束。",
+    "selfEvolution": null,
+    "evidence": [
+     "MMMU-Pro 长推理 W2 53.1 vs QTIP 52.7、W3 61.9 vs 61.2；A6000 吞吐高 30.3%。",
+     "给半径额外分配比特，补偿离群值造成的精度损失",
+     "8 维码本可入 SM 共享内存，规避旋转开销"
+    ],
+    "faq": {
+     "problem": "球坐标权重量化免除旋转开销，2/3-bit VLM 解码吞吐高 30.3%。",
+     "mechanism": "球坐标下分别量化方向与半径，角度参数化微调维持单位球约束。",
+     "agentChange": "球坐标下分别量化方向与半径，角度参数化微调维持单位球约束。",
+     "support": "MMMU-Pro 长推理 W2 53.1 vs QTIP 52.7、W3 61.9 vs 61.2；A6000 吞吐高 30.3%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "让 2–3 bit VLM 精度不降地部署到边缘。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-09-22",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-09-22 快照比较"
+ },
+ "sourceUpdatedAt": "2026-09-23T21:30:10.000Z",
+ "latestPaperAt": "2026-09-23T04:00:00.000Z",
+ "totalMatched": 12,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 12
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 35,
+ "trends": {
+  "status": "accumulating",
+  "days": 35,
+  "minimumDays": 15,
+  "message": "已积累 35/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-09-23T21:30:10.000Z",
+ "snapshotDay": "2026-09-23",
+ "historical": true
+}
