@@ -1,0 +1,1041 @@
+{
+ "papers": [
+  {
+   "id": "2610.01870",
+   "version": 1,
+   "title": "From Pixels to Policy: A Multi-Agent System for Intervention and Geo-Spatial Decision Support",
+   "abstract": "多智能体生成政策对齐的城市干预编辑，8 任务中 7 个 LLM 评审分最高",
+   "authors": [],
+   "published": "2026-10-02T04:00:00.000Z",
+   "updated": "2026-10-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.01870",
+   "pdf": "https://arxiv.org/pdf/2610.01870",
+   "announceType": "new",
+   "summary": "多智能体生成政策对齐的城市干预编辑，8 任务中 7 个 LLM 评审分最高",
+   "topic": "遥感 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.01870"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "无需昂贵城市仿真即可试错干预方案，支持规划师在环决策",
+   "repository": null,
+   "motivation": "城市干预评估昂贵耗时，地理空间视觉模型只监测、不提出干预",
+   "coreProblem": "数字孪生需昂贵数据仿真且仅限特定干预；反事实编辑只追分数、输出不可落地",
+   "contributions": [
+    "提出\"视觉干预决策支持\"新问题：从图像发现能提升指标的干预",
+    "构建航拍+街景 8 指标干预基准与双轴（感知质量/政策对齐）评测",
+    "提出 VIDA-Geo：规划/政策/分割/生成四智能体闭环+隐式数字孪生"
+   ],
+   "innovations": [
+    "首次将指标监测模型+生成编辑模型组合定义为隐式数字孪生",
+    "产出目标是真实世界可执行的城市干预，而非反事实解释",
+    "LLM 政策约束注入重绘并做区域 QC，不同于纯提示词调节"
+   ],
+   "method": "规划智能体定位 ROI，政策智能体划分自由/受限/跳过区域，扩散模型做 mask 引导重绘，黑盒指标模型按 delta 打分，多 epoch 记忆避免重复失败策略。",
+   "results": "自建 8 指标基准（每任务 100 图）：7/8 任务 LLM 评审第一；Safety 70.1 vs URSimulator 49.6（+20pp）；Greenery 视觉质量 72.2 vs 26.1（约 2.8x）；消融去 Policy 限制器 77.7→65.0。",
+   "value": "无需昂贵城市仿真即可试错干预方案，支持规划师在环决策",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "提出\"视觉干预决策支持\"新问题：从图像发现能提升指标的干预",
+    "agentChange": "规划智能体定位 ROI，政策智能体划分自由/受限/跳过区域，扩散模型做 mask 引导重绘，黑盒指标模型按 delta 打分，多 epoch 记忆避免重复失败策略。",
+    "selfEvolution": null,
+    "evidence": [
+     "自建 8 指标基准（每任务 100 图）：7/8 任务 LLM 评审第一；Safety 70.1 vs URSimulator 49.6（+20pp）；Greenery 视觉质量 72.2 vs 26.1（约 2.8x）；消融去 Policy 限制器 77.7→65.0。",
+     "产出目标是真实世界可执行的城市干预，而非反事实解释",
+     "LLM 政策约束注入重绘并做区域 QC，不同于纯提示词调节"
+    ],
+    "faq": {
+     "problem": "多智能体生成政策对齐的城市干预编辑，8 任务中 7 个 LLM 评审分最高",
+     "mechanism": "规划智能体定位 ROI，政策智能体划分自由/受限/跳过区域，扩散模型做 mask 引导重绘，黑盒指标模型按 delta 打分，多 epoch 记忆避免重复失败策略。",
+     "agentChange": "规划智能体定位 ROI，政策智能体划分自由/受限/跳过区域，扩散模型做 mask 引导重绘，黑盒指标模型按 delta 打分，多 epoch 记忆避免重复失败策略。",
+     "support": "自建 8 指标基准（每任务 100 图）：7/8 任务 LLM 评审第一；Safety 70.1 vs URSimulator 49.6（+20pp）；Greenery 视觉质量 72.2 vs 26.1（约 2.8x）；消融去 Policy 限制器 77.7→65.0。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "无需昂贵城市仿真即可试错干预方案，支持规划师在环决策"
+   }
+  },
+  {
+   "id": "2610.01569",
+   "version": 1,
+   "title": "Managing Context and Communication in Distributed Agentic UAV Swarms",
+   "abstract": "全分布式 SLM 无人机蜂群架构，任务 100% 完成、token 消耗减半",
+   "authors": [],
+   "published": "2026-10-02T04:00:00.000Z",
+   "updated": "2026-10-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.01569",
+   "pdf": "https://arxiv.org/pdf/2610.01569",
+   "announceType": "new",
+   "summary": "全分布式 SLM 无人机蜂群架构，任务 100% 完成、token 消耗减半",
+   "topic": "遥感 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.01569"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明全智能体化分布式蜂群控制可行，选择性分发是低开销关键",
+   "repository": null,
+   "motivation": "分布式 LLM 无人机蜂群无中央协调，长历史致上下文退化、泛洪转发冗余",
+   "coreProblem": "长程本地知识如何组织与选择性分发，在完全分布式架构中未被解决",
+   "contributions": [
+    "事件驱动 reason-act-observe 全分布式智能体生命周期，无中央协调",
+    "token 有界原子注记记忆：核心/本地/邻域三级队列",
+    "确定性兴趣感知 gossip 引擎：语义新颖度+时效性三档转发"
+   ],
+   "innovations": [
+    "转发决策由嵌入新颖度确定性计算，零额外 SLM 调用",
+    "按接收者视角估计新颖度，扣除标签均值去除词汇偏置",
+    "集成分布式 SLM 控制+语义记忆+选择性分发，已有工作三者割裂"
+   ],
+   "method": "每架无人机 SLM 本地决策，交互凝练为原子注记入有界队列；gossip 引擎按邻居视角以相似度×时效衰减算新颖度，固定阈值（0.15/0.66）决定丢弃/压缩/全量转发。",
+   "results": "10 架 ArduPilot SITL 搜救（Gemma 4 26B A4B）：完成率 100% vs 泛洪 70–85% / SLM 转发 0%；推理 token 降 44–51%；传输量 0.11–0.42MB vs 6–7MB；20 人场景计数误差 0.85 vs 1.45。",
+   "value": "证明全智能体化分布式蜂群控制可行，选择性分发是低开销关键",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "事件驱动 reason-act-observe 全分布式智能体生命周期，无中央协调",
+    "agentChange": "每架无人机 SLM 本地决策，交互凝练为原子注记入有界队列；gossip 引擎按邻居视角以相似度×时效衰减算新颖度，固定阈值（0.15/0.66）决定丢弃/压缩/全量转发。",
+    "selfEvolution": null,
+    "evidence": [
+     "10 架 ArduPilot SITL 搜救（Gemma 4 26B A4B）：完成率 100% vs 泛洪 70–85% / SLM 转发 0%；推理 token 降 44–51%；传输量 0.11–0.42MB vs 6–7MB；20 人场景计数误差 0.85 vs 1.45。",
+     "按接收者视角估计新颖度，扣除标签均值去除词汇偏置",
+     "集成分布式 SLM 控制+语义记忆+选择性分发，已有工作三者割裂"
+    ],
+    "faq": {
+     "problem": "全分布式 SLM 无人机蜂群架构，任务 100% 完成、token 消耗减半",
+     "mechanism": "每架无人机 SLM 本地决策，交互凝练为原子注记入有界队列；gossip 引擎按邻居视角以相似度×时效衰减算新颖度，固定阈值（0.15/0.66）决定丢弃/压缩/全量转发。",
+     "agentChange": "每架无人机 SLM 本地决策，交互凝练为原子注记入有界队列；gossip 引擎按邻居视角以相似度×时效衰减算新颖度，固定阈值（0.15/0.66）决定丢弃/压缩/全量转发。",
+     "support": "10 架 ArduPilot SITL 搜救（Gemma 4 26B A4B）：完成率 100% vs 泛洪 70–85% / SLM 转发 0%；推理 token 降 44–51%；传输量 0.11–0.42MB vs 6–7MB；20 人场景计数误差 0.85 vs 1.45。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "证明全智能体化分布式蜂群控制可行，选择性分发是低开销关键"
+   }
+  },
+  {
+   "id": "2610.01614",
+   "version": 1,
+   "title": "Oneira: From Open-Ended Generation to Open-World Interaction in Video World Models",
+   "abstract": "编码智能体维护可扩展世界状态，新对象可交互、状态持久，交互率 0.78",
+   "authors": [],
+   "published": "2026-10-02T04:00:00.000Z",
+   "updated": "2026-10-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.01614",
+   "pdf": "https://arxiv.org/pdf/2610.01614",
+   "announceType": "new",
+   "summary": "编码智能体维护可扩展世界状态，新对象可交互、状态持久，交互率 0.78",
+   "topic": "计算机视觉 / 世界模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.01614"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "首次让生成世界的交互空间随内容扩展且改变持久，给出闭环范式",
+   "repository": null,
+   "motivation": "视频世界模型能生成开放世界，但新生成内容不可交互、改变不持久",
+   "coreProblem": "状态隐式存于像素/隐上下文，新对象不可操作、交互结果随段消失",
+   "contributions": [
+    "提出 Oneira：编码智能体维护显式可扩展世界状态表，闭环生成与交互",
+    "设计状态表+粗条件视频接口，实现实例级交互与跨段状态持久",
+    "构建约 10K 片段训练管线，视频与相机路径/状态表对齐"
+   ],
+   "innovations": [
+    "状态表随探索扩展：新对象注册为可交互实体，交互空间同步增长",
+    "交互结果显式写回状态表并跨段携带，成为持久世界状态",
+    "状态表示类别无关，可泛化到未见新物体类别"
+   ],
+   "method": "编码智能体读状态表、把动作 grounding 到实例并规划交互写回结果；感知模型从生成帧注册新对象；状态沿相机轨迹渲染为粗条件视频，视频生成器补全外观运动。",
+   "results": "自建 InteractionBench（100 交互+50 记忆链）：Interaction 0.78 vs 最佳基线 0.49；记忆 PSNR 21.11dB vs 次优 10.96（+93%）、SSIM 0.64 vs 0.35；VBench 整体一致性较最强基线 +8.58%。",
+   "value": "首次让生成世界的交互空间随内容扩展且改变持久，给出闭环范式",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "提出 Oneira：编码智能体维护显式可扩展世界状态表，闭环生成与交互",
+    "agentChange": "编码智能体读状态表、把动作 grounding 到实例并规划交互写回结果；感知模型从生成帧注册新对象；状态沿相机轨迹渲染为粗条件视频，视频生成器补全外观运动。",
+    "selfEvolution": null,
+    "evidence": [
+     "自建 InteractionBench（100 交互+50 记忆链）：Interaction 0.78 vs 最佳基线 0.49；记忆 PSNR 21.11dB vs 次优 10.96（+93%）、SSIM 0.64 vs 0.35；VBench 整体一致性较最强基线 +8.58%。",
+     "交互结果显式写回状态表并跨段携带，成为持久世界状态",
+     "状态表示类别无关，可泛化到未见新物体类别"
+    ],
+    "faq": {
+     "problem": "编码智能体维护可扩展世界状态，新对象可交互、状态持久，交互率 0.78",
+     "mechanism": "编码智能体读状态表、把动作 grounding 到实例并规划交互写回结果；感知模型从生成帧注册新对象；状态沿相机轨迹渲染为粗条件视频，视频生成器补全外观运动。",
+     "agentChange": "编码智能体读状态表、把动作 grounding 到实例并规划交互写回结果；感知模型从生成帧注册新对象；状态沿相机轨迹渲染为粗条件视频，视频生成器补全外观运动。",
+     "support": "自建 InteractionBench（100 交互+50 记忆链）：Interaction 0.78 vs 最佳基线 0.49；记忆 PSNR 21.11dB vs 次优 10.96（+93%）、SSIM 0.64 vs 0.35；VBench 整体一致性较最强基线 +8.58%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "首次让生成世界的交互空间随内容扩展且改变持久，给出闭环范式"
+   }
+  },
+  {
+   "id": "2610.01019",
+   "version": 1,
+   "title": "FutureWorlds: Learning Robotic World Models from Alternative Futures",
+   "abstract": "从自生成备选未来的相对质量学机器人世界模型，32 帧 LPIPS 最高降 20.84%",
+   "authors": [],
+   "published": "2026-10-02T04:00:00.000Z",
+   "updated": "2026-10-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.01019",
+   "pdf": "https://arxiv.org/pdf/2610.01019",
+   "announceType": "new",
+   "summary": "从自生成备选未来的相对质量学机器人世界模型，32 帧 LPIPS 最高降 20.84%",
+   "topic": "计算机视觉 / 世界模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.01019"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把世界模型自身预测差异变成学习信号，低成本后训练提升预测",
+   "repository": null,
+   "motivation": "备选未来预测的差异可作自监督信号，但难以转化为有效学习反馈",
+   "coreProblem": "监督训练依赖真值历史致误差累积；现有 RL 候选趋同、历史与评分错配",
+   "contributions": [
+    "提出 FutureWorlds：统一候选构造、历史维护与相对质量学习",
+    "提出 MemSPO：候选分支专属记忆+GRPO 式组相对优势后训练",
+    "系统评估生成质量、长时程预测、记忆与运动一致性"
+   ],
+   "innovations": [
+    "不依赖真值历史，以自生成候选未来及其相对质量作训练信号",
+    "记忆按候选分支专属，生成与评分共享历史，避免条件错配",
+    "多候选组相对优势转为梯度，附候选坍缩理论界"
+   ],
+   "method": "多模态离散自回归模型（FSQ 分词器+冻结 T5）SFT 动作条件视频预测；多样束搜索生成候选未来，有界记忆维护各分支历史，MemSPO 用 MAE+LPIPS 奖励计算组相对优势更新世界模型。",
+   "results": "32 帧预测（每数据集 128 条留出轨迹）：RT-1/BridgeV2/RoboCasa LPIPS 较最强基线降 14.78%/20.84%/9.12%；200 次 MemSPO 更新后再降 9.98%/1.58%/2.17%；光流误差较 SFT 降 12.40%/4.57%/16.68%。",
+   "value": "把世界模型自身预测差异变成学习信号，低成本后训练提升预测",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "提出 FutureWorlds：统一候选构造、历史维护与相对质量学习",
+    "agentChange": "多模态离散自回归模型（FSQ 分词器+冻结 T5）SFT 动作条件视频预测；多样束搜索生成候选未来，有界记忆维护各分支历史，MemSPO 用 MAE+LPIPS 奖励计算组相对优势更新世界模型。",
+    "selfEvolution": null,
+    "evidence": [
+     "32 帧预测（每数据集 128 条留出轨迹）：RT-1/BridgeV2/RoboCasa LPIPS 较最强基线降 14.78%/20.84%/9.12%；200 次 MemSPO 更新后再降 9.98%/1.58%/2.17%；光流误差较 SFT 降 12.40%/4.57%/16.68%。",
+     "记忆按候选分支专属，生成与评分共享历史，避免条件错配",
+     "多候选组相对优势转为梯度，附候选坍缩理论界"
+    ],
+    "faq": {
+     "problem": "从自生成备选未来的相对质量学机器人世界模型，32 帧 LPIPS 最高降 20.84%",
+     "mechanism": "多模态离散自回归模型（FSQ 分词器+冻结 T5）SFT 动作条件视频预测；多样束搜索生成候选未来，有界记忆维护各分支历史，MemSPO 用 MAE+LPIPS 奖励计算组相对优势更新世界模型。",
+     "agentChange": "多模态离散自回归模型（FSQ 分词器+冻结 T5）SFT 动作条件视频预测；多样束搜索生成候选未来，有界记忆维护各分支历史，MemSPO 用 MAE+LPIPS 奖励计算组相对优势更新世界模型。",
+     "support": "32 帧预测（每数据集 128 条留出轨迹）：RT-1/BridgeV2/RoboCasa LPIPS 较最强基线降 14.78%/20.84%/9.12%；200 次 MemSPO 更新后再降 9.98%/1.58%/2.17%；光流误差较 SFT 降 12.40%/4.57%/16.68%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "把世界模型自身预测差异变成学习信号，低成本后训练提升预测"
+   }
+  },
+  {
+   "id": "2610.01098",
+   "version": 1,
+   "title": "MVDG: Efficient Multi-view 3D Disambiguation on Unconstrained Real-World Images",
+   "abstract": "单遍多视图 3D 消歧，精度 0.9503，SfM 运行时降约 40%",
+   "authors": [],
+   "published": "2026-10-02T04:00:00.000Z",
+   "updated": "2026-10-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.01098",
+   "pdf": "https://arxiv.org/pdf/2610.01098",
+   "announceType": "new",
+   "summary": "单遍多视图 3D 消歧，精度 0.9503，SfM 运行时降约 40%",
+   "topic": "计算机视觉 / 3D 理解与基础模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.01098"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "降低大规模野外重建/定位中重复纹理误匹配的精度与算力开销",
+   "repository": null,
+   "motivation": "重复纹理使不同视点的相似表面被误匹配，阻碍野外 3D 重建",
+   "coreProblem": "pairwise 分类器仅用两图证据、无跨视图推理，SfM 需 O(n²) 枚举",
+   "contributions": [
+    "基于 VGGT 的单遍多视图消歧框架+伪成对数据增广",
+    "建立精度–inlier 比预测关系，免全量 SfM 即可验证",
+    "置信早退门控，SfM 评估运行时降低约 40%"
+   ],
+   "innovations": [
+    "单遍联合编码任意数量视图，替代 O(n²) 成对枚举",
+    "以 3D 共视率派生伪标签，破解噪声监督下微调不稳",
+    "难度自适应层深：易对浅层早退、难对深层推理"
+   ],
+   "method": "冻结 VGGT 单遍编码全部视图，逐层 DPT 解码描述子，对称成对特征经 MLP 判共视；置信头预测与满深一致性，≥0.8 早退；用 AerialMegaDepth 共视率 ρ≥0.4 构造伪成对标签稳定微调。",
+   "results": "VisymScenes Acc 0.9441 vs DG++ 0.9355，早退时 0.9503；推理 103.92ms vs 165ms（快 37%）；AerialMegaDepth SfM Big Ben AUC@10 0.511→0.747；伪成对微调平移误差 2581→449。",
+   "value": "降低大规模野外重建/定位中重复纹理误匹配的精度与算力开销",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "基于 VGGT 的单遍多视图消歧框架+伪成对数据增广",
+    "agentChange": "冻结 VGGT 单遍编码全部视图，逐层 DPT 解码描述子，对称成对特征经 MLP 判共视；置信头预测与满深一致性，≥0.8 早退；用 AerialMegaDepth 共视率 ρ≥0.4 构造伪成对标签稳定微调。",
+    "selfEvolution": null,
+    "evidence": [
+     "VisymScenes Acc 0.9441 vs DG++ 0.9355，早退时 0.9503；推理 103.92ms vs 165ms（快 37%）；AerialMegaDepth SfM Big Ben AUC@10 0.511→0.747；伪成对微调平移误差 2581→449。",
+     "以 3D 共视率派生伪标签，破解噪声监督下微调不稳",
+     "难度自适应层深：易对浅层早退、难对深层推理"
+    ],
+    "faq": {
+     "problem": "单遍多视图 3D 消歧，精度 0.9503，SfM 运行时降约 40%",
+     "mechanism": "冻结 VGGT 单遍编码全部视图，逐层 DPT 解码描述子，对称成对特征经 MLP 判共视；置信头预测与满深一致性，≥0.8 早退；用 AerialMegaDepth 共视率 ρ≥0.4 构造伪成对标签稳定微调。",
+     "agentChange": "冻结 VGGT 单遍编码全部视图，逐层 DPT 解码描述子，对称成对特征经 MLP 判共视；置信头预测与满深一致性，≥0.8 早退；用 AerialMegaDepth 共视率 ρ≥0.4 构造伪成对标签稳定微调。",
+     "support": "VisymScenes Acc 0.9441 vs DG++ 0.9355，早退时 0.9503；推理 103.92ms vs 165ms（快 37%）；AerialMegaDepth SfM Big Ben AUC@10 0.511→0.747；伪成对微调平移误差 2581→449。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "降低大规模野外重建/定位中重复纹理误匹配的精度与算力开销"
+   }
+  },
+  {
+   "id": "2610.02021",
+   "version": 1,
+   "title": "Task-Adaptive Grounded 3D-Programmers Using 2D VLMs",
+   "abstract": "免训练框架让 2D VLM 编程 3D 资产，轴误差 90°→0.6°，超 3D VLM",
+   "authors": [],
+   "published": "2026-10-02T04:00:00.000Z",
+   "updated": "2026-10-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.02021",
+   "pdf": "https://arxiv.org/pdf/2610.02021",
+   "announceType": "new",
+   "summary": "免训练框架让 2D VLM 编程 3D 资产，轴误差 90°→0.6°，超 3D VLM",
+   "topic": "计算机视觉 / 3D 理解与基础模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.02021"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "无需训练或架构改动，即可复用强 2D VLM 语义做可靠 3D 操作",
+   "repository": null,
+   "motivation": "2D VLM 语义强但缺 3D 度量感知，3D VLM 受数据规模与多样性限制",
+   "coreProblem": "直接提示 2D VLM 产生轴歧义、度量尺度不一、参考系漂浮的不稳定预测",
+   "contributions": [
+    "CCF：输入输出锚定共享欧氏坐标系，消除轴歧义与尺度不一致",
+    "TAF：任务自适应反馈闭环，VLM 自写分析代码迭代修正 3D 资产",
+    "3D-Prog：免训练框架统一 3D 理解、操作与生成，输出 USD 程序"
+   ],
+   "innovations": [
+    "带可见轴与度量标尺的正交渲染做视觉度量接地，而非训练 3D 感知",
+    "把 Python 执行环境当推理草稿空间，按需生成诊断可视化反馈",
+    "USD 代码作统一输出，免训练同时覆盖理解与生成"
+   ],
+   "method": "3D 资产渲染为 6 个带可见轴/标尺/固定原点的正交视图，VLM 生成 USD 操作与分析代码在 Python 执行，Judge VLM 对比渲染给诊断反馈，迭代修正（平均 11 轮、每轮约 22s）。",
+   "results": "对象补全 Chamfer 0.16/0.19 vs 最佳 2D 基线 0.51（约 2.7x）；检测 mAP 0.38 vs 0.16；运动轴误差 0.64° vs 基线 86.6–90°；对 3D VLM GaussianVLM：SQA3D 60% vs 50%；消融去 CCF 检测 mAP 0.38→0.01。",
+   "value": "无需训练或架构改动，即可复用强 2D VLM 语义做可靠 3D 操作",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "CCF：输入输出锚定共享欧氏坐标系，消除轴歧义与尺度不一致",
+    "agentChange": "3D 资产渲染为 6 个带可见轴/标尺/固定原点的正交视图，VLM 生成 USD 操作与分析代码在 Python 执行，Judge VLM 对比渲染给诊断反馈，迭代修正（平均 11 轮、每轮约 22s）。",
+    "selfEvolution": null,
+    "evidence": [
+     "对象补全 Chamfer 0.16/0.19 vs 最佳 2D 基线 0.51（约 2.7x）；检测 mAP 0.38 vs 0.16；运动轴误差 0.64° vs 基线 86.6–90°；对 3D VLM GaussianVLM：SQA3D 60% vs 50%；消融去 CCF 检测 mAP 0.38→0.01。",
+     "把 Python 执行环境当推理草稿空间，按需生成诊断可视化反馈",
+     "USD 代码作统一输出，免训练同时覆盖理解与生成"
+    ],
+    "faq": {
+     "problem": "免训练框架让 2D VLM 编程 3D 资产，轴误差 90°→0.6°，超 3D VLM",
+     "mechanism": "3D 资产渲染为 6 个带可见轴/标尺/固定原点的正交视图，VLM 生成 USD 操作与分析代码在 Python 执行，Judge VLM 对比渲染给诊断反馈，迭代修正（平均 11 轮、每轮约 22s）。",
+     "agentChange": "3D 资产渲染为 6 个带可见轴/标尺/固定原点的正交视图，VLM 生成 USD 操作与分析代码在 Python 执行，Judge VLM 对比渲染给诊断反馈，迭代修正（平均 11 轮、每轮约 22s）。",
+     "support": "对象补全 Chamfer 0.16/0.19 vs 最佳 2D 基线 0.51（约 2.7x）；检测 mAP 0.38 vs 0.16；运动轴误差 0.64° vs 基线 86.6–90°；对 3D VLM GaussianVLM：SQA3D 60% vs 50%；消融去 CCF 检测 mAP 0.38→0.01。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "无需训练或架构改动，即可复用强 2D VLM 语义做可靠 3D 操作"
+   }
+  },
+  {
+   "id": "2610.01687",
+   "version": 1,
+   "title": "Architectural Sampling: Test-Time Scaling via Computational Diversity in Frozen Vision-Language Models",
+   "abstract": "冻结 VLM 复用层块做不同前向计算生成候选，9 候选 pass@9 平均 +6.58 点",
+   "authors": [],
+   "published": "2026-10-02T04:00:00.000Z",
+   "updated": "2026-10-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.01687",
+   "pdf": "https://arxiv.org/pdf/2610.01687",
+   "announceType": "new",
+   "summary": "冻结 VLM 复用层块做不同前向计算生成候选，9 候选 pass@9 平均 +6.58 点",
+   "topic": "计算机视觉 / 3D 理解与基础模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.01687"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "冻结权重不是天花板——计算图本身就是免费采样空间，零训练零参数",
+   "repository": null,
+   "motivation": "无微调的冻结 VLM 只能靠推理时额外计算榨取更多能力",
+   "coreProblem": "temperature 采样只扰动末段 token 抽样，候选全走同一计算路径",
+   "contributions": [
+    "免训练架构采样：复用解码层窗口为冻结 VLM 生成多样候选",
+    "5 个 Qwen 检查点×12 多模态基准，同预算 pass@9 平均 +6.58 点",
+    "架构候选作无标签测试时 RL rollout，精度进一步提升"
+   ],
+   "innovations": [
+    "把\"计算路径\"引入测试时采样轴，与 token 级随机性正交可叠加",
+    "每个复用配置即一个采样点，不同于层复用细化单一答案",
+    "多样性注入在上游计算而非末端抽取，区别于 temperature"
+   ],
+   "method": "每个候选选一段连续解码层窗口原地重复 r 次后恢复原前向，权重全冻结、零新增参数；4 窗口×深度{2,4}加标准路径构成 9 候选池，早期层复用增益最强。",
+   "results": "5 检查点×12 基准同 9 候选预算 pass@9 平均 +6.58 点（55/60 比较提升）；Qwen3-VL-8B 75.00→87.43、Qwen3.5-VL-4B 67.07→76.20；MMMU +12.43、MMStar +11.01、BLINK +9.28；多样性 1−Self-BLEU 0.51 vs temperature 0.22，同预算 MMStar 82.73 vs beam 52.60；作 TTRL rollout 再提 A-OKVQA +15.34（2B）。",
+   "value": "冻结权重不是天花板——计算图本身就是免费采样空间，零训练零参数",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "免训练架构采样：复用解码层窗口为冻结 VLM 生成多样候选",
+    "agentChange": "每个候选选一段连续解码层窗口原地重复 r 次后恢复原前向，权重全冻结、零新增参数；4 窗口×深度{2,4}加标准路径构成 9 候选池，早期层复用增益最强。",
+    "selfEvolution": null,
+    "evidence": [
+     "5 检查点×12 基准同 9 候选预算 pass@9 平均 +6.58 点（55/60 比较提升）；Qwen3-VL-8B 75.00→87.43、Qwen3.5-VL-4B 67.07→76.20；MMMU +12.43、MMStar +11.01、BLINK +9.28；多样性 1−Self-BLEU 0.51 vs temperature 0.22，同预算 MMStar 82.73 vs beam 52.60；作 TTRL rollout 再提 A-OKVQA +15.34（2B）。",
+     "每个复用配置即一个采样点，不同于层复用细化单一答案",
+     "多样性注入在上游计算而非末端抽取，区别于 temperature"
+    ],
+    "faq": {
+     "problem": "冻结 VLM 复用层块做不同前向计算生成候选，9 候选 pass@9 平均 +6.58 点",
+     "mechanism": "每个候选选一段连续解码层窗口原地重复 r 次后恢复原前向，权重全冻结、零新增参数；4 窗口×深度{2,4}加标准路径构成 9 候选池，早期层复用增益最强。",
+     "agentChange": "每个候选选一段连续解码层窗口原地重复 r 次后恢复原前向，权重全冻结、零新增参数；4 窗口×深度{2,4}加标准路径构成 9 候选池，早期层复用增益最强。",
+     "support": "5 检查点×12 基准同 9 候选预算 pass@9 平均 +6.58 点（55/60 比较提升）；Qwen3-VL-8B 75.00→87.43、Qwen3.5-VL-4B 67.07→76.20；MMMU +12.43、MMStar +11.01、BLINK +9.28；多样性 1−Self-BLEU 0.51 vs temperature 0.22，同预算 MMStar 82.73 vs beam 52.60；作 TTRL rollout 再提 A-OKVQA +15.34（2B）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "冻结权重不是天花板——计算图本身就是免费采样空间，零训练零参数"
+   }
+  },
+  {
+   "id": "2610.02058",
+   "version": 1,
+   "title": "Foundations without Fundamentals: Zero-Shot Blind Spots in Time Series FMs",
+   "abstract": "构建 SimpleTimeBench 诊断集，证实主流 TSFM 零样本下指数趋势与领先协变量失效",
+   "authors": [],
+   "published": "2026-10-02T04:00:00.000Z",
+   "updated": "2026-10-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.02058",
+   "pdf": "https://arxiv.org/pdf/2610.02058",
+   "announceType": "new",
+   "summary": "构建 SimpleTimeBench 诊断集，证实主流 TSFM 零样本下指数趋势与领先协变量失效",
+   "topic": "时间序列基础模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.02058"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "揭示预训练规模≠基础时间推理，TSFM 高风险场景可靠性存疑",
+   "repository": null,
+   "motivation": "TSFM 在大型聚合基准表现优异，但基础时间逻辑能力缺乏系统检验",
+   "coreProblem": "TSFM 存在均值回归偏置、反指数偏置，且几乎不利用领先协变量",
+   "contributions": [
+    "提出 SimpleTimeBench：28 类生成过程、三种模式的单元测试套件",
+    "归纳三类失效模式：均值回归偏置、反指数偏置、协变量利用不足",
+    "定位容量瓶颈：定向微调改善单任务却拖累其他基础模式"
+   ],
+   "innovations": [
+    "以\"近完美应然\"的简单原语做诊断，而非聚合指标的大基准",
+    "首个系统检验\"完美领先指标\"协变量利用能力的测试设计",
+    "以定向微调做\"天性 vs 教养\"归因，区分架构瓶颈与数据缺陷"
+   ],
+   "method": "用 28 类透明生成过程构造单变量/多变量/领先协变量（协变量=目标序列时移副本）单元测试，零样本评测 Chronos-2/Moirai/Toto，以 relMAE/MAR/PVR/MBR 量化预测拓扑，再定向微调归因。",
+   "results": "MBR（理想 0.5）Chronos-2 0.69 / ToTo 0.66 / Moirai 0.80；随机游走加领先协变量 relMAElast 1.02→0.98（增益可忽略）；指数数据微调 MAPE/MAR/PVR 改善 >50%；真实数据 NVIDIA MASE：DLinear 11.29→4.29（+62.0%）vs Chronos-2 10.56→9.90（+6.3%）。",
+   "value": "揭示预训练规模≠基础时间推理，TSFM 高风险场景可靠性存疑",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "提出 SimpleTimeBench：28 类生成过程、三种模式的单元测试套件",
+    "agentChange": "用 28 类透明生成过程构造单变量/多变量/领先协变量（协变量=目标序列时移副本）单元测试，零样本评测 Chronos-2/Moirai/Toto，以 relMAE/MAR/PVR/MBR 量化预测拓扑，再定向微调归因。",
+    "selfEvolution": null,
+    "evidence": [
+     "MBR（理想 0.5）Chronos-2 0.69 / ToTo 0.66 / Moirai 0.80；随机游走加领先协变量 relMAElast 1.02→0.98（增益可忽略）；指数数据微调 MAPE/MAR/PVR 改善 >50%；真实数据 NVIDIA MASE：DLinear 11.29→4.29（+62.0%）vs Chronos-2 10.56→9.90（+6.3%）。",
+     "首个系统检验\"完美领先指标\"协变量利用能力的测试设计",
+     "以定向微调做\"天性 vs 教养\"归因，区分架构瓶颈与数据缺陷"
+    ],
+    "faq": {
+     "problem": "构建 SimpleTimeBench 诊断集，证实主流 TSFM 零样本下指数趋势与领先协变量失效",
+     "mechanism": "用 28 类透明生成过程构造单变量/多变量/领先协变量（协变量=目标序列时移副本）单元测试，零样本评测 Chronos-2/Moirai/Toto，以 relMAE/MAR/PVR/MBR 量化预测拓扑，再定向微调归因。",
+     "agentChange": "用 28 类透明生成过程构造单变量/多变量/领先协变量（协变量=目标序列时移副本）单元测试，零样本评测 Chronos-2/Moirai/Toto，以 relMAE/MAR/PVR/MBR 量化预测拓扑，再定向微调归因。",
+     "support": "MBR（理想 0.5）Chronos-2 0.69 / ToTo 0.66 / Moirai 0.80；随机游走加领先协变量 relMAElast 1.02→0.98（增益可忽略）；指数数据微调 MAPE/MAR/PVR 改善 >50%；真实数据 NVIDIA MASE：DLinear 11.29→4.29（+62.0%）vs Chronos-2 10.56→9.90（+6.3%）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "揭示预训练规模≠基础时间推理，TSFM 高风险场景可靠性存疑"
+   }
+  },
+  {
+   "id": "2610.01908",
+   "version": 1,
+   "title": "Same Reward, Different Skills: When Multimodal RL Learns to Look",
+   "abstract": "提出 visual resolvability 规则，让多模态 RL 必须\"看\"，7B 发现率 0.425→0.875",
+   "authors": [],
+   "published": "2026-10-02T04:00:00.000Z",
+   "updated": "2026-10-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.01908",
+   "pdf": "https://arxiv.org/pdf/2610.01908",
+   "announceType": "new",
+   "summary": "提出 visual resolvability 规则，让多模态 RL 必须\"看\"，7B 发现率 0.425→0.875",
+   "topic": "大语言模型 / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.01908"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "基准涨不等于视觉能力涨，奖励设计决定 RL 真正学到什么",
+   "repository": null,
+   "motivation": "RLVR 基准提升可能来自捷径——提示里的图不是学习信号里的图",
+   "coreProblem": "无视觉信息训练仍得约半数收益，奖励未强制使用图像证据",
+   "contributions": [
+    "提出 visual resolvability 设计规则：视觉证据必要且任务可学",
+    "构建反事实坐标场景任务族：问题固定、目标永不被点名",
+    "系统归因盲训练收益、grounding 腐蚀与 caption 捷径"
+   ],
+   "innovations": [
+    "首次系统量化 blind gain：灰画布训练恢复约半数（3B）到 4/5（7B）收益",
+    "发现 grounding corrosion：长训基准涨、定位能力跌破基座模型",
+    "奖励要求变化直接改变所学技能：caption 使增益削减近 2/3"
+   ],
+   "method": "反事实场景只改视觉事实、问题固定，目标仅由关系线索（如\"最低点\"）给出，标准 GRPO+正确性/格式奖励训练目标发现；灰画布与 caption 对照定位增益来源。",
+   "results": "7B 发现准确率 0.425→0.875（20 点留出场景比训练集更密）；测试换灰画布降至 0；盲训 3B/7B 恢复约 1/2、4/5 实图收益；3B 长训 400 步基准 0.175→0.45，grounding 对准确率 0.407/0.413 跌破基座 0.455。",
+   "value": "基准涨不等于视觉能力涨，奖励设计决定 RL 真正学到什么",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "提出 visual resolvability 设计规则：视觉证据必要且任务可学",
+    "agentChange": "反事实场景只改视觉事实、问题固定，目标仅由关系线索（如\"最低点\"）给出，标准 GRPO+正确性/格式奖励训练目标发现；灰画布与 caption 对照定位增益来源。",
+    "selfEvolution": null,
+    "evidence": [
+     "7B 发现准确率 0.425→0.875（20 点留出场景比训练集更密）；测试换灰画布降至 0；盲训 3B/7B 恢复约 1/2、4/5 实图收益；3B 长训 400 步基准 0.175→0.45，grounding 对准确率 0.407/0.413 跌破基座 0.455。",
+     "发现 grounding corrosion：长训基准涨、定位能力跌破基座模型",
+     "奖励要求变化直接改变所学技能：caption 使增益削减近 2/3"
+    ],
+    "faq": {
+     "problem": "提出 visual resolvability 规则，让多模态 RL 必须\"看\"，7B 发现率 0.425→0.875",
+     "mechanism": "反事实场景只改视觉事实、问题固定，目标仅由关系线索（如\"最低点\"）给出，标准 GRPO+正确性/格式奖励训练目标发现；灰画布与 caption 对照定位增益来源。",
+     "agentChange": "反事实场景只改视觉事实、问题固定，目标仅由关系线索（如\"最低点\"）给出，标准 GRPO+正确性/格式奖励训练目标发现；灰画布与 caption 对照定位增益来源。",
+     "support": "7B 发现准确率 0.425→0.875（20 点留出场景比训练集更密）；测试换灰画布降至 0；盲训 3B/7B 恢复约 1/2、4/5 实图收益；3B 长训 400 步基准 0.175→0.45，grounding 对准确率 0.407/0.413 跌破基座 0.455。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "基准涨不等于视觉能力涨，奖励设计决定 RL 真正学到什么"
+   }
+  },
+  {
+   "id": "2610.01382",
+   "version": 1,
+   "title": "Gacha Decoding: Eliciting Diverse Generations Through Instruction Following",
+   "abstract": "把生成多样性改写为指令跟随问题，Vendi 最高 2.4x、样本效率 11x",
+   "authors": [],
+   "published": "2026-10-02T04:00:00.000Z",
+   "updated": "2026-10-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.01382",
+   "pdf": "https://arxiv.org/pdf/2610.01382",
+   "announceType": "new",
+   "summary": "把生成多样性改写为指令跟随问题，Vendi 最高 2.4x、样本效率 11x",
+   "topic": "大语言模型 / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.01382"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "指令跟随可作多样性引擎，反转\"模型越强多样性越低\"",
+   "repository": null,
+   "motivation": "模型坍缩到少数典型回答，多样性与模型能力长期此消彼长",
+   "coreProblem": "现有方法依赖 token 熵，模型越强熵越低、多样性越差",
+   "contributions": [
+    "提出 Gacha Decoding：指令跟随+外部 RNG 实现多样回答模式",
+    "提出质量门控多样性评测协议，按 prompt 归一化质量",
+    "证明多样性可随指令跟随能力扩展（含贪心解码情形）"
+   ],
+   "innovations": [
+    "\"planning with dice\"：先规划决策轴、随机取值再实现，分离枚举与选择",
+    "首个多样性随基座模型能力稳定上升的方法",
+    "贪心解码（token 熵为零）下仍保持多样性"
+   ],
+   "method": "模型先规划一组正交决策轴，外部 RNG 在各轴上随机采样取值，自回归枚举并把\"随机摇出的\"想法空间实现为完整回答，想法枚举与最终生成解耦。",
+   "results": "Opus 4.8、256 生成：质量门控多样性为直接采样 7.1x；同等模式覆盖较 list prompting 少 4.7x 生成（55 vs 256），较 persona prompting 效率 11.0x，较 verbalized sampling/seed prompting 20.7x/约 38x；可发现其他方法从未触及的新模式。",
+   "value": "指令跟随可作多样性引擎，反转\"模型越强多样性越低\"",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "提出 Gacha Decoding：指令跟随+外部 RNG 实现多样回答模式",
+    "agentChange": "模型先规划一组正交决策轴，外部 RNG 在各轴上随机采样取值，自回归枚举并把\"随机摇出的\"想法空间实现为完整回答，想法枚举与最终生成解耦。",
+    "selfEvolution": null,
+    "evidence": [
+     "Opus 4.8、256 生成：质量门控多样性为直接采样 7.1x；同等模式覆盖较 list prompting 少 4.7x 生成（55 vs 256），较 persona prompting 效率 11.0x，较 verbalized sampling/seed prompting 20.7x/约 38x；可发现其他方法从未触及的新模式。",
+     "首个多样性随基座模型能力稳定上升的方法",
+     "贪心解码（token 熵为零）下仍保持多样性"
+    ],
+    "faq": {
+     "problem": "把生成多样性改写为指令跟随问题，Vendi 最高 2.4x、样本效率 11x",
+     "mechanism": "模型先规划一组正交决策轴，外部 RNG 在各轴上随机采样取值，自回归枚举并把\"随机摇出的\"想法空间实现为完整回答，想法枚举与最终生成解耦。",
+     "agentChange": "模型先规划一组正交决策轴，外部 RNG 在各轴上随机采样取值，自回归枚举并把\"随机摇出的\"想法空间实现为完整回答，想法枚举与最终生成解耦。",
+     "support": "Opus 4.8、256 生成：质量门控多样性为直接采样 7.1x；同等模式覆盖较 list prompting 少 4.7x 生成（55 vs 256），较 persona prompting 效率 11.0x，较 verbalized sampling/seed prompting 20.7x/约 38x；可发现其他方法从未触及的新模式。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "指令跟随可作多样性引擎，反转\"模型越强多样性越低\""
+   }
+  },
+  {
+   "id": "2610.01215",
+   "version": 1,
+   "title": "AutoGUIWorld: Image Generators as Visual World Models for GUI Agent",
+   "abstract": "图像生成器当 GUI 视觉世界模型合成轨迹，OSWorld 33.0→40.8",
+   "authors": [],
+   "published": "2026-10-02T04:00:00.000Z",
+   "updated": "2026-10-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.01215",
+   "pdf": "https://arxiv.org/pdf/2610.01215",
+   "announceType": "new",
+   "summary": "图像生成器当 GUI 视觉世界模型合成轨迹，OSWorld 33.0→40.8",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.01215"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "生成轨迹成 GUI agent 低成本数据源，覆盖难部署的专业软件",
+   "repository": null,
+   "motivation": "GUI agent 轨迹多样性受可部署软件限制，扩展覆盖成本高",
+   "coreProblem": "真实轨迹需部署多样复杂软件，安装、配置与运行时成本大",
+   "contributions": [
+    "提出 AutoGUIWorld：图像生成器+规划器合成 GUI 轨迹，免部署环境",
+    "构建 79,266 步级空间标注样本，覆盖 Ubuntu/Windows/macOS/Chrome",
+    "验证合成轨迹提升真实桌面与科学软件任务执行"
+   ],
+   "innovations": [
+    "以图像生成器为\"视觉世界模型\"，迭代编辑截图产生下一帧",
+    "结构化规格（OS/外观/界面状态）采样初始场景，任务条件化于场景",
+    "规划器指定原子动作与预期视觉后果，转场级质量过滤"
+   ],
+   "method": "从结构化规格采样初始 GUI 场景并条件化生成任务，规划器给出原子动作与预期视觉后果，图像生成器迭代编辑当前截图产生后续观测，动作 grounding+转场质检过滤后入库。",
+   "results": "微调 Qwen3.5-35B-A3B：四基准总体 23.6→36.5（+12.8pp）；OSWorld 33.0→40.8、ScienceBoard 14.0→32.2、macOSWorld +16.9pp；ScreenSpot-Pro 31.7→57.1（+25.4pp）。",
+   "value": "生成轨迹成 GUI agent 低成本数据源，覆盖难部署的专业软件",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "提出 AutoGUIWorld：图像生成器+规划器合成 GUI 轨迹，免部署环境",
+    "agentChange": "从结构化规格采样初始 GUI 场景并条件化生成任务，规划器给出原子动作与预期视觉后果，图像生成器迭代编辑当前截图产生后续观测，动作 grounding+转场质检过滤后入库。",
+    "selfEvolution": null,
+    "evidence": [
+     "微调 Qwen3.5-35B-A3B：四基准总体 23.6→36.5（+12.8pp）；OSWorld 33.0→40.8、ScienceBoard 14.0→32.2、macOSWorld +16.9pp；ScreenSpot-Pro 31.7→57.1（+25.4pp）。",
+     "结构化规格（OS/外观/界面状态）采样初始场景，任务条件化于场景",
+     "规划器指定原子动作与预期视觉后果，转场级质量过滤"
+    ],
+    "faq": {
+     "problem": "图像生成器当 GUI 视觉世界模型合成轨迹，OSWorld 33.0→40.8",
+     "mechanism": "从结构化规格采样初始 GUI 场景并条件化生成任务，规划器给出原子动作与预期视觉后果，图像生成器迭代编辑当前截图产生后续观测，动作 grounding+转场质检过滤后入库。",
+     "agentChange": "从结构化规格采样初始 GUI 场景并条件化生成任务，规划器给出原子动作与预期视觉后果，图像生成器迭代编辑当前截图产生后续观测，动作 grounding+转场质检过滤后入库。",
+     "support": "微调 Qwen3.5-35B-A3B：四基准总体 23.6→36.5（+12.8pp）；OSWorld 33.0→40.8、ScienceBoard 14.0→32.2、macOSWorld +16.9pp；ScreenSpot-Pro 31.7→57.1（+25.4pp）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "生成轨迹成 GUI agent 低成本数据源，覆盖难部署的专业软件"
+   }
+  },
+  {
+   "id": "2610.01249",
+   "version": 1,
+   "title": "Revision-Aware Independent Agent Graphs for Dynamic Reasoning",
+   "abstract": "提出动态任务路由问题与 RIAG，联合精度 54.24% 仅耗 0.62 次调用/查询",
+   "authors": [],
+   "published": "2026-10-02T04:00:00.000Z",
+   "updated": "2026-10-02T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.01249",
+   "pdf": "https://arxiv.org/pdf/2610.01249",
+   "announceType": "new",
+   "summary": "提出动态任务路由问题与 RIAG，联合精度 54.24% 仅耗 0.62 次调用/查询",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.01249"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "首次把任务时间有效性变为一等评测对象，路由成本降一个量级",
+   "repository": null,
+   "motivation": "agent 输入是演化事件流，先判断哪个任务版本有效才能解题",
+   "coreProblem": "固定任务基准无法检验更新传播、过期复用与历史绑定重建",
+   "contributions": [
+    "定义动态任务路由：每个查询先选当时有效的文档版本再解题",
+    "改造六大基准为 31,119 动态 episode、373,428 带时间类别查询",
+    "提出 RIAG：有界多智能体策略，时间解析与任务推理分离"
+   ],
+   "innovations": [
+    "按不可变文档身份缓存解，复用而不返回过期结论",
+    "每新任务两次独立尝试起，条件触发审计/修复，每版本≤4 次调用",
+    "首次分离路由精度与答案精度，暴露\"答对文档错\"的假阳性"
+   ],
+   "method": "确定性时间解析选定生效文档版本，版本键记忆化决定复用或重算，曝光感知有界图（独立提案+定向审计+有界修复），缓存命中记零调用。",
+   "results": "同质 RIAG 联合精度 54.24%（选择 100%）@0.62 调用/查询 vs 最强对比 Debate 32.22%@18.00（调用少约 29x）；六数据集 40.10–66.83% vs 最佳基线 23.02–38.66%；历史查询上传统方法掉 24–29pp，RIAG 各类别稳定在 53.89–54.50%。",
+   "value": "首次把任务时间有效性变为一等评测对象，路由成本降一个量级",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "定义动态任务路由：每个查询先选当时有效的文档版本再解题",
+    "agentChange": "确定性时间解析选定生效文档版本，版本键记忆化决定复用或重算，曝光感知有界图（独立提案+定向审计+有界修复），缓存命中记零调用。",
+    "selfEvolution": null,
+    "evidence": [
+     "同质 RIAG 联合精度 54.24%（选择 100%）@0.62 调用/查询 vs 最强对比 Debate 32.22%@18.00（调用少约 29x）；六数据集 40.10–66.83% vs 最佳基线 23.02–38.66%；历史查询上传统方法掉 24–29pp，RIAG 各类别稳定在 53.89–54.50%。",
+     "每新任务两次独立尝试起，条件触发审计/修复，每版本≤4 次调用",
+     "首次分离路由精度与答案精度，暴露\"答对文档错\"的假阳性"
+    ],
+    "faq": {
+     "problem": "提出动态任务路由问题与 RIAG，联合精度 54.24% 仅耗 0.62 次调用/查询",
+     "mechanism": "确定性时间解析选定生效文档版本，版本键记忆化决定复用或重算，曝光感知有界图（独立提案+定向审计+有界修复），缓存命中记零调用。",
+     "agentChange": "确定性时间解析选定生效文档版本，版本键记忆化决定复用或重算，曝光感知有界图（独立提案+定向审计+有界修复），缓存命中记零调用。",
+     "support": "同质 RIAG 联合精度 54.24%（选择 100%）@0.62 调用/查询 vs 最强对比 Debate 32.22%@18.00（调用少约 29x）；六数据集 40.10–66.83% vs 最佳基线 23.02–38.66%；历史查询上传统方法掉 24–29pp，RIAG 各类别稳定在 53.89–54.50%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "首次把任务时间有效性变为一等评测对象，路由成本降一个量级"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-10-01",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-10-01 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-03T21:30:20.000Z",
+ "latestPaperAt": "2026-10-02T04:00:00.000Z",
+ "totalMatched": 555,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 555
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 44,
+ "trends": {
+  "status": "accumulating",
+  "days": 44,
+  "minimumDays": 15,
+  "message": "已积累 44/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-03T21:30:20.000Z",
+ "snapshotDay": "2026-10-02",
+ "historical": true
+}

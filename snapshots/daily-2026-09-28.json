@@ -1,0 +1,1041 @@
+{
+ "papers": [
+  {
+   "id": "2609.28767",
+   "version": 1,
+   "title": "Human-in-the-Loop Geospatial Annotation for Rapid Dataset Construction in Field-Deployed UAV Systems",
+   "abstract": "世界坐标田间标注+投影传播自动打标，人均提速25.5倍，跨农田检测召回56–89%。",
+   "authors": [],
+   "published": "2026-09-28T04:00:00.000Z",
+   "updated": "2026-09-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.28767",
+   "pdf": "https://arxiv.org/pdf/2609.28767",
+   "announceType": "new",
+   "summary": "世界坐标田间标注+投影传播自动打标，人均提速25.5倍，跨农田检测召回56–89%。",
+   "topic": "遥感 / 高光谱 / 对地观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.28767"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "世界坐标标注连接专家与空感系统，低成本快速建库且检测结果可直接地理参考。",
+   "repository": null,
+   "motivation": "田间专家易识别目标，但逐帧图像标注无法扩展到大体量现场数据。",
+   "coreProblem": "现有标注以图像为基本单位，同一目标需逐帧重复对应，低空小目标语料缺失。",
+   "contributions": [
+    "提出 BirdsEye：RTK 世界坐标标注经标定投影自动传播为 UAV 图像标签",
+    "推导姿态不确定性→像素误差一阶映射，反转为传感器噪声预算设计条件",
+    "三处农田部署：预注册留出农场评估，12 种配置召回 56–89% 在视野目标"
+   ],
+   "innovations": [
+    "标注事件从图像域移到物理环境，一次世界坐标观测传播到所有可见帧",
+    "姿态-像素误差映射对六维姿态方差线性，可逆解为凸噪声预算与闭式缩放",
+    "标注与检测共享世界坐标表示，检测结果可直接反投影地理参考回地面"
+   ],
+   "method": "操作员手持 RTK 接收器在田间记录目标世界坐标，标定 Brown-Conrady 投影模型与 INS 6DoF 位姿把每个 geotag 投影到所有几何可见帧（高斯软标签表示位姿不确定度）；对 se(3) 位姿扰动做一阶传播得像素协方差，其 trace 对六个姿态方差线性，反解出标注容忍度对应的凸噪声预算多面体、部署套件最大闭式缩放 κ* 及等预算分摊下唯一逐轴姿态规格。",
+   "results": "受控飞行（10/20 m AGL，排除持续偏航）投影误差单数字厘米、亚 30 像素（10 m 悬停均值 0.038 m/18.8 px）；2 名工人约 12 小时标注 12,524 帧/55,600 标签，人均 0.153 帧/秒，较 15 人人工 GUI 基线（0.006）提升 25.5 倍；留出农场 2,117 帧、151 个在视野 geotag，12 配置召回 0.563–0.887（较验证集 +0.231），人工裁决后 max-F1 配置 GMCF 精度 0.522→0.832–0.867。",
+   "value": "世界坐标标注连接专家与空感系统，低成本快速建库且检测结果可直接地理参考。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "提出 BirdsEye：RTK 世界坐标标注经标定投影自动传播为 UAV 图像标签",
+    "agentChange": "操作员手持 RTK 接收器在田间记录目标世界坐标，标定 Brown-Conrady 投影模型与 INS 6DoF 位姿把每个 geotag 投影到所有几何可见帧（高斯软标签表示位姿不确定度）；对 se(3) 位姿扰动做一阶传播得像素协方差，其 trace 对六个姿态方差线性，反解出标注容忍度对应的凸噪声预算多面体、部署套件最大闭式缩放 κ* 及等预算分摊下唯一逐轴姿态规格。",
+    "selfEvolution": null,
+    "evidence": [
+     "受控飞行（10/20 m AGL，排除持续偏航）投影误差单数字厘米、亚 30 像素（10 m 悬停均值 0.038 m/18.8 px）；2 名工人约 12 小时标注 12,524 帧/55,600 标签，人均 0.153 帧/秒，较 15 人人工 GUI 基线（0.006）提升 25.5 倍；留出农场 2,117 帧、151 个在视野 geotag，12 配置召回 0.563–0.887（较验证集 +0.231），人工裁决后 max-F1 配置 GMCF 精度 0.522→0.832–0.867。",
+     "姿态-像素误差映射对六维姿态方差线性，可逆解为凸噪声预算与闭式缩放",
+     "标注与检测共享世界坐标表示，检测结果可直接反投影地理参考回地面"
+    ],
+    "faq": {
+     "problem": "世界坐标田间标注+投影传播自动打标，人均提速25.5倍，跨农田检测召回56–89%。",
+     "mechanism": "操作员手持 RTK 接收器在田间记录目标世界坐标，标定 Brown-Conrady 投影模型与 INS 6DoF 位姿把每个 geotag 投影到所有几何可见帧（高斯软标签表示位姿不确定度）；对 se(3) 位姿扰动做一阶传播得像素协方差，其 trace 对六个姿态方差线性，反解出标注容忍度对应的凸噪声预算多面体、部署套件最大闭式缩放 κ* 及等预算分摊下唯一逐轴姿态规格。",
+     "agentChange": "操作员手持 RTK 接收器在田间记录目标世界坐标，标定 Brown-Conrady 投影模型与 INS 6DoF 位姿把每个 geotag 投影到所有几何可见帧（高斯软标签表示位姿不确定度）；对 se(3) 位姿扰动做一阶传播得像素协方差，其 trace 对六个姿态方差线性，反解出标注容忍度对应的凸噪声预算多面体、部署套件最大闭式缩放 κ* 及等预算分摊下唯一逐轴姿态规格。",
+     "support": "受控飞行（10/20 m AGL，排除持续偏航）投影误差单数字厘米、亚 30 像素（10 m 悬停均值 0.038 m/18.8 px）；2 名工人约 12 小时标注 12,524 帧/55,600 标签，人均 0.153 帧/秒，较 15 人人工 GUI 基线（0.006）提升 25.5 倍；留出农场 2,117 帧、151 个在视野 geotag，12 配置召回 0.563–0.887（较验证集 +0.231），人工裁决后 max-F1 配置 GMCF 精度 0.522→0.832–0.867。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "世界坐标标注连接专家与空感系统，低成本快速建库且检测结果可直接地理参考。"
+   }
+  },
+  {
+   "id": "2609.28895",
+   "version": 1,
+   "title": "GeoDose-CP: Graph-Local Conformal Inference for Continuous-Treatment Earth Observation",
+   "abstract": "EO连续处理+空间依赖联合共形推断GeoDose-CP，27配置均值覆盖0.9692。",
+   "authors": [],
+   "published": "2026-09-28T04:00:00.000Z",
+   "updated": "2026-09-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.28895",
+   "pdf": "https://arxiv.org/pdf/2609.28895",
+   "announceType": "new",
+   "summary": "EO连续处理+空间依赖联合共形推断GeoDose-CP，27配置均值覆盖0.9692。",
+   "topic": "遥感 / 高光谱 / 对地观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.28895"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为干预导向 EO 推断提供首个联合处理-空间共形参考律，支持不足时明确拒答。",
+   "repository": null,
+   "motivation": "卫星观测需推断指定干预下的结果不确定性，但野外对照实验难以开展。",
+   "coreProblem": "处理与空间权重独立相乘无法恢复干预参考律：重指派同时改变处理似然、残差与图依赖似然。",
+   "contributions": [
+    "推导连续/混合处理下图局部目标轨道律 G2，证处理-空间分解一般无效",
+    "建立精确加权候选反转、显式差异计账的稀疏近似与支持感知拒答",
+    "构建 MineDoseBench 基准与 4,190 组已知真值受控实验验证框架"
+   ],
+   "innovations": [
+    "首次将处理似然、逆尺度雅可比与图残差依赖并入单一候选级参考律",
+    "不同于独立权重乘积：证明乘积分解需额外结构条件，一般情形不成立",
+    "支持不足时显式拒答而非用代理暴露强推，近似误差逐层显式记账"
+   ],
+   "method": "在 C1–C5 识别条件下，对候选响应推导联合目标轨道律（干预/观测处理似然 × 逆尺度雅可比 × 图团残差势，定理 1），据此做加权 p 值候选反转得预测集；大域用 Vecchia 型稀疏邻域（m=64）近似并以 Pinsker 界显式记账近似误差，处理/端点/图连通等支持不足时显式拒答。",
+   "results": "MineDoseBench 27 配置（各 20 重复）：选择性覆盖均值 0.9692、最小 0.9140（27/27 ≥0.90），局部 q0.05 最小 0.8951 为五方法最高（朴素乘积 M4 仅 0.8804）；精确 vs 稀疏（m=64）覆盖 0.9885 vs 0.9874，2,700 目标中仅 9 个（0.33%）改变包含状态；外部对比 0.9825 vs 0.9463/0.9191/0.8970；重度尾部应力下 60% 查询返回有限集（E1/E2 逾 93% 返回无穷集）。局限：主基准 σ≡1 使雅可比数值退化，NSW 真实档案无可审计纵向处理、未经真实因果数据验证。",
+   "value": "为干预导向 EO 推断提供首个联合处理-空间共形参考律，支持不足时明确拒答。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "推导连续/混合处理下图局部目标轨道律 G2，证处理-空间分解一般无效",
+    "agentChange": "在 C1–C5 识别条件下，对候选响应推导联合目标轨道律（干预/观测处理似然 × 逆尺度雅可比 × 图团残差势，定理 1），据此做加权 p 值候选反转得预测集；大域用 Vecchia 型稀疏邻域（m=64）近似并以 Pinsker 界显式记账近似误差，处理/端点/图连通等支持不足时显式拒答。",
+    "selfEvolution": null,
+    "evidence": [
+     "MineDoseBench 27 配置（各 20 重复）：选择性覆盖均值 0.9692、最小 0.9140（27/27 ≥0.90），局部 q0.05 最小 0.8951 为五方法最高（朴素乘积 M4 仅 0.8804）；精确 vs 稀疏（m=64）覆盖 0.9885 vs 0.9874，2,700 目标中仅 9 个（0.33%）改变包含状态；外部对比 0.9825 vs 0.9463/0.9191/0.8970；重度尾部应力下 60% 查询返回有限集（E1/E2 逾 93% 返回无穷集）。局限：主基准 σ≡1 使雅可比数值退化，NSW 真实档案无可审计纵向处理、未经真实因果数据验证。",
+     "不同于独立权重乘积：证明乘积分解需额外结构条件，一般情形不成立",
+     "支持不足时显式拒答而非用代理暴露强推，近似误差逐层显式记账"
+    ],
+    "faq": {
+     "problem": "EO连续处理+空间依赖联合共形推断GeoDose-CP，27配置均值覆盖0.9692。",
+     "mechanism": "在 C1–C5 识别条件下，对候选响应推导联合目标轨道律（干预/观测处理似然 × 逆尺度雅可比 × 图团残差势，定理 1），据此做加权 p 值候选反转得预测集；大域用 Vecchia 型稀疏邻域（m=64）近似并以 Pinsker 界显式记账近似误差，处理/端点/图连通等支持不足时显式拒答。",
+     "agentChange": "在 C1–C5 识别条件下，对候选响应推导联合目标轨道律（干预/观测处理似然 × 逆尺度雅可比 × 图团残差势，定理 1），据此做加权 p 值候选反转得预测集；大域用 Vecchia 型稀疏邻域（m=64）近似并以 Pinsker 界显式记账近似误差，处理/端点/图连通等支持不足时显式拒答。",
+     "support": "MineDoseBench 27 配置（各 20 重复）：选择性覆盖均值 0.9692、最小 0.9140（27/27 ≥0.90），局部 q0.05 最小 0.8951 为五方法最高（朴素乘积 M4 仅 0.8804）；精确 vs 稀疏（m=64）覆盖 0.9885 vs 0.9874，2,700 目标中仅 9 个（0.33%）改变包含状态；外部对比 0.9825 vs 0.9463/0.9191/0.8970；重度尾部应力下 60% 查询返回有限集（E1/E2 逾 93% 返回无穷集）。局限：主基准 σ≡1 使雅可比数值退化，NSW 真实档案无可审计纵向处理、未经真实因果数据验证。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "为干预导向 EO 推断提供首个联合处理-空间共形参考律，支持不足时明确拒答。"
+   }
+  },
+  {
+   "id": "2609.28967",
+   "version": 1,
+   "title": "Passive LWIR Hyperspectral Ranging via Transmittance Extraction and Distance Alignment",
+   "abstract": "TEDA解耦测距与温发反演，100m仿真RMSE降至3.9m，实测提速约20倍。",
+   "authors": [],
+   "published": "2026-09-28T04:00:00.000Z",
+   "updated": "2026-09-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.28967",
+   "pdf": "https://arxiv.org/pdf/2609.28967",
+   "announceType": "new",
+   "summary": "TEDA解耦测距与温发反演，100m仿真RMSE降至3.9m，实测提速约20倍。",
+   "topic": "遥感 / 高光谱 / 对地观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.28967"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "使无源红外高光谱测距免去逐距离温发反演，精度接近逐距离重拟合且快约两个量级。",
+   "repository": null,
+   "motivation": "夜间弱光下主动测距受限，需利用大气吸收特征的无源距离信息。",
+   "coreProblem": "温发距离联合反演逐像素昂贵，参考距离不变衰减系数引入系统性测距偏差。",
+   "contributions": [
+    "传感器响应一致透射率模型：逐候选距离重算 ISRF 积分透射率消除偏差",
+    "吸收先验 PLS 基线估计：正交投影数据项+双闭式平滑分支，免迭代重加权",
+    "算子一致加权距离匹配：同一算子作用于观测与模型透射率，对比度加权"
+   ],
+   "innovations": [
+    "将测距与温度/发射率反演解耦，基线仅估一次，避免逐候选距离重拟合",
+    "数据保真项对已知吸收方向不变，防止基线吞没携带距离信息的弱吸收结构",
+    "指出有效衰减系数随距离变化是现有参考距离模型偏差的根源"
+   ],
+   "method": "阶段一：扣除大气发射后取对数幅值，用对吸收方向不变的加权最小二乘估计慢变热基线（双闭式分支经观测门控融合），残差指数化恢复大气透射率；阶段二：提取透射率与逐候选距离重算、并施加同一提取算子的传感器域透射率模型库做辐射对比度加权匹配，取最小误差网格点为距离。",
+   "results": "蒙特卡洛仿真（100 m 岩石目标，ΔT=-8/-5/-2 K）：TEDA RMSE 3.9/5.3/8.7 m，低于逐距离联合反演 4.8/6.6/10.3 m、参考距离联合反演 20.1/20.7/20.0 m，逼近 oracle 2.0/2.8/4.5 m；跨 1,528 条材质谱整体 RMSE 9.5 m；DARPA Invisible Headlights 实测 256×256 ROI：草地 30.0±2.8 m vs LiDAR 中值 31.7 m，前景树 60.2±7.9 m vs 62.1 m；耗时 8.19 s vs 参考距离联合反演 159.47 s（约 20 倍加速）。",
+   "value": "使无源红外高光谱测距免去逐距离温发反演，精度接近逐距离重拟合且快约两个量级。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "传感器响应一致透射率模型：逐候选距离重算 ISRF 积分透射率消除偏差",
+    "agentChange": "阶段一：扣除大气发射后取对数幅值，用对吸收方向不变的加权最小二乘估计慢变热基线（双闭式分支经观测门控融合），残差指数化恢复大气透射率；阶段二：提取透射率与逐候选距离重算、并施加同一提取算子的传感器域透射率模型库做辐射对比度加权匹配，取最小误差网格点为距离。",
+    "selfEvolution": null,
+    "evidence": [
+     "蒙特卡洛仿真（100 m 岩石目标，ΔT=-8/-5/-2 K）：TEDA RMSE 3.9/5.3/8.7 m，低于逐距离联合反演 4.8/6.6/10.3 m、参考距离联合反演 20.1/20.7/20.0 m，逼近 oracle 2.0/2.8/4.5 m；跨 1,528 条材质谱整体 RMSE 9.5 m；DARPA Invisible Headlights 实测 256×256 ROI：草地 30.0±2.8 m vs LiDAR 中值 31.7 m，前景树 60.2±7.9 m vs 62.1 m；耗时 8.19 s vs 参考距离联合反演 159.47 s（约 20 倍加速）。",
+     "数据保真项对已知吸收方向不变，防止基线吞没携带距离信息的弱吸收结构",
+     "指出有效衰减系数随距离变化是现有参考距离模型偏差的根源"
+    ],
+    "faq": {
+     "problem": "TEDA解耦测距与温发反演，100m仿真RMSE降至3.9m，实测提速约20倍。",
+     "mechanism": "阶段一：扣除大气发射后取对数幅值，用对吸收方向不变的加权最小二乘估计慢变热基线（双闭式分支经观测门控融合），残差指数化恢复大气透射率；阶段二：提取透射率与逐候选距离重算、并施加同一提取算子的传感器域透射率模型库做辐射对比度加权匹配，取最小误差网格点为距离。",
+     "agentChange": "阶段一：扣除大气发射后取对数幅值，用对吸收方向不变的加权最小二乘估计慢变热基线（双闭式分支经观测门控融合），残差指数化恢复大气透射率；阶段二：提取透射率与逐候选距离重算、并施加同一提取算子的传感器域透射率模型库做辐射对比度加权匹配，取最小误差网格点为距离。",
+     "support": "蒙特卡洛仿真（100 m 岩石目标，ΔT=-8/-5/-2 K）：TEDA RMSE 3.9/5.3/8.7 m，低于逐距离联合反演 4.8/6.6/10.3 m、参考距离联合反演 20.1/20.7/20.0 m，逼近 oracle 2.0/2.8/4.5 m；跨 1,528 条材质谱整体 RMSE 9.5 m；DARPA Invisible Headlights 实测 256×256 ROI：草地 30.0±2.8 m vs LiDAR 中值 31.7 m，前景树 60.2±7.9 m vs 62.1 m；耗时 8.19 s vs 参考距离联合反演 159.47 s（约 20 倍加速）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "使无源红外高光谱测距免去逐距离温发反演，精度接近逐距离重拟合且快约两个量级。"
+   }
+  },
+  {
+   "id": "2609.29106",
+   "version": 1,
+   "title": "WildHSR: Metric Feed-Forward 4D People-Scene Reconstruction from a 3D Foundation Model",
+   "abstract": "人体伪标签+中间特征探针补齐尺度与身份，前馈度量重建EMDB-2超优化式。",
+   "authors": [],
+   "published": "2026-09-28T04:00:00.000Z",
+   "updated": "2026-09-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.29106",
+   "pdf": "https://arxiv.org/pdf/2609.29106",
+   "announceType": "new",
+   "summary": "人体伪标签+中间特征探针补齐尺度与身份，前馈度量重建EMDB-2超优化式。",
+   "topic": "基础模型 / 3D",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.29106"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "表明尺度不定的基础表征经轻量适配即可支撑度量重建与持续身份，免外部模块。",
+   "repository": null,
+   "motivation": "强前馈 3D 基础模型输出尺度不定且无持久身份，阻碍联合度量人场景重建。",
+   "coreProblem": "最强前馈几何模型输出 up-to-scale、逐窗归一化，几何中无跨帧同一人对应。",
+   "contributions": [
+    "WildHSR：单目视频前馈联合重建度量相机、场景与人体并保持跨帧身份",
+    "人体伪标签预训练尺度读出，精调后免尺规、仅凭模型 token 预测尺度",
+    "探针发现 backbone 中层特征含跨帧身份对应，轻量投影读出驱动关联"
+   ],
+   "innovations": [
+    "首个前馈方法在 EMDB-2 上 WA-MPJPE 与 RTE 均超最佳优化式方法",
+    "尺度不靠外部度量模型/深度先验，而由人体伪标签离线灌入场景 token",
+    "免外部跟踪器，身份对应直接探针读出预训练 backbone 中间特征"
+   ],
+   "method": "VGGT-Ω（up-to-scale 基础模型）+ 小 LoRA 为骨干：Multi-HMR 提案 + Pelvis Readout 解码度量 SMPL-X；人体\"尺规\"（2D 关键点 × metric 躯干）在 10 万段无标注网络视频上产闭合式尺度伪标签，预训练 Scale Readout 后再用 RICH/3DPW 精确度量标签精调；探针发现 layer-13 query-key 特征编码跨帧人物对应（同身检索 80–82% vs 随机 46%），两层 MLP 投出 128 维描述子，与度量骨盆运动、提案置信度合成代价驱动 dustbin-Sinkhorn 关联；100 帧窗口各自前馈预测，闭式 Sim(3) 拼接为连续度量世界。",
+   "results": "EMDB-2（25 序列）：WA-MPJPE 66.3 / W-MPJPE 193.6 / RTE 0.9，WA 超最佳优化式 JOSH（68.9）3.8%、RTE 较 1.3 改进 31%，前馈阵营三指标领先 38%/26%/47%；RICH：WA 73.2 全场最佳（-17.8% vs JOSH 89.0），中位尺度误差 7.2%；3DPW 留出 PA-MPJPE 38.7 mm，超最强基线 SHOW 2.3 mm；单 GPU 10.1 fps、峰值 11.22 GB；消融：去掉网络视频伪标签预训练 WA 由 66.3 恶化至 116.3。",
+   "value": "表明尺度不定的基础表征经轻量适配即可支撑度量重建与持续身份，免外部模块。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "WildHSR：单目视频前馈联合重建度量相机、场景与人体并保持跨帧身份",
+    "agentChange": "VGGT-Ω（up-to-scale 基础模型）+ 小 LoRA 为骨干：Multi-HMR 提案 + Pelvis Readout 解码度量 SMPL-X；人体\"尺规\"（2D 关键点 × metric 躯干）在 10 万段无标注网络视频上产闭合式尺度伪标签，预训练 Scale Readout 后再用 RICH/3DPW 精确度量标签精调；探针发现 layer-13 query-key 特征编码跨帧人物对应（同身检索 80–82% vs 随机 46%），两层 MLP 投出 128 维描述子，与度量骨盆运动、提案置信度合成代价驱动 dustbin-Sinkhorn 关联；100 帧窗口各自前馈预测，闭式 Sim(3) 拼接为连续度量世界。",
+    "selfEvolution": null,
+    "evidence": [
+     "EMDB-2（25 序列）：WA-MPJPE 66.3 / W-MPJPE 193.6 / RTE 0.9，WA 超最佳优化式 JOSH（68.9）3.8%、RTE 较 1.3 改进 31%，前馈阵营三指标领先 38%/26%/47%；RICH：WA 73.2 全场最佳（-17.8% vs JOSH 89.0），中位尺度误差 7.2%；3DPW 留出 PA-MPJPE 38.7 mm，超最强基线 SHOW 2.3 mm；单 GPU 10.1 fps、峰值 11.22 GB；消融：去掉网络视频伪标签预训练 WA 由 66.3 恶化至 116.3。",
+     "尺度不靠外部度量模型/深度先验，而由人体伪标签离线灌入场景 token",
+     "免外部跟踪器，身份对应直接探针读出预训练 backbone 中间特征"
+    ],
+    "faq": {
+     "problem": "人体伪标签+中间特征探针补齐尺度与身份，前馈度量重建EMDB-2超优化式。",
+     "mechanism": "VGGT-Ω（up-to-scale 基础模型）+ 小 LoRA 为骨干：Multi-HMR 提案 + Pelvis Readout 解码度量 SMPL-X；人体\"尺规\"（2D 关键点 × metric 躯干）在 10 万段无标注网络视频上产闭合式尺度伪标签，预训练 Scale Readout 后再用 RICH/3DPW 精确度量标签精调；探针发现 layer-13 query-key 特征编码跨帧人物对应（同身检索 80–82% vs 随机 46%），两层 MLP 投出 128 维描述子，与度量骨盆运动、提案置信度合成代价驱动 dustbin-Sinkhorn 关联；100 帧窗口各自前馈预测，闭式 Sim(3) 拼接为连续度量世界。",
+     "agentChange": "VGGT-Ω（up-to-scale 基础模型）+ 小 LoRA 为骨干：Multi-HMR 提案 + Pelvis Readout 解码度量 SMPL-X；人体\"尺规\"（2D 关键点 × metric 躯干）在 10 万段无标注网络视频上产闭合式尺度伪标签，预训练 Scale Readout 后再用 RICH/3DPW 精确度量标签精调；探针发现 layer-13 query-key 特征编码跨帧人物对应（同身检索 80–82% vs 随机 46%），两层 MLP 投出 128 维描述子，与度量骨盆运动、提案置信度合成代价驱动 dustbin-Sinkhorn 关联；100 帧窗口各自前馈预测，闭式 Sim(3) 拼接为连续度量世界。",
+     "support": "EMDB-2（25 序列）：WA-MPJPE 66.3 / W-MPJPE 193.6 / RTE 0.9，WA 超最佳优化式 JOSH（68.9）3.8%、RTE 较 1.3 改进 31%，前馈阵营三指标领先 38%/26%/47%；RICH：WA 73.2 全场最佳（-17.8% vs JOSH 89.0），中位尺度误差 7.2%；3DPW 留出 PA-MPJPE 38.7 mm，超最强基线 SHOW 2.3 mm；单 GPU 10.1 fps、峰值 11.22 GB；消融：去掉网络视频伪标签预训练 WA 由 66.3 恶化至 116.3。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "表明尺度不定的基础表征经轻量适配即可支撑度量重建与持续身份，免外部模块。"
+   }
+  },
+  {
+   "id": "2609.29398",
+   "version": 1,
+   "title": "ICE: Task-Aligned Clifford Latent Fields for Multimodal Graph Foundation Models",
+   "abstract": "ICE：Cl(3)潜场多模态图基础模型，30项监督/少样本对比全部第一。",
+   "authors": [],
+   "published": "2026-09-28T04:00:00.000Z",
+   "updated": "2026-09-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.29398",
+   "pdf": "https://arxiv.org/pdf/2609.29398",
+   "announceType": "new",
+   "summary": "ICE：Cl(3)潜场多模态图基础模型，30项监督/少样本对比全部第一。",
+   "topic": "基础模型 / 3D",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.29398"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给基础模型一个节点与边预测通用、可级深查询的几何表示接口。",
+   "repository": null,
+   "motivation": "单一骨干须同时支持节点与边预测，兼存实体语义与关系状态。",
+   "coreProblem": "现有流水线将多模态融为单一欧氏向量，终端读出掩盖已构建的多级关系状态。",
+   "contributions": [
+    "诊断\"信息接口\"问题：探针证明多级关系状态被欧氏读出隐藏",
+    "ICE：拓扑/文本/图像映射到 Cl(3) 显式地址，双层边感知几何积传输",
+    "新增 NC/LP 头按级深查询同一字段，证明可达性、等变性与残差界"
+   ],
+   "innovations": [
+    "首次将 Clifford 潜场用于跨图多模态图基础模型（现有为单图任务型）",
+    "几何积幅度定权重、方向变换值，邻域互动不再压缩为标量注意力",
+    "保留 H0/H1/H2 全级深存储供任务头按需查询，替代终端欧氏状态读出"
+   ],
+   "method": "拓扑（标量）、文本（e1）、图像（e2）提升至节点索引 Cl(3) 潜场；两层边感知多向量消息传递中，几何积幅度经 softmax 决定邻域权重、归一化方向变换邻居值，逐层生成标量/双向量/三向量关系；H0/H1/H2 全部保留为级-深存储，以语义拓扑对比 + 掩码几何重构自监督预训练，新鲜 NC/LP 头按级与深度查询同一字段。",
+   "results": "8 种子均值：ICE 在全部 30 项对比（12 项节点分类指标 + 3 项链接预测 MRR + 9 项少样本 NC + 6 项少样本边分类）均列第一；NC Acc 领先次优 PLANET 0.35–2.36 分、LP MRR 领先 0.83–1.64 分、少样本 NC 领先 1.10–1.24 分；例：RedditS Acc 96.97、Books-NC Acc 85.24、Sports MRR 28.38；消融：去 Clifford 积 MRR -1.51，去 Grade-1 路由 Acc -1.13/F1 -1.40。",
+   "value": "给基础模型一个节点与边预测通用、可级深查询的几何表示接口。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "诊断\"信息接口\"问题：探针证明多级关系状态被欧氏读出隐藏",
+    "agentChange": "拓扑（标量）、文本（e1）、图像（e2）提升至节点索引 Cl(3) 潜场；两层边感知多向量消息传递中，几何积幅度经 softmax 决定邻域权重、归一化方向变换邻居值，逐层生成标量/双向量/三向量关系；H0/H1/H2 全部保留为级-深存储，以语义拓扑对比 + 掩码几何重构自监督预训练，新鲜 NC/LP 头按级与深度查询同一字段。",
+    "selfEvolution": null,
+    "evidence": [
+     "8 种子均值：ICE 在全部 30 项对比（12 项节点分类指标 + 3 项链接预测 MRR + 9 项少样本 NC + 6 项少样本边分类）均列第一；NC Acc 领先次优 PLANET 0.35–2.36 分、LP MRR 领先 0.83–1.64 分、少样本 NC 领先 1.10–1.24 分；例：RedditS Acc 96.97、Books-NC Acc 85.24、Sports MRR 28.38；消融：去 Clifford 积 MRR -1.51，去 Grade-1 路由 Acc -1.13/F1 -1.40。",
+     "几何积幅度定权重、方向变换值，邻域互动不再压缩为标量注意力",
+     "保留 H0/H1/H2 全级深存储供任务头按需查询，替代终端欧氏状态读出"
+    ],
+    "faq": {
+     "problem": "ICE：Cl(3)潜场多模态图基础模型，30项监督/少样本对比全部第一。",
+     "mechanism": "拓扑（标量）、文本（e1）、图像（e2）提升至节点索引 Cl(3) 潜场；两层边感知多向量消息传递中，几何积幅度经 softmax 决定邻域权重、归一化方向变换邻居值，逐层生成标量/双向量/三向量关系；H0/H1/H2 全部保留为级-深存储，以语义拓扑对比 + 掩码几何重构自监督预训练，新鲜 NC/LP 头按级与深度查询同一字段。",
+     "agentChange": "拓扑（标量）、文本（e1）、图像（e2）提升至节点索引 Cl(3) 潜场；两层边感知多向量消息传递中，几何积幅度经 softmax 决定邻域权重、归一化方向变换邻居值，逐层生成标量/双向量/三向量关系；H0/H1/H2 全部保留为级-深存储，以语义拓扑对比 + 掩码几何重构自监督预训练，新鲜 NC/LP 头按级与深度查询同一字段。",
+     "support": "8 种子均值：ICE 在全部 30 项对比（12 项节点分类指标 + 3 项链接预测 MRR + 9 项少样本 NC + 6 项少样本边分类）均列第一；NC Acc 领先次优 PLANET 0.35–2.36 分、LP MRR 领先 0.83–1.64 分、少样本 NC 领先 1.10–1.24 分；例：RedditS Acc 96.97、Books-NC Acc 85.24、Sports MRR 28.38；消融：去 Clifford 积 MRR -1.51，去 Grade-1 路由 Acc -1.13/F1 -1.40。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "给基础模型一个节点与边预测通用、可级深查询的几何表示接口。"
+   }
+  },
+  {
+   "id": "2609.28963",
+   "version": 1,
+   "title": "Back to the Definition: Estimating Step-Level Advantages via Trajectory Graphs for Agentic RL",
+   "abstract": "轨迹图+BelLman值传播估步级优势，多轮agentic基准超GRPO 20%以上。",
+   "authors": [],
+   "published": "2026-09-28T04:00:00.000Z",
+   "updated": "2026-09-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.28963",
+   "pdf": "https://arxiv.org/pdf/2609.28963",
+   "announceType": "new",
+   "summary": "轨迹图+BelLman值传播估步级优势，多轮agentic基准超GRPO 20%以上。",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.28963"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为无 PRM、无 critic 的 agentic RL 提供理论忠实的步级信用分配，长程任务增益显著。",
+   "repository": null,
+   "motivation": "多轮 agentic 训练需步级信用分配，但 GRPO 式组归一化在步级有系统性偏差。",
+   "coreProblem": "步级组归一化混入不同状态样本致系统性偏差，无偏重采样需 O(N²T) 代价。",
+   "contributions": [
+    "将 rollout 融成轨迹图，BelLman 迭代估节点值，值差即步级优势",
+    "提出 Graph GAE：多跳 TD 残差加权融合，缓解状态值估计偏差",
+    "证明图 TD 信用估计误差低于 GRPO 与 GiGPO，多轮基准一致领先"
+   ],
+   "innovations": [
+    "以 BelLman 自举替代同状态组 MC 回报，步级优势严格符合 RL 标准定义",
+    "对比 GraphGPO 启发式距离奖励，将图当经验 MDP 做值传播、免额外采样",
+    "首次将 GAE 推广到轨迹图，λ 平滑插值单步 TD 与 MC 以控偏差-方差"
+   ],
+   "method": "以精确哈希或嵌入相似度把 N 条 rollout 的状态归一化合并，构建有向轨迹图（节点=状态、边=动作、终点挂成败奖励）；用 Gauss-Seidel BelLman 值迭代（逆 BFS 定序、γ=0.99）从终态奖励反传估计各节点状态值，步级优势取相邻节点值差 γV(s′)−V(s)，叠加 Graph GAE 多跳残差加权与同状态动作组内优势归一化。",
+   "results": "ALFWorld 1.5B/7B 平均成功率 97.4%/98.4%，较 GRPO（72.8/77.6）提升 +24.6/+20.8 点；WebShop 82.3%/82.8%，较 GRPO（56.8/66.1）提升 +25.5/+16.7 点；1.5B 下较 GiGPO 高 +10.7/+17.3 点；SearchQA 7B 平均 48.6，超 GraphGPO 48.0、GiGPO 47.2、Search-R1 38.5；消融：去优势归一化 ALFWorld 由 96.10 跌至 71.33；图构建+优势估计仅占训练时间 0.43%，无额外显存。",
+   "value": "为无 PRM、无 critic 的 agentic RL 提供理论忠实的步级信用分配，长程任务增益显著。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "将 rollout 融成轨迹图，BelLman 迭代估节点值，值差即步级优势",
+    "agentChange": "以精确哈希或嵌入相似度把 N 条 rollout 的状态归一化合并，构建有向轨迹图（节点=状态、边=动作、终点挂成败奖励）；用 Gauss-Seidel BelLman 值迭代（逆 BFS 定序、γ=0.99）从终态奖励反传估计各节点状态值，步级优势取相邻节点值差 γV(s′)−V(s)，叠加 Graph GAE 多跳残差加权与同状态动作组内优势归一化。",
+    "selfEvolution": null,
+    "evidence": [
+     "ALFWorld 1.5B/7B 平均成功率 97.4%/98.4%，较 GRPO（72.8/77.6）提升 +24.6/+20.8 点；WebShop 82.3%/82.8%，较 GRPO（56.8/66.1）提升 +25.5/+16.7 点；1.5B 下较 GiGPO 高 +10.7/+17.3 点；SearchQA 7B 平均 48.6，超 GraphGPO 48.0、GiGPO 47.2、Search-R1 38.5；消融：去优势归一化 ALFWorld 由 96.10 跌至 71.33；图构建+优势估计仅占训练时间 0.43%，无额外显存。",
+     "对比 GraphGPO 启发式距离奖励，将图当经验 MDP 做值传播、免额外采样",
+     "首次将 GAE 推广到轨迹图，λ 平滑插值单步 TD 与 MC 以控偏差-方差"
+    ],
+    "faq": {
+     "problem": "轨迹图+BelLman值传播估步级优势，多轮agentic基准超GRPO 20%以上。",
+     "mechanism": "以精确哈希或嵌入相似度把 N 条 rollout 的状态归一化合并，构建有向轨迹图（节点=状态、边=动作、终点挂成败奖励）；用 Gauss-Seidel BelLman 值迭代（逆 BFS 定序、γ=0.99）从终态奖励反传估计各节点状态值，步级优势取相邻节点值差 γV(s′)−V(s)，叠加 Graph GAE 多跳残差加权与同状态动作组内优势归一化。",
+     "agentChange": "以精确哈希或嵌入相似度把 N 条 rollout 的状态归一化合并，构建有向轨迹图（节点=状态、边=动作、终点挂成败奖励）；用 Gauss-Seidel BelLman 值迭代（逆 BFS 定序、γ=0.99）从终态奖励反传估计各节点状态值，步级优势取相邻节点值差 γV(s′)−V(s)，叠加 Graph GAE 多跳残差加权与同状态动作组内优势归一化。",
+     "support": "ALFWorld 1.5B/7B 平均成功率 97.4%/98.4%，较 GRPO（72.8/77.6）提升 +24.6/+20.8 点；WebShop 82.3%/82.8%，较 GRPO（56.8/66.1）提升 +25.5/+16.7 点；1.5B 下较 GiGPO 高 +10.7/+17.3 点；SearchQA 7B 平均 48.6，超 GraphGPO 48.0、GiGPO 47.2、Search-R1 38.5；消融：去优势归一化 ALFWorld 由 96.10 跌至 71.33；图构建+优势估计仅占训练时间 0.43%，无额外显存。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "为无 PRM、无 critic 的 agentic RL 提供理论忠实的步级信用分配，长程任务增益显著。"
+   }
+  },
+  {
+   "id": "2609.29773",
+   "version": 1,
+   "title": "Breaking the Environment Wall: Evolving LLM Agent Environments for Recursive Self-Improvement",
+   "abstract": "环境整理+学习式准备+事件驱动演化，9模型×30任务平均通过率57.6%→72.7%。",
+   "authors": [],
+   "published": "2026-09-28T04:00:00.000Z",
+   "updated": "2026-09-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.29773",
+   "pdf": "https://arxiv.org/pdf/2609.29773",
+   "announceType": "new",
+   "summary": "环境整理+学习式准备+事件驱动演化，9模型×30任务平均通过率57.6%→72.7%。",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.29773"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把环境准备与挑战生成闭环化，为环境驱动的递归自我改进提供可验证数据源。",
+   "repository": null,
+   "motivation": "真实环境中文件分散、含噪声与版本冲突，agent 难以判定证据有效性。",
+   "coreProblem": "非 agent-ready 环境令 SOTA agent 通过率从 83.9% 跌至 57.6%。",
+   "contributions": [
+    "统一环境组织、学习式准备、事件驱动演化的 Env-Rethink 框架",
+    "教师工具轨迹 SFT 的 27B 环境验证模型，输出文件选择与证据报告",
+    "环境状态、参考答案、评测检查联动更新的演化方法，任务请求不变"
+   ],
+   "innovations": [
+    "环境作为可演化对象：状态变化同步更新答案与评测，任务请求不变",
+    "Event Log 经独立证据审查合成修订历史，暴露跨文件版本关系",
+    "环境层干预与任务模型解耦，同一准备环境复用于 9 个下游模型"
+   ],
+   "method": "Collection Map 语义重组 + 经证据审查的 Event Log 合成修订历史，补充跨文件上下文；以教师工具轨迹 LoRA 微调 Qwen3.8-27B 为环境验证器，部署时仅做文件选择与证据报告、任务 agent 独立执行；Evolver 以反默认决策点（时间/排除/例外规则/数值四类）改变文件状态，同步更新参考答案与检查，经结构校验、答案校验（新答案须过、旧答案须败）与种子-变体配对试跑评估难度。",
+   "results": "30 任务 1,280 项检查：Clean→Noise 均值 83.9%→57.6%（-26.3pp）；下游 9 模型在准备环境下均值 72.7%（未适配基线 59.4%），平均 +13.3pp、逐模型 3.4–17.8pp；TGS 对 5 模型全胜（DeepSeek-V4.1-Flash 64.4%→87.3%）；演化侧：Terminal-Bench 2.1 上 55 个配对任务中 32 个（58.2%）在 ≥3 模型成功率下降、21 个 4 模型全降，覆盖 10 类任务；消融：去 Collection Map TGS 87.3→75.1。",
+   "value": "把环境准备与挑战生成闭环化，为环境驱动的递归自我改进提供可验证数据源。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "统一环境组织、学习式准备、事件驱动演化的 Env-Rethink 框架",
+    "agentChange": "Collection Map 语义重组 + 经证据审查的 Event Log 合成修订历史，补充跨文件上下文；以教师工具轨迹 LoRA 微调 Qwen3.8-27B 为环境验证器，部署时仅做文件选择与证据报告、任务 agent 独立执行；Evolver 以反默认决策点（时间/排除/例外规则/数值四类）改变文件状态，同步更新参考答案与检查，经结构校验、答案校验（新答案须过、旧答案须败）与种子-变体配对试跑评估难度。",
+    "selfEvolution": null,
+    "evidence": [
+     "30 任务 1,280 项检查：Clean→Noise 均值 83.9%→57.6%（-26.3pp）；下游 9 模型在准备环境下均值 72.7%（未适配基线 59.4%），平均 +13.3pp、逐模型 3.4–17.8pp；TGS 对 5 模型全胜（DeepSeek-V4.1-Flash 64.4%→87.3%）；演化侧：Terminal-Bench 2.1 上 55 个配对任务中 32 个（58.2%）在 ≥3 模型成功率下降、21 个 4 模型全降，覆盖 10 类任务；消融：去 Collection Map TGS 87.3→75.1。",
+     "Event Log 经独立证据审查合成修订历史，暴露跨文件版本关系",
+     "环境层干预与任务模型解耦，同一准备环境复用于 9 个下游模型"
+    ],
+    "faq": {
+     "problem": "环境整理+学习式准备+事件驱动演化，9模型×30任务平均通过率57.6%→72.7%。",
+     "mechanism": "Collection Map 语义重组 + 经证据审查的 Event Log 合成修订历史，补充跨文件上下文；以教师工具轨迹 LoRA 微调 Qwen3.8-27B 为环境验证器，部署时仅做文件选择与证据报告、任务 agent 独立执行；Evolver 以反默认决策点（时间/排除/例外规则/数值四类）改变文件状态，同步更新参考答案与检查，经结构校验、答案校验（新答案须过、旧答案须败）与种子-变体配对试跑评估难度。",
+     "agentChange": "Collection Map 语义重组 + 经证据审查的 Event Log 合成修订历史，补充跨文件上下文；以教师工具轨迹 LoRA 微调 Qwen3.8-27B 为环境验证器，部署时仅做文件选择与证据报告、任务 agent 独立执行；Evolver 以反默认决策点（时间/排除/例外规则/数值四类）改变文件状态，同步更新参考答案与检查，经结构校验、答案校验（新答案须过、旧答案须败）与种子-变体配对试跑评估难度。",
+     "support": "30 任务 1,280 项检查：Clean→Noise 均值 83.9%→57.6%（-26.3pp）；下游 9 模型在准备环境下均值 72.7%（未适配基线 59.4%），平均 +13.3pp、逐模型 3.4–17.8pp；TGS 对 5 模型全胜（DeepSeek-V4.1-Flash 64.4%→87.3%）；演化侧：Terminal-Bench 2.1 上 55 个配对任务中 32 个（58.2%）在 ≥3 模型成功率下降、21 个 4 模型全降，覆盖 10 类任务；消融：去 Collection Map TGS 87.3→75.1。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "把环境准备与挑战生成闭环化，为环境驱动的递归自我改进提供可验证数据源。"
+   }
+  },
+  {
+   "id": "2609.28765",
+   "version": 1,
+   "title": "Reinforcement Learning with Verifiable Rewards for Small Search Agents",
+   "abstract": "GRPO训0.8B搜索问答无蒸馏，7基准平均EM 0.092→0.352，稀疏EM奖励最差。",
+   "authors": [],
+   "published": "2026-09-28T04:00:00.000Z",
+   "updated": "2026-09-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.28765",
+   "pdf": "https://arxiv.org/pdf/2609.28765",
+   "announceType": "new",
+   "summary": "GRPO训0.8B搜索问答无蒸馏，7基准平均EM 0.092→0.352，稀疏EM奖励最差。",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.28765"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "表明小模型 RLVR 需独立的奖励设计研究，不能缩小复制大模型配方。",
+   "repository": null,
+   "motivation": "RLVR 在数学代码成功，但子 1B 小模型此前只能靠教师蒸馏学会搜索问答。",
+   "coreProblem": "RLVR 默认稀疏精确匹配奖励在小模型上最劣，直接移植大模型配方不成立。",
+   "contributions": [
+    "验证 GRPO+搜索工具无蒸馏训练 0.8B 模型，7 基准 EM 达 0.352",
+    "三奖励形状×三种子受控消融：精确匹配奖励每种子垫底且最不稳",
+    "提出机制假设：组内奖励方差坍缩致优势为零，属信号弱而非不稳定"
+   ],
+   "innovations": [
+    "首次验证无蒸馏条件下 reason-over-search 配方可迁移至子 1B 模型",
+    "发现小模型 RLVR 奖励设计不能照搬大模型：稀疏 EM 奖励反成最差起点",
+    "以 GRPO 组内相对优势为枢纽，解释稀疏 0/1 奖励在小模型上失效的机制"
+   ],
+   "method": "用 GRPO（无 critic，G=5，KL=1e-3）训练 Qwen3.5-0.8B，交错 Wikipedia 搜索工具（E5+FlashRAG，top-5），仅在 MuSiQue 训约 1 个 epoch；仅变奖励形状（EM-only / F1-only / F1+0.1 格式地板）跨 3 种子受控对比，7 基准 held-out 评测每个检查点。",
+   "results": "7 基准平均 EM：未训 floor 0.092，最佳 run（F1-only, seed44）0.352（+0.260，3.8 倍），训练环路无蒸馏；matched horizon（≤180 步）：F1+format 0.307、F1-only 0.305、EM-only 0.271 且三种子全垫底（0.301/0.264/0.249）；最佳 run 分基准：TriviaQA 0.531、Bamboogle 0.392、PopQA 0.370、MuSiQue 0.161；EM-only 多跳中止率 22.8% vs F1+format 5.0%。",
+   "value": "表明小模型 RLVR 需独立的奖励设计研究，不能缩小复制大模型配方。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "验证 GRPO+搜索工具无蒸馏训练 0.8B 模型，7 基准 EM 达 0.352",
+    "agentChange": "用 GRPO（无 critic，G=5，KL=1e-3）训练 Qwen3.5-0.8B，交错 Wikipedia 搜索工具（E5+FlashRAG，top-5），仅在 MuSiQue 训约 1 个 epoch；仅变奖励形状（EM-only / F1-only / F1+0.1 格式地板）跨 3 种子受控对比，7 基准 held-out 评测每个检查点。",
+    "selfEvolution": null,
+    "evidence": [
+     "7 基准平均 EM：未训 floor 0.092，最佳 run（F1-only, seed44）0.352（+0.260，3.8 倍），训练环路无蒸馏；matched horizon（≤180 步）：F1+format 0.307、F1-only 0.305、EM-only 0.271 且三种子全垫底（0.301/0.264/0.249）；最佳 run 分基准：TriviaQA 0.531、Bamboogle 0.392、PopQA 0.370、MuSiQue 0.161；EM-only 多跳中止率 22.8% vs F1+format 5.0%。",
+     "发现小模型 RLVR 奖励设计不能照搬大模型：稀疏 EM 奖励反成最差起点",
+     "以 GRPO 组内相对优势为枢纽，解释稀疏 0/1 奖励在小模型上失效的机制"
+    ],
+    "faq": {
+     "problem": "GRPO训0.8B搜索问答无蒸馏，7基准平均EM 0.092→0.352，稀疏EM奖励最差。",
+     "mechanism": "用 GRPO（无 critic，G=5，KL=1e-3）训练 Qwen3.5-0.8B，交错 Wikipedia 搜索工具（E5+FlashRAG，top-5），仅在 MuSiQue 训约 1 个 epoch；仅变奖励形状（EM-only / F1-only / F1+0.1 格式地板）跨 3 种子受控对比，7 基准 held-out 评测每个检查点。",
+     "agentChange": "用 GRPO（无 critic，G=5，KL=1e-3）训练 Qwen3.5-0.8B，交错 Wikipedia 搜索工具（E5+FlashRAG，top-5），仅在 MuSiQue 训约 1 个 epoch；仅变奖励形状（EM-only / F1-only / F1+0.1 格式地板）跨 3 种子受控对比，7 基准 held-out 评测每个检查点。",
+     "support": "7 基准平均 EM：未训 floor 0.092，最佳 run（F1-only, seed44）0.352（+0.260，3.8 倍），训练环路无蒸馏；matched horizon（≤180 步）：F1+format 0.307、F1-only 0.305、EM-only 0.271 且三种子全垫底（0.301/0.264/0.249）；最佳 run 分基准：TriviaQA 0.531、Bamboogle 0.392、PopQA 0.370、MuSiQue 0.161；EM-only 多跳中止率 22.8% vs F1+format 5.0%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "表明小模型 RLVR 需独立的奖励设计研究，不能缩小复制大模型配方。"
+   }
+  },
+  {
+   "id": "2609.29421",
+   "version": 1,
+   "title": "Rufus-Air: An Open LLM Post-Training Recipe",
+   "abstract": "GLM-4.5-Air-Base八阶段开源后训练配方，除一项外全面超越官方GLM-4.5-Air。",
+   "authors": [],
+   "published": "2026-09-28T04:00:00.000Z",
+   "updated": "2026-09-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.29421",
+   "pdf": "https://arxiv.org/pdf/2609.29421",
+   "announceType": "new",
+   "summary": "GLM-4.5-Air-Base八阶段开源后训练配方，除一项外全面超越官方GLM-4.5-Air。",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.29421"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把后训练从系统卡写成可逐步复现的配方，降低开放模型后训练门槛。",
+   "repository": null,
+   "motivation": "后训练配方普遍披露过薄、像系统卡，细节最缺，难以复现。",
+   "coreProblem": "后训练细节披露不足且阶段顺序缺乏可操作原则，外部团队难以复现前沿级配方。",
+   "contributions": [
+    "完成 SFT 到 RLHF 共 8 阶段串行后训练，逐阶段披露数据、奖励与配置",
+    "给出逐阶段基准追踪，各阶段对目标基准均有明确增益",
+    "算力仅 8–32 节点 RL 加 SFT 约 832 节点天，非前沿实验室可复现"
+   ],
+   "innovations": [
+    "全程开源组件加公开数据，无新人工标注、无内部蒸馏教师",
+    "提出按奖励可被刷分程度排定阶段顺序的可操作原则",
+    "难度/可学习性过滤把 RL 提示保持在有效学习区间，形成自动课程"
+   ],
+   "method": "以公开 GLM-4.5-Air-Base 为起点，按能力从基础到进阶、奖励从硬可验证到软判分制，串行执行 SFT→推理 RL→代码 RL→指令遵循 RL→通用/代码/搜索 Agent→RLHF；RL 阶段用 GSPO/GRPO + 可验证或判分奖励 + 可学习性过滤，基建上采用 Rollout Routing Replay、FP8 rollout 配 BF16 训练与 token-in/token-out 多轮 rollout。",
+   "results": "对官方 GLM-4.5-Air：IFBench 76.9 vs 33.6（+43.3）、Arena-Hard v2 HP 89.1 vs 55.0（+34.1）、SWE-bench Verified 65.6 vs 50.6（+15.0）、LiveCodeBench v6 76.4 vs 59.6（+16.8）、Tau2-Telecom 93.0 vs 32.7、HLE-Verified Gold 51.1 vs 20.2；仅 Arena-Hard v2 创意写作落后（53.0 vs 60.3）；SFT 单检查点即超官方版 IFEval +5.3、IFBench +24.2；SFT 数据 9.01M 样本/27B token（17 个公开数据集），SFT 约 832 节点天（64 节点 8×H200 约 13 天）。",
+   "value": "把后训练从系统卡写成可逐步复现的配方，降低开放模型后训练门槛。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "完成 SFT 到 RLHF 共 8 阶段串行后训练，逐阶段披露数据、奖励与配置",
+    "agentChange": "以公开 GLM-4.5-Air-Base 为起点，按能力从基础到进阶、奖励从硬可验证到软判分制，串行执行 SFT→推理 RL→代码 RL→指令遵循 RL→通用/代码/搜索 Agent→RLHF；RL 阶段用 GSPO/GRPO + 可验证或判分奖励 + 可学习性过滤，基建上采用 Rollout Routing Replay、FP8 rollout 配 BF16 训练与 token-in/token-out 多轮 rollout。",
+    "selfEvolution": null,
+    "evidence": [
+     "对官方 GLM-4.5-Air：IFBench 76.9 vs 33.6（+43.3）、Arena-Hard v2 HP 89.1 vs 55.0（+34.1）、SWE-bench Verified 65.6 vs 50.6（+15.0）、LiveCodeBench v6 76.4 vs 59.6（+16.8）、Tau2-Telecom 93.0 vs 32.7、HLE-Verified Gold 51.1 vs 20.2；仅 Arena-Hard v2 创意写作落后（53.0 vs 60.3）；SFT 单检查点即超官方版 IFEval +5.3、IFBench +24.2；SFT 数据 9.01M 样本/27B token（17 个公开数据集），SFT 约 832 节点天（64 节点 8×H200 约 13 天）。",
+     "提出按奖励可被刷分程度排定阶段顺序的可操作原则",
+     "难度/可学习性过滤把 RL 提示保持在有效学习区间，形成自动课程"
+    ],
+    "faq": {
+     "problem": "GLM-4.5-Air-Base八阶段开源后训练配方，除一项外全面超越官方GLM-4.5-Air。",
+     "mechanism": "以公开 GLM-4.5-Air-Base 为起点，按能力从基础到进阶、奖励从硬可验证到软判分制，串行执行 SFT→推理 RL→代码 RL→指令遵循 RL→通用/代码/搜索 Agent→RLHF；RL 阶段用 GSPO/GRPO + 可验证或判分奖励 + 可学习性过滤，基建上采用 Rollout Routing Replay、FP8 rollout 配 BF16 训练与 token-in/token-out 多轮 rollout。",
+     "agentChange": "以公开 GLM-4.5-Air-Base 为起点，按能力从基础到进阶、奖励从硬可验证到软判分制，串行执行 SFT→推理 RL→代码 RL→指令遵循 RL→通用/代码/搜索 Agent→RLHF；RL 阶段用 GSPO/GRPO + 可验证或判分奖励 + 可学习性过滤，基建上采用 Rollout Routing Replay、FP8 rollout 配 BF16 训练与 token-in/token-out 多轮 rollout。",
+     "support": "对官方 GLM-4.5-Air：IFBench 76.9 vs 33.6（+43.3）、Arena-Hard v2 HP 89.1 vs 55.0（+34.1）、SWE-bench Verified 65.6 vs 50.6（+15.0）、LiveCodeBench v6 76.4 vs 59.6（+16.8）、Tau2-Telecom 93.0 vs 32.7、HLE-Verified Gold 51.1 vs 20.2；仅 Arena-Hard v2 创意写作落后（53.0 vs 60.3）；SFT 单检查点即超官方版 IFEval +5.3、IFBench +24.2；SFT 数据 9.01M 样本/27B token（17 个公开数据集），SFT 约 832 节点天（64 节点 8×H200 约 13 天）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "把后训练从系统卡写成可逐步复现的配方，降低开放模型后训练门槛。"
+   }
+  },
+  {
+   "id": "2609.30218",
+   "version": 1,
+   "title": "Minimally Invasive Steering of Language Models",
+   "abstract": "MISVO：免更新参数、Fisher几何惩罚pre-logit引导，7组模型-任务中6组奖励最高。",
+   "authors": [],
+   "published": "2026-09-28T04:00:00.000Z",
+   "updated": "2026-09-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.30218",
+   "pdf": "https://arxiv.org/pdf/2609.30218",
+   "announceType": "new",
+   "summary": "MISVO：免更新参数、Fisher几何惩罚pre-logit引导，7组模型-任务中6组奖励最高。",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.30218"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为测试时对齐提供有理论保证的分布安全正则，免辅助网络、冻结参数即可用。",
+   "repository": null,
+   "motivation": "部署时奖励随用户与场景变化，需在冻结参数下做测试时对齐。",
+   "coreProblem": "pre-logit 引导的奖励优化不加正则会把隐态推离可达流形，过引导损害连贯与多样性。",
+   "contributions": [
+    "提出 MISVO：KL 正则目标下优化逐位 pre-logit 引导向量的推理期算法",
+    "证明序列级 KL 梯度=解析 Fisher 项+后缀 score 项，冻结 Fisher 一阶逼近全 KL 梯度",
+    "4 个 1B–14B 模型在 SHP 与 MBPP+ 评估：6/7 设置平均奖励最高，多样性接近 BoN"
+   ],
+   "innovations": [
+    "惩罚取自 token 分布 KL 局部几何的 Fisher 二次型，度量分布敏感度而非隐空间位移",
+    "Fisher 梯度经冻结 LM 头 mat-vec 解析计算，首个 rollout 的 Fisher 估计全程复用",
+    "无需辅助网络/价值函数，区别于 AISP 重要性加权采样控制与 RE-Control"
+   ],
+   "method": "把 KL 正则对齐目标限制在 pre-logit 引导策略类：用 score-function（留一基线）估计奖励梯度，减去冻结参考 Fisher 二次型的解析梯度迭代更新逐位向量 u_t；Fisher 矩阵由首个零引导 rollout 无偏估计一次并复用，Fisher-向量乘经冻结 LM 头免显式成阵。",
+   "results": "3 种子均值、rollout 预算与 BoN 严格对齐：SHP 上 LFM2.5-1.2B 9.29±0.04（BoN 8.70、AISP 9.09）、Gemma3-4B 9.56±0.04（9.10/9.27）、Phi-4-14B 10.25±0.14（9.81/10.00）；唯一例外 Llama3-8B 由 AISP 11.07 领先、MISVO 10.80 仍超 BoN 9.78；MBPP+：LFM 0.739±0.027（BoN 0.703）、Gemma 0.761±0.021（0.739）；实测参考前缀 KL 47.5±12.9 vs AISP 303.9±61.6（低约 6.4 倍）、‖u‖ 339.9 vs 2631.7。",
+   "value": "为测试时对齐提供有理论保证的分布安全正则，免辅助网络、冻结参数即可用。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "提出 MISVO：KL 正则目标下优化逐位 pre-logit 引导向量的推理期算法",
+    "agentChange": "把 KL 正则对齐目标限制在 pre-logit 引导策略类：用 score-function（留一基线）估计奖励梯度，减去冻结参考 Fisher 二次型的解析梯度迭代更新逐位向量 u_t；Fisher 矩阵由首个零引导 rollout 无偏估计一次并复用，Fisher-向量乘经冻结 LM 头免显式成阵。",
+    "selfEvolution": null,
+    "evidence": [
+     "3 种子均值、rollout 预算与 BoN 严格对齐：SHP 上 LFM2.5-1.2B 9.29±0.04（BoN 8.70、AISP 9.09）、Gemma3-4B 9.56±0.04（9.10/9.27）、Phi-4-14B 10.25±0.14（9.81/10.00）；唯一例外 Llama3-8B 由 AISP 11.07 领先、MISVO 10.80 仍超 BoN 9.78；MBPP+：LFM 0.739±0.027（BoN 0.703）、Gemma 0.761±0.021（0.739）；实测参考前缀 KL 47.5±12.9 vs AISP 303.9±61.6（低约 6.4 倍）、‖u‖ 339.9 vs 2631.7。",
+     "Fisher 梯度经冻结 LM 头 mat-vec 解析计算，首个 rollout 的 Fisher 估计全程复用",
+     "无需辅助网络/价值函数，区别于 AISP 重要性加权采样控制与 RE-Control"
+    ],
+    "faq": {
+     "problem": "MISVO：免更新参数、Fisher几何惩罚pre-logit引导，7组模型-任务中6组奖励最高。",
+     "mechanism": "把 KL 正则对齐目标限制在 pre-logit 引导策略类：用 score-function（留一基线）估计奖励梯度，减去冻结参考 Fisher 二次型的解析梯度迭代更新逐位向量 u_t；Fisher 矩阵由首个零引导 rollout 无偏估计一次并复用，Fisher-向量乘经冻结 LM 头免显式成阵。",
+     "agentChange": "把 KL 正则对齐目标限制在 pre-logit 引导策略类：用 score-function（留一基线）估计奖励梯度，减去冻结参考 Fisher 二次型的解析梯度迭代更新逐位向量 u_t；Fisher 矩阵由首个零引导 rollout 无偏估计一次并复用，Fisher-向量乘经冻结 LM 头免显式成阵。",
+     "support": "3 种子均值、rollout 预算与 BoN 严格对齐：SHP 上 LFM2.5-1.2B 9.29±0.04（BoN 8.70、AISP 9.09）、Gemma3-4B 9.56±0.04（9.10/9.27）、Phi-4-14B 10.25±0.14（9.81/10.00）；唯一例外 Llama3-8B 由 AISP 11.07 领先、MISVO 10.80 仍超 BoN 9.78；MBPP+：LFM 0.739±0.027（BoN 0.703）、Gemma 0.761±0.021（0.739）；实测参考前缀 KL 47.5±12.9 vs AISP 303.9±61.6（低约 6.4 倍）、‖u‖ 339.9 vs 2631.7。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为测试时对齐提供有理论保证的分布安全正则，免辅助网络、冻结参数即可用。"
+   }
+  },
+  {
+   "id": "2609.29073",
+   "version": 1,
+   "title": "Seeing Is Not Measuring: Tool-Augmented Metric Spatial Reasoning for Vision-Language Models",
+   "abstract": "工具增强小VLM度量推理：ReVSI方向25.9%→73.4%、绝对距离0.46→0.74。",
+   "authors": [],
+   "published": "2026-09-28T04:00:00.000Z",
+   "updated": "2026-09-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.29073",
+   "pdf": "https://arxiv.org/pdf/2609.29073",
+   "announceType": "new",
+   "summary": "工具增强小VLM度量推理：ReVSI方向25.9%→73.4%、绝对距离0.46→0.74。",
+   "topic": "多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.29073"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "免训练小模型获可解释度量推理，且能定位感知/推理误差瓶颈。",
+   "repository": null,
+   "motivation": "机器人/具身智能需要精确度量空间理解，VLM 恰在此失准。",
+   "coreProblem": "VLM 仅能做定性场景描述，绝对距离/尺寸/朝向等度量 3D 推理不可靠。",
+   "contributions": [
+    "预测器无关的工具框架：相机系检测经位姿提升进共享世界系做度量推理",
+    "GT 预言机与几何上限对照，分离编排与感知误差，归因到检测器",
+    "揭示现成 VLM 无需配方即可自主排工具，短板是调用纪律"
+   ],
+   "innovations": [
+    "将度量计算移出模型权重、交给显式确定性求解器，模型零训练",
+    "检测器可热插拔：同一条工具链接 GT/真实检测器，量化感知瓶颈",
+    "每物体取其自身最佳视角帧，用该帧位姿统一提升进世界坐标系"
+   ],
+   "method": "Qwen3.5-4B 以 CoT 工具调用循环编排相机系 3D 检测、世界系提升（project_box_to_world）与距离/尺寸/方位确定性求解器，只传物体标识、坐标与矩阵留在宿主；感知后端（GT 预言机/单目 3D 检测器/2D 接地+度量深度）在同一 detect_object_3d 接口下热插拔；帧选择按 GT 盒投影取物体最可见帧。",
+   "results": "ReVSI-Bench ARKitScenes，WildDet3D 后端：绝对距离 MRA 0.46→0.74、相对距离 39.1%→67.4%、相对方向 25.9%→73.4%（机会水平 29.3%，无视觉基线甚至低于盲基线 28.3%）；物体尺寸仅 0.58→0.61（感知瓶颈）；GT 预言机下距离 0.94、尺寸 0.97（上限 0.97/1.00），编排代价仅 0.03 MRA；无配方自主探针 160 题达 0.94/0.97 MRA 与 92.5% 相对距离，与脚本流水线 3/4 任务持平，方向任务因 23% 问题不调工具而落后（70.0% vs 80.0%）。",
+   "value": "免训练小模型获可解释度量推理，且能定位感知/推理误差瓶颈。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "预测器无关的工具框架：相机系检测经位姿提升进共享世界系做度量推理",
+    "agentChange": "Qwen3.5-4B 以 CoT 工具调用循环编排相机系 3D 检测、世界系提升（project_box_to_world）与距离/尺寸/方位确定性求解器，只传物体标识、坐标与矩阵留在宿主；感知后端（GT 预言机/单目 3D 检测器/2D 接地+度量深度）在同一 detect_object_3d 接口下热插拔；帧选择按 GT 盒投影取物体最可见帧。",
+    "selfEvolution": null,
+    "evidence": [
+     "ReVSI-Bench ARKitScenes，WildDet3D 后端：绝对距离 MRA 0.46→0.74、相对距离 39.1%→67.4%、相对方向 25.9%→73.4%（机会水平 29.3%，无视觉基线甚至低于盲基线 28.3%）；物体尺寸仅 0.58→0.61（感知瓶颈）；GT 预言机下距离 0.94、尺寸 0.97（上限 0.97/1.00），编排代价仅 0.03 MRA；无配方自主探针 160 题达 0.94/0.97 MRA 与 92.5% 相对距离，与脚本流水线 3/4 任务持平，方向任务因 23% 问题不调工具而落后（70.0% vs 80.0%）。",
+     "检测器可热插拔：同一条工具链接 GT/真实检测器，量化感知瓶颈",
+     "每物体取其自身最佳视角帧，用该帧位姿统一提升进世界坐标系"
+    ],
+    "faq": {
+     "problem": "工具增强小VLM度量推理：ReVSI方向25.9%→73.4%、绝对距离0.46→0.74。",
+     "mechanism": "Qwen3.5-4B 以 CoT 工具调用循环编排相机系 3D 检测、世界系提升（project_box_to_world）与距离/尺寸/方位确定性求解器，只传物体标识、坐标与矩阵留在宿主；感知后端（GT 预言机/单目 3D 检测器/2D 接地+度量深度）在同一 detect_object_3d 接口下热插拔；帧选择按 GT 盒投影取物体最可见帧。",
+     "agentChange": "Qwen3.5-4B 以 CoT 工具调用循环编排相机系 3D 检测、世界系提升（project_box_to_world）与距离/尺寸/方位确定性求解器，只传物体标识、坐标与矩阵留在宿主；感知后端（GT 预言机/单目 3D 检测器/2D 接地+度量深度）在同一 detect_object_3d 接口下热插拔；帧选择按 GT 盒投影取物体最可见帧。",
+     "support": "ReVSI-Bench ARKitScenes，WildDet3D 后端：绝对距离 MRA 0.46→0.74、相对距离 39.1%→67.4%、相对方向 25.9%→73.4%（机会水平 29.3%，无视觉基线甚至低于盲基线 28.3%）；物体尺寸仅 0.58→0.61（感知瓶颈）；GT 预言机下距离 0.94、尺寸 0.97（上限 0.97/1.00），编排代价仅 0.03 MRA；无配方自主探针 160 题达 0.94/0.97 MRA 与 92.5% 相对距离，与脚本流水线 3/4 任务持平，方向任务因 23% 问题不调工具而落后（70.0% vs 80.0%）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "免训练小模型获可解释度量推理，且能定位感知/推理误差瓶颈。"
+   }
+  },
+  {
+   "id": "2609.28958",
+   "version": 1,
+   "title": "Revolutionizing Diffusion MRI Microstructure Mapping via Global Inversion",
+   "abstract": "dMRI微结构映射重构为全局逆问题，无训练INR联合重建，HCP信号误差最优。",
+   "authors": [],
+   "published": "2026-09-28T04:00:00.000Z",
+   "updated": "2026-09-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.28958",
+   "pdf": "https://arxiv.org/pdf/2609.28958",
+   "announceType": "new",
+   "summary": "dMRI微结构映射重构为全局逆问题，无训练INR联合重建，HCP信号误差最优。",
+   "topic": "医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.28958"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "利用微结构空间组织性这一免费先验缓解病态非凸，或成 dMRI 新范式。",
+   "repository": null,
+   "motivation": "脑微结构是空间组织场，含平滑/对称等强全局先验。",
+   "coreProblem": "现有方法逐体素独立反演，忽略空间先验，子问题病态非凸。",
+   "contributions": [
+    "提出首个基于优化的全局反演 MM 方法，联合估计整脑 NODDI 参数",
+    "设计 Ada-WIRE：WIRE 每神经元频率/幅度可学习，利于高频细节",
+    "以 T1 解剖调制 INR 构建 Ada-WIRE Anatomy，调制限幅约 ±10%"
+   ],
+   "innovations": [
+    "整脑联合估计突破逐体素局部/半局部反演范式",
+    "无训练 INR 提供隐式空间先验，免训练数据且缓解非凸优化",
+    "相比已知全局反演工作：NODDI 前向 + 小波 INR + T1 引导的组合"
+   ],
+   "method": "以坐标输入 INR（Ada-WIRE，频率/幅度可学习的小波隐式表示）重参数化整脑 NODDI 参数场，仅用数据保真项做全局优化；T1 解剖经 FiLM 式逐层调制注入结构引导，零初始化、调制限幅约 ±10%。",
+   "results": "合成 20 组体积（81 测量/体素，SNR20）：ODI MSRE 0.022，较 MIX（0.044）降 50%、较 AMICO-NODDI（0.380）降 94%；HCP 10 被试（288 测量/体素）：MAE 0.053（较 AMICO 0.061 降 13%）、MSRE 0.110（较 0.141 降 22%），均优于 DIMOND（0.066/0.115）；活体无参数真值，辅以视觉组织性评估。",
+   "value": "利用微结构空间组织性这一免费先验缓解病态非凸，或成 dMRI 新范式。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "提出首个基于优化的全局反演 MM 方法，联合估计整脑 NODDI 参数",
+    "agentChange": "以坐标输入 INR（Ada-WIRE，频率/幅度可学习的小波隐式表示）重参数化整脑 NODDI 参数场，仅用数据保真项做全局优化；T1 解剖经 FiLM 式逐层调制注入结构引导，零初始化、调制限幅约 ±10%。",
+    "selfEvolution": null,
+    "evidence": [
+     "合成 20 组体积（81 测量/体素，SNR20）：ODI MSRE 0.022，较 MIX（0.044）降 50%、较 AMICO-NODDI（0.380）降 94%；HCP 10 被试（288 测量/体素）：MAE 0.053（较 AMICO 0.061 降 13%）、MSRE 0.110（较 0.141 降 22%），均优于 DIMOND（0.066/0.115）；活体无参数真值，辅以视觉组织性评估。",
+     "无训练 INR 提供隐式空间先验，免训练数据且缓解非凸优化",
+     "相比已知全局反演工作：NODDI 前向 + 小波 INR + T1 引导的组合"
+    ],
+    "faq": {
+     "problem": "dMRI微结构映射重构为全局逆问题，无训练INR联合重建，HCP信号误差最优。",
+     "mechanism": "以坐标输入 INR（Ada-WIRE，频率/幅度可学习的小波隐式表示）重参数化整脑 NODDI 参数场，仅用数据保真项做全局优化；T1 解剖经 FiLM 式逐层调制注入结构引导，零初始化、调制限幅约 ±10%。",
+     "agentChange": "以坐标输入 INR（Ada-WIRE，频率/幅度可学习的小波隐式表示）重参数化整脑 NODDI 参数场，仅用数据保真项做全局优化；T1 解剖经 FiLM 式逐层调制注入结构引导，零初始化、调制限幅约 ±10%。",
+     "support": "合成 20 组体积（81 测量/体素，SNR20）：ODI MSRE 0.022，较 MIX（0.044）降 50%、较 AMICO-NODDI（0.380）降 94%；HCP 10 被试（288 测量/体素）：MAE 0.053（较 AMICO 0.061 降 13%）、MSRE 0.110（较 0.141 降 22%），均优于 DIMOND（0.066/0.115）；活体无参数真值，辅以视觉组织性评估。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "利用微结构空间组织性这一免费先验缓解病态非凸，或成 dMRI 新范式。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-09-27",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-09-27 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-03T21:30:20.000Z",
+ "latestPaperAt": "2026-09-28T04:00:00.000Z",
+ "totalMatched": 12,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 12
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 44,
+ "trends": {
+  "status": "accumulating",
+  "days": 44,
+  "minimumDays": 15,
+  "message": "已积累 44/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-03T21:30:20.000Z",
+ "snapshotDay": "2026-09-28",
+ "historical": true
+}

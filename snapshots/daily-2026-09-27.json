@@ -1,0 +1,792 @@
+{
+ "papers": [
+  {
+   "id": "2609.28580",
+   "version": 1,
+   "title": "Token Clustering and Semantic Sequence Mamba for Hyperspectral Image Classification",
+   "abstract": "STMamba 按语义聚类重组 Mamba token 序列，三 HSI 数据集超 SOTA，Houston2013 OA 95.57%。",
+   "authors": [],
+   "published": "2026-09-27T04:00:00.000Z",
+   "updated": "2026-09-27T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.28580",
+   "pdf": "https://arxiv.org/pdf/2609.28580",
+   "announceType": "new",
+   "summary": "STMamba 按语义聚类重组 Mamba token 序列，三 HSI 数据集超 SOTA，Houston2013 OA 95.57%。",
+   "topic": "遥感 / 高光谱 / 对地观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.28580"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为 HSI 分类提供语义驱动 Mamba 序列构建新范式，小参数下兼顾精度与效率。",
+   "repository": null,
+   "motivation": "让 Mamba 在语义同质的稀疏 token 序列内建模长程依赖，抑制异质区域间无效交互。",
+   "coreProblem": "现有 Mamba 按几何扫描建序列，异质区域混入同序列，token 选择不依语义结构。",
+   "contributions": [
+    "提出 STMamba：语义聚类构建稀疏 token 序列的全图 HSI 分类框架",
+    "设计 TCM 模块：密度峰值聚类定语义中心，四叉树自适应稀疏选 token",
+    "并行空谱 SWSM + 无参 CNA 上采样，仅 0.6M 参数三数据集超 SOTA"
+   ],
+   "innovations": [
+    "序列由语义成员关系定义而非栅格/行列扫描，同质 token 跨距交互",
+    "不同于 SDMamba 依赖中心像素，用密度峰值聚类自适应发现语义中心",
+    "软成员分数作门控直接调制 SSM 的 B/C 参数，实现成员条件化状态传播"
+   ],
+   "method": "四阶段编解码器每级用 TCM 建语义序列：DPC-KNN 在随机偏移网格锚点上做两轮密度峰值聚类得 K 个语义中心，余弦相似度 softmax 生成软成员；四叉树递归划分成员得分图选出稀疏且空间分散的 token（稀疏率 0.01），按成员分数降序送入并行空间/光谱 SWSM，成员门调制 SSM 参数；解码端以无参 CNA 跨尺度上采样恢复稠密特征，损失为交叉熵+聚类中心多样性项。",
+   "results": "10 次独立运行均值：Pavia University OA 86.49%（较次优 MambaHSI+ +5.88 点）、Houston2013 OA 95.57%（较 MambaLG +0.97）、Houston2018 OA 71.34%（较 MambaLG +4.93，SDMamba/S2Mamba 仅 61.22%/50.77%）；参数约 0.6M（DSCC 24.58M），HU18 GFLOPs 212.7 vs MambaLG 543.2；消融：去 CNA 则 HU18 OA 71.34→66.64，成员分数排序改空间排序三数据集降 1.41/0.71/0.97。",
+   "value": "为 HSI 分类提供语义驱动 Mamba 序列构建新范式，小参数下兼顾精度与效率。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "提出 STMamba：语义聚类构建稀疏 token 序列的全图 HSI 分类框架",
+    "agentChange": "四阶段编解码器每级用 TCM 建语义序列：DPC-KNN 在随机偏移网格锚点上做两轮密度峰值聚类得 K 个语义中心，余弦相似度 softmax 生成软成员；四叉树递归划分成员得分图选出稀疏且空间分散的 token（稀疏率 0.01），按成员分数降序送入并行空间/光谱 SWSM，成员门调制 SSM 参数；解码端以无参 CNA 跨尺度上采样恢复稠密特征，损失为交叉熵+聚类中心多样性项。",
+    "selfEvolution": null,
+    "evidence": [
+     "10 次独立运行均值：Pavia University OA 86.49%（较次优 MambaHSI+ +5.88 点）、Houston2013 OA 95.57%（较 MambaLG +0.97）、Houston2018 OA 71.34%（较 MambaLG +4.93，SDMamba/S2Mamba 仅 61.22%/50.77%）；参数约 0.6M（DSCC 24.58M），HU18 GFLOPs 212.7 vs MambaLG 543.2；消融：去 CNA 则 HU18 OA 71.34→66.64，成员分数排序改空间排序三数据集降 1.41/0.71/0.97。",
+     "不同于 SDMamba 依赖中心像素，用密度峰值聚类自适应发现语义中心",
+     "软成员分数作门控直接调制 SSM 的 B/C 参数，实现成员条件化状态传播"
+    ],
+    "faq": {
+     "problem": "STMamba 按语义聚类重组 Mamba token 序列，三 HSI 数据集超 SOTA，Houston2013 OA 95.57%。",
+     "mechanism": "四阶段编解码器每级用 TCM 建语义序列：DPC-KNN 在随机偏移网格锚点上做两轮密度峰值聚类得 K 个语义中心，余弦相似度 softmax 生成软成员；四叉树递归划分成员得分图选出稀疏且空间分散的 token（稀疏率 0.01），按成员分数降序送入并行空间/光谱 SWSM，成员门调制 SSM 参数；解码端以无参 CNA 跨尺度上采样恢复稠密特征，损失为交叉熵+聚类中心多样性项。",
+     "agentChange": "四阶段编解码器每级用 TCM 建语义序列：DPC-KNN 在随机偏移网格锚点上做两轮密度峰值聚类得 K 个语义中心，余弦相似度 softmax 生成软成员；四叉树递归划分成员得分图选出稀疏且空间分散的 token（稀疏率 0.01），按成员分数降序送入并行空间/光谱 SWSM，成员门调制 SSM 参数；解码端以无参 CNA 跨尺度上采样恢复稠密特征，损失为交叉熵+聚类中心多样性项。",
+     "support": "10 次独立运行均值：Pavia University OA 86.49%（较次优 MambaHSI+ +5.88 点）、Houston2013 OA 95.57%（较 MambaLG +0.97）、Houston2018 OA 71.34%（较 MambaLG +4.93，SDMamba/S2Mamba 仅 61.22%/50.77%）；参数约 0.6M（DSCC 24.58M），HU18 GFLOPs 212.7 vs MambaLG 543.2；消融：去 CNA 则 HU18 OA 71.34→66.64，成员分数排序改空间排序三数据集降 1.41/0.71/0.97。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为 HSI 分类提供语义驱动 Mamba 序列构建新范式，小参数下兼顾精度与效率。"
+   }
+  },
+  {
+   "id": "2609.28741",
+   "version": 1,
+   "title": "GeoNLI - A Natural Language Interpreter for Satellite Imagery",
+   "abstract": "遥感 caption/VQA/grounding 统一模块化流水线，七管线投票 grounding mIoU 64.94%。",
+   "authors": [],
+   "published": "2026-09-27T04:00:00.000Z",
+   "updated": "2026-09-27T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.28741",
+   "pdf": "https://arxiv.org/pdf/2609.28741",
+   "announceType": "new",
+   "summary": "遥感 caption/VQA/grounding 统一模块化流水线，七管线投票 grounding mIoU 64.94%。",
+   "topic": "遥感 / 高光谱 / 对地观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.28741"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明模块化投票集成优于任务专用模型，为遥感统一理解系统提供工程范式。",
+   "repository": null,
+   "motivation": "遥感 VLM 训练数据异构、各任务表现失衡，部署需要统一的多任务场景理解系统。",
+   "coreProblem": "EarthMind 长于描述/问答却拙于定位；单一定位模型各有系统性失效（SAM3 单模 mIoU 仅 16.35%）。",
+   "contributions": [
+    "构建 captioning/VQA/grounding 三任务统一的模块化遥感流水线",
+    "设计 RS-SAM3-v1/v2 级联与 DiffuSAM 三条新定位管线，七管线软投票",
+    "重加权 SFT 数据微调 EarthMind（数值 65%/语义 20%/二元 15%）"
+   ],
+   "innovations": [
+    "七管线软投票：框数差指数惩罚 × mIoU 一致性打分选优，抑制单模型失效",
+    "DiffuSAM：扩散模型在图上画红框当视觉提示，按裁剪面积路由定位器",
+    "SAR 图先启发式判别、再条件扩散翻译为光学图后入管线，跨模态统一处理"
+   ],
+   "method": "EarthMind 负责 captioning 直接推理与 SFT 微调后 VQA（混入原训练数据防灾难性遗忘）；grounding 并行运行 7 条管线，按 exp(-0.5·框数差)×mIoU 的一致性得分投票选最优框；v2 用 DBSCAN 把 RemoteSAM 掩码聚成连通候选、逐簇 IoU 选优。",
+   "results": "VRS-Bench：captioning 82%（BERT-BLEU4）、VQA 83.32%（numeric 47.53→52.04%、semantic 90.15→92.06%）；grounding 投票集成 mIoU 64.94%、Acc@0.5 79.28%，较最佳单模 RemoteSAM（62.83%）+2.1pp；RSVQA 总体 45.27%→86.05%（+40.8pp）、Final Score@50 23.69→43.30；NWPU-VHR-10 mIoU 60.31%（较单模 +3.7pp）。",
+   "value": "证明模块化投票集成优于任务专用模型，为遥感统一理解系统提供工程范式。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "构建 captioning/VQA/grounding 三任务统一的模块化遥感流水线",
+    "agentChange": "EarthMind 负责 captioning 直接推理与 SFT 微调后 VQA（混入原训练数据防灾难性遗忘）；grounding 并行运行 7 条管线，按 exp(-0.5·框数差)×mIoU 的一致性得分投票选最优框；v2 用 DBSCAN 把 RemoteSAM 掩码聚成连通候选、逐簇 IoU 选优。",
+    "selfEvolution": null,
+    "evidence": [
+     "VRS-Bench：captioning 82%（BERT-BLEU4）、VQA 83.32%（numeric 47.53→52.04%、semantic 90.15→92.06%）；grounding 投票集成 mIoU 64.94%、Acc@0.5 79.28%，较最佳单模 RemoteSAM（62.83%）+2.1pp；RSVQA 总体 45.27%→86.05%（+40.8pp）、Final Score@50 23.69→43.30；NWPU-VHR-10 mIoU 60.31%（较单模 +3.7pp）。",
+     "DiffuSAM：扩散模型在图上画红框当视觉提示，按裁剪面积路由定位器",
+     "SAR 图先启发式判别、再条件扩散翻译为光学图后入管线，跨模态统一处理"
+    ],
+    "faq": {
+     "problem": "遥感 caption/VQA/grounding 统一模块化流水线，七管线投票 grounding mIoU 64.94%。",
+     "mechanism": "EarthMind 负责 captioning 直接推理与 SFT 微调后 VQA（混入原训练数据防灾难性遗忘）；grounding 并行运行 7 条管线，按 exp(-0.5·框数差)×mIoU 的一致性得分投票选最优框；v2 用 DBSCAN 把 RemoteSAM 掩码聚成连通候选、逐簇 IoU 选优。",
+     "agentChange": "EarthMind 负责 captioning 直接推理与 SFT 微调后 VQA（混入原训练数据防灾难性遗忘）；grounding 并行运行 7 条管线，按 exp(-0.5·框数差)×mIoU 的一致性得分投票选最优框；v2 用 DBSCAN 把 RemoteSAM 掩码聚成连通候选、逐簇 IoU 选优。",
+     "support": "VRS-Bench：captioning 82%（BERT-BLEU4）、VQA 83.32%（numeric 47.53→52.04%、semantic 90.15→92.06%）；grounding 投票集成 mIoU 64.94%、Acc@0.5 79.28%，较最佳单模 RemoteSAM（62.83%）+2.1pp；RSVQA 总体 45.27%→86.05%（+40.8pp）、Final Score@50 23.69→43.30；NWPU-VHR-10 mIoU 60.31%（较单模 +3.7pp）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "证明模块化投票集成优于任务专用模型，为遥感统一理解系统提供工程范式。"
+   }
+  },
+  {
+   "id": "2609.30080",
+   "version": 1,
+   "title": "Can Frozen Hyperspherical Features Guide the Selection of Pseudo Masks?",
+   "abstract": "用冻结 DINOv2 超球面划分几何免训练挑选 SAM 伪掩码，6/8 池超最强外部基线 1.7~9.3 点。",
+   "authors": [],
+   "published": "2026-09-27T04:00:00.000Z",
+   "updated": "2026-09-27T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.30080",
+   "pdf": "https://arxiv.org/pdf/2609.30080",
+   "announceType": "new",
+   "summary": "用冻结 DINOv2 超球面划分几何免训练挑选 SAM 伪掩码，6/8 池超最强外部基线 1.7~9.3 点。",
+   "topic": "基础模型 / SAM / 3D 视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.30080"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "免标注即插即用的掩码质量信号，贯通伪标签选择与下游训练，去额外模型依赖。",
+   "repository": null,
+   "motivation": "基础分割器每图给多个候选掩码，学生用错一个训练即继承其错误，选择比生成更关键。",
+   "coreProblem": "掩码选择需第二个大模型或标注质量头；SAM 自评 IoU 仅选出 Dice 0.276（池内最优 0.685）。",
+   "contributions": [
+    "免训练免标注选择器：仅冻结特征对整池候选打分排序，0.55s/图",
+    "三准则打分：角对比度、球面外观覆盖、边框接触，图内 z 标准化等权求和",
+    "同一球面接入训练：得分先验候选集监督、原型重排与交叉拟合补全标签"
+   ],
+   "innovations": [
+    "首次把伪掩码质量读作候选在冻结超球面上诱导的二分划分性质",
+    "区别于 DSS 相似图检索与置信度分级：只评候选自身的球面划分几何",
+    "不同于固定 top-1 伪标签：得分作先验，训练中动态改选监督目标"
+   ],
+   "method": "把冻结 DINOv2 patch 特征归一化到单位超球面，候选掩码将球面二分：计算两侧平均方向的角对比度、对球面 k-means 外观模式字典的前景覆盖率、掩码占图像边框比例（减分项），三项图内 z 标准化等权求和排序；训练端保留靠前且互异的候选组成候选集，vMF 原型重排，交叉拟合第二轮以 out-of-fold 预测补全。",
+   "results": "8 个 SAM/SAM3 候选池（伪装 COD10K/显著 DUTS-TE/高分二分 DIS-VD/低光 LL-COD）：6 池选出 Dice 超最强外部基线 1.7~9.3pp（SOD 0.929、DIS 0.771，较 adapted DSS +1.7/+5.2）；四个 prompt 池灾难性错误率（Dice<0.2）全部最低（SOD 0.010 vs DSS 0.019）；下游训练较固定标签 weighted-F 提升 4.5/2.3/5.5 点，每种子至少 +4.3/+1.7/+5.3。",
+   "value": "免标注即插即用的掩码质量信号，贯通伪标签选择与下游训练，去额外模型依赖。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "免训练免标注选择器：仅冻结特征对整池候选打分排序，0.55s/图",
+    "agentChange": "把冻结 DINOv2 patch 特征归一化到单位超球面，候选掩码将球面二分：计算两侧平均方向的角对比度、对球面 k-means 外观模式字典的前景覆盖率、掩码占图像边框比例（减分项），三项图内 z 标准化等权求和排序；训练端保留靠前且互异的候选组成候选集，vMF 原型重排，交叉拟合第二轮以 out-of-fold 预测补全。",
+    "selfEvolution": null,
+    "evidence": [
+     "8 个 SAM/SAM3 候选池（伪装 COD10K/显著 DUTS-TE/高分二分 DIS-VD/低光 LL-COD）：6 池选出 Dice 超最强外部基线 1.7~9.3pp（SOD 0.929、DIS 0.771，较 adapted DSS +1.7/+5.2）；四个 prompt 池灾难性错误率（Dice<0.2）全部最低（SOD 0.010 vs DSS 0.019）；下游训练较固定标签 weighted-F 提升 4.5/2.3/5.5 点，每种子至少 +4.3/+1.7/+5.3。",
+     "区别于 DSS 相似图检索与置信度分级：只评候选自身的球面划分几何",
+     "不同于固定 top-1 伪标签：得分作先验，训练中动态改选监督目标"
+    ],
+    "faq": {
+     "problem": "用冻结 DINOv2 超球面划分几何免训练挑选 SAM 伪掩码，6/8 池超最强外部基线 1.7~9.3 点。",
+     "mechanism": "把冻结 DINOv2 patch 特征归一化到单位超球面，候选掩码将球面二分：计算两侧平均方向的角对比度、对球面 k-means 外观模式字典的前景覆盖率、掩码占图像边框比例（减分项），三项图内 z 标准化等权求和排序；训练端保留靠前且互异的候选组成候选集，vMF 原型重排，交叉拟合第二轮以 out-of-fold 预测补全。",
+     "agentChange": "把冻结 DINOv2 patch 特征归一化到单位超球面，候选掩码将球面二分：计算两侧平均方向的角对比度、对球面 k-means 外观模式字典的前景覆盖率、掩码占图像边框比例（减分项），三项图内 z 标准化等权求和排序；训练端保留靠前且互异的候选组成候选集，vMF 原型重排，交叉拟合第二轮以 out-of-fold 预测补全。",
+     "support": "8 个 SAM/SAM3 候选池（伪装 COD10K/显著 DUTS-TE/高分二分 DIS-VD/低光 LL-COD）：6 池选出 Dice 超最强外部基线 1.7~9.3pp（SOD 0.929、DIS 0.771，较 adapted DSS +1.7/+5.2）；四个 prompt 池灾难性错误率（Dice<0.2）全部最低（SOD 0.010 vs DSS 0.019）；下游训练较固定标签 weighted-F 提升 4.5/2.3/5.5 点，每种子至少 +4.3/+1.7/+5.3。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "免标注即插即用的掩码质量信号，贯通伪标签选择与下游训练，去额外模型依赖。"
+   }
+  },
+  {
+   "id": "2609.29224",
+   "version": 1,
+   "title": "FounRef: Robust, Structure-Preserving, and Fast Metric Refinement of Frozen Monocular Foundation Priors with Sparse Anchors",
+   "abstract": "免训练将冻结单目深度先验与稀疏 LiDAR 锚点对齐，域外误差较 DMD3C 低至多 24%、快近 15×。",
+   "authors": [],
+   "published": "2026-09-27T04:00:00.000Z",
+   "updated": "2026-09-27T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.29224",
+   "pdf": "https://arxiv.org/pdf/2609.29224",
+   "announceType": "new",
+   "summary": "免训练将冻结单目深度先验与稀疏 LiDAR 锚点对齐，域外误差较 DMD3C 低至多 24%、快近 15×。",
+   "topic": "基础模型 / SAM / 3D 视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.29224"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "免重训、跨域鲁棒、几何保真的度量深度方案，随基础模型与传感器进步自动受益。",
+   "repository": null,
+   "motivation": "自动驾驶、建图等真实 3D 应用需稠密度量深度，但精度、表面保真与速度难兼得。",
+   "coreProblem": "基础先验缺度量尺度；补全网络绑定训练分布、换传感器需重训，硬拟合锚点损伤表面几何。",
+   "contributions": [
+    "提出免训练框架 FounRef：冻结单目先验+稀疏度量锚点→稠密度量深度",
+    "KITTI/nuScenes/Waymo/GOOSE/NYU 五数据集同锚点横评 6 个补全基线，零重训",
+    "给出先验/求解器/锚点过滤及密度-投影-噪声鲁棒性的系统消融"
+   ],
+   "innovations": [
+    "不同于补全网络，不学 RGB-稀疏深度映射，对未知相机与场景零样本即用",
+    "不同于 RePLAy 等纯几何过滤，用局部精化参考面校验锚点跨模态/时序一致性",
+    "度量对齐与几何预测解耦：只修正先验表面不重画结构，随更强先验自动受益"
+   ],
+   "method": "log 空间 Huber 直线拟合+24 bin 单调校准对齐全局尺度；先轻量求解得参考面，按 log 深度差阈值剔除不一致锚点；再在\"图像位置+log 先验深度\"双边网格上求解加性校正场（5 步双随机归一化、半分辨率共轭梯度、仅上采样校正量），使校正沿表面传播、被深度不连续阻断。",
+   "results": "域外 RMSE(m)：Waymo 0.587 vs DMD3C 0.774（−24%）、NYU 0.164 vs 1.205、KITTI 0.663 vs 0.677；法向离散度 Waymo 2.2° vs 25.6°（−92%）；延迟 78ms vs DMD3C 1219ms（≈15×）；锚点稀释至 1% 时误差仅增 1.4–2.1×（DMD3C 增 2.9–12.9×）；GOOSE 上 DMD3C 领先（0.805 vs 1.073），OMNI-DC 三数据集 RMSE 更低但法向噪声 33–42°。",
+   "value": "免重训、跨域鲁棒、几何保真的度量深度方案，随基础模型与传感器进步自动受益。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "提出免训练框架 FounRef：冻结单目先验+稀疏度量锚点→稠密度量深度",
+    "agentChange": "log 空间 Huber 直线拟合+24 bin 单调校准对齐全局尺度；先轻量求解得参考面，按 log 深度差阈值剔除不一致锚点；再在\"图像位置+log 先验深度\"双边网格上求解加性校正场（5 步双随机归一化、半分辨率共轭梯度、仅上采样校正量），使校正沿表面传播、被深度不连续阻断。",
+    "selfEvolution": null,
+    "evidence": [
+     "域外 RMSE(m)：Waymo 0.587 vs DMD3C 0.774（−24%）、NYU 0.164 vs 1.205、KITTI 0.663 vs 0.677；法向离散度 Waymo 2.2° vs 25.6°（−92%）；延迟 78ms vs DMD3C 1219ms（≈15×）；锚点稀释至 1% 时误差仅增 1.4–2.1×（DMD3C 增 2.9–12.9×）；GOOSE 上 DMD3C 领先（0.805 vs 1.073），OMNI-DC 三数据集 RMSE 更低但法向噪声 33–42°。",
+     "不同于 RePLAy 等纯几何过滤，用局部精化参考面校验锚点跨模态/时序一致性",
+     "度量对齐与几何预测解耦：只修正先验表面不重画结构，随更强先验自动受益"
+    ],
+    "faq": {
+     "problem": "免训练将冻结单目深度先验与稀疏 LiDAR 锚点对齐，域外误差较 DMD3C 低至多 24%、快近 15×。",
+     "mechanism": "log 空间 Huber 直线拟合+24 bin 单调校准对齐全局尺度；先轻量求解得参考面，按 log 深度差阈值剔除不一致锚点；再在\"图像位置+log 先验深度\"双边网格上求解加性校正场（5 步双随机归一化、半分辨率共轭梯度、仅上采样校正量），使校正沿表面传播、被深度不连续阻断。",
+     "agentChange": "log 空间 Huber 直线拟合+24 bin 单调校准对齐全局尺度；先轻量求解得参考面，按 log 深度差阈值剔除不一致锚点；再在\"图像位置+log 先验深度\"双边网格上求解加性校正场（5 步双随机归一化、半分辨率共轭梯度、仅上采样校正量），使校正沿表面传播、被深度不连续阻断。",
+     "support": "域外 RMSE(m)：Waymo 0.587 vs DMD3C 0.774（−24%）、NYU 0.164 vs 1.205、KITTI 0.663 vs 0.677；法向离散度 Waymo 2.2° vs 25.6°（−92%）；延迟 78ms vs DMD3C 1219ms（≈15×）；锚点稀释至 1% 时误差仅增 1.4–2.1×（DMD3C 增 2.9–12.9×）；GOOSE 上 DMD3C 领先（0.805 vs 1.073），OMNI-DC 三数据集 RMSE 更低但法向噪声 33–42°。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "免重训、跨域鲁棒、几何保真的度量深度方案，随基础模型与传感器进步自动受益。"
+   }
+  },
+  {
+   "id": "2609.28850",
+   "version": 1,
+   "title": "RECLAIM: Can Agents Reproduce the Claims of Machine Learning Papers?",
+   "abstract": "建 100 篇 NeurIPS 论文预登记复现基准，最强 agent 三层难度成功率仅 41%/27%/15%。",
+   "authors": [],
+   "published": "2026-09-27T04:00:00.000Z",
+   "updated": "2026-09-27T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.28850",
+   "pdf": "https://arxiv.org/pdf/2609.28850",
+   "announceType": "new",
+   "summary": "建 100 篇 NeurIPS 论文预登记复现基准，最强 agent 三层难度成功率仅 41%/27%/15%。",
+   "topic": "Agent / 后训练",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.28850"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "无发布代码时 agent 复现率骤降的硬证据：瓶颈在核对验证行为而非算力。",
+   "repository": null,
+   "motivation": "agent 已承担大量 ML 工程，静态基准速饱和，需贴近真实复现工作流的评测。",
+   "coreProblem": "现有复现基准预筛\"代码已公开且可跑\"的论文，把作者发布状态这一待测变量直接固定死。",
+   "contributions": [
+    "建 RECLAIM：100 篇 NeurIPS 2025 复现基准，可随会议年度刷新抗饱和",
+    "每题预登记复现目标、成功判据与 GPU 时预算（96 H100 时封顶）",
+    "4 个 agent×100 篇系统评测，九类失败模式标注 400 次运行"
+   ],
+   "innovations": [
+    "难度层按作者自然发布物划分（Run/Retrain/Reimplement），非人为扣代码",
+    "环境、依赖、实验方案全由 agent 端到端自建，异于 SWE-bench 预置验证器",
+    "冻结目标数值匹配+对抗审计员溯源执行证据评分，非 LLM 成对比较"
+   ],
+   "method": "三阶段构建：分类器 agent 核验代码/数据/权重发布物定层，钉住\"支撑核心主张的最省配置\"为匹配目标，分层抽样再人工复核；评分由对抗性 LLM 审计员在冻结 rubric 下把每个报告数字溯源到执行日志与产物、确定性导出结论（与 3 名人工评分者判定 F1=0.82）。",
+   "results": "审计确认 73/400 格复现（18%）；最强 DeepSeek-V4-Flash：Run 层 41%（14/34）、Retrain 27%（9/33）、Reimplement 仅 12%（4/33），总 27/100；Reimplement 层最佳为 Muse Spark 1.2 的 15%；四 agent 均分跨 1.7 倍（5.13 vs 3.03）；失败格平均仅耗 29% 预算、400 格共用 1,888/10,208 H100 时——算力不构成瓶颈；头号失败\"重写后未核对论文数字\"63/400；agent 自评宣称 128 次成功 vs 审计确认 73 次。",
+   "value": "无发布代码时 agent 复现率骤降的硬证据：瓶颈在核对验证行为而非算力。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "建 RECLAIM：100 篇 NeurIPS 2025 复现基准，可随会议年度刷新抗饱和",
+    "agentChange": "三阶段构建：分类器 agent 核验代码/数据/权重发布物定层，钉住\"支撑核心主张的最省配置\"为匹配目标，分层抽样再人工复核；评分由对抗性 LLM 审计员在冻结 rubric 下把每个报告数字溯源到执行日志与产物、确定性导出结论（与 3 名人工评分者判定 F1=0.82）。",
+    "selfEvolution": null,
+    "evidence": [
+     "审计确认 73/400 格复现（18%）；最强 DeepSeek-V4-Flash：Run 层 41%（14/34）、Retrain 27%（9/33）、Reimplement 仅 12%（4/33），总 27/100；Reimplement 层最佳为 Muse Spark 1.2 的 15%；四 agent 均分跨 1.7 倍（5.13 vs 3.03）；失败格平均仅耗 29% 预算、400 格共用 1,888/10,208 H100 时——算力不构成瓶颈；头号失败\"重写后未核对论文数字\"63/400；agent 自评宣称 128 次成功 vs 审计确认 73 次。",
+     "环境、依赖、实验方案全由 agent 端到端自建，异于 SWE-bench 预置验证器",
+     "冻结目标数值匹配+对抗审计员溯源执行证据评分，非 LLM 成对比较"
+    ],
+    "faq": {
+     "problem": "建 100 篇 NeurIPS 论文预登记复现基准，最强 agent 三层难度成功率仅 41%/27%/15%。",
+     "mechanism": "三阶段构建：分类器 agent 核验代码/数据/权重发布物定层，钉住\"支撑核心主张的最省配置\"为匹配目标，分层抽样再人工复核；评分由对抗性 LLM 审计员在冻结 rubric 下把每个报告数字溯源到执行日志与产物、确定性导出结论（与 3 名人工评分者判定 F1=0.82）。",
+     "agentChange": "三阶段构建：分类器 agent 核验代码/数据/权重发布物定层，钉住\"支撑核心主张的最省配置\"为匹配目标，分层抽样再人工复核；评分由对抗性 LLM 审计员在冻结 rubric 下把每个报告数字溯源到执行日志与产物、确定性导出结论（与 3 名人工评分者判定 F1=0.82）。",
+     "support": "审计确认 73/400 格复现（18%）；最强 DeepSeek-V4-Flash：Run 层 41%（14/34）、Retrain 27%（9/33）、Reimplement 仅 12%（4/33），总 27/100；Reimplement 层最佳为 Muse Spark 1.2 的 15%；四 agent 均分跨 1.7 倍（5.13 vs 3.03）；失败格平均仅耗 29% 预算、400 格共用 1,888/10,208 H100 时——算力不构成瓶颈；头号失败\"重写后未核对论文数字\"63/400；agent 自评宣称 128 次成功 vs 审计确认 73 次。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "无发布代码时 agent 复现率骤降的硬证据：瓶颈在核对验证行为而非算力。"
+   }
+  },
+  {
+   "id": "2609.29051",
+   "version": 1,
+   "title": "From Self-Distillation to Self-Practice: Privileged Information for Multi-Turn Agents",
+   "abstract": "证 OPSD 自蒸馏在多轮 agent 塌缩至低于基座，改把特权信息进采样器的 PSP 最高超 GRPO 65%。",
+   "authors": [],
+   "published": "2026-09-27T04:00:00.000Z",
+   "updated": "2026-09-27T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.29051",
+   "pdf": "https://arxiv.org/pdf/2609.29051",
+   "announceType": "new",
+   "summary": "证 OPSD 自蒸馏在多轮 agent 塌缩至低于基座，改把特权信息进采样器的 PSP 最高超 GRPO 65%。",
+   "topic": "Agent / 后训练",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.29051"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "确立特权信息的消费位置决定成败：进采样器而非损失，才能把稠密信号安全写入权重。",
+   "repository": null,
+   "motivation": "OPSD 用特权教师视图提供 token 级稠密信号，在 agent 后训练中流行却未经多轮检验。",
+   "coreProblem": "学生学不会由特权信息决定的内容，只学到\"自信行动\"骨架；动作写入环境使错误跨轮复合。",
+   "contributions": [
+    "以行为案例、熵爆炸与梯度对齐证据诊断 OPSD 在多轮 agent 上的失效",
+    "提出 PSP：特权信息从损失移入采样器，仅难例组注入指令再按 GRPO 训练",
+    "AppWorld/SWE-bench × 3 学生模型均获最佳平均分，唯一稳定优于 GRPO 的方法"
+   ],
+   "innovations": [
+    "目标函数无任何项以特权视图为目标，规避不可约的逐 token 信息差",
+    "指令只进 prompt 不进损失，写入权重仍由奖励决定，行为可脱离指令存活",
+    "成功率门控只在难例组花特权信息，随学生提升自动退火为纯 GRPO"
+   ],
+   "method": "当任务组成功率低于阈值 γ 时，冻结分析器（Qwen3.6-27B）依据学生失败 rollout 与预写参考轨迹生成样本级短指令；丢弃原组、带指令重采样并保留指令在上下文中，用未改动的 GRPO 目标训练新组，优势仅在组内计算，两视图从不互比。",
+   "results": "AppWorld 八指标平均：Qwen3-4B PSP 16.7 vs GRPO 10.6 vs OPSD 3.4（基座 4.4）；Gemma4-E4B 上 OPSD 崩至 0.6；SWE-bench Verified 平均 10.57 vs GRPO 8.35；相对 GRPO：任务目标完成率最高 +65%（21.8 vs 13.2）、SWE-bench resolved 最高 +61%（5.92 vs 3.68）；三模型对 GRPO 平均领先 6.1/1.8/5.3 点。",
+   "value": "确立特权信息的消费位置决定成败：进采样器而非损失，才能把稠密信号安全写入权重。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "以行为案例、熵爆炸与梯度对齐证据诊断 OPSD 在多轮 agent 上的失效",
+    "agentChange": "当任务组成功率低于阈值 γ 时，冻结分析器（Qwen3.6-27B）依据学生失败 rollout 与预写参考轨迹生成样本级短指令；丢弃原组、带指令重采样并保留指令在上下文中，用未改动的 GRPO 目标训练新组，优势仅在组内计算，两视图从不互比。",
+    "selfEvolution": null,
+    "evidence": [
+     "AppWorld 八指标平均：Qwen3-4B PSP 16.7 vs GRPO 10.6 vs OPSD 3.4（基座 4.4）；Gemma4-E4B 上 OPSD 崩至 0.6；SWE-bench Verified 平均 10.57 vs GRPO 8.35；相对 GRPO：任务目标完成率最高 +65%（21.8 vs 13.2）、SWE-bench resolved 最高 +61%（5.92 vs 3.68）；三模型对 GRPO 平均领先 6.1/1.8/5.3 点。",
+     "指令只进 prompt 不进损失，写入权重仍由奖励决定，行为可脱离指令存活",
+     "成功率门控只在难例组花特权信息，随学生提升自动退火为纯 GRPO"
+    ],
+    "faq": {
+     "problem": "证 OPSD 自蒸馏在多轮 agent 塌缩至低于基座，改把特权信息进采样器的 PSP 最高超 GRPO 65%。",
+     "mechanism": "当任务组成功率低于阈值 γ 时，冻结分析器（Qwen3.6-27B）依据学生失败 rollout 与预写参考轨迹生成样本级短指令；丢弃原组、带指令重采样并保留指令在上下文中，用未改动的 GRPO 目标训练新组，优势仅在组内计算，两视图从不互比。",
+     "agentChange": "当任务组成功率低于阈值 γ 时，冻结分析器（Qwen3.6-27B）依据学生失败 rollout 与预写参考轨迹生成样本级短指令；丢弃原组、带指令重采样并保留指令在上下文中，用未改动的 GRPO 目标训练新组，优势仅在组内计算，两视图从不互比。",
+     "support": "AppWorld 八指标平均：Qwen3-4B PSP 16.7 vs GRPO 10.6 vs OPSD 3.4（基座 4.4）；Gemma4-E4B 上 OPSD 崩至 0.6；SWE-bench Verified 平均 10.57 vs GRPO 8.35；相对 GRPO：任务目标完成率最高 +65%（21.8 vs 13.2）、SWE-bench resolved 最高 +61%（5.92 vs 3.68）；三模型对 GRPO 平均领先 6.1/1.8/5.3 点。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "确立特权信息的消费位置决定成败：进采样器而非损失，才能把稠密信号安全写入权重。"
+   }
+  },
+  {
+   "id": "2609.30063",
+   "version": 1,
+   "title": "Self-Play Pretraining with Zero Data",
+   "abstract": "双模型从零自博弈生成预训练数据，多模态自然数据零样本损失随算力幂律下降、指数比肩真实语料。",
+   "authors": [],
+   "published": "2026-09-27T04:00:00.000Z",
+   "updated": "2026-09-27T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.30063",
+   "pdf": "https://arxiv.org/pdf/2609.30063",
+   "announceType": "new",
+   "summary": "双模型从零自博弈生成预训练数据，多模态自然数据零样本损失随算力幂律下降、指数比肩真实语料。",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.30063"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明通用预测结构可纯由算力自举，为数据枯竭后继续扩展预训练提供概念验证。",
+   "repository": null,
+   "motivation": "让模型自产对其改进最有用的数据，使预训练数据近乎无限、只受算力而非人类知识限制。",
+   "coreProblem": "预训练数据靠人工策划与手写合成器，受限于人类知识；固定合成先验带特定域偏置。",
+   "contributions": [
+    "提出零数据自博弈预训练：生成器产程序经通用图灵机执行，学习器做下一字节预测",
+    "设计学习进度奖励（梯度与近期参数位移对齐），GRPO+KL+专家迭代训练生成器",
+    "跨文本/图像/音频/MIDI/DNA/代码建立零样本损失-算力幂律并给出 ansatz 分解"
+   ],
+   "innovations": [
+    "不同于 Absolute Zero 等 LLM 后训练自博弈：双模型随机初始化、纯预训练阶段",
+    "数据分布经 RL 与学习器共演成自适应课程，比固定通用先验采样扩展显著更快",
+    "奖励非难度/可验证/自评类，而是梯度对齐信号，避免注噪退化"
+   ],
+   "method": "生成器与学习器均为随机初始化的字节级 Transformer（≤25M 参数、4K 上下文）：生成器采样类 Brainf*ck 程序，通用图灵机配随机纸带执行成字节序列，学习器以交叉熵预测下一字节；生成器用 GRPO 式策略梯度+对均匀程序先验的 KL 正则训练，奖励为学习器当前梯度与回看窗参数位移的预条件对齐，辅以 MAP-Elites 变异与重放池。",
+   "results": "概念验证规模（最大 34.36B 合成 token）：零样本 BPB 幂律指数 text 0.123（真实语料文献 0.048–0.099）、CIFAR-10 字节 0.145、音频 0.260、Metamath 0.129，整体与真实语料预训练相当；生成器 512 轮内自发发现斐波那契/二次/三次数列（均匀先验期望 >53,000 轮）；以自博弈检查点 warm-start 再真实预训练：ESC-50 收敛 320M vs 496M token、CIFAR-10 421M vs 588M。",
+   "value": "证明通用预测结构可纯由算力自举，为数据枯竭后继续扩展预训练提供概念验证。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "提出零数据自博弈预训练：生成器产程序经通用图灵机执行，学习器做下一字节预测",
+    "agentChange": "生成器与学习器均为随机初始化的字节级 Transformer（≤25M 参数、4K 上下文）：生成器采样类 Brainf*ck 程序，通用图灵机配随机纸带执行成字节序列，学习器以交叉熵预测下一字节；生成器用 GRPO 式策略梯度+对均匀程序先验的 KL 正则训练，奖励为学习器当前梯度与回看窗参数位移的预条件对齐，辅以 MAP-Elites 变异与重放池。",
+    "selfEvolution": null,
+    "evidence": [
+     "概念验证规模（最大 34.36B 合成 token）：零样本 BPB 幂律指数 text 0.123（真实语料文献 0.048–0.099）、CIFAR-10 字节 0.145、音频 0.260、Metamath 0.129，整体与真实语料预训练相当；生成器 512 轮内自发发现斐波那契/二次/三次数列（均匀先验期望 >53,000 轮）；以自博弈检查点 warm-start 再真实预训练：ESC-50 收敛 320M vs 496M token、CIFAR-10 421M vs 588M。",
+     "数据分布经 RL 与学习器共演成自适应课程，比固定通用先验采样扩展显著更快",
+     "奖励非难度/可验证/自评类，而是梯度对齐信号，避免注噪退化"
+    ],
+    "faq": {
+     "problem": "双模型从零自博弈生成预训练数据，多模态自然数据零样本损失随算力幂律下降、指数比肩真实语料。",
+     "mechanism": "生成器与学习器均为随机初始化的字节级 Transformer（≤25M 参数、4K 上下文）：生成器采样类 Brainf*ck 程序，通用图灵机配随机纸带执行成字节序列，学习器以交叉熵预测下一字节；生成器用 GRPO 式策略梯度+对均匀程序先验的 KL 正则训练，奖励为学习器当前梯度与回看窗参数位移的预条件对齐，辅以 MAP-Elites 变异与重放池。",
+     "agentChange": "生成器与学习器均为随机初始化的字节级 Transformer（≤25M 参数、4K 上下文）：生成器采样类 Brainf*ck 程序，通用图灵机配随机纸带执行成字节序列，学习器以交叉熵预测下一字节；生成器用 GRPO 式策略梯度+对均匀程序先验的 KL 正则训练，奖励为学习器当前梯度与回看窗参数位移的预条件对齐，辅以 MAP-Elites 变异与重放池。",
+     "support": "概念验证规模（最大 34.36B 合成 token）：零样本 BPB 幂律指数 text 0.123（真实语料文献 0.048–0.099）、CIFAR-10 字节 0.145、音频 0.260、Metamath 0.129，整体与真实语料预训练相当；生成器 512 轮内自发发现斐波那契/二次/三次数列（均匀先验期望 >53,000 轮）；以自博弈检查点 warm-start 再真实预训练：ESC-50 收敛 320M vs 496M token、CIFAR-10 421M vs 588M。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "证明通用预测结构可纯由算力自举，为数据枯竭后继续扩展预训练提供概念验证。"
+   }
+  },
+  {
+   "id": "2609.28870",
+   "version": 1,
+   "title": "When Fancy Eviction Fails: Rethinking Cache Replacement For LLM Prefix Reuse",
+   "abstract": "回放两家公司生产 trace 评测 14 种淘汰算法：LLM 前缀缓存中 LRU 近最优、复杂策略集体失效。",
+   "authors": [],
+   "published": "2026-09-27T04:00:00.000Z",
+   "updated": "2026-09-27T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.28870",
+   "pdf": "https://arxiv.org/pdf/2609.28870",
+   "announceType": "new",
+   "summary": "回放两家公司生产 trace 评测 14 种淘汰算法：LLM 前缀缓存中 LRU 近最优、复杂策略集体失效。",
+   "topic": "系统 / 基础设施",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.28870"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为前缀缓存管理定调：LRU 为基座按需叠加信号，研究重心应转向成本感知与分层。",
+   "repository": null,
+   "motivation": "长上下文 agent 服务使前缀缓存成为降低 prefill 成本的关键，但生产负载下淘汰行为未知。",
+   "coreProblem": "现有淘汰算法为 web/块存储 trace 设计，从未在 agentic 前缀缓存访问模式上系统检验。",
+   "contributions": [
+    "首个前缀缓存淘汰生产研究：2 条生产 trace + 14 算法对比 Belady",
+    "请求级驻留约束的 C++ 模拟器，较 vLLM 回放最高加速 160 倍",
+    "提出 compute-savings ratio 与两个离线 oracle，给出分容量条件化设计原则"
+   ],
+   "innovations": [
+    "首批含 agentic 流量、细粒度块 ID 的长跨度生产 trace（7 天与 130.9 天）",
+    "首次解释 LRU 难敌的结构性原因：复用由会话节奏驱动，频率信号失效",
+    "首次建模随前缀块深度变化的 miss 成本，导出 ILP 精确最优与 BeladyCompute"
+   ],
+   "method": "用基于 libCacheSim 的模拟器回放两条生产 trace（16-token 块、256K token 封顶），在 HBM（24–120GiB）与 DRAM/SSD 内存池（0.25–12TiB）两档容量扫描 14 种算法与 Belady 的命中率；与 web/块存储经典 trace 做五维结构对比；最后在真实 vLLM+H200 上验证计算感知淘汰。",
+   "results": "两条 trace 合计 84.3 万请求/20.2B tokens；任何容量下无复杂策略胜过 LRU，频率类（LFU/W-TinyLFU）崩溃；1TiB 时 LRU 距最优在线算法仅 0.4 个点内；唯一例外是 24GiB 小容量一次命中洪流（Qwen To-B 上 S3-FIFO/ARC 0.491 vs LRU 0.403）；Belady 仍远高于最优在线算法，headroom 未闭合。",
+   "value": "为前缀缓存管理定调：LRU 为基座按需叠加信号，研究重心应转向成本感知与分层。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "首个前缀缓存淘汰生产研究：2 条生产 trace + 14 算法对比 Belady",
+    "agentChange": "用基于 libCacheSim 的模拟器回放两条生产 trace（16-token 块、256K token 封顶），在 HBM（24–120GiB）与 DRAM/SSD 内存池（0.25–12TiB）两档容量扫描 14 种算法与 Belady 的命中率；与 web/块存储经典 trace 做五维结构对比；最后在真实 vLLM+H200 上验证计算感知淘汰。",
+    "selfEvolution": null,
+    "evidence": [
+     "两条 trace 合计 84.3 万请求/20.2B tokens；任何容量下无复杂策略胜过 LRU，频率类（LFU/W-TinyLFU）崩溃；1TiB 时 LRU 距最优在线算法仅 0.4 个点内；唯一例外是 24GiB 小容量一次命中洪流（Qwen To-B 上 S3-FIFO/ARC 0.491 vs LRU 0.403）；Belady 仍远高于最优在线算法，headroom 未闭合。",
+     "首次解释 LRU 难敌的结构性原因：复用由会话节奏驱动，频率信号失效",
+     "首次建模随前缀块深度变化的 miss 成本，导出 ILP 精确最优与 BeladyCompute"
+    ],
+    "faq": {
+     "problem": "回放两家公司生产 trace 评测 14 种淘汰算法：LLM 前缀缓存中 LRU 近最优、复杂策略集体失效。",
+     "mechanism": "用基于 libCacheSim 的模拟器回放两条生产 trace（16-token 块、256K token 封顶），在 HBM（24–120GiB）与 DRAM/SSD 内存池（0.25–12TiB）两档容量扫描 14 种算法与 Belady 的命中率；与 web/块存储经典 trace 做五维结构对比；最后在真实 vLLM+H200 上验证计算感知淘汰。",
+     "agentChange": "用基于 libCacheSim 的模拟器回放两条生产 trace（16-token 块、256K token 封顶），在 HBM（24–120GiB）与 DRAM/SSD 内存池（0.25–12TiB）两档容量扫描 14 种算法与 Belady 的命中率；与 web/块存储经典 trace 做五维结构对比；最后在真实 vLLM+H200 上验证计算感知淘汰。",
+     "support": "两条 trace 合计 84.3 万请求/20.2B tokens；任何容量下无复杂策略胜过 LRU，频率类（LFU/W-TinyLFU）崩溃；1TiB 时 LRU 距最优在线算法仅 0.4 个点内；唯一例外是 24GiB 小容量一次命中洪流（Qwen To-B 上 S3-FIFO/ARC 0.491 vs LRU 0.403）；Belady 仍远高于最优在线算法，headroom 未闭合。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为前缀缓存管理定调：LRU 为基座按需叠加信号，研究重心应转向成本感知与分层。"
+   }
+  },
+  {
+   "id": "2609.30027",
+   "version": 1,
+   "title": "Synthetic Hospital: An Open, Verifiable, Physician-Validated Longitudinal EHR Benchmark",
+   "abstract": "建 1268 名合成患者纵向 EHR 基准，医生盲评 53% 难辨真伪，最强模型仅 0.732 F1。",
+   "authors": [],
+   "published": "2026-09-27T04:00:00.000Z",
+   "updated": "2026-09-27T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.30027",
+   "pdf": "https://arxiv.org/pdf/2609.30027",
+   "announceType": "new",
+   "summary": "建 1268 名合成患者纵向 EHR 基准，医生盲评 53% 难辨真伪，最强模型仅 0.732 F1。",
+   "topic": "医学 / 临床 AI",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.30027"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为临床 AI 纵向推理提供开放可验证的\"活系统\"考场，前沿模型距医生水平仍有差距。",
+   "repository": null,
+   "motivation": "临床 AI 难进真实工作流，缺开放、可验证金标准的纵向 EHR 基准来开发评测。",
+   "coreProblem": "真实 EHR 因隐私不能开放共享，且病历只反映\"写了什么\"、无可验证完整金标准。",
+   "contributions": [
+    "构建 1268 患者/5602 就诊全合成纵向基准，附模拟医院记录系统",
+    "诊断/所见/时序关系落 ICD-10-CM、SNOMED CT、LOINC 三本体并留完整溯源链",
+    "评测 10 个 27B–1T 模型 + 7 名医生，并定量分解 agent 环路与自检索效应"
+   ],
+   "innovations": [
+    "首个同时解决开放共享与可验证金标准两难的纵向 EHR 基准，异于 MIMIC 类门控数据",
+    "金标准藏于病历之后：呈现给模型的病历保留真实世界的稀疏/缺失/不一致",
+    "实测\"自检索 agent 诊断 +0.14~0.34、agent 环路多数任务负增益\"的反直觉分解"
+   ],
+   "method": "从公开医学教育案例反向构建患者知识图并映射三大临床本体（每个就诊溯源到独立源案例、患者间不共享素材），再渲染成带真实缺陷的病历文本；经标准互操作 API+角色权限+函数调用（13 工具 Epic 风格）供模型交互；医生盲评真实性与本体一致性双重校验。",
+   "results": "医生盲评区分合成/真实仅 53%（近随机）；知识图恢复 119 条医生指定关系中 111 条（93%）；10 模型 4 任务无一近满分：纵向诊断最佳 Kimi 2.5-thinking(1T) severity-weighted F1 0.732（医生均值 0.664、最佳 0.89，最小开源模型仅 0.287），全患者摘要最佳 findings F1 0.532，证据检索 P@5 全员 >0.74；agentic 对比：自检索 agent 诊断较单轮 LLM +0.14~+0.34 F1，但 agent 环路使摘要/检索降 0.07~0.19、Llama 4 Scout 影像适应证降 0.24；失败会话平均耗 145k 输入 token vs 成功 60k。",
+   "value": "为临床 AI 纵向推理提供开放可验证的\"活系统\"考场，前沿模型距医生水平仍有差距。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-03T21:30:20.000Z",
+    "keyContribution": "构建 1268 患者/5602 就诊全合成纵向基准，附模拟医院记录系统",
+    "agentChange": "从公开医学教育案例反向构建患者知识图并映射三大临床本体（每个就诊溯源到独立源案例、患者间不共享素材），再渲染成带真实缺陷的病历文本；经标准互操作 API+角色权限+函数调用（13 工具 Epic 风格）供模型交互；医生盲评真实性与本体一致性双重校验。",
+    "selfEvolution": null,
+    "evidence": [
+     "医生盲评区分合成/真实仅 53%（近随机）；知识图恢复 119 条医生指定关系中 111 条（93%）；10 模型 4 任务无一近满分：纵向诊断最佳 Kimi 2.5-thinking(1T) severity-weighted F1 0.732（医生均值 0.664、最佳 0.89，最小开源模型仅 0.287），全患者摘要最佳 findings F1 0.532，证据检索 P@5 全员 >0.74；agentic 对比：自检索 agent 诊断较单轮 LLM +0.14~+0.34 F1，但 agent 环路使摘要/检索降 0.07~0.19、Llama 4 Scout 影像适应证降 0.24；失败会话平均耗 145k 输入 token vs 成功 60k。",
+     "金标准藏于病历之后：呈现给模型的病历保留真实世界的稀疏/缺失/不一致",
+     "实测\"自检索 agent 诊断 +0.14~0.34、agent 环路多数任务负增益\"的反直觉分解"
+    ],
+    "faq": {
+     "problem": "建 1268 名合成患者纵向 EHR 基准，医生盲评 53% 难辨真伪，最强模型仅 0.732 F1。",
+     "mechanism": "从公开医学教育案例反向构建患者知识图并映射三大临床本体（每个就诊溯源到独立源案例、患者间不共享素材），再渲染成带真实缺陷的病历文本；经标准互操作 API+角色权限+函数调用（13 工具 Epic 风格）供模型交互；医生盲评真实性与本体一致性双重校验。",
+     "agentChange": "从公开医学教育案例反向构建患者知识图并映射三大临床本体（每个就诊溯源到独立源案例、患者间不共享素材），再渲染成带真实缺陷的病历文本；经标准互操作 API+角色权限+函数调用（13 工具 Epic 风格）供模型交互；医生盲评真实性与本体一致性双重校验。",
+     "support": "医生盲评区分合成/真实仅 53%（近随机）；知识图恢复 119 条医生指定关系中 111 条（93%）；10 模型 4 任务无一近满分：纵向诊断最佳 Kimi 2.5-thinking(1T) severity-weighted F1 0.732（医生均值 0.664、最佳 0.89，最小开源模型仅 0.287），全患者摘要最佳 findings F1 0.532，证据检索 P@5 全员 >0.74；agentic 对比：自检索 agent 诊断较单轮 LLM +0.14~+0.34 F1，但 agent 环路使摘要/检索降 0.07~0.19、Llama 4 Scout 影像适应证降 0.24；失败会话平均耗 145k 输入 token vs 成功 60k。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为临床 AI 纵向推理提供开放可验证的\"活系统\"考场，前沿模型距医生水平仍有差距。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-09-26",
+  "newCount": 9,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-09-26 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-03T21:30:20.000Z",
+ "latestPaperAt": "2026-09-27T04:00:00.000Z",
+ "totalMatched": 9,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 9
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 44,
+ "trends": {
+  "status": "accumulating",
+  "days": 44,
+  "minimumDays": 15,
+  "message": "已积累 44/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-03T21:30:20.000Z",
+ "snapshotDay": "2026-09-27",
+ "historical": true
+}
