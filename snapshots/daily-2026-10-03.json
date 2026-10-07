@@ -1,0 +1,1031 @@
+{
+ "papers": [
+  {
+   "id": "2610.02038",
+   "version": 1,
+   "title": "Mimir: Physics-Grounded LLM Agents for Long-Horizon Irrigation Control",
+   "abstract": "物理接地 LLM 灌溉控制 agent，综合控制成本最低，较历史调度节水 51%",
+   "authors": [],
+   "published": "2026-10-03T04:00:00.000Z",
+   "updated": "2026-10-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.02038",
+   "pdf": "https://arxiv.org/pdf/2610.02038",
+   "announceType": "new",
+   "summary": "物理接地 LLM 灌溉控制 agent，综合控制成本最低，较历史调度节水 51%",
+   "topic": "遥感 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.02038"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给出 LLM+物理系统的治理模板，语义推理与数值权威严格分权",
+   "repository": null,
+   "motivation": "长程物理控制中动作改变未来状态、错误跨决策复合，LLM agent 研究空白",
+   "coreProblem": "LLM 输出不能直接驱动执行器，现有 agent 无法在长时程物理系统中安全自改进",
+   "contributions": [
+    "提出双时间尺度物理接地 LLM agent Mimir",
+    "快环：LLM 提案经确定性土壤-水分仿真数值校验后执行",
+    "慢环：反复失败模式蒸馏为持久上下文原则"
+   ],
+   "innovations": [
+    "分离推理权威与物理权威：LLM 永不直接成为执行器命令",
+    "有界自改进：经验只改推理上下文，不改物理模型与动作约束",
+    "发现 LLM 规模无单调收益，控制架构比模型大小更关键"
+   ],
+   "method": "确定性模型给出可行动作域→LLM 提案/修订→程序化仿真暴露后果→有界确定性选择器→运行时保障终审；慢环把反复修正沉淀为持久原则。",
+   "results": "密歇根/德州/科罗拉多多年回溯评测：综合控制成本最低、灌溉量较历史回放少约 51%；配对消融——去前向仿真成本 149.5→730.5，去决策修复 109.1→180.5，去持久上下文 103.0→157.5。",
+   "value": "给出 LLM+物理系统的治理模板，语义推理与数值权威严格分权",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "提出双时间尺度物理接地 LLM agent Mimir",
+    "agentChange": "确定性模型给出可行动作域→LLM 提案/修订→程序化仿真暴露后果→有界确定性选择器→运行时保障终审；慢环把反复修正沉淀为持久原则。",
+    "selfEvolution": null,
+    "evidence": [
+     "密歇根/德州/科罗拉多多年回溯评测：综合控制成本最低、灌溉量较历史回放少约 51%；配对消融——去前向仿真成本 149.5→730.5，去决策修复 109.1→180.5，去持久上下文 103.0→157.5。",
+     "有界自改进：经验只改推理上下文，不改物理模型与动作约束",
+     "发现 LLM 规模无单调收益，控制架构比模型大小更关键"
+    ],
+    "faq": {
+     "problem": "物理接地 LLM 灌溉控制 agent，综合控制成本最低，较历史调度节水 51%",
+     "mechanism": "确定性模型给出可行动作域→LLM 提案/修订→程序化仿真暴露后果→有界确定性选择器→运行时保障终审；慢环把反复修正沉淀为持久原则。",
+     "agentChange": "确定性模型给出可行动作域→LLM 提案/修订→程序化仿真暴露后果→有界确定性选择器→运行时保障终审；慢环把反复修正沉淀为持久原则。",
+     "support": "密歇根/德州/科罗拉多多年回溯评测：综合控制成本最低、灌溉量较历史回放少约 51%；配对消融——去前向仿真成本 149.5→730.5，去决策修复 109.1→180.5，去持久上下文 103.0→157.5。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "给出 LLM+物理系统的治理模板，语义推理与数值权威严格分权"
+   }
+  },
+  {
+   "id": "2610.01206",
+   "version": 1,
+   "title": "Resolving Mixed Single-Photon LiDAR Returns for Foreground-View and Hidden Scene Reconstruction",
+   "abstract": "状态感知双头神经场解码混合单光子 LiDAR 回波，恢复遮挡后隐藏场景",
+   "authors": [],
+   "published": "2026-10-03T04:00:00.000Z",
+   "updated": "2026-10-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.01206",
+   "pdf": "https://arxiv.org/pdf/2610.01206",
+   "announceType": "new",
+   "summary": "状态感知双头神经场解码混合单光子 LiDAR 回波，恢复遮挡后隐藏场景",
+   "topic": "遥感 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.01206"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "打开透过半透明遮挡物的 3D 感知路线，服务巡检与监测",
+   "repository": null,
+   "motivation": "机器人巡检中半透明屏/防护罩挡视线，需要恢复遮挡物后的几何",
+   "coreProblem": "遮挡下波形拟合良态但几何不良态：宽峰也可由位移单面等价解释",
+   "contributions": [
+    "首个仅用遮挡测量做前景视图+隐藏场景重建的研究",
+    "每射线回波证据状态估计，路由双头神经场监督",
+    "首个真实配对多视角 SPL 遮挡数据集（30 场景/3 材质/10 类物体）"
+   ],
+   "innovations": [
+    "明确证明\"瞬态拟合准≠分层几何对\"",
+    "证据依赖监督：全射线管波形，可靠锚点才做几何定位",
+    "双头独立渲染前景视图与隐藏场景两种几何"
+   ],
+   "method": "每射线判定无可靠证据/单回波/有序双回波，状态路由波形、定位与层分割三类损失；双头神经场分别渲染前景与隐藏几何。",
+   "results": "真实数据集三种遮挡物下隐藏场景重建均为最佳；隐藏 F1@2 0.916 / L1 0.459m，而去掉回波证据损失仅 0.568 / 2.258m；基线 DyNFL 隐藏 L1 约 1.9m。",
+   "value": "打开透过半透明遮挡物的 3D 感知路线，服务巡检与监测",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "首个仅用遮挡测量做前景视图+隐藏场景重建的研究",
+    "agentChange": "每射线判定无可靠证据/单回波/有序双回波，状态路由波形、定位与层分割三类损失；双头神经场分别渲染前景与隐藏几何。",
+    "selfEvolution": null,
+    "evidence": [
+     "真实数据集三种遮挡物下隐藏场景重建均为最佳；隐藏 F1@2 0.916 / L1 0.459m，而去掉回波证据损失仅 0.568 / 2.258m；基线 DyNFL 隐藏 L1 约 1.9m。",
+     "证据依赖监督：全射线管波形，可靠锚点才做几何定位",
+     "双头独立渲染前景视图与隐藏场景两种几何"
+    ],
+    "faq": {
+     "problem": "状态感知双头神经场解码混合单光子 LiDAR 回波，恢复遮挡后隐藏场景",
+     "mechanism": "每射线判定无可靠证据/单回波/有序双回波，状态路由波形、定位与层分割三类损失；双头神经场分别渲染前景与隐藏几何。",
+     "agentChange": "每射线判定无可靠证据/单回波/有序双回波，状态路由波形、定位与层分割三类损失；双头神经场分别渲染前景与隐藏几何。",
+     "support": "真实数据集三种遮挡物下隐藏场景重建均为最佳；隐藏 F1@2 0.916 / L1 0.459m，而去掉回波证据损失仅 0.568 / 2.258m；基线 DyNFL 隐藏 L1 约 1.9m。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "打开透过半透明遮挡物的 3D 感知路线，服务巡检与监测"
+   }
+  },
+  {
+   "id": "2610.00855",
+   "version": 1,
+   "title": "Lang3DSeg: Annotation-Free Open-Vocabulary 3D Segmentation with Point Transformers",
+   "abstract": "Point transformer 从零训练做室外开放词汇 3D 分割，双基准无标注 SOTA",
+   "authors": [],
+   "published": "2026-10-03T04:00:00.000Z",
+   "updated": "2026-10-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.00855",
+   "pdf": "https://arxiv.org/pdf/2610.00855",
+   "announceType": "new",
+   "summary": "Point transformer 从零训练做室外开放词汇 3D 分割，双基准无标注 SOTA",
+   "topic": "基础模型 / 3D 感知",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.00855"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "开放词汇 3D 感知从室内走向室外驾驶场景且可实时部署",
+   "repository": null,
+   "motivation": "监督 LiDAR 分割绑定闭集分类与逐点人工标注，稀有障碍物无法分割",
+   "coreProblem": "现有无标注方法只用体素稀疏卷积，point transformer 未用于室外开放词汇",
+   "contributions": [
+    "首个 PointTransformerV3 骨干的室外开放词汇 3D 分割框架",
+    "识别并量化遮挡渗色（occlusion bleed）为投影主导误差",
+    "类优先 mask 合成+深度间隙截断，直接修正投影错误"
+   ],
+   "innovations": [
+    "在投影步纠正标签错误，而非时序投票或自适应标签修正",
+    "无几何预训练、推理无需 VLM，单帧 sweep 实时分割"
+   ],
+   "method": "2D VLM 标签投影为 LiDAR 伪标签，逐实例遮挡测试在深度分布首个间隙处截断，类优先栅格化后从零训练骨干。",
+   "results": "nuScenes 52.8% mIoU、SemanticKITTI 41.4%，均为已发表无标注方法最高；单帧实时推理，推理路径不含 VLM。",
+   "value": "开放词汇 3D 感知从室内走向室外驾驶场景且可实时部署",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "首个 PointTransformerV3 骨干的室外开放词汇 3D 分割框架",
+    "agentChange": "2D VLM 标签投影为 LiDAR 伪标签，逐实例遮挡测试在深度分布首个间隙处截断，类优先栅格化后从零训练骨干。",
+    "selfEvolution": null,
+    "evidence": [
+     "nuScenes 52.8% mIoU、SemanticKITTI 41.4%，均为已发表无标注方法最高；单帧实时推理，推理路径不含 VLM。",
+     "无几何预训练、推理无需 VLM，单帧 sweep 实时分割"
+    ],
+    "faq": {
+     "problem": "Point transformer 从零训练做室外开放词汇 3D 分割，双基准无标注 SOTA",
+     "mechanism": "2D VLM 标签投影为 LiDAR 伪标签，逐实例遮挡测试在深度分布首个间隙处截断，类优先栅格化后从零训练骨干。",
+     "agentChange": "2D VLM 标签投影为 LiDAR 伪标签，逐实例遮挡测试在深度分布首个间隙处截断，类优先栅格化后从零训练骨干。",
+     "support": "nuScenes 52.8% mIoU、SemanticKITTI 41.4%，均为已发表无标注方法最高；单帧实时推理，推理路径不含 VLM。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "开放词汇 3D 感知从室内走向室外驾驶场景且可实时部署"
+   }
+  },
+  {
+   "id": "2610.01927",
+   "version": 1,
+   "title": "CLoSeR: Closing the Loop for Long-Context Streaming Reconstruction",
+   "abstract": "流式 3D 重建基础模型加回环，千米级 ATE 减半至 12.66m",
+   "authors": [],
+   "published": "2026-10-03T04:00:00.000Z",
+   "updated": "2026-10-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.01927",
+   "pdf": "https://arxiv.org/pdf/2610.01927",
+   "announceType": "new",
+   "summary": "流式 3D 重建基础模型加回环，千米级 ATE 减半至 12.66m",
+   "topic": "基础模型 / 3D 感知",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.01927"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "前馈重建基础模型走向大规模实景建图的可行路径",
+   "repository": null,
+   "motivation": "前馈重建基础模型长序列误差累积漂移，无法做大规模建图",
+   "coreProblem": "submap 法子图间尺度不一致，被迫 Sim(3)/SL(4) 优化且配准噪声大",
+   "contributions": [
+    "首个将回环整合进流式前馈重建的系统（LoGeR 骨干）",
+    "回环条件窗口：全局坐标下直接估计回环帧相对位姿",
+    "证明全局尺度一致时 SE(3) 位姿图优化即足够"
+   ],
+   "innovations": [
+    "利用流式骨干全局尺度一致性，把 Sim(3)/SL(4) 降为 SE(3)",
+    "免点云配准，用骨干自身恢复回环相对位姿"
+   ],
+   "method": "全局描述子检索回环候选→构造含当前与重访帧的回环条件窗口得相对位姿→全帧位姿在 SE(3) 上按序列+回环约束优化。",
+   "results": "千米级单目序列 ATE RMSE 25.44m→12.66m（近乎减半）；7.12 FPS vs LoGeR 7.60（−6.3%），峰值显存 16.65→15.69GiB。",
+   "value": "前馈重建基础模型走向大规模实景建图的可行路径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "首个将回环整合进流式前馈重建的系统（LoGeR 骨干）",
+    "agentChange": "全局描述子检索回环候选→构造含当前与重访帧的回环条件窗口得相对位姿→全帧位姿在 SE(3) 上按序列+回环约束优化。",
+    "selfEvolution": null,
+    "evidence": [
+     "千米级单目序列 ATE RMSE 25.44m→12.66m（近乎减半）；7.12 FPS vs LoGeR 7.60（−6.3%），峰值显存 16.65→15.69GiB。",
+     "免点云配准，用骨干自身恢复回环相对位姿"
+    ],
+    "faq": {
+     "problem": "流式 3D 重建基础模型加回环，千米级 ATE 减半至 12.66m",
+     "mechanism": "全局描述子检索回环候选→构造含当前与重访帧的回环条件窗口得相对位姿→全帧位姿在 SE(3) 上按序列+回环约束优化。",
+     "agentChange": "全局描述子检索回环候选→构造含当前与重访帧的回环条件窗口得相对位姿→全帧位姿在 SE(3) 上按序列+回环约束优化。",
+     "support": "千米级单目序列 ATE RMSE 25.44m→12.66m（近乎减半）；7.12 FPS vs LoGeR 7.60（−6.3%），峰值显存 16.65→15.69GiB。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "前馈重建基础模型走向大规模实景建图的可行路径"
+   }
+  },
+  {
+   "id": "2610.01022",
+   "version": 1,
+   "title": "Towards Automatic Video Annotation with ASH: Zero-Shot Open-Vocabulary Multi-Object Tracking and Segmentation",
+   "abstract": "SAM3 零样本开放词汇视频多目标跟踪，MOTS20 HOTA 68.1 刷新纪录",
+   "authors": [],
+   "published": "2026-10-03T04:00:00.000Z",
+   "updated": "2026-10-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.01022",
+   "pdf": "https://arxiv.org/pdf/2610.01022",
+   "announceType": "new",
+   "summary": "SAM3 零样本开放词汇视频多目标跟踪，MOTS20 HOTA 68.1 刷新纪录",
+   "topic": "基础模型 / 3D 感知",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.01022"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为可扩展视频跟踪标注提供实用免训练基线，缓解 VLM 数据瓶颈",
+   "repository": null,
+   "motivation": "视频标注是 VLM 进展瓶颈，人工标注昂贵且跨帧身份难一致",
+   "coreProblem": "记忆 VIS 显存大限于短片，SAM3 单 prompt 推理使多类跟踪不可行",
+   "contributions": [
+    "GPT 广义存在 token：N 个文本 prompt 虚拟批处理共享视觉编码",
+    "ASH 分块推理层：重叠时序块+跨块 IoU 身份匹配，支持任意长度",
+    "SAM3-ASH 免训练全自动跟踪标注管线"
+   ],
+   "innovations": [
+    "不改任何学习组件，图像编码成本 O(N)→O(1)",
+    "模型无关：任意记忆注意力 VIS 都可扩展到长视频",
+    "免训练避免\"标注引擎预置标注\"的循环依赖"
+   ],
+   "method": "把 SAM3 推理批次重构为共享视觉编码的文本 prompt 虚拟批次；长视频切重叠时序块，跨块按 mask IoU 关联身份。",
+   "results": "MOTS20 零样本 HOTA 68.1，为已发表最高（SAM3 为 67.5）；MOT17 HOTA 45.2；7 个基准与训练型专家竞争力相当；峰值显存 <25GB。",
+   "value": "为可扩展视频跟踪标注提供实用免训练基线，缓解 VLM 数据瓶颈",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "GPT 广义存在 token：N 个文本 prompt 虚拟批处理共享视觉编码",
+    "agentChange": "把 SAM3 推理批次重构为共享视觉编码的文本 prompt 虚拟批次；长视频切重叠时序块，跨块按 mask IoU 关联身份。",
+    "selfEvolution": null,
+    "evidence": [
+     "MOTS20 零样本 HOTA 68.1，为已发表最高（SAM3 为 67.5）；MOT17 HOTA 45.2；7 个基准与训练型专家竞争力相当；峰值显存 <25GB。",
+     "模型无关：任意记忆注意力 VIS 都可扩展到长视频",
+     "免训练避免\"标注引擎预置标注\"的循环依赖"
+    ],
+    "faq": {
+     "problem": "SAM3 零样本开放词汇视频多目标跟踪，MOTS20 HOTA 68.1 刷新纪录",
+     "mechanism": "把 SAM3 推理批次重构为共享视觉编码的文本 prompt 虚拟批次；长视频切重叠时序块，跨块按 mask IoU 关联身份。",
+     "agentChange": "把 SAM3 推理批次重构为共享视觉编码的文本 prompt 虚拟批次；长视频切重叠时序块，跨块按 mask IoU 关联身份。",
+     "support": "MOTS20 零样本 HOTA 68.1，为已发表最高（SAM3 为 67.5）；MOT17 HOTA 45.2；7 个基准与训练型专家竞争力相当；峰值显存 <25GB。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "为可扩展视频跟踪标注提供实用免训练基线，缓解 VLM 数据瓶颈"
+   }
+  },
+  {
+   "id": "2610.01286",
+   "version": 1,
+   "title": "Dyna3: VLM-Guided Training-Free 4D Reconstruction via Depth Foundation Models",
+   "abstract": "免训练扩展 DA3 做 4D 动态重建，J-Mean 超 VGGT4D 5.5pp 且快 13x",
+   "authors": [],
+   "published": "2026-10-03T04:00:00.000Z",
+   "updated": "2026-10-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.01286",
+   "pdf": "https://arxiv.org/pdf/2610.01286",
+   "announceType": "new",
+   "summary": "免训练扩展 DA3 做 4D 动态重建，J-Mean 超 VGGT4D 5.5pp 且快 13x",
+   "topic": "基础模型 / 3D 感知",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.01286"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "深度基础模型保持实时优势即可处理动态场景，支持更密时间采样",
+   "repository": null,
+   "motivation": "深度基础模型假设静态场景，动态场景用不上其效率优势",
+   "coreProblem": "DA3 注意力只编码深度一致性，无跨帧匹配信号，无法直接检测运动",
+   "contributions": [
+    "首个免训练扩展纯深度基础模型（DA3）到 4D 动态重建",
+    "best-match 特征搜索：静态面全局可匹配，动态物不可",
+    "VLM 自动生成场景语义 prompt 驱动 SAM3 分割候选运动物"
+   ],
+   "innovations": [
+    "发现深度训练特征隐含运动判别信号",
+    "语义指导判\"什么存在\"、运动信号判\"谁在动\"，两路互补",
+    "不微调 DA3 权重、不需要对应关系监督"
+   ],
+   "method": "跨帧 best-match 特征搜索得运动先验→VLM+SAM3 得实例 mask→解耦为跨帧对齐静态背景+逐帧动态点云。",
+   "results": "DAVIS-2016 J-Mean 65.04%（较 VGGT4D +5.5pp，边界 F-Mean +11.5pp）；位姿估计快至 13x，4D 重建快 3x，显存低 4-8x。",
+   "value": "深度基础模型保持实时优势即可处理动态场景，支持更密时间采样",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "首个免训练扩展纯深度基础模型（DA3）到 4D 动态重建",
+    "agentChange": "跨帧 best-match 特征搜索得运动先验→VLM+SAM3 得实例 mask→解耦为跨帧对齐静态背景+逐帧动态点云。",
+    "selfEvolution": null,
+    "evidence": [
+     "DAVIS-2016 J-Mean 65.04%（较 VGGT4D +5.5pp，边界 F-Mean +11.5pp）；位姿估计快至 13x，4D 重建快 3x，显存低 4-8x。",
+     "语义指导判\"什么存在\"、运动信号判\"谁在动\"，两路互补",
+     "不微调 DA3 权重、不需要对应关系监督"
+    ],
+    "faq": {
+     "problem": "免训练扩展 DA3 做 4D 动态重建，J-Mean 超 VGGT4D 5.5pp 且快 13x",
+     "mechanism": "跨帧 best-match 特征搜索得运动先验→VLM+SAM3 得实例 mask→解耦为跨帧对齐静态背景+逐帧动态点云。",
+     "agentChange": "跨帧 best-match 特征搜索得运动先验→VLM+SAM3 得实例 mask→解耦为跨帧对齐静态背景+逐帧动态点云。",
+     "support": "DAVIS-2016 J-Mean 65.04%（较 VGGT4D +5.5pp，边界 F-Mean +11.5pp）；位姿估计快至 13x，4D 重建快 3x，显存低 4-8x。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "深度基础模型保持实时优势即可处理动态场景，支持更密时间采样"
+   }
+  },
+  {
+   "id": "2610.01618",
+   "version": 1,
+   "title": "Agents Are Systems, Not Models: Rethinking Agentic Evaluation",
+   "abstract": "系统研究 agent 配置空间：信息>预算>模型大小，54% 方差是运行噪声",
+   "authors": [],
+   "published": "2026-10-03T04:00:00.000Z",
+   "updated": "2026-10-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.01618",
+   "pdf": "https://arxiv.org/pdf/2610.01618",
+   "announceType": "new",
+   "summary": "系统研究 agent 配置空间：信息>预算>模型大小，54% 方差是运行噪声",
+   "topic": "Agent / 具身智能",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.01618"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "agent 应作为\"可配置系统\"整体评测，部分行为只能靠系统保证",
+   "repository": null,
+   "motivation": "agent 评测报告多维指标但都把 agent 当固定对象，忽略配置选择影响",
+   "coreProblem": "任务信息/验证/预算/骨干等配置轴如何影响结果与可靠性无人系统量化",
+   "contributions": [
+    "新 AI4S 基准：编码 agent 须找到并正确操作已发表专业科学模型",
+    "五配置轴系统研究：任务信息、推理、自验证、时间预算、骨干",
+    "发布 18,240 条 agent 轨迹与产物，可复现"
+   ],
+   "innovations": [
+    "量化出 54% 结果方差来自同配置重复运行的噪声",
+    "任务信息效应超时间预算与模型大小，且降低成本",
+    "验证提示几乎不改变行为，专用验证工具才行——行为靠系统设计"
+   ],
+   "method": "天体物理/基因组 4 个科学任务，agent 输出对照原论文专业模型评测分；控制变化 5 配置轴，轨迹级行为分类学。",
+   "results": "约 54% 结果方差为运行间噪声；信息轴效应最大（超预算与模型）；额外时间仅在信息足够或模型够强时才提升得分。",
+   "value": "agent 应作为\"可配置系统\"整体评测，部分行为只能靠系统保证",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "新 AI4S 基准：编码 agent 须找到并正确操作已发表专业科学模型",
+    "agentChange": "天体物理/基因组 4 个科学任务，agent 输出对照原论文专业模型评测分；控制变化 5 配置轴，轨迹级行为分类学。",
+    "selfEvolution": null,
+    "evidence": [
+     "约 54% 结果方差为运行间噪声；信息轴效应最大（超预算与模型）；额外时间仅在信息足够或模型够强时才提升得分。",
+     "任务信息效应超时间预算与模型大小，且降低成本",
+     "验证提示几乎不改变行为，专用验证工具才行——行为靠系统设计"
+    ],
+    "faq": {
+     "problem": "系统研究 agent 配置空间：信息>预算>模型大小，54% 方差是运行噪声",
+     "mechanism": "天体物理/基因组 4 个科学任务，agent 输出对照原论文专业模型评测分；控制变化 5 配置轴，轨迹级行为分类学。",
+     "agentChange": "天体物理/基因组 4 个科学任务，agent 输出对照原论文专业模型评测分；控制变化 5 配置轴，轨迹级行为分类学。",
+     "support": "约 54% 结果方差为运行间噪声；信息轴效应最大（超预算与模型）；额外时间仅在信息足够或模型够强时才提升得分。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "agent 应作为\"可配置系统\"整体评测，部分行为只能靠系统保证"
+   }
+  },
+  {
+   "id": "2610.00954",
+   "version": 1,
+   "title": "Beyond Leaderboards: Tokenomics of Agentic Small Language Model Ensembles",
+   "abstract": "SLM agent 集成 IFEval 97.34%，超 gpt-5.4 达 5.81pp 且成本更低",
+   "authors": [],
+   "published": "2026-10-03T04:00:00.000Z",
+   "updated": "2026-10-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.00954",
+   "pdf": "https://arxiv.org/pdf/2610.00954",
+   "announceType": "new",
+   "summary": "SLM agent 集成 IFEval 97.34%，超 gpt-5.4 达 5.81pp 且成本更低",
+   "topic": "Agent / 具身智能",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.00954"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明\"小模型+编排\"在 agent 场景可胜\"大模型\"，给出成本感知评测框架",
+   "repository": null,
+   "motivation": "LLM 进入 agent 工作流，榜单准确率无法反映成本与运行可靠性",
+   "coreProblem": "SLM 弱于复杂约束组合、前沿 LLM 昂贵，缺\"准确率+token 成本\"统一评测",
+   "contributions": [
+    "基于 MCP 的 agent 化 SLM 集成+SLM judge 反馈回路",
+    "完整 tokenomics 分析：单样本成本、token 构成、goodput、时延分解",
+    "提出多维评测协议：保真度+开销+恢复+部署效率耦合"
+   ],
+   "innovations": [
+    "SLM 集成在更低成本档位上指令跟随胜过独立前沿 LLM",
+    "首次把指令保真/token 开销/反馈成本/部署效率作为耦合评测目标"
+   ],
+   "method": "SLM 集成经 MCP 协同，程序化 IFEval 校验+SLM judge 反馈回路迭代修订；逐层分解成本、token 构成、goodput 与时延。",
+   "results": "IFEval（541 prompts）最佳集成 strict 准确率 97.34%，较最强独立基线 gpt-5.4 高 5.81pp，且处于更低成本档位；收益来自 test-time token 与编排开销的兑换。",
+   "value": "证明\"小模型+编排\"在 agent 场景可胜\"大模型\"，给出成本感知评测框架",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "基于 MCP 的 agent 化 SLM 集成+SLM judge 反馈回路",
+    "agentChange": "SLM 集成经 MCP 协同，程序化 IFEval 校验+SLM judge 反馈回路迭代修订；逐层分解成本、token 构成、goodput 与时延。",
+    "selfEvolution": null,
+    "evidence": [
+     "IFEval（541 prompts）最佳集成 strict 准确率 97.34%，较最强独立基线 gpt-5.4 高 5.81pp，且处于更低成本档位；收益来自 test-time token 与编排开销的兑换。",
+     "首次把指令保真/token 开销/反馈成本/部署效率作为耦合评测目标"
+    ],
+    "faq": {
+     "problem": "SLM agent 集成 IFEval 97.34%，超 gpt-5.4 达 5.81pp 且成本更低",
+     "mechanism": "SLM 集成经 MCP 协同，程序化 IFEval 校验+SLM judge 反馈回路迭代修订；逐层分解成本、token 构成、goodput 与时延。",
+     "agentChange": "SLM 集成经 MCP 协同，程序化 IFEval 校验+SLM judge 反馈回路迭代修订；逐层分解成本、token 构成、goodput 与时延。",
+     "support": "IFEval（541 prompts）最佳集成 strict 准确率 97.34%，较最强独立基线 gpt-5.4 高 5.81pp，且处于更低成本档位；收益来自 test-time token 与编排开销的兑换。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "证明\"小模型+编排\"在 agent 场景可胜\"大模型\"，给出成本感知评测框架"
+   }
+  },
+  {
+   "id": "2610.00864",
+   "version": 1,
+   "title": "Kinematic MeanFlow: One-Step Action Generation Policy for Robotic Foundation Models",
+   "abstract": "机器人基础模型一步生成动作策略，动作头延迟降 67.5%~74.4%",
+   "authors": [],
+   "published": "2026-10-03T04:00:00.000Z",
+   "updated": "2026-10-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.00864",
+   "pdf": "https://arxiv.org/pdf/2610.00864",
+   "announceType": "new",
+   "summary": "机器人基础模型一步生成动作策略，动作头延迟降 67.5%~74.4%",
+   "topic": "Agent / 具身智能",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.00864"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "移除 RFM 实时部署最大瓶颈，一步动作生成不牺牲精度",
+   "repository": null,
+   "motivation": "RFM 流匹配多步去噪延迟高，动作头占端到端推理 40~50% 时间",
+   "coreProblem": "MeanFlow 直接用于通才 RFM 会性能崩溃，已有变体只在专家策略上验证",
+   "contributions": [
+    "发现 RFM 速度场两动态：后期局部加速度骤升、样本间展宽",
+    "K-MF：运动学恒等式把 MeanFlow 时间导数项解耦为两子区间项",
+    "从零训练与微调两范式验证单步动作生成"
+   ],
+   "innovations": [
+    "首次系统诊断 MeanFlow 在通才 RFM 上崩溃的机理",
+    "解耦后两项分别捕捉早/晚去噪动态，抑制误差跨步放大"
+   ],
+   "method": "引入中间点把时间导数项拆成两子区间项，分别拟合稳定早段与骤升晚段；可学习中间点策略（3 层 MLP 生成器）。",
+   "results": "NFE=1 接近 NFE=4 流匹配：LIBERO 97.9% vs 97.3%，Simpler-Google 78.4% vs 73.9%；GR00T-N1.6 动作头延迟 −67.5~74.4%，端到端 −30.3~54.9%（L40/Jetson Orin）。",
+   "value": "移除 RFM 实时部署最大瓶颈，一步动作生成不牺牲精度",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "发现 RFM 速度场两动态：后期局部加速度骤升、样本间展宽",
+    "agentChange": "引入中间点把时间导数项拆成两子区间项，分别拟合稳定早段与骤升晚段；可学习中间点策略（3 层 MLP 生成器）。",
+    "selfEvolution": null,
+    "evidence": [
+     "NFE=1 接近 NFE=4 流匹配：LIBERO 97.9% vs 97.3%，Simpler-Google 78.4% vs 73.9%；GR00T-N1.6 动作头延迟 −67.5~74.4%，端到端 −30.3~54.9%（L40/Jetson Orin）。",
+     "解耦后两项分别捕捉早/晚去噪动态，抑制误差跨步放大"
+    ],
+    "faq": {
+     "problem": "机器人基础模型一步生成动作策略，动作头延迟降 67.5%~74.4%",
+     "mechanism": "引入中间点把时间导数项拆成两子区间项，分别拟合稳定早段与骤升晚段；可学习中间点策略（3 层 MLP 生成器）。",
+     "agentChange": "引入中间点把时间导数项拆成两子区间项，分别拟合稳定早段与骤升晚段；可学习中间点策略（3 层 MLP 生成器）。",
+     "support": "NFE=1 接近 NFE=4 流匹配：LIBERO 97.9% vs 97.3%，Simpler-Google 78.4% vs 73.9%；GR00T-N1.6 动作头延迟 −67.5~74.4%，端到端 −30.3~54.9%（L40/Jetson Orin）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "移除 RFM 实时部署最大瓶颈，一步动作生成不牺牲精度"
+   }
+  },
+  {
+   "id": "2610.01939",
+   "version": 1,
+   "title": "Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65% Fewer Tokens",
+   "abstract": "VLM 机器人 agent 代码执行+选择性观察，成功率 63.1→71.7% 且 token −65%",
+   "authors": [],
+   "published": "2026-10-03T04:00:00.000Z",
+   "updated": "2026-10-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.01939",
+   "pdf": "https://arxiv.org/pdf/2610.01939",
+   "announceType": "new",
+   "summary": "VLM 机器人 agent 代码执行+选择性观察，成功率 63.1→71.7% 且 token −65%",
+   "topic": "Agent / 具身智能",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.01939"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明接口设计（而非模型能力）是具身 agent 效率的关键变量",
+   "repository": null,
+   "motivation": "VLM agent 反复调用模型、冗余观察，token 开销巨大",
+   "coreProblem": "工具调用接口中依赖操作须新 VLM 调用，中间结果堆积进上下文",
+   "contributions": [
+    "PyRUA-Lean：Python 执行接口组合机器人原语与 VLA 策略",
+    "选择性观察：仅回传显式请求的图像与状态",
+    "700 实例三基准评测（LIBERO-PRO/RoboTwin 2.0/RoboCasa365）"
+   ],
+   "innovations": [
+    "代码执行替代工具调用：条件检查与本地重试不唤醒模型",
+    "持久程序状态+按需观察，直接控制进入上下文的观测",
+    "同 planner 同原语的干净接口级对照实验"
+   ],
+   "method": "agent 写 Python cell 组合经典原语与 VLA 策略，cell 内执行条件分支与本地重试；仅打印输出与请求的相机帧返回 VLM 重规划。",
+   "results": "同等 LLM 调用预算下总成功率 63.1%→71.7%；双方都解出的实例上 LLM 调用 −49%、输入 token −65%。",
+   "value": "证明接口设计（而非模型能力）是具身 agent 效率的关键变量",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "PyRUA-Lean：Python 执行接口组合机器人原语与 VLA 策略",
+    "agentChange": "agent 写 Python cell 组合经典原语与 VLA 策略，cell 内执行条件分支与本地重试；仅打印输出与请求的相机帧返回 VLM 重规划。",
+    "selfEvolution": null,
+    "evidence": [
+     "同等 LLM 调用预算下总成功率 63.1%→71.7%；双方都解出的实例上 LLM 调用 −49%、输入 token −65%。",
+     "持久程序状态+按需观察，直接控制进入上下文的观测",
+     "同 planner 同原语的干净接口级对照实验"
+    ],
+    "faq": {
+     "problem": "VLM 机器人 agent 代码执行+选择性观察，成功率 63.1→71.7% 且 token −65%",
+     "mechanism": "agent 写 Python cell 组合经典原语与 VLA 策略，cell 内执行条件分支与本地重试；仅打印输出与请求的相机帧返回 VLM 重规划。",
+     "agentChange": "agent 写 Python cell 组合经典原语与 VLA 策略，cell 内执行条件分支与本地重试；仅打印输出与请求的相机帧返回 VLM 重规划。",
+     "support": "同等 LLM 调用预算下总成功率 63.1%→71.7%；双方都解出的实例上 LLM 调用 −49%、输入 token −65%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "证明接口设计（而非模型能力）是具身 agent 效率的关键变量"
+   }
+  },
+  {
+   "id": "2610.00894",
+   "version": 1,
+   "title": "Clock Diffusion: Efficient Semi-Autoregressive Continuous Diffusion Language Models",
+   "abstract": "半自回归连续扩散语言模型，首个可比块离散扩散 PPL 且支持 KV 缓存",
+   "authors": [],
+   "published": "2026-10-03T04:00:00.000Z",
+   "updated": "2026-10-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.00894",
+   "pdf": "https://arxiv.org/pdf/2610.00894",
+   "announceType": "new",
+   "summary": "半自回归连续扩散语言模型，首个可比块离散扩散 PPL 且支持 KV 缓存",
+   "topic": "大语言模型 / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.00894"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "连续扩散 LM 从玩具走向实用，打开 AR 与离散扩散之外的第三条路线",
+   "repository": null,
+   "motivation": "连续扩散 LM 性能已近离散扩散，但无法变长生成、不支持 KV 缓存",
+   "coreProblem": "全序列连续模型不可实用化，质量仍落后 AR 与 SAR 离散扩散",
+   "contributions": [
+    "Clock Diffusion：位置相关噪声调度（局部时钟）定义 SAR 连续 DLM",
+    "ClockDLM 家族：滑动窗口高斯 DLM+高效训练采样",
+    "Cache Grab 采样器：置信 token 提交+自投机解码"
+   ],
+   "innovations": [
+    "首个支持变长生成+KV 缓存的连续 DLM",
+    "连续 DLM 中 PPL 达 SOTA，甚至超过块式离散扩散"
+   ],
+   "method": "把全局扩散时间参数化为位置相关局部时钟，块/滑动窗口两种生成模式；滑窗版本每轮更新 KV 缓存。",
+   "results": "OpenWebText PPL 连续模型 SOTA（胜块式 SAR 离散扩散），较 BD3LM 将 PPL 与 AR 基线差距缩小约 38%；TinyGSM 训练 GSM8K 66.6~67.2%，超 AR 基线 64.3%；较此前连续 DLM 准确率最高提升 33%。",
+   "value": "连续扩散 LM 从玩具走向实用，打开 AR 与离散扩散之外的第三条路线",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "Clock Diffusion：位置相关噪声调度（局部时钟）定义 SAR 连续 DLM",
+    "agentChange": "把全局扩散时间参数化为位置相关局部时钟，块/滑动窗口两种生成模式；滑窗版本每轮更新 KV 缓存。",
+    "selfEvolution": null,
+    "evidence": [
+     "OpenWebText PPL 连续模型 SOTA（胜块式 SAR 离散扩散），较 BD3LM 将 PPL 与 AR 基线差距缩小约 38%；TinyGSM 训练 GSM8K 66.6~67.2%，超 AR 基线 64.3%；较此前连续 DLM 准确率最高提升 33%。",
+     "连续 DLM 中 PPL 达 SOTA，甚至超过块式离散扩散"
+    ],
+    "faq": {
+     "problem": "半自回归连续扩散语言模型，首个可比块离散扩散 PPL 且支持 KV 缓存",
+     "mechanism": "把全局扩散时间参数化为位置相关局部时钟，块/滑动窗口两种生成模式；滑窗版本每轮更新 KV 缓存。",
+     "agentChange": "把全局扩散时间参数化为位置相关局部时钟，块/滑动窗口两种生成模式；滑窗版本每轮更新 KV 缓存。",
+     "support": "OpenWebText PPL 连续模型 SOTA（胜块式 SAR 离散扩散），较 BD3LM 将 PPL 与 AR 基线差距缩小约 38%；TinyGSM 训练 GSM8K 66.6~67.2%，超 AR 基线 64.3%；较此前连续 DLM 准确率最高提升 33%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "连续扩散 LM 从玩具走向实用，打开 AR 与离散扩散之外的第三条路线"
+   }
+  },
+  {
+   "id": "2610.02181",
+   "version": 1,
+   "title": "OmniSeek: Native Tool Integration for Multi-turn Audio-Visual Reasoning",
+   "abstract": "30B 全模态工具调用推理 agent，长视频基准 +16.3pp 并胜 Gemini-2.5-Pro",
+   "authors": [],
+   "published": "2026-10-03T04:00:00.000Z",
+   "updated": "2026-10-03T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.02181",
+   "pdf": "https://arxiv.org/pdf/2610.02181",
+   "announceType": "new",
+   "summary": "30B 全模态工具调用推理 agent，长视频基准 +16.3pp 并胜 Gemini-2.5-Pro",
+   "topic": "大语言模型 / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.02181"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "主动证据获取是长全模态推理的关键能力，agent 化让小模型胜大模型",
+   "repository": null,
+   "motivation": "Omni-LLM 一次性被动编码整段音视频，细粒度证据在长上下文中被稀释",
+   "coreProblem": "现有多模态 CoT 只推理文本或固定全局上下文，从不回看原始音视频",
+   "contributions": [
+    "OmniSeek：think/tool/observe 多轮循环，动态决定看/听哪个时间窗",
+    "OmniTraj-170K：交错音视频证据的多跳 CoT 轨迹数据集",
+    "AV Necessity 目标：奖励依赖双模态的轨迹，抑制单模态捷径"
+   ],
+   "innovations": [
+    "把\"证据获取\"变成推理过程本身（工具取原始片段回注上下文）",
+    "注意力 mask 实现必要性奖励，无需额外 rollout",
+    "30B 模型通用视频理解胜 72B 视频模型"
+   ],
+   "method": "合成轨迹 SFT 植入多轮工具使用→两阶段 RL（可验证奖励+AV 必要性目标）；检索的原始音视频片段直接拼回上下文迭代精炼。",
+   "results": "MMOU 70.4%（较基座 +16.3pp）、LVOmniBench 44.2%（+8.4pp）；VideoHolmes 74.6% vs OmniVideo-R1 62.9%；FutureOmni/VideoHolmes/JointAV 上超 Gemini-2.5-Pro。",
+   "value": "主动证据获取是长全模态推理的关键能力，agent 化让小模型胜大模型",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "OmniSeek：think/tool/observe 多轮循环，动态决定看/听哪个时间窗",
+    "agentChange": "合成轨迹 SFT 植入多轮工具使用→两阶段 RL（可验证奖励+AV 必要性目标）；检索的原始音视频片段直接拼回上下文迭代精炼。",
+    "selfEvolution": null,
+    "evidence": [
+     "MMOU 70.4%（较基座 +16.3pp）、LVOmniBench 44.2%（+8.4pp）；VideoHolmes 74.6% vs OmniVideo-R1 62.9%；FutureOmni/VideoHolmes/JointAV 上超 Gemini-2.5-Pro。",
+     "注意力 mask 实现必要性奖励，无需额外 rollout",
+     "30B 模型通用视频理解胜 72B 视频模型"
+    ],
+    "faq": {
+     "problem": "30B 全模态工具调用推理 agent，长视频基准 +16.3pp 并胜 Gemini-2.5-Pro",
+     "mechanism": "合成轨迹 SFT 植入多轮工具使用→两阶段 RL（可验证奖励+AV 必要性目标）；检索的原始音视频片段直接拼回上下文迭代精炼。",
+     "agentChange": "合成轨迹 SFT 植入多轮工具使用→两阶段 RL（可验证奖励+AV 必要性目标）；检索的原始音视频片段直接拼回上下文迭代精炼。",
+     "support": "MMOU 70.4%（较基座 +16.3pp）、LVOmniBench 44.2%（+8.4pp）；VideoHolmes 74.6% vs OmniVideo-R1 62.9%；FutureOmni/VideoHolmes/JointAV 上超 Gemini-2.5-Pro。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "主动证据获取是长全模态推理的关键能力，agent 化让小模型胜大模型"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-10-02",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-10-02 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-07T21:30:39.000Z",
+ "latestPaperAt": "2026-10-03T04:00:00.000Z",
+ "totalMatched": 555,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 555
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 47,
+ "trends": {
+  "status": "accumulating",
+  "days": 47,
+  "minimumDays": 15,
+  "message": "已积累 47/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-07T21:30:39.000Z",
+ "snapshotDay": "2026-10-03",
+ "historical": true
+}

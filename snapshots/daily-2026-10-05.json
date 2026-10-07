@@ -1,0 +1,1035 @@
+{
+ "papers": [
+  {
+   "id": "2610.02763",
+   "version": 1,
+   "title": "A Two-Stage Cascade for Near-Real-Time Forest Anomaly Detection from Sentinel-1 SAR Time Series",
+   "abstract": "Sentinel-1 SAR 统计+编码器两级级联，近实时检测森林砍伐",
+   "authors": [],
+   "published": "2026-10-05T04:00:00.000Z",
+   "updated": "2026-10-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.02763",
+   "pdf": "https://arxiv.org/pdf/2610.02763",
+   "announceType": "new",
+   "summary": "Sentinel-1 SAR 统计+编码器两级级联，近实时检测森林砍伐",
+   "topic": "遥感 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.02763"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "面向碳市场与 REDD+ 核查的免云、可审计森林警报管线",
+   "repository": null,
+   "motivation": "光学影像被云遮挡，非法伐木警报须在数天内触达执法",
+   "coreProblem": "SAR 季节湿度波动压低后向散射，纯统计法误报为砍伐",
+   "contributions": [
+    "自适应 MAD-z 分数统计层，同季节基线对齐轨道几何",
+    "卷积自编码器潜空间 SSIM 结构确认门",
+    "输出可审计置信分与公顷面积，兼容 MRV 核查流程"
+   ],
+   "innovations": [
+    "统计检测器+学习型结构门组合，同时消除两条独立误报路径",
+    "10m 像元 10×10 斑块级检测单元抑制斑点噪声",
+    "时间持续性机制：多景连续命中才发警报，捕捉渐进性选择性伐木"
+   ],
+   "method": "Stage 1 对 VH 后向散射做稳健 z 分数测试提名候选斑块，Stage 2 验证编码器学到的结构表征是否真正改变，两者一致才出警报。",
+   "results": "未报告统一基准数字（作者将验证集检测可靠性列为未来工作）；斑块级 10×10@10m、90% 森林占比门槛；文献参照：多源融合法精度 91.6% 但时延约 100 天",
+   "value": "面向碳市场与 REDD+ 核查的免云、可审计森林警报管线",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "自适应 MAD-z 分数统计层，同季节基线对齐轨道几何",
+    "agentChange": "Stage 1 对 VH 后向散射做稳健 z 分数测试提名候选斑块，Stage 2 验证编码器学到的结构表征是否真正改变，两者一致才出警报。",
+    "selfEvolution": null,
+    "evidence": [
+     "未报告统一基准数字（作者将验证集检测可靠性列为未来工作）；斑块级 10×10@10m、90% 森林占比门槛；文献参照：多源融合法精度 91.6% 但时延约 100 天",
+     "10m 像元 10×10 斑块级检测单元抑制斑点噪声",
+     "时间持续性机制：多景连续命中才发警报，捕捉渐进性选择性伐木"
+    ],
+    "faq": {
+     "problem": "Sentinel-1 SAR 统计+编码器两级级联，近实时检测森林砍伐",
+     "mechanism": "Stage 1 对 VH 后向散射做稳健 z 分数测试提名候选斑块，Stage 2 验证编码器学到的结构表征是否真正改变，两者一致才出警报。",
+     "agentChange": "Stage 1 对 VH 后向散射做稳健 z 分数测试提名候选斑块，Stage 2 验证编码器学到的结构表征是否真正改变，两者一致才出警报。",
+     "support": "未报告统一基准数字（作者将验证集检测可靠性列为未来工作）；斑块级 10×10@10m、90% 森林占比门槛；文献参照：多源融合法精度 91.6% 但时延约 100 天",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "面向碳市场与 REDD+ 核查的免云、可审计森林警报管线"
+   }
+  },
+  {
+   "id": "2610.02451",
+   "version": 1,
+   "title": "A Simulation-Grounded Agentic VLM Framework for Wildfire Monitoring and Reporting",
+   "abstract": "2D 火模拟自动转 Blender 视频，免训练多智能体 VLM 出火情报告",
+   "authors": [],
+   "published": "2026-10-05T04:00:00.000Z",
+   "updated": "2026-10-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.02451",
+   "pdf": "https://arxiv.org/pdf/2610.02451",
+   "announceType": "new",
+   "summary": "2D 火模拟自动转 Blender 视频，免训练多智能体 VLM 出火情报告",
+   "topic": "遥感 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.02451"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "物理标注稀缺下 VLM 火情理解的新范式，遥感+Agent 交叉",
+   "repository": null,
+   "motivation": "真实火情视频缺少风/湿度/燃料等物理标注，采集危险昂贵",
+   "coreProblem": "模拟器输出网格状态，与 VLM 需理解的航拍视频表征不一致",
+   "contributions": [
+    "全自动 Blender 代理：固定映射 terrain/fuel/火焰/风烟为 3D 控制",
+    "免训练多智能体系统：检索参考片段+互补 reporter+分歧仲裁",
+    "500 地理不相交位置受控评估，另加 3 组真实 UAV 测试"
+   ],
+   "innovations": [
+    "首个\"模拟→轻量 3D 代理→可控视频\"的可复用物理标注视频管线",
+    "生成视频与模拟器标签构成多模态记忆，免更新权重推理",
+    "中间表征代理而非高保真渲染，成本可跨燃料/地形/气象扩展"
+   ],
+   "method": "真实 LANDFIRE 地形+燃料图跑 2D 模拟，自动提升为 Blender 场景并用 depth/scribble/prompt 控制生成视频，作为带标签记忆供检索增强 VLM 推理。",
+   "results": "视频记忆四标签精确率 51.5%（直接 VLM 22.6%、纯文本记忆 16–17%）；完整系统 6 个报告字段准确率 77.3%",
+   "value": "物理标注稀缺下 VLM 火情理解的新范式，遥感+Agent 交叉",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "全自动 Blender 代理：固定映射 terrain/fuel/火焰/风烟为 3D 控制",
+    "agentChange": "真实 LANDFIRE 地形+燃料图跑 2D 模拟，自动提升为 Blender 场景并用 depth/scribble/prompt 控制生成视频，作为带标签记忆供检索增强 VLM 推理。",
+    "selfEvolution": null,
+    "evidence": [
+     "视频记忆四标签精确率 51.5%（直接 VLM 22.6%、纯文本记忆 16–17%）；完整系统 6 个报告字段准确率 77.3%",
+     "生成视频与模拟器标签构成多模态记忆，免更新权重推理",
+     "中间表征代理而非高保真渲染，成本可跨燃料/地形/气象扩展"
+    ],
+    "faq": {
+     "problem": "2D 火模拟自动转 Blender 视频，免训练多智能体 VLM 出火情报告",
+     "mechanism": "真实 LANDFIRE 地形+燃料图跑 2D 模拟，自动提升为 Blender 场景并用 depth/scribble/prompt 控制生成视频，作为带标签记忆供检索增强 VLM 推理。",
+     "agentChange": "真实 LANDFIRE 地形+燃料图跑 2D 模拟，自动提升为 Blender 场景并用 depth/scribble/prompt 控制生成视频，作为带标签记忆供检索增强 VLM 推理。",
+     "support": "视频记忆四标签精确率 51.5%（直接 VLM 22.6%、纯文本记忆 16–17%）；完整系统 6 个报告字段准确率 77.3%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "物理标注稀缺下 VLM 火情理解的新范式，遥感+Agent 交叉"
+   }
+  },
+  {
+   "id": "2610.03649",
+   "version": 1,
+   "title": "On-Board Anomaly Detection for Efficient Marine Environmental Monitoring",
+   "abstract": "星上自监督编码器+GMM 异常检测，已部署 Φsat-2/IMAGIN-e",
+   "authors": [],
+   "published": "2026-10-05T04:00:00.000Z",
+   "updated": "2026-10-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.03649",
+   "pdf": "https://arxiv.org/pdf/2610.03649",
+   "announceType": "new",
+   "summary": "星上自监督编码器+GMM 异常检测，已部署 Φsat-2/IMAGIN-e",
+   "topic": "遥感 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.03649"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "卫星在轨智能压缩+早警的可落地工程样本",
+   "repository": null,
+   "motivation": "油溢/藻华/泥沙事件需在轨早警，下传带宽与时延受限",
+   "coreProblem": "卫星算力有限，地面处理无法支撑近实时应急响应",
+   "contributions": [
+    "自监督编码器将 32×32 多/高光谱斑块压至 16 维潜向量",
+    "海陆分割+GMM 异常检测+异常类型表征的三级星上管线",
+    "在 ESA Φsat-2 与 IMAGIN-e 真实任务完成集成验证"
+   ],
+   "innovations": [
+    "异常检测整体前移到星上，仅下传关键信息",
+    "仅用正常海面数据无监督训练编码器，无需异常标注",
+    "潜空间中 GMM 优于 LOF/IF/OCSVM 等经典检测器"
+   ],
+   "method": "编码器对正常海面 patch 归一化训练，GMM 建模正常潜分布，偏离触发警报，分类器区分藻华/泥沙/油溢。",
+   "results": "GMM 藻华 F1 91.1%（P 95.3/R 87.2）、泥沙 F1 81.9%，油溢 F1 仅 3.1%（最弱项）；Φsat-2 侧 Myriad 2+Cortex-A53 实测",
+   "value": "卫星在轨智能压缩+早警的可落地工程样本",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "自监督编码器将 32×32 多/高光谱斑块压至 16 维潜向量",
+    "agentChange": "编码器对正常海面 patch 归一化训练，GMM 建模正常潜分布，偏离触发警报，分类器区分藻华/泥沙/油溢。",
+    "selfEvolution": null,
+    "evidence": [
+     "GMM 藻华 F1 91.1%（P 95.3/R 87.2）、泥沙 F1 81.9%，油溢 F1 仅 3.1%（最弱项）；Φsat-2 侧 Myriad 2+Cortex-A53 实测",
+     "仅用正常海面数据无监督训练编码器，无需异常标注",
+     "潜空间中 GMM 优于 LOF/IF/OCSVM 等经典检测器"
+    ],
+    "faq": {
+     "problem": "星上自监督编码器+GMM 异常检测，已部署 Φsat-2/IMAGIN-e",
+     "mechanism": "编码器对正常海面 patch 归一化训练，GMM 建模正常潜分布，偏离触发警报，分类器区分藻华/泥沙/油溢。",
+     "agentChange": "编码器对正常海面 patch 归一化训练，GMM 建模正常潜分布，偏离触发警报，分类器区分藻华/泥沙/油溢。",
+     "support": "GMM 藻华 F1 91.1%（P 95.3/R 87.2）、泥沙 F1 81.9%，油溢 F1 仅 3.1%（最弱项）；Φsat-2 侧 Myriad 2+Cortex-A53 实测",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "卫星在轨智能压缩+早警的可落地工程样本"
+   }
+  },
+  {
+   "id": "2610.03403",
+   "version": 1,
+   "title": "ForestQuery: Boundary-Aware and Spatially Anchored Query Learning for Unified Forest Point Cloud Segmentation",
+   "abstract": "边界感知+3D 锚点查询学习，森林点云实例/语义统一分割",
+   "authors": [],
+   "published": "2026-10-05T04:00:00.000Z",
+   "updated": "2026-10-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.03403",
+   "pdf": "https://arxiv.org/pdf/2610.03403",
+   "announceType": "new",
+   "summary": "边界感知+3D 锚点查询学习，森林点云实例/语义统一分割",
+   "topic": "遥感 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.03403"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "3D 森林场景理解与碳储量清查的方法与数据基线",
+   "repository": null,
+   "motivation": "森林清查与生态监测需单木实例+点级语义联合预测",
+   "coreProblem": "现有查询法未建模树冠重叠边界歧义与垂直分层结构",
+   "contributions": [
+    "统一查询框架：实例查询+语义查询共享特征联合解码",
+    "边界不确定性显式建模，指导查询构建与自适应损失重加权",
+    "SA-SQE：可学习 3D 锚点编码森林垂直分层先验"
+   ],
+   "innovations": [
+    "将\"垂直分层先验\"引入语义查询锚点，提供显式空间参照",
+    "边界不确定性同时用于实例查询构建与训练监督重加权",
+    "覆盖多公开基准+自采数据集的跨场景泛化评估"
+   ],
+   "method": "边界不确定性挑可靠点构建实例查询、降权歧义监督；语义查询经 3D 锚点注入空间结构，与共享场景特征联合解码。",
+   "results": "FOR-instanceV2 单木 F1 84.0%、覆盖率 90.0%（较 ForestFormer3D +1.2/+8.8pp）；语义 mIoU 87.6%、wood IoU 69.6%",
+   "value": "3D 森林场景理解与碳储量清查的方法与数据基线",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "统一查询框架：实例查询+语义查询共享特征联合解码",
+    "agentChange": "边界不确定性挑可靠点构建实例查询、降权歧义监督；语义查询经 3D 锚点注入空间结构，与共享场景特征联合解码。",
+    "selfEvolution": null,
+    "evidence": [
+     "FOR-instanceV2 单木 F1 84.0%、覆盖率 90.0%（较 ForestFormer3D +1.2/+8.8pp）；语义 mIoU 87.6%、wood IoU 69.6%",
+     "边界不确定性同时用于实例查询构建与训练监督重加权",
+     "覆盖多公开基准+自采数据集的跨场景泛化评估"
+    ],
+    "faq": {
+     "problem": "边界感知+3D 锚点查询学习，森林点云实例/语义统一分割",
+     "mechanism": "边界不确定性挑可靠点构建实例查询、降权歧义监督；语义查询经 3D 锚点注入空间结构，与共享场景特征联合解码。",
+     "agentChange": "边界不确定性挑可靠点构建实例查询、降权歧义监督；语义查询经 3D 锚点注入空间结构，与共享场景特征联合解码。",
+     "support": "FOR-instanceV2 单木 F1 84.0%、覆盖率 90.0%（较 ForestFormer3D +1.2/+8.8pp）；语义 mIoU 87.6%、wood IoU 69.6%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "3D 森林场景理解与碳储量清查的方法与数据基线"
+   }
+  },
+  {
+   "id": "2610.02946",
+   "version": 1,
+   "title": "When Predicting Nothing Beats SAM 3: Revisiting Evaluation in Video Object Segmentation",
+   "abstract": "揭示 J&F 在低时间可见度下塌缩为缺席分类，提出 FaVOS+体积 J&F",
+   "authors": [],
+   "published": "2026-10-05T04:00:00.000Z",
+   "updated": "2026-10-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.02946",
+   "pdf": "https://arxiv.org/pdf/2610.02946",
+   "announceType": "new",
+   "summary": "揭示 J&F 在低时间可见度下塌缩为缺席分类，提出 FaVOS+体积 J&F",
+   "topic": "计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.02946"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "校正长视频分割评估失真，波及含 SAM 3 在内的全部 VOS 方法",
+   "repository": null,
+   "motivation": "长视频中目标间歇出现，现有基准多为全程可见对象",
+   "coreProblem": "J&F 对目标缺席帧给空预测满分，\"永远空\"可胜 SAM 3",
+   "contributions": [
+    "形式化并实证 J&F 评估塌缩为缺席分类",
+    "FaVOS 基准：200 视频/281 对象，可见度控制 0.2/0.4",
+    "体积 J&F：时空体级聚合，压制缺席奖励"
+   ],
+   "innovations": [
+    "首次定量给出\"低时间可见度\"下指标失效的理论刻画",
+    "基准显式把\"分数时间可见度\"作为可控诊断变量",
+    "保留 J&F 区域+轮廓形式，仅改聚合层级"
+   ],
+   "method": "研究不同可见度下 J&F 分数构成，提出以时空体聚合替代逐帧满分的体积度量。",
+   "results": "FaVOS-20 低可见度子集上空掩码平凡预测追平/超过强 VOS 模型；体积 J&F 保持对分割质量与时间结构的敏感度",
+   "value": "校正长视频分割评估失真，波及含 SAM 3 在内的全部 VOS 方法",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "形式化并实证 J&F 评估塌缩为缺席分类",
+    "agentChange": "研究不同可见度下 J&F 分数构成，提出以时空体聚合替代逐帧满分的体积度量。",
+    "selfEvolution": null,
+    "evidence": [
+     "FaVOS-20 低可见度子集上空掩码平凡预测追平/超过强 VOS 模型；体积 J&F 保持对分割质量与时间结构的敏感度",
+     "基准显式把\"分数时间可见度\"作为可控诊断变量",
+     "保留 J&F 区域+轮廓形式，仅改聚合层级"
+    ],
+    "faq": {
+     "problem": "揭示 J&F 在低时间可见度下塌缩为缺席分类，提出 FaVOS+体积 J&F",
+     "mechanism": "研究不同可见度下 J&F 分数构成，提出以时空体聚合替代逐帧满分的体积度量。",
+     "agentChange": "研究不同可见度下 J&F 分数构成，提出以时空体聚合替代逐帧满分的体积度量。",
+     "support": "FaVOS-20 低可见度子集上空掩码平凡预测追平/超过强 VOS 模型；体积 J&F 保持对分割质量与时间结构的敏感度",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "校正长视频分割评估失真，波及含 SAM 3 在内的全部 VOS 方法"
+   }
+  },
+  {
+   "id": "2610.03691",
+   "version": 1,
+   "title": "FlowHMR: Physically Plausible Motion Capture from Video",
+   "abstract": "流匹配视频动作生成+RL 后训练，物理跟踪成功率 82.47%",
+   "authors": [],
+   "published": "2026-10-05T04:00:00.000Z",
+   "updated": "2026-10-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.03691",
+   "pdf": "https://arxiv.org/pdf/2610.03691",
+   "announceType": "new",
+   "summary": "流匹配视频动作生成+RL 后训练，物理跟踪成功率 82.47%",
+   "topic": "计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.03691"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为机器人模仿学习与动画管线提供物理可执行动作",
+   "repository": null,
+   "motivation": "互联网视频是海量动作数据源，需恢复既保真又物理可行的全身动作",
+   "coreProblem": "确定性回归退化为平均解，几何损失不建模动力学",
+   "contributions": [
+    "世界坐标系联合建模姿态/手/全局轨迹的流匹配框架",
+    "双奖励 RL 后训练：保真度+物理控制器跟踪",
+    "Wild-4K 约 4K 野外互联网视频评估集"
+   ],
+   "innovations": [
+    "把视频动作捕捉重构为视频条件动作生成问题",
+    "用冻结人形控制器在仿真中的跟踪成功率作奖励信号"
+   ],
+   "method": "约 3000 小时合成视频预训练 MM-DiT 流匹配模型，MixGRPO 后训练；GT 锚定保真，跟踪奖励推动物理可行性。",
+   "results": "Wild-4K 人评运动保真度超 SOTA；物理跟踪成功率 82.47% vs GVHMR 62.82%（+19.65pp）",
+   "value": "为机器人模仿学习与动画管线提供物理可执行动作",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "世界坐标系联合建模姿态/手/全局轨迹的流匹配框架",
+    "agentChange": "约 3000 小时合成视频预训练 MM-DiT 流匹配模型，MixGRPO 后训练；GT 锚定保真，跟踪奖励推动物理可行性。",
+    "selfEvolution": null,
+    "evidence": [
+     "Wild-4K 人评运动保真度超 SOTA；物理跟踪成功率 82.47% vs GVHMR 62.82%（+19.65pp）",
+     "用冻结人形控制器在仿真中的跟踪成功率作奖励信号"
+    ],
+    "faq": {
+     "problem": "流匹配视频动作生成+RL 后训练，物理跟踪成功率 82.47%",
+     "mechanism": "约 3000 小时合成视频预训练 MM-DiT 流匹配模型，MixGRPO 后训练；GT 锚定保真，跟踪奖励推动物理可行性。",
+     "agentChange": "约 3000 小时合成视频预训练 MM-DiT 流匹配模型，MixGRPO 后训练；GT 锚定保真，跟踪奖励推动物理可行性。",
+     "support": "Wild-4K 人评运动保真度超 SOTA；物理跟踪成功率 82.47% vs GVHMR 62.82%（+19.65pp）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为机器人模仿学习与动画管线提供物理可执行动作"
+   }
+  },
+  {
+   "id": "2610.03543",
+   "version": 1,
+   "title": "DuoMatching: Joint-Marginal Distribution Matching for Few-Step Video Generation",
+   "abstract": "视频+图像双教师联合-边缘分布匹配，少步视频生成人评偏好>80%",
+   "authors": [],
+   "published": "2026-10-05T04:00:00.000Z",
+   "updated": "2026-10-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.03543",
+   "pdf": "https://arxiv.org/pdf/2610.03543",
+   "announceType": "new",
+   "summary": "视频+图像双教师联合-边缘分布匹配，少步视频生成人评偏好>80%",
+   "topic": "计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.03543"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "实时视频生成与交互式世界模拟的质量提升配方",
+   "repository": null,
+   "motivation": "DMD 少步生成抑制漂移，但帧级画质与语义对齐仍欠缺",
+   "coreProblem": "联合匹配缺独立帧级分布约束，毛发羽毛等细节缺失",
+   "contributions": [
+    "统一 joint-marginal 分布匹配公式",
+    "LatentBridge：化解视频/图像 VAE 潜空间失配",
+    "LVS：将边缘监督分散到不同时间片段"
+   ],
+   "innovations": [
+    "首次把图像生成教师的帧级边缘分布约束引入视频蒸馏",
+    "边缘匹配 score 差呈现更空间连贯的结构，优于联合匹配"
+   ],
+   "method": "视频教师联合 DMD 约束整序列，图像教师对采样帧独立做边缘 DMD，加权组合训练少步学生。",
+   "results": "人评综合偏好率对全部基线 >80%，运动动态基本保持",
+   "value": "实时视频生成与交互式世界模拟的质量提升配方",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "统一 joint-marginal 分布匹配公式",
+    "agentChange": "视频教师联合 DMD 约束整序列，图像教师对采样帧独立做边缘 DMD，加权组合训练少步学生。",
+    "selfEvolution": null,
+    "evidence": [
+     "人评综合偏好率对全部基线 >80%，运动动态基本保持",
+     "边缘匹配 score 差呈现更空间连贯的结构，优于联合匹配"
+    ],
+    "faq": {
+     "problem": "视频+图像双教师联合-边缘分布匹配，少步视频生成人评偏好>80%",
+     "mechanism": "视频教师联合 DMD 约束整序列，图像教师对采样帧独立做边缘 DMD，加权组合训练少步学生。",
+     "agentChange": "视频教师联合 DMD 约束整序列，图像教师对采样帧独立做边缘 DMD，加权组合训练少步学生。",
+     "support": "人评综合偏好率对全部基线 >80%，运动动态基本保持",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "实时视频生成与交互式世界模拟的质量提升配方"
+   }
+  },
+  {
+   "id": "2610.03546",
+   "version": 1,
+   "title": "ZeroMAG: Zero-Shot Multimodal Adapter Generation for Plug-and-Play EEG Foundation Models",
+   "abstract": "零样本为冻结 EEG 基础模型生成多模态适配器，BalAcc +7.22pp",
+   "authors": [],
+   "published": "2026-10-05T04:00:00.000Z",
+   "updated": "2026-10-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.03546",
+   "pdf": "https://arxiv.org/pdf/2610.03546",
+   "announceType": "new",
+   "summary": "零样本为冻结 EEG 基础模型生成多模态适配器，BalAcc +7.22pp",
+   "topic": "大模型基础模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.03546"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "EEG 基础模型的即插即用多模态化，适配异构数据集",
+   "repository": null,
+   "motivation": "EEG 记录常伴随 EOG/EMG/ECG 互补信号，目标数据却无标签",
+   "coreProblem": "现有做法或训新多模态主干、或需目标侧优化，无法复用 EFM",
+   "contributions": [
+    "配置不变适配器：模态块围绕固定 EEG 锚点组织",
+    "模态-被试-任务条件经函数约束潜空间生成适配器权重",
+    "6 个留出数据集×3 个 EFM 骨干全面验证"
+   ],
+   "innovations": [
+    "将多模态扩展转为\"个性化参数生成\"，全程零目标侧训练",
+    "生成目标是行为一致（功能约束）而非权重回归",
+    "同一框架适配任意模态组合（睡眠 EOG/EMG、情绪眼动等）"
+   ],
+   "method": "从源数据集拟合适配器构建块对齐潜空间，用无标签目标录音+任务上下文直接生成目标专属适配器，EFM 冻结。",
+   "results": "平衡准确率较 EEG-only +7.22pp、较直接权重回归 +4.89pp，距监督多模态适配平均仅 0.50pp",
+   "value": "EEG 基础模型的即插即用多模态化，适配异构数据集",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "配置不变适配器：模态块围绕固定 EEG 锚点组织",
+    "agentChange": "从源数据集拟合适配器构建块对齐潜空间，用无标签目标录音+任务上下文直接生成目标专属适配器，EFM 冻结。",
+    "selfEvolution": null,
+    "evidence": [
+     "平衡准确率较 EEG-only +7.22pp、较直接权重回归 +4.89pp，距监督多模态适配平均仅 0.50pp",
+     "生成目标是行为一致（功能约束）而非权重回归",
+     "同一框架适配任意模态组合（睡眠 EOG/EMG、情绪眼动等）"
+    ],
+    "faq": {
+     "problem": "零样本为冻结 EEG 基础模型生成多模态适配器，BalAcc +7.22pp",
+     "mechanism": "从源数据集拟合适配器构建块对齐潜空间，用无标签目标录音+任务上下文直接生成目标专属适配器，EFM 冻结。",
+     "agentChange": "从源数据集拟合适配器构建块对齐潜空间，用无标签目标录音+任务上下文直接生成目标专属适配器，EFM 冻结。",
+     "support": "平衡准确率较 EEG-only +7.22pp、较直接权重回归 +4.89pp，距监督多模态适配平均仅 0.50pp",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "EEG 基础模型的即插即用多模态化，适配异构数据集"
+   }
+  },
+  {
+   "id": "2610.02945",
+   "version": 1,
+   "title": "Continual Graph Memory for Mathematical Research Agents",
+   "abstract": "图记忆数学研究智能体 Ansatz，FPSB 10 题全部闭合",
+   "authors": [],
+   "published": "2026-10-05T04:00:00.000Z",
+   "updated": "2026-10-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.02945",
+   "pdf": "https://arxiv.org/pdf/2610.02945",
+   "announceType": "new",
+   "summary": "图记忆数学研究智能体 Ansatz，FPSB 10 题全部闭合",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.02945"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "自主数学研究智能体的持久记忆范式与真实进展证据",
+   "repository": null,
+   "motivation": "长时并行数学搜索产生巨量中间结果，组织与复用困难",
+   "coreProblem": "事实/计划/反例被当同质文本，证据状态混淆致错误传播",
+   "contributions": [
+    "Continual Graph Memory：本地证明图+类型化探索图+跨项目经验",
+    "依赖感知检索、证据敏感 curator、scoped recall 三层机制",
+    "可审计实证：资源诊断、4 项组件研究、全证明工件公开"
+   ],
+   "innovations": [
+    "分离\"已证记录/探索状态/负结果\"，跨项目结论须本地重证",
+    "显式准入边界防止未验证中间结论进入持久记忆",
+    "报告无干预解决 Jamison caterpillar 猜想与 Erdős 289/348/488"
+   ],
+   "method": "智能体经工具调用维护图记忆，curator 按边传播更新前沿并蒸馏教训，验证器把关普通数学事实的准入。",
+   "results": "First Proof Second Batch 10 题全部闭合（多于 Danus 与 4 个专家评审基线）；开放问题 4 题完整解+6 题实质进展",
+   "value": "自主数学研究智能体的持久记忆范式与真实进展证据",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "Continual Graph Memory：本地证明图+类型化探索图+跨项目经验",
+    "agentChange": "智能体经工具调用维护图记忆，curator 按边传播更新前沿并蒸馏教训，验证器把关普通数学事实的准入。",
+    "selfEvolution": null,
+    "evidence": [
+     "First Proof Second Batch 10 题全部闭合（多于 Danus 与 4 个专家评审基线）；开放问题 4 题完整解+6 题实质进展",
+     "显式准入边界防止未验证中间结论进入持久记忆",
+     "报告无干预解决 Jamison caterpillar 猜想与 Erdős 289/348/488"
+    ],
+    "faq": {
+     "problem": "图记忆数学研究智能体 Ansatz，FPSB 10 题全部闭合",
+     "mechanism": "智能体经工具调用维护图记忆，curator 按边传播更新前沿并蒸馏教训，验证器把关普通数学事实的准入。",
+     "agentChange": "智能体经工具调用维护图记忆，curator 按边传播更新前沿并蒸馏教训，验证器把关普通数学事实的准入。",
+     "support": "First Proof Second Batch 10 题全部闭合（多于 Danus 与 4 个专家评审基线）；开放问题 4 题完整解+6 题实质进展",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "自主数学研究智能体的持久记忆范式与真实进展证据"
+   }
+  },
+  {
+   "id": "2610.02994",
+   "version": 1,
+   "title": "Sentry: Learning to Recover from LLM Agent Failures at Test Time",
+   "abstract": "失败知识\"条件化暴露\"，失败时检索剧本、平时永不入上下文",
+   "authors": [],
+   "published": "2026-10-05T04:00:00.000Z",
+   "updated": "2026-10-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.02994",
+   "pdf": "https://arxiv.org/pdf/2610.02994",
+   "announceType": "new",
+   "summary": "失败知识\"条件化暴露\"，失败时检索剧本、平时永不入上下文",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.02994"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "长程 Agent 可靠性的新知识管理原则，与上下文进化互补",
+   "repository": null,
+   "motivation": "长程任务成败取决于失败恢复，而非每步都正确",
+   "coreProblem": "playbook 常驻上下文会误触发，运行期干预又不积累经验",
+   "contributions": [
+    "发现：失败知识是条件知识，无条件暴露反而降低性能",
+    "Sentry 失败管理层：诊断→检索≤k 条教训→免奖励验证→入库",
+    "4 基准主实验+迁移+因果+人工标注一致性证据"
+   ],
+   "innovations": [
+    "完整 playbook 永不进智能体上下文，仅失败当下暴露",
+    "无任务奖励访问也能验证恢复成功，防污染教训库",
+    "实证移除 ACE playbook 失败教训后性能反升（0.335→0.391）"
+   ],
+   "method": "Sentry 监控近期步骤，诊断失败类型，检索匹配教训指导下一步，验证恢复成功才写入新教训。",
+   "results": "平均超最强运行期干预基线 37%（最高 77%）、超 ACE 39%；200 干预点因果实验恢复率 33.5%→60.5%",
+   "value": "长程 Agent 可靠性的新知识管理原则，与上下文进化互补",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "发现：失败知识是条件知识，无条件暴露反而降低性能",
+    "agentChange": "Sentry 监控近期步骤，诊断失败类型，检索匹配教训指导下一步，验证恢复成功才写入新教训。",
+    "selfEvolution": null,
+    "evidence": [
+     "平均超最强运行期干预基线 37%（最高 77%）、超 ACE 39%；200 干预点因果实验恢复率 33.5%→60.5%",
+     "无任务奖励访问也能验证恢复成功，防污染教训库",
+     "实证移除 ACE playbook 失败教训后性能反升（0.335→0.391）"
+    ],
+    "faq": {
+     "problem": "失败知识\"条件化暴露\"，失败时检索剧本、平时永不入上下文",
+     "mechanism": "Sentry 监控近期步骤，诊断失败类型，检索匹配教训指导下一步，验证恢复成功才写入新教训。",
+     "agentChange": "Sentry 监控近期步骤，诊断失败类型，检索匹配教训指导下一步，验证恢复成功才写入新教训。",
+     "support": "平均超最强运行期干预基线 37%（最高 77%）、超 ACE 39%；200 干预点因果实验恢复率 33.5%→60.5%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "长程 Agent 可靠性的新知识管理原则，与上下文进化互补"
+   }
+  },
+  {
+   "id": "2610.03020",
+   "version": 1,
+   "title": "DyadMem: A Long-Term Memory Benchmark of How Agents Work with Users",
+   "abstract": "双域记忆基准，提出 URAM：这个 Agent 该如何与这位用户协作",
+   "authors": [],
+   "published": "2026-10-05T04:00:00.000Z",
+   "updated": "2026-10-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.03020",
+   "pdf": "https://arxiv.org/pdf/2610.03020",
+   "announceType": "new",
+   "summary": "双域记忆基准，提出 URAM：这个 Agent 该如何与这位用户协作",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.03020"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "长期 Agent 记忆的首个全生命周期可定位评估标准",
+   "repository": null,
+   "motivation": "长期协作既要记用户事实，也要记\"和此用户如何配合\"",
+   "coreProblem": "只看终答 QA 无法定位记忆构建/更新/检索的失败环节",
+   "contributions": [
+    "形式化 URAM（用户条件化关系型智能体记忆）",
+    "3,065 集/50,961 会话/61,210 QA，6 类记忆标注",
+    "Capture/Update/Recall 分级+Gold-Memory/Full-Pipeline 双 QA"
+   ],
+   "innovations": [
+    "同一轨迹上联合标注用户侧记忆与关系专属智能体记忆",
+    "两级 QA 的落差（78.7–96.3% vs 47.7%）显式暴露隐藏缺陷",
+    "对话优先构造：先生成验证对话，再回溯标注记忆及其变更"
+   ],
+   "method": "5 域 25 子域多会话轨迹，会话级 Capture/Update 金标注、查询级 Recall 支撑，20 个模型全管线评测。",
+   "results": "Gold-Memory QA 78.7%–96.3%，Full-Pipeline 开源均值仅 47.7%、闭源 57.4%；URAM 在全部 20 模型上优于通用经验记忆",
+   "value": "长期 Agent 记忆的首个全生命周期可定位评估标准",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "形式化 URAM（用户条件化关系型智能体记忆）",
+    "agentChange": "5 域 25 子域多会话轨迹，会话级 Capture/Update 金标注、查询级 Recall 支撑，20 个模型全管线评测。",
+    "selfEvolution": null,
+    "evidence": [
+     "Gold-Memory QA 78.7%–96.3%，Full-Pipeline 开源均值仅 47.7%、闭源 57.4%；URAM 在全部 20 模型上优于通用经验记忆",
+     "两级 QA 的落差（78.7–96.3% vs 47.7%）显式暴露隐藏缺陷",
+     "对话优先构造：先生成验证对话，再回溯标注记忆及其变更"
+    ],
+    "faq": {
+     "problem": "双域记忆基准，提出 URAM：这个 Agent 该如何与这位用户协作",
+     "mechanism": "5 域 25 子域多会话轨迹，会话级 Capture/Update 金标注、查询级 Recall 支撑，20 个模型全管线评测。",
+     "agentChange": "5 域 25 子域多会话轨迹，会话级 Capture/Update 金标注、查询级 Recall 支撑，20 个模型全管线评测。",
+     "support": "Gold-Memory QA 78.7%–96.3%，Full-Pipeline 开源均值仅 47.7%、闭源 57.4%；URAM 在全部 20 模型上优于通用经验记忆",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "长期 Agent 记忆的首个全生命周期可定位评估标准"
+   }
+  },
+  {
+   "id": "2610.03036",
+   "version": 1,
+   "title": "WebFovea: When the Model Is Right but the Click Is Wrong",
+   "abstract": "WebRetriever Challenge 2026 亚军：harness 四段加固 31→57 分",
+   "authors": [],
+   "published": "2026-10-05T04:00:00.000Z",
+   "updated": "2026-10-05T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.03036",
+   "pdf": "https://arxiv.org/pdf/2610.03036",
+   "announceType": "new",
+   "summary": "WebRetriever Challenge 2026 亚军：harness 四段加固 31→57 分",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.03036"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "Agent-计算机接口设计与模型能力同等重要",
+   "repository": null,
+   "motivation": "活站端到端取数要求答案准确且轨迹可核验",
+   "coreProblem": "多数失败发生在解析/执行/反馈/观察四段，而非模型推理",
+   "contributions": [
+    "每步\"四段往返\"分析框架+护栏设计原则",
+    "WebFovea：坐标空间对齐、元素级 select/fill、iframe DOM 兜底",
+    "逐组件配对评估、负结果与失败分析完整公开"
+   ],
+   "innovations": [
+    "同模型四轮提交证明仅改 harness 可把分数 31.0 提至 57.0",
+    "量化 harness 缺陷：点击落在 3/4 坐标、4.9% 回合被自生成 chat 模板 token 污染"
+   ],
+   "method": "回复解析→页面执行→结果回传→观察呈现逐段加固，外加规则与预算护栏约束整个循环。",
+   "results": "隐藏集 31.0→57.0（100 分制），人工复核 0 扣分；榜单参照 Claude opus 47%、Kimi 28%",
+   "value": "Agent-计算机接口设计与模型能力同等重要",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "每步\"四段往返\"分析框架+护栏设计原则",
+    "agentChange": "回复解析→页面执行→结果回传→观察呈现逐段加固，外加规则与预算护栏约束整个循环。",
+    "selfEvolution": null,
+    "evidence": [
+     "隐藏集 31.0→57.0（100 分制），人工复核 0 扣分；榜单参照 Claude opus 47%、Kimi 28%",
+     "量化 harness 缺陷：点击落在 3/4 坐标、4.9% 回合被自生成 chat 模板 token 污染"
+    ],
+    "faq": {
+     "problem": "WebRetriever Challenge 2026 亚军：harness 四段加固 31→57 分",
+     "mechanism": "回复解析→页面执行→结果回传→观察呈现逐段加固，外加规则与预算护栏约束整个循环。",
+     "agentChange": "回复解析→页面执行→结果回传→观察呈现逐段加固，外加规则与预算护栏约束整个循环。",
+     "support": "隐藏集 31.0→57.0（100 分制），人工复核 0 扣分；榜单参照 Claude opus 47%、Kimi 28%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "Agent-计算机接口设计与模型能力同等重要"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-10-04",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-10-04 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-07T21:30:39.000Z",
+ "latestPaperAt": "2026-10-05T04:00:00.000Z",
+ "totalMatched": 843,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 843
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 47,
+ "trends": {
+  "status": "accumulating",
+  "days": 47,
+  "minimumDays": 15,
+  "message": "已积累 47/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-07T21:30:39.000Z",
+ "snapshotDay": "2026-10-05",
+ "historical": true
+}

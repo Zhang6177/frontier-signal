@@ -1,0 +1,1017 @@
+{
+ "papers": [
+  {
+   "id": "2609.31234",
+   "version": 1,
+   "title": "WeaveAgent: A Two-Stage Tool-Routing Agent for Ultra-High-Resolution Remote Sensing Imagery",
+   "abstract": "两阶段解耦路由与感知，UHR遥感VLM外源工具路由0%→80.75%",
+   "authors": [],
+   "published": "2026-09-29T04:00:00.000Z",
+   "updated": "2026-09-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.31234",
+   "pdf": "https://arxiv.org/pdf/2609.31234",
+   "announceType": "new",
+   "summary": "两阶段解耦路由与感知，UHR遥感VLM外源工具路由0%→80.75%",
+   "topic": "遥感 / 高光谱 / 对地观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.31234"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为遥感VLM工具路由提供可训练、可诊断修复的蓝图",
+   "repository": null,
+   "motivation": "超高分辨率遥感图巨大、视觉token昂贵，模糊查询需工具精测",
+   "coreProblem": "预训练模型零样本工具调用为零，无法可靠发起格式正确的调用",
+   "contributions": [
+    "提出文本先导路由+条件执行两阶段架构",
+    "构建VagueUHR模糊查询工具轨迹语料库",
+    "SFT→GRPO训练配方与观察回填二轮修复"
+   ],
+   "innovations": [
+    "遥感中首次将路由决策与视觉感知解耦",
+    "不同于RemoteAgent，工具执行不降分辨率"
+   ],
+   "method": "阶段A按查询文本判内/外部并选工具，B在原始全分辨率图执行工具、回填观察后二轮作答",
+   "results": "外部路由0%→80.75%（323/400）；外部答案0.025→0.518（p=3.8e-5）；2B总体0.250 vs零样本8B 0.263",
+   "value": "为遥感VLM工具路由提供可训练、可诊断修复的蓝图",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "提出文本先导路由+条件执行两阶段架构",
+    "agentChange": "阶段A按查询文本判内/外部并选工具，B在原始全分辨率图执行工具、回填观察后二轮作答",
+    "selfEvolution": null,
+    "evidence": [
+     "外部路由0%→80.75%（323/400）；外部答案0.025→0.518（p=3.8e-5）；2B总体0.250 vs零样本8B 0.263",
+     "不同于RemoteAgent，工具执行不降分辨率"
+    ],
+    "faq": {
+     "problem": "两阶段解耦路由与感知，UHR遥感VLM外源工具路由0%→80.75%",
+     "mechanism": "阶段A按查询文本判内/外部并选工具，B在原始全分辨率图执行工具、回填观察后二轮作答",
+     "agentChange": "阶段A按查询文本判内/外部并选工具，B在原始全分辨率图执行工具、回填观察后二轮作答",
+     "support": "外部路由0%→80.75%（323/400）；外部答案0.025→0.518（p=3.8e-5）；2B总体0.250 vs零样本8B 0.263",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为遥感VLM工具路由提供可训练、可诊断修复的蓝图"
+   }
+  },
+  {
+   "id": "2609.31507",
+   "version": 1,
+   "title": "SatNav: A Scalable Benchmark for Long-Horizon UAV Vision-Language Navigation from Satellite Imagery",
+   "abstract": "用卫星影像构建118K回合城市级UAV-VLN基准，验证卫星到真机迁移",
+   "authors": [],
+   "published": "2026-09-29T04:00:00.000Z",
+   "updated": "2026-09-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.31507",
+   "pdf": "https://arxiv.org/pdf/2609.31507",
+   "announceType": "new",
+   "summary": "用卫星影像构建118K回合城市级UAV-VLN基准，验证卫星到真机迁移",
+   "topic": "遥感 / 高光谱 / 对地观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.31507"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为城市级UAV长程导航提供可扩展、可迁移的测试床",
+   "repository": null,
+   "motivation": "城市UAV导航需长期记忆与地理空间推理，评测床难扩",
+   "coreProblem": "现有VLN基准依赖昂贵3D重建资产，难扩规模与地理多样性",
+   "contributions": [
+    "构建SatNav：118K回合、18城59场景、均轨迹379 m",
+    "设计Boundary/Landmark/Route三任务族",
+    "提出SwiftVLN框架做记忆消融与真机验证"
+   ],
+   "innovations": [
+    "以卫星影像+OSM替代3D重建资产，规模化构建",
+    "三任务族把长程进度/地标接地/路线计数设为显式评测目标"
+   ],
+   "method": "卫星裁剪块作俯视观察、4离散动作；SwiftVLN含可替换短期滑窗与长期记忆模块",
+   "results": "最强StreamVLN*仅67.3/58.4 SR（seen/unseen）；去长期记忆SR降21.3点；真机18回合SR 38.9%→55.6%（加适配器）",
+   "value": "为城市级UAV长程导航提供可扩展、可迁移的测试床",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "构建SatNav：118K回合、18城59场景、均轨迹379 m",
+    "agentChange": "卫星裁剪块作俯视观察、4离散动作；SwiftVLN含可替换短期滑窗与长期记忆模块",
+    "selfEvolution": null,
+    "evidence": [
+     "最强StreamVLN*仅67.3/58.4 SR（seen/unseen）；去长期记忆SR降21.3点；真机18回合SR 38.9%→55.6%（加适配器）",
+     "三任务族把长程进度/地标接地/路线计数设为显式评测目标"
+    ],
+    "faq": {
+     "problem": "用卫星影像构建118K回合城市级UAV-VLN基准，验证卫星到真机迁移",
+     "mechanism": "卫星裁剪块作俯视观察、4离散动作；SwiftVLN含可替换短期滑窗与长期记忆模块",
+     "agentChange": "卫星裁剪块作俯视观察、4离散动作；SwiftVLN含可替换短期滑窗与长期记忆模块",
+     "support": "最强StreamVLN*仅67.3/58.4 SR（seen/unseen）；去长期记忆SR降21.3点；真机18回合SR 38.9%→55.6%（加适配器）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "为城市级UAV长程导航提供可扩展、可迁移的测试床"
+   }
+  },
+  {
+   "id": "2609.31435",
+   "version": 1,
+   "title": "Implicit Neural Representation for Hyperspectral Video Compression",
+   "abstract": "INR高光谱视频压缩，BD码率−88.88%、BDPSNR +4.99 dB",
+   "authors": [],
+   "published": "2026-09-29T04:00:00.000Z",
+   "updated": "2026-09-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.31435",
+   "pdf": "https://arxiv.org/pdf/2609.31435",
+   "announceType": "new",
+   "summary": "INR高光谱视频压缩，BD码率−88.88%、BDPSNR +4.99 dB",
+   "topic": "遥感 / 高光谱 / 对地观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.31435"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为低带宽高光谱视频传输提供新路径",
+   "repository": null,
+   "motivation": "快照相机普及使高光谱视频增长快，但压缩研究尚处早期",
+   "coreProblem": "现有方法逐帧套用图像压缩，缺乏视频级整体建模方案",
+   "contributions": [
+    "扩展HNeRV神经压缩到高光谱视频（HS-HNeRV）",
+    "提出HSFusion损失（L2+余弦）兼顾空间与光谱保真",
+    "从重建质量与下游追踪双角度量化压缩增益"
+   ],
+   "innovations": [
+    "过拟合式神经压缩首次进入高光谱视频领域",
+    "整段视频整体建模，不同于逐帧PCA+JPEG2000"
+   ],
+   "method": "解码器跨帧共享、每帧独立潜变量经Huffman编码传输；HSFusion损失保像素级光谱",
+   "results": "对比PCA+JPEG2000，BD-rate −88.88%、BD-PSNR +4.99 dB；0.13 bpp时CSSTrack AUC +23.42%、DP +35.56%",
+   "value": "为低带宽高光谱视频传输提供新路径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "扩展HNeRV神经压缩到高光谱视频（HS-HNeRV）",
+    "agentChange": "解码器跨帧共享、每帧独立潜变量经Huffman编码传输；HSFusion损失保像素级光谱",
+    "selfEvolution": null,
+    "evidence": [
+     "对比PCA+JPEG2000，BD-rate −88.88%、BD-PSNR +4.99 dB；0.13 bpp时CSSTrack AUC +23.42%、DP +35.56%",
+     "整段视频整体建模，不同于逐帧PCA+JPEG2000"
+    ],
+    "faq": {
+     "problem": "INR高光谱视频压缩，BD码率−88.88%、BDPSNR +4.99 dB",
+     "mechanism": "解码器跨帧共享、每帧独立潜变量经Huffman编码传输；HSFusion损失保像素级光谱",
+     "agentChange": "解码器跨帧共享、每帧独立潜变量经Huffman编码传输；HSFusion损失保像素级光谱",
+     "support": "对比PCA+JPEG2000，BD-rate −88.88%、BD-PSNR +4.99 dB；0.13 bpp时CSSTrack AUC +23.42%、DP +35.56%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "为低带宽高光谱视频传输提供新路径"
+   }
+  },
+  {
+   "id": "2609.31074",
+   "version": 1,
+   "title": "Band-Selection Stability and Semantic Segmentation Performance: A Study on Hyperspectral City",
+   "abstract": "6种波段选择×10组采样系统评测，稳定性并非分割性能预测器",
+   "authors": [],
+   "published": "2026-09-29T04:00:00.000Z",
+   "updated": "2026-09-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.31074",
+   "pdf": "https://arxiv.org/pdf/2609.31074",
+   "announceType": "new",
+   "summary": "6种波段选择×10组采样系统评测，稳定性并非分割性能预测器",
+   "topic": "遥感 / 高光谱 / 对地观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.31074"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为资源受限HSI选带方法提供实证选型依据",
+   "repository": null,
+   "motivation": "高维HSI资源受限，选带准则依赖采样、易引入偏差",
+   "coreProblem": "选带稳定性能否预测下游语义分割性能，此前未知",
+   "contributions": [
+    "10组类别均衡ROI采样，构建60个top-25波段子集",
+    "Top-K（K=3–13）子集在3种SSM上系统验证",
+    "量化稳定性–性能关系与推理时延权衡"
+   ],
+   "innovations": [
+    "首个Hyperspectral City重复采样稳定性系统研究",
+    "提出频率共识排序作探索性聚合基线"
+   ],
+   "method": "6种方法×10个ROI集，成对Jaccard量化稳定性；子集训练U-Net/DeepLabV3+/SegFormer",
+   "results": "Sim-LP稳定性最高；最优子集+2.01 mIoU、+1.72 mF1；K=9时CPU推理快18.7–22倍；频率共识36项仅1次超基线",
+   "value": "为资源受限HSI选带方法提供实证选型依据",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "10组类别均衡ROI采样，构建60个top-25波段子集",
+    "agentChange": "6种方法×10个ROI集，成对Jaccard量化稳定性；子集训练U-Net/DeepLabV3+/SegFormer",
+    "selfEvolution": null,
+    "evidence": [
+     "Sim-LP稳定性最高；最优子集+2.01 mIoU、+1.72 mF1；K=9时CPU推理快18.7–22倍；频率共识36项仅1次超基线",
+     "提出频率共识排序作探索性聚合基线"
+    ],
+    "faq": {
+     "problem": "6种波段选择×10组采样系统评测，稳定性并非分割性能预测器",
+     "mechanism": "6种方法×10个ROI集，成对Jaccard量化稳定性；子集训练U-Net/DeepLabV3+/SegFormer",
+     "agentChange": "6种方法×10个ROI集，成对Jaccard量化稳定性；子集训练U-Net/DeepLabV3+/SegFormer",
+     "support": "Sim-LP稳定性最高；最优子集+2.01 mIoU、+1.72 mF1；K=9时CPU推理快18.7–22倍；频率共识36项仅1次超基线",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为资源受限HSI选带方法提供实证选型依据"
+   }
+  },
+  {
+   "id": "2609.31206",
+   "version": 1,
+   "title": "Self-Supervised Representation Learning: From Spectral Foundation Models to Auroral Emission Spectra",
+   "abstract": "MAE预训练极光发射谱编码器，冻结表征追平专家特征，微调macro-AP 88.5",
+   "authors": [],
+   "published": "2026-09-29T04:00:00.000Z",
+   "updated": "2026-09-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.31206",
+   "pdf": "https://arxiv.org/pdf/2609.31206",
+   "announceType": "new",
+   "summary": "MAE预训练极光发射谱编码器，冻结表征追平专家特征，微调macro-AP 88.5",
+   "topic": "遥感 / 高光谱 / 对地观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.31206"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明稀缺标注光谱域SSL可行，并回答现成谱FM能否复用",
+   "repository": null,
+   "motivation": "ASIS约33万极光发射谱仅811条专家标注，无标签语料闲置",
+   "coreProblem": "监督ViT-1D标注少被迫粗token不敌MLP；现成谱基础模型迁移未评估",
+   "contributions": [
+    "提出线+连续谱双通道MAE极光发射谱编码器",
+    "统一协议对比3个基础模型，迁移随波谱窗口重叠变化",
+    "归因显示模型用整个N₂发射系统而非单谱带"
+   ],
+   "innovations": [
+    "首次将MAE自监督用于极光发射谱",
+    "双通道分离连续谱，防亮度波动主导表征"
+   ],
+   "method": "22.3万谱MAE预训练1D-ViT（64 token×4.4 nm、35%掩码）；冻结探针或轻量微调",
+   "results": "5类macro-AP 88.5（此前MLP 81.1、ViT-1D 77.8）；10%标签下mAP +0.159；探针0.863≈专家特征0.861；IR训练的SpectraFM 0.789低于未训练0.816",
+   "value": "证明稀缺标注光谱域SSL可行，并回答现成谱FM能否复用",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "提出线+连续谱双通道MAE极光发射谱编码器",
+    "agentChange": "22.3万谱MAE预训练1D-ViT（64 token×4.4 nm、35%掩码）；冻结探针或轻量微调",
+    "selfEvolution": null,
+    "evidence": [
+     "5类macro-AP 88.5（此前MLP 81.1、ViT-1D 77.8）；10%标签下mAP +0.159；探针0.863≈专家特征0.861；IR训练的SpectraFM 0.789低于未训练0.816",
+     "双通道分离连续谱，防亮度波动主导表征"
+    ],
+    "faq": {
+     "problem": "MAE预训练极光发射谱编码器，冻结表征追平专家特征，微调macro-AP 88.5",
+     "mechanism": "22.3万谱MAE预训练1D-ViT（64 token×4.4 nm、35%掩码）；冻结探针或轻量微调",
+     "agentChange": "22.3万谱MAE预训练1D-ViT（64 token×4.4 nm、35%掩码）；冻结探针或轻量微调",
+     "support": "5类macro-AP 88.5（此前MLP 81.1、ViT-1D 77.8）；10%标签下mAP +0.159；探针0.863≈专家特征0.861；IR训练的SpectraFM 0.789低于未训练0.816",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "证明稀缺标注光谱域SSL可行，并回答现成谱FM能否复用"
+   }
+  },
+  {
+   "id": "2609.31167",
+   "version": 1,
+   "title": "Neural State Prediction: Obstructing Shortcut Learning in EEG Foundation Models",
+   "abstract": "NSP联合设计预测目标与上下文，EEG-FM-Bench多任务macro BAC 63.94",
+   "authors": [],
+   "published": "2026-09-29T04:00:00.000Z",
+   "updated": "2026-09-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.31167",
+   "pdf": "https://arxiv.org/pdf/2609.31167",
+   "announceType": "new",
+   "summary": "NSP联合设计预测目标与上下文，EEG-FM-Bench多任务macro BAC 63.94",
+   "topic": "基础模型 / SAM / 医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.31167"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为EEG基础模型提供抗捷径的目标-上下文联合设计",
+   "repository": null,
+   "motivation": "掩码预测易靠位置线索/局部插值走捷径，表征难迁移",
+   "coreProblem": "现有EEG-JEPA未去目标中通道/时间加性项，未排除目标时空邻域",
+   "contributions": [
+    "揭示位置条件预测与局部插值两条低信息捷径",
+    "提出NSP：EMA目标编码+身份残差化+拓扑分离上下文",
+    "TUEG 220万段预训练，30个下游数据集评估"
+   ],
+   "innovations": [
+    "首次联合设计预测目标内容与可见证据",
+    "身份残差化去除通道/时间加性，阻断位置捷径"
+   ],
+   "method": "EMA目标编码给潜监督；目标残差化去加性项，上下文剔除目标时空邻域，逼模型整合远端证据",
+   "results": "EEG-FM-Bench多任务全微调macro BAC 63.94，超最强基线2.35点；NeuralBench 14任务73.14，超LaBraM 70.33",
+   "value": "为EEG基础模型提供抗捷径的目标-上下文联合设计",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "揭示位置条件预测与局部插值两条低信息捷径",
+    "agentChange": "EMA目标编码给潜监督；目标残差化去加性项，上下文剔除目标时空邻域，逼模型整合远端证据",
+    "selfEvolution": null,
+    "evidence": [
+     "EEG-FM-Bench多任务全微调macro BAC 63.94，超最强基线2.35点；NeuralBench 14任务73.14，超LaBraM 70.33",
+     "身份残差化去除通道/时间加性，阻断位置捷径"
+    ],
+    "faq": {
+     "problem": "NSP联合设计预测目标与上下文，EEG-FM-Bench多任务macro BAC 63.94",
+     "mechanism": "EMA目标编码给潜监督；目标残差化去加性项，上下文剔除目标时空邻域，逼模型整合远端证据",
+     "agentChange": "EMA目标编码给潜监督；目标残差化去加性项，上下文剔除目标时空邻域，逼模型整合远端证据",
+     "support": "EEG-FM-Bench多任务全微调macro BAC 63.94，超最强基线2.35点；NeuralBench 14任务73.14，超LaBraM 70.33",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为EEG基础模型提供抗捷径的目标-上下文联合设计"
+   }
+  },
+  {
+   "id": "2609.31160",
+   "version": 1,
+   "title": "ReG-SAM: Reference Graph-Driven SAM for 2D Foundational Vessel Segmentation",
+   "abstract": "图引导SAM血管分割基础模型，19数据集平均Dice 88.63，免提示超含手动提示基线",
+   "authors": [],
+   "published": "2026-09-29T04:00:00.000Z",
+   "updated": "2026-09-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.31160",
+   "pdf": "https://arxiv.org/pdf/2609.31160",
+   "announceType": "new",
+   "summary": "图引导SAM血管分割基础模型，19数据集平均Dice 88.63，免提示超含手动提示基线",
+   "topic": "基础模型 / SAM / 医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.31160"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "推动跨解剖跨模态通用血管分割，免提示利于临床部署",
+   "repository": null,
+   "motivation": "血管细长分叉、跨解剖与模态差异大，缺通用血管分割器",
+   "coreProblem": "SAM点/框提示不适配树状血管，解码器缺模态感知细节",
+   "contributions": [
+    "提出GPE图提示嵌入与VPE血管原型嵌入",
+    "建跨模态血管图库+参考图引导学习，推理免真值掩码",
+    "建19数据集/6模态血管分割基准"
+   ],
+   "innovations": [
+    "以血管图替代点/框作SAM提示",
+    "推理时从图库采样参考图估计GPE/VPE"
+   ],
+   "method": "GPE注入提示编码器，VPE驱动多段上采样精修解码；训练期图库参考图与查询嵌入对齐",
+   "results": "6模态平均Dice 88.63/IoU 80.45，超OVS-Net 87.04与MedSAM（框）87.06；零样本66.20 vs 65.27；眼底/DSA/OCTA三最难模态最佳",
+   "value": "推动跨解剖跨模态通用血管分割，免提示利于临床部署",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "提出GPE图提示嵌入与VPE血管原型嵌入",
+    "agentChange": "GPE注入提示编码器，VPE驱动多段上采样精修解码；训练期图库参考图与查询嵌入对齐",
+    "selfEvolution": null,
+    "evidence": [
+     "6模态平均Dice 88.63/IoU 80.45，超OVS-Net 87.04与MedSAM（框）87.06；零样本66.20 vs 65.27；眼底/DSA/OCTA三最难模态最佳",
+     "推理时从图库采样参考图估计GPE/VPE"
+    ],
+    "faq": {
+     "problem": "图引导SAM血管分割基础模型，19数据集平均Dice 88.63，免提示超含手动提示基线",
+     "mechanism": "GPE注入提示编码器，VPE驱动多段上采样精修解码；训练期图库参考图与查询嵌入对齐",
+     "agentChange": "GPE注入提示编码器，VPE驱动多段上采样精修解码；训练期图库参考图与查询嵌入对齐",
+     "support": "6模态平均Dice 88.63/IoU 80.45，超OVS-Net 87.04与MedSAM（框）87.06；零样本66.20 vs 65.27；眼底/DSA/OCTA三最难模态最佳",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "推动跨解剖跨模态通用血管分割，免提示利于临床部署"
+   }
+  },
+  {
+   "id": "2609.31461",
+   "version": 1,
+   "title": "KneePreM: Towards 3D Knee MRI Foundation Models via Large-Scale Unlabeled Pretraining and Label-Efficient Fine-Tuning",
+   "abstract": "3D U-Net MAE无标签膝MRI预训练，4项外部任务优于随机初始化与SuPreM",
+   "authors": [],
+   "published": "2026-09-29T04:00:00.000Z",
+   "updated": "2026-09-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.31461",
+   "pdf": "https://arxiv.org/pdf/2609.31461",
+   "announceType": "new",
+   "summary": "3D U-Net MAE无标签膝MRI预训练，4项外部任务优于随机初始化与SuPreM",
+   "topic": "基础模型 / SAM / 医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.31461"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "降低膝MRI标注成本，迈向骨科影像基础模型",
+   "repository": null,
+   "motivation": "膝MRI无标签数据海量但标注昂贵，现成预训练不适配膝部",
+   "coreProblem": "RETFound/DINOv2为2D缺层间连续性；SuPreM腹部CT与膝部域差距大",
+   "contributions": [
+    "3D U-Net MAE在19011例OAI膝MRI上预训练",
+    "fastMRI+/APM分类与SKM-TEA/APM分割标签效率系统评估",
+    "以MCP接口实现部署工作流"
+   ],
+   "innovations": [
+    "首个膝部专用3D自监督基础模型",
+    "整膝40×224×224体积+4×4×4掩码，直接建模薄结构跨层上下文"
+   ],
+   "method": "4×4×4体素块掩码64%做MAE重建（单A100、200 epoch）；下游接分类头/分割解码器微调",
+   "results": "fastMRI+全量macro ROC AUC 0.777（vs 0.714/0.686，p<.001），50%数据0.722已超两基线全量；APM分类0.787；SKM-TEA Dice 0.842",
+   "value": "降低膝MRI标注成本，迈向骨科影像基础模型",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "3D U-Net MAE在19011例OAI膝MRI上预训练",
+    "agentChange": "4×4×4体素块掩码64%做MAE重建（单A100、200 epoch）；下游接分类头/分割解码器微调",
+    "selfEvolution": null,
+    "evidence": [
+     "fastMRI+全量macro ROC AUC 0.777（vs 0.714/0.686，p<.001），50%数据0.722已超两基线全量；APM分类0.787；SKM-TEA Dice 0.842",
+     "整膝40×224×224体积+4×4×4掩码，直接建模薄结构跨层上下文"
+    ],
+    "faq": {
+     "problem": "3D U-Net MAE无标签膝MRI预训练，4项外部任务优于随机初始化与SuPreM",
+     "mechanism": "4×4×4体素块掩码64%做MAE重建（单A100、200 epoch）；下游接分类头/分割解码器微调",
+     "agentChange": "4×4×4体素块掩码64%做MAE重建（单A100、200 epoch）；下游接分类头/分割解码器微调",
+     "support": "fastMRI+全量macro ROC AUC 0.777（vs 0.714/0.686，p<.001），50%数据0.722已超两基线全量；APM分类0.787；SKM-TEA Dice 0.842",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "降低膝MRI标注成本，迈向骨科影像基础模型"
+   }
+  },
+  {
+   "id": "2609.30936",
+   "version": 1,
+   "title": "Self-Play Search Distillation for Large Language Model Reasoning",
+   "abstract": "自弈搜索蒸馏成CoT，Qwen3-4B六数学基准24.1→36.6",
+   "authors": [],
+   "published": "2026-09-29T04:00:00.000Z",
+   "updated": "2026-09-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.30936",
+   "pdf": "https://arxiv.org/pdf/2609.30936",
+   "announceType": "new",
+   "summary": "自弈搜索蒸馏成CoT，Qwen3-4B六数学基准24.1→36.6",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.30936"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "提供标注高效、环境可验证的超人级推理数据新路径",
+   "repository": null,
+   "motivation": "推理监督稀缺：合成数据低质、人工标注昂贵",
+   "coreProblem": "学生自生成监督与自身错误耦合，不暴露比较过程与延迟后果",
+   "contributions": [
+    "SPSD离线框架：自弈搜索记录→重放可验证监督",
+    "重放接地接口：走法CoT+6类状态问题任务",
+    "系统评估未见游戏与数学的迁移"
+   ],
+   "innovations": [
+    "外部搜索专家进数据生成环，监督质量脱离学生策略",
+    "暴露备选动作/对手应答/分支价值（结果日志只有终局）"
+   ],
+   "method": "MuZero专家自弈（每状态50次仿真），记录重放验证后线性化为CoT，经OPSD蒸馏",
+   "results": "Qwen3-4B六数学基准均值24.1→36.6，未见游戏胜率15%→45%、FIDE 39.9；8B思维模式胜率53.7%→62.7%；优于非搜索对照RuleBot（33.9→36.6）",
+   "value": "提供标注高效、环境可验证的超人级推理数据新路径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "SPSD离线框架：自弈搜索记录→重放可验证监督",
+    "agentChange": "MuZero专家自弈（每状态50次仿真），记录重放验证后线性化为CoT，经OPSD蒸馏",
+    "selfEvolution": null,
+    "evidence": [
+     "Qwen3-4B六数学基准均值24.1→36.6，未见游戏胜率15%→45%、FIDE 39.9；8B思维模式胜率53.7%→62.7%；优于非搜索对照RuleBot（33.9→36.6）",
+     "暴露备选动作/对手应答/分支价值（结果日志只有终局）"
+    ],
+    "faq": {
+     "problem": "自弈搜索蒸馏成CoT，Qwen3-4B六数学基准24.1→36.6",
+     "mechanism": "MuZero专家自弈（每状态50次仿真），记录重放验证后线性化为CoT，经OPSD蒸馏",
+     "agentChange": "MuZero专家自弈（每状态50次仿真），记录重放验证后线性化为CoT，经OPSD蒸馏",
+     "support": "Qwen3-4B六数学基准均值24.1→36.6，未见游戏胜率15%→45%、FIDE 39.9；8B思维模式胜率53.7%→62.7%；优于非搜索对照RuleBot（33.9→36.6）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "提供标注高效、环境可验证的超人级推理数据新路径"
+   }
+  },
+  {
+   "id": "2609.30868",
+   "version": 1,
+   "title": "VLaRL: Augmenting Vision-Language-Action Models with Simulation-Trained Latent-Conditioned Residual RL",
+   "abstract": "仿真训练的残差RL经VLA潜变量直迁真机，8个任务-骨干组合全提升",
+   "authors": [],
+   "published": "2026-09-29T04:00:00.000Z",
+   "updated": "2026-09-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.30868",
+   "pdf": "https://arxiv.org/pdf/2609.30868",
+   "announceType": "new",
+   "summary": "仿真训练的残差RL经VLA潜变量直迁真机，8个任务-骨干组合全提升",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.30868"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为VLA物理执行精度提升提供低成本、安全的sim2real路径",
+   "repository": null,
+   "motivation": "VLA接触丰富操作执行不精确，真机残差RL昂贵且有安全风险",
+   "coreProblem": "图像策略暴露于视觉sim2real差距，几何状态接口需额外感知与定制",
+   "contributions": [
+    "冻结VLA上加潜变量条件残差策略",
+    "VLA内部视觉-语言潜变量作sim2real接口，轻量映射器对齐分布",
+    "4个接触任务×2个VLA骨干（Flower、GR00T N1.7）验证"
+   ],
+   "innovations": [
+    "用VLA内部表征作迁移接口（此前为图像或显式几何状态）",
+    "无需真机RL与在线适应"
+   ],
+   "method": "微调后冻结VLA、重建数字孪生，映射器对齐仿真/真实潜分布，仿真训练残差策略，真机直接消费真实潜变量",
+   "results": "每任务40次：按钮按压67.5%→100%、推块22.5%→50%、叠杯17.5%→45%；去掉映射器则推块/叠杯40次全败；未见物体推块40%→57.5%",
+   "value": "为VLA物理执行精度提升提供低成本、安全的sim2real路径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "冻结VLA上加潜变量条件残差策略",
+    "agentChange": "微调后冻结VLA、重建数字孪生，映射器对齐仿真/真实潜分布，仿真训练残差策略，真机直接消费真实潜变量",
+    "selfEvolution": null,
+    "evidence": [
+     "每任务40次：按钮按压67.5%→100%、推块22.5%→50%、叠杯17.5%→45%；去掉映射器则推块/叠杯40次全败；未见物体推块40%→57.5%",
+     "无需真机RL与在线适应"
+    ],
+    "faq": {
+     "problem": "仿真训练的残差RL经VLA潜变量直迁真机，8个任务-骨干组合全提升",
+     "mechanism": "微调后冻结VLA、重建数字孪生，映射器对齐仿真/真实潜分布，仿真训练残差策略，真机直接消费真实潜变量",
+     "agentChange": "微调后冻结VLA、重建数字孪生，映射器对齐仿真/真实潜分布，仿真训练残差策略，真机直接消费真实潜变量",
+     "support": "每任务40次：按钮按压67.5%→100%、推块22.5%→50%、叠杯17.5%→45%；去掉映射器则推块/叠杯40次全败；未见物体推块40%→57.5%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为VLA物理执行精度提升提供低成本、安全的sim2real路径"
+   }
+  },
+  {
+   "id": "2609.31047",
+   "version": 1,
+   "title": "DynBranch: Speculative Subgraph Reuse for Dynamic Agentic LLM Serving",
+   "abstract": "分支未决期投机复用子图，agentic服务平均时延最高降32%",
+   "authors": [],
+   "published": "2026-09-29T04:00:00.000Z",
+   "updated": "2026-09-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.31047",
+   "pdf": "https://arxiv.org/pdf/2609.31047",
+   "announceType": "new",
+   "summary": "分支未决期投机复用子图，agentic服务平均时延最高降32%",
+   "topic": "系统 / 基础设施",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.31047"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "不改模型与框架即降低agentic服务延迟，商用硬件亦验证",
+   "repository": null,
+   "motivation": "agent路径运行时才定，实测45–57%端到端延迟串行在模型输出之后",
+   "coreProblem": "缓存无法隐藏分支解析屏障：可复用结果的键在解析前未知",
+   "contributions": [
+    "未解析分支借稳定坐标提前可寻址，可投机执行与复用",
+    "两级负载定价准入，预期收益超负载代价才放行",
+    "位于模型API边界，不改agent框架与推理引擎"
+   ],
+   "innovations": [
+    "首次统一\"解析前启动+跨请求子DAG复用\"两种机制",
+    "投机工作按服务负载定价准入，高负载下不反噬"
+   ],
+   "method": "小模型预测候选下游子图并行执行，分支解析后输入精确匹配才提交，失配丢弃",
+   "results": "Qwen3-32B/4×H200四负载：较最强现有系统降延迟14–32%、较无复用基线46–66%，p99最高降36%；Qwen3-8B/4×RTX4090仍降29.6–54.6%，任务精度无损",
+   "value": "不改模型与框架即降低agentic服务延迟，商用硬件亦验证",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "未解析分支借稳定坐标提前可寻址，可投机执行与复用",
+    "agentChange": "小模型预测候选下游子图并行执行，分支解析后输入精确匹配才提交，失配丢弃",
+    "selfEvolution": null,
+    "evidence": [
+     "Qwen3-32B/4×H200四负载：较最强现有系统降延迟14–32%、较无复用基线46–66%，p99最高降36%；Qwen3-8B/4×RTX4090仍降29.6–54.6%，任务精度无损",
+     "投机工作按服务负载定价准入，高负载下不反噬"
+    ],
+    "faq": {
+     "problem": "分支未决期投机复用子图，agentic服务平均时延最高降32%",
+     "mechanism": "小模型预测候选下游子图并行执行，分支解析后输入精确匹配才提交，失配丢弃",
+     "agentChange": "小模型预测候选下游子图并行执行，分支解析后输入精确匹配才提交，失配丢弃",
+     "support": "Qwen3-32B/4×H200四负载：较最强现有系统降延迟14–32%、较无复用基线46–66%，p99最高降36%；Qwen3-8B/4×RTX4090仍降29.6–54.6%，任务精度无损",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "不改模型与框架即降低agentic服务延迟，商用硬件亦验证"
+   }
+  },
+  {
+   "id": "2609.31306",
+   "version": 1,
+   "title": "Benchmarking Attention for Tabular Foundation Models",
+   "abstract": "二维表格注意力首份系统基准：行注意力FA3快SDPA 3.5×",
+   "authors": [],
+   "published": "2026-09-29T04:00:00.000Z",
+   "updated": "2026-09-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.31306",
+   "pdf": "https://arxiv.org/pdf/2609.31306",
+   "announceType": "new",
+   "summary": "二维表格注意力首份系统基准：行注意力FA3快SDPA 3.5×",
+   "topic": "系统 / 基础设施",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.31306"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为表格基座模型注意力内核设计与部署选型提供实证依据",
+   "repository": null,
+   "motivation": "表格模型依赖行列交替注意力，但高效注意力只研究过一维序列",
+   "coreProblem": "现成内核面向一维长序列，行列非对称长度与跨步拷贝开销未被测量",
+   "contributions": [
+    "构建可复现二维表格注意力基准",
+    "实测7类后端在A100/H100/B200上的行为差异",
+    "开源基准，并以之为闭环驱动智能体优化FA4内核"
+   ],
+   "innovations": [
+    "首次系统基准化二维表格注意力（此前仅一维）",
+    "以基准为闭环目标，自主智能体改写FA4内核代码"
+   ],
+   "method": "实测各后端前后向吞吐与峰值内存，roofline分析量化跨步拷贝开销",
+   "results": "列注意力cuDNN最佳，行注意力FA3快SDPA 3.5×、超cuDNN 1.5×；B200较H100快2×；智能体优化FA4长序列列注意力+11–14%、全区间第一",
+   "value": "为表格基座模型注意力内核设计与部署选型提供实证依据",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "构建可复现二维表格注意力基准",
+    "agentChange": "实测各后端前后向吞吐与峰值内存，roofline分析量化跨步拷贝开销",
+    "selfEvolution": null,
+    "evidence": [
+     "列注意力cuDNN最佳，行注意力FA3快SDPA 3.5×、超cuDNN 1.5×；B200较H100快2×；智能体优化FA4长序列列注意力+11–14%、全区间第一",
+     "以基准为闭环目标，自主智能体改写FA4内核代码"
+    ],
+    "faq": {
+     "problem": "二维表格注意力首份系统基准：行注意力FA3快SDPA 3.5×",
+     "mechanism": "实测各后端前后向吞吐与峰值内存，roofline分析量化跨步拷贝开销",
+     "agentChange": "实测各后端前后向吞吐与峰值内存，roofline分析量化跨步拷贝开销",
+     "support": "列注意力cuDNN最佳，行注意力FA3快SDPA 3.5×、超cuDNN 1.5×；B200较H100快2×；智能体优化FA4长序列列注意力+11–14%、全区间第一",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为表格基座模型注意力内核设计与部署选型提供实证依据"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-09-28",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-09-28 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-07T21:30:39.000Z",
+ "latestPaperAt": "2026-09-29T04:00:00.000Z",
+ "totalMatched": 503,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 503
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 47,
+ "trends": {
+  "status": "accumulating",
+  "days": 47,
+  "minimumDays": 15,
+  "message": "已积累 47/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-07T21:30:39.000Z",
+ "snapshotDay": "2026-09-29",
+ "historical": true
+}

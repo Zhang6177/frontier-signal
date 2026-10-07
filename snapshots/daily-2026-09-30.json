@@ -1,0 +1,1041 @@
+{
+ "papers": [
+  {
+   "id": "2609.34396",
+   "version": 1,
+   "title": "HyperDAM: Hyperspectral Distractor-Aware Memory with Amodal Expansion for SAM 3 Tracking",
+   "abstract": "给冻结 SAM 3 外挂高光谱记忆门控与 amodal 扩展，私榜 AUC 68.01% 获 HOTC 2026 亚军",
+   "authors": [],
+   "published": "2026-09-30T04:00:00.000Z",
+   "updated": "2026-09-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV（另含 cs.RO/eess 交叉）"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.34396",
+   "pdf": "https://arxiv.org/pdf/2609.34396",
+   "announceType": "new",
+   "summary": "给冻结 SAM 3 外挂高光谱记忆门控与 amodal 扩展，私榜 AUC 68.01% 获 HOTC 2026 亚军",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.34396"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明非侵入式光谱门控+外挂头即可给冻结基础模型加身份鲁棒与 amodal 能力",
+   "repository": null,
+   "motivation": "高光谱材质线索可解彩色同化伪装干扰，而基础跟踪器记忆仅用空间-外观证据",
+   "coreProblem": "高置信错误掩码会写回污染跟踪记忆；SAM 只覆盖可见区，不满足 amodal 标注框",
+   "contributions": [
+    "发布 HOTC2026-Modal：481 条视频全量人工复核 modal 掩码+掩码紧框",
+    "帧零校准 HSI 门：在记忆写入边界只可拒绝谱不一致更新，不改当前预测",
+    "9.4M 参数因果 3D 卷积扩展头，预测四边仅外向的 amodal 扩张残差"
+   ],
+   "innovations": [
+    "首次把光谱材质校验置于记忆写入决策，不动跟踪器权重与更新调度",
+    "modal-amodal 框差为监督 + 严格仅外向扩张契约，扩张永不回写 SAM 记忆",
+    "模型选择以跨域鲁棒为先，规避竞赛榜单过拟合"
+   ],
+   "method": "冻结 DAM4SAM3 底座，候选掩码中位谱须与帧零参照谱相似才放行写入 distractor 记忆；外挂 6 帧 3D 卷积头学外向扩张残差，辅以静景突变恢复与 RTS 平滑处理全遮挡。",
+   "results": "公共榜 AUC 0.6977 超 DAM4SAM3 0.6904、SAM3 0.6739、SAM2 0.6504；组织者私榜 AUC 68.01%、DP@20 87.77%，HOTC 2026 第 2 名。",
+   "value": "证明非侵入式光谱门控+外挂头即可给冻结基础模型加身份鲁棒与 amodal 能力",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "发布 HOTC2026-Modal：481 条视频全量人工复核 modal 掩码+掩码紧框",
+    "agentChange": "冻结 DAM4SAM3 底座，候选掩码中位谱须与帧零参照谱相似才放行写入 distractor 记忆；外挂 6 帧 3D 卷积头学外向扩张残差，辅以静景突变恢复与 RTS 平滑处理全遮挡。",
+    "selfEvolution": null,
+    "evidence": [
+     "公共榜 AUC 0.6977 超 DAM4SAM3 0.6904、SAM3 0.6739、SAM2 0.6504；组织者私榜 AUC 68.01%、DP@20 87.77%，HOTC 2026 第 2 名。",
+     "modal-amodal 框差为监督 + 严格仅外向扩张契约，扩张永不回写 SAM 记忆",
+     "模型选择以跨域鲁棒为先，规避竞赛榜单过拟合"
+    ],
+    "faq": {
+     "problem": "给冻结 SAM 3 外挂高光谱记忆门控与 amodal 扩展，私榜 AUC 68.01% 获 HOTC 2026 亚军",
+     "mechanism": "冻结 DAM4SAM3 底座，候选掩码中位谱须与帧零参照谱相似才放行写入 distractor 记忆；外挂 6 帧 3D 卷积头学外向扩张残差，辅以静景突变恢复与 RTS 平滑处理全遮挡。",
+     "agentChange": "冻结 DAM4SAM3 底座，候选掩码中位谱须与帧零参照谱相似才放行写入 distractor 记忆；外挂 6 帧 3D 卷积头学外向扩张残差，辅以静景突变恢复与 RTS 平滑处理全遮挡。",
+     "support": "公共榜 AUC 0.6977 超 DAM4SAM3 0.6904、SAM3 0.6739、SAM2 0.6504；组织者私榜 AUC 68.01%、DP@20 87.77%，HOTC 2026 第 2 名。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "证明非侵入式光谱门控+外挂头即可给冻结基础模型加身份鲁棒与 amodal 能力"
+   }
+  },
+  {
+   "id": "2609.32529",
+   "version": 1,
+   "title": "SetOPD: From Few Visual Exemplars to Multimodal Candidate Sets for Remote-Sensing Open-Prompt Detection",
+   "abstract": "遥感开放提示检测集合化，配对查询仲裁晚融合，11 源 Macro11 AP 55.57 新 SOTA",
+   "authors": [],
+   "published": "2026-09-30T04:00:00.000Z",
+   "updated": "2026-09-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV（另含 cs.RO/eess 交叉）"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.32529",
+   "pdf": "https://arxiv.org/pdf/2609.32529",
+   "announceType": "new",
+   "summary": "遥感开放提示检测集合化，配对查询仲裁晚融合，11 源 Macro11 AP 55.57 新 SOTA",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.32529"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "候选集级晚融合成为多模态提示整合的新设计原则，区别于表征融合范式",
+   "repository": null,
+   "motivation": "多源合训下 base/novel 划分名存实亡，用户期望少样本+文本自由定义目标",
+   "coreProblem": "示例集被压成单一类原型且表征层早期融合，模态专属候选态无法显式仲裁",
+   "contributions": [
+    "Base-Residual 编码：锚点+校正共 2 token 置换不变视觉记忆驱动独立视觉通路",
+    "Paired-Query Arbitration：text/visual 双 reader 共享初始化、逐对门控+集合精修",
+    "把开放提示检测形式化为集合到集合映射，构建 11 源 153 类评测协议"
+   ],
+   "innovations": [
+    "拒绝示例\"文本化原型\"用法，把视觉示例还原为场景上下文中的视觉证据",
+    "跨模态交互延迟到候选态成形之后，靠共享初始化天然配对、免显式匹配",
+    "仅 0.63M 可训练参数即在全部 11 源胜过表征级联合提示融合"
+   ],
+   "method": "冻结 Grounding DINO 底座，示例经可变形注意力读为 2-token 视觉记忆；双 reader 从同一 top-900 查询初始化解码，学习门逐对仲裁文本/视觉候选，再做集合级自注意力精修。",
+   "results": "Macro11 AP 55.57，超表征级 Joint Prompt 54.00（+1.57，11 源全胜）；视觉原型 47.11→Base+Residual 53.55（+6.44）；DIOR 60.0 AP。",
+   "value": "候选集级晚融合成为多模态提示整合的新设计原则，区别于表征融合范式",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "Base-Residual 编码：锚点+校正共 2 token 置换不变视觉记忆驱动独立视觉通路",
+    "agentChange": "冻结 Grounding DINO 底座，示例经可变形注意力读为 2-token 视觉记忆；双 reader 从同一 top-900 查询初始化解码，学习门逐对仲裁文本/视觉候选，再做集合级自注意力精修。",
+    "selfEvolution": null,
+    "evidence": [
+     "Macro11 AP 55.57，超表征级 Joint Prompt 54.00（+1.57，11 源全胜）；视觉原型 47.11→Base+Residual 53.55（+6.44）；DIOR 60.0 AP。",
+     "跨模态交互延迟到候选态成形之后，靠共享初始化天然配对、免显式匹配",
+     "仅 0.63M 可训练参数即在全部 11 源胜过表征级联合提示融合"
+    ],
+    "faq": {
+     "problem": "遥感开放提示检测集合化，配对查询仲裁晚融合，11 源 Macro11 AP 55.57 新 SOTA",
+     "mechanism": "冻结 Grounding DINO 底座，示例经可变形注意力读为 2-token 视觉记忆；双 reader 从同一 top-900 查询初始化解码，学习门逐对仲裁文本/视觉候选，再做集合级自注意力精修。",
+     "agentChange": "冻结 Grounding DINO 底座，示例经可变形注意力读为 2-token 视觉记忆；双 reader 从同一 top-900 查询初始化解码，学习门逐对仲裁文本/视觉候选，再做集合级自注意力精修。",
+     "support": "Macro11 AP 55.57，超表征级 Joint Prompt 54.00（+1.57，11 源全胜）；视觉原型 47.11→Base+Residual 53.55（+6.44）；DIOR 60.0 AP。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "候选集级晚融合成为多模态提示整合的新设计原则，区别于表征融合范式"
+   }
+  },
+  {
+   "id": "2609.32756",
+   "version": 1,
+   "title": "Reuse or Relearn? A Spectral View of Earth Observation Foundation Models",
+   "abstract": "谱诊断审计遥感基础模型微调：预训练子空间仅保留 0.54，远低于自然图像模型 0.99",
+   "authors": [],
+   "published": "2026-09-30T04:00:00.000Z",
+   "updated": "2026-09-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV（另含 cs.RO/eess 交叉）"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.32756",
+   "pdf": "https://arxiv.org/pdf/2609.32756",
+   "announceType": "new",
+   "summary": "谱诊断审计遥感基础模型微调：预训练子空间仅保留 0.54，远低于自然图像模型 0.99",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.32756"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "主张\"可复用性\"应成为基础模型评测第三轴，直接指导省算力适配与预训练改进",
+   "repository": null,
+   "motivation": "EO 模型默认微调后用，但预训练表示是否真被复用、何时被\"重学\"长期无人核查",
+   "coreProblem": "下游精度混同预训练增益与任务性重学；缺少可量化的表示保持度指标",
+   "contributions": [
+    "提出 SSI（top-2 奇异子空间主轴夹角）、ERA（更新熵有效秩）、相对权重变化三诊断",
+    "审计 5 个 EO 模型 × 5 基准的 Full-FT/LoRA/SVF，以 CLIP/DINOv2/v3 为 CV 参照",
+    "用同架构随机初始化对照，筛出真正体现预训练价值的基准子集"
+   ],
+   "innovations": [
+    "首次把\"复用度\"落为子空间保持+更新秩宽+幅度的联合谱度量，补精度评测盲区",
+    "发现 EO 与 CV 处不同适配 regime：EO 大幅重写子空间，保持度与精度呈权衡",
+    "凭 SSI 预判 PEFT 边界：高 SSI 处 <0.1% 参数更新即可匹敌全量微调"
+   ],
+   "method": "对每个权重矩阵做 SVD，比较微调前后 top-k 奇异子空间夹角、ΔW 熵有效秩与 ‖ΔW‖/‖W‖，在 MADOS/FLAIR-2/PASTIS/TimeMatch/BraDD 跨适配方式系统对比。",
+   "results": "EO 微调均值 SSI 0.54 vs CV 参照 0.99；MADOS（SSI≈0.8）SVF 57.7/LoRA 58.5 反超全量 56.9 mIoU；TimeMatch（SSI≈0.38）LoRA/SVF 落后全量 4.2/18.0 点。",
+   "value": "主张\"可复用性\"应成为基础模型评测第三轴，直接指导省算力适配与预训练改进",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "提出 SSI（top-2 奇异子空间主轴夹角）、ERA（更新熵有效秩）、相对权重变化三诊断",
+    "agentChange": "对每个权重矩阵做 SVD，比较微调前后 top-k 奇异子空间夹角、ΔW 熵有效秩与 ‖ΔW‖/‖W‖，在 MADOS/FLAIR-2/PASTIS/TimeMatch/BraDD 跨适配方式系统对比。",
+    "selfEvolution": null,
+    "evidence": [
+     "EO 微调均值 SSI 0.54 vs CV 参照 0.99；MADOS（SSI≈0.8）SVF 57.7/LoRA 58.5 反超全量 56.9 mIoU；TimeMatch（SSI≈0.38）LoRA/SVF 落后全量 4.2/18.0 点。",
+     "发现 EO 与 CV 处不同适配 regime：EO 大幅重写子空间，保持度与精度呈权衡",
+     "凭 SSI 预判 PEFT 边界：高 SSI 处 <0.1% 参数更新即可匹敌全量微调"
+    ],
+    "faq": {
+     "problem": "谱诊断审计遥感基础模型微调：预训练子空间仅保留 0.54，远低于自然图像模型 0.99",
+     "mechanism": "对每个权重矩阵做 SVD，比较微调前后 top-k 奇异子空间夹角、ΔW 熵有效秩与 ‖ΔW‖/‖W‖，在 MADOS/FLAIR-2/PASTIS/TimeMatch/BraDD 跨适配方式系统对比。",
+     "agentChange": "对每个权重矩阵做 SVD，比较微调前后 top-k 奇异子空间夹角、ΔW 熵有效秩与 ‖ΔW‖/‖W‖，在 MADOS/FLAIR-2/PASTIS/TimeMatch/BraDD 跨适配方式系统对比。",
+     "support": "EO 微调均值 SSI 0.54 vs CV 参照 0.99；MADOS（SSI≈0.8）SVF 57.7/LoRA 58.5 反超全量 56.9 mIoU；TimeMatch（SSI≈0.38）LoRA/SVF 落后全量 4.2/18.0 点。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "主张\"可复用性\"应成为基础模型评测第三轴，直接指导省算力适配与预训练改进"
+   }
+  },
+  {
+   "id": "2609.33088",
+   "version": 1,
+   "title": "QSCP: Beyond Class-Name Prompts for Query-Guided Semantic Change Parsing",
+   "abstract": "提出查询引导语义变化解析新任务，双向证据+配对两期语义图，BIoU 平均超 RCD 19.3 点",
+   "authors": [],
+   "published": "2026-09-30T04:00:00.000Z",
+   "updated": "2026-09-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV（另含 cs.RO/eess 交叉）"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.33088",
+   "pdf": "https://arxiv.org/pdf/2609.33088",
+   "announceType": "new",
+   "summary": "提出查询引导语义变化解析新任务，双向证据+配对两期语义图，BIoU 平均超 RCD 19.3 点",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.33088"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把遥感变化检测从类名二值掩码推进到可回答\"从什么变成什么\"的语义解析层",
+   "repository": null,
+   "motivation": "用户要查\"坑塘变楼房\"这类具体转变，全量变化图与目标类二值掩码都答不上",
+   "coreProblem": "现有指代变化检测只按类名返回二值掩码，缺源/目标与时间方向的显式推理",
+   "contributions": [
+    "定义 QSCP 任务：to/from/involved/transition 四类 intent，支持同义词与意图句查询",
+    "intent 驱动双向证据合成 + 查询条件化双期语义解码，掩码与两期语义图联合输出",
+    "构建 SECOND 六套查询协议（34,595 图-查询对），WHU-CDC 零训练跨集迁移评测"
+   ],
+   "innovations": [
+    "把 intent 解析为对同一预训练 RCDNet 的两种图像顺序显式操作，而非文本编码适配",
+    "语言-视觉分工：语言只定关系，定位与源/目标由视觉双向证据乘积决定",
+    "查询掩码同时门控 T1/T2 语义图，输出\"变成什么\"而非只答\"变没变\""
+   ],
+   "method": "LLM 把查询解析为 intent JSON（不看图）；冻结 RCDNet+CLIP 按两种图像顺序各跑一次得流入/流出方向证据，log-odds 空间融合后在掩码内解码两期七类语义标签，方向监督扩展训练区域。",
+   "results": "SECOND 语言类查询 BIoU 70.7/71.7/71.0 vs RCDNet 53.3/53.6/48.6（平均 +19.32）；WHU-CDC 迁移 Sentence 70.94（+20.87）；Unknown 查询拒答 100%。",
+   "value": "把遥感变化检测从类名二值掩码推进到可回答\"从什么变成什么\"的语义解析层",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "定义 QSCP 任务：to/from/involved/transition 四类 intent，支持同义词与意图句查询",
+    "agentChange": "LLM 把查询解析为 intent JSON（不看图）；冻结 RCDNet+CLIP 按两种图像顺序各跑一次得流入/流出方向证据，log-odds 空间融合后在掩码内解码两期七类语义标签，方向监督扩展训练区域。",
+    "selfEvolution": null,
+    "evidence": [
+     "SECOND 语言类查询 BIoU 70.7/71.7/71.0 vs RCDNet 53.3/53.6/48.6（平均 +19.32）；WHU-CDC 迁移 Sentence 70.94（+20.87）；Unknown 查询拒答 100%。",
+     "语言-视觉分工：语言只定关系，定位与源/目标由视觉双向证据乘积决定",
+     "查询掩码同时门控 T1/T2 语义图，输出\"变成什么\"而非只答\"变没变\""
+    ],
+    "faq": {
+     "problem": "提出查询引导语义变化解析新任务，双向证据+配对两期语义图，BIoU 平均超 RCD 19.3 点",
+     "mechanism": "LLM 把查询解析为 intent JSON（不看图）；冻结 RCDNet+CLIP 按两种图像顺序各跑一次得流入/流出方向证据，log-odds 空间融合后在掩码内解码两期七类语义标签，方向监督扩展训练区域。",
+     "agentChange": "LLM 把查询解析为 intent JSON（不看图）；冻结 RCDNet+CLIP 按两种图像顺序各跑一次得流入/流出方向证据，log-odds 空间融合后在掩码内解码两期七类语义标签，方向监督扩展训练区域。",
+     "support": "SECOND 语言类查询 BIoU 70.7/71.7/71.0 vs RCDNet 53.3/53.6/48.6（平均 +19.32）；WHU-CDC 迁移 Sentence 70.94（+20.87）；Unknown 查询拒答 100%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "把遥感变化检测从类名二值掩码推进到可回答\"从什么变成什么\"的语义解析层"
+   }
+  },
+  {
+   "id": "2609.35507",
+   "version": 1,
+   "title": "ReVA: A Scene-Centric Dataset Beyond Repetition for Remote Sensing Video Question Answering",
+   "abstract": "发布遥感视频 QA 数据集 ReVA（2,438 视频/22K QA），ReMoSense 80.04% 超 23 模型",
+   "authors": [],
+   "published": "2026-09-30T04:00:00.000Z",
+   "updated": "2026-09-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV（另含 cs.RO/eess 交叉）"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.35507",
+   "pdf": "https://arxiv.org/pdf/2609.35507",
+   "announceType": "new",
+   "summary": "发布遥感视频 QA 数据集 ReVA（2,438 视频/22K QA），ReMoSense 80.04% 超 23 模型",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.35507"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为真实遥感视频的时序/视角/因果推理建立首个系统评测基准与强基线",
+   "repository": null,
+   "motivation": "遥感 MLLM 评测停在静态图+模板问题，无人机视频固有时序推理无法被系统评估",
+   "coreProblem": "模板出题语言重复、缺推理复杂度；视频工作多导航导向，场景中心 VideoQA 空白",
+   "contributions": [
+    "构建 ReVA：2,438 段真实 UAV 视频/18 城市/580K 帧/22K QA/11 类任务",
+    "提出 ReMoSense：全局对应+物体运动双流 token 解耦相机自运动与物体动态",
+    "系统评测 23 个专有/开源 Video LLM，暴露时序定位与视角推理短板"
+   ],
+   "innovations": [
+    "首批覆盖时序理解+因果推理的场景中心真实遥感视频 QA 基准（4 大类 11 任务）",
+    "把运动建模为显式结构化 token 注入 LLM 序列，区别于隐式运动表征学习",
+    "五阶段半自动标注（CoT 出题+显式推理链+8 人两级核验）抑制模板重复与幻觉"
+   ],
+   "method": "相邻帧下采样 patch 建 cost volume 池化为 global correspondence token；K=16 可学习 object motion token 跨帧自回归精炼；与视觉 token 拼接送 Qwen2.5-VL 解码。",
+   "results": "ReVA Overall 80.04%，超最佳微调基线 VideoLLaMA2（76.33）3.7 点、同骨干 BIMBA（73.50）6.5 点；去运动 token -3.9/-4.9；单帧输入仅 42%，证实任务依赖视频。",
+   "value": "为真实遥感视频的时序/视角/因果推理建立首个系统评测基准与强基线",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "构建 ReVA：2,438 段真实 UAV 视频/18 城市/580K 帧/22K QA/11 类任务",
+    "agentChange": "相邻帧下采样 patch 建 cost volume 池化为 global correspondence token；K=16 可学习 object motion token 跨帧自回归精炼；与视觉 token 拼接送 Qwen2.5-VL 解码。",
+    "selfEvolution": null,
+    "evidence": [
+     "ReVA Overall 80.04%，超最佳微调基线 VideoLLaMA2（76.33）3.7 点、同骨干 BIMBA（73.50）6.5 点；去运动 token -3.9/-4.9；单帧输入仅 42%，证实任务依赖视频。",
+     "把运动建模为显式结构化 token 注入 LLM 序列，区别于隐式运动表征学习",
+     "五阶段半自动标注（CoT 出题+显式推理链+8 人两级核验）抑制模板重复与幻觉"
+    ],
+    "faq": {
+     "problem": "发布遥感视频 QA 数据集 ReVA（2,438 视频/22K QA），ReMoSense 80.04% 超 23 模型",
+     "mechanism": "相邻帧下采样 patch 建 cost volume 池化为 global correspondence token；K=16 可学习 object motion token 跨帧自回归精炼；与视觉 token 拼接送 Qwen2.5-VL 解码。",
+     "agentChange": "相邻帧下采样 patch 建 cost volume 池化为 global correspondence token；K=16 可学习 object motion token 跨帧自回归精炼；与视觉 token 拼接送 Qwen2.5-VL 解码。",
+     "support": "ReVA Overall 80.04%，超最佳微调基线 VideoLLaMA2（76.33）3.7 点、同骨干 BIMBA（73.50）6.5 点；去运动 token -3.9/-4.9；单帧输入仅 42%，证实任务依赖视频。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "为真实遥感视频的时序/视角/因果推理建立首个系统评测基准与强基线"
+   }
+  },
+  {
+   "id": "2609.32813",
+   "version": 1,
+   "title": "USAI-Quant: A Quantitative Reasoning Benchmark for Vision-Language Models in Built Environments",
+   "abstract": "建首个遥感城市定量推理基准（69.9 万 VQA），SOTA VLM 开放题数值精度最高仅 35.8%",
+   "authors": [],
+   "published": "2026-09-30T04:00:00.000Z",
+   "updated": "2026-09-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV（另含 cs.RO/eess 交叉）"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.32813",
+   "pdf": "https://arxiv.org/pdf/2609.32813",
+   "announceType": "new",
+   "summary": "建首个遥感城市定量推理基准（69.9 万 VQA），SOTA VLM 开放题数值精度最高仅 35.8%",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.32813"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "定量暴露 VLM 城市数值推理短板，规划级可信指标输出仍远未达成",
+   "repository": null,
+   "motivation": "建筑环境指标靠 GIS+人工管线难规模化，期望 VLM 直接读遥感图输出数值",
+   "coreProblem": "现有 RS-VQA 基准以定性识别为主，缺可数值校验的城市指标与多步数值推理设计",
+   "contributions": [
+    "发布 USAI-Quant：335 城/100,523 图/699,341 对 VQA/13 个城市指标",
+    "设计 Mapbox 影像-OSM 统计对齐、L1-L3 三级复杂度、双题型与人审质控管线",
+    "评测 4 通用+3 遥感 VLM，并做模板、城市、模型规模变异性分析"
+   ],
+   "innovations": [
+    "首次以 OSM 统计为数值真值、可容差判分的城市指标问答，替代定性 VQA",
+    "按 L1 直接识别/L2 关系比率/L3 熵组合分层，专测多步组合数值推理",
+    "揭示 RS 模型开放题占优而选择题≈随机 25% 的反差：域调优助出数不利推理"
+   ],
+   "method": "取 335 大城市 zoom-17 瓦片（672px≈450m），OSM 用地多边形算 13 指标并按建筑占比筛瓦片；每指标 10 套模板生成开放数值题与四分位干扰项选择题，测成功率与容差内精度。",
+   "results": "最佳开放题精度仅 35.8%（GeoChat 绿地率，QwenVL-3 只有 14.7%）；L3 多样性指标精度 ≤13.6%；选择题总体 <50%，RS 模型 21.6–25.5% 接近四选一随机，通用模型反超约 10 点。",
+   "value": "定量暴露 VLM 城市数值推理短板，规划级可信指标输出仍远未达成",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "发布 USAI-Quant：335 城/100,523 图/699,341 对 VQA/13 个城市指标",
+    "agentChange": "取 335 大城市 zoom-17 瓦片（672px≈450m），OSM 用地多边形算 13 指标并按建筑占比筛瓦片；每指标 10 套模板生成开放数值题与四分位干扰项选择题，测成功率与容差内精度。",
+    "selfEvolution": null,
+    "evidence": [
+     "最佳开放题精度仅 35.8%（GeoChat 绿地率，QwenVL-3 只有 14.7%）；L3 多样性指标精度 ≤13.6%；选择题总体 <50%，RS 模型 21.6–25.5% 接近四选一随机，通用模型反超约 10 点。",
+     "按 L1 直接识别/L2 关系比率/L3 熵组合分层，专测多步组合数值推理",
+     "揭示 RS 模型开放题占优而选择题≈随机 25% 的反差：域调优助出数不利推理"
+    ],
+    "faq": {
+     "problem": "建首个遥感城市定量推理基准（69.9 万 VQA），SOTA VLM 开放题数值精度最高仅 35.8%",
+     "mechanism": "取 335 大城市 zoom-17 瓦片（672px≈450m），OSM 用地多边形算 13 指标并按建筑占比筛瓦片；每指标 10 套模板生成开放数值题与四分位干扰项选择题，测成功率与容差内精度。",
+     "agentChange": "取 335 大城市 zoom-17 瓦片（672px≈450m），OSM 用地多边形算 13 指标并按建筑占比筛瓦片；每指标 10 套模板生成开放数值题与四分位干扰项选择题，测成功率与容差内精度。",
+     "support": "最佳开放题精度仅 35.8%（GeoChat 绿地率，QwenVL-3 只有 14.7%）；L3 多样性指标精度 ≤13.6%；选择题总体 <50%，RS 模型 21.6–25.5% 接近四选一随机，通用模型反超约 10 点。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "定量暴露 VLM 城市数值推理短板，规划级可信指标输出仍远未达成"
+   }
+  },
+  {
+   "id": "2609.33581",
+   "version": 1,
+   "title": "ForeFly: A Dual-Horizon World Action Model for Aerial Vision-Language Navigation",
+   "abstract": "预演近端+路线关键双视界未来的世界动作模型，TravelUAV 未见 SR 28.86% 新 SOTA",
+   "authors": [],
+   "published": "2026-09-30T04:00:00.000Z",
+   "updated": "2026-09-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV（另含 cs.RO/eess 交叉）"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.33581",
+   "pdf": "https://arxiv.org/pdf/2609.33581",
+   "announceType": "new",
+   "summary": "预演近端+路线关键双视界未来的世界动作模型，TravelUAV 未见 SR 28.86% 新 SOTA",
+   "topic": "无人机 / Agent / 具身智能",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.33581"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明\"先预演未来再决策\"显著改善长程与未见环境无人机导航，为 WAM 路线提供新证据",
+   "repository": null,
+   "motivation": "空中导航搜索空间大、视角剧变，反应式策略局部误差沿长轨迹累积成偏航",
+   "coreProblem": "现有 AVLN 与世界动作模型为反应式或单视界预测，忽略不同时域未来的互补线索",
+   "contributions": [
+    "构建近端 latent、路线关键 latent 与动作 query 由 MLLM 统一解码的世界动作模型",
+    "双记忆查询预热：近期观测记忆 + 转弯事件与里程锚点构成的路线关键记忆",
+    "提出 FGAR：近端 foresight 增强动作表征，路线关键 foresight 做 FiLM 修正与路线引导"
+   ],
+   "innovations": [
+    "首次把 AVLN 改为双视界前瞻建模：近端保运动连续性，远端预演转弯与地标事件",
+    "不重建 RGB，改在紧凑嵌入空间回归 future latent，省算力且滤除无关细节",
+    "两视界非对称使用：路线关键 latent 作高层控制器调制执行特征，另加 stop-grad 只读支路"
+   ],
+   "method": "foresight query 由双记忆预热后，与指令/轨迹/当前观测共同解码；future latent 用对应时刻帧视觉表征监督；FGAR 交叉注意力+FiLM 修正+加性路线残差，MLP 解码 3D waypoint（LLaMA2-7B+EVA-ViT-G，LoRA 两阶段）。",
+   "results": "TravelUAV Unseen SR 28.86%/OSR 52.87%（较 SpatialFly +3.40/+8.46），Hard SR 25.71→31.09%；UAV-ON Unseen SR 17.57→22.68%（+5.11）；消融基线 21.73→完整 41.75。",
+   "value": "证明\"先预演未来再决策\"显著改善长程与未见环境无人机导航，为 WAM 路线提供新证据",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "构建近端 latent、路线关键 latent 与动作 query 由 MLLM 统一解码的世界动作模型",
+    "agentChange": "foresight query 由双记忆预热后，与指令/轨迹/当前观测共同解码；future latent 用对应时刻帧视觉表征监督；FGAR 交叉注意力+FiLM 修正+加性路线残差，MLP 解码 3D waypoint（LLaMA2-7B+EVA-ViT-G，LoRA 两阶段）。",
+    "selfEvolution": null,
+    "evidence": [
+     "TravelUAV Unseen SR 28.86%/OSR 52.87%（较 SpatialFly +3.40/+8.46），Hard SR 25.71→31.09%；UAV-ON Unseen SR 17.57→22.68%（+5.11）；消融基线 21.73→完整 41.75。",
+     "不重建 RGB，改在紧凑嵌入空间回归 future latent，省算力且滤除无关细节",
+     "两视界非对称使用：路线关键 latent 作高层控制器调制执行特征，另加 stop-grad 只读支路"
+    ],
+    "faq": {
+     "problem": "预演近端+路线关键双视界未来的世界动作模型，TravelUAV 未见 SR 28.86% 新 SOTA",
+     "mechanism": "foresight query 由双记忆预热后，与指令/轨迹/当前观测共同解码；future latent 用对应时刻帧视觉表征监督；FGAR 交叉注意力+FiLM 修正+加性路线残差，MLP 解码 3D waypoint（LLaMA2-7B+EVA-ViT-G，LoRA 两阶段）。",
+     "agentChange": "foresight query 由双记忆预热后，与指令/轨迹/当前观测共同解码；future latent 用对应时刻帧视觉表征监督；FGAR 交叉注意力+FiLM 修正+加性路线残差，MLP 解码 3D waypoint（LLaMA2-7B+EVA-ViT-G，LoRA 两阶段）。",
+     "support": "TravelUAV Unseen SR 28.86%/OSR 52.87%（较 SpatialFly +3.40/+8.46），Hard SR 25.71→31.09%；UAV-ON Unseen SR 17.57→22.68%（+5.11）；消融基线 21.73→完整 41.75。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "证明\"先预演未来再决策\"显著改善长程与未见环境无人机导航，为 WAM 路线提供新证据"
+   }
+  },
+  {
+   "id": "2609.35431",
+   "version": 1,
+   "title": "Memory in the Sky: Low-Altitude Question Answering with Multi-Agent Memory Aggregation",
+   "abstract": "用对抗考试量化 UAV 记忆价值并下沉到功率分配，CARLA QA 92.4%、真机 88.5%",
+   "authors": [],
+   "published": "2026-09-30T04:00:00.000Z",
+   "updated": "2026-09-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV（另含 cs.RO/eess 交叉）"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.35431",
+   "pdf": "https://arxiv.org/pdf/2609.35431",
+   "announceType": "new",
+   "summary": "用对抗考试量化 UAV 记忆价值并下沉到功率分配，CARLA QA 92.4%、真机 88.5%",
+   "topic": "无人机 / Agent / 具身智能",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.35431"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把\"记忆价值\"变成可度量、可优化并下沉到通信资源的跨层目标，打通低空网络与具身问答",
+   "repository": null,
+   "motivation": "无人机群长时观测应聚合为地面服务器可问答的长时域时空全局记忆（LAQA）",
+   "coreProblem": "现有资源分配以速率/覆盖/语义相似度为目标，无法度量某条记忆对开放 QA 的边际价值",
+   "contributions": [
+    "提出生成对抗考试 GAE：候选记忆给现有全局记忆出题，答不上的题数归一化为 QoM 指标",
+    "MemCen 框架：联合 UAV 选择+功率分配，推导 QoM 感知截断 water-filling 最优律",
+    "PSO 逐次求解 + L2M 学习求解器，并开源 OpenMAMS 多智能体记忆仿真平台"
+   ],
+   "innovations": [
+    "语义相似度只是中介量，改用考试知识缺口端到端度量记忆下游 QA 效用",
+    "首次把任务级记忆价值注入物理层：同时决定 UAV 激活优先级与功率饱和上限",
+    "利用\"问题不可知但模板可预测\"，LLM 前向模拟出题，黑盒 caption-检索管线无需可微"
+   ],
+   "method": "UAV 上传 pilot 帧→服务器生成 grounded 考题→全局记忆迭代检索作答得 QoM；上传 deadline/干扰约束下最大化准确率-速率折中，PSO 求驻点、L2M 蒸馏成毫秒级推理。",
+   "results": "Town04（10 UAV）QA 92.4%，较 ComCen 65.6% 高 26.8 点；Town05 动态场景 84.0%；3 台 DJI AVATA 真机 PMAS 88.5%（超基线≥12 点）；L2M 保留 PSO 95% 性能，求解 4.6s→0.04s。",
+   "value": "把\"记忆价值\"变成可度量、可优化并下沉到通信资源的跨层目标，打通低空网络与具身问答",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "提出生成对抗考试 GAE：候选记忆给现有全局记忆出题，答不上的题数归一化为 QoM 指标",
+    "agentChange": "UAV 上传 pilot 帧→服务器生成 grounded 考题→全局记忆迭代检索作答得 QoM；上传 deadline/干扰约束下最大化准确率-速率折中，PSO 求驻点、L2M 蒸馏成毫秒级推理。",
+    "selfEvolution": null,
+    "evidence": [
+     "Town04（10 UAV）QA 92.4%，较 ComCen 65.6% 高 26.8 点；Town05 动态场景 84.0%；3 台 DJI AVATA 真机 PMAS 88.5%（超基线≥12 点）；L2M 保留 PSO 95% 性能，求解 4.6s→0.04s。",
+     "首次把任务级记忆价值注入物理层：同时决定 UAV 激活优先级与功率饱和上限",
+     "利用\"问题不可知但模板可预测\"，LLM 前向模拟出题，黑盒 caption-检索管线无需可微"
+    ],
+    "faq": {
+     "problem": "用对抗考试量化 UAV 记忆价值并下沉到功率分配，CARLA QA 92.4%、真机 88.5%",
+     "mechanism": "UAV 上传 pilot 帧→服务器生成 grounded 考题→全局记忆迭代检索作答得 QoM；上传 deadline/干扰约束下最大化准确率-速率折中，PSO 求驻点、L2M 蒸馏成毫秒级推理。",
+     "agentChange": "UAV 上传 pilot 帧→服务器生成 grounded 考题→全局记忆迭代检索作答得 QoM；上传 deadline/干扰约束下最大化准确率-速率折中，PSO 求驻点、L2M 蒸馏成毫秒级推理。",
+     "support": "Town04（10 UAV）QA 92.4%，较 ComCen 65.6% 高 26.8 点；Town05 动态场景 84.0%；3 台 DJI AVATA 真机 PMAS 88.5%（超基线≥12 点）；L2M 保留 PSO 95% 性能，求解 4.6s→0.04s。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "把\"记忆价值\"变成可度量、可优化并下沉到通信资源的跨层目标，打通低空网络与具身问答"
+   }
+  },
+  {
+   "id": "2609.33665",
+   "version": 1,
+   "title": "CompoWorld: Compositional Environment Scaling for General Agents",
+   "abstract": "服务组合扩展跨环境 agent 训练，35B 模型八基准均 +9.17 分，AutomationBench 超 GPT-5.4",
+   "authors": [],
+   "published": "2026-09-30T04:00:00.000Z",
+   "updated": "2026-09-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV（另含 cs.RO/eess 交叉）"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.33665",
+   "pdf": "https://arxiv.org/pdf/2609.33665",
+   "announceType": "new",
+   "summary": "服务组合扩展跨环境 agent 训练，35B 模型八基准均 +9.17 分，AutomationBench 超 GPT-5.4",
+   "topic": "无人机 / Agent / 具身智能",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.33665"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明跨服务组合数据是小模型逼近前沿 agent 工作流能力的可扩展训练新维度",
+   "repository": null,
+   "motivation": "真实工作流要跨多个服务传递信息与状态，现有环境合成只在单一环境内造任务",
+   "coreProblem": "单环境任务学不到跨服务依赖协调；二值奖励对部分完成的工作流没有梯度",
+   "contributions": [
+    "构建 448 个类型化可执行服务库（10,130 工具），coding agent 实现+对抗测试验证",
+    "随机游走服务依赖图+四阶段 agentic 任务生成与探针验证，产出可解可验证跨环境任务",
+    "提出 Completion-Focused Rubric Reward 配合 GRPO，仅 3K SFT+1K RL 任务训出通用 agent"
+   ],
+   "innovations": [
+    "把\"服务组合\"而非环境数量作为可控扩展维度（448 取 5 组合空间约 1.47×10^11）",
+    "确定性代码工具为主、仅 7.1% 长尾工具用世界模型模拟的选择性仿真",
+    "奖励按组内低通过率标准加权且保留正下限，把 RL 梯度聚焦到未完成条件"
+   ],
+   "method": "爬 MCP 规范→coding agent 建 Pydantic 类型化状态实现工具；每任务采 5 服务+5 干扰服务做 env walk 成依赖图，生成指令与 rubric 并编译成终态检查；验证成功轨迹 SFT+GRPO。",
+   "results": "八基准较 Qwen3.6-35B 底座均 +9.17：AutomationBench 10.33→32.33（+22.0），超 GPT-5.4（27.67）与 Claude Opus 4.6（25.50）；同 1K 数据组合环境较单环境 +20.5（33.33 vs 12.83）。",
+   "value": "证明跨服务组合数据是小模型逼近前沿 agent 工作流能力的可扩展训练新维度",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "构建 448 个类型化可执行服务库（10,130 工具），coding agent 实现+对抗测试验证",
+    "agentChange": "爬 MCP 规范→coding agent 建 Pydantic 类型化状态实现工具；每任务采 5 服务+5 干扰服务做 env walk 成依赖图，生成指令与 rubric 并编译成终态检查；验证成功轨迹 SFT+GRPO。",
+    "selfEvolution": null,
+    "evidence": [
+     "八基准较 Qwen3.6-35B 底座均 +9.17：AutomationBench 10.33→32.33（+22.0），超 GPT-5.4（27.67）与 Claude Opus 4.6（25.50）；同 1K 数据组合环境较单环境 +20.5（33.33 vs 12.83）。",
+     "确定性代码工具为主、仅 7.1% 长尾工具用世界模型模拟的选择性仿真",
+     "奖励按组内低通过率标准加权且保留正下限，把 RL 梯度聚焦到未完成条件"
+    ],
+    "faq": {
+     "problem": "服务组合扩展跨环境 agent 训练，35B 模型八基准均 +9.17 分，AutomationBench 超 GPT-5.4",
+     "mechanism": "爬 MCP 规范→coding agent 建 Pydantic 类型化状态实现工具；每任务采 5 服务+5 干扰服务做 env walk 成依赖图，生成指令与 rubric 并编译成终态检查；验证成功轨迹 SFT+GRPO。",
+     "agentChange": "爬 MCP 规范→coding agent 建 Pydantic 类型化状态实现工具；每任务采 5 服务+5 干扰服务做 env walk 成依赖图，生成指令与 rubric 并编译成终态检查；验证成功轨迹 SFT+GRPO。",
+     "support": "八基准较 Qwen3.6-35B 底座均 +9.17：AutomationBench 10.33→32.33（+22.0），超 GPT-5.4（27.67）与 Claude Opus 4.6（25.50）；同 1K 数据组合环境较单环境 +20.5（33.33 vs 12.83）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "证明跨服务组合数据是小模型逼近前沿 agent 工作流能力的可扩展训练新维度"
+   }
+  },
+  {
+   "id": "2609.33791",
+   "version": 1,
+   "title": "Do We Really Need KL Divergence for On-Policy Distillation of Large Language Models?",
+   "abstract": "证明 on-policy 蒸馏可弃 KL：±1 方向奖励即持平反超；共识多教师 C-MOPD 代码 +5.0 分",
+   "authors": [],
+   "published": "2026-09-30T04:00:00.000Z",
+   "updated": "2026-09-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV（另含 cs.RO/eess 交叉）"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.33791",
+   "pdf": "https://arxiv.org/pdf/2609.33791",
+   "announceType": "new",
+   "summary": "证明 on-policy 蒸馏可弃 KL：±1 方向奖励即持平反超；共识多教师 C-MOPD 代码 +5.0 分",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.33791"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "动摇\"蒸馏必须 KL\"教条，用更简单目标做 OPD 并直接改进多教师蒸馏设定",
+   "repository": null,
+   "motivation": "OPD 沿袭蒸馏教条用 KL 散度，其幅值信息对 OPD 是否必需从未被验证",
+   "coreProblem": "reverse-KL 要求全 token 概率幅值匹配，掩盖\"方向反馈可能已足够\"的可能",
+   "contributions": [
+    "提出 BinaryOPD：teacher 概率高于 student 的 token 记 +1、否则 -1 作奖励训练",
+    "按 log-ratio 阈值分高/低分歧 token 组做方向消融，定位真正起作用的关键 token",
+    "提出 C-MOPD：多教师共识定奖励方向，数学与代码全面超 MOPD"
+   ],
+   "innovations": [
+    "首次论证 OPD 可完全不用 KL：方向反馈+状态重复访问足以替代幅值匹配",
+    "揭示关键 token 占比 <2%，90%+ 低分歧 token 反向更新也不损性能",
+    "区别于 MOPD 每样本路由单教师：温和冲突（≤ε）时仍允许朝域教师更新"
+   ],
+   "method": "token 级比较 teacher/student 概率赋 ±1 符号奖励做 policy gradient；C-MOPD 全教师同向取共识，冲突时域教师分歧≤ε（默认 0.8）沿用其方向否则奖励置 0。",
+   "results": "数学 avg@8 65.1 vs OPD 64.1；仅留 <1.5% 关键 token 仍得 64.5，反向加 <5% 低分歧组崩至 40.3；C-MOPD vs MOPD：LiveCodeBench 32.9 vs 27.9（+5.0）、AIME25 53.9 vs 52.5。",
+   "value": "动摇\"蒸馏必须 KL\"教条，用更简单目标做 OPD 并直接改进多教师蒸馏设定",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "提出 BinaryOPD：teacher 概率高于 student 的 token 记 +1、否则 -1 作奖励训练",
+    "agentChange": "token 级比较 teacher/student 概率赋 ±1 符号奖励做 policy gradient；C-MOPD 全教师同向取共识，冲突时域教师分歧≤ε（默认 0.8）沿用其方向否则奖励置 0。",
+    "selfEvolution": null,
+    "evidence": [
+     "数学 avg@8 65.1 vs OPD 64.1；仅留 <1.5% 关键 token 仍得 64.5，反向加 <5% 低分歧组崩至 40.3；C-MOPD vs MOPD：LiveCodeBench 32.9 vs 27.9（+5.0）、AIME25 53.9 vs 52.5。",
+     "揭示关键 token 占比 <2%，90%+ 低分歧 token 反向更新也不损性能",
+     "区别于 MOPD 每样本路由单教师：温和冲突（≤ε）时仍允许朝域教师更新"
+    ],
+    "faq": {
+     "problem": "证明 on-policy 蒸馏可弃 KL：±1 方向奖励即持平反超；共识多教师 C-MOPD 代码 +5.0 分",
+     "mechanism": "token 级比较 teacher/student 概率赋 ±1 符号奖励做 policy gradient；C-MOPD 全教师同向取共识，冲突时域教师分歧≤ε（默认 0.8）沿用其方向否则奖励置 0。",
+     "agentChange": "token 级比较 teacher/student 概率赋 ±1 符号奖励做 policy gradient；C-MOPD 全教师同向取共识，冲突时域教师分歧≤ε（默认 0.8）沿用其方向否则奖励置 0。",
+     "support": "数学 avg@8 65.1 vs OPD 64.1；仅留 <1.5% 关键 token 仍得 64.5，反向加 <5% 低分歧组崩至 40.3；C-MOPD vs MOPD：LiveCodeBench 32.9 vs 27.9（+5.0）、AIME25 53.9 vs 52.5。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "动摇\"蒸馏必须 KL\"教条，用更简单目标做 OPD 并直接改进多教师蒸馏设定"
+   }
+  },
+  {
+   "id": "2609.35350",
+   "version": 1,
+   "title": "Jailbreaks for Black-Box Uncertainty Quantification in Large Reasoning Models",
+   "abstract": "把越狱扰动反用为黑盒不确定性量化 J4U，理论证 relaxation 降 ECE，实测均值降 15.8%",
+   "authors": [],
+   "published": "2026-09-30T04:00:00.000Z",
+   "updated": "2026-09-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV（另含 cs.RO/eess 交叉）"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.35350",
+   "pdf": "https://arxiv.org/pdf/2609.35350",
+   "announceType": "new",
+   "summary": "把越狱扰动反用为黑盒不确定性量化 J4U，理论证 relaxation 降 ECE，实测均值降 15.8%",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.35350"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给出\"对齐抑制不确定性\"的理论刻画与黑盒部署即插即用的校准工具",
+   "repository": null,
+   "motivation": "黑盒部署的推理模型拿不到 logits，prompt 级 UQ 是高风险可信决策刚需",
+   "coreProblem": "RL 对齐压制输出变异性，改述自一致性/置信口述等黑盒 UQ 较重复采样几乎无改进",
+   "contributions": [
+    "定义 relaxation operator 并证明：过度自信下模拟更大 β 严格降低 ECE（Thm 4.3）",
+    "构造 J4U 三变体（Suffix/Prog/Art），用越狱风格扰动采 K=10 条轨迹估计置信度",
+    "4 个 LRM × 3 数据集 36 设置评测，验证熵增与轨迹多样两种松弛签名"
+   ],
+   "innovations": [
+    "首次把越狱攻击反向用于校准提升，而非绕过安全护栏",
+    "不同于改语义聚合度量，直接改变被采样分布以恢复被对齐压制的合法变异性",
+    "将对齐建模为 KL 正则最优策略 π∝ref·exp(r/β)，输入扰动≈增大 β 回退参考策略"
+   ],
+   "method": "对严格良性问题施加越狱风格 prompt 变换近似\"更大 β\"，每题采 10 条轨迹，majority 答案频率作置信度，bootstrap 检验显著性。",
+   "results": "较重复采样：J4U-Prog ECE 平均 -15.8%（绝对 -0.068）、J4U-Art NLL -14.5%；最强基线 Rephrase 仅 -3.1%；显著改进 18/36 vs 3/36，准确率无显著下降。",
+   "value": "给出\"对齐抑制不确定性\"的理论刻画与黑盒部署即插即用的校准工具",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "定义 relaxation operator 并证明：过度自信下模拟更大 β 严格降低 ECE（Thm 4.3）",
+    "agentChange": "对严格良性问题施加越狱风格 prompt 变换近似\"更大 β\"，每题采 10 条轨迹，majority 答案频率作置信度，bootstrap 检验显著性。",
+    "selfEvolution": null,
+    "evidence": [
+     "较重复采样：J4U-Prog ECE 平均 -15.8%（绝对 -0.068）、J4U-Art NLL -14.5%；最强基线 Rephrase 仅 -3.1%；显著改进 18/36 vs 3/36，准确率无显著下降。",
+     "不同于改语义聚合度量，直接改变被采样分布以恢复被对齐压制的合法变异性",
+     "将对齐建模为 KL 正则最优策略 π∝ref·exp(r/β)，输入扰动≈增大 β 回退参考策略"
+    ],
+    "faq": {
+     "problem": "把越狱扰动反用为黑盒不确定性量化 J4U，理论证 relaxation 降 ECE，实测均值降 15.8%",
+     "mechanism": "对严格良性问题施加越狱风格 prompt 变换近似\"更大 β\"，每题采 10 条轨迹，majority 答案频率作置信度，bootstrap 检验显著性。",
+     "agentChange": "对严格良性问题施加越狱风格 prompt 变换近似\"更大 β\"，每题采 10 条轨迹，majority 答案频率作置信度，bootstrap 检验显著性。",
+     "support": "较重复采样：J4U-Prog ECE 平均 -15.8%（绝对 -0.068）、J4U-Art NLL -14.5%；最强基线 Rephrase 仅 -3.1%；显著改进 18/36 vs 3/36，准确率无显著下降。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "给出\"对齐抑制不确定性\"的理论刻画与黑盒部署即插即用的校准工具"
+   }
+  },
+  {
+   "id": "2609.32984",
+   "version": 1,
+   "title": "ReVision3D: Attribution-Guided Recursive Self-Improvement for 3D Medical Perception",
+   "abstract": "标注 CT 体数据当 replay 世界做归因引导递归自改进，肝病灶召回 79% 超 13 个前沿模型",
+   "authors": [],
+   "published": "2026-09-30T04:00:00.000Z",
+   "updated": "2026-09-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV（另含 cs.RO/eess 交叉）"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.32984",
+   "pdf": "https://arxiv.org/pdf/2609.32984",
+   "announceType": "new",
+   "summary": "标注 CT 体数据当 replay 世界做归因引导递归自改进，肝病灶召回 79% 超 13 个前沿模型",
+   "topic": "医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.32984"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明视觉感知可被外部锚定地递归改进，小病灶瓶颈在感知层而非提示词",
+   "repository": null,
+   "motivation": "医学影像 agent 视觉能力弱，递归自改进（RSI）有潜力但不知该改哪个环节",
+   "coreProblem": "轨迹日志与自评反馈无法定位证据丢失发生在采集/感知/训练/推理哪一级",
+   "contributions": [
+    "形式化 volumetric replay：标注体数据按需渲染未见视角，mask 校验 3D 定位命中",
+    "漏检逐级归因（not-shown/never-detected/discarded），冻结 LLM designer 路由到四个干预层",
+    "LiTS/KiTS23 腹部 CT 完成端到端 RSI 与留出测试评测"
+   ],
+   "innovations": [
+    "递归改进对象是视觉读取过程本身，而非记忆/工具/探索策略",
+    "反馈源为反事实渲染+几何验证的外部证据，不依赖 reader 自评",
+    "固定 verifier+种子噪声晋升门：可拒绝无效改动而非强制单调进步"
+   ],
+   "method": "系统含视角程序/感知配置/reader 权重（Qwen3-VL-4B）/推理程序；按 5mm 容差几何归因瓶颈层，designer（Claude Opus 5）仅在该层提候选，超出种子噪声且第二 seed 复现才晋升。",
+   "results": "0.5 FP/患者下肝 recall 0.79，13 个冻结前沿模型仅 0.05–0.36；肾 0.83 vs GPT-6 Astra 0.70；1–5mL 小病灶肝 0.69 vs 前沿 ≤0.13；感知适配把可达上限 0.57→0.70。",
+   "value": "证明视觉感知可被外部锚定地递归改进，小病灶瓶颈在感知层而非提示词",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "形式化 volumetric replay：标注体数据按需渲染未见视角，mask 校验 3D 定位命中",
+    "agentChange": "系统含视角程序/感知配置/reader 权重（Qwen3-VL-4B）/推理程序；按 5mm 容差几何归因瓶颈层，designer（Claude Opus 5）仅在该层提候选，超出种子噪声且第二 seed 复现才晋升。",
+    "selfEvolution": null,
+    "evidence": [
+     "0.5 FP/患者下肝 recall 0.79，13 个冻结前沿模型仅 0.05–0.36；肾 0.83 vs GPT-6 Astra 0.70；1–5mL 小病灶肝 0.69 vs 前沿 ≤0.13；感知适配把可达上限 0.57→0.70。",
+     "反馈源为反事实渲染+几何验证的外部证据，不依赖 reader 自评",
+     "固定 verifier+种子噪声晋升门：可拒绝无效改动而非强制单调进步"
+    ],
+    "faq": {
+     "problem": "标注 CT 体数据当 replay 世界做归因引导递归自改进，肝病灶召回 79% 超 13 个前沿模型",
+     "mechanism": "系统含视角程序/感知配置/reader 权重（Qwen3-VL-4B）/推理程序；按 5mm 容差几何归因瓶颈层，designer（Claude Opus 5）仅在该层提候选，超出种子噪声且第二 seed 复现才晋升。",
+     "agentChange": "系统含视角程序/感知配置/reader 权重（Qwen3-VL-4B）/推理程序；按 5mm 容差几何归因瓶颈层，designer（Claude Opus 5）仅在该层提候选，超出种子噪声且第二 seed 复现才晋升。",
+     "support": "0.5 FP/患者下肝 recall 0.79，13 个冻结前沿模型仅 0.05–0.36；肾 0.83 vs GPT-6 Astra 0.70；1–5mL 小病灶肝 0.69 vs 前沿 ≤0.13；感知适配把可达上限 0.57→0.70。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "证明视觉感知可被外部锚定地递归改进，小病灶瓶颈在感知层而非提示词"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-09-29",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-09-29 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-07T21:30:39.000Z",
+ "latestPaperAt": "2026-09-30T04:00:00.000Z",
+ "totalMatched": 12,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 12
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 47,
+ "trends": {
+  "status": "accumulating",
+  "days": 47,
+  "minimumDays": 15,
+  "message": "已积累 47/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-07T21:30:39.000Z",
+ "snapshotDay": "2026-09-30",
+ "historical": true
+}

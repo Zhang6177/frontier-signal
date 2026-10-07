@@ -1,0 +1,1041 @@
+{
+ "papers": [
+  {
+   "id": "2609.28283",
+   "version": 1,
+   "title": "Benchmarking Hyperspectral Foundation Models for Hyperspectral Unmixing",
+   "abstract": "首个高光谱基础模型解混基准，模型无关框架在四数据集达 SOTA。",
+   "authors": [],
+   "published": "2026-09-25T04:00:00.000Z",
+   "updated": "2026-09-25T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.28283",
+   "pdf": "https://arxiv.org/pdf/2609.28283",
+   "announceType": "new",
+   "summary": "首个高光谱基础模型解混基准，模型无关框架在四数据集达 SOTA。",
+   "topic": "遥感 / 高光谱 / 对地观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.28283"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "开放 HFM 可直接服务解混，无需为解混单独预训练。",
+   "repository": null,
+   "motivation": "高光谱基础模型分类去噪很强，解混能力却从未被系统评估。",
+   "coreProblem": "ViT 分块丢特征分辨率使解混更病态，已有结果仅限单一数据集且不可复现。",
+   "contributions": [
+    "构建模型无关框架，直接从 HFM 特征反演端元与丰度",
+    "在 Samson/Jasper/Apex/Urban 上对比 7 类 SOTA 与多款 HFM",
+    "系统比较特征上采样策略并开源代码"
+   ],
+   "innovations": [
+    "首次跨四数据集系统评测 HFM 解混性能",
+    "不同于 HyperFree 只报结果不给方案，明确给出低分辨率特征上采样路径",
+    "实证与直觉相反：分块低分辨率编码器反优于像素级编码器"
+   ],
+   "method": "冻结 HFM 提特征后经线性映射/去卷积升到像素级再解混，用 15 次训练集成降方差。",
+   "results": "四数据集上 Panopticon(×15) SAD 0.029/0.087/0.168/0.154、综合排名第 1；优于 SiVM+FCLS(0.056/0.267/0.244/0.394) 与 HyperSIGMA(Apex 0.462)。上采样以线性映射平均 SAD 0.104 最佳，FeatUp 仅 0.571。",
+   "value": "开放 HFM 可直接服务解混，无需为解混单独预训练。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "构建模型无关框架，直接从 HFM 特征反演端元与丰度",
+    "agentChange": "冻结 HFM 提特征后经线性映射/去卷积升到像素级再解混，用 15 次训练集成降方差。",
+    "selfEvolution": null,
+    "evidence": [
+     "四数据集上 Panopticon(×15) SAD 0.029/0.087/0.168/0.154、综合排名第 1；优于 SiVM+FCLS(0.056/0.267/0.244/0.394) 与 HyperSIGMA(Apex 0.462)。上采样以线性映射平均 SAD 0.104 最佳，FeatUp 仅 0.571。",
+     "不同于 HyperFree 只报结果不给方案，明确给出低分辨率特征上采样路径",
+     "实证与直觉相反：分块低分辨率编码器反优于像素级编码器"
+    ],
+    "faq": {
+     "problem": "首个高光谱基础模型解混基准，模型无关框架在四数据集达 SOTA。",
+     "mechanism": "冻结 HFM 提特征后经线性映射/去卷积升到像素级再解混，用 15 次训练集成降方差。",
+     "agentChange": "冻结 HFM 提特征后经线性映射/去卷积升到像素级再解混，用 15 次训练集成降方差。",
+     "support": "四数据集上 Panopticon(×15) SAD 0.029/0.087/0.168/0.154、综合排名第 1；优于 SiVM+FCLS(0.056/0.267/0.244/0.394) 与 HyperSIGMA(Apex 0.462)。上采样以线性映射平均 SAD 0.104 最佳，FeatUp 仅 0.571。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "开放 HFM 可直接服务解混，无需为解混单独预训练。"
+   }
+  },
+  {
+   "id": "2609.28230",
+   "version": 1,
+   "title": "A Unified Framework and Dataset for Oriented Object Visual Grounding in Remote Sensing",
+   "abstract": "提出定向遥感视觉定位模型族 O²-VG 与数据集，三基准刷新。",
+   "authors": [],
+   "published": "2026-09-25T04:00:00.000Z",
+   "updated": "2026-09-25T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.28230",
+   "pdf": "https://arxiv.org/pdf/2609.28230",
+   "announceType": "new",
+   "summary": "提出定向遥感视觉定位模型族 O²-VG 与数据集，三基准刷新。",
+   "topic": "遥感 / 高光谱 / 对地观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.28230"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为遥感定向定位提供统一模型族与配套评测数据。",
+   "repository": null,
+   "motivation": "遥感目标任意朝向，水平框定位不准且框内背景占比高。",
+   "coreProblem": "现有方法只回归水平框，且缺\"文本–旋转框\"配对数据。",
+   "contributions": [
+    "O²-VG-Trans：旋转可变形注意力的跨模态定位判别基线",
+    "O²-VG-Uni/VLM：通用定向候选 + 多 token 并行生成定向框",
+    "DIOR-R-RSVG：17,402 图、38,320 条表达式–定向框三元组"
+   ],
+   "innovations": [
+    "首次把遥感视觉定位建为定向（旋转框）任务而非水平框检测",
+    "不依赖文本提示检索，用无文本 objectness 提示产出通用定向候选",
+    "首次以多 token 预测并行生成整块定向框 token，块间保持因果序"
+   ],
+   "method": "跨模态 Transformer 为基座，先对齐视觉–语言，再用可学习 objectness 提示生成候选，VLM 以候选为提示自回归并行解码。",
+   "results": "O²-VG-Trans 在 VRSBench/AVVG/DIOR-R-RSVG 上 Pr@0.5 = 67.71%/18.00%/67.23%，较 Rotated EGDINO 提升 +6.14/+3.58/+6.86 点；3B 的 O²-VG-VLM 在 DIOR-R-RSVG 达 78.35% Pr@0.5、67.85% meanIoU，超 7B GeoGround 20.07 点。",
+   "value": "为遥感定向定位提供统一模型族与配套评测数据。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "O²-VG-Trans：旋转可变形注意力的跨模态定位判别基线",
+    "agentChange": "跨模态 Transformer 为基座，先对齐视觉–语言，再用可学习 objectness 提示生成候选，VLM 以候选为提示自回归并行解码。",
+    "selfEvolution": null,
+    "evidence": [
+     "O²-VG-Trans 在 VRSBench/AVVG/DIOR-R-RSVG 上 Pr@0.5 = 67.71%/18.00%/67.23%，较 Rotated EGDINO 提升 +6.14/+3.58/+6.86 点；3B 的 O²-VG-VLM 在 DIOR-R-RSVG 达 78.35% Pr@0.5、67.85% meanIoU，超 7B GeoGround 20.07 点。",
+     "不依赖文本提示检索，用无文本 objectness 提示产出通用定向候选",
+     "首次以多 token 预测并行生成整块定向框 token，块间保持因果序"
+    ],
+    "faq": {
+     "problem": "提出定向遥感视觉定位模型族 O²-VG 与数据集，三基准刷新。",
+     "mechanism": "跨模态 Transformer 为基座，先对齐视觉–语言，再用可学习 objectness 提示生成候选，VLM 以候选为提示自回归并行解码。",
+     "agentChange": "跨模态 Transformer 为基座，先对齐视觉–语言，再用可学习 objectness 提示生成候选，VLM 以候选为提示自回归并行解码。",
+     "support": "O²-VG-Trans 在 VRSBench/AVVG/DIOR-R-RSVG 上 Pr@0.5 = 67.71%/18.00%/67.23%，较 Rotated EGDINO 提升 +6.14/+3.58/+6.86 点；3B 的 O²-VG-VLM 在 DIOR-R-RSVG 达 78.35% Pr@0.5、67.85% meanIoU，超 7B GeoGround 20.07 点。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "为遥感定向定位提供统一模型族与配套评测数据。"
+   }
+  },
+  {
+   "id": "2609.28061",
+   "version": 1,
+   "title": "AstraLOD3: Zero-shot multimodal agentic reconstruction of LOD3 building models",
+   "abstract": "通用多模态 agent 零样本重建 LOD3 建筑模型，24 栋平均 FRDS 0.9647。",
+   "authors": [],
+   "published": "2026-09-25T04:00:00.000Z",
+   "updated": "2026-09-25T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.28061",
+   "pdf": "https://arxiv.org/pdf/2609.28061",
+   "announceType": "new",
+   "summary": "通用多模态 agent 零样本重建 LOD3 建筑模型，24 栋平均 FRDS 0.9647。",
+   "topic": "遥感 / 高光谱 / 对地观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.28061"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "结构化三维重建可由通用多模态 agent 动态编排，无需专用管线。",
+   "repository": null,
+   "motivation": "自动 LOD3 建模依赖专用流水线，跨建筑与输入条件灵活性差。",
+   "coreProblem": "专用流水线预设阈值与几何假设，学习法需任务训练，难应对异构不完整观测。",
+   "contributions": [
+    "提出零样本多模态 agent 框架，自主生成并执行 Python/Blender 重建程序",
+    "在 24 栋建筑 35 次运行上做引导/模态/配置/复现性受控实验",
+    "开放提示协议、输入输出与评测结果的完整基准"
+   ],
+   "innovations": [
+    "首次把 LOD3 重建表述为受约束的 agentic 过程而非固定流水线",
+    "全程不微调、不用建筑专用预训练，仅靠通用多模态基础模型",
+    "输出语义层级构件并记录观测/推断来源，可追溯可复现"
+   ],
+   "method": "输入多视图图像、标定相机、过滤稀疏 SfM 点云与自然语言重建规范，agent 动态编排几何重建、验证与迭代细化。",
+   "results": "24 栋基准 35 次运行平均 FRDS 0.9647（0.9126–0.9937），19/24 超 0.95；14 栋重叠案例中 FRDS 几乎全面高于原 LOD3/DADT，单次耗时 12:32–38:47。",
+   "value": "结构化三维重建可由通用多模态 agent 动态编排，无需专用管线。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "提出零样本多模态 agent 框架，自主生成并执行 Python/Blender 重建程序",
+    "agentChange": "输入多视图图像、标定相机、过滤稀疏 SfM 点云与自然语言重建规范，agent 动态编排几何重建、验证与迭代细化。",
+    "selfEvolution": null,
+    "evidence": [
+     "24 栋基准 35 次运行平均 FRDS 0.9647（0.9126–0.9937），19/24 超 0.95；14 栋重叠案例中 FRDS 几乎全面高于原 LOD3/DADT，单次耗时 12:32–38:47。",
+     "全程不微调、不用建筑专用预训练，仅靠通用多模态基础模型",
+     "输出语义层级构件并记录观测/推断来源，可追溯可复现"
+    ],
+    "faq": {
+     "problem": "通用多模态 agent 零样本重建 LOD3 建筑模型，24 栋平均 FRDS 0.9647。",
+     "mechanism": "输入多视图图像、标定相机、过滤稀疏 SfM 点云与自然语言重建规范，agent 动态编排几何重建、验证与迭代细化。",
+     "agentChange": "输入多视图图像、标定相机、过滤稀疏 SfM 点云与自然语言重建规范，agent 动态编排几何重建、验证与迭代细化。",
+     "support": "24 栋基准 35 次运行平均 FRDS 0.9647（0.9126–0.9937），19/24 超 0.95；14 栋重叠案例中 FRDS 几乎全面高于原 LOD3/DADT，单次耗时 12:32–38:47。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "结构化三维重建可由通用多模态 agent 动态编排，无需专用管线。"
+   }
+  },
+  {
+   "id": "2609.28194",
+   "version": 1,
+   "title": "Geospatial embeddings detect old-growth forests but buffered spatial validation narrows their advantage over Sentinel features",
+   "abstract": "地理空间基础模型嵌入能测原始林，但 10 km 缓冲验证后优势消失。",
+   "authors": [],
+   "published": "2026-09-25T04:00:00.000Z",
+   "updated": "2026-09-25T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.28194",
+   "pdf": "https://arxiv.org/pdf/2609.28194",
+   "announceType": "new",
+   "summary": "地理空间基础模型嵌入能测原始林，但 10 km 缓冲验证后优势消失。",
+   "topic": "遥感 / 高光谱 / 对地观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.28194"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "GFM 优势会被空间自相关夸大，迁移评估必须做缓冲。",
+   "repository": null,
+   "motivation": "欧洲原始林破碎，需要逐林班精确又可大陆部署的检测方法。",
+   "coreProblem": "已有制图多用伪缺席标签且不处理空间自相关，性能被高估、难迁移。",
+   "contributions": [
+    "为 Făgăraş 林区构建含真负样本的高置信原始林标签",
+    "在共同地形/可达性基线上对比 Sentinel-1/2、AlphaEarth、TESSERA v2",
+    "以 0/10/20 km 缓冲的空间分块验证评估并输出全区制图"
+   ],
+   "innovations": [
+    "首次评估地理空间基础模型嵌入对原始林检测的价值",
+    "不同伪缺席做法，显式标注非原始林真负样本以估假阳性",
+    "首次按实测自相关距离（残差 4.5–6.5 km）确定训练–测试缓冲带宽"
+   ],
+   "method": "林班尺度上以地形与可达性为基线叠加 EO 与 GFM 嵌入，XGBoost/CNN 在空间分块交叉验证下比较并外推全区。",
+   "results": "211,893 ha、4,825 林班上，10 km 缓冲下 EO 特征较基线 PR-AUC 提升 0.21–0.25；无缓冲时 baseline+TESSERA 达 PR-AUC 0.84，比 Sentinel-1/2、AlphaEarth 各高 0.08；10 km 缓冲后优势缩到 +0.04/+0.03 且置信区间跨零，CNN 无增益。",
+   "value": "GFM 优势会被空间自相关夸大，迁移评估必须做缓冲。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "为 Făgăraş 林区构建含真负样本的高置信原始林标签",
+    "agentChange": "林班尺度上以地形与可达性为基线叠加 EO 与 GFM 嵌入，XGBoost/CNN 在空间分块交叉验证下比较并外推全区。",
+    "selfEvolution": null,
+    "evidence": [
+     "211,893 ha、4,825 林班上，10 km 缓冲下 EO 特征较基线 PR-AUC 提升 0.21–0.25；无缓冲时 baseline+TESSERA 达 PR-AUC 0.84，比 Sentinel-1/2、AlphaEarth 各高 0.08；10 km 缓冲后优势缩到 +0.04/+0.03 且置信区间跨零，CNN 无增益。",
+     "不同伪缺席做法，显式标注非原始林真负样本以估假阳性",
+     "首次按实测自相关距离（残差 4.5–6.5 km）确定训练–测试缓冲带宽"
+    ],
+    "faq": {
+     "problem": "地理空间基础模型嵌入能测原始林，但 10 km 缓冲验证后优势消失。",
+     "mechanism": "林班尺度上以地形与可达性为基线叠加 EO 与 GFM 嵌入，XGBoost/CNN 在空间分块交叉验证下比较并外推全区。",
+     "agentChange": "林班尺度上以地形与可达性为基线叠加 EO 与 GFM 嵌入，XGBoost/CNN 在空间分块交叉验证下比较并外推全区。",
+     "support": "211,893 ha、4,825 林班上，10 km 缓冲下 EO 特征较基线 PR-AUC 提升 0.21–0.25；无缓冲时 baseline+TESSERA 达 PR-AUC 0.84，比 Sentinel-1/2、AlphaEarth 各高 0.08；10 km 缓冲后优势缩到 +0.04/+0.03 且置信区间跨零，CNN 无增益。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "GFM 优势会被空间自相关夸大，迁移评估必须做缓冲。"
+   }
+  },
+  {
+   "id": "2609.27457",
+   "version": 1,
+   "title": "Beyond Balanced Accuracy: A Resolution and Parity-Controlled Benchmark for Vision-Language and Vision-Only Defect Assessment in UAV Power-Line Inspection",
+   "abstract": "建 56,972 项电力线缺陷基准并审计评测选择，受控后 VLM 无稳定优势。",
+   "authors": [],
+   "published": "2026-09-25T04:00:00.000Z",
+   "updated": "2026-09-25T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.27457",
+   "pdf": "https://arxiv.org/pdf/2609.27457",
+   "announceType": "new",
+   "summary": "建 56,972 项电力线缺陷基准并审计评测选择，受控后 VLM 无稳定优势。",
+   "topic": "遥感 / 高光谱 / 对地观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.27457"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "巡检领域的 VLM 优势常来自评测协议而非模型本身。",
+   "repository": null,
+   "motivation": "检验\"VLM 优于专用视觉骨干\"这一无人机巡检领域的常见结论。",
+   "coreProblem": "已有跨家族对比未控制分区、标签空间、分辨率、种子与侧信息，差距多是协议假象。",
+   "contributions": [
+    "提出覆盖分区/标签空间/分辨率/种子/侧信息的平价审计协议",
+    "构建 56,972 项 ElecVQA-Bench 及构建代码、划分与评测工具",
+    "把弃权与代价敏感风险、长尾宏平均纳入评测体系"
+   ],
+   "innovations": [
+    "首次把 VLM 的像素/token 预算作为受控对比变量",
+    "不同于只报单一指标，每个跨家族结论都附审计判定",
+    "把\"弃权\"当作报告量并扩展代价敏感风险函数为其定价"
+   ],
+   "method": "以确定性流水线从 InsPLAD 生成基准，在六种评测选择下重跑 VLM 与 ResNet/Swin 并做配对显著性检验。",
+   "results": "224px 下 ResNet-50/Swin-T 对 InternVL3.5-8B 七类领先 +20.53/+23.67 点，移到最近匹配像素预算后变为 −0.57/+4.70；14 塔三种子复现中 Qwen 六类宏召回 0.9085，ResNet-50 为 0.9509。",
+   "value": "巡检领域的 VLM 优势常来自评测协议而非模型本身。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "提出覆盖分区/标签空间/分辨率/种子/侧信息的平价审计协议",
+    "agentChange": "以确定性流水线从 InsPLAD 生成基准，在六种评测选择下重跑 VLM 与 ResNet/Swin 并做配对显著性检验。",
+    "selfEvolution": null,
+    "evidence": [
+     "224px 下 ResNet-50/Swin-T 对 InternVL3.5-8B 七类领先 +20.53/+23.67 点，移到最近匹配像素预算后变为 −0.57/+4.70；14 塔三种子复现中 Qwen 六类宏召回 0.9085，ResNet-50 为 0.9509。",
+     "不同于只报单一指标，每个跨家族结论都附审计判定",
+     "把\"弃权\"当作报告量并扩展代价敏感风险函数为其定价"
+    ],
+    "faq": {
+     "problem": "建 56,972 项电力线缺陷基准并审计评测选择，受控后 VLM 无稳定优势。",
+     "mechanism": "以确定性流水线从 InsPLAD 生成基准，在六种评测选择下重跑 VLM 与 ResNet/Swin 并做配对显著性检验。",
+     "agentChange": "以确定性流水线从 InsPLAD 生成基准，在六种评测选择下重跑 VLM 与 ResNet/Swin 并做配对显著性检验。",
+     "support": "224px 下 ResNet-50/Swin-T 对 InternVL3.5-8B 七类领先 +20.53/+23.67 点，移到最近匹配像素预算后变为 −0.57/+4.70；14 塔三种子复现中 Qwen 六类宏召回 0.9085，ResNet-50 为 0.9509。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "巡检领域的 VLM 优势常来自评测协议而非模型本身。"
+   }
+  },
+  {
+   "id": "2609.28192",
+   "version": 1,
+   "title": "From Change Captions to Change Detection: Semantic-Appearance Agreement Framework for Remote Sensing Change Detection",
+   "abstract": "仅用变化描述监督训练变化检测器，配生成数据集，宏 IoU 超基线 8.70 点。",
+   "authors": [],
+   "published": "2026-09-25T04:00:00.000Z",
+   "updated": "2026-09-25T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.28192",
+   "pdf": "https://arxiv.org/pdf/2609.28192",
+   "announceType": "new",
+   "summary": "仅用变化描述监督训练变化检测器，配生成数据集，宏 IoU 超基线 8.70 点。",
+   "topic": "遥感 / 高光谱 / 对地观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.28192"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "用易得的变化描述替代昂贵像素标注，大幅降低标注成本。",
+   "repository": null,
+   "motivation": "像素级变化掩膜标注昂贵，图像级弱标签又不含变化语义。",
+   "coreProblem": "图像级标签只说明\"是否变化\"，给不出变化位置与源→目标语义转移。",
+   "contributions": [
+    "提出以样本级变化 caption 为唯一任务监督的 RSCD 新设定",
+    "提出 SAAF：语义响应与 RGB 差异按几何一致性融合 + 文本条件化解码",
+    "构建可控转移生成流水线，产出 Flair-RSGen 45,761 对"
+   ],
+   "innovations": [
+    "首次用有序变化描述替代变化掩膜作为检测器训练监督",
+    "不同于只细化激活图的弱监督法，把转移语义转成过渡特定空间监督",
+    "用语义–外观\"一致性\"而非算术叠加决定伪掩膜"
+   ],
+   "method": "冻结 TCL-DA 把 caption 语义在双时相图上定位，与 RGB 差异按几何一致性融合生成伪掩膜，再以文本条件训练检测器。",
+   "results": "Flair-RSGen 上 73.22% 宏 IoU / 80.83% F1，比最强基线 ACWCD 高 8.70 / 10.37 点；WHU-CDC 上 IoU 81.55%、F1 84.28%，比 WSLCD 高 1.66 点 IoU。",
+   "value": "用易得的变化描述替代昂贵像素标注，大幅降低标注成本。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "提出以样本级变化 caption 为唯一任务监督的 RSCD 新设定",
+    "agentChange": "冻结 TCL-DA 把 caption 语义在双时相图上定位，与 RGB 差异按几何一致性融合生成伪掩膜，再以文本条件训练检测器。",
+    "selfEvolution": null,
+    "evidence": [
+     "Flair-RSGen 上 73.22% 宏 IoU / 80.83% F1，比最强基线 ACWCD 高 8.70 / 10.37 点；WHU-CDC 上 IoU 81.55%、F1 84.28%，比 WSLCD 高 1.66 点 IoU。",
+     "不同于只细化激活图的弱监督法，把转移语义转成过渡特定空间监督",
+     "用语义–外观\"一致性\"而非算术叠加决定伪掩膜"
+    ],
+    "faq": {
+     "problem": "仅用变化描述监督训练变化检测器，配生成数据集，宏 IoU 超基线 8.70 点。",
+     "mechanism": "冻结 TCL-DA 把 caption 语义在双时相图上定位，与 RGB 差异按几何一致性融合生成伪掩膜，再以文本条件训练检测器。",
+     "agentChange": "冻结 TCL-DA 把 caption 语义在双时相图上定位，与 RGB 差异按几何一致性融合生成伪掩膜，再以文本条件训练检测器。",
+     "support": "Flair-RSGen 上 73.22% 宏 IoU / 80.83% F1，比最强基线 ACWCD 高 8.70 / 10.37 点；WHU-CDC 上 IoU 81.55%、F1 84.28%，比 WSLCD 高 1.66 点 IoU。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "用易得的变化描述替代昂贵像素标注，大幅降低标注成本。"
+   }
+  },
+  {
+   "id": "2609.28078",
+   "version": 1,
+   "title": "LiAM-SAM: Lifecycle-Aware Memory for Robust SAM2-Based MOT",
+   "abstract": "生命周期感知记忆框架，DanceTrack HOTA 79.55、ID 切换降 96%。",
+   "authors": [],
+   "published": "2026-09-25T04:00:00.000Z",
+   "updated": "2026-09-25T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.28078",
+   "pdf": "https://arxiv.org/pdf/2609.28078",
+   "announceType": "new",
+   "summary": "生命周期感知记忆框架，DanceTrack HOTA 79.55、ID 切换降 96%。",
+   "topic": "分割基础模型 / SAM",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.28078"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为分割式长时序 MOT 提供免训练、可插拔的记忆治理范式。",
+   "repository": null,
+   "motivation": "SAM2 分割跟踪在拥挤场景记忆被污染，长时序身份不稳定。",
+   "coreProblem": "现有 SAM2 跟踪器无统一策略处理重复出生、交互漂移与重现失配。",
+   "contributions": [
+    "把检测提示式 SAM2 跟踪形式化为三阶段记忆完整性问题",
+    "提出 CTI 对比式初始化、MGG 运动几何校正、ACM 自适应上下文记忆",
+    "给出 SASP 相似度空间剪枝模块并在三基准验证"
+   ],
+   "innovations": [
+    "首次把 MOT 重构为生命周期记忆完整性维护，而非关联或记忆长度问题",
+    "CTI 不靠提高检测阈值，改用邻近已跟踪实例作负点提示抑制重复出生",
+    "ACM 仅在可靠性达标时更新长记忆，把记忆策展从交互式改为自主式"
+   ],
+   "method": "在 detector+SAM2 骨架上按出生、交互、重现三阶段分别治理记忆：对比提示准入新轨迹、运动与单目深度校验修正交互期记忆、长上下文参考支撑再识别；跟踪器免训练。",
+   "results": "DanceTrack test HOTA 79.55/AssA 72.59，较 SAM2+RF-DETR 基线 +15.25 HOTA、+20.49 AssA，IDSW 降 96%；换 YOLOX 检测器 HOTA 76.5（+6.6）、IDF1 83.3（+10.0）；SportsMOT test HOTA 81.8。SASP 使 30 目标场景 FPS 由 2 升至 5。",
+   "value": "为分割式长时序 MOT 提供免训练、可插拔的记忆治理范式。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "把检测提示式 SAM2 跟踪形式化为三阶段记忆完整性问题",
+    "agentChange": "在 detector+SAM2 骨架上按出生、交互、重现三阶段分别治理记忆：对比提示准入新轨迹、运动与单目深度校验修正交互期记忆、长上下文参考支撑再识别；跟踪器免训练。",
+    "selfEvolution": null,
+    "evidence": [
+     "DanceTrack test HOTA 79.55/AssA 72.59，较 SAM2+RF-DETR 基线 +15.25 HOTA、+20.49 AssA，IDSW 降 96%；换 YOLOX 检测器 HOTA 76.5（+6.6）、IDF1 83.3（+10.0）；SportsMOT test HOTA 81.8。SASP 使 30 目标场景 FPS 由 2 升至 5。",
+     "CTI 不靠提高检测阈值，改用邻近已跟踪实例作负点提示抑制重复出生",
+     "ACM 仅在可靠性达标时更新长记忆，把记忆策展从交互式改为自主式"
+    ],
+    "faq": {
+     "problem": "生命周期感知记忆框架，DanceTrack HOTA 79.55、ID 切换降 96%。",
+     "mechanism": "在 detector+SAM2 骨架上按出生、交互、重现三阶段分别治理记忆：对比提示准入新轨迹、运动与单目深度校验修正交互期记忆、长上下文参考支撑再识别；跟踪器免训练。",
+     "agentChange": "在 detector+SAM2 骨架上按出生、交互、重现三阶段分别治理记忆：对比提示准入新轨迹、运动与单目深度校验修正交互期记忆、长上下文参考支撑再识别；跟踪器免训练。",
+     "support": "DanceTrack test HOTA 79.55/AssA 72.59，较 SAM2+RF-DETR 基线 +15.25 HOTA、+20.49 AssA，IDSW 降 96%；换 YOLOX 检测器 HOTA 76.5（+6.6）、IDF1 83.3（+10.0）；SportsMOT test HOTA 81.8。SASP 使 30 目标场景 FPS 由 2 升至 5。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为分割式长时序 MOT 提供免训练、可插拔的记忆治理范式。"
+   }
+  },
+  {
+   "id": "2609.27334",
+   "version": 1,
+   "title": "Just-in-Time Memory: Learning to Curate Task-Adaptive Memory for LLM Agents",
+   "abstract": "把记忆策展推迟到读取时，三基准成功率最高提升 16.3 点。",
+   "authors": [],
+   "published": "2026-09-25T04:00:00.000Z",
+   "updated": "2026-09-25T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.27334",
+   "pdf": "https://arxiv.org/pdf/2609.27334",
+   "announceType": "new",
+   "summary": "把记忆策展推迟到读取时，三基准成功率最高提升 16.3 点。",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.27334"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "记忆瓶颈不在\"存什么\"，而在\"何时、为谁\"策展。",
+   "repository": null,
+   "motivation": "记忆只有在改善后续任务时才有价值，策展时机却未被研究。",
+   "coreProblem": "写时策展在未知下游任务前固化摘要，信息不可逆丢失。",
+   "contributions": [
+    "提出读时策展框架 JitMem：无损存原始轨迹，读取时合成任务自适应载荷",
+    "用 GRPO 以同任务即时奖励训练策展器，去掉任务分组与质量裁判奖励",
+    "在 ALFWorld、WebShop、τ²-bench 上验证并完成三项设计消融"
+   ],
+   "innovations": [
+    "不同于写时策展，同一存储轨迹可针对不同下游任务生成不同载荷",
+    "把记忆学习从延迟未来效用问题压缩为单步即时回报问题",
+    "证明读时策展本身即主要增益来源：未训练版本已超过写时策展基线"
+   ],
+   "method": "记忆库仅存原始轨迹，BM25 按当前任务检索，curator 联合任务与轨迹合成紧凑载荷注入执行器；curator 用 GRPO 以任务成败训练，一次训练可迁移到更强执行器。",
+   "results": "ALFWorld SR 77.4 vs SkillOS 61.2（+16.2）；WebShop SR 32.8 vs 16.5（+16.3）；τ²-bench 宏平均 +3.0。输入 token 仅比无记忆多 1.9K（ReasoningBank +10.7K），执行步数降 18.5%–21.9%。",
+   "value": "记忆瓶颈不在\"存什么\"，而在\"何时、为谁\"策展。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "提出读时策展框架 JitMem：无损存原始轨迹，读取时合成任务自适应载荷",
+    "agentChange": "记忆库仅存原始轨迹，BM25 按当前任务检索，curator 联合任务与轨迹合成紧凑载荷注入执行器；curator 用 GRPO 以任务成败训练，一次训练可迁移到更强执行器。",
+    "selfEvolution": null,
+    "evidence": [
+     "ALFWorld SR 77.4 vs SkillOS 61.2（+16.2）；WebShop SR 32.8 vs 16.5（+16.3）；τ²-bench 宏平均 +3.0。输入 token 仅比无记忆多 1.9K（ReasoningBank +10.7K），执行步数降 18.5%–21.9%。",
+     "把记忆学习从延迟未来效用问题压缩为单步即时回报问题",
+     "证明读时策展本身即主要增益来源：未训练版本已超过写时策展基线"
+    ],
+    "faq": {
+     "problem": "把记忆策展推迟到读取时，三基准成功率最高提升 16.3 点。",
+     "mechanism": "记忆库仅存原始轨迹，BM25 按当前任务检索，curator 联合任务与轨迹合成紧凑载荷注入执行器；curator 用 GRPO 以任务成败训练，一次训练可迁移到更强执行器。",
+     "agentChange": "记忆库仅存原始轨迹，BM25 按当前任务检索，curator 联合任务与轨迹合成紧凑载荷注入执行器；curator 用 GRPO 以任务成败训练，一次训练可迁移到更强执行器。",
+     "support": "ALFWorld SR 77.4 vs SkillOS 61.2（+16.2）；WebShop SR 32.8 vs 16.5（+16.3）；τ²-bench 宏平均 +3.0。输入 token 仅比无记忆多 1.9K（ReasoningBank +10.7K），执行步数降 18.5%–21.9%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "记忆瓶颈不在\"存什么\"，而在\"何时、为谁\"策展。"
+   }
+  },
+  {
+   "id": "2609.27717",
+   "version": 1,
+   "title": "SkillGym: Internalizing Human Skills into LLMs for Real-World Problem Solving",
+   "abstract": "把人类技能编译成可验证训练环境，35B 模型 SkillBench 23.3%→51.5%。",
+   "authors": [],
+   "published": "2026-09-25T04:00:00.000Z",
+   "updated": "2026-09-25T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.27717",
+   "pdf": "https://arxiv.org/pdf/2609.27717",
+   "announceType": "new",
+   "summary": "把人类技能编译成可验证训练环境，35B 模型 SkillBench 23.3%→51.5%。",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.27717"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "说明技能可以被训练内化，而不只是推理时外挂的提示。",
+   "repository": null,
+   "motivation": "人类技能只作推理时外部提示，未内化为模型自身能力。",
+   "coreProblem": "技能文档描述通用流程而非具体问题，成败也无法靠描述相似度判定。",
+   "contributions": [
+    "提出技能到任务流水线：模板实例化 + 代码校验 + 对比式技能依赖评估",
+    "构建并发布 2,756 个环境（12 大类 63 子类）与 8,364 条成功轨迹",
+    "以长上下文 SFT 得到 35B SkillGym-Agent，跨 Codex/Claude Code 双 harness 验证"
+   ],
+   "innovations": [
+    "不同于推理时检索的技能库，把技能文档当作可执行训练任务的来源",
+    "用有无目标技能的对比执行筛选真正依赖技能的任务，而非看描述相似度",
+    "训练后无技能推理仍超有技能的基座，指向可复用的程序性能力"
+   ],
+   "method": "用类别模板把技能实例化为带输入资产、交互接口与代码校验器的任务，保留有经验性技能依赖的样本；多教师、多 harness 采集长程轨迹后对 Qwen3.5-35B-A3B 做长上下文 SFT。",
+   "results": "Claude Code 下 GDPval-AA v2 974→1173（+199 Elo），Terminal-Bench 2.1 39.33%→58.43%（+19.10 点），SkillsBench v1.1 23.34%→51.47%（+28.13），超过 Claude Sonnet 4.6（47.2%）与 GPT-5.4 Mini（41.4%）；Codex 下 Terminal-Bench 10.11%→46.07%（+35.96）。",
+   "value": "说明技能可以被训练内化，而不只是推理时外挂的提示。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "提出技能到任务流水线：模板实例化 + 代码校验 + 对比式技能依赖评估",
+    "agentChange": "用类别模板把技能实例化为带输入资产、交互接口与代码校验器的任务，保留有经验性技能依赖的样本；多教师、多 harness 采集长程轨迹后对 Qwen3.5-35B-A3B 做长上下文 SFT。",
+    "selfEvolution": null,
+    "evidence": [
+     "Claude Code 下 GDPval-AA v2 974→1173（+199 Elo），Terminal-Bench 2.1 39.33%→58.43%（+19.10 点），SkillsBench v1.1 23.34%→51.47%（+28.13），超过 Claude Sonnet 4.6（47.2%）与 GPT-5.4 Mini（41.4%）；Codex 下 Terminal-Bench 10.11%→46.07%（+35.96）。",
+     "用有无目标技能的对比执行筛选真正依赖技能的任务，而非看描述相似度",
+     "训练后无技能推理仍超有技能的基座，指向可复用的程序性能力"
+    ],
+    "faq": {
+     "problem": "把人类技能编译成可验证训练环境，35B 模型 SkillBench 23.3%→51.5%。",
+     "mechanism": "用类别模板把技能实例化为带输入资产、交互接口与代码校验器的任务，保留有经验性技能依赖的样本；多教师、多 harness 采集长程轨迹后对 Qwen3.5-35B-A3B 做长上下文 SFT。",
+     "agentChange": "用类别模板把技能实例化为带输入资产、交互接口与代码校验器的任务，保留有经验性技能依赖的样本；多教师、多 harness 采集长程轨迹后对 Qwen3.5-35B-A3B 做长上下文 SFT。",
+     "support": "Claude Code 下 GDPval-AA v2 974→1173（+199 Elo），Terminal-Bench 2.1 39.33%→58.43%（+19.10 点），SkillsBench v1.1 23.34%→51.47%（+28.13），超过 Claude Sonnet 4.6（47.2%）与 GPT-5.4 Mini（41.4%）；Codex 下 Terminal-Bench 10.11%→46.07%（+35.96）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "说明技能可以被训练内化，而不只是推理时外挂的提示。"
+   }
+  },
+  {
+   "id": "2609.27532",
+   "version": 1,
+   "title": "ProCredit: From Outcome Rewards to Progress Credit in Agentic Reinforcement Learning",
+   "abstract": "逐轮重跑验收检查把进度变化作回合信用，AppWorld 4B 超基线 4.1 点。",
+   "authors": [],
+   "published": "2026-09-25T04:00:00.000Z",
+   "updated": "2026-09-25T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.27532",
+   "pdf": "https://arxiv.org/pdf/2609.27532",
+   "announceType": "new",
+   "summary": "逐轮重跑验收检查把进度变化作回合信用，AppWorld 4B 超基线 4.1 点。",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.27532"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "中间进度的价值在于\"记到哪一回合\"，无需奖励模型即可训练。",
+   "repository": null,
+   "motivation": "长程智能体任务只给终局奖励，信号稀疏且无法刻画中间过程。",
+   "coreProblem": "全失败组优势全零、失败轨迹无法按完成度区分、查询回合与推进回合同分。",
+   "contributions": [
+    "提出 ProCredit：每回合重跑任务验收检查，以通过比例变化作回合奖励",
+    "设计轨迹级与回合级双层信用，分别跨尝试比较与轨迹内分配",
+    "在 AppWorld 三个模型尺度与 ToolSandbox 验证并给出可解性分析"
+   ],
+   "innovations": [
+    "把环境自带验收检查当作可验证中间信号逐轮重跑，而非训练奖励模型估计",
+    "不同于 GiGPO/HGPO 需跨轨迹状态重合，回合信用不依赖状态重复出现",
+    "进度取自环境状态，纯查询回合得零奖励，区别于策略自信息增益类奖励"
+   ],
+   "method": "每回合用验收检查算进度，相邻回合进度差作回合奖励；轨迹分 = 结果奖励 + 进度奖励之和，双层优势相加后按 GRPO 式裁剪更新。",
+   "results": "AppWorld Test-Normal 4B TGC 71.53% 对最强结果奖励基线 DAPO 67.46%（+4.1 点），Test-Challenge 领先 3.9 点；相对同样用进度信号的 GRPO-φ 在 4B/9B/35B 上高 6.1/3.4/2.2 点；ToolSandbox 84.5% 对 GRPO 81.0%。",
+   "value": "中间进度的价值在于\"记到哪一回合\"，无需奖励模型即可训练。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "提出 ProCredit：每回合重跑任务验收检查，以通过比例变化作回合奖励",
+    "agentChange": "每回合用验收检查算进度，相邻回合进度差作回合奖励；轨迹分 = 结果奖励 + 进度奖励之和，双层优势相加后按 GRPO 式裁剪更新。",
+    "selfEvolution": null,
+    "evidence": [
+     "AppWorld Test-Normal 4B TGC 71.53% 对最强结果奖励基线 DAPO 67.46%（+4.1 点），Test-Challenge 领先 3.9 点；相对同样用进度信号的 GRPO-φ 在 4B/9B/35B 上高 6.1/3.4/2.2 点；ToolSandbox 84.5% 对 GRPO 81.0%。",
+     "不同于 GiGPO/HGPO 需跨轨迹状态重合，回合信用不依赖状态重复出现",
+     "进度取自环境状态，纯查询回合得零奖励，区别于策略自信息增益类奖励"
+    ],
+    "faq": {
+     "problem": "逐轮重跑验收检查把进度变化作回合信用，AppWorld 4B 超基线 4.1 点。",
+     "mechanism": "每回合用验收检查算进度，相邻回合进度差作回合奖励；轨迹分 = 结果奖励 + 进度奖励之和，双层优势相加后按 GRPO 式裁剪更新。",
+     "agentChange": "每回合用验收检查算进度，相邻回合进度差作回合奖励；轨迹分 = 结果奖励 + 进度奖励之和，双层优势相加后按 GRPO 式裁剪更新。",
+     "support": "AppWorld Test-Normal 4B TGC 71.53% 对最强结果奖励基线 DAPO 67.46%（+4.1 点），Test-Challenge 领先 3.9 点；相对同样用进度信号的 GRPO-φ 在 4B/9B/35B 上高 6.1/3.4/2.2 点；ToolSandbox 84.5% 对 GRPO 81.0%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "中间进度的价值在于\"记到哪一回合\"，无需奖励模型即可训练。"
+   }
+  },
+  {
+   "id": "2609.27611",
+   "version": 1,
+   "title": "A generalizable structural brain MRI foundation model built through dual-priority federated pretraining",
+   "abstract": "联邦预训练脑 MRI 基础模型，20 个数据集平均排名 1.68 居首。",
+   "authors": [],
+   "published": "2026-09-25T04:00:00.000Z",
+   "updated": "2026-09-25T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.27611",
+   "pdf": "https://arxiv.org/pdf/2609.27611",
+   "announceType": "new",
+   "summary": "联邦预训练脑 MRI 基础模型，20 个数据集平均排名 1.68 居首。",
+   "topic": "医学影像 / 病理基础模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.27611"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "不共享原始影像的联邦预训练可优于同语料的集中式预训练。",
+   "repository": null,
+   "motivation": "脑 MRI 受隐私与治理约束难以集中汇集，需从分布式站点学通用表征。",
+   "coreProblem": "现有模型依赖集中式池化且按队列规模驱动优化，小队列互补信息被稀释。",
+   "contributions": [
+    "构建 BrainFedFM：42 个联邦站点、164,707 例 3D 扫描上联邦预训练",
+    "提出双优先联邦预训练：站点内空间优先掩码 + 服务器站点优先聚合",
+    "建立 20 数据集、17 个分类/回归/分割任务的评测矩阵"
+   ],
+   "innovations": [
+    "把解剖先验写入本地掩码，替代各站点等价的随机掩码",
+    "聚合权重由寿命支持度与重建难度决定而非样本量，抑制大队列主导",
+    "全局优先记忆把跨站点空间证据回传指导后续本地预训练"
+   ],
+   "method": "各站点用随机/寿命引导/难度引导三种掩码视图做自监督重建，服务器按互补信号加权聚合并回传累积证据，循环多轮后冻结编码器迁移下游。",
+   "results": "20 个下游数据集平均排名 1.68（FedMAE 3.15、S3D 4.10）；分类平均 BA 74.0%，比集中式预训练均值 63.9% 高 15.9%；回归归一化 RMSE 0.88 对 1.15；分割平均 Dice 72.8%。",
+   "value": "不共享原始影像的联邦预训练可优于同语料的集中式预训练。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "构建 BrainFedFM：42 个联邦站点、164,707 例 3D 扫描上联邦预训练",
+    "agentChange": "各站点用随机/寿命引导/难度引导三种掩码视图做自监督重建，服务器按互补信号加权聚合并回传累积证据，循环多轮后冻结编码器迁移下游。",
+    "selfEvolution": null,
+    "evidence": [
+     "20 个下游数据集平均排名 1.68（FedMAE 3.15、S3D 4.10）；分类平均 BA 74.0%，比集中式预训练均值 63.9% 高 15.9%；回归归一化 RMSE 0.88 对 1.15；分割平均 Dice 72.8%。",
+     "聚合权重由寿命支持度与重建难度决定而非样本量，抑制大队列主导",
+     "全局优先记忆把跨站点空间证据回传指导后续本地预训练"
+    ],
+    "faq": {
+     "problem": "联邦预训练脑 MRI 基础模型，20 个数据集平均排名 1.68 居首。",
+     "mechanism": "各站点用随机/寿命引导/难度引导三种掩码视图做自监督重建，服务器按互补信号加权聚合并回传累积证据，循环多轮后冻结编码器迁移下游。",
+     "agentChange": "各站点用随机/寿命引导/难度引导三种掩码视图做自监督重建，服务器按互补信号加权聚合并回传累积证据，循环多轮后冻结编码器迁移下游。",
+     "support": "20 个下游数据集平均排名 1.68（FedMAE 3.15、S3D 4.10）；分类平均 BA 74.0%，比集中式预训练均值 63.9% 高 15.9%；回归归一化 RMSE 0.88 对 1.15；分割平均 Dice 72.8%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "不共享原始影像的联邦预训练可优于同语料的集中式预训练。"
+   }
+  },
+  {
+   "id": "2609.28231",
+   "version": 1,
+   "title": "Do Center Biases Propagate? Robustness of Pathology Foundation Models in Whole-Slide Image Classification",
+   "abstract": "可控调节中心–标签相关，评测 6 个病理基础模型的偏差传播并提 AUCC 指标。",
+   "authors": [],
+   "published": "2026-09-25T04:00:00.000Z",
+   "updated": "2026-09-25T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2609.28231",
+   "pdf": "https://arxiv.org/pdf/2609.28231",
+   "announceType": "new",
+   "summary": "可控调节中心–标签相关，评测 6 个病理基础模型的偏差传播并提 AUCC 指标。",
+   "topic": "医学影像 / 病理基础模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2609.28231"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "中心捷径会经 PFM 与聚合器进入滑片级预测，通用调和并非解药。",
+   "repository": null,
+   "motivation": "病理基础模型可能编码染色、扫描等中心技术特征，给下游带来虚假捷径。",
+   "coreProblem": "中心偏差是否传到 WSI 级预测、聚合器与 ComBat 能否缓解，缺可控量化评测。",
+   "contributions": [
+    "构建 Cramér's V 递增的受控训练设置，覆盖 6 PFM×4 数据集×2 个 MIL 聚合器",
+    "提出 AUCC，联合刻画绝对性能与随虚假相关升高的退化速率",
+    "用 FM-SI/RI 量化表征层中心编码，并系统评测 ComBat 校正效果"
+   ],
+   "innovations": [
+    "把中心–标签虚假相关做成可调自变量，而非事后统计中心分布差异",
+    "提出 AUCC 把绝对精度与退化速率合成单一鲁棒性指标",
+    "将表征层中心聚类度量与滑片级鲁棒性直接关联"
+   ],
+   "method": "每个数据集只取两个采集中心，在不同 Cramér's V 下采样训练集（测试折固定且与中心无关），冻结 PFM 提特征后用 ABMIL/TransMIL 聚合评估。",
+   "results": "CONCH+ABMIL 四数据集平均 AUCC 85.00；ABMIL 在 6 个 PFM 中的 5 个优于 TransMIL，平均高 1.18 点；48 个配置中 ComBat 令 AUCC 在 34 例下降、仅 14 例提升（CONCH+ABMIL 85.00→83.99）。",
+   "value": "中心捷径会经 PFM 与聚合器进入滑片级预测，通用调和并非解药。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-07T21:30:39.000Z",
+    "keyContribution": "构建 Cramér's V 递增的受控训练设置，覆盖 6 PFM×4 数据集×2 个 MIL 聚合器",
+    "agentChange": "每个数据集只取两个采集中心，在不同 Cramér's V 下采样训练集（测试折固定且与中心无关），冻结 PFM 提特征后用 ABMIL/TransMIL 聚合评估。",
+    "selfEvolution": null,
+    "evidence": [
+     "CONCH+ABMIL 四数据集平均 AUCC 85.00；ABMIL 在 6 个 PFM 中的 5 个优于 TransMIL，平均高 1.18 点；48 个配置中 ComBat 令 AUCC 在 34 例下降、仅 14 例提升（CONCH+ABMIL 85.00→83.99）。",
+     "提出 AUCC 把绝对精度与退化速率合成单一鲁棒性指标",
+     "将表征层中心聚类度量与滑片级鲁棒性直接关联"
+    ],
+    "faq": {
+     "problem": "可控调节中心–标签相关，评测 6 个病理基础模型的偏差传播并提 AUCC 指标。",
+     "mechanism": "每个数据集只取两个采集中心，在不同 Cramér's V 下采样训练集（测试折固定且与中心无关），冻结 PFM 提特征后用 ABMIL/TransMIL 聚合评估。",
+     "agentChange": "每个数据集只取两个采集中心，在不同 Cramér's V 下采样训练集（测试折固定且与中心无关），冻结 PFM 提特征后用 ABMIL/TransMIL 聚合评估。",
+     "support": "CONCH+ABMIL 四数据集平均 AUCC 85.00；ABMIL 在 6 个 PFM 中的 5 个优于 TransMIL，平均高 1.18 点；48 个配置中 ComBat 令 AUCC 在 34 例下降、仅 14 例提升（CONCH+ABMIL 85.00→83.99）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "中心捷径会经 PFM 与聚合器进入滑片级预测，通用调和并非解药。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-09-24",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-09-24 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-07T21:30:39.000Z",
+ "latestPaperAt": "2026-09-25T04:00:00.000Z",
+ "totalMatched": 12,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 12
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 47,
+ "trends": {
+  "status": "accumulating",
+  "days": 47,
+  "minimumDays": 15,
+  "message": "已积累 47/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-07T21:30:39.000Z",
+ "snapshotDay": "2026-09-25",
+ "historical": true
+}
