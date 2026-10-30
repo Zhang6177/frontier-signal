@@ -1,0 +1,1039 @@
+{
+ "papers": [
+  {
+   "id": "2610.20843",
+   "version": 1,
+   "title": "MARS: A Foundational Map Auto-Regressor",
+   "abstract": "首个地图基础模型，端到端向量生成道路+建筑，AICrowd 建筑 F1 达 97.3",
+   "authors": [],
+   "published": "2026-10-18T04:00:00.000Z",
+   "updated": "2026-10-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.20843",
+   "pdf": "https://arxiv.org/pdf/2610.20843",
+   "announceType": "new",
+   "summary": "首个地图基础模型，端到端向量生成道路+建筑，AICrowd 建筑 F1 达 97.3",
+   "topic": "[遥感与地球观测]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.20843"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为\"地图域 SAM\"铺路，端到端取代多阶段启发式建图",
+   "repository": null,
+   "motivation": "地图要素是向量几何，与像素级生成模型结构不匹配",
+   "coreProblem": "两阶段\"分割+矢量化\"依赖逐类启发式，仅支持单类，误差累积",
+   "contributions": [
+    "MARS：map-to-seq 转换+端到端自回归，统一生成路网与建筑多边形",
+    "MAP-3M：3.4M 样本，开源最大多类地图提取数据集",
+    "Chat with MARS：序列级交互式人机协同地图生成与修正"
+   ],
+   "innovations": [
+    "首次把向量地图基元形式化为语言，用自回归 LM 范式生成",
+    "零后处理：无 NMS/边缘连接启发式，纯 Transformer 编解码器",
+    "支持序列中途交互修改：生成中对话即可改图"
+   ],
+   "method": "向量基元→序列语言，Transformer seq2seq 直接输出地图向量",
+   "results": "MAP-3M-VAL 道路 F1 83.1（多类）、CityScale 道路 F1 82.9、AICrowd 建筑 F1 97.3，四数据集持平或超越多阶段基线",
+   "value": "为\"地图域 SAM\"铺路，端到端取代多阶段启发式建图",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "MARS：map-to-seq 转换+端到端自回归，统一生成路网与建筑多边形",
+    "agentChange": "向量基元→序列语言，Transformer seq2seq 直接输出地图向量",
+    "selfEvolution": null,
+    "evidence": [
+     "MAP-3M-VAL 道路 F1 83.1（多类）、CityScale 道路 F1 82.9、AICrowd 建筑 F1 97.3，四数据集持平或超越多阶段基线",
+     "零后处理：无 NMS/边缘连接启发式，纯 Transformer 编解码器",
+     "支持序列中途交互修改：生成中对话即可改图"
+    ],
+    "faq": {
+     "problem": "首个地图基础模型，端到端向量生成道路+建筑，AICrowd 建筑 F1 达 97.3",
+     "mechanism": "向量基元→序列语言，Transformer seq2seq 直接输出地图向量",
+     "agentChange": "向量基元→序列语言，Transformer seq2seq 直接输出地图向量",
+     "support": "MAP-3M-VAL 道路 F1 83.1（多类）、CityScale 道路 F1 82.9、AICrowd 建筑 F1 97.3，四数据集持平或超越多阶段基线",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为\"地图域 SAM\"铺路，端到端取代多阶段启发式建图"
+   }
+  },
+  {
+   "id": "2610.20973",
+   "version": 1,
+   "title": "PiCo: Physics-Informed Concept Probing for Geo-Foundation Models",
+   "abstract": "辐射传输模拟影像探测 GFM 物理敏感性，概念表征保 70-93.8% 全嵌入精度",
+   "authors": [],
+   "published": "2026-10-18T04:00:00.000Z",
+   "updated": "2026-10-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.20973",
+   "pdf": "https://arxiv.org/pdf/2610.20973",
+   "announceType": "new",
+   "summary": "辐射传输模拟影像探测 GFM 物理敏感性，概念表征保 70-93.8% 全嵌入精度",
+   "topic": "[遥感与地球观测]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.20973"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为地球观测基础模型评测与选型提供物理依据",
+   "repository": null,
+   "motivation": "GFM 只按下游精度评测，不知道其对哪些物理量敏感",
+   "coreProblem": "150+ 个 GFM 可选，仅精度无法支撑模型选择与行为假设检验",
+   "contributions": [
+    "PiCo：3D 辐射传输+游戏引擎合成多光谱影像学习概念向量",
+    "评估 3 个 GFM × 7 个森林物理概念（叶片光学/冠层结构）",
+    "概念投影低维表征，量化各概念对预测的重要性"
+   ],
+   "innovations": [
+    "首次用\"前向物理模型+受控模拟\"解释地理基础模型",
+    "概念向量不依赖真实数据标签，由物理可控参数合成",
+    "方法可迁移到任何有前向模型且嵌入可探测的领域"
+   ],
+   "method": "物理模型模拟卫星影像，线性探针学概念向量，嵌入投影到概念轴归因",
+   "results": "RGB 限制降低干物质敏感性、不成比例损害干植被/裸土预测；森林类型/树种分类保 70.0-93.8% 全嵌入精度",
+   "value": "为地球观测基础模型评测与选型提供物理依据",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "PiCo：3D 辐射传输+游戏引擎合成多光谱影像学习概念向量",
+    "agentChange": "物理模型模拟卫星影像，线性探针学概念向量，嵌入投影到概念轴归因",
+    "selfEvolution": null,
+    "evidence": [
+     "RGB 限制降低干物质敏感性、不成比例损害干植被/裸土预测；森林类型/树种分类保 70.0-93.8% 全嵌入精度",
+     "概念向量不依赖真实数据标签，由物理可控参数合成",
+     "方法可迁移到任何有前向模型且嵌入可探测的领域"
+    ],
+    "faq": {
+     "problem": "辐射传输模拟影像探测 GFM 物理敏感性，概念表征保 70-93.8% 全嵌入精度",
+     "mechanism": "物理模型模拟卫星影像，线性探针学概念向量，嵌入投影到概念轴归因",
+     "agentChange": "物理模型模拟卫星影像，线性探针学概念向量，嵌入投影到概念轴归因",
+     "support": "RGB 限制降低干物质敏感性、不成比例损害干植被/裸土预测；森林类型/树种分类保 70.0-93.8% 全嵌入精度",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "为地球观测基础模型评测与选型提供物理依据"
+   }
+  },
+  {
+   "id": "2610.21183",
+   "version": 1,
+   "title": "DeepMGCCA：多时相多光谱地表反射率的深不变特征协调",
+   "abstract": "深伪不变特征学习协调多时相地表反射率，PSNR 最高 +4.04dB",
+   "authors": [],
+   "published": "2026-10-18T04:00:00.000Z",
+   "updated": "2026-10-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.21183",
+   "pdf": "https://arxiv.org/pdf/2610.21183",
+   "announceType": "new",
+   "summary": "深伪不变特征学习协调多时相地表反射率，PSNR 最高 +4.04dB",
+   "topic": "[遥感与地球观测]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.21183"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "提升多时相土地覆盖变化与反射率时序重建的可靠性",
+   "repository": null,
+   "motivation": "各期独立大气校正残留系统偏差，扭曲时序分析",
+   "coreProblem": "相对辐射定标可靠性受限于 PIF 选取，线性 GCCA 表达力不足",
+   "contributions": [
+    "DeepMGCCA：Deep GCCA 与 MAD 结合，学习深伪不变特征（DIF）",
+    "共享卷积编码器替代逐日期线性投影",
+    "迭代加权+重构正则，防坍缩误抑真实时变"
+   ],
+   "innovations": [
+    "首次把深度多视图表征引入 MAD 伪不变特征提取",
+    "单调分段线性变换（DIF 分位数）保留物理时变信息",
+    "全程无监督：无需人工划定光谱控制集"
+   ],
+   "method": "像素加权典型变量学深不变特征，由 DIF 分位数构造协调变换",
+   "results": "Landsat-8/9 + Sentinel-2 四地区：期间光谱角最多降 2.54、RMSE 0.015、PSNR +4.04dB",
+   "value": "提升多时相土地覆盖变化与反射率时序重建的可靠性",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "DeepMGCCA：Deep GCCA 与 MAD 结合，学习深伪不变特征（DIF）",
+    "agentChange": "像素加权典型变量学深不变特征，由 DIF 分位数构造协调变换",
+    "selfEvolution": null,
+    "evidence": [
+     "Landsat-8/9 + Sentinel-2 四地区：期间光谱角最多降 2.54、RMSE 0.015、PSNR +4.04dB",
+     "单调分段线性变换（DIF 分位数）保留物理时变信息",
+     "全程无监督：无需人工划定光谱控制集"
+    ],
+    "faq": {
+     "problem": "深伪不变特征学习协调多时相地表反射率，PSNR 最高 +4.04dB",
+     "mechanism": "像素加权典型变量学深不变特征，由 DIF 分位数构造协调变换",
+     "agentChange": "像素加权典型变量学深不变特征，由 DIF 分位数构造协调变换",
+     "support": "Landsat-8/9 + Sentinel-2 四地区：期间光谱角最多降 2.54、RMSE 0.015、PSNR +4.04dB",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "提升多时相土地覆盖变化与反射率时序重建的可靠性"
+   }
+  },
+  {
+   "id": "2610.22319",
+   "version": 1,
+   "title": "A Team of Gemini 4 Argon Agents Beats Minecraft",
+   "abstract": "4 个编码 agent 自主协作 27 小时，首次从头通关 Minecraft",
+   "authors": [],
+   "published": "2026-10-18T04:00:00.000Z",
+   "updated": "2026-10-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.22319",
+   "pdf": "https://arxiv.org/pdf/2610.22319",
+   "announceType": "new",
+   "summary": "4 个编码 agent 自主协作 27 小时，首次从头通关 Minecraft",
+   "topic": "[Agent 与强化学习]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.22319"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "验证真实软件工程所需的长程多 agent 编码能力",
+   "repository": null,
+   "motivation": "验证通用编码 agent 能否经数千次失败坚持目标一整天",
+   "coreProblem": "既往 Minecraft 工作训练玩法策略或依赖游戏专用规划器/技能库",
+   "contributions": [
+    "首次端到端自主通关 Minecraft（Easy、随机种子）：27h14m 击败末影龙",
+    "开放可复现设置：仅开源 Mineflayer，无预分配角色、无预探",
+    "完整记录团队策略（分工/共享笔记/物品找回）与局限"
+   ],
+   "innovations": [
+    "零人工游戏逻辑：2783 个 JS 程序全部由 agent 自写自调",
+    "游戏内聊天+共享记忆为唯一协作接口",
+    "605 次死亡与自我恢复，验证长程容错"
+   ],
+   "method": "4 个 agent 分别控制玩家，自写 JS 程序，经游戏内聊天与共享记忆协作",
+   "results": "27h14m 通关，2783 个程序，605 次死亡，零人工干预",
+   "value": "验证真实软件工程所需的长程多 agent 编码能力",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "首次端到端自主通关 Minecraft（Easy、随机种子）：27h14m 击败末影龙",
+    "agentChange": "4 个 agent 分别控制玩家，自写 JS 程序，经游戏内聊天与共享记忆协作",
+    "selfEvolution": null,
+    "evidence": [
+     "27h14m 通关，2783 个程序，605 次死亡，零人工干预",
+     "游戏内聊天+共享记忆为唯一协作接口",
+     "605 次死亡与自我恢复，验证长程容错"
+    ],
+    "faq": {
+     "problem": "4 个编码 agent 自主协作 27 小时，首次从头通关 Minecraft",
+     "mechanism": "4 个 agent 分别控制玩家，自写 JS 程序，经游戏内聊天与共享记忆协作",
+     "agentChange": "4 个 agent 分别控制玩家，自写 JS 程序，经游戏内聊天与共享记忆协作",
+     "support": "27h14m 通关，2783 个程序，605 次死亡，零人工干预",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "验证真实软件工程所需的长程多 agent 编码能力"
+   }
+  },
+  {
+   "id": "2610.20939",
+   "version": 1,
+   "title": "MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training",
+   "abstract": "开源 GUI agent RL 一体化平台，9B 模型 10B 级开源 SOTA",
+   "authors": [],
+   "published": "2026-10-18T04:00:00.000Z",
+   "updated": "2026-10-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.20939",
+   "pdf": "https://arxiv.org/pdf/2610.20939",
+   "announceType": "new",
+   "summary": "开源 GUI agent RL 一体化平台，9B 模型 10B 级开源 SOTA",
+   "topic": "[Agent 与强化学习]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.20939"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让 GUI agent 复刻数学/代码式 RL 规模化路径",
+   "repository": null,
+   "motivation": "GUI RL 缺少廉价、可验证、真实的大规模环境",
+   "coreProblem": "GUI 实例无法并行共享、扩展昂贵，任务数据缺跨应用一致性",
+   "contributions": [
+    "MAI-Gym：移动/PC/Web 评测+采集+在线 RL 统一，2 万并行实例",
+    "自动合成可重置 mock 应用与跨应用世界，2000 个执行验证任务",
+    "MAI-Gym-9B：统一移动端与桌面端 GUI agent"
+   ],
+   "innovations": [
+    "共享 rollout 管线，评测与训练行为一致",
+    "mock 应用可重置+跨应用状态一致，交易类任务可安全训练",
+    "mock 应用上的 RL 可迁移到真实手机"
+   ],
+   "method": "2 万并行环境实例+合成应用任务+可验证奖励在线 RL",
+   "results": "MobileWorld 78.4%、OSWorld-Verified 76.2%（<10B 开源最优）；mock 订票应用→真机成功率 28.8%→48.1%",
+   "value": "让 GUI agent 复刻数学/代码式 RL 规模化路径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "MAI-Gym：移动/PC/Web 评测+采集+在线 RL 统一，2 万并行实例",
+    "agentChange": "2 万并行环境实例+合成应用任务+可验证奖励在线 RL",
+    "selfEvolution": null,
+    "evidence": [
+     "MobileWorld 78.4%、OSWorld-Verified 76.2%（<10B 开源最优）；mock 订票应用→真机成功率 28.8%→48.1%",
+     "mock 应用可重置+跨应用状态一致，交易类任务可安全训练",
+     "mock 应用上的 RL 可迁移到真实手机"
+    ],
+    "faq": {
+     "problem": "开源 GUI agent RL 一体化平台，9B 模型 10B 级开源 SOTA",
+     "mechanism": "2 万并行环境实例+合成应用任务+可验证奖励在线 RL",
+     "agentChange": "2 万并行环境实例+合成应用任务+可验证奖励在线 RL",
+     "support": "MobileWorld 78.4%、OSWorld-Verified 76.2%（<10B 开源最优）；mock 订票应用→真机成功率 28.8%→48.1%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "让 GUI agent 复刻数学/代码式 RL 规模化路径"
+   }
+  },
+  {
+   "id": "2610.22331",
+   "version": 1,
+   "title": "KnowGPO: Knowledge-Grouped Policy Optimization for Search Agents",
+   "abstract": "以\"知识状态\"分组轨迹做信用分配，搜索 agent 超 GRPO 3.8-4.2 分",
+   "authors": [],
+   "published": "2026-10-18T04:00:00.000Z",
+   "updated": "2026-10-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.22331",
+   "pdf": "https://arxiv.org/pdf/2610.22331",
+   "announceType": "new",
+   "summary": "以\"知识状态\"分组轨迹做信用分配，搜索 agent 超 GRPO 3.8-4.2 分",
+   "topic": "[Agent 与强化学习]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.22331"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为搜索 agent RL 训练确立外部可验证的过程奖励范式",
+   "repository": null,
+   "motivation": "深度搜索长程多轮信用分配困难",
+   "coreProblem": "终局奖励分不清有用步骤，状态对齐需状态复现，置信信号不可验证",
+   "contributions": [
+    "知识状态：把答案分解为原子知识条件，已满足子集即轨迹状态",
+    "KnowGPO：同知识状态轨迹组内比较，知识增量作过程奖励",
+    "Xbench、BrowseComp-ZH、GAIA 系统评测"
+   ],
+   "innovations": [
+    "首次用外部可验证的\"任务相关知识\"对齐轨迹",
+    "过程奖励来自环境知识增量，而非模型内部信念",
+    "8B 模型比肩或超越多数 32B 开源系统"
+   ],
+   "method": "答案→原子条件分解→按满足集合分组算组相对优势，知识增量作奖励",
+   "results": "三基准上较 GRPO/GiGPO/IGPO 一致领先 3.8-4.2 分",
+   "value": "为搜索 agent RL 训练确立外部可验证的过程奖励范式",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "知识状态：把答案分解为原子知识条件，已满足子集即轨迹状态",
+    "agentChange": "答案→原子条件分解→按满足集合分组算组相对优势，知识增量作奖励",
+    "selfEvolution": null,
+    "evidence": [
+     "三基准上较 GRPO/GiGPO/IGPO 一致领先 3.8-4.2 分",
+     "过程奖励来自环境知识增量，而非模型内部信念",
+     "8B 模型比肩或超越多数 32B 开源系统"
+    ],
+    "faq": {
+     "problem": "以\"知识状态\"分组轨迹做信用分配，搜索 agent 超 GRPO 3.8-4.2 分",
+     "mechanism": "答案→原子条件分解→按满足集合分组算组相对优势，知识增量作奖励",
+     "agentChange": "答案→原子条件分解→按满足集合分组算组相对优势，知识增量作奖励",
+     "support": "三基准上较 GRPO/GiGPO/IGPO 一致领先 3.8-4.2 分",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "为搜索 agent RL 训练确立外部可验证的过程奖励范式"
+   }
+  },
+  {
+   "id": "2610.22273",
+   "version": 1,
+   "title": "Librarian Agents: Training LLMs to Curate Long-Context Workspaces",
+   "abstract": "RL 训练\"图书管理员\"预整理语料工作区，BrowseComp-Plus +33pp",
+   "authors": [],
+   "published": "2026-10-18T04:00:00.000Z",
+   "updated": "2026-10-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.22273",
+   "pdf": "https://arxiv.org/pdf/2610.22273",
+   "announceType": "new",
+   "summary": "RL 训练\"图书管理员\"预整理语料工作区，BrowseComp-Plus +33pp",
+   "topic": "[Agent 与强化学习]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.22273"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "agent 从\"即时检索\"转向\"预整理工作区\"，降低推理成本",
+   "repository": null,
+   "motivation": "长上下文推理信息分散，RAG 每查询都从零重查，冗余开销大",
+   "coreProblem": "RAG 属被动检索；知识图谱结构僵硬，难承载任务特定中间产物",
+   "contributions": [
+    "Librarian Agents：builder agent 把原始文档整理为层级合成文件工作区",
+    "工作区构建建模为 MDP，RL 直接优化下游问答精度",
+    "构建成本跨重复查询摊销，零样本跨域泛化"
+   ],
+   "innovations": [
+    "首次\"预期式整理\"：推理前主动重组语料而非被动检索",
+    "以下游任务奖励优化工作区结构，而非信息损失",
+    "以文件系统为工作区介质，兼容现有 agent harness"
+   ],
+   "method": "builder 把语料组织成合成文件层级，RL 以下游 QA 奖励优化组织策略",
+   "results": "BrowseComp-Plus 超最强检索/预计算基线 33pp，BRIGHT 平均精度 +31pp",
+   "value": "agent 从\"即时检索\"转向\"预整理工作区\"，降低推理成本",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "Librarian Agents：builder agent 把原始文档整理为层级合成文件工作区",
+    "agentChange": "builder 把语料组织成合成文件层级，RL 以下游 QA 奖励优化组织策略",
+    "selfEvolution": null,
+    "evidence": [
+     "BrowseComp-Plus 超最强检索/预计算基线 33pp，BRIGHT 平均精度 +31pp",
+     "以下游任务奖励优化工作区结构，而非信息损失",
+     "以文件系统为工作区介质，兼容现有 agent harness"
+    ],
+    "faq": {
+     "problem": "RL 训练\"图书管理员\"预整理语料工作区，BrowseComp-Plus +33pp",
+     "mechanism": "builder 把语料组织成合成文件层级，RL 以下游 QA 奖励优化组织策略",
+     "agentChange": "builder 把语料组织成合成文件层级，RL 以下游 QA 奖励优化组织策略",
+     "support": "BrowseComp-Plus 超最强检索/预计算基线 33pp，BRIGHT 平均精度 +31pp",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "agent 从\"即时检索\"转向\"预整理工作区\"，降低推理成本"
+   }
+  },
+  {
+   "id": "2610.22311",
+   "version": 1,
+   "title": "Velox: Spatial Memory Makes World Models Efficient",
+   "abstract": "免训练注意力路由器，长程视频世界模型注意力加速 4.36×",
+   "authors": [],
+   "published": "2026-10-18T04:00:00.000Z",
+   "updated": "2026-10-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.22311",
+   "pdf": "https://arxiv.org/pdf/2610.22311",
+   "announceType": "new",
+   "summary": "免训练注意力路由器，长程视频世界模型注意力加速 4.36×",
+   "topic": "[计算机视觉与世界模型]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.22311"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "长程交互式视频世界模型接近实时的关键一步",
+   "repository": null,
+   "motivation": "视频世界模型 KV 缓存随 chunk 增长，滚得越长越慢",
+   "coreProblem": "帧级记忆选择过粗，warped 渲染注入需改架构或微调",
+   "contributions": [
+    "Velox：视锥-slab 几何对应实现区域级上下文选择",
+    "recency 优先多 warp 求深度+视锥重叠软调制层重要性",
+    "WBench 158 例导航集评测"
+   ],
+   "innovations": [
+    "首次用\"视锥 slab（深度区间）\"几何路由 token 块级注意力",
+    "免训练，直接复用预训练视频生成器",
+    "slab 构建与去噪在同一 GPU 上异步并行"
+   ],
+   "method": "历史块表示为深度区间视锥 slab，按重叠选择相关历史，匹配 FlashAttention 分块",
+   "results": "chunk48：注意力 4.36×、去噪 2.43× 加速；质量与稠密基线差 <0.15 分",
+   "value": "长程交互式视频世界模型接近实时的关键一步",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "Velox：视锥-slab 几何对应实现区域级上下文选择",
+    "agentChange": "历史块表示为深度区间视锥 slab，按重叠选择相关历史，匹配 FlashAttention 分块",
+    "selfEvolution": null,
+    "evidence": [
+     "chunk48：注意力 4.36×、去噪 2.43× 加速；质量与稠密基线差 <0.15 分",
+     "免训练，直接复用预训练视频生成器",
+     "slab 构建与去噪在同一 GPU 上异步并行"
+    ],
+    "faq": {
+     "problem": "免训练注意力路由器，长程视频世界模型注意力加速 4.36×",
+     "mechanism": "历史块表示为深度区间视锥 slab，按重叠选择相关历史，匹配 FlashAttention 分块",
+     "agentChange": "历史块表示为深度区间视锥 slab，按重叠选择相关历史，匹配 FlashAttention 分块",
+     "support": "chunk48：注意力 4.36×、去噪 2.43× 加速；质量与稠密基线差 <0.15 分",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "长程交互式视频世界模型接近实时的关键一步"
+   }
+  },
+  {
+   "id": "2610.20818",
+   "version": 1,
+   "title": "Intern Lumina U2: A Multi-Codebook Diffusion Large Language Model",
+   "abstract": "首个全离散多码本扩散 LLM，激活 1.4B 参数统一模型理解十项中最佳 6 项",
+   "authors": [],
+   "published": "2026-10-18T04:00:00.000Z",
+   "updated": "2026-10-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.20818",
+   "pdf": "https://arxiv.org/pdf/2610.20818",
+   "announceType": "new",
+   "summary": "首个全离散多码本扩散 LLM，激活 1.4B 参数统一模型理解十项中最佳 6 项",
+   "topic": "[多模态与基础模型]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.20818"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "确立\"单目标、共享离散空间\"的理解-生成统一新范式",
+   "repository": null,
+   "motivation": "统一多模态模型文本/视觉目标错位，单码本表征容量不足",
+   "coreProblem": "连续/混合范式两模态优化冲突，离散单码本表征容量不够",
+   "contributions": [
+    "Intern Lumina U2（16.9B-A1.4B）：多码本视觉 token 全离散建模",
+    "多码本 AR 头：位置内顺序解码+跨位置并行精化",
+    "稳定性感知采样：置信平台 unmasking+漂移触发缓存刷新"
+   ],
+   "innovations": [
+    "首个把多码本视觉状态放进全离散共享空间的扩散 LLM",
+    "单一骨干统一图像/视频/3D 理解+生成，无独立视觉编码器",
+    "1024 张昇腾 910B 与 NVIDIA 跨平台全栈验证"
+   ],
+   "method": "AToken 多码本离散化+masked diffusion 骨干，理解/生成为同一目标下条件查询",
+   "results": "统一模型理解基准 10 项中 6 项最佳（ChartQA 84.1）；DPG/UniGen/TIIF 统一模型最佳、GenEval 并列最佳；推理加速 4.45×",
+   "value": "确立\"单目标、共享离散空间\"的理解-生成统一新范式",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "Intern Lumina U2（16.9B-A1.4B）：多码本视觉 token 全离散建模",
+    "agentChange": "AToken 多码本离散化+masked diffusion 骨干，理解/生成为同一目标下条件查询",
+    "selfEvolution": null,
+    "evidence": [
+     "统一模型理解基准 10 项中 6 项最佳（ChartQA 84.1）；DPG/UniGen/TIIF 统一模型最佳、GenEval 并列最佳；推理加速 4.45×",
+     "单一骨干统一图像/视频/3D 理解+生成，无独立视觉编码器",
+     "1024 张昇腾 910B 与 NVIDIA 跨平台全栈验证"
+    ],
+    "faq": {
+     "problem": "首个全离散多码本扩散 LLM，激活 1.4B 参数统一模型理解十项中最佳 6 项",
+     "mechanism": "AToken 多码本离散化+masked diffusion 骨干，理解/生成为同一目标下条件查询",
+     "agentChange": "AToken 多码本离散化+masked diffusion 骨干，理解/生成为同一目标下条件查询",
+     "support": "统一模型理解基准 10 项中 6 项最佳（ChartQA 84.1）；DPG/UniGen/TIIF 统一模型最佳、GenEval 并列最佳；推理加速 4.45×",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "确立\"单目标、共享离散空间\"的理解-生成统一新范式"
+   }
+  },
+  {
+   "id": "2610.22196",
+   "version": 1,
+   "title": "Hy-Memory-30B-A3B: Attributed RL for Long-Term Memory Writing",
+   "abstract": "30B-A3B 记忆写入模型，四大记忆框架全部第一，超 Claude Opus 5",
+   "authors": [],
+   "published": "2026-10-18T04:00:00.000Z",
+   "updated": "2026-10-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.22196",
+   "pdf": "https://arxiv.org/pdf/2610.22196",
+   "announceType": "new",
+   "summary": "30B-A3B 记忆写入模型，四大记忆框架全部第一，超 Claude Opus 5",
+   "topic": "[大语言模型]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.22196"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "\"写入策略\"成为可独立训练的能力，降低记忆系统服务成本",
+   "repository": null,
+   "motivation": "记忆写入质量决定系统上限，现靠通用 LLM+框架专属长提示",
+   "coreProblem": "单一终局奖励无法归因异构写入动作，writer 跨框架不可移植",
+   "contributions": [
+    "Hy-Memory-30B-A3B：跨 Mem0/MemOS/Hy-Memory 训练的统一写入模型",
+    "Memory On-Policy Distillation：学生自生成状态上学各框架写入协议",
+    "Memory RL：chunk 级 GRPO+跨 chunk 归因奖励+过存控制"
+   ],
+   "innovations": [
+    "首个直接插入多个既有记忆框架的统一模型（不改框架内存逻辑）",
+    "归因奖励：只给真正供证据/致失败 chunk 记功",
+    "策略自产记忆库跨窗口复用，训练与部署对齐"
+   ],
+   "method": "在线策略蒸馏学各框架协议，再以 RL 优化下游可答性",
+   "results": "四个评测框架全部第一（含留出 EverMemOS），20% 子集宏平均 55.49% vs Claude Opus 5 的 54.62%",
+   "value": "\"写入策略\"成为可独立训练的能力，降低记忆系统服务成本",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "Hy-Memory-30B-A3B：跨 Mem0/MemOS/Hy-Memory 训练的统一写入模型",
+    "agentChange": "在线策略蒸馏学各框架协议，再以 RL 优化下游可答性",
+    "selfEvolution": null,
+    "evidence": [
+     "四个评测框架全部第一（含留出 EverMemOS），20% 子集宏平均 55.49% vs Claude Opus 5 的 54.62%",
+     "归因奖励：只给真正供证据/致失败 chunk 记功",
+     "策略自产记忆库跨窗口复用，训练与部署对齐"
+    ],
+    "faq": {
+     "problem": "30B-A3B 记忆写入模型，四大记忆框架全部第一，超 Claude Opus 5",
+     "mechanism": "在线策略蒸馏学各框架协议，再以 RL 优化下游可答性",
+     "agentChange": "在线策略蒸馏学各框架协议，再以 RL 优化下游可答性",
+     "support": "四个评测框架全部第一（含留出 EverMemOS），20% 子集宏平均 55.49% vs Claude Opus 5 的 54.62%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "\"写入策略\"成为可独立训练的能力，降低记忆系统服务成本"
+   }
+  },
+  {
+   "id": "2610.22067",
+   "version": 1,
+   "title": "Beyond Context Length: Characterising the Difficulty of Long-Context Reasoning",
+   "abstract": "LURCH：证据范围/分散度/推理深度三维度量化长上下文难度，6550 例",
+   "authors": [],
+   "published": "2026-10-18T04:00:00.000Z",
+   "updated": "2026-10-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.22067",
+   "pdf": "https://arxiv.org/pdf/2610.22067",
+   "announceType": "new",
+   "summary": "LURCH：证据范围/分散度/推理深度三维度量化长上下文难度，6550 例",
+   "topic": "[大语言模型]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.22067"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为长上下文评测提供超越\"长度\"的新标尺",
+   "repository": null,
+   "motivation": "上下文长度≠难度，等长上下文的挑战天差地别",
+   "coreProblem": "既有难度维度（scope/dispersion）仅定性定义，无法与性能关联",
+   "contributions": [
+    "定量定义：证据范围、证据分散度、推理深度",
+    "LURCH：6550 例多领域 QA，附证据标注与推理图",
+    "专有/开源模型的性能-难度系统评测"
+   ],
+   "innovations": [
+    "首个给三难度维度可测量定量定义",
+    "证据+推理图标注，难度计算全程可复现",
+    "揭示难度叠加：三项中高位比单项极端更难"
+   ],
+   "method": "标注支撑证据位置与推理依赖，计算三维难度度量，控制长度做基准实验",
+   "results": "固定长度下三性质与性能强负相关；证据分散时性能随长度急跌、局部化时平稳；难度跨维度叠加",
+   "value": "为长上下文评测提供超越\"长度\"的新标尺",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "定量定义：证据范围、证据分散度、推理深度",
+    "agentChange": "标注支撑证据位置与推理依赖，计算三维难度度量，控制长度做基准实验",
+    "selfEvolution": null,
+    "evidence": [
+     "固定长度下三性质与性能强负相关；证据分散时性能随长度急跌、局部化时平稳；难度跨维度叠加",
+     "证据+推理图标注，难度计算全程可复现",
+     "揭示难度叠加：三项中高位比单项极端更难"
+    ],
+    "faq": {
+     "problem": "LURCH：证据范围/分散度/推理深度三维度量化长上下文难度，6550 例",
+     "mechanism": "标注支撑证据位置与推理依赖，计算三维难度度量，控制长度做基准实验",
+     "agentChange": "标注支撑证据位置与推理依赖，计算三维难度度量，控制长度做基准实验",
+     "support": "固定长度下三性质与性能强负相关；证据分散时性能随长度急跌、局部化时平稳；难度跨维度叠加",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "为长上下文评测提供超越\"长度\"的新标尺"
+   }
+  },
+  {
+   "id": "2610.22087",
+   "version": 1,
+   "title": "Pathology Foundation Models for Training-Free Case Retrieval in Salivary Gland Tumors",
+   "abstract": "病理基础模型零训练检索罕见肿瘤相似病例，Top-1 命中 62.5%",
+   "authors": [],
+   "published": "2026-10-18T04:00:00.000Z",
+   "updated": "2026-10-18T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.22087",
+   "pdf": "https://arxiv.org/pdf/2610.22087",
+   "announceType": "new",
+   "summary": "病理基础模型零训练检索罕见肿瘤相似病例，Top-1 命中 62.5%",
+   "topic": "[医学影像]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.22087"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "低门槛病例式鉴别诊断，个体经验扩展为科室集体经验",
+   "repository": null,
+   "motivation": "罕见癌亚型超出个体经验，档案有先例却难检索",
+   "coreProblem": "罕见亚型逐类训练不现实，病理 FM 内容检索未经系统验证",
+   "contributions": [
+    "免训练 WSI 病例检索管线：ROI 查询→相似病例+ICD-O 编码",
+    "门控注意力 MIL 自动 ROI 选择",
+    "改进 Chamfer 相似度给 Top-5 检索可靠性打分"
+   ],
+   "innovations": [
+    "零训练零标注，用现成病理 FM 让科室档案可检索",
+    "137 例/12 亚型系统对比 4 个基础模型（Atlas2 系/UNI2h）"
+   ],
+   "method": "WSI ROI→病理 FM 嵌入→内容检索，改进 Chamfer 距离排序",
+   "results": "137 例唾液腺肿瘤留一法：Atlas2 Top-1/3/5 = 62.5/76.7/81.3%；宏平均 F1 69.0-76.6%；Chamfer 判别 AUC 0.754（p=0.020）",
+   "value": "低门槛病例式鉴别诊断，个体经验扩展为科室集体经验",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "免训练 WSI 病例检索管线：ROI 查询→相似病例+ICD-O 编码",
+    "agentChange": "WSI ROI→病理 FM 嵌入→内容检索，改进 Chamfer 距离排序",
+    "selfEvolution": null,
+    "evidence": [
+     "137 例唾液腺肿瘤留一法：Atlas2 Top-1/3/5 = 62.5/76.7/81.3%；宏平均 F1 69.0-76.6%；Chamfer 判别 AUC 0.754（p=0.020）",
+     "137 例/12 亚型系统对比 4 个基础模型（Atlas2 系/UNI2h）"
+    ],
+    "faq": {
+     "problem": "病理基础模型零训练检索罕见肿瘤相似病例，Top-1 命中 62.5%",
+     "mechanism": "WSI ROI→病理 FM 嵌入→内容检索，改进 Chamfer 距离排序",
+     "agentChange": "WSI ROI→病理 FM 嵌入→内容检索，改进 Chamfer 距离排序",
+     "support": "137 例唾液腺肿瘤留一法：Atlas2 Top-1/3/5 = 62.5/76.7/81.3%；宏平均 F1 69.0-76.6%；Chamfer 判别 AUC 0.754（p=0.020）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "低门槛病例式鉴别诊断，个体经验扩展为科室集体经验"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-10-17",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-10-17 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-30T21:30:06.000Z",
+ "latestPaperAt": "2026-10-18T04:00:00.000Z",
+ "totalMatched": 620,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 620
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 60,
+ "trends": {
+  "status": "accumulating",
+  "days": 60,
+  "minimumDays": 15,
+  "message": "已积累 60/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-30T21:30:06.000Z",
+ "snapshotDay": "2026-10-18",
+ "historical": true
+}

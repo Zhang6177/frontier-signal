@@ -1,0 +1,1019 @@
+{
+ "papers": [
+  {
+   "id": "2610.09335",
+   "version": 1,
+   "title": "SearchWorld: Spatial Value-Grounded Imagination for UAV Object Search via World Models",
+   "abstract": "用带空间认知记忆的世界模型做无人机目标搜索，未见环境 SR 提升近 14%。",
+   "authors": [],
+   "published": "2026-10-08T04:00:00.000Z",
+   "updated": "2026-10-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.09335",
+   "pdf": "https://arxiv.org/pdf/2610.09335",
+   "announceType": "new",
+   "summary": "用带空间认知记忆的世界模型做无人机目标搜索，未见环境 SR 提升近 14%。",
+   "topic": "遥感 / 地理空间 / 无人机",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.09335"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把世界模型从\"预测画面\"推向\"预测空间价值\"，为 UAV 主动搜索提供新范式。",
+   "repository": null,
+   "motivation": "城市 UAV 搜索视野窄、3D 几何密、目标开放，部分可观测下单靠反应式策略覆盖不足。",
+   "coreProblem": "现有方法用地图或记忆缓解可观测性，但只在过去观测上反应式推理，从不显式预测未来状态。",
+   "contributions": [
+    "提出首个带显式空间认知记忆的空中搜索世界模型",
+    "用 RSSM 加 allocentric 探索/障碍通道，解码任务感知空间价值层",
+    "以价值层替代 actor-critic 的标量 critic，做价值引导想象"
+   ],
+   "innovations": [
+    "将标量 critic 换成可解码的空间价值层，想象过程获得结构化先验",
+    "推理时不给目标坐标，价值层仅由探索/障碍/训练期目标信号监督"
+   ],
+   "method": "RSSM 潜状态解码空间价值图，想象 rollout 中按价值导航，认知-动作网络闭环。",
+   "results": "未见环境 SR 19.92% vs OctMem-Agent 17.57%（+2.35 点），已见 25.14% vs 20.17%；单步 0.31s 快于最强对手 0.58s。",
+   "value": "把世界模型从\"预测画面\"推向\"预测空间价值\"，为 UAV 主动搜索提供新范式。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出首个带显式空间认知记忆的空中搜索世界模型",
+    "agentChange": "RSSM 潜状态解码空间价值图，想象 rollout 中按价值导航，认知-动作网络闭环。",
+    "selfEvolution": null,
+    "evidence": [
+     "未见环境 SR 19.92% vs OctMem-Agent 17.57%（+2.35 点），已见 25.14% vs 20.17%；单步 0.31s 快于最强对手 0.58s。",
+     "推理时不给目标坐标，价值层仅由探索/障碍/训练期目标信号监督"
+    ],
+    "faq": {
+     "problem": "用带空间认知记忆的世界模型做无人机目标搜索，未见环境 SR 提升近 14%。",
+     "mechanism": "RSSM 潜状态解码空间价值图，想象 rollout 中按价值导航，认知-动作网络闭环。",
+     "agentChange": "RSSM 潜状态解码空间价值图，想象 rollout 中按价值导航，认知-动作网络闭环。",
+     "support": "未见环境 SR 19.92% vs OctMem-Agent 17.57%（+2.35 点），已见 25.14% vs 20.17%；单步 0.31s 快于最强对手 0.58s。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "把世界模型从\"预测画面\"推向\"预测空间价值\"，为 UAV 主动搜索提供新范式。"
+   }
+  },
+  {
+   "id": "2610.10181",
+   "version": 1,
+   "title": "Argos: Adapt Rich Geometric Priors for Generalizable Online Scene-Change-Detection",
+   "abstract": "复用几何基础模型的隐式 3D 先验做在线场景变化检测，变化 IoU 从 11.72 升至 39.84。",
+   "authors": [],
+   "published": "2026-10-08T04:00:00.000Z",
+   "updated": "2026-10-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.10181",
+   "pdf": "https://arxiv.org/pdf/2610.10181",
+   "announceType": "new",
+   "summary": "复用几何基础模型的隐式 3D 先验做在线场景变化检测，变化 IoU 从 11.72 升至 39.84。",
+   "topic": "遥感 / 地理空间 / 无人机",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.10181"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明几何基础模型可直接充当在线变化感知的通用先验，降低 3D 方法部署门槛。",
+   "repository": null,
+   "motivation": "机器人在动态环境需在线感知环境变化，而现有方法在大视角变化和遮挡下严重失效。",
+   "coreProblem": "2D 成对图像特征对视角/遮挡敏感、跨域泛化差，显式 3D 方法又需昂贵离线优化。",
+   "contributions": [
+    "提出 Argos，用共视感知的跨会话比较适配 GFM 隐式 3D 先验",
+    "构建 Argos-CD 大规模数据集，支撑多数据集联合训练",
+    "提出 Argos-SLAM，把变化预测接入在线建图"
+   ],
+   "innovations": [
+    "首次将几何基础模型特征用于变化检测，无需逐场景离线 3D 优化",
+    "合成数据训练即可超越真实数据微调基线，并有合成到真实的迁移能力"
+   ],
+   "method": "以 VGGT 类 GFM 为骨干，跨会话交叉注意力加相机读取器，联合输出变化掩码与重建。",
+   "results": "Argos-CD-real 变化 IoU 39.84 vs 最优微调基线 11.72；单次前向 128 帧仅 1.45s，SceneDiff 需 485s（64 帧）后 OOM。",
+   "value": "证明几何基础模型可直接充当在线变化感知的通用先验，降低 3D 方法部署门槛。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 Argos，用共视感知的跨会话比较适配 GFM 隐式 3D 先验",
+    "agentChange": "以 VGGT 类 GFM 为骨干，跨会话交叉注意力加相机读取器，联合输出变化掩码与重建。",
+    "selfEvolution": null,
+    "evidence": [
+     "Argos-CD-real 变化 IoU 39.84 vs 最优微调基线 11.72；单次前向 128 帧仅 1.45s，SceneDiff 需 485s（64 帧）后 OOM。",
+     "合成数据训练即可超越真实数据微调基线，并有合成到真实的迁移能力"
+    ],
+    "faq": {
+     "problem": "复用几何基础模型的隐式 3D 先验做在线场景变化检测，变化 IoU 从 11.72 升至 39.84。",
+     "mechanism": "以 VGGT 类 GFM 为骨干，跨会话交叉注意力加相机读取器，联合输出变化掩码与重建。",
+     "agentChange": "以 VGGT 类 GFM 为骨干，跨会话交叉注意力加相机读取器，联合输出变化掩码与重建。",
+     "support": "Argos-CD-real 变化 IoU 39.84 vs 最优微调基线 11.72；单次前向 128 帧仅 1.45s，SceneDiff 需 485s（64 帧）后 OOM。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "证明几何基础模型可直接充当在线变化感知的通用先验，降低 3D 方法部署门槛。"
+   }
+  },
+  {
+   "id": "2610.09112",
+   "version": 1,
+   "title": "GeoNatureAgent (GNA): A Framework and Benchmark for Pre-Production Evaluation of Tool-Using Agents on Geospatial and Environmental Tasks",
+   "abstract": "用固定 16 工具 MCP 接口构建地理空间 Agent 上线前评测基准，覆盖 103 项任务。",
+   "authors": [],
+   "published": "2026-10-08T04:00:00.000Z",
+   "updated": "2026-10-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.09112",
+   "pdf": "https://arxiv.org/pdf/2610.09112",
+   "announceType": "new",
+   "summary": "用固定 16 工具 MCP 接口构建地理空间 Agent 上线前评测基准，覆盖 103 项任务。",
+   "topic": "遥感 / 地理空间 / 无人机",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.09112"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为地理空间 Agent 提供可复现的上线门禁，把评测焦点从\"能不能答\"转向\"能否可靠调工具\"。",
+   "repository": null,
+   "motivation": "环境与地理空间 Agent 上线前需要证据，证明其能在真实 API 上选对操作。",
+   "coreProblem": "现有评测把工具层、任务集与打分器混在一起，无法判断失败源于模型还是接口。",
+   "contributions": [
+    "发布固定十六工具的 MCP 地理空间接口，使被测 Agent 成为唯一变量",
+    "构建 103 任务基准（93 主套件跨 18 类 + 10 任务对照扩展）",
+    "对接开放可自托管 API，覆盖三类环境数据"
+   ],
+   "innovations": [
+    "把\"接口\"从评测变量中剥离，工具层、任务套件、确定性打分器对所有模型完全一致",
+    "不只报通过率，同时给出成本-精度与碳排放权衡曲线"
+   ],
+   "method": "MCP 服务器固定工具集，确定性打分器逐任务判分，配合 bootstrap 置信区间做规模趋势分析。",
+   "results": "规模提升带来分数增长但偏科，成本-精度曲线显示高分模型边际成本陡增；跨数据集扩展到 BigEarthNet V2 验证可迁移。",
+   "value": "为地理空间 Agent 提供可复现的上线门禁，把评测焦点从\"能不能答\"转向\"能否可靠调工具\"。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "发布固定十六工具的 MCP 地理空间接口，使被测 Agent 成为唯一变量",
+    "agentChange": "MCP 服务器固定工具集，确定性打分器逐任务判分，配合 bootstrap 置信区间做规模趋势分析。",
+    "selfEvolution": null,
+    "evidence": [
+     "规模提升带来分数增长但偏科，成本-精度曲线显示高分模型边际成本陡增；跨数据集扩展到 BigEarthNet V2 验证可迁移。",
+     "不只报通过率，同时给出成本-精度与碳排放权衡曲线"
+    ],
+    "faq": {
+     "problem": "用固定 16 工具 MCP 接口构建地理空间 Agent 上线前评测基准，覆盖 103 项任务。",
+     "mechanism": "MCP 服务器固定工具集，确定性打分器逐任务判分，配合 bootstrap 置信区间做规模趋势分析。",
+     "agentChange": "MCP 服务器固定工具集，确定性打分器逐任务判分，配合 bootstrap 置信区间做规模趋势分析。",
+     "support": "规模提升带来分数增长但偏科，成本-精度曲线显示高分模型边际成本陡增；跨数据集扩展到 BigEarthNet V2 验证可迁移。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "为地理空间 Agent 提供可复现的上线门禁，把评测焦点从\"能不能答\"转向\"能否可靠调工具\"。"
+   }
+  },
+  {
+   "id": "2610.10133",
+   "version": 1,
+   "title": "HarnessIR: Harnessing Multimodal Foundation Models for Universal Real-World Image Restoration",
+   "abstract": "不再串联单退化修复工具，改用多模态基础模型做执行器，真实退化修复 PSNR 达 26.01。",
+   "authors": [],
+   "published": "2026-10-08T04:00:00.000Z",
+   "updated": "2026-10-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.10133",
+   "pdf": "https://arxiv.org/pdf/2610.10133",
+   "announceType": "new",
+   "summary": "不再串联单退化修复工具，改用多模态基础模型做执行器，真实退化修复 PSNR 达 26.01。",
+   "topic": "计算机视觉 / 图像恢复",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.10133"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "示范了\"基础模型即工具\"的 Agent 设计，把系统上限交还给基座模型而非工具库。",
+   "repository": null,
+   "motivation": "真实世界图像混合退化难以逐退化剥离，且专用小模型的工具上限锁死了 Agent 系统能力。",
+   "coreProblem": "现有 agentic 修复把动作原语定为\"调度专用修复工具\"，工具能力成为系统天花板。",
+   "contributions": [
+    "提出 HarnessIR，把动作原语从工具调度改为\"驾驭单个 MFM\"",
+    "五阶段框架：规划要收集的证据、给执行器指令提示、失败时才触发闭环",
+    "在 MiO100 与真实测试集上超过 6 个 all-in-one 与 6 个 agentic 方法"
+   ],
+   "innovations": [
+    "规划阶段输出的是\"要采集哪些证据\"而非\"按序执行哪些修复器\"",
+    "传给执行器的是指令提示而非执行顺序，保留 MFM 的通用修复能力",
+    "闭环由失败驱动而非设计驱动，避免无谓重试"
+   ],
+   "method": "VLM 做诊断与指令合成，单个多模态基础模型作为唯一修复执行器，验证失败触发重执行。",
+   "results": "Real-Paired-200 上 PSNR 26.01 / DF-Score 59.6，优于仅 MFM 基线 23.94 / 52.9；单图耗时 41.8s，成本 $0.085，远低于 AgenticIR 的 88.8s / $0.137。",
+   "value": "示范了\"基础模型即工具\"的 Agent 设计，把系统上限交还给基座模型而非工具库。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 HarnessIR，把动作原语从工具调度改为\"驾驭单个 MFM\"",
+    "agentChange": "VLM 做诊断与指令合成，单个多模态基础模型作为唯一修复执行器，验证失败触发重执行。",
+    "selfEvolution": null,
+    "evidence": [
+     "Real-Paired-200 上 PSNR 26.01 / DF-Score 59.6，优于仅 MFM 基线 23.94 / 52.9；单图耗时 41.8s，成本 $0.085，远低于 AgenticIR 的 88.8s / $0.137。",
+     "传给执行器的是指令提示而非执行顺序，保留 MFM 的通用修复能力",
+     "闭环由失败驱动而非设计驱动，避免无谓重试"
+    ],
+    "faq": {
+     "problem": "不再串联单退化修复工具，改用多模态基础模型做执行器，真实退化修复 PSNR 达 26.01。",
+     "mechanism": "VLM 做诊断与指令合成，单个多模态基础模型作为唯一修复执行器，验证失败触发重执行。",
+     "agentChange": "VLM 做诊断与指令合成，单个多模态基础模型作为唯一修复执行器，验证失败触发重执行。",
+     "support": "Real-Paired-200 上 PSNR 26.01 / DF-Score 59.6，优于仅 MFM 基线 23.94 / 52.9；单图耗时 41.8s，成本 $0.085，远低于 AgenticIR 的 88.8s / $0.137。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "示范了\"基础模型即工具\"的 Agent 设计，把系统上限交还给基座模型而非工具库。"
+   }
+  },
+  {
+   "id": "2610.09455",
+   "version": 1,
+   "title": "RLHND: Video Foundation Models as Physically Grounded Hand Trackers for Robot Learning",
+   "abstract": "把视频扩散骨干改造成确定性编码器，从第一视角视频同时估手部姿态与触觉。",
+   "authors": [],
+   "published": "2026-10-08T04:00:00.000Z",
+   "updated": "2026-10-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.09455",
+   "pdf": "https://arxiv.org/pdf/2610.09455",
+   "announceType": "new",
+   "summary": "把视频扩散骨干改造成确定性编码器，从第一视角视频同时估手部姿态与触觉。",
+   "topic": "计算机视觉 / 图像恢复",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.09455"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让人类视频自带接触与力监督，为机器人策略学习补齐物理信号缺口。",
+   "repository": null,
+   "motivation": "人体视频是机器人策略的重要数据来源，但多数手部跟踪器缺少运动与物体交互先验。",
+   "coreProblem": "从裁剪帧回归姿态导致估计不准且物理不一致，且缺少接触与力等物理线索。",
+   "contributions": [
+    "提出 RLHND，联合估计手部姿态与真实感触觉",
+    "将预训练 Cosmos 3 视频扩散骨干转为确定性 clip 编码器",
+    "提供形状条件、约束化姿态参数化与基于 LBS 的顶点读出"
+   ],
+   "innovations": [
+    "用视频扩散模型的运动先验替代裁剪帧回归，缓解物理不一致",
+    "通过骨骼 token 与 LBS 顶点读出，从单目视频恢复触觉力而非仅几何"
+   ],
+   "method": "清洁潜变量视频扩散编码器提供运动先验，姿态专家流与触觉专家流共享骨骼 token。",
+   "results": "在 HOT3D 等基准的 3D/2D 投影指标上全面超越 HaMeR、WiLoR、HaWoR、HaPTIC；零样本 EgoDex 上手部精度亦更高，并可重定向到多种机器人手。",
+   "value": "让人类视频自带接触与力监督，为机器人策略学习补齐物理信号缺口。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 RLHND，联合估计手部姿态与真实感触觉",
+    "agentChange": "清洁潜变量视频扩散编码器提供运动先验，姿态专家流与触觉专家流共享骨骼 token。",
+    "selfEvolution": null,
+    "evidence": [
+     "在 HOT3D 等基准的 3D/2D 投影指标上全面超越 HaMeR、WiLoR、HaWoR、HaPTIC；零样本 EgoDex 上手部精度亦更高，并可重定向到多种机器人手。",
+     "通过骨骼 token 与 LBS 顶点读出，从单目视频恢复触觉力而非仅几何"
+    ],
+    "faq": {
+     "problem": "把视频扩散骨干改造成确定性编码器，从第一视角视频同时估手部姿态与触觉。",
+     "mechanism": "清洁潜变量视频扩散编码器提供运动先验，姿态专家流与触觉专家流共享骨骼 token。",
+     "agentChange": "清洁潜变量视频扩散编码器提供运动先验，姿态专家流与触觉专家流共享骨骼 token。",
+     "support": "在 HOT3D 等基准的 3D/2D 投影指标上全面超越 HaMeR、WiLoR、HaWoR、HaPTIC；零样本 EgoDex 上手部精度亦更高，并可重定向到多种机器人手。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "让人类视频自带接触与力监督，为机器人策略学习补齐物理信号缺口。"
+   }
+  },
+  {
+   "id": "2610.10183",
+   "version": 1,
+   "title": "VideoEvolve: Co-Evolving Memory and Retrieval for Long Video Understanding",
+   "abstract": "让记忆构建与检索策略交替 Agentic RL 共演化，长视频基准全面超越开源基线。",
+   "authors": [],
+   "published": "2026-10-08T04:00:00.000Z",
+   "updated": "2026-10-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.10183",
+   "pdf": "https://arxiv.org/pdf/2610.10183",
+   "announceType": "new",
+   "summary": "让记忆构建与检索策略交替 Agentic RL 共演化，长视频基准全面超越开源基线。",
+   "topic": "Agent / 强化学习 / 世界模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.10183"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "指出长视频记忆的瓶颈在\"存储决策\"而非仅检索，为记忆系统设计提供新着力点。",
+   "repository": null,
+   "motivation": "长视频理解依赖外部记忆压缩视觉流，但记忆往往固定不变而检索却动态适配。",
+   "coreProblem": "\"动态检索 + 静态记忆\"错配，一旦关键细节未入库就再也无法找回。",
+   "contributions": [
+    "提出 VideoEvolve，用交替 Agentic RL 共演化记忆与检索两个策略",
+    "提出 BEF 按记忆-检索瓶颈分配训练，CEF 按能力短板调整课程",
+    "在 Video-MME、LongVideoBench、LVBench、MLVU、MMVU 上验证"
+   ],
+   "innovations": [
+    "首次让\"记什么\"与\"取什么\"从同一推理反馈中共同进化，而非只优化检索",
+    "双重演化反馈分别控制训练资源分配与课程难度，而非统一采样"
+   ],
+   "method": "从低帧率概览起步，Memory Evolver 选择性增补记忆，Retriever 按问题检索，二者交替 RL。",
+   "results": "Video-MME w/ sub 73.9、LongVideoBench 70.2、MLVU 75.1；去掉共演化（Base）降至 66.8 / 62.1 / 64.7，共演化贡献约 +7 点。",
+   "value": "指出长视频记忆的瓶颈在\"存储决策\"而非仅检索，为记忆系统设计提供新着力点。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 VideoEvolve，用交替 Agentic RL 共演化记忆与检索两个策略",
+    "agentChange": "从低帧率概览起步，Memory Evolver 选择性增补记忆，Retriever 按问题检索，二者交替 RL。",
+    "selfEvolution": null,
+    "evidence": [
+     "Video-MME w/ sub 73.9、LongVideoBench 70.2、MLVU 75.1；去掉共演化（Base）降至 66.8 / 62.1 / 64.7，共演化贡献约 +7 点。",
+     "双重演化反馈分别控制训练资源分配与课程难度，而非统一采样"
+    ],
+    "faq": {
+     "problem": "让记忆构建与检索策略交替 Agentic RL 共演化，长视频基准全面超越开源基线。",
+     "mechanism": "从低帧率概览起步，Memory Evolver 选择性增补记忆，Retriever 按问题检索，二者交替 RL。",
+     "agentChange": "从低帧率概览起步，Memory Evolver 选择性增补记忆，Retriever 按问题检索，二者交替 RL。",
+     "support": "Video-MME w/ sub 73.9、LongVideoBench 70.2、MLVU 75.1；去掉共演化（Base）降至 66.8 / 62.1 / 64.7，共演化贡献约 +7 点。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "指出长视频记忆的瓶颈在\"存储决策\"而非仅检索，为记忆系统设计提供新着力点。"
+   }
+  },
+  {
+   "id": "2610.10498",
+   "version": 1,
+   "title": "EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution",
+   "abstract": "让自演化 Agent 自主决定下一步物理实验做什么，把真机交互转成代码与技能升级。",
+   "authors": [],
+   "published": "2026-10-08T04:00:00.000Z",
+   "updated": "2026-10-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.10498",
+   "pdf": "https://arxiv.org/pdf/2610.10498",
+   "announceType": "new",
+   "summary": "让自演化 Agent 自主决定下一步物理实验做什么，把真机交互转成代码与技能升级。",
+   "topic": "Agent / 强化学习 / 世界模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.10498"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把具身持续学习从\"多采数据\"转向\"更聪明地做实验\"，降低机器人适配成本。",
+   "repository": null,
+   "motivation": "机器人基础模型在物体位置或指令变化时会退化，而重新后训练需昂贵遥操作数据。",
+   "coreProblem": "现有自演化 harness 在\"改哪段代码、加哪个技能\"上决策低效，浪费真机试错预算。",
+   "contributions": [
+    "提出 EmbodiedRSI 自演化 Agentic harness，自主决定探索方向",
+    "快慢双系统：快系统按假设权重与成本选下一实验，慢系统建层级记忆",
+    "代码-技能共演化，二者相互强化而非独立进化"
+   ],
+   "innovations": [
+    "用假设权重加权选择物理实验，把有限真机试验从随机试错变为假设驱动",
+    "快慢系统分工使探索决策与经验抽象解耦，提升单次交互的信息回报"
+   ],
+   "method": "快系统快速迭代代码与技能更新，慢系统用层级记忆抽象历史经验回灌探索决策。",
+   "results": "在物体位置与指令变化的持续学习任务上优于现有自演化 harness，真机试验利用率提升，减少后训练数据需求。",
+   "value": "把具身持续学习从\"多采数据\"转向\"更聪明地做实验\"，降低机器人适配成本。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 EmbodiedRSI 自演化 Agentic harness，自主决定探索方向",
+    "agentChange": "快系统快速迭代代码与技能更新，慢系统用层级记忆抽象历史经验回灌探索决策。",
+    "selfEvolution": null,
+    "evidence": [
+     "在物体位置与指令变化的持续学习任务上优于现有自演化 harness，真机试验利用率提升，减少后训练数据需求。",
+     "快慢系统分工使探索决策与经验抽象解耦，提升单次交互的信息回报"
+    ],
+    "faq": {
+     "problem": "让自演化 Agent 自主决定下一步物理实验做什么，把真机交互转成代码与技能升级。",
+     "mechanism": "快系统快速迭代代码与技能更新，慢系统用层级记忆抽象历史经验回灌探索决策。",
+     "agentChange": "快系统快速迭代代码与技能更新，慢系统用层级记忆抽象历史经验回灌探索决策。",
+     "support": "在物体位置与指令变化的持续学习任务上优于现有自演化 harness，真机试验利用率提升，减少后训练数据需求。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "把具身持续学习从\"多采数据\"转向\"更聪明地做实验\"，降低机器人适配成本。"
+   }
+  },
+  {
+   "id": "2610.10390",
+   "version": 1,
+   "title": "GeoCoTDrive: Explicit Geometric Chain-of-Thought for Vision-Language-Action in Autonomous Driving",
+   "abstract": "让自驾 VLA 先做 2D 规划相关 grounding 再取局部 3D 先验，提升闭环安全性指标。",
+   "authors": [],
+   "published": "2026-10-08T04:00:00.000Z",
+   "updated": "2026-10-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.10390",
+   "pdf": "https://arxiv.org/pdf/2610.10390",
+   "announceType": "new",
+   "summary": "让自驾 VLA 先做 2D 规划相关 grounding 再取局部 3D 先验，提升闭环安全性指标。",
+   "topic": "Agent / 强化学习 / 世界模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.10390"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为 VLA 补上\"决策相关几何\"这一环，把语义推理与安全规划真正接通。",
+   "repository": null,
+   "motivation": "驾驶动作需要精确 3D 几何，而 VLA 的视觉语言推理基本停留在 2D 语义空间。",
+   "coreProblem": "2D 语义推理与 3D 几何规划之间存在根本错配，全局几何融合又引入无关噪声。",
+   "contributions": [
+    "提出 GeoCoTDrive，\"先 2D 思考、再用专用 3D 先验驾驶\"框架",
+    "定义面向规划的 region-level grounding 新任务",
+    "构建 PlanningGrounding 数据集，含 146K 标注"
+   ],
+   "innovations": [
+    "首次将几何 grounding 限定在\"影响自车规划\"的局部关键区域，而非全局融合",
+    "自回归几何检索机制按 grounding 区域采样几何基础模型特征"
+   ],
+   "method": "先定位决策关键 2D 区域，再从几何基础模型采样局部 3D 特征，自回归注入规划。",
+   "results": "nuScenes、NAVSIM、Bench2Drive 上 PDMS 与 NC/DAC/EP 等安全子指标提升，左右转均改善；grounding mIoU 越高安全指标越好。",
+   "value": "为 VLA 补上\"决策相关几何\"这一环，把语义推理与安全规划真正接通。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 GeoCoTDrive，\"先 2D 思考、再用专用 3D 先验驾驶\"框架",
+    "agentChange": "先定位决策关键 2D 区域，再从几何基础模型采样局部 3D 特征，自回归注入规划。",
+    "selfEvolution": null,
+    "evidence": [
+     "nuScenes、NAVSIM、Bench2Drive 上 PDMS 与 NC/DAC/EP 等安全子指标提升，左右转均改善；grounding mIoU 越高安全指标越好。",
+     "自回归几何检索机制按 grounding 区域采样几何基础模型特征"
+    ],
+    "faq": {
+     "problem": "让自驾 VLA 先做 2D 规划相关 grounding 再取局部 3D 先验，提升闭环安全性指标。",
+     "mechanism": "先定位决策关键 2D 区域，再从几何基础模型采样局部 3D 特征，自回归注入规划。",
+     "agentChange": "先定位决策关键 2D 区域，再从几何基础模型采样局部 3D 特征，自回归注入规划。",
+     "support": "nuScenes、NAVSIM、Bench2Drive 上 PDMS 与 NC/DAC/EP 等安全子指标提升，左右转均改善；grounding mIoU 越高安全指标越好。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为 VLA 补上\"决策相关几何\"这一环，把语义推理与安全规划真正接通。"
+   }
+  },
+  {
+   "id": "2610.10515",
+   "version": 1,
+   "title": "RoboJEPA: Scaling Robotic Latent World Models",
+   "abstract": "在 12 种机器人本体数据上训练 JEPA 世界模型，发现想象误差随算力呈二阶幂律。",
+   "authors": [],
+   "published": "2026-10-08T04:00:00.000Z",
+   "updated": "2026-10-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.10515",
+   "pdf": "https://arxiv.org/pdf/2610.10515",
+   "announceType": "new",
+   "summary": "在 12 种机器人本体数据上训练 JEPA 世界模型，发现想象误差随算力呈二阶幂律。",
+   "topic": "Agent / 强化学习 / 世界模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.10515"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让机器人世界模型从\"试出来\"走向\"算得出\"，为规模化投入提供可预测回报曲线。",
+   "repository": null,
+   "motivation": "潜世界模型能预测未来并规划，但缺乏能力如何随模型、数据、算力扩展的原则性估计。",
+   "coreProblem": "领域缺少可外推的 scaling 规律，无法在大规模训练前预测模型质量与规划成功率。",
+   "contributions": [
+    "提出 RoboJEPA，基于 JEPA 的潜世界模型，覆盖 12 种机器人本体",
+    "发现想象误差随训练算力服从二阶幂律，可外推远超拟合区间的规模",
+    "验证离线预测误差的改进可转化为下游规划成功率提升"
+   ],
+   "innovations": [
+    "首次给出机器人世界模型的二阶幂律 scaling 规律，使规模外推成为可能",
+    "指出长时程预测训练本身即可改善 scaling 形态与长时程规划表现"
+   ],
+   "method": "编码器特征上做教师强制单步预测与自回归滚动预测联合训练，规划时对潜 rollout 打分。",
+   "results": "预测损失与外推规模吻合；AOT Inductor 将部署延迟从 145.6ms 降至 45.0ms（调度开销占比 47.3%→6.8%），静态 FP8 相对 BF16 再提速约 11%。",
+   "value": "让机器人世界模型从\"试出来\"走向\"算得出\"，为规模化投入提供可预测回报曲线。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 RoboJEPA，基于 JEPA 的潜世界模型，覆盖 12 种机器人本体",
+    "agentChange": "编码器特征上做教师强制单步预测与自回归滚动预测联合训练，规划时对潜 rollout 打分。",
+    "selfEvolution": null,
+    "evidence": [
+     "预测损失与外推规模吻合；AOT Inductor 将部署延迟从 145.6ms 降至 45.0ms（调度开销占比 47.3%→6.8%），静态 FP8 相对 BF16 再提速约 11%。",
+     "指出长时程预测训练本身即可改善 scaling 形态与长时程规划表现"
+    ],
+    "faq": {
+     "problem": "在 12 种机器人本体数据上训练 JEPA 世界模型，发现想象误差随算力呈二阶幂律。",
+     "mechanism": "编码器特征上做教师强制单步预测与自回归滚动预测联合训练，规划时对潜 rollout 打分。",
+     "agentChange": "编码器特征上做教师强制单步预测与自回归滚动预测联合训练，规划时对潜 rollout 打分。",
+     "support": "预测损失与外推规模吻合；AOT Inductor 将部署延迟从 145.6ms 降至 45.0ms（调度开销占比 47.3%→6.8%），静态 FP8 相对 BF16 再提速约 11%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "让机器人世界模型从\"试出来\"走向\"算得出\"，为规模化投入提供可预测回报曲线。"
+   }
+  },
+  {
+   "id": "2610.09146",
+   "version": 1,
+   "title": "Frozen Models, Evolving Expertise: Model-Agnostic Learning from Deployment Experience for Multimodal Medical AI",
+   "abstract": "冻结模型不改权重，靠外部多模态经验库在部署中持续提升，在线最高涨 34%。",
+   "authors": [],
+   "published": "2026-10-08T04:00:00.000Z",
+   "updated": "2026-10-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.09146",
+   "pdf": "https://arxiv.org/pdf/2610.09146",
+   "announceType": "new",
+   "summary": "冻结模型不改权重，靠外部多模态经验库在部署中持续提升，在线最高涨 34%。",
+   "topic": "大语言模型 / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.09146"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给出不改权重的部署期学习路径，直击医学模型知识过时这一落地痛点。",
+   "repository": null,
+   "motivation": "医学知识与指南持续更新，但部署后的 LLM/VLM 被冻结，无法从经手病例中学习。",
+   "coreProblem": "微调需权重与再训练，免训练方法又易过拟合固定验证集或把视觉经验压成纯文本丢细节。",
+   "contributions": [
+    "提出模型无关框架，把部署经验转为可复用外部专业知识",
+    "提出 MMKB，保留图像、参考答案与解释，支持多模态对照",
+    "在 6 基准 × 4 基座模型上验证持续改进"
+   ],
+   "innovations": [
+    "无需访问权重即可增益，同时适用于开源与闭源模型",
+    "经验以多模态知识库而非文本摘要保存，规避视觉细节丢失"
+   ],
+   "method": "将已验证病例与参考文献存入多模态知识库，推理时引导模型比对证据，仅在旧例不回退时接受更新。",
+   "results": "24 个基准-模型组合全部高于 Base、22 个最优，平均提升 17%+、在线最高 34%；跨模型迁移在 36 组中 33 组有效，平均增益 20%+。",
+   "value": "给出不改权重的部署期学习路径，直击医学模型知识过时这一落地痛点。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出模型无关框架，把部署经验转为可复用外部专业知识",
+    "agentChange": "将已验证病例与参考文献存入多模态知识库，推理时引导模型比对证据，仅在旧例不回退时接受更新。",
+    "selfEvolution": null,
+    "evidence": [
+     "24 个基准-模型组合全部高于 Base、22 个最优，平均提升 17%+、在线最高 34%；跨模型迁移在 36 组中 33 组有效，平均增益 20%+。",
+     "经验以多模态知识库而非文本摘要保存，规避视觉细节丢失"
+    ],
+    "faq": {
+     "problem": "冻结模型不改权重，靠外部多模态经验库在部署中持续提升，在线最高涨 34%。",
+     "mechanism": "将已验证病例与参考文献存入多模态知识库，推理时引导模型比对证据，仅在旧例不回退时接受更新。",
+     "agentChange": "将已验证病例与参考文献存入多模态知识库，推理时引导模型比对证据，仅在旧例不回退时接受更新。",
+     "support": "24 个基准-模型组合全部高于 Base、22 个最优，平均提升 17%+、在线最高 34%；跨模型迁移在 36 组中 33 组有效，平均增益 20%+。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "给出不改权重的部署期学习路径，直击医学模型知识过时这一落地痛点。"
+   }
+  },
+  {
+   "id": "2610.09681",
+   "version": 1,
+   "title": "CoCo-Prover: Cost-Efficient Theorem Proving via Agent Orchestration in Program Verification",
+   "abstract": "把程序验证的形式化证明当作带成本的元级决策，求解率全面最高且成本最多降 30.9%。",
+   "authors": [],
+   "published": "2026-10-08T04:00:00.000Z",
+   "updated": "2026-10-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.09681",
+   "pdf": "https://arxiv.org/pdf/2610.09681",
+   "announceType": "new",
+   "summary": "把程序验证的形式化证明当作带成本的元级决策，求解率全面最高且成本最多降 30.9%。",
+   "topic": "大语言模型 / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.09681"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把定理证明从刷榜转向可在真实代码库规模上落地的成本工程。",
+   "repository": null,
+   "motivation": "真实软件常有数百个相互依赖的证明义务，关键不是单个定理能否证明，而是能经济地证明多少。",
+   "coreProblem": "几乎所有证明器只追通过率、不计采样与搜索预算，忽视成功率-成本前沿。",
+   "contributions": [
+    "将成本高效的程序证明形式化为成本约束下的元级决策问题",
+    "基于两层证明图实例化为 CoCo-Prover 智能体编排",
+    "在 5 个 Lean 基准 × 3 个 LLM 上做成功率-成本评测"
+   ],
+   "innovations": [
+    "首次把\"成本\"而非\"可证性\"设为目标，并提出两层证明图上的元级形式化",
+    "通过目标聚类批量路由与共享辅助引理回滚记账，压降重复生成开销"
+   ],
+   "method": "元级路由器在确定性自动化、直接证明与辅助引理分治间按预期收益分配算力，失败即回滚。",
+   "results": "五个 Lean 基准上任意设置下求解率均最高，两个基准达 100%；相对最强基线 Humanize 成本最多降 30.9%，对 Ax-Prover-Base 最多降 85.7%。",
+   "value": "把定理证明从刷榜转向可在真实代码库规模上落地的成本工程。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "将成本高效的程序证明形式化为成本约束下的元级决策问题",
+    "agentChange": "元级路由器在确定性自动化、直接证明与辅助引理分治间按预期收益分配算力，失败即回滚。",
+    "selfEvolution": null,
+    "evidence": [
+     "五个 Lean 基准上任意设置下求解率均最高，两个基准达 100%；相对最强基线 Humanize 成本最多降 30.9%，对 Ax-Prover-Base 最多降 85.7%。",
+     "通过目标聚类批量路由与共享辅助引理回滚记账，压降重复生成开销"
+    ],
+    "faq": {
+     "problem": "把程序验证的形式化证明当作带成本的元级决策，求解率全面最高且成本最多降 30.9%。",
+     "mechanism": "元级路由器在确定性自动化、直接证明与辅助引理分治间按预期收益分配算力，失败即回滚。",
+     "agentChange": "元级路由器在确定性自动化、直接证明与辅助引理分治间按预期收益分配算力，失败即回滚。",
+     "support": "五个 Lean 基准上任意设置下求解率均最高，两个基准达 100%；相对最强基线 Humanize 成本最多降 30.9%，对 Ax-Prover-Base 最多降 85.7%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "把定理证明从刷榜转向可在真实代码库规模上落地的成本工程。"
+   }
+  },
+  {
+   "id": "2610.10196",
+   "version": 1,
+   "title": "HuLiGen: Human LiDAR Generation from Parametric Body Models",
+   "abstract": "用流匹配从参数化人体模型生成真实分布的人体 LiDAR，合成预训练使 MPJPE 最多降 50%。",
+   "authors": [],
+   "published": "2026-10-08T04:00:00.000Z",
+   "updated": "2026-10-08T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.10196",
+   "pdf": "https://arxiv.org/pdf/2610.10196",
+   "announceType": "new",
+   "summary": "用流匹配从参数化人体模型生成真实分布的人体 LiDAR，合成预训练使 MPJPE 最多降 50%。",
+   "topic": "大语言模型 / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.10196"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "用生成式数据合成替代昂贵的真实 LiDAR 采集，缓解模态级数据稀缺。",
+   "repository": null,
+   "motivation": "人体 LiDAR 点云采集与标注极贵，稀缺数据制约了该模态下的人体分析研究。",
+   "coreProblem": "既有工作依赖模拟 LiDAR，其几何与真实传感器的观测特性存在系统性偏差。",
+   "contributions": [
+    "提出 HuLiGen，从参数化人体模型生成人体 LiDAR 点云",
+    "用点 Transformer 配流匹配目标学习真实 LiDAR 分布",
+    "提出纯合成预训练方案，用于 LiDAR 人体姿态估计"
+   ],
+   "innovations": [
+    "首个从参数化人体模型到 LiDAR 点云的学习式生成映射，学习真实传感器特性而非物理模拟",
+    "生成数据分布更贴近真实采集，纯合成预训练即可达 SOTA"
+   ],
+   "method": "点 Transformer 以流匹配拟合真实人体 LiDAR 分布，生成样本用于下游 3D 姿态估计预训练。",
+   "results": "SLOPER4D 上 MPJPE 6.02→5.04cm，WOD 上 6.74→5.85cm，两数据集均达 SOTA；低标注与低数据场景下降幅最多 50%。",
+   "value": "用生成式数据合成替代昂贵的真实 LiDAR 采集，缓解模态级数据稀缺。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 HuLiGen，从参数化人体模型生成人体 LiDAR 点云",
+    "agentChange": "点 Transformer 以流匹配拟合真实人体 LiDAR 分布，生成样本用于下游 3D 姿态估计预训练。",
+    "selfEvolution": null,
+    "evidence": [
+     "SLOPER4D 上 MPJPE 6.02→5.04cm，WOD 上 6.74→5.85cm，两数据集均达 SOTA；低标注与低数据场景下降幅最多 50%。",
+     "生成数据分布更贴近真实采集，纯合成预训练即可达 SOTA"
+    ],
+    "faq": {
+     "problem": "用流匹配从参数化人体模型生成真实分布的人体 LiDAR，合成预训练使 MPJPE 最多降 50%。",
+     "mechanism": "点 Transformer 以流匹配拟合真实人体 LiDAR 分布，生成样本用于下游 3D 姿态估计预训练。",
+     "agentChange": "点 Transformer 以流匹配拟合真实人体 LiDAR 分布，生成样本用于下游 3D 姿态估计预训练。",
+     "support": "SLOPER4D 上 MPJPE 6.02→5.04cm，WOD 上 6.74→5.85cm，两数据集均达 SOTA；低标注与低数据场景下降幅最多 50%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "用生成式数据合成替代昂贵的真实 LiDAR 采集，缓解模态级数据稀缺。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-10-07",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-10-07 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-30T21:30:06.000Z",
+ "latestPaperAt": "2026-10-08T04:00:00.000Z",
+ "totalMatched": 1047,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 1047
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 60,
+ "trends": {
+  "status": "accumulating",
+  "days": 60,
+  "minimumDays": 15,
+  "message": "已积累 60/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-30T21:30:06.000Z",
+ "snapshotDay": "2026-10-08",
+ "historical": true
+}

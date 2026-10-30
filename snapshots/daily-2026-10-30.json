@@ -1,0 +1,1028 @@
+{
+ "papers": [
+  {
+   "id": "2610.38162",
+   "version": 1,
+   "title": "Neighbourhood shortcuts in building damage assessment from very-high-resolution satellite imagery: diagnosis and a building-evidence plug-in",
+   "abstract": "反事实搬移揭示 9 个 BDA 模型靠邻居判楼，插件把误判压到 27–44%。",
+   "authors": [],
+   "published": "2026-10-30T04:00:00.000Z",
+   "updated": "2026-10-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.38162",
+   "pdf": "https://arxiv.org/pdf/2610.38162",
+   "announceType": "new",
+   "summary": "反事实搬移揭示 9 个 BDA 模型靠邻居判楼，插件把误判压到 27–44%。",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.38162"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "高分可能只是读街道，BDA 评测需控邻域。",
+   "repository": null,
+   "motivation": "高分模型分不清看建筑还是看街道，评估不可信。",
+   "coreProblem": "灾害聚集使邻居≈答案，总分被易样本主导，捷径不显。",
+   "contributions": [
+    "邻域一致性分层＋反事实搬移评测协议",
+    "诊断 9 个 BDA 范式并分离两类误判成因",
+    "免重训建筑证据插件（两专家乘积融合）"
+   ],
+   "innovations": [
+    "用真实建筑做因果搬移，非合成贴图扰动",
+    "去偏从训练期挪到推理期，原权重不动",
+    "区分洪水（邻域即标签）与非洪水依赖"
+   ],
+   "method": "紧裁剪专家只看建筑，交换专家半概率泊松换邻域，对数概率相加。",
+   "results": "插件使 9 模型 macro-F1 +0.003–0.021，矛盾建筑平衡精度 +2.6–6.6 点；孤立损毁检出 1–6%→13–39%，误判 73–87%→27–44%；未见地震整镇 +3.6–14.5 点。",
+   "value": "高分可能只是读街道，BDA 评测需控邻域。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "邻域一致性分层＋反事实搬移评测协议",
+    "agentChange": "紧裁剪专家只看建筑，交换专家半概率泊松换邻域，对数概率相加。",
+    "selfEvolution": null,
+    "evidence": [
+     "插件使 9 模型 macro-F1 +0.003–0.021，矛盾建筑平衡精度 +2.6–6.6 点；孤立损毁检出 1–6%→13–39%，误判 73–87%→27–44%；未见地震整镇 +3.6–14.5 点。",
+     "去偏从训练期挪到推理期，原权重不动",
+     "区分洪水（邻域即标签）与非洪水依赖"
+    ],
+    "faq": {
+     "problem": "反事实搬移揭示 9 个 BDA 模型靠邻居判楼，插件把误判压到 27–44%。",
+     "mechanism": "紧裁剪专家只看建筑，交换专家半概率泊松换邻域，对数概率相加。",
+     "agentChange": "紧裁剪专家只看建筑，交换专家半概率泊松换邻域，对数概率相加。",
+     "support": "插件使 9 模型 macro-F1 +0.003–0.021，矛盾建筑平衡精度 +2.6–6.6 点；孤立损毁检出 1–6%→13–39%，误判 73–87%→27–44%；未见地震整镇 +3.6–14.5 点。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "高分可能只是读街道，BDA 评测需控邻域。"
+   }
+  },
+  {
+   "id": "2610.38086",
+   "version": 1,
+   "title": "From Next Day Wildfire to Next Days Wildfire: A New Multi-Continent Dataset of Active-Fire Spread for Sequence-to-Sequence Forecasting",
+   "abstract": "建多洲短小火数据集 AFSeq，UTAE-AR 用 21.5% 参数把次日 AP 提 19–26%。",
+   "authors": [],
+   "published": "2026-10-30T04:00:00.000Z",
+   "updated": "2026-10-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.38086",
+   "pdf": "https://arxiv.org/pdf/2610.38086",
+   "announceType": "new",
+   "summary": "建多洲短小火数据集 AFSeq，UTAE-AR 用 21.5% 参数把次日 AP 提 19–26%。",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.38086"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把评测移向高频小火，并给出多日滚动基线。",
+   "repository": null,
+   "motivation": "现基准偏美国巨型长火，消防真正要的是早期小火。",
+   "coreProblem": "WSTS 只含燃烧数周的大火且地域单一，模型只会单步次日外推。",
+   "contributions": [
+    "建 AFSeq：1194 场火、8 国 3 洲、2023–2026 多模态日序列",
+    "提出 UTAE-AR：L-TAE 后接 ConvLSTM，支持多日自回归",
+    "用计划采样把多日监督转成次日精度增益"
+   ],
+   "innovations": [
+    "中位 9 天/2.3k ha，持久性 AP 仅 0.124，与 mega-fire 分布相反",
+    "多日标注只作训练期结构，推理仍单步起步滚动",
+    "首个覆盖拉美火灾的卫星时序传播数据集"
+   ],
+   "method": "L-TAE 注意力加权和初始化各层 ConvLSTM 隐状态，逐步回喂自身预测掩膜，计划采样由 1 衰减至 0.5。",
+   "results": "AFSeq 次日 AP 0.382 vs Res18-UTAE 0.321（+19.0%，3.16M vs 14.7M 参数）；WSTS+ 0.429–0.445 vs 已发表最佳 0.354–0.363（+21–26%）；多日累积 AP 0.524 vs 递归基线 0.344。",
+   "value": "把评测移向高频小火，并给出多日滚动基线。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "建 AFSeq：1194 场火、8 国 3 洲、2023–2026 多模态日序列",
+    "agentChange": "L-TAE 注意力加权和初始化各层 ConvLSTM 隐状态，逐步回喂自身预测掩膜，计划采样由 1 衰减至 0.5。",
+    "selfEvolution": null,
+    "evidence": [
+     "AFSeq 次日 AP 0.382 vs Res18-UTAE 0.321（+19.0%，3.16M vs 14.7M 参数）；WSTS+ 0.429–0.445 vs 已发表最佳 0.354–0.363（+21–26%）；多日累积 AP 0.524 vs 递归基线 0.344。",
+     "多日标注只作训练期结构，推理仍单步起步滚动",
+     "首个覆盖拉美火灾的卫星时序传播数据集"
+    ],
+    "faq": {
+     "problem": "建多洲短小火数据集 AFSeq，UTAE-AR 用 21.5% 参数把次日 AP 提 19–26%。",
+     "mechanism": "L-TAE 注意力加权和初始化各层 ConvLSTM 隐状态，逐步回喂自身预测掩膜，计划采样由 1 衰减至 0.5。",
+     "agentChange": "L-TAE 注意力加权和初始化各层 ConvLSTM 隐状态，逐步回喂自身预测掩膜，计划采样由 1 衰减至 0.5。",
+     "support": "AFSeq 次日 AP 0.382 vs Res18-UTAE 0.321（+19.0%，3.16M vs 14.7M 参数）；WSTS+ 0.429–0.445 vs 已发表最佳 0.354–0.363（+21–26%）；多日累积 AP 0.524 vs 递归基线 0.344。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "把评测移向高频小火，并给出多日滚动基线。"
+   }
+  },
+  {
+   "id": "2610.39773",
+   "version": 1,
+   "title": "Quantum-Inspired Convolutional Networks for High-Resolution Pseudo-Label Generation from Multimodal Earth Observation Data",
+   "abstract": "6 比特量子卷积编解码器生成 S1/S2 伪标签，DFC2020 OA 0.8314 超 UNet 1.2 点。",
+   "authors": [],
+   "published": "2026-10-30T04:00:00.000Z",
+   "updated": "2026-10-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.39773",
+   "pdf": "https://arxiv.org/pdf/2610.39773",
+   "announceType": "new",
+   "summary": "6 比特量子卷积编解码器生成 S1/S2 伪标签，DFC2020 OA 0.8314 超 UNet 1.2 点。",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.39773"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "极轻量量子–经典混合可作星上/低标注制图候选。",
+   "repository": null,
+   "motivation": "高分辨率标注稀缺，仅有粗 MODIS 标签也要细尺度产品。",
+   "coreProblem": "CNN 参数大且吃标注，跨传感器谱–空分布难以对齐。",
+   "contributions": [
+    "设计 6 比特量子卷积编解码器做伪标签生成",
+    "重建＋辅助分类双支自监督，掩膜重建出标签",
+    "在 DFC2020 上同协议对比 UNet/TransUNet"
+   ],
+   "innovations": [
+    "2×2 块均值编码为旋转角，靠纠缠做跨通道非线性混合",
+    "量子块 3+1+3 对称排布，推理回经典网络仅 17 万参数"
+   ],
+   "method": "2×2 块均值→6 维角编码→4 层环状纠缠 PQC→Pauli-Z 期望回特征；先 L1+SSIM 重建再 CE+Dice。",
+   "results": "OA 0.8314 / Kappa 0.7612 / mIoU 0.6434，vs UNet 0.8194/0.7454/0.6272、TransUNet 0.8238/0.6154；参数 169,546（UNet 的 0.5%）；消融换回经典块降至 OA 0.7993。",
+   "value": "极轻量量子–经典混合可作星上/低标注制图候选。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "设计 6 比特量子卷积编解码器做伪标签生成",
+    "agentChange": "2×2 块均值→6 维角编码→4 层环状纠缠 PQC→Pauli-Z 期望回特征；先 L1+SSIM 重建再 CE+Dice。",
+    "selfEvolution": null,
+    "evidence": [
+     "OA 0.8314 / Kappa 0.7612 / mIoU 0.6434，vs UNet 0.8194/0.7454/0.6272、TransUNet 0.8238/0.6154；参数 169,546（UNet 的 0.5%）；消融换回经典块降至 OA 0.7993。",
+     "量子块 3+1+3 对称排布，推理回经典网络仅 17 万参数"
+    ],
+    "faq": {
+     "problem": "6 比特量子卷积编解码器生成 S1/S2 伪标签，DFC2020 OA 0.8314 超 UNet 1.2 点。",
+     "mechanism": "2×2 块均值→6 维角编码→4 层环状纠缠 PQC→Pauli-Z 期望回特征；先 L1+SSIM 重建再 CE+Dice。",
+     "agentChange": "2×2 块均值→6 维角编码→4 层环状纠缠 PQC→Pauli-Z 期望回特征；先 L1+SSIM 重建再 CE+Dice。",
+     "support": "OA 0.8314 / Kappa 0.7612 / mIoU 0.6434，vs UNet 0.8194/0.7454/0.6272、TransUNet 0.8238/0.6154；参数 169,546（UNet 的 0.5%）；消融换回经典块降至 OA 0.7993。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "极轻量量子–经典混合可作星上/低标注制图候选。"
+   }
+  },
+  {
+   "id": "2610.38587",
+   "version": 1,
+   "title": "RoSAMDepth: Robust Self-supervised Depth Estimation Leveraging Segment Anything Model",
+   "abstract": "SAM 掩膜作离线物体先验，夜间自监督深度 AbsRel 0.1667 领先 SOTA。",
+   "authors": [],
+   "published": "2026-10-30T04:00:00.000Z",
+   "updated": "2026-10-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.38587",
+   "pdf": "https://arxiv.org/pdf/2610.38587",
+   "announceType": "new",
+   "summary": "SAM 掩膜作离线物体先验，夜间自监督深度 AbsRel 0.1667 领先 SOTA。",
+   "topic": "视觉基础模型与自监督",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.38587"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "分割基础模型的物体先验可近乎免费换深度鲁棒性。",
+   "repository": null,
+   "motivation": "雨雾夜破坏光度一致性，现有方法不区分物体内外。",
+   "coreProblem": "边界平滑只覆盖窄边，物体内错估无梯度；逐像素误差漏判整物体偏移。",
+   "contributions": [
+    "提出 SRC 区域原型对比、AROM/区域高斯似然、ORE 可靠度三模块",
+    "在 nuScenes/Robotcar 昼夜雨四条件下系统验证"
+   ],
+   "innovations": [
+    "首次把 SAM 掩膜当训练期先验，推理零额外开销",
+    "不直接约束深度，改在特征空间拉近同物体区域",
+    "平滑由边界扩至整区域，自适应 σ 阈值筛离群点"
+   ],
+   "method": "合成到真实蒸馏，掩膜原型对比注入物体感知，段内高斯似然压离群，可靠度加权蒸馏。",
+   "results": "nuScenes 夜间 AbsRel 0.1667 vs Syn2Real-Depth 0.1713（-2.7%），δ1 73.95 vs 73.16；Robotcar 夜 0.1066 vs 0.1103；四指标平均相对增益 2.8/2.7/0.6/0.9%。",
+   "value": "分割基础模型的物体先验可近乎免费换深度鲁棒性。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 SRC 区域原型对比、AROM/区域高斯似然、ORE 可靠度三模块",
+    "agentChange": "合成到真实蒸馏，掩膜原型对比注入物体感知，段内高斯似然压离群，可靠度加权蒸馏。",
+    "selfEvolution": null,
+    "evidence": [
+     "nuScenes 夜间 AbsRel 0.1667 vs Syn2Real-Depth 0.1713（-2.7%），δ1 73.95 vs 73.16；Robotcar 夜 0.1066 vs 0.1103；四指标平均相对增益 2.8/2.7/0.6/0.9%。",
+     "不直接约束深度，改在特征空间拉近同物体区域",
+     "平滑由边界扩至整区域，自适应 σ 阈值筛离群点"
+    ],
+    "faq": {
+     "problem": "SAM 掩膜作离线物体先验，夜间自监督深度 AbsRel 0.1667 领先 SOTA。",
+     "mechanism": "合成到真实蒸馏，掩膜原型对比注入物体感知，段内高斯似然压离群，可靠度加权蒸馏。",
+     "agentChange": "合成到真实蒸馏，掩膜原型对比注入物体感知，段内高斯似然压离群，可靠度加权蒸馏。",
+     "support": "nuScenes 夜间 AbsRel 0.1667 vs Syn2Real-Depth 0.1713（-2.7%），δ1 73.95 vs 73.16；Robotcar 夜 0.1066 vs 0.1103；四指标平均相对增益 2.8/2.7/0.6/0.9%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "分割基础模型的物体先验可近乎免费换深度鲁棒性。"
+   }
+  },
+  {
+   "id": "2610.40636",
+   "version": 1,
+   "title": "Probing Spatial State Representations in Visual Foundation Models",
+   "abstract": "四级冻结探针测 10 个视觉基础模型：能解码≠会使用，无人通吃。",
+   "authors": [],
+   "published": "2026-10-30T04:00:00.000Z",
+   "updated": "2026-10-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.40636",
+   "pdf": "https://arxiv.org/pdf/2610.40636",
+   "announceType": "new",
+   "summary": "四级冻结探针测 10 个视觉基础模型：能解码≠会使用，无人通吃。",
+   "topic": "视觉基础模型与自监督",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.40636"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "空间能力须分维报告，单一探针分数会误导选型。",
+   "repository": null,
+   "motivation": "会描述画面不等于保有可更新、可指导行动的空间状态。",
+   "coreProblem": "拿单点几何解码或检索分数当空间能力，未控运动与历史。",
+   "contributions": [
+    "拆空间状态为结构/持存/预测/行动四级",
+    "10 模型 × 层 × 前缀长度的冻结统一评测",
+    "匹配运动控制分离解码力、使用与效用"
+   ],
+   "innovations": [
+    "不把度量几何当空间状态，并列考持存与行动",
+    "匹配控制区分\"能解码位姿\"与\"真用运动更新\"",
+    "拆开目标敏感度与目标效用，破除选择式假阳性"
+   ],
+   "method": "冻结十骨干编码因果前缀，浅层探针读位姿、出视野方位、未来特征与动作。",
+   "results": "无统一榜单。位姿 AUC@30：Fast3R 0.3870 vs DINOv2 0.0412；持存误差 32.79° vs 65.38°；未来特征 R@1 反转（0.2373 vs 0.0133）；持存与位姿 ρ=0.76。",
+   "value": "空间能力须分维报告，单一探针分数会误导选型。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "拆空间状态为结构/持存/预测/行动四级",
+    "agentChange": "冻结十骨干编码因果前缀，浅层探针读位姿、出视野方位、未来特征与动作。",
+    "selfEvolution": null,
+    "evidence": [
+     "无统一榜单。位姿 AUC@30：Fast3R 0.3870 vs DINOv2 0.0412；持存误差 32.79° vs 65.38°；未来特征 R@1 反转（0.2373 vs 0.0133）；持存与位姿 ρ=0.76。",
+     "匹配控制区分\"能解码位姿\"与\"真用运动更新\"",
+     "拆开目标敏感度与目标效用，破除选择式假阳性"
+    ],
+    "faq": {
+     "problem": "四级冻结探针测 10 个视觉基础模型：能解码≠会使用，无人通吃。",
+     "mechanism": "冻结十骨干编码因果前缀，浅层探针读位姿、出视野方位、未来特征与动作。",
+     "agentChange": "冻结十骨干编码因果前缀，浅层探针读位姿、出视野方位、未来特征与动作。",
+     "support": "无统一榜单。位姿 AUC@30：Fast3R 0.3870 vs DINOv2 0.0412；持存误差 32.79° vs 65.38°；未来特征 R@1 反转（0.2373 vs 0.0133）；持存与位姿 ρ=0.76。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "空间能力须分维报告，单一探针分数会误导选型。"
+   }
+  },
+  {
+   "id": "2610.40029",
+   "version": 1,
+   "title": "Segment Anything Model Based Context Guided Mamba Unet for Medical Image Segmentation",
+   "abstract": "把 SAM 分层语义经注意力注入 Mamba UNet 解码，Synapse DSC 81.94% 超 VM-UNet 0.86 点。",
+   "authors": [],
+   "published": "2026-10-30T04:00:00.000Z",
+   "updated": "2026-10-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.40029",
+   "pdf": "https://arxiv.org/pdf/2610.40029",
+   "announceType": "new",
+   "summary": "把 SAM 分层语义经注意力注入 Mamba UNet 解码，Synapse DSC 81.94% 超 VM-UNet 0.86 点。",
+   "topic": "医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.40029"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给出\"基础模型先验＋线性复杂度主干\"的解码期融合范式。",
+   "repository": null,
+   "motivation": "SAM 缺医学域适应，Mamba 缺高层语义，两者互补却结合粗糙。",
+   "coreProblem": "SAM 类方法多在输入端加 prompt/adapter，解码融合不动，也缺长程上下文。",
+   "contributions": [
+    "提出 SAMBA-UNet：SAM 与 Mamba 并行双编码、免 prompt",
+    "HCEM 取 SAM 第 6/9/12 层特征多尺度对齐回注解码器",
+    "LoRA＋Adapter 协同微调 SAM 编码器注入医学知识"
+   ],
+   "innovations": [
+    "不在输入端加 prompt，把 SAM 特征当解码期先验",
+    "首次系统结合 SAM 表征与状态空间主干做医学分割"
+   ],
+   "method": "图像并行送 VSS 主干与微调 SAM 编码器，多尺度对齐后与跳连拼接，双池化注意力增强再解码。",
+   "results": "Synapse DSC 81.94% vs 81.08%（+0.86 点），HD95 17.34 vs 19.21；ISIC17 mIoU 81.07% vs 80.23%；消融去掉 HCEM 降至 79.05%。",
+   "value": "给出\"基础模型先验＋线性复杂度主干\"的解码期融合范式。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 SAMBA-UNet：SAM 与 Mamba 并行双编码、免 prompt",
+    "agentChange": "图像并行送 VSS 主干与微调 SAM 编码器，多尺度对齐后与跳连拼接，双池化注意力增强再解码。",
+    "selfEvolution": null,
+    "evidence": [
+     "Synapse DSC 81.94% vs 81.08%（+0.86 点），HD95 17.34 vs 19.21；ISIC17 mIoU 81.07% vs 80.23%；消融去掉 HCEM 降至 79.05%。",
+     "首次系统结合 SAM 表征与状态空间主干做医学分割"
+    ],
+    "faq": {
+     "problem": "把 SAM 分层语义经注意力注入 Mamba UNet 解码，Synapse DSC 81.94% 超 VM-UNet 0.86 点。",
+     "mechanism": "图像并行送 VSS 主干与微调 SAM 编码器，多尺度对齐后与跳连拼接，双池化注意力增强再解码。",
+     "agentChange": "图像并行送 VSS 主干与微调 SAM 编码器，多尺度对齐后与跳连拼接，双池化注意力增强再解码。",
+     "support": "Synapse DSC 81.94% vs 81.08%（+0.86 点），HD95 17.34 vs 19.21；ISIC17 mIoU 81.07% vs 80.23%；消融去掉 HCEM 降至 79.05%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "给出\"基础模型先验＋线性复杂度主干\"的解码期融合范式。"
+   }
+  },
+  {
+   "id": "2610.40578",
+   "version": 1,
+   "title": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
+   "abstract": "CUA 验证改为验证器主动取证，AndroidWorld 90.5%、假阳性降到 7.7%。",
+   "authors": [],
+   "published": "2026-10-30T04:00:00.000Z",
+   "updated": "2026-10-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.40578",
+   "pdf": "https://arxiv.org/pdf/2610.40578",
+   "announceType": "new",
+   "summary": "CUA 验证改为验证器主动取证，AndroidWorld 90.5%、假阳性降到 7.7%。",
+   "topic": "Agent 与 Agentic RL",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.40578"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给数据筛选与 RL 奖励一个可审计的判定层。",
+   "repository": null,
+   "motivation": "同一判定同时用于评测、筛数据和 RL 奖励，错判代价被放大。",
+   "coreProblem": "VLM 判官只见给定帧，生成脚本只查可及状态，证据缺口致误判完成。",
+   "contributions": [
+    "提出平台无关 agentic 验证框架，在线/离线同一流程",
+    "环境勘察后自动合成 rubric，GUI 与代码检查混合取证"
+   ],
+   "innovations": [
+    "首次把验证写成验证器自主取证，而非一次判读",
+    "把帧时序、状态可达性等来源属性写进仲裁规则"
+   ],
+   "method": "先勘察环境建 rubric，再针对未决要求选 GUI 或代码检查，按显式证据规则合并结论。",
+   "results": "在线 AndroidWorld 90.5% vs 生成式验证器 82.4%（弃权计失败），假阳性 7.7% vs 16.9%；离线 OSReward-Hard 70.4% vs OS-Themis 65.7%（+4.7 点）。",
+   "value": "给数据筛选与 RL 奖励一个可审计的判定层。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出平台无关 agentic 验证框架，在线/离线同一流程",
+    "agentChange": "先勘察环境建 rubric，再针对未决要求选 GUI 或代码检查，按显式证据规则合并结论。",
+    "selfEvolution": null,
+    "evidence": [
+     "在线 AndroidWorld 90.5% vs 生成式验证器 82.4%（弃权计失败），假阳性 7.7% vs 16.9%；离线 OSReward-Hard 70.4% vs OS-Themis 65.7%（+4.7 点）。",
+     "把帧时序、状态可达性等来源属性写进仲裁规则"
+    ],
+    "faq": {
+     "problem": "CUA 验证改为验证器主动取证，AndroidWorld 90.5%、假阳性降到 7.7%。",
+     "mechanism": "先勘察环境建 rubric，再针对未决要求选 GUI 或代码检查，按显式证据规则合并结论。",
+     "agentChange": "先勘察环境建 rubric，再针对未决要求选 GUI 或代码检查，按显式证据规则合并结论。",
+     "support": "在线 AndroidWorld 90.5% vs 生成式验证器 82.4%（弃权计失败），假阳性 7.7% vs 16.9%；离线 OSReward-Hard 70.4% vs OS-Themis 65.7%（+4.7 点）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "给数据筛选与 RL 奖励一个可审计的判定层。"
+   }
+  },
+  {
+   "id": "2610.38391",
+   "version": 1,
+   "title": "SCOPE: Selective Critical-Step On-Policy Self-Distillation for Agentic Reinforcement Learning",
+   "abstract": "只在错误步做自蒸馏，ALFWorld 97.7% 且交互步数降 65%。",
+   "authors": [],
+   "published": "2026-10-30T04:00:00.000Z",
+   "updated": "2026-10-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.38391",
+   "pdf": "https://arxiv.org/pdf/2610.38391",
+   "announceType": "new",
+   "summary": "只在错误步做自蒸馏，ALFWorld 97.7% 且交互步数降 65%。",
+   "topic": "Agent 与 Agentic RL",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.38391"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "辅助监督对准真正要纠正的决策，而非整条轨迹。",
+   "repository": null,
+   "motivation": "结果级 RL 只给成败信号，长程中间步骤无监督。",
+   "coreProblem": "成功轨迹含错步、失败含对步；轨迹级技能还在无关步注入偏移。",
+   "contributions": [
+    "提出错误步级 on-policy 自蒸馏框架",
+    "有界带符号教师系数稳定辅助更新",
+    "成功相对成对长度奖励鼓励高效完成"
+   ],
+   "innovations": [
+    "不同于 SEED 的轨迹级技能，只蒸馏被判错的步",
+    "tanh 截断保留负向抑制，而非 sigmoid 单向衰减"
+   ],
+   "method": "SFT 预热后策略自析轨迹、生成逐步复盘技能，仅在错误步蒸馏，叠加 GRPO。",
+   "results": "Qwen2.5-3B ALFWorld 97.7%、WebShop 85.2%，超 SEED 5.9/6.3 点；32B 99.2% vs GRPO 85.2%，步数 22.0→7.7；未见任务 89.6%（+23.2 点，交互 -46.7%）。",
+   "value": "辅助监督对准真正要纠正的决策，而非整条轨迹。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出错误步级 on-policy 自蒸馏框架",
+    "agentChange": "SFT 预热后策略自析轨迹、生成逐步复盘技能，仅在错误步蒸馏，叠加 GRPO。",
+    "selfEvolution": null,
+    "evidence": [
+     "Qwen2.5-3B ALFWorld 97.7%、WebShop 85.2%，超 SEED 5.9/6.3 点；32B 99.2% vs GRPO 85.2%，步数 22.0→7.7；未见任务 89.6%（+23.2 点，交互 -46.7%）。",
+     "tanh 截断保留负向抑制，而非 sigmoid 单向衰减"
+    ],
+    "faq": {
+     "problem": "只在错误步做自蒸馏，ALFWorld 97.7% 且交互步数降 65%。",
+     "mechanism": "SFT 预热后策略自析轨迹、生成逐步复盘技能，仅在错误步蒸馏，叠加 GRPO。",
+     "agentChange": "SFT 预热后策略自析轨迹、生成逐步复盘技能，仅在错误步蒸馏，叠加 GRPO。",
+     "support": "Qwen2.5-3B ALFWorld 97.7%、WebShop 85.2%，超 SEED 5.9/6.3 点；32B 99.2% vs GRPO 85.2%，步数 22.0→7.7；未见任务 89.6%（+23.2 点，交互 -46.7%）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "辅助监督对准真正要纠正的决策，而非整条轨迹。"
+   }
+  },
+  {
+   "id": "2610.39711",
+   "version": 1,
+   "title": "Sandman: Building and Operating Sandboxes for Agentic Reinforcement Learning on Shared Kubernetes",
+   "abstract": "共享 K8s 集群普通 pod 做 RL 沙箱，单测 11,858 并发、建 313 万实例。",
+   "authors": [],
+   "published": "2026-10-30T04:00:00.000Z",
+   "updated": "2026-10-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.39711",
+   "pdf": "https://arxiv.org/pdf/2610.39711",
+   "announceType": "new",
+   "summary": "共享 K8s 集群普通 pod 做 RL 沙箱，单测 11,858 并发、建 313 万实例。",
+   "topic": "Agent 与 Agentic RL",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.39711"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "沙箱等待与判分有效性开始计入 RL 吞吐账。",
+   "repository": null,
+   "motivation": "agentic RL 突发创建上千环境，托管沙箱服务扛不住。",
+   "coreProblem": "托管解释器锁死规格、跑不了任务镜像，限速批量创建致回收超时。",
+   "contributions": [
+    "构建保状态的 pod 级沙箱服务（每 pod 挂小 daemon）并开源",
+    "给出设计取舍与生产规模实测"
+   ],
+   "innovations": [
+    "不同于自建专用机群，直接复用训练集群 CPU 余量",
+    "创建权归 provider，取消不打断创建，避免孤儿 pod"
+   ],
+   "method": "每沙箱一个 pod、daemon 只读挂进未改镜像；pool 令牌桶限速并打散调度。",
+   "results": "单测 11,858 并发；122 次 run 建 313 万沙箱；create-to-ready 中位 5–7 s，打散 p99 8 s vs 57 s；沙箱成本仅 GPU 的 1.7–3.5%。",
+   "value": "沙箱等待与判分有效性开始计入 RL 吞吐账。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "构建保状态的 pod 级沙箱服务（每 pod 挂小 daemon）并开源",
+    "agentChange": "每沙箱一个 pod、daemon 只读挂进未改镜像；pool 令牌桶限速并打散调度。",
+    "selfEvolution": null,
+    "evidence": [
+     "单测 11,858 并发；122 次 run 建 313 万沙箱；create-to-ready 中位 5–7 s，打散 p99 8 s vs 57 s；沙箱成本仅 GPU 的 1.7–3.5%。",
+     "创建权归 provider，取消不打断创建，避免孤儿 pod"
+    ],
+    "faq": {
+     "problem": "共享 K8s 集群普通 pod 做 RL 沙箱，单测 11,858 并发、建 313 万实例。",
+     "mechanism": "每沙箱一个 pod、daemon 只读挂进未改镜像；pool 令牌桶限速并打散调度。",
+     "agentChange": "每沙箱一个 pod、daemon 只读挂进未改镜像；pool 令牌桶限速并打散调度。",
+     "support": "单测 11,858 并发；122 次 run 建 313 万沙箱；create-to-ready 中位 5–7 s，打散 p99 8 s vs 57 s；沙箱成本仅 GPU 的 1.7–3.5%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "沙箱等待与判分有效性开始计入 RL 吞吐账。"
+   }
+  },
+  {
+   "id": "2610.38095",
+   "version": 1,
+   "title": "Nemotron 3.5 Super and Lightning: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Models for Agentic AI",
+   "abstract": "开源 120B-A12B 混合 Mamba-MoE，SWE-bench Pro 51.78% 反超 550B-A55B 前代。",
+   "authors": [],
+   "published": "2026-10-30T04:00:00.000Z",
+   "updated": "2026-10-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.38095",
+   "pdf": "https://arxiv.org/pdf/2610.38095",
+   "announceType": "new",
+   "summary": "开源 120B-A12B 混合 Mamba-MoE，SWE-bench Pro 51.78% 反超 550B-A55B 前代。",
+   "topic": "大模型与训练方法",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.38095"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "小激活＋内建投机＋敏感度量化，给出高效 agent 模型范式。",
+   "repository": null,
+   "motivation": "长时程 agent 既要能力又要吞吐，稠密大模型太贵。",
+   "coreProblem": "注意力 KV 随会话线性增长压并发，长上下文与吞吐难兼得。",
+   "contributions": [
+    "开源 120B-A12B 多模态与 30B-A3B 文本两组混合 Mamba-MoE",
+    "2.83T token、22 语种印度语料＋100B 继续预训练",
+    "65.4B 软工中训练与 9B 长上下文恢复阶段"
+   ],
+   "innovations": [
+    "单递归共享 MTP 头＋隐状态混合，把投机解码器内建进模型",
+    "不做统一位宽 PTQ：按模块敏感度定精度再量化感知蒸馏",
+    "用多 scaffold 的 agent 轨迹中训练换跨 harness 鲁棒性"
+   ],
+   "method": "从 Nemotron 3 蒸馏 1T token，接 Indic CPT、1M 上下文与软工中训练，再 SFT+RLVR+RLHF+MOPD。",
+   "results": "SWE-bench Pro 51.78 vs Ultra 49.66（激活参数少 4.6×）；GraphWalks≤1M 89.71 vs 63.28；GB200 4,856 tok/s/GPU；NVFP4 吞吐 2.43× BF16、2.34× Qwen3.5；RULER-1M 恢复至 81.0。",
+   "value": "小激活＋内建投机＋敏感度量化，给出高效 agent 模型范式。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "开源 120B-A12B 多模态与 30B-A3B 文本两组混合 Mamba-MoE",
+    "agentChange": "从 Nemotron 3 蒸馏 1T token，接 Indic CPT、1M 上下文与软工中训练，再 SFT+RLVR+RLHF+MOPD。",
+    "selfEvolution": null,
+    "evidence": [
+     "SWE-bench Pro 51.78 vs Ultra 49.66（激活参数少 4.6×）；GraphWalks≤1M 89.71 vs 63.28；GB200 4,856 tok/s/GPU；NVFP4 吞吐 2.43× BF16、2.34× Qwen3.5；RULER-1M 恢复至 81.0。",
+     "不做统一位宽 PTQ：按模块敏感度定精度再量化感知蒸馏",
+     "用多 scaffold 的 agent 轨迹中训练换跨 harness 鲁棒性"
+    ],
+    "faq": {
+     "problem": "开源 120B-A12B 混合 Mamba-MoE，SWE-bench Pro 51.78% 反超 550B-A55B 前代。",
+     "mechanism": "从 Nemotron 3 蒸馏 1T token，接 Indic CPT、1M 上下文与软工中训练，再 SFT+RLVR+RLHF+MOPD。",
+     "agentChange": "从 Nemotron 3 蒸馏 1T token，接 Indic CPT、1M 上下文与软工中训练，再 SFT+RLVR+RLHF+MOPD。",
+     "support": "SWE-bench Pro 51.78 vs Ultra 49.66（激活参数少 4.6×）；GraphWalks≤1M 89.71 vs 63.28；GB200 4,856 tok/s/GPU；NVFP4 吞吐 2.43× BF16、2.34× Qwen3.5；RULER-1M 恢复至 81.0。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "小激活＋内建投机＋敏感度量化，给出高效 agent 模型范式。"
+   }
+  },
+  {
+   "id": "2610.40564",
+   "version": 1,
+   "title": "Training Foundation Models with a Single Algorithm",
+   "abstract": "证明预训练到 RL 都是同一极大似然拟合，统一训练把遗忘压低一个量级。",
+   "authors": [],
+   "published": "2026-10-30T04:00:00.000Z",
+   "updated": "2026-10-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.40564",
+   "pdf": "https://arxiv.org/pdf/2610.40564",
+   "announceType": "new",
+   "summary": "证明预训练到 RL 都是同一极大似然拟合，统一训练把遗忘压低一个量级。",
+   "topic": "大模型与训练方法",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.40564"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "训练流程设计变成数据混合调度问题。",
+   "repository": null,
+   "motivation": "各阶段换算法换数据，无法判断哪项决策决定终态能力。",
+   "coreProblem": "阶段切分使 RL 目标与似然损失割裂，一切换就灾难性遗忘。",
+   "contributions": [
+    "证明 MaxRL/REINFORCE/TailRL 都是对成功条件分布的似然拟合",
+    "静态数据与 RL 生成共用单一加权似然",
+    "124M 受控与 0.76B 上验证性能与保留"
+   ],
+   "innovations": [
+    "把分阶段训练降为混合权重取 one-hot 的特例，算法全程不变",
+    "生成策略与优化策略解耦仍共用同一似然，无需严格 on-policy",
+    "用数据混合比例替代 SFT 损失系数与 KL 惩罚来调保留"
+   ],
+   "method": "每类数据给 prompt 与目标分布，按 λ 混合后统一最小化负对数似然。",
+   "results": "混入 midtraining 后 held-out 损失 2.537 vs 分阶段最好 4.135、常规 12.15；五基准均分偏离 42.37 仅 ≤0.52 点；SciQ 50.20→62.00；代价 MBPP+ 25.41→21.05。",
+   "value": "训练流程设计变成数据混合调度问题。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "证明 MaxRL/REINFORCE/TailRL 都是对成功条件分布的似然拟合",
+    "agentChange": "每类数据给 prompt 与目标分布，按 λ 混合后统一最小化负对数似然。",
+    "selfEvolution": null,
+    "evidence": [
+     "混入 midtraining 后 held-out 损失 2.537 vs 分阶段最好 4.135、常规 12.15；五基准均分偏离 42.37 仅 ≤0.52 点；SciQ 50.20→62.00；代价 MBPP+ 25.41→21.05。",
+     "生成策略与优化策略解耦仍共用同一似然，无需严格 on-policy",
+     "用数据混合比例替代 SFT 损失系数与 KL 惩罚来调保留"
+    ],
+    "faq": {
+     "problem": "证明预训练到 RL 都是同一极大似然拟合，统一训练把遗忘压低一个量级。",
+     "mechanism": "每类数据给 prompt 与目标分布，按 λ 混合后统一最小化负对数似然。",
+     "agentChange": "每类数据给 prompt 与目标分布，按 λ 混合后统一最小化负对数似然。",
+     "support": "混入 midtraining 后 held-out 损失 2.537 vs 分阶段最好 4.135、常规 12.15；五基准均分偏离 42.37 仅 ≤0.52 点；SciQ 50.20→62.00；代价 MBPP+ 25.41→21.05。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "训练流程设计变成数据混合调度问题。"
+   }
+  },
+  {
+   "id": "2610.40002",
+   "version": 1,
+   "title": "How Much Should a VLA Trust Its Reasoning? Step-Level Guidance as a Measured Action-Value Function",
+   "abstract": "逐步调推理引导强度、用实测动作值训控制器，闭环 262/300 超原策略。",
+   "authors": [],
+   "published": "2026-10-30T04:00:00.000Z",
+   "updated": "2026-10-30T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.40002",
+   "pdf": "https://arxiv.org/pdf/2610.40002",
+   "announceType": "new",
+   "summary": "逐步调推理引导强度、用实测动作值训控制器，闭环 262/300 超原策略。",
+   "topic": "机器人 / VLA",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.40002"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给 reasoning-VLA 一个推理强度控制律，冻结模型即可加装。",
+   "repository": null,
+   "motivation": "驾驶 VLA 的推理链常错，\"检测后丢弃\"救不了看着对却误导的 trace。",
+   "coreProblem": "幻觉检测最高仅 0.51 IoU，且只能整条保留或丢弃，无中间强度。",
+   "contributions": [
+    "提出 CoC-CFG：推理 span 作引导轴，w=1 精确还原原策略",
+    "把逐步权重选择建成 MDP，一步分支实测动作值",
+    "Q-adaptive guidance 在 Alpasim/Waymo 超固定权重与在线 RL"
+   ],
+   "innovations": [
+    "不问对错、改问该驱动多强，把缺陷变连续可控量",
+    "专家冻结＋噪声固定使动作值可实测，学习退化为回归",
+    "不同于 GRPO 派一分给整条轨迹，只做离锚保守改进"
+   ],
+   "method": "每 Euler 步在完整与去推理速度场连线上按 w 插值；critic 回归实测值，推理用惩罚后 argmax。",
+   "results": "Alpasim 开环位移代价较 w=1 降 16.5%（GRPO 13.8%）；闭环 262/300 vs 252，有责碰撞 7 vs 13；Waymo 留出 8.3032 vs 最优固定权重 8.2412，隐藏测试 8.135 vs 8.079。",
+   "value": "给 reasoning-VLA 一个推理强度控制律，冻结模型即可加装。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 CoC-CFG：推理 span 作引导轴，w=1 精确还原原策略",
+    "agentChange": "每 Euler 步在完整与去推理速度场连线上按 w 插值；critic 回归实测值，推理用惩罚后 argmax。",
+    "selfEvolution": null,
+    "evidence": [
+     "Alpasim 开环位移代价较 w=1 降 16.5%（GRPO 13.8%）；闭环 262/300 vs 252，有责碰撞 7 vs 13；Waymo 留出 8.3032 vs 最优固定权重 8.2412，隐藏测试 8.135 vs 8.079。",
+     "专家冻结＋噪声固定使动作值可实测，学习退化为回归",
+     "不同于 GRPO 派一分给整条轨迹，只做离锚保守改进"
+    ],
+    "faq": {
+     "problem": "逐步调推理引导强度、用实测动作值训控制器，闭环 262/300 超原策略。",
+     "mechanism": "每 Euler 步在完整与去推理速度场连线上按 w 插值；critic 回归实测值，推理用惩罚后 argmax。",
+     "agentChange": "每 Euler 步在完整与去推理速度场连线上按 w 插值；critic 回归实测值，推理用惩罚后 argmax。",
+     "support": "Alpasim 开环位移代价较 w=1 降 16.5%（GRPO 13.8%）；闭环 262/300 vs 252，有责碰撞 7 vs 13；Waymo 留出 8.3032 vs 最优固定权重 8.2412，隐藏测试 8.135 vs 8.079。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "给 reasoning-VLA 一个推理强度控制律，冻结模型即可加装。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-10-29",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-10-29 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-30T21:30:06.000Z",
+ "latestPaperAt": "2026-10-30T04:00:00.000Z",
+ "totalMatched": 12,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 12
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 60,
+ "trends": {
+  "status": "accumulating",
+  "days": 60,
+  "minimumDays": 15,
+  "message": "已积累 60/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-30T21:30:06.000Z",
+ "snapshotDay": "2026-10-30",
+ "historical": true
+}

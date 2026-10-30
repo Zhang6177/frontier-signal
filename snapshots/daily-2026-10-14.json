@@ -1,0 +1,1016 @@
+{
+ "papers": [
+  {
+   "id": "2610.18845",
+   "version": 1,
+   "title": "The Last Remote Sensing Model Built by Humans? Casting Any Earth Observation Task as Recursive Self-Improvement",
+   "abstract": "编码智能体自主构建EO模型，4基准SOTA，1%标签保持精度",
+   "authors": [],
+   "published": "2026-10-14T04:00:00.000Z",
+   "updated": "2026-10-14T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.18845",
+   "pdf": "https://arxiv.org/pdf/2610.18845",
+   "announceType": "new",
+   "summary": "编码智能体自主构建EO模型，4基准SOTA，1%标签保持精度",
+   "topic": "遥感 / 高光谱 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.18845"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "EO模型研发从专家手搓转向智能体自改进新范式",
+   "repository": null,
+   "motivation": "EO模型靠专家手搓需数周至数月，灾害响应等场景等不起",
+   "coreProblem": "现有EO智能体只编排固定模型与工具，不能自建模型",
+   "contributions": [
+    "提出RSI4EO范式：任何EO任务= harness + verifier",
+    "通用编码智能体递归自改进EO模型（12h、4×GB200离线）",
+    "光学/SAR/多光谱时序四类基准验证"
+   ],
+   "innovations": [
+    "首次把整个模型构建与训练循环交给智能体",
+    "将少标签、标签预算、域适应统一为harness/verifier选择"
+   ],
+   "method": "智能体写训练代码、只见密封verifier分数；下一代用前代伪标签与软目标构建",
+   "results": "BRIGHT mIoU 71.56（+2.70）、HRSID mask AP 68.7（+4.8）、OpenEarthMap mIoU 71.6（+4.1）、PASTIS 69.72（+2.63），均SOTA",
+   "value": "EO模型研发从专家手搓转向智能体自改进新范式",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出RSI4EO范式：任何EO任务= harness + verifier",
+    "agentChange": "智能体写训练代码、只见密封verifier分数；下一代用前代伪标签与软目标构建",
+    "selfEvolution": null,
+    "evidence": [
+     "BRIGHT mIoU 71.56（+2.70）、HRSID mask AP 68.7（+4.8）、OpenEarthMap mIoU 71.6（+4.1）、PASTIS 69.72（+2.63），均SOTA",
+     "将少标签、标签预算、域适应统一为harness/verifier选择"
+    ],
+    "faq": {
+     "problem": "编码智能体自主构建EO模型，4基准SOTA，1%标签保持精度",
+     "mechanism": "智能体写训练代码、只见密封verifier分数；下一代用前代伪标签与软目标构建",
+     "agentChange": "智能体写训练代码、只见密封verifier分数；下一代用前代伪标签与软目标构建",
+     "support": "BRIGHT mIoU 71.56（+2.70）、HRSID mask AP 68.7（+4.8）、OpenEarthMap mIoU 71.6（+4.1）、PASTIS 69.72（+2.63），均SOTA",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "EO模型研发从专家手搓转向智能体自改进新范式"
+   }
+  },
+  {
+   "id": "2610.18624",
+   "version": 1,
+   "title": "MajorTOM: Elliot Pretrain — A Multi-Sensor, Multi-Temporal Pretraining Dataset for Earth Observation",
+   "abstract": "27.9万图块、6.3TB多传感器多时序多模态开放预训练语料",
+   "authors": [],
+   "published": "2026-10-14T04:00:00.000Z",
+   "updated": "2026-10-14T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.18624",
+   "pdf": "https://arxiv.org/pdf/2610.18624",
+   "announceType": "new",
+   "summary": "27.9万图块、6.3TB多传感器多时序多模态开放预训练语料",
+   "topic": "遥感 / 高光谱 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.18624"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "补齐地理空间基础模型的\"AI-ready\"数据缺口",
+   "repository": null,
+   "motivation": "开放EO预训练数据缺\"多传感器+时序结构+文本\"三合一",
+   "coreProblem": "静态覆盖、季节循环、突发事件无法用同一时序采样同时满足",
+   "contributions": [
+    "279,166图块、6.3TB COG语料：S2+Landsat+S1+DEM+WorldCover+OSM+ERA5",
+    "三时序分区：单时相25万/月度1.25万/突发1.67万",
+    "加载时生成16族VLP任务、事实表与caption的配套库"
+   ],
+   "innovations": [
+    "首个统一多传感器、多时序与文本的开放预训练语料",
+    "用AlphaEarth嵌入聚类从500万图块网格中全局选块"
+   ],
+   "method": "1056×1056像素10m共享网格；TACO v3 Parquet索引，支持云流式、读前过滤",
+   "results": "25%精选子集在8/9基准匹敌或超全量；DEM/WorldCover作预测目标提升8/9基准（作输入反降5/9）",
+   "value": "补齐地理空间基础模型的\"AI-ready\"数据缺口",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "279,166图块、6.3TB COG语料：S2+Landsat+S1+DEM+WorldCover+OSM+ERA5",
+    "agentChange": "1056×1056像素10m共享网格；TACO v3 Parquet索引，支持云流式、读前过滤",
+    "selfEvolution": null,
+    "evidence": [
+     "25%精选子集在8/9基准匹敌或超全量；DEM/WorldCover作预测目标提升8/9基准（作输入反降5/9）",
+     "用AlphaEarth嵌入聚类从500万图块网格中全局选块"
+    ],
+    "faq": {
+     "problem": "27.9万图块、6.3TB多传感器多时序多模态开放预训练语料",
+     "mechanism": "1056×1056像素10m共享网格；TACO v3 Parquet索引，支持云流式、读前过滤",
+     "agentChange": "1056×1056像素10m共享网格；TACO v3 Parquet索引，支持云流式、读前过滤",
+     "support": "25%精选子集在8/9基准匹敌或超全量；DEM/WorldCover作预测目标提升8/9基准（作输入反降5/9）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "补齐地理空间基础模型的\"AI-ready\"数据缺口"
+   }
+  },
+  {
+   "id": "2610.18323",
+   "version": 1,
+   "title": "Omni-RS: Unifying Multi-Task Understanding and Generation in Remote Sensing",
+   "abstract": "单模型统一4理解+5生成任务，3B胜过GeoChat-7B",
+   "authors": [],
+   "published": "2026-10-14T04:00:00.000Z",
+   "updated": "2026-10-14T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.18323",
+   "pdf": "https://arxiv.org/pdf/2610.18323",
+   "announceType": "new",
+   "summary": "单模型统一4理解+5生成任务，3B胜过GeoChat-7B",
+   "topic": "遥感 / 高光谱 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.18323"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "单模型完成\"先理解后生成\"的地理空间工作流",
+   "repository": null,
+   "motivation": "真实地理应用需同一场景既理解又生成（损毁评估+补全）",
+   "coreProblem": "现有统一模型的生成能力仅限文生图，不支持需参考图任务",
+   "contributions": [
+    "Omni-RS框架：Scene-Guided Two-Stage Training",
+    "UniGen统一多任务生成数据集",
+    "Detailed Visual Conditioning支持参考图类生成"
+   ],
+   "innovations": [
+    "首次用MLLM理解隐状态直接作DiT生成的场景先验",
+    "生成覆盖文生图/修复/外扩/RGB→SAR/可控共5任务"
+   ],
+   "method": "先将MLLM适配RS理解，再用其隐状态引导扩散 Transformer",
+   "results": "VRSBench 49.89%（3B，超GeoChat-7B +3.35%）；RSVQA-LR零样本均值92.52 SOTA；修复LPIPS -0.12、外扩FID 35.33",
+   "value": "单模型完成\"先理解后生成\"的地理空间工作流",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "Omni-RS框架：Scene-Guided Two-Stage Training",
+    "agentChange": "先将MLLM适配RS理解，再用其隐状态引导扩散 Transformer",
+    "selfEvolution": null,
+    "evidence": [
+     "VRSBench 49.89%（3B，超GeoChat-7B +3.35%）；RSVQA-LR零样本均值92.52 SOTA；修复LPIPS -0.12、外扩FID 35.33",
+     "生成覆盖文生图/修复/外扩/RGB→SAR/可控共5任务"
+    ],
+    "faq": {
+     "problem": "单模型统一4理解+5生成任务，3B胜过GeoChat-7B",
+     "mechanism": "先将MLLM适配RS理解，再用其隐状态引导扩散 Transformer",
+     "agentChange": "先将MLLM适配RS理解，再用其隐状态引导扩散 Transformer",
+     "support": "VRSBench 49.89%（3B，超GeoChat-7B +3.35%）；RSVQA-LR零样本均值92.52 SOTA；修复LPIPS -0.12、外扩FID 35.33",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "单模型完成\"先理解后生成\"的地理空间工作流"
+   }
+  },
+  {
+   "id": "2610.18369",
+   "version": 1,
+   "title": "Hallucination-aware Faithful Reasoning in Remote Sensing",
+   "abstract": "诊断过程级幻觉并纠偏，RS忠实推理最高+11.64",
+   "authors": [],
+   "published": "2026-10-14T04:00:00.000Z",
+   "updated": "2026-10-14T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.18369",
+   "pdf": "https://arxiv.org/pdf/2610.18369",
+   "announceType": "new",
+   "summary": "诊断过程级幻觉并纠偏，RS忠实推理最高+11.64",
+   "topic": "遥感 / 高光谱 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.18369"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "RS推理可信部署需先\"忠实于图像\"",
+   "repository": null,
+   "motivation": "RS MLLM推理常生成与视觉证据矛盾的无支撑内容",
+   "coreProblem": "现有后训练只监督最终答案对错，不纠正推理链中段幻觉",
+   "contributions": [
+    "SFHD-43K：4.3万条结构化细粒度幻觉标注",
+    "幻觉检测器：识别类型、成因与支持证据",
+    "Safe Detector-Guided Corrective Rollout框架"
+   ],
+   "innovations": [
+    "首次对RS推理\"过程级\"幻觉做诊断-纠正式监督",
+    "安全门控决定改不改、怎么改，避免越改越偏"
+   ],
+   "method": "五元复合奖励（准确/忠实/改进/格式/安全）驱动RL；Qwen3.5 0.8B-9B",
+   "results": "9B平均72.53，四基准最高+11.64；去掉RL或自反思平均降至67.x",
+   "value": "RS推理可信部署需先\"忠实于图像\"",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "SFHD-43K：4.3万条结构化细粒度幻觉标注",
+    "agentChange": "五元复合奖励（准确/忠实/改进/格式/安全）驱动RL；Qwen3.5 0.8B-9B",
+    "selfEvolution": null,
+    "evidence": [
+     "9B平均72.53，四基准最高+11.64；去掉RL或自反思平均降至67.x",
+     "安全门控决定改不改、怎么改，避免越改越偏"
+    ],
+    "faq": {
+     "problem": "诊断过程级幻觉并纠偏，RS忠实推理最高+11.64",
+     "mechanism": "五元复合奖励（准确/忠实/改进/格式/安全）驱动RL；Qwen3.5 0.8B-9B",
+     "agentChange": "五元复合奖励（准确/忠实/改进/格式/安全）驱动RL；Qwen3.5 0.8B-9B",
+     "support": "9B平均72.53，四基准最高+11.64；去掉RL或自反思平均降至67.x",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "RS推理可信部署需先\"忠实于图像\""
+   }
+  },
+  {
+   "id": "2610.16769",
+   "version": 1,
+   "title": "Geospatial Vector Geometry as a Native Spatial Modality for Vision-Language Models",
+   "abstract": "矢量几何成为VLM原生模态，5项空间任务平均+11%",
+   "authors": [],
+   "published": "2026-10-14T04:00:00.000Z",
+   "updated": "2026-10-14T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.16769",
+   "pdf": "https://arxiv.org/pdf/2610.16769",
+   "announceType": "new",
+   "summary": "矢量几何成为VLM原生模态，5项空间任务平均+11%",
+   "topic": "遥感 / 高光谱 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.16769"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给VLM地理空间推理一个内部几何参照系",
+   "repository": null,
+   "motivation": "大地理尺度下视觉观测有限，VLM难建准确空间参照",
+   "coreProblem": "把GeoJSON当文本粘贴给VLM并不稳定有效，甚至降低精度",
+   "contributions": [
+    "保留矢量对象空间结构的几何表示",
+    "按查询关系与视觉/语言内容交互的几何交互策略",
+    "五项空间推理任务系统评测（含地理迁移）"
+   ],
+   "innovations": [
+    "首次将地理矢量几何从\"文本注入\"升格为原生模态",
+    "感知与推理共享同一几何参照，一致性显著提升"
+   ],
+   "method": "显式空间基 + 点/路径级状态在多模态计算中持续交互",
+   "results": "相对最强基线平均精度+11%；跨模态grounding 87.9%（超Kimi K2.5 20pp）；Area/Distance +27pp",
+   "value": "给VLM地理空间推理一个内部几何参照系",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "保留矢量对象空间结构的几何表示",
+    "agentChange": "显式空间基 + 点/路径级状态在多模态计算中持续交互",
+    "selfEvolution": null,
+    "evidence": [
+     "相对最强基线平均精度+11%；跨模态grounding 87.9%（超Kimi K2.5 20pp）；Area/Distance +27pp",
+     "感知与推理共享同一几何参照，一致性显著提升"
+    ],
+    "faq": {
+     "problem": "矢量几何成为VLM原生模态，5项空间任务平均+11%",
+     "mechanism": "显式空间基 + 点/路径级状态在多模态计算中持续交互",
+     "agentChange": "显式空间基 + 点/路径级状态在多模态计算中持续交互",
+     "support": "相对最强基线平均精度+11%；跨模态grounding 87.9%（超Kimi K2.5 20pp）；Area/Distance +27pp",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "给VLM地理空间推理一个内部几何参照系"
+   }
+  },
+  {
+   "id": "2610.17944",
+   "version": 1,
+   "title": "AI-Enhanced Hyperspectral Imaging for Intraoperative Detection of Low-Grade Glioma",
+   "abstract": "术中高光谱检测低级别胶质瘤，AUC 74.5% vs RGB 64.0%",
+   "authors": [],
+   "published": "2026-10-14T04:00:00.000Z",
+   "updated": "2026-10-14T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.17944",
+   "pdf": "https://arxiv.org/pdf/2610.17944",
+   "announceType": "new",
+   "summary": "术中高光谱检测低级别胶质瘤，AUC 74.5% vs RGB 64.0%",
+   "topic": "遥感 / 高光谱 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.17944"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为LGG全切提供低成本术中导航备选",
+   "repository": null,
+   "motivation": "低级别胶质瘤白光下与正常脑组织极相似，术中难辨",
+   "coreProblem": "术中MRI/超声昂贵复杂；既有HSI研究多针对高级别胶质瘤",
+   "contributions": [
+    "LGG肿瘤-正常组织光谱差异表征",
+    "HSI与RGB配对对比（相同位置、患者级划分）",
+    "3D CNN等分类模型系统评测"
+   ],
+   "innovations": [
+    "首个专门聚焦低级别胶质瘤的术中HSI临床研究",
+    "发现肿瘤组织反射率系统性偏低，关联血红蛋白/氧合差异"
+   ],
+   "method": "3D CNN融合光谱+空间特征；患者级数据划分防泄漏",
+   "results": "3D CNN中位ROC-AUC 74.5%（纯光谱XGBoost 67.9%、RGB 64.0%）",
+   "value": "为LGG全切提供低成本术中导航备选",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "LGG肿瘤-正常组织光谱差异表征",
+    "agentChange": "3D CNN融合光谱+空间特征；患者级数据划分防泄漏",
+    "selfEvolution": null,
+    "evidence": [
+     "3D CNN中位ROC-AUC 74.5%（纯光谱XGBoost 67.9%、RGB 64.0%）",
+     "发现肿瘤组织反射率系统性偏低，关联血红蛋白/氧合差异"
+    ],
+    "faq": {
+     "problem": "术中高光谱检测低级别胶质瘤，AUC 74.5% vs RGB 64.0%",
+     "mechanism": "3D CNN融合光谱+空间特征；患者级数据划分防泄漏",
+     "agentChange": "3D CNN融合光谱+空间特征；患者级数据划分防泄漏",
+     "support": "3D CNN中位ROC-AUC 74.5%（纯光谱XGBoost 67.9%、RGB 64.0%）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为LGG全切提供低成本术中导航备选"
+   }
+  },
+  {
+   "id": "2610.18543",
+   "version": 1,
+   "title": "Beyond the Encoder: Object-Centric Representations Emerging from Segmentation Foundation Models",
+   "abstract": "SAM2物体指针直接用于肿瘤预测，AUC 0.851",
+   "authors": [],
+   "published": "2026-10-14T04:00:00.000Z",
+   "updated": "2026-10-14T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.18543",
+   "pdf": "https://arxiv.org/pdf/2610.18543",
+   "announceType": "new",
+   "summary": "SAM2物体指针直接用于肿瘤预测，AUC 0.851",
+   "topic": "基础模型 / 计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.18543"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为SAM系分割基础模型挖掘可迁移表示开辟新路径",
+   "repository": null,
+   "motivation": "基础模型通常只当编码器取特征，其余表示被浪费",
+   "coreProblem": "分割通路执行中形成的物体级表示能否迁移未知",
+   "contributions": [
+    "验证SAM2 object pointers在两项PET/CT肿瘤任务的可迁移性",
+    "提出任务引导式object pointers（分割+预测联合目标）",
+    "表示分析：与放射组学关联、类依赖组织、空间梯度"
+   ],
+   "innovations": [
+    "首次证明分割通路（非编码器）无需下游监督即含肿瘤判别信息",
+    "较难的复发预测任务上纯分割指针反而优于任务引导版"
+   ],
+   "method": "object pointers自适应池化+分类头；辅助目标联合塑造指针空间",
+   "results": "癌种分类任务引导AUC 0.851（放射组学0.833、指针+组学0.849）；复发预测AUC 0.631（组学0.518、编码器0.504）",
+   "value": "为SAM系分割基础模型挖掘可迁移表示开辟新路径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "验证SAM2 object pointers在两项PET/CT肿瘤任务的可迁移性",
+    "agentChange": "object pointers自适应池化+分类头；辅助目标联合塑造指针空间",
+    "selfEvolution": null,
+    "evidence": [
+     "癌种分类任务引导AUC 0.851（放射组学0.833、指针+组学0.849）；复发预测AUC 0.631（组学0.518、编码器0.504）",
+     "较难的复发预测任务上纯分割指针反而优于任务引导版"
+    ],
+    "faq": {
+     "problem": "SAM2物体指针直接用于肿瘤预测，AUC 0.851",
+     "mechanism": "object pointers自适应池化+分类头；辅助目标联合塑造指针空间",
+     "agentChange": "object pointers自适应池化+分类头；辅助目标联合塑造指针空间",
+     "support": "癌种分类任务引导AUC 0.851（放射组学0.833、指针+组学0.849）；复发预测AUC 0.631（组学0.518、编码器0.504）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为SAM系分割基础模型挖掘可迁移表示开辟新路径"
+   }
+  },
+  {
+   "id": "2610.18072",
+   "version": 1,
+   "title": "LensErase: A Foundation Model for Erase Anything",
+   "abstract": "亿级数据\"擦除任意物\"基础模型，六基准SOTA",
+   "authors": [],
+   "published": "2026-10-14T04:00:00.000Z",
+   "updated": "2026-10-14T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.18072",
+   "pdf": "https://arxiv.org/pdf/2610.18072",
+   "announceType": "new",
+   "summary": "亿级数据\"擦除任意物\"基础模型，六基准SOTA",
+   "topic": "基础模型 / 计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.18072"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "擦除类应用与系统的基础级底座模型",
+   "repository": null,
+   "motivation": "现有擦除模型覆盖场景窄，文字/水印/多对象难处理",
+   "coreProblem": "擦除数据集仅十万至百万级，场景覆盖不足",
+   "contributions": [
+    "LensErase-100M：1.01亿源图-掩码-目标三元组",
+    "Mask-Aware RoPE掩码注入机制",
+    "契约引导区域感知RL奖励 + TraceFusion推理融合"
+   ],
+   "innovations": [
+    "数据规模超现有擦除数据集2-3个数量级",
+    "3D旋转位置编码把掩码直接注入源图像token，无需独立掩码序列"
+   ],
+   "method": "从文生图模型Lens迁移预训练→SFT→RL→推理融合，覆盖物体/文字/水印/特效",
+   "results": "HiFi Removal 65.8%→82.8%（RL后81.6%，融合后82.8%）；PSNR 28.70→30.82dB；六个公开基准SOTA",
+   "value": "擦除类应用与系统的基础级底座模型",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "LensErase-100M：1.01亿源图-掩码-目标三元组",
+    "agentChange": "从文生图模型Lens迁移预训练→SFT→RL→推理融合，覆盖物体/文字/水印/特效",
+    "selfEvolution": null,
+    "evidence": [
+     "HiFi Removal 65.8%→82.8%（RL后81.6%，融合后82.8%）；PSNR 28.70→30.82dB；六个公开基准SOTA",
+     "3D旋转位置编码把掩码直接注入源图像token，无需独立掩码序列"
+    ],
+    "faq": {
+     "problem": "亿级数据\"擦除任意物\"基础模型，六基准SOTA",
+     "mechanism": "从文生图模型Lens迁移预训练→SFT→RL→推理融合，覆盖物体/文字/水印/特效",
+     "agentChange": "从文生图模型Lens迁移预训练→SFT→RL→推理融合，覆盖物体/文字/水印/特效",
+     "support": "HiFi Removal 65.8%→82.8%（RL后81.6%，融合后82.8%）；PSNR 28.70→30.82dB；六个公开基准SOTA",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "擦除类应用与系统的基础级底座模型"
+   }
+  },
+  {
+   "id": "2610.18861",
+   "version": 1,
+   "title": "Hybrid Reasoning Agents",
+   "abstract": "潜变量+文本混合推理智能体，平均+10.4%且省35-55% token",
+   "authors": [],
+   "published": "2026-10-14T04:00:00.000Z",
+   "updated": "2026-10-14T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.18861",
+   "pdf": "https://arxiv.org/pdf/2610.18861",
+   "announceType": "new",
+   "summary": "潜变量+文本混合推理智能体，平均+10.4%且省35-55% token",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.18861"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "\"潜层思考、文本行动\"的agent新形态",
+   "repository": null,
+   "motivation": "潜在推理高效但无原生工具接口，文本推理透明但昂贵",
+   "coreProblem": "现有潜在推理缺工具访问；文本agent token开销大",
+   "contributions": [
+    "HybridLink：轻量文本/潜在模式切换模块",
+    "连续工作记忆保存无损混合上下文",
+    "HybridSFT + HybridRL两阶段后训练算法"
+   ],
+   "innovations": [
+    "首次在统一生成过程中融合潜在思考与文本工具调用",
+    "潜在思维可直接检视，保留推理透明度"
+   ],
+   "method": "SFT建立协调（自条件化+30），RL学习何时潜在思考、何时文本行动",
+   "results": "11基准平均+10.4%（对比前沿LLM智能体与框架）；token -35.5~54.7%；推理快1.8-2.6×",
+   "value": "\"潜层思考、文本行动\"的agent新形态",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "HybridLink：轻量文本/潜在模式切换模块",
+    "agentChange": "SFT建立协调（自条件化+30），RL学习何时潜在思考、何时文本行动",
+    "selfEvolution": null,
+    "evidence": [
+     "11基准平均+10.4%（对比前沿LLM智能体与框架）；token -35.5~54.7%；推理快1.8-2.6×",
+     "潜在思维可直接检视，保留推理透明度"
+    ],
+    "faq": {
+     "problem": "潜变量+文本混合推理智能体，平均+10.4%且省35-55% token",
+     "mechanism": "SFT建立协调（自条件化+30），RL学习何时潜在思考、何时文本行动",
+     "agentChange": "SFT建立协调（自条件化+30），RL学习何时潜在思考、何时文本行动",
+     "support": "11基准平均+10.4%（对比前沿LLM智能体与框架）；token -35.5~54.7%；推理快1.8-2.6×",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "\"潜层思考、文本行动\"的agent新形态"
+   }
+  },
+  {
+   "id": "2610.18484",
+   "version": 1,
+   "title": "ReTerm: Recovery Training for Self-Improving Terminal Agents",
+   "abstract": "从自身失败中自学恢复，Terminal-Bench 2.0达34.8%",
+   "authors": [],
+   "published": "2026-10-14T04:00:00.000Z",
+   "updated": "2026-10-14T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.18484",
+   "pdf": "https://arxiv.org/pdf/2610.18484",
+   "announceType": "new",
+   "summary": "从自身失败中自学恢复，Terminal-Bench 2.0达34.8%",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.18484"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "失败恢复能力是终端智能体长任务的关键",
+   "repository": null,
+   "motivation": "终端智能体长时执行中遇错难自恢复，最终任务失败",
+   "coreProblem": "现有训练只学成功轨迹，不从失败状态恢复中学习",
+   "contributions": [
+    "ReTerm-10K恢复示范数据集（SFT冷启动）",
+    "ReTerm-GRPO：从失败状态分叉的在线RL"
+   ],
+   "innovations": [
+    "首次从智能体自身失败状态分叉多次独立自恢复尝试",
+    "自改进闭环：仅按恢复尝试是否完成任务赋予奖励"
+   ],
+   "method": "SFT冷启动→在线RL从失败状态分叉；Qwen3.5-9B底座",
+   "results": "Terminal-Bench 2.0 Pass@1 34.8%（+14.6）；SWE-bench Verified 60.4%（+16.4）；超多个32B专用agent",
+   "value": "失败恢复能力是终端智能体长任务的关键",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "ReTerm-10K恢复示范数据集（SFT冷启动）",
+    "agentChange": "SFT冷启动→在线RL从失败状态分叉；Qwen3.5-9B底座",
+    "selfEvolution": null,
+    "evidence": [
+     "Terminal-Bench 2.0 Pass@1 34.8%（+14.6）；SWE-bench Verified 60.4%（+16.4）；超多个32B专用agent",
+     "自改进闭环：仅按恢复尝试是否完成任务赋予奖励"
+    ],
+    "faq": {
+     "problem": "从自身失败中自学恢复，Terminal-Bench 2.0达34.8%",
+     "mechanism": "SFT冷启动→在线RL从失败状态分叉；Qwen3.5-9B底座",
+     "agentChange": "SFT冷启动→在线RL从失败状态分叉；Qwen3.5-9B底座",
+     "support": "Terminal-Bench 2.0 Pass@1 34.8%（+14.6）；SWE-bench Verified 60.4%（+16.4）；超多个32B专用agent",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "失败恢复能力是终端智能体长任务的关键"
+   }
+  },
+  {
+   "id": "2610.18596",
+   "version": 1,
+   "title": "ACCRUE: Continual Off-Policy Reinforcement Learning for Robot Foundation Models",
+   "abstract": "机器人基础模型持续离策略RL，真机训练时间-31~68.5%",
+   "authors": [],
+   "published": "2026-10-14T04:00:00.000Z",
+   "updated": "2026-10-14T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.18596",
+   "pdf": "https://arxiv.org/pdf/2610.18596",
+   "announceType": "new",
+   "summary": "机器人基础模型持续离策略RL，真机训练时间-31~68.5%",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.18596"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "VLA模型可规模化部署的关键一环",
+   "repository": null,
+   "motivation": "RL后训练超越示范能力，但部署要求新任务学习且不忘旧行为",
+   "coreProblem": "on-policy持续RL遗忘、前向迁移有限；off-policy方法只解决单任务样本效率",
+   "contributions": [
+    "ACCRUE：跨任务携带轻量actor/critic的持续RL框架",
+    "蒸馏式旧行为保持 + 继承critic仅适配当前任务",
+    "FORGE/AutoMate仿真与真机双臂序列验证"
+   ],
+   "innovations": [
+    "首次把off-policy学习用于机器人基础模型持续学习",
+    "固定视觉特征使继承学习器与基策略更新兼容"
+   ],
+   "method": "actor向缓存目标蒸馏（少量保留回合）；继承critic只在当前任务转移上更新",
+   "results": "持续AUC +21.0%、负向迁移-70%；真机RL交互时间 -31.0~68.5%，遗忘近零（19-20/20试）",
+   "value": "VLA模型可规模化部署的关键一环",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "ACCRUE：跨任务携带轻量actor/critic的持续RL框架",
+    "agentChange": "actor向缓存目标蒸馏（少量保留回合）；继承critic只在当前任务转移上更新",
+    "selfEvolution": null,
+    "evidence": [
+     "持续AUC +21.0%、负向迁移-70%；真机RL交互时间 -31.0~68.5%，遗忘近零（19-20/20试）",
+     "固定视觉特征使继承学习器与基策略更新兼容"
+    ],
+    "faq": {
+     "problem": "机器人基础模型持续离策略RL，真机训练时间-31~68.5%",
+     "mechanism": "actor向缓存目标蒸馏（少量保留回合）；继承critic只在当前任务转移上更新",
+     "agentChange": "actor向缓存目标蒸馏（少量保留回合）；继承critic只在当前任务转移上更新",
+     "support": "持续AUC +21.0%、负向迁移-70%；真机RL交互时间 -31.0~68.5%，遗忘近零（19-20/20试）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "VLA模型可规模化部署的关键一环"
+   }
+  },
+  {
+   "id": "2610.16078",
+   "version": 1,
+   "title": "Heterogeneous Agentic Coevolution",
+   "abstract": "LLM智能体与专用模型双向共进化，三领域SOTA",
+   "authors": [],
+   "published": "2026-10-14T04:00:00.000Z",
+   "updated": "2026-10-14T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.16078",
+   "pdf": "https://arxiv.org/pdf/2610.16078",
+   "announceType": "new",
+   "summary": "LLM智能体与专用模型双向共进化，三领域SOTA",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.16078"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "领域基础模型自改进的通用路径，不限于LLM",
+   "repository": null,
+   "motivation": "递归自改进目前限于LLM，领域专用模型靠人工改进",
+   "coreProblem": "专用模型进步后，推进它的策略必须随之改变（harness固定失效）",
+   "contributions": [
+    "HACE框架：智能体+专用基础模型互惠共进化",
+    "进化搜索动态优化交互harness",
+    "推荐/蛋白质功能/晶体稳定性三领域验证"
+   ],
+   "innovations": [
+    "首次把递归自改进扩展到异构专用基础模型",
+    "交互协议随双方能力演化由进化搜索持续重构"
+   ],
+   "method": "专用模型监督学习 + 智能体on-policy强化自训练（以已验证增益为奖励）",
+   "results": "Amazon推荐HR@10 +12.9~16.6%；蛋白NDCG 0.6285→0.6745；HACE后35M模型超初始3B（0.6692 vs 0.6339）",
+   "value": "领域基础模型自改进的通用路径，不限于LLM",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "HACE框架：智能体+专用基础模型互惠共进化",
+    "agentChange": "专用模型监督学习 + 智能体on-policy强化自训练（以已验证增益为奖励）",
+    "selfEvolution": null,
+    "evidence": [
+     "Amazon推荐HR@10 +12.9~16.6%；蛋白NDCG 0.6285→0.6745；HACE后35M模型超初始3B（0.6692 vs 0.6339）",
+     "交互协议随双方能力演化由进化搜索持续重构"
+    ],
+    "faq": {
+     "problem": "LLM智能体与专用模型双向共进化，三领域SOTA",
+     "mechanism": "专用模型监督学习 + 智能体on-policy强化自训练（以已验证增益为奖励）",
+     "agentChange": "专用模型监督学习 + 智能体on-policy强化自训练（以已验证增益为奖励）",
+     "support": "Amazon推荐HR@10 +12.9~16.6%；蛋白NDCG 0.6285→0.6745；HACE后35M模型超初始3B（0.6692 vs 0.6339）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "领域基础模型自改进的通用路径，不限于LLM"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-10-13",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-10-13 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-30T21:30:06.000Z",
+ "latestPaperAt": "2026-10-14T04:00:00.000Z",
+ "totalMatched": 1126,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 1126
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 60,
+ "trends": {
+  "status": "accumulating",
+  "days": 60,
+  "minimumDays": 15,
+  "message": "已积累 60/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-30T21:30:06.000Z",
+ "snapshotDay": "2026-10-14",
+ "historical": true
+}

@@ -1,0 +1,1017 @@
+{
+ "papers": [
+  {
+   "id": "2610.18789",
+   "version": 1,
+   "title": "Trust Before Autonomy: Rethinking Agentic Remote Sensing for Crisis Response",
+   "abstract": "对12项智能体RS基准做元分析揭示能力-信任缺口，提出EO自主性分级与信任协议",
+   "authors": [],
+   "published": "2026-10-15T04:00:00.000Z",
+   "updated": "2026-10-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.18789",
+   "pdf": "https://arxiv.org/pdf/2610.18789",
+   "announceType": "new",
+   "summary": "对12项智能体RS基准做元分析揭示能力-信任缺口，提出EO自主性分级与信任协议",
+   "topic": "遥感 / 高光谱 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.18789"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为EO智能体危机部署划定可靠性评估基线",
+   "repository": null,
+   "motivation": "灾害响应要求答案可靠，而不只是能答题",
+   "coreProblem": "基准只测\"答对多少\"，无人测校准、弃答与可复现性",
+   "contributions": [
+    "12项智能体RS/EO/GIS基准研究的证据元分析",
+    "3个可测量的EO特定信任属性 + 危机任务自主性阶梯",
+    "分阶段就绪协议：实装前重放归档应急激活"
+   ],
+   "innovations": [
+    "首次系统审计智能体EO的信任维度（校准/弃答/重复）",
+    "论证\"自主性须挣得\"：现有证据仅支持辅助角色"
+   ],
+   "method": "重析已发表基准的表内对照（完成vs正确、能力vs弃答Spearman相关），不引入新任务与新模型",
+   "results": "12项基准仅1项重复运行、无一测校准；任务成功率超工具调用正确性最多54pp；与专家轨迹差距随长度从7扩至56pp；能力与弃答ρ −0.25~0.50均不显著",
+   "value": "为EO智能体危机部署划定可靠性评估基线",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "12项智能体RS/EO/GIS基准研究的证据元分析",
+    "agentChange": "重析已发表基准的表内对照（完成vs正确、能力vs弃答Spearman相关），不引入新任务与新模型",
+    "selfEvolution": null,
+    "evidence": [
+     "12项基准仅1项重复运行、无一测校准；任务成功率超工具调用正确性最多54pp；与专家轨迹差距随长度从7扩至56pp；能力与弃答ρ −0.25~0.50均不显著",
+     "论证\"自主性须挣得\"：现有证据仅支持辅助角色"
+    ],
+    "faq": {
+     "problem": "对12项智能体RS基准做元分析揭示能力-信任缺口，提出EO自主性分级与信任协议",
+     "mechanism": "重析已发表基准的表内对照（完成vs正确、能力vs弃答Spearman相关），不引入新任务与新模型",
+     "agentChange": "重析已发表基准的表内对照（完成vs正确、能力vs弃答Spearman相关），不引入新任务与新模型",
+     "support": "12项基准仅1项重复运行、无一测校准；任务成功率超工具调用正确性最多54pp；与专家轨迹差距随长度从7扩至56pp；能力与弃答ρ −0.25~0.50均不显著",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为EO智能体危机部署划定可靠性评估基线"
+   }
+  },
+  {
+   "id": "2610.18388",
+   "version": 1,
+   "title": "ReDiS: Reasoning-Diagnosis Self-Evolution for Multimodal Reasoning in Remote Sensing",
+   "abstract": "推理-诊断双专家自进化，0.8B遥感MLLM类别平均精度+6.47pp，4B达SOTA",
+   "authors": [],
+   "published": "2026-10-15T04:00:00.000Z",
+   "updated": "2026-10-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.18388",
+   "pdf": "https://arxiv.org/pdf/2610.18388",
+   "announceType": "new",
+   "summary": "推理-诊断双专家自进化，0.8B遥感MLLM类别平均精度+6.47pp，4B达SOTA",
+   "topic": "遥感 / 高光谱 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.18388"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "小参数遥感MLLM的低成本自进化路线",
+   "repository": null,
+   "motivation": "RS场景小目标密集，推理错误沿多步传播放大",
+   "coreProblem": "预构建CoT昂贵且静态，自一致性强化共享视觉错误",
+   "contributions": [
+    "ReDiS：Reasoner探索证据-答案候选，Diagnoser评估全体",
+    "FTR失败触发恢复：全错组的最小编译级纠偏",
+    "0.8B/2B/4B三个尺度、三基准验证"
+   ],
+   "innovations": [
+    "首次分离推理探索与候选诊断并让两者共进化",
+    "答案锚定门控：仅正确候选获可信度奖励"
+   ],
+   "method": "共享多模态backbone实例化双角色专家；组相对目标优化，诊断反馈仅修正正确候选的奖励",
+   "results": "LHRS-Bench/MME-RS/CHOICE类别平均精度 +6.47（0.8B）/ +6.36（2B）/ +2.32（4B）pp；ReDiS-4B在所比RS MLLM中平均最高",
+   "value": "小参数遥感MLLM的低成本自进化路线",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "ReDiS：Reasoner探索证据-答案候选，Diagnoser评估全体",
+    "agentChange": "共享多模态backbone实例化双角色专家；组相对目标优化，诊断反馈仅修正正确候选的奖励",
+    "selfEvolution": null,
+    "evidence": [
+     "LHRS-Bench/MME-RS/CHOICE类别平均精度 +6.47（0.8B）/ +6.36（2B）/ +2.32（4B）pp；ReDiS-4B在所比RS MLLM中平均最高",
+     "答案锚定门控：仅正确候选获可信度奖励"
+    ],
+    "faq": {
+     "problem": "推理-诊断双专家自进化，0.8B遥感MLLM类别平均精度+6.47pp，4B达SOTA",
+     "mechanism": "共享多模态backbone实例化双角色专家；组相对目标优化，诊断反馈仅修正正确候选的奖励",
+     "agentChange": "共享多模态backbone实例化双角色专家；组相对目标优化，诊断反馈仅修正正确候选的奖励",
+     "support": "LHRS-Bench/MME-RS/CHOICE类别平均精度 +6.47（0.8B）/ +6.36（2B）/ +2.32（4B）pp；ReDiS-4B在所比RS MLLM中平均最高",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "小参数遥感MLLM的低成本自进化路线"
+   }
+  },
+  {
+   "id": "2610.19742",
+   "version": 1,
+   "title": "HyperLoop: Hyperspectral-Assisted Loop Closure Detection in 3D-SLAM for Planetary Exploration",
+   "abstract": "首次把高光谱描述子接入3DGS-SLAM回环闭合，验证月火模拟地形Red-NIR判别力有限",
+   "authors": [],
+   "published": "2026-10-15T04:00:00.000Z",
+   "updated": "2026-10-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.19742",
+   "pdf": "https://arxiv.org/pdf/2610.19742",
+   "announceType": "new",
+   "summary": "首次把高光谱描述子接入3DGS-SLAM回环闭合，验证月火模拟地形Red-NIR判别力有限",
+   "topic": "遥感 / 高光谱 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.19742"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "指出SWIR传感器是行星SLAM可靠回环的关键",
+   "repository": null,
+   "motivation": "行星地形感知混同使SLAM回环检测失效",
+   "coreProblem": "RGB外观描述子在视觉重复与光照变化下退化",
+   "contributions": [
+    "BoSW（TF-IDF光谱词袋）与PCAK-VLAD两类光谱描述子",
+    "与SIFT-VLAD/NetVLAD的Strict-AND及加权决策级融合",
+    "DLR月火模拟场65.5m RGB-D+高光谱数据集（4条轨迹）"
+   ],
+   "innovations": [
+    "首次将HSI集成进3DGS-SLAM的回环闭合模块",
+    "诚实报告Red-NIR波段（600-860nm）材质判别力有限"
+   ],
+   "method": "材质光谱签名经词袋/VLAD编码为描述子，与RGB描述子做决策级融合",
+   "results": "最优融合ATE RMSE 5.04cm，距RGB-only最优4.95cm仅1.8%；较NetVLAD基线8.81cm更优（增益来自SIFT-VLAD而非HSI）",
+   "value": "指出SWIR传感器是行星SLAM可靠回环的关键",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "BoSW（TF-IDF光谱词袋）与PCAK-VLAD两类光谱描述子",
+    "agentChange": "材质光谱签名经词袋/VLAD编码为描述子，与RGB描述子做决策级融合",
+    "selfEvolution": null,
+    "evidence": [
+     "最优融合ATE RMSE 5.04cm，距RGB-only最优4.95cm仅1.8%；较NetVLAD基线8.81cm更优（增益来自SIFT-VLAD而非HSI）",
+     "诚实报告Red-NIR波段（600-860nm）材质判别力有限"
+    ],
+    "faq": {
+     "problem": "首次把高光谱描述子接入3DGS-SLAM回环闭合，验证月火模拟地形Red-NIR判别力有限",
+     "mechanism": "材质光谱签名经词袋/VLAD编码为描述子，与RGB描述子做决策级融合",
+     "agentChange": "材质光谱签名经词袋/VLAD编码为描述子，与RGB描述子做决策级融合",
+     "support": "最优融合ATE RMSE 5.04cm，距RGB-only最优4.95cm仅1.8%；较NetVLAD基线8.81cm更优（增益来自SIFT-VLAD而非HSI）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "指出SWIR传感器是行星SLAM可靠回环的关键"
+   }
+  },
+  {
+   "id": "2610.19520",
+   "version": 1,
+   "title": "Spectral World Renderer: Unified 3D Hyperspectral Unmixing",
+   "abstract": "编码智能体构建成分可验证的3D高光谱世界，解混进渲染，训练快3.7-12.9×",
+   "authors": [],
+   "published": "2026-10-15T04:00:00.000Z",
+   "updated": "2026-10-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.19520",
+   "pdf": "https://arxiv.org/pdf/2610.19520",
+   "announceType": "new",
+   "summary": "编码智能体构建成分可验证的3D高光谱世界，解混进渲染，训练快3.7-12.9×",
+   "topic": "遥感 / 高光谱 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.19520"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为3D材质理解提供可验证数据与统一框架",
+   "repository": null,
+   "motivation": "基础模型认得出物体，认不出材质成分",
+   "coreProblem": "3D解混在渲染后进行无法分离混合成分，且无可验证数据",
+   "contributions": [
+    "SWR-Bench：8个室内外世界，实测光谱+亚像素比例",
+    "SWR：每Gaussian存波段无关特征，解码端member丰度",
+    "3ms材质查询：按名称/点击/参考光谱/波段"
+   ],
+   "innovations": [
+    "编码智能体生成\"成分构造已知\"的可验证高光谱数据",
+    "合成前解码材质，一次渲染同时得光谱与材质图"
+   ],
+   "method": "RGB训练的3DGS锚定几何，每条射线交点解码到场景级endmember字典，独立强度通道吸收阴影",
+   "results": "8个世界mIoU全部最佳；真实采集平均PSNR最佳；训练较解混基线快3.7-12.9×；渲染34.9带标注视图/秒",
+   "value": "为3D材质理解提供可验证数据与统一框架",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "SWR-Bench：8个室内外世界，实测光谱+亚像素比例",
+    "agentChange": "RGB训练的3DGS锚定几何，每条射线交点解码到场景级endmember字典，独立强度通道吸收阴影",
+    "selfEvolution": null,
+    "evidence": [
+     "8个世界mIoU全部最佳；真实采集平均PSNR最佳；训练较解混基线快3.7-12.9×；渲染34.9带标注视图/秒",
+     "合成前解码材质，一次渲染同时得光谱与材质图"
+    ],
+    "faq": {
+     "problem": "编码智能体构建成分可验证的3D高光谱世界，解混进渲染，训练快3.7-12.9×",
+     "mechanism": "RGB训练的3DGS锚定几何，每条射线交点解码到场景级endmember字典，独立强度通道吸收阴影",
+     "agentChange": "RGB训练的3DGS锚定几何，每条射线交点解码到场景级endmember字典，独立强度通道吸收阴影",
+     "support": "8个世界mIoU全部最佳；真实采集平均PSNR最佳；训练较解混基线快3.7-12.9×；渲染34.9带标注视图/秒",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为3D材质理解提供可验证数据与统一框架"
+   }
+  },
+  {
+   "id": "2610.18342",
+   "version": 1,
+   "title": "CityCode: Building Agent-Operable 3D Cities from Sparse Aerial Observations",
+   "abstract": "单张低空航拍图生成智能体可操作的参数化3D城市，支持持续查询编辑规划",
+   "authors": [],
+   "published": "2026-10-15T04:00:00.000Z",
+   "updated": "2026-10-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.18342",
+   "pdf": "https://arxiv.org/pdf/2610.18342",
+   "announceType": "new",
+   "summary": "单张低空航拍图生成智能体可操作的参数化3D城市，支持持续查询编辑规划",
+   "topic": "遥感 / 高光谱 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.18342"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "3D城市从一次性生成走向智能体可持久操作",
+   "repository": null,
+   "motivation": "城市空间智能需要智能体可测量可修改的3D城市",
+   "coreProblem": "现有方法只做场景重建，缺度量实例与道路拓扑",
+   "contributions": [
+    "CityCode：持久实体ID联结度量/拓扑/语义/3D资产",
+    "Air2Code：结构提取+度量深度+遮挡生成补全",
+    "依赖感知版本化执行：校验更新与历史回滚"
+   ],
+   "innovations": [
+    "首提\"grounded城市世界构建\"设定：单航拍图→实例级参数化城市",
+    "以恢复的度量实体为观测/资产/操作的公共接口"
+   ],
+   "method": "每400m图块提取度量建筑代理与道路图，共享度量坐标系融合，结构-观测引导生成补全",
+   "results": "CS-Aerial七指标全第一（PSNR 13.02，超最强基线+1.17dB）；UrbanScene3D七项中六项第一（视觉偏好99.6%）；50条×50步任务链稳定运行",
+   "value": "3D城市从一次性生成走向智能体可持久操作",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "CityCode：持久实体ID联结度量/拓扑/语义/3D资产",
+    "agentChange": "每400m图块提取度量建筑代理与道路图，共享度量坐标系融合，结构-观测引导生成补全",
+    "selfEvolution": null,
+    "evidence": [
+     "CS-Aerial七指标全第一（PSNR 13.02，超最强基线+1.17dB）；UrbanScene3D七项中六项第一（视觉偏好99.6%）；50条×50步任务链稳定运行",
+     "以恢复的度量实体为观测/资产/操作的公共接口"
+    ],
+    "faq": {
+     "problem": "单张低空航拍图生成智能体可操作的参数化3D城市，支持持续查询编辑规划",
+     "mechanism": "每400m图块提取度量建筑代理与道路图，共享度量坐标系融合，结构-观测引导生成补全",
+     "agentChange": "每400m图块提取度量建筑代理与道路图，共享度量坐标系融合，结构-观测引导生成补全",
+     "support": "CS-Aerial七指标全第一（PSNR 13.02，超最强基线+1.17dB）；UrbanScene3D七项中六项第一（视觉偏好99.6%）；50条×50步任务链稳定运行",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "3D城市从一次性生成走向智能体可持久操作"
+   }
+  },
+  {
+   "id": "2610.19191",
+   "version": 1,
+   "title": "FireGraphNet: Sub-daily Wildfire Spread Prediction with Directed Graph Neural Networks",
+   "abstract": "12小时山火蔓延建模为有向H3图节点分类，AP达距离基线1.7-1.9倍",
+   "authors": [],
+   "published": "2026-10-15T04:00:00.000Z",
+   "updated": "2026-10-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.19191",
+   "pdf": "https://arxiv.org/pdf/2610.19191",
+   "announceType": "new",
+   "summary": "12小时山火蔓延建模为有向H3图节点分类，AP达距离基线1.7-1.9倍",
+   "topic": "遥感 / 高光谱 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.19191"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "提供亚日级、可干预分析的山火蔓延预测",
+   "repository": null,
+   "motivation": "山火决策窗口是小时级，现有模型只做日级预测",
+   "coreProblem": "栅格CNN难表达风向、地形与燃料连续性等方向性关系",
+   "contributions": [
+    "FireGraphNet：有向H3图（82个胞元特征+5个边属性）",
+    "候选构建/目标定义/聚合方式对结论影响的对照分析",
+    "燃料与屏障属性编辑的反事实干预分析"
+   ],
+   "innovations": [
+    "首次用有向图边显式编码风向一致性与燃料连续性",
+    "证明增益来自消息传递而非胞元特征或聚合器"
+   ],
+   "method": "火锋前方5环候选、有向图消息传递；编辑边属性做干预分析",
+   "results": "加州测试火AP为最强距离基线1.7-1.9×；跨州1.62×；年轻火增益最高，风向下游传播由边携带",
+   "value": "提供亚日级、可干预分析的山火蔓延预测",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "FireGraphNet：有向H3图（82个胞元特征+5个边属性）",
+    "agentChange": "火锋前方5环候选、有向图消息传递；编辑边属性做干预分析",
+    "selfEvolution": null,
+    "evidence": [
+     "加州测试火AP为最强距离基线1.7-1.9×；跨州1.62×；年轻火增益最高，风向下游传播由边携带",
+     "证明增益来自消息传递而非胞元特征或聚合器"
+    ],
+    "faq": {
+     "problem": "12小时山火蔓延建模为有向H3图节点分类，AP达距离基线1.7-1.9倍",
+     "mechanism": "火锋前方5环候选、有向图消息传递；编辑边属性做干预分析",
+     "agentChange": "火锋前方5环候选、有向图消息传递；编辑边属性做干预分析",
+     "support": "加州测试火AP为最强距离基线1.7-1.9×；跨州1.62×；年轻火增益最高，风向下游传播由边携带",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "提供亚日级、可干预分析的山火蔓延预测"
+   }
+  },
+  {
+   "id": "2610.19931",
+   "version": 1,
+   "title": "SAM3RL: Memory Control via Reinforcement Learning for Visual Object Tracking",
+   "abstract": "把SAM3记忆库控制建模为RL，12个基准10个新SOTA，零额外推理开销",
+   "authors": [],
+   "published": "2026-10-15T04:00:00.000Z",
+   "updated": "2026-10-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.19931",
+   "pdf": "https://arxiv.org/pdf/2610.19931",
+   "announceType": "new",
+   "summary": "把SAM3记忆库控制建模为RL，12个基准10个新SOTA，零额外推理开销",
+   "topic": "分割基础模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.19931"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "SAM家族通用记忆控制器，可直接嫁接SAM2管线",
+   "repository": null,
+   "motivation": "FIFO记忆规则粗糙，手工规则跨代不迁移",
+   "coreProblem": "手工记忆规则各修一种失效模式，SAM2启发迁移到SAM3增益有限",
+   "contributions": [
+    "记忆控制形式化为MDP，7动作空间",
+    "3.2M参数MLP控制器（PPO，LaSOT 896序列训练）",
+    "SAM3RL/SAM2RL：同一方法跨两代验证"
+   ],
+   "innovations": [
+    "首次以通用数据驱动控制器取代手工记忆规则",
+    "只改记忆库选择、追踪器冻结，无运行时开销"
+   ],
+   "method": "状态/动作/奖励设计、选择交给RL智能体；每6帧更新记忆，推理仅依赖当前状态",
+   "results": "5个VOT(S)赛事全第一（VOTS2026 70.0/+3.6、VOT-LT2022 68.3/+5.5）；12基准10个SOTA；16.0 FPS超SAM3的15.3；SAM2RL亦9/12领先",
+   "value": "SAM家族通用记忆控制器，可直接嫁接SAM2管线",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "记忆控制形式化为MDP，7动作空间",
+    "agentChange": "状态/动作/奖励设计、选择交给RL智能体；每6帧更新记忆，推理仅依赖当前状态",
+    "selfEvolution": null,
+    "evidence": [
+     "5个VOT(S)赛事全第一（VOTS2026 70.0/+3.6、VOT-LT2022 68.3/+5.5）；12基准10个SOTA；16.0 FPS超SAM3的15.3；SAM2RL亦9/12领先",
+     "只改记忆库选择、追踪器冻结，无运行时开销"
+    ],
+    "faq": {
+     "problem": "把SAM3记忆库控制建模为RL，12个基准10个新SOTA，零额外推理开销",
+     "mechanism": "状态/动作/奖励设计、选择交给RL智能体；每6帧更新记忆，推理仅依赖当前状态",
+     "agentChange": "状态/动作/奖励设计、选择交给RL智能体；每6帧更新记忆，推理仅依赖当前状态",
+     "support": "5个VOT(S)赛事全第一（VOTS2026 70.0/+3.6、VOT-LT2022 68.3/+5.5）；12基准10个SOTA；16.0 FPS超SAM3的15.3；SAM2RL亦9/12领先",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "SAM家族通用记忆控制器，可直接嫁接SAM2管线"
+   }
+  },
+  {
+   "id": "2610.20474",
+   "version": 1,
+   "title": "AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents",
+   "abstract": "先改harness再归因失败，只微调卡住的子步，未见组合任务成功率3倍",
+   "authors": [],
+   "published": "2026-10-15T04:00:00.000Z",
+   "updated": "2026-10-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.20474",
+   "pdf": "https://arxiv.org/pdf/2610.20474",
+   "announceType": "new",
+   "summary": "先改harness再归因失败，只微调卡住的子步，未见组合任务成功率3倍",
+   "topic": "大语言模型 / Agent",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.20474"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "具身RSI\"该修才修\"，成本与风险双降",
+   "repository": null,
+   "motivation": "VLA在未见长程任务中途失败，失败原因难以定位",
+   "coreProblem": "harness级RSI补不了缺失动作，盲目微调昂贵且可能变差",
+   "contributions": [
+    "三阶段框架：harness改进→失败归因→按需微调",
+    "失败归因：从保存状态重试失败子步区分调用/能力层",
+    "策略库：保留各子步策略并跨任务经验复用"
+   ],
+   "innovations": [
+    "首答\"何时该改执行器权重\"：仅harness修不动时",
+    "harness精化同时设定策略训练与调用的状态"
+   ],
+   "method": "编码智能体先改技能/工具/流程；重试归因定位失效层；自采演示只微调仍不可靠的子步",
+   "results": "RoboCasa365（50任务，GR00T N1.5，零人类演示）：Atomic-Seen 75.4→79.7、Composite-Unseen 4.6→13.8%（3.0×）；较全量微调GPU时间仅28%、自采演示22%",
+   "value": "具身RSI\"该修才修\"，成本与风险双降",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "三阶段框架：harness改进→失败归因→按需微调",
+    "agentChange": "编码智能体先改技能/工具/流程；重试归因定位失效层；自采演示只微调仍不可靠的子步",
+    "selfEvolution": null,
+    "evidence": [
+     "RoboCasa365（50任务，GR00T N1.5，零人类演示）：Atomic-Seen 75.4→79.7、Composite-Unseen 4.6→13.8%（3.0×）；较全量微调GPU时间仅28%、自采演示22%",
+     "harness精化同时设定策略训练与调用的状态"
+    ],
+    "faq": {
+     "problem": "先改harness再归因失败，只微调卡住的子步，未见组合任务成功率3倍",
+     "mechanism": "编码智能体先改技能/工具/流程；重试归因定位失效层；自采演示只微调仍不可靠的子步",
+     "agentChange": "编码智能体先改技能/工具/流程；重试归因定位失效层；自采演示只微调仍不可靠的子步",
+     "support": "RoboCasa365（50任务，GR00T N1.5，零人类演示）：Atomic-Seen 75.4→79.7、Composite-Unseen 4.6→13.8%（3.0×）；较全量微调GPU时间仅28%、自采演示22%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "具身RSI\"该修才修\"，成本与风险双降"
+   }
+  },
+  {
+   "id": "2610.20576",
+   "version": 1,
+   "title": "One Task, Many Interfaces: Cross-Interface Consistency Training Improves LLM Agent Robustness",
+   "abstract": "跨接口KL一致性正则化，找回接口扰动损失的约10.5pp精度",
+   "authors": [],
+   "published": "2026-10-15T04:00:00.000Z",
+   "updated": "2026-10-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.20576",
+   "pdf": "https://arxiv.org/pdf/2610.20576",
+   "announceType": "new",
+   "summary": "跨接口KL一致性正则化，找回接口扰动损失的约10.5pp精度",
+   "topic": "大语言模型 / Agent",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.20576"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "可加入任何agent后训练的自由监督正则项",
+   "repository": null,
+   "motivation": "后训练使智能体能力绑定训练接口，改个工具名就掉点",
+   "coreProblem": "多接口训练只是扩大依赖分布，新扰动仍退化",
+   "contributions": [
+    "CIPR：规范接口+扰动副本（改名/重排/退化孪生）",
+    "双一致性项：rescoring KL（免额外生成）+ rollout KL",
+    "SFT与RL两种后训练设置均验证"
+   ],
+   "innovations": [
+    "首次直接优化\"等价接口同等对待\"性质，复用随机化丢弃的对应关系",
+    "一致性比较动作分布（经名称映射）而非输出串"
+   ],
+   "method": "工具名换中性标识符，同一样本两种接口呈现，惩罚两接口诱导的动作分布KL",
+   "results": "agentic function calling上留出接口扰动使精度降近25%，CIPR找回10.5pp且原接口无损",
+   "value": "可加入任何agent后训练的自由监督正则项",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "CIPR：规范接口+扰动副本（改名/重排/退化孪生）",
+    "agentChange": "工具名换中性标识符，同一样本两种接口呈现，惩罚两接口诱导的动作分布KL",
+    "selfEvolution": null,
+    "evidence": [
+     "agentic function calling上留出接口扰动使精度降近25%，CIPR找回10.5pp且原接口无损",
+     "一致性比较动作分布（经名称映射）而非输出串"
+    ],
+    "faq": {
+     "problem": "跨接口KL一致性正则化，找回接口扰动损失的约10.5pp精度",
+     "mechanism": "工具名换中性标识符，同一样本两种接口呈现，惩罚两接口诱导的动作分布KL",
+     "agentChange": "工具名换中性标识符，同一样本两种接口呈现，惩罚两接口诱导的动作分布KL",
+     "support": "agentic function calling上留出接口扰动使精度降近25%，CIPR找回10.5pp且原接口无损",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "可加入任何agent后训练的自由监督正则项"
+   }
+  },
+  {
+   "id": "2610.20107",
+   "version": 1,
+   "title": "Why Generate a Click? Plug-in Decision Heads for Web Agents",
+   "abstract": "6-9M决策头从冻结VLM的prefill隐状态直接读出动作，WebArena +1.3pp",
+   "authors": [],
+   "published": "2026-10-15T04:00:00.000Z",
+   "updated": "2026-10-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.20107",
+   "pdf": "https://arxiv.org/pdf/2610.20107",
+   "announceType": "new",
+   "summary": "6-9M决策头从冻结VLM的prefill隐状态直接读出动作，WebArena +1.3pp",
+   "topic": "大语言模型 / Agent",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.20107"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "web agent的实用加速与鲁棒性提升路径",
+   "repository": null,
+   "motivation": "web动作多为小集合选择，逐token写出既慢又无分布",
+   "coreProblem": "生成式动作输出缺少整动作分布，顺序解码成本高",
+   "contributions": [
+    "三个插件头：动作类型/目标框/文本参数（含WRITE槽）",
+    "置信级联：头确信即直接执行，否则生成器续解码",
+    "Qwen3-VL 4B/8B（213k web steps）+ 头训练"
+   ],
+   "innovations": [
+    "首次从prefill隐状态读出完整动作决策，仅0.1%参数",
+    "证明联合训练拖累生成器步成功率至多4.9pp，冻结可避"
+   ],
+   "method": "学习5层隐状态混合，对每个编号框内视觉token池化匹配查询打分",
+   "results": "τ=0.9时7个离线集持平生成器（−0.3~+1.4pp）且头决策12-64%步；τ=0.5时WebArena 12.5→13.8%（4B）/13.6→14.6%（8B），生成token减半",
+   "value": "web agent的实用加速与鲁棒性提升路径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "三个插件头：动作类型/目标框/文本参数（含WRITE槽）",
+    "agentChange": "学习5层隐状态混合，对每个编号框内视觉token池化匹配查询打分",
+    "selfEvolution": null,
+    "evidence": [
+     "τ=0.9时7个离线集持平生成器（−0.3~+1.4pp）且头决策12-64%步；τ=0.5时WebArena 12.5→13.8%（4B）/13.6→14.6%（8B），生成token减半",
+     "证明联合训练拖累生成器步成功率至多4.9pp，冻结可避"
+    ],
+    "faq": {
+     "problem": "6-9M决策头从冻结VLM的prefill隐状态直接读出动作，WebArena +1.3pp",
+     "mechanism": "学习5层隐状态混合，对每个编号框内视觉token池化匹配查询打分",
+     "agentChange": "学习5层隐状态混合，对每个编号框内视觉token池化匹配查询打分",
+     "support": "τ=0.9时7个离线集持平生成器（−0.3~+1.4pp）且头决策12-64%步；τ=0.5时WebArena 12.5→13.8%（4B）/13.6→14.6%（8B），生成token减半",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "web agent的实用加速与鲁棒性提升路径"
+   }
+  },
+  {
+   "id": "2610.20344",
+   "version": 1,
+   "title": "Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents",
+   "abstract": "首个长程harness工程确定性基准，19个前沿模型最强者仅53%通过率",
+   "authors": [],
+   "published": "2026-10-15T04:00:00.000Z",
+   "updated": "2026-10-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.20344",
+   "pdf": "https://arxiv.org/pdf/2610.20344",
+   "announceType": "new",
+   "summary": "首个长程harness工程确定性基准，19个前沿模型最强者仅53%通过率",
+   "topic": "大语言模型 / Agent",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.20344"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为RSI/自进化agent的基础设施能力提供首把尺子",
+   "repository": null,
+   "motivation": "agent表现取决于harness与模型同等重要，却无评测",
+   "coreProblem": "harness正确性无法用单元测试判定，需驱动执行验证",
+   "contributions": [
+    "两阶段基准：接口契约骨架+开发文档→完整harness",
+    "328测试用例，4可观测通道+正控排除空过",
+    "19个前沿模型×3次独立构建"
+   ],
+   "innovations": [
+    "首次把\"写harness\"变成确定性可复现的评测任务",
+    "脚本化mock模型黑盒执行，消除构建模型参数记忆依赖"
+   ],
+   "method": "阶段1固定构建器内隔离容器构建；阶段2每用例独立容器端到端执行完整会话",
+   "results": "GPT-6 Astra 53.05%最高，最弱27.44%（26pp差距）；失败集中于横切功能的模块切分",
+   "value": "为RSI/自进化agent的基础设施能力提供首把尺子",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "两阶段基准：接口契约骨架+开发文档→完整harness",
+    "agentChange": "阶段1固定构建器内隔离容器构建；阶段2每用例独立容器端到端执行完整会话",
+    "selfEvolution": null,
+    "evidence": [
+     "GPT-6 Astra 53.05%最高，最弱27.44%（26pp差距）；失败集中于横切功能的模块切分",
+     "脚本化mock模型黑盒执行，消除构建模型参数记忆依赖"
+    ],
+    "faq": {
+     "problem": "首个长程harness工程确定性基准，19个前沿模型最强者仅53%通过率",
+     "mechanism": "阶段1固定构建器内隔离容器构建；阶段2每用例独立容器端到端执行完整会话",
+     "agentChange": "阶段1固定构建器内隔离容器构建；阶段2每用例独立容器端到端执行完整会话",
+     "support": "GPT-6 Astra 53.05%最高，最弱27.44%（26pp差距）；失败集中于横切功能的模块切分",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为RSI/自进化agent的基础设施能力提供首把尺子"
+   }
+  },
+  {
+   "id": "2610.19822",
+   "version": 1,
+   "title": "JointServe: Serving Multi-Model Agents on Memory-Constrained GPUs",
+   "abstract": "权重分片与KV统一预算调度，受限GPU上智能体会话时间最多降49%",
+   "authors": [],
+   "published": "2026-10-15T04:00:00.000Z",
+   "updated": "2026-10-15T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.19822",
+   "pdf": "https://arxiv.org/pdf/2610.19822",
+   "announceType": "new",
+   "summary": "权重分片与KV统一预算调度，受限GPU上智能体会话时间最多降49%",
+   "topic": "系统 / 基础设施",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.19822"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "多专家agent跑在1-2张80GB级GPU的关键基础设施",
+   "repository": null,
+   "motivation": "多专家智能体planner调用池，工作集装不进单卡",
+   "coreProblem": "整模换入串行化权重与计算，驱逐KV丢失会话状态",
+   "contributions": [
+    "权重分片与KV块视为统一预算下的驻留对象",
+    "意图信号预取+部分k*驻留层+抢占式传输调度",
+    "carve-out控制动态调整权重/KV配比"
+   ],
+   "innovations": [
+    "首次利用agent负载三结构性质（定向调用/间隙执行/双态驻留）",
+    "生成期间预取消除\"load-all barrier\""
+   ],
+   "method": "从调用方生成流解析调用意图，目标专家权重层组在生成中预载",
+   "results": "较最强整模换入基线会话完成时间−21.7%；崩溃区全部换入基线无法完成时仍可运行（46×差距）；SLO达成率2.8-24.5%→76.8-100%（SWE-bench/τ-bench/OSWorld轨迹）",
+   "value": "多专家agent跑在1-2张80GB级GPU的关键基础设施",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "权重分片与KV块视为统一预算下的驻留对象",
+    "agentChange": "从调用方生成流解析调用意图，目标专家权重层组在生成中预载",
+    "selfEvolution": null,
+    "evidence": [
+     "较最强整模换入基线会话完成时间−21.7%；崩溃区全部换入基线无法完成时仍可运行（46×差距）；SLO达成率2.8-24.5%→76.8-100%（SWE-bench/τ-bench/OSWorld轨迹）",
+     "生成期间预取消除\"load-all barrier\""
+    ],
+    "faq": {
+     "problem": "权重分片与KV统一预算调度，受限GPU上智能体会话时间最多降49%",
+     "mechanism": "从调用方生成流解析调用意图，目标专家权重层组在生成中预载",
+     "agentChange": "从调用方生成流解析调用意图，目标专家权重层组在生成中预载",
+     "support": "较最强整模换入基线会话完成时间−21.7%；崩溃区全部换入基线无法完成时仍可运行（46×差距）；SLO达成率2.8-24.5%→76.8-100%（SWE-bench/τ-bench/OSWorld轨迹）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "多专家agent跑在1-2张80GB级GPU的关键基础设施"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-10-14",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-10-14 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-30T21:30:06.000Z",
+ "latestPaperAt": "2026-10-15T04:00:00.000Z",
+ "totalMatched": 1772,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 1772
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 60,
+ "trends": {
+  "status": "accumulating",
+  "days": 60,
+  "minimumDays": 15,
+  "message": "已积累 60/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-30T21:30:06.000Z",
+ "snapshotDay": "2026-10-15",
+ "historical": true
+}

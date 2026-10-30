@@ -1,0 +1,1010 @@
+{
+ "papers": [
+  {
+   "id": "2610.23377",
+   "version": 1,
+   "title": "FloodVLM-Pix: Language-Guided Pixel-Level Flood Understanding",
+   "abstract": "首个洪水多模态多时相基准+语言引导像素级理解模型，F1 89.2、IoU 80.5",
+   "authors": [],
+   "published": "2026-10-19T04:00:00.000Z",
+   "updated": "2026-10-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.23377",
+   "pdf": "https://arxiv.org/pdf/2610.23377",
+   "announceType": "new",
+   "summary": "首个洪水多模态多时相基准+语言引导像素级理解模型，F1 89.2、IoU 80.5",
+   "topic": "[遥感与地球观测]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.23377"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让洪水解读从\"哪里淹了\"升级到\"多严重、怎么演\"，灾害响应 VLM 基座",
+   "repository": null,
+   "motivation": "洪水频发，影像分析缺语言级严重度/演化解读，难以支撑救灾",
+   "coreProblem": "大面积洪水（>80% 占比）触发注意力偏差被误判为背景，SAR 解读弱",
+   "contributions": [
+    "FloodVL-Pix：SAR 106.5K+光学 24.7K 图斑、443K 描述，11K 大洪水样本",
+    "FloodVLM-Pix：洪水先验模块+多时相洪水像素解码器"
+   ],
+   "innovations": [
+    "首次统一\"语言+像素+时相\"三位一体洪水理解范式",
+    "蒸馏子区域空间先验注入 VLM，直接修正注意力偏差",
+    "通用/个体特征门控融合，抑制云、山影等干扰"
+   ],
+   "method": "先验模块向 VLM 注入子区域洪水空间先验；解码器自适应融合多时相通用语义与单图特征",
+   "results": "分割 OA 96.1 / F1 89.2 / IoU 80.5，超 MFGF-UNet（F1 86.8、IoU 76.6）；4B 版描述指标全面 SOTA",
+   "value": "让洪水解读从\"哪里淹了\"升级到\"多严重、怎么演\"，灾害响应 VLM 基座",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "FloodVL-Pix：SAR 106.5K+光学 24.7K 图斑、443K 描述，11K 大洪水样本",
+    "agentChange": "先验模块向 VLM 注入子区域洪水空间先验；解码器自适应融合多时相通用语义与单图特征",
+    "selfEvolution": null,
+    "evidence": [
+     "分割 OA 96.1 / F1 89.2 / IoU 80.5，超 MFGF-UNet（F1 86.8、IoU 76.6）；4B 版描述指标全面 SOTA",
+     "蒸馏子区域空间先验注入 VLM，直接修正注意力偏差",
+     "通用/个体特征门控融合，抑制云、山影等干扰"
+    ],
+    "faq": {
+     "problem": "首个洪水多模态多时相基准+语言引导像素级理解模型，F1 89.2、IoU 80.5",
+     "mechanism": "先验模块向 VLM 注入子区域洪水空间先验；解码器自适应融合多时相通用语义与单图特征",
+     "agentChange": "先验模块向 VLM 注入子区域洪水空间先验；解码器自适应融合多时相通用语义与单图特征",
+     "support": "分割 OA 96.1 / F1 89.2 / IoU 80.5，超 MFGF-UNet（F1 86.8、IoU 76.6）；4B 版描述指标全面 SOTA",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "让洪水解读从\"哪里淹了\"升级到\"多严重、怎么演\"，灾害响应 VLM 基座"
+   }
+  },
+  {
+   "id": "2610.23416",
+   "version": 1,
+   "title": "GeoReason: Bridging Logical Reasoning and Spatial Fidelity in Remote Sensing Segmentation",
+   "abstract": "[SEG] token 前置于 query 作空间锚点，RS 推理分割 SOTA，gIoU +10.2",
+   "authors": [],
+   "published": "2026-10-19T04:00:00.000Z",
+   "updated": "2026-10-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.23416",
+   "pdf": "https://arxiv.org/pdf/2610.23416",
+   "announceType": "new",
+   "summary": "[SEG] token 前置于 query 作空间锚点，RS 推理分割 SOTA，gIoU +10.2",
+   "topic": "[遥感与地球观测]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.23416"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "定位 MLLM 分割空间保真损失的根因，思路可迁移其他细粒度感知",
+   "repository": null,
+   "motivation": "MLLM \"Embedding-as-Mask\" 范式在遥感杂波、极端尺度场景失稳",
+   "coreProblem": "长推理链中 [SEG] 与视觉接地渐行渐远，视觉证据被语言抽象稀释",
+   "contributions": [
+    "GeoReason 框架：Anticipatory Prior + Location-aware CoT + Latent PTA 损失",
+    "诊断并提出 [SEG] \"sequential alienation\" 信息衰减瓶颈"
+   ],
+   "innovations": [
+    "[SEG] 从链尾输出改为 query 初始条件，成为持久空间锚点",
+    "PTA 损失把潜在分割 token 与遥感物理纹理显式对齐（GLU 头）"
+   ],
+   "method": "prompt 侧锚定 + 位置感知 CoT 粗到细定位，训练时对齐 token-纹理",
+   "results": "EarthReason、RRSIS-D 双基准 SOTA；较 Earthmind 提升 referring gIoU +10.16、reasoning gIoU +3.66、referring cIoU +5.97",
+   "value": "定位 MLLM 分割空间保真损失的根因，思路可迁移其他细粒度感知",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "GeoReason 框架：Anticipatory Prior + Location-aware CoT + Latent PTA 损失",
+    "agentChange": "prompt 侧锚定 + 位置感知 CoT 粗到细定位，训练时对齐 token-纹理",
+    "selfEvolution": null,
+    "evidence": [
+     "EarthReason、RRSIS-D 双基准 SOTA；较 Earthmind 提升 referring gIoU +10.16、reasoning gIoU +3.66、referring cIoU +5.97",
+     "PTA 损失把潜在分割 token 与遥感物理纹理显式对齐（GLU 头）"
+    ],
+    "faq": {
+     "problem": "[SEG] token 前置于 query 作空间锚点，RS 推理分割 SOTA，gIoU +10.2",
+     "mechanism": "prompt 侧锚定 + 位置感知 CoT 粗到细定位，训练时对齐 token-纹理",
+     "agentChange": "prompt 侧锚定 + 位置感知 CoT 粗到细定位，训练时对齐 token-纹理",
+     "support": "EarthReason、RRSIS-D 双基准 SOTA；较 Earthmind 提升 referring gIoU +10.16、reasoning gIoU +3.66、referring cIoU +5.97",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "定位 MLLM 分割空间保真损失的根因，思路可迁移其他细粒度感知"
+   }
+  },
+  {
+   "id": "2610.22606",
+   "version": 1,
+   "title": "Three LiDARs, Twenty-Five Datasets: Cross-Source Generalization in Tree-Species Recognition",
+   "abstract": "冲上榜单第一 85.0%，再揭示：跨源真实泛化崩至 36%",
+   "authors": [],
+   "published": "2026-10-19T04:00:00.000Z",
+   "updated": "2026-10-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.22606",
+   "pdf": "https://arxiv.org/pdf/2610.22606",
+   "announceType": "new",
+   "summary": "冲上榜单第一 85.0%，再揭示：跨源真实泛化崩至 36%",
+   "topic": "[遥感与地球观测]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.22606"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "提醒社区 LiDAR 生态感知的真考题是跨源评测而非刷榜",
+   "repository": null,
+   "motivation": "FOR-species20K 官方分高企，但评测协议本身存疑",
+   "coreProblem": "隐藏测试树种均衡、源数据集同时进训练与测试，源偏差被掩盖",
+   "contributions": [
+    "多分辨率多视角 ConvNeXtV2：7 几何视图+logit 校准，79.5→85.0%（榜首）",
+    "系统审计基准：源探针+source-species-cell 留三重估"
+   ],
+   "innovations": [
+    "同一工作内\"刷榜+拆榜\"，量化 LiDAR 树种分类源泄漏",
+    "用探针证明模型概率里藏 69% 可恢复的源身份"
+   ],
+   "method": "256/512px 多视图渲染集成交付 SOTA；再换严格交叉协议暴露泛化鸿沟",
+   "results": "隐藏测试 85.0%（前最优 79.5%）；严格留树下树种均分 82→36%、加权 95→60%",
+   "value": "提醒社区 LiDAR 生态感知的真考题是跨源评测而非刷榜",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "多分辨率多视角 ConvNeXtV2：7 几何视图+logit 校准，79.5→85.0%（榜首）",
+    "agentChange": "256/512px 多视图渲染集成交付 SOTA；再换严格交叉协议暴露泛化鸿沟",
+    "selfEvolution": null,
+    "evidence": [
+     "隐藏测试 85.0%（前最优 79.5%）；严格留树下树种均分 82→36%、加权 95→60%",
+     "用探针证明模型概率里藏 69% 可恢复的源身份"
+    ],
+    "faq": {
+     "problem": "冲上榜单第一 85.0%，再揭示：跨源真实泛化崩至 36%",
+     "mechanism": "256/512px 多视图渲染集成交付 SOTA；再换严格交叉协议暴露泛化鸿沟",
+     "agentChange": "256/512px 多视图渲染集成交付 SOTA；再换严格交叉协议暴露泛化鸿沟",
+     "support": "隐藏测试 85.0%（前最优 79.5%）；严格留树下树种均分 82→36%、加权 95→60%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "提醒社区 LiDAR 生态感知的真考题是跨源评测而非刷榜"
+   }
+  },
+  {
+   "id": "2610.23440",
+   "version": 1,
+   "title": "ShadowCast: On-the-Fly Context-Aware Shadow Augmentation for Remote Sensing Image Segmentation",
+   "abstract": "训练时合成注入阴影，免网络免元数据，mIoU 最高 +2.49",
+   "authors": [],
+   "published": "2026-10-19T04:00:00.000Z",
+   "updated": "2026-10-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.23440",
+   "pdf": "https://arxiv.org/pdf/2610.23440",
+   "announceType": "new",
+   "summary": "训练时合成注入阴影，免网络免元数据，mIoU 最高 +2.49",
+   "topic": "[遥感与地球观测]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.23440"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "零成本、免标注的即插即用增广，普适任意 RS 分割管线",
+   "repository": null,
+   "motivation": "高楼树木阴影遮挡边界、改变光谱，分割性能下降",
+   "coreProblem": "既有方法把阴影当退化\"检测+去除\"，需额外网络与阴影标注",
+   "contributions": [
+    "ShadowCast：从分割标签提取高起物掩膜，亮度探针推断逐图投影方向",
+    "三基准多架构系统评测，含阴影区域专项分析"
+   ],
+   "innovations": [
+    "反向思路：不除阴影，把阴影当作训练期随机增广",
+    "纯几何投影合成，无学习网络、无需卫星采集元数据"
+   ],
+   "method": "掩膜→推断光照方向→沿方向投影合成阴影，训练时随机注入",
+   "results": "Vaihingen/Potsdam/LoveDA：OCRNet +2.49 mIoU、LOGCAN++ +2.26；阴影区 mIoU +0.30/0.42/0.31",
+   "value": "零成本、免标注的即插即用增广，普适任意 RS 分割管线",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "ShadowCast：从分割标签提取高起物掩膜，亮度探针推断逐图投影方向",
+    "agentChange": "掩膜→推断光照方向→沿方向投影合成阴影，训练时随机注入",
+    "selfEvolution": null,
+    "evidence": [
+     "Vaihingen/Potsdam/LoveDA：OCRNet +2.49 mIoU、LOGCAN++ +2.26；阴影区 mIoU +0.30/0.42/0.31",
+     "纯几何投影合成，无学习网络、无需卫星采集元数据"
+    ],
+    "faq": {
+     "problem": "训练时合成注入阴影，免网络免元数据，mIoU 最高 +2.49",
+     "mechanism": "掩膜→推断光照方向→沿方向投影合成阴影，训练时随机注入",
+     "agentChange": "掩膜→推断光照方向→沿方向投影合成阴影，训练时随机注入",
+     "support": "Vaihingen/Potsdam/LoveDA：OCRNet +2.49 mIoU、LOGCAN++ +2.26；阴影区 mIoU +0.30/0.42/0.31",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "零成本、免标注的即插即用增广，普适任意 RS 分割管线"
+   }
+  },
+  {
+   "id": "2610.23110",
+   "version": 1,
+   "title": "Domain-specific Language Alignment of Multimodal Embeddings towards Explainable Predictions",
+   "abstract": "给地球多模态嵌入做语言对齐，SDM 6/7 指标 SOTA，检索 0.45 vs 0.29",
+   "authors": [],
+   "published": "2026-10-19T04:00:00.000Z",
+   "updated": "2026-10-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.23110",
+   "pdf": "https://arxiv.org/pdf/2610.23110",
+   "announceType": "new",
+   "summary": "给地球多模态嵌入做语言对齐，SDM 6/7 指标 SOTA，检索 0.45 vs 0.29",
+   "topic": "[遥感与地球观测]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.23110"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为 EO 基础模型打开\"语言接口\"，支撑可解释物种分布预测",
+   "repository": null,
+   "motivation": "地球嵌入预测强但不可解释，领域决策需要可解释依据",
+   "coreProblem": "视觉-语言对齐依赖海量图注数据，地球多模态特征无法直接观测标注",
+   "contributions": [
+    "通用对齐框架：辅助数据→部分图注+软对比损失+基于秩的概念检索",
+    "AlphaEarth 嵌入语言对齐，落地 S2BMS/SatBird 物种分布建模"
+   ],
+   "innovations": [
+    "首次对齐地球\"多模态\"（非单图）嵌入空间",
+    "对齐质量直接对辅助数据而非图注评估，绕开图注天花板"
+   ],
+   "method": "土地覆盖/生物气候/土壤数据转部分图注，按属性相似度加权软对比",
+   "results": "S2BMS top-5 49.7（6/7 指标超前 SOTA）；概念检索 0.45 vs DOFA-CLIP 0.29，土地覆盖 0.56 vs 0.42",
+   "value": "为 EO 基础模型打开\"语言接口\"，支撑可解释物种分布预测",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "通用对齐框架：辅助数据→部分图注+软对比损失+基于秩的概念检索",
+    "agentChange": "土地覆盖/生物气候/土壤数据转部分图注，按属性相似度加权软对比",
+    "selfEvolution": null,
+    "evidence": [
+     "S2BMS top-5 49.7（6/7 指标超前 SOTA）；概念检索 0.45 vs DOFA-CLIP 0.29，土地覆盖 0.56 vs 0.42",
+     "对齐质量直接对辅助数据而非图注评估，绕开图注天花板"
+    ],
+    "faq": {
+     "problem": "给地球多模态嵌入做语言对齐，SDM 6/7 指标 SOTA，检索 0.45 vs 0.29",
+     "mechanism": "土地覆盖/生物气候/土壤数据转部分图注，按属性相似度加权软对比",
+     "agentChange": "土地覆盖/生物气候/土壤数据转部分图注，按属性相似度加权软对比",
+     "support": "S2BMS top-5 49.7（6/7 指标超前 SOTA）；概念检索 0.45 vs DOFA-CLIP 0.29，土地覆盖 0.56 vs 0.42",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为 EO 基础模型打开\"语言接口\"，支撑可解释物种分布预测"
+   }
+  },
+  {
+   "id": "2610.22509",
+   "version": 1,
+   "title": "TriSAR-3D and PaintFusion: A Novel Trimodal LiDAR-RGB-Thermal Dataset and Method for 3D Person Detection in Search and Rescue",
+   "abstract": "救援场景三模态 3D 人员检测数据集+MLP 融合，65.4 AP@50、延迟减半",
+   "authors": [],
+   "published": "2026-10-19T04:00:00.000Z",
+   "updated": "2026-10-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.22509",
+   "pdf": "https://arxiv.org/pdf/2610.22509",
+   "announceType": "new",
+   "summary": "救援场景三模态 3D 人员检测数据集+MLP 融合，65.4 AP@50、延迟减半",
+   "topic": "[计算机视觉]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.22509"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "救援机器人态势感知基座，揭示姿态多样性对检测的决定性影响",
+   "repository": null,
+   "motivation": "车载 3D 检测假设人 upright、近路，救援场景（倒地、遮挡）未验证",
+   "coreProblem": "汽车场景性能向搜救迁移的能力完全未知",
+   "contributions": [
+    "TriSAR-3D：128 线 LiDAR+RGB+热红外，多姿态室内外昼夜数据集",
+    "PaintFusion：PointPainting 证据+简单 MLP 三模态融合管线"
+   ],
+   "innovations": [
+    "首个面向搜救的三模态 3D 人员检测基准",
+    "简单 MLP 融合击败重架构且快 2 倍"
+   ],
+   "method": "三模态各自编码 BEV 证据，MLP 直接融合出检测，无重型模块",
+   "results": "65.4 AP@50 vs CenterPoint 53.4、BEVFusion 60.5、Tri-BEVFusion 60.7；51.6ms vs 101ms",
+   "value": "救援机器人态势感知基座，揭示姿态多样性对检测的决定性影响",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "TriSAR-3D：128 线 LiDAR+RGB+热红外，多姿态室内外昼夜数据集",
+    "agentChange": "三模态各自编码 BEV 证据，MLP 直接融合出检测，无重型模块",
+    "selfEvolution": null,
+    "evidence": [
+     "65.4 AP@50 vs CenterPoint 53.4、BEVFusion 60.5、Tri-BEVFusion 60.7；51.6ms vs 101ms",
+     "简单 MLP 融合击败重架构且快 2 倍"
+    ],
+    "faq": {
+     "problem": "救援场景三模态 3D 人员检测数据集+MLP 融合，65.4 AP@50、延迟减半",
+     "mechanism": "三模态各自编码 BEV 证据，MLP 直接融合出检测，无重型模块",
+     "agentChange": "三模态各自编码 BEV 证据，MLP 直接融合出检测，无重型模块",
+     "support": "65.4 AP@50 vs CenterPoint 53.4、BEVFusion 60.5、Tri-BEVFusion 60.7；51.6ms vs 101ms",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "救援机器人态势感知基座，揭示姿态多样性对检测的决定性影响"
+   }
+  },
+  {
+   "id": "2610.23533",
+   "version": 1,
+   "title": "ReVision: Reprogramming Image Generators for Dense Visual Perception",
+   "abstract": "重编程冻结图像生成器做稠密感知，Cityscapes 开放词汇 72.75 mIoU",
+   "authors": [],
+   "published": "2026-10-19T04:00:00.000Z",
+   "updated": "2026-10-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.23533",
+   "pdf": "https://arxiv.org/pdf/2610.23533",
+   "announceType": "new",
+   "summary": "重编程冻结图像生成器做稠密感知，Cityscapes 开放词汇 72.75 mIoU",
+   "topic": "[计算机视觉]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.23533"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "开辟\"生成模型即感知骨干\"新范式，绕开多任务联合训练干扰",
+   "repository": null,
+   "motivation": "图像生成器蕴含丰富视觉先验，却少被用于感知任务",
+   "coreProblem": "多任务共享参数化对数据混合敏感，跨任务干扰严重",
+   "contributions": [
+    "ReVision：指令条件化瞬态低秩参数生成器，理解模型与生成器双冻结",
+    "统一 RGB 输出接口，指令式开放词汇规格化分割/深度/法线"
+   ],
+   "innovations": [
+    "每张图-指令对即时生成瞬态参数，无任务头、无存储适配器",
+    "生成器被\"反向\"用为稠密感知骨干"
+   ],
+   "method": "VLM 编码图-指令，可训练生成器映射为生成器上的瞬态 LoRA 更新",
+   "results": "Cityscapes 开放词汇 mIoU 72.75（零样本 SenseNova 71.2）；SA-Co cgF1 40.17、pmF1 54.3；RefCOCOg cIoU 53.8",
+   "value": "开辟\"生成模型即感知骨干\"新范式，绕开多任务联合训练干扰",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "ReVision：指令条件化瞬态低秩参数生成器，理解模型与生成器双冻结",
+    "agentChange": "VLM 编码图-指令，可训练生成器映射为生成器上的瞬态 LoRA 更新",
+    "selfEvolution": null,
+    "evidence": [
+     "Cityscapes 开放词汇 mIoU 72.75（零样本 SenseNova 71.2）；SA-Co cgF1 40.17、pmF1 54.3；RefCOCOg cIoU 53.8",
+     "生成器被\"反向\"用为稠密感知骨干"
+    ],
+    "faq": {
+     "problem": "重编程冻结图像生成器做稠密感知，Cityscapes 开放词汇 72.75 mIoU",
+     "mechanism": "VLM 编码图-指令，可训练生成器映射为生成器上的瞬态 LoRA 更新",
+     "agentChange": "VLM 编码图-指令，可训练生成器映射为生成器上的瞬态 LoRA 更新",
+     "support": "Cityscapes 开放词汇 mIoU 72.75（零样本 SenseNova 71.2）；SA-Co cgF1 40.17、pmF1 54.3；RefCOCOg cIoU 53.8",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "开辟\"生成模型即感知骨干\"新范式，绕开多任务联合训练干扰"
+   }
+  },
+  {
+   "id": "2610.23839",
+   "version": 1,
+   "title": "DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses",
+   "abstract": "科研假设多智能体递归学习，质量 4.86→5.39，附 DFM-Bench",
+   "authors": [],
+   "published": "2026-10-19T04:00:00.000Z",
+   "updated": "2026-10-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.23839",
+   "pdf": "https://arxiv.org/pdf/2610.23839",
+   "announceType": "new",
+   "summary": "科研假设多智能体递归学习，质量 4.86→5.39，附 DFM-Bench",
+   "topic": "[Agent 与强化学习]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.23839"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "首个证明科研 agent 能靠递归学习提升假设质量的实证工作",
+   "repository": null,
+   "motivation": "LLM 科研 agent 如何从研究过程中学习、持续提升假设质量",
+   "coreProblem": "\"有价值的假设\"无操作化定义，过程反馈无法归因与积累",
+   "contributions": [
+    "给出假设操作化定义：证据锚定+可检验+数据可解决+替代解释",
+    "DiscoveryRSI：多智能体进化搜索构建假设树，编译为可执行 Harbor 任务",
+    "DFM-Bench：假设/修订/路径/研究运行四层评测"
+   ],
+   "innovations": [
+    "假设信用归因：把科学评估写回具体研究贡献（过程级 RL）",
+    "三机制递归学习：信用优化+harness 回放+再发现迁移"
+   ],
+   "method": "进化搜索出假设树→执行 Harbor 任务获反馈→策略优化并复用到新任务",
+   "results": "4 个生命科学域：平均质量 4.86→5.39（两轮），evolve/repair 占比 77.5→91.7%，人评增益更大",
+   "value": "首个证明科研 agent 能靠递归学习提升假设质量的实证工作",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "给出假设操作化定义：证据锚定+可检验+数据可解决+替代解释",
+    "agentChange": "进化搜索出假设树→执行 Harbor 任务获反馈→策略优化并复用到新任务",
+    "selfEvolution": null,
+    "evidence": [
+     "4 个生命科学域：平均质量 4.86→5.39（两轮），evolve/repair 占比 77.5→91.7%，人评增益更大",
+     "三机制递归学习：信用优化+harness 回放+再发现迁移"
+    ],
+    "faq": {
+     "problem": "科研假设多智能体递归学习，质量 4.86→5.39，附 DFM-Bench",
+     "mechanism": "进化搜索出假设树→执行 Harbor 任务获反馈→策略优化并复用到新任务",
+     "agentChange": "进化搜索出假设树→执行 Harbor 任务获反馈→策略优化并复用到新任务",
+     "support": "4 个生命科学域：平均质量 4.86→5.39（两轮），evolve/repair 占比 77.5→91.7%，人评增益更大",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "首个证明科研 agent 能靠递归学习提升假设质量的实证工作"
+   }
+  },
+  {
+   "id": "2610.22448",
+   "version": 1,
+   "title": "Lean4AgenticRL: Advancing Agentic RL with Verifiable Multi-level Process Rewards",
+   "abstract": "首个 Lean4 形式化多级过程奖励 agentic RL，LAR-27B TB-2.1 达 77.3%",
+   "authors": [],
+   "published": "2026-10-19T04:00:00.000Z",
+   "updated": "2026-10-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.22448",
+   "pdf": "https://arxiv.org/pdf/2610.22448",
+   "announceType": "new",
+   "summary": "首个 Lean4 形式化多级过程奖励 agentic RL，LAR-27B TB-2.1 达 77.3%",
+   "topic": "[Agent 与强化学习]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.22448"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给开放域 agentic RL 提供可验证的过程奖励范式",
+   "repository": null,
+   "motivation": "agentic RL 靠高层结果奖励，训练低效、信用分配差",
+   "coreProblem": "低层 toolcall、中层工作流阶段奖励缺失，行为难验证",
+   "contributions": [
+    "Lean4AgenticRL：Lean4 统一形式化模式推导多级过程奖励",
+    "问题特定工作流系统+通用 harness 验证框架",
+    "训练 LAR-9B/27B agentic 模型族"
+   ],
+   "innovations": [
+    "过程奖励首次扎根依赖类型形式验证（Lean4），可自动核验",
+    "工作流阶段归一化 GRPO，平衡跨阶段奖励尺度"
+   ],
+   "method": "工作流形式化+多级奖励标注，harness 内验证 agent 行为并回传奖励",
+   "results": "LAR-27B：SWE-Bench-Verified 84.2%、TerminalBench-2.1 77.3%；较基模均高 9.89%，超同规模最强",
+   "value": "给开放域 agentic RL 提供可验证的过程奖励范式",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "Lean4AgenticRL：Lean4 统一形式化模式推导多级过程奖励",
+    "agentChange": "工作流形式化+多级奖励标注，harness 内验证 agent 行为并回传奖励",
+    "selfEvolution": null,
+    "evidence": [
+     "LAR-27B：SWE-Bench-Verified 84.2%、TerminalBench-2.1 77.3%；较基模均高 9.89%，超同规模最强",
+     "工作流阶段归一化 GRPO，平衡跨阶段奖励尺度"
+    ],
+    "faq": {
+     "problem": "首个 Lean4 形式化多级过程奖励 agentic RL，LAR-27B TB-2.1 达 77.3%",
+     "mechanism": "工作流形式化+多级奖励标注，harness 内验证 agent 行为并回传奖励",
+     "agentChange": "工作流形式化+多级奖励标注，harness 内验证 agent 行为并回传奖励",
+     "support": "LAR-27B：SWE-Bench-Verified 84.2%、TerminalBench-2.1 77.3%；较基模均高 9.89%，超同规模最强",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "给开放域 agentic RL 提供可验证的过程奖励范式"
+   }
+  },
+  {
+   "id": "2610.23012",
+   "version": 1,
+   "title": "Adaptation of Computer Use Agents to New Software with User Manuals",
+   "abstract": "用户手册即过程知识，零人工示范，OSWorld +10.5pp、Slack +22.7pp",
+   "authors": [],
+   "published": "2026-10-19T04:00:00.000Z",
+   "updated": "2026-10-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.23012",
+   "pdf": "https://arxiv.org/pdf/2610.23012",
+   "announceType": "new",
+   "summary": "用户手册即过程知识，零人工示范，OSWorld +10.5pp、Slack +22.7pp",
+   "topic": "[Agent 与强化学习]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.23012"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "低成本让计算机操作 agent 适配新软件，摆脱人类数据依赖",
+   "repository": null,
+   "motivation": "CUA 对未见软件性能差，训练轨迹依赖昂贵人工标注",
+   "coreProblem": "长程程序性知识缺失，可执行任务与轨迹构建成本高",
+   "contributions": [
+    "MAGE：检索增强规划（RAP）+手册派生任务-计划对训练",
+    "手册转可执行任务引导环境 rollout，无人类示范优化策略"
+   ],
+   "innovations": [
+    "首次把用户手册作为执行与训练双端的可缩放过程知识源",
+    "手册生成任务经人工验证：93.3% 有用、84% 可执行"
+   ],
+   "method": "规划器检索相关手册段落生成过程计划；训练期手册造任务、收 rollout 迭代优化",
+   "results": "OSWorld 5 应用：UI-TARS-1.5 36.83→47.31%；Slack 26.67→49.33%（+22.66pp）；Calc 无 RAP 14.89→34.04%",
+   "value": "低成本让计算机操作 agent 适配新软件，摆脱人类数据依赖",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "MAGE：检索增强规划（RAP）+手册派生任务-计划对训练",
+    "agentChange": "规划器检索相关手册段落生成过程计划；训练期手册造任务、收 rollout 迭代优化",
+    "selfEvolution": null,
+    "evidence": [
+     "OSWorld 5 应用：UI-TARS-1.5 36.83→47.31%；Slack 26.67→49.33%（+22.66pp）；Calc 无 RAP 14.89→34.04%",
+     "手册生成任务经人工验证：93.3% 有用、84% 可执行"
+    ],
+    "faq": {
+     "problem": "用户手册即过程知识，零人工示范，OSWorld +10.5pp、Slack +22.7pp",
+     "mechanism": "规划器检索相关手册段落生成过程计划；训练期手册造任务、收 rollout 迭代优化",
+     "agentChange": "规划器检索相关手册段落生成过程计划；训练期手册造任务、收 rollout 迭代优化",
+     "support": "OSWorld 5 应用：UI-TARS-1.5 36.83→47.31%；Slack 26.67→49.33%（+22.66pp）；Calc 无 RAP 14.89→34.04%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "低成本让计算机操作 agent 适配新软件，摆脱人类数据依赖"
+   }
+  },
+  {
+   "id": "2610.23344",
+   "version": 1,
+   "title": "Language Models Learn to Improve Language Models",
+   "abstract": "RL 训练 LLM 提出 LM 改进方案，世界模型代理奖励，数据成本 -33%",
+   "authors": [],
+   "published": "2026-10-19T04:00:00.000Z",
+   "updated": "2026-10-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.23344",
+   "pdf": "https://arxiv.org/pdf/2610.23344",
+   "announceType": "new",
+   "summary": "RL 训练 LLM 提出 LM 改进方案，世界模型代理奖励，数据成本 -33%",
+   "topic": "[大语言模型与基础方法]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.23344"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "LM 开发递归自我改进的低成本可行路径",
+   "repository": null,
+   "motivation": "LM 自动化 AI 研究通往递归自我改进，但真实反馈太贵",
+   "coreProblem": "数万提案×完整训练≈超 1600 万美元，代理反馈随分布偏移失真",
+   "contributions": [
+    "LM2LM：RL 训练 LLM 生成有效 LM 改进提案",
+    "RWM 研究世界模型：冻结 LLM 由真实实验记录预测提案增益",
+    "周期性执行高分提案实测，回填上下文校准代理"
+   ],
+   "innovations": [
+    "首次用 LLM 世界模型作科研提案 RL 的奖励模型",
+    "真实执行采样纠正，抑制代理奖励高估漂移"
+   ],
+   "method": "提案策略 RL 优化，RWM 供廉价奖励，定期执行 top 提案反馈闭环",
+   "results": "8 个自回归+扩散 LM 环境：Qwen3.8-27B 提案超 GPT-6-sol（对方带 300 条真实记录），数据生成成本降 33%",
+   "value": "LM 开发递归自我改进的低成本可行路径",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "LM2LM：RL 训练 LLM 生成有效 LM 改进提案",
+    "agentChange": "提案策略 RL 优化，RWM 供廉价奖励，定期执行 top 提案反馈闭环",
+    "selfEvolution": null,
+    "evidence": [
+     "8 个自回归+扩散 LM 环境：Qwen3.8-27B 提案超 GPT-6-sol（对方带 300 条真实记录），数据生成成本降 33%",
+     "真实执行采样纠正，抑制代理奖励高估漂移"
+    ],
+    "faq": {
+     "problem": "RL 训练 LLM 提出 LM 改进方案，世界模型代理奖励，数据成本 -33%",
+     "mechanism": "提案策略 RL 优化，RWM 供廉价奖励，定期执行 top 提案反馈闭环",
+     "agentChange": "提案策略 RL 优化，RWM 供廉价奖励，定期执行 top 提案反馈闭环",
+     "support": "8 个自回归+扩散 LM 环境：Qwen3.8-27B 提案超 GPT-6-sol（对方带 300 条真实记录），数据生成成本降 33%",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "LM 开发递归自我改进的低成本可行路径"
+   }
+  },
+  {
+   "id": "2610.23213",
+   "version": 1,
+   "title": "Not All Test-Time Compute Is Evidence: Model-Specific Bias in LLM Reasoning",
+   "abstract": "揭示测试期算力非独立证据，分歧触发仲裁 12/14 场景胜出",
+   "authors": [],
+   "published": "2026-10-19T04:00:00.000Z",
+   "updated": "2026-10-19T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.23213",
+   "pdf": "https://arxiv.org/pdf/2610.23213",
+   "announceType": "new",
+   "summary": "揭示测试期算力非独立证据，分歧触发仲裁 12/14 场景胜出",
+   "topic": "[大语言模型与基础方法]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.23213"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给测试期扩展的效力边界敲警钟，附低成本仲裁策略",
+   "repository": null,
+   "motivation": "test-time scaling 默认\"同模型更多算力=更多独立证据\"",
+   "coreProblem": "同模型错误跨采样、跨深度、自评均相关，算力不构成证据",
+   "contributions": [
+    "实证错误相关性的三种表现形式",
+    "DIA：中间/终阶段预测分歧即触发异质小模型面板独立仲裁"
+   ],
+   "innovations": [
+    "候选盲仲裁：面板不见任一候选、独立作答直接聚合",
+    "仅约 17% 样本激活，省 47.2% token"
+   ],
+   "method": "分歧作为逐题推理不稳定信号，异质面板独立解题并聚合答案",
+   "results": "7 基准×2 基模：12/14 场景超完整 CoT；MuSiQue 59.0→66.0（+7.00）",
+   "value": "给测试期扩展的效力边界敲警钟，附低成本仲裁策略",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "实证错误相关性的三种表现形式",
+    "agentChange": "分歧作为逐题推理不稳定信号，异质面板独立解题并聚合答案",
+    "selfEvolution": null,
+    "evidence": [
+     "7 基准×2 基模：12/14 场景超完整 CoT；MuSiQue 59.0→66.0（+7.00）",
+     "仅约 17% 样本激活，省 47.2% token"
+    ],
+    "faq": {
+     "problem": "揭示测试期算力非独立证据，分歧触发仲裁 12/14 场景胜出",
+     "mechanism": "分歧作为逐题推理不稳定信号，异质面板独立解题并聚合答案",
+     "agentChange": "分歧作为逐题推理不稳定信号，异质面板独立解题并聚合答案",
+     "support": "7 基准×2 基模：12/14 场景超完整 CoT；MuSiQue 59.0→66.0（+7.00）",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "给测试期扩展的效力边界敲警钟，附低成本仲裁策略"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-10-18",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-10-18 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-30T21:30:06.000Z",
+ "latestPaperAt": "2026-10-19T04:00:00.000Z",
+ "totalMatched": 895,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 895
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 60,
+ "trends": {
+  "status": "accumulating",
+  "days": 60,
+  "minimumDays": 15,
+  "message": "已积累 60/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-30T21:30:06.000Z",
+ "snapshotDay": "2026-10-19",
+ "historical": true
+}

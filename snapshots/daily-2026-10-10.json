@@ -1,0 +1,1017 @@
+{
+ "papers": [
+  {
+   "id": "2610.11049",
+   "version": 1,
+   "title": "SatFix: Absolute Visual Localization of UAVs in Satellite Maps from a Single Oblique Image",
+   "abstract": "前馈式无人机-卫星定位，单张斜视影像直接回归连续坐标与航向，中位误差 45.66 m。",
+   "authors": [],
+   "published": "2026-10-10T04:00:00.000Z",
+   "updated": "2026-10-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.11049",
+   "pdf": "https://arxiv.org/pdf/2610.11049",
+   "announceType": "new",
+   "summary": "前馈式无人机-卫星定位，单张斜视影像直接回归连续坐标与航向，中位误差 45.66 m。",
+   "topic": "遥感 / 地球观测 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.11049"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给无人机一条不依赖 GNSS 的低成本前馈视觉度量定位路线。",
+   "repository": null,
+   "motivation": "城市峡谷、密林下 GNSS 失效，无人机需靠机载视觉在卫星地图上定位。",
+   "coreProblem": "现有 CVGL 是检索式，只返回瓦片索引，无航向，且依赖 gallery 采样。",
+   "contributions": [
+    "基于 VGGT-Ω 的前馈定位框架 SatFix，卫星网格特征作查询",
+    "双轻量头直接回归 2D 连续位置+航向，无需 3D 地图/辅助传感器",
+    "提出 University-Metric 基准，卫星影像面积约原 University-1652 的 114 倍"
+   ],
+   "innovations": [
+    "跨视角地理定位从\"检索\"改为\"前馈回归\"，输出度量级连续位姿",
+    "单一模型统一单视图/多视图输入，免测试时位姿对齐"
+   ],
+   "method": "卫星网格特征查询聚合无人机视觉证据，VGGT-Ω 跨视角编码，两个头在地理参考地图系回归 3-DoF 位姿。",
+   "results": "单视图 52.08% 帧落于 50 m 内、17.34% 落于 10 m 内，中位位置/航向误差 45.66 m/20.81°；9 视图中位误差降至 21.96 m/8.73°；较微调 VGGT-Ω 中位位置误差降 34.0%，单视图推理 <0.1 s（RTX 4090）。",
+   "value": "给无人机一条不依赖 GNSS 的低成本前馈视觉度量定位路线。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "基于 VGGT-Ω 的前馈定位框架 SatFix，卫星网格特征作查询",
+    "agentChange": "卫星网格特征查询聚合无人机视觉证据，VGGT-Ω 跨视角编码，两个头在地理参考地图系回归 3-DoF 位姿。",
+    "selfEvolution": null,
+    "evidence": [
+     "单视图 52.08% 帧落于 50 m 内、17.34% 落于 10 m 内，中位位置/航向误差 45.66 m/20.81°；9 视图中位误差降至 21.96 m/8.73°；较微调 VGGT-Ω 中位位置误差降 34.0%，单视图推理 <0.1 s（RTX 4090）。",
+     "单一模型统一单视图/多视图输入，免测试时位姿对齐"
+    ],
+    "faq": {
+     "problem": "前馈式无人机-卫星定位，单张斜视影像直接回归连续坐标与航向，中位误差 45.66 m。",
+     "mechanism": "卫星网格特征查询聚合无人机视觉证据，VGGT-Ω 跨视角编码，两个头在地理参考地图系回归 3-DoF 位姿。",
+     "agentChange": "卫星网格特征查询聚合无人机视觉证据，VGGT-Ω 跨视角编码，两个头在地理参考地图系回归 3-DoF 位姿。",
+     "support": "单视图 52.08% 帧落于 50 m 内、17.34% 落于 10 m 内，中位位置/航向误差 45.66 m/20.81°；9 视图中位误差降至 21.96 m/8.73°；较微调 VGGT-Ω 中位位置误差降 34.0%，单视图推理 <0.1 s（RTX 4090）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "给无人机一条不依赖 GNSS 的低成本前馈视觉度量定位路线。"
+   }
+  },
+  {
+   "id": "2610.11608",
+   "version": 1,
+   "title": "S³Geo: Structure-Semantic Synergistic Learning for Cross-View Geo-Localization",
+   "abstract": "结构-语义协同跨视角地理定位，University-1652 D2S R@1 96.19%，刷新 SOTA。",
+   "authors": [],
+   "published": "2026-10-10T04:00:00.000Z",
+   "updated": "2026-10-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.11608",
+   "pdf": "https://arxiv.org/pdf/2610.11608",
+   "announceType": "new",
+   "summary": "结构-语义协同跨视角地理定位，University-1652 D2S R@1 96.19%，刷新 SOTA。",
+   "topic": "遥感 / 地球观测 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.11608"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "抬高跨视角匹配上限，利好遥感影像定位与地图更新。",
+   "repository": null,
+   "motivation": "视觉相似但语义不同的区域易被混淆，CVGL 在大视角变化下稳健性受限。",
+   "coreProblem": "纯视觉表征法无法同时建模细粒度结构对应与语义先验。",
+   "contributions": [
+    "DQP 解耦查询池化，从稠密 token 提取局部结构模式",
+    "基于最优传输的查询级对比学习，建立跨视角软对应",
+    "SKD 策略从冻结 CLIP 教师蒸馏语义先验与关系结构"
+   ],
+   "innovations": [
+    "冻结 CLIP 当教师注入语义先验，结构模块负责精确空间对齐",
+    "最优传输表述处理跨视角空间错位，无需硬匹配"
+   ],
+   "method": "DINOv3 编码器（冻结倒数第二、三块外全冻结）+ 解耦查询池化 + OT 软对应 + CLIP 语义蒸馏。",
+   "results": "University-1652 D2S R@1 96.19% / AP 96.86%（此前最好 95.13/96.04），S2D R@1 96.72% / AP 95.10%；SUES-200 全指标 SOTA，300 m 尺度 R@1 达 100%。",
+   "value": "抬高跨视角匹配上限，利好遥感影像定位与地图更新。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "DQP 解耦查询池化，从稠密 token 提取局部结构模式",
+    "agentChange": "DINOv3 编码器（冻结倒数第二、三块外全冻结）+ 解耦查询池化 + OT 软对应 + CLIP 语义蒸馏。",
+    "selfEvolution": null,
+    "evidence": [
+     "University-1652 D2S R@1 96.19% / AP 96.86%（此前最好 95.13/96.04），S2D R@1 96.72% / AP 95.10%；SUES-200 全指标 SOTA，300 m 尺度 R@1 达 100%。",
+     "最优传输表述处理跨视角空间错位，无需硬匹配"
+    ],
+    "faq": {
+     "problem": "结构-语义协同跨视角地理定位，University-1652 D2S R@1 96.19%，刷新 SOTA。",
+     "mechanism": "DINOv3 编码器（冻结倒数第二、三块外全冻结）+ 解耦查询池化 + OT 软对应 + CLIP 语义蒸馏。",
+     "agentChange": "DINOv3 编码器（冻结倒数第二、三块外全冻结）+ 解耦查询池化 + OT 软对应 + CLIP 语义蒸馏。",
+     "support": "University-1652 D2S R@1 96.19% / AP 96.86%（此前最好 95.13/96.04），S2D R@1 96.72% / AP 95.10%；SUES-200 全指标 SOTA，300 m 尺度 R@1 达 100%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "抬高跨视角匹配上限，利好遥感影像定位与地图更新。"
+   }
+  },
+  {
+   "id": "2610.11735",
+   "version": 1,
+   "title": "Onboard Marine Anomaly Detection on Φsat-2: From Simulation-Based Development to In-Orbit Demonstration",
+   "abstract": "ESA Φsat-2 在轨演示星上海事异常检测，藻华/泥沙检测 F1 超 60%，揭示模拟-在轨差距。",
+   "authors": [],
+   "published": "2026-10-10T04:00:00.000Z",
+   "updated": "2026-10-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.11735",
+   "pdf": "https://arxiv.org/pdf/2610.11735",
+   "announceType": "new",
+   "summary": "ESA Φsat-2 在轨演示星上海事异常检测，藻华/泥沙检测 F1 超 60%，揭示模拟-在轨差距。",
+   "topic": "遥感 / 地球观测 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.11735"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为星上 EO AI 提供可复现参考：怎么验证、在哪失效、如何修复。",
+   "repository": null,
+   "motivation": "EO 数据量超下行能力，星上 AI 先筛选告警可省带宽、增响应速度。",
+   "coreProblem": "在轨真实数据分布与模拟不同，发射前验证不等于在轨验证。",
+   "contributions": [
+    "完整星上流水线：海分割+自监督特征编码+GMM 异常检测+多类异常刻画",
+    "发射前模拟数据验证，发射后用真实 Level-1 数据与改进标注策略重训",
+    "ESA Φsat-2（8 波段 VNIR）首次海事异常检测在轨演示"
+   ],
+   "innovations": [
+    "给出\"模拟开发→星上集成→在轨适配\"全流程经验并量化各阶段差距",
+    "明确区分\"功能验证\"与\"科学验证\"，强调传感器感知的设计"
+   ],
+   "method": "模块化轻量流水线（NLSVM 分割/多类 NLSVM 刻画 + 编码器+GMM），适配资源受限星上硬件。",
+   "results": "模拟数据海分割 F1 93.9%；异常检测 F1 藻华 72.1% / 泥沙 60.3% / 油溢 3.3%（缺 SWIR 波段受限）；刻画召回藻华 99.4%、泥沙 87.4%；在轨重训后性能显著提升。",
+   "value": "为星上 EO AI 提供可复现参考：怎么验证、在哪失效、如何修复。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "完整星上流水线：海分割+自监督特征编码+GMM 异常检测+多类异常刻画",
+    "agentChange": "模块化轻量流水线（NLSVM 分割/多类 NLSVM 刻画 + 编码器+GMM），适配资源受限星上硬件。",
+    "selfEvolution": null,
+    "evidence": [
+     "模拟数据海分割 F1 93.9%；异常检测 F1 藻华 72.1% / 泥沙 60.3% / 油溢 3.3%（缺 SWIR 波段受限）；刻画召回藻华 99.4%、泥沙 87.4%；在轨重训后性能显著提升。",
+     "明确区分\"功能验证\"与\"科学验证\"，强调传感器感知的设计"
+    ],
+    "faq": {
+     "problem": "ESA Φsat-2 在轨演示星上海事异常检测，藻华/泥沙检测 F1 超 60%，揭示模拟-在轨差距。",
+     "mechanism": "模块化轻量流水线（NLSVM 分割/多类 NLSVM 刻画 + 编码器+GMM），适配资源受限星上硬件。",
+     "agentChange": "模块化轻量流水线（NLSVM 分割/多类 NLSVM 刻画 + 编码器+GMM），适配资源受限星上硬件。",
+     "support": "模拟数据海分割 F1 93.9%；异常检测 F1 藻华 72.1% / 泥沙 60.3% / 油溢 3.3%（缺 SWIR 波段受限）；刻画召回藻华 99.4%、泥沙 87.4%；在轨重训后性能显著提升。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "为星上 EO AI 提供可复现参考：怎么验证、在哪失效、如何修复。"
+   }
+  },
+  {
+   "id": "2610.11612",
+   "version": 1,
+   "title": "PointVGGT: Zero-Shot Multiview RGB-D Point Cloud Registration with Visual Geometry Foundation Priors",
+   "abstract": "零样本多视角 RGB-D 配准，VGGT 系基础模型打底，平均旋转误差改善 4.1 倍，分钟级→秒级。",
+   "authors": [],
+   "published": "2026-10-10T04:00:00.000Z",
+   "updated": "2026-10-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.11612",
+   "pdf": "https://arxiv.org/pdf/2610.11612",
+   "announceType": "new",
+   "summary": "零样本多视角 RGB-D 配准，VGGT 系基础模型打底，平均旋转误差改善 4.1 倍，分钟级→秒级。",
+   "topic": "基础模型 / 计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.11612"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把多视角配准从\"逐对匹配\"带入基础模型时代，零样本且高效。",
+   "repository": null,
+   "motivation": "多视角 RGB-D 配准是 3D 重建、AR/VR、具身智能的基础需求。",
+   "coreProblem": "逐对再全局范式存在局部最优、误差传播、算力高，RGB 仅作辅助匹配线索。",
+   "contributions": [
+    "提出\"基础模型打底-再精化\"范式，训练-free 直接复用视觉几何先验",
+    "体素化空间哈希，近线性时间构建稠密跨视角对应",
+    "IRLS 鲁棒 motion-only 光束法平差（共轭梯度求解）精化位姿"
+   ],
+   "innovations": [
+    "首次系统性用视觉几何基础模型先验做零样本 RGB-D 配准",
+    "用度量深度锚定基础模型尺度模糊的位姿预测，免去逐对配准"
+   ],
+   "method": "基础模型一次前向给出全局一致位姿初值并度量化，重建 3D 场作共享空间锚，体素哈希找对应后做鲁棒 motion-only BA。",
+   "results": "室内旋转召回 92.2/99.3/100% @3/5/10°（最强基线 57.4/75.2/88.5%），平均旋转误差 1.4°（较 6.2° 改善 4.1×），平移误差 0.05 m（基线 0.15 m）；室外 KITTI/Waymo 旋转召回 100%，平移误差 0.07 m（基线 1.91 m）；推理由分钟级降至秒级。",
+   "value": "把多视角配准从\"逐对匹配\"带入基础模型时代，零样本且高效。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出\"基础模型打底-再精化\"范式，训练-free 直接复用视觉几何先验",
+    "agentChange": "基础模型一次前向给出全局一致位姿初值并度量化，重建 3D 场作共享空间锚，体素哈希找对应后做鲁棒 motion-only BA。",
+    "selfEvolution": null,
+    "evidence": [
+     "室内旋转召回 92.2/99.3/100% @3/5/10°（最强基线 57.4/75.2/88.5%），平均旋转误差 1.4°（较 6.2° 改善 4.1×），平移误差 0.05 m（基线 0.15 m）；室外 KITTI/Waymo 旋转召回 100%，平移误差 0.07 m（基线 1.91 m）；推理由分钟级降至秒级。",
+     "用度量深度锚定基础模型尺度模糊的位姿预测，免去逐对配准"
+    ],
+    "faq": {
+     "problem": "零样本多视角 RGB-D 配准，VGGT 系基础模型打底，平均旋转误差改善 4.1 倍，分钟级→秒级。",
+     "mechanism": "基础模型一次前向给出全局一致位姿初值并度量化，重建 3D 场作共享空间锚，体素哈希找对应后做鲁棒 motion-only BA。",
+     "agentChange": "基础模型一次前向给出全局一致位姿初值并度量化，重建 3D 场作共享空间锚，体素哈希找对应后做鲁棒 motion-only BA。",
+     "support": "室内旋转召回 92.2/99.3/100% @3/5/10°（最强基线 57.4/75.2/88.5%），平均旋转误差 1.4°（较 6.2° 改善 4.1×），平移误差 0.05 m（基线 0.15 m）；室外 KITTI/Waymo 旋转召回 100%，平移误差 0.07 m（基线 1.91 m）；推理由分钟级降至秒级。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "把多视角配准从\"逐对匹配\"带入基础模型时代，零样本且高效。"
+   }
+  },
+  {
+   "id": "2610.11067",
+   "version": 1,
+   "title": "Diffusion Meta-Prompting and Steering for Generalizable Foundation Model Adaptation",
+   "abstract": "用扩散模型对 prompt 分布建模，按文本任务描述合成新 prompt，55 数据集对平均 +2.0%。",
+   "authors": [],
+   "published": "2026-10-10T04:00:00.000Z",
+   "updated": "2026-10-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.11067",
+   "pdf": "https://arxiv.org/pdf/2610.11067",
+   "announceType": "new",
+   "summary": "用扩散模型对 prompt 分布建模，按文本任务描述合成新 prompt，55 数据集对平均 +2.0%。",
+   "topic": "基础模型 / 计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.11067"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为基础模型适配提供自然语言接口，prompt 资产可跨任务复用。",
+   "repository": null,
+   "motivation": "学出的 prompt 任务专属、难以复用，大 prompt 仓库要存储、检索、手动组合。",
+   "coreProblem": "经典元学习需重访原始任务数据与损失，无法利用现成 prompt 仓库。",
+   "contributions": [
+    "DMP 框架：在已学 prompt 仓库上训扩散模型，按自然语言任务描述合成新 prompt",
+    "测试时 steering 策略：以仓库最佳 prompt 作潜空间锚提升采样稳定",
+    "理论保证：DMP 采样 prompt 的期望任务损失上界"
+   ],
+   "innovations": [
+    "无损失（loss-free）元提示：只需现成 prompt 仓库，不需原任务数据/损失",
+    "把 prompt 视为结构化分布的样本，免训练支持概念组合与负向提示"
+   ],
+   "method": "扩散模型学 prompt 嵌入分布，文本条件采样一次生成；推理时用潜锚引导采样轨迹，免重训。",
+   "results": "组合分类 55 数据集对平均 +2.0%（较先前元学习方法），单对最高 +8.5%（Eurosat/Flowers）；层级分类 +2–9%；存储与推理成本较 prompt 检索法降 90%+。",
+   "value": "为基础模型适配提供自然语言接口，prompt 资产可跨任务复用。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "DMP 框架：在已学 prompt 仓库上训扩散模型，按自然语言任务描述合成新 prompt",
+    "agentChange": "扩散模型学 prompt 嵌入分布，文本条件采样一次生成；推理时用潜锚引导采样轨迹，免重训。",
+    "selfEvolution": null,
+    "evidence": [
+     "组合分类 55 数据集对平均 +2.0%（较先前元学习方法），单对最高 +8.5%（Eurosat/Flowers）；层级分类 +2–9%；存储与推理成本较 prompt 检索法降 90%+。",
+     "把 prompt 视为结构化分布的样本，免训练支持概念组合与负向提示"
+    ],
+    "faq": {
+     "problem": "用扩散模型对 prompt 分布建模，按文本任务描述合成新 prompt，55 数据集对平均 +2.0%。",
+     "mechanism": "扩散模型学 prompt 嵌入分布，文本条件采样一次生成；推理时用潜锚引导采样轨迹，免重训。",
+     "agentChange": "扩散模型学 prompt 嵌入分布，文本条件采样一次生成；推理时用潜锚引导采样轨迹，免重训。",
+     "support": "组合分类 55 数据集对平均 +2.0%（较先前元学习方法），单对最高 +8.5%（Eurosat/Flowers）；层级分类 +2–9%；存储与推理成本较 prompt 检索法降 90%+。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为基础模型适配提供自然语言接口，prompt 资产可跨任务复用。"
+   }
+  },
+  {
+   "id": "2610.10984",
+   "version": 1,
+   "title": "Fluid-Gen-Zero: Grounding Pretrained Video Generators in Physics without Training",
+   "abstract": "免训练流体视频物理接地，轨迹误差最高降 81.5%，人评超模拟法 90.4%+。",
+   "authors": [],
+   "published": "2026-10-10T04:00:00.000Z",
+   "updated": "2026-10-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.10984",
+   "pdf": "https://arxiv.org/pdf/2610.10984",
+   "announceType": "new",
+   "summary": "免训练流体视频物理接地，轨迹误差最高降 81.5%，人评超模拟法 90.4%+。",
+   "topic": "基础模型 / 计算机视觉",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.10984"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给视频生成\"不改权重学物理\"的可持续路径，免后训练的苦役。",
+   "repository": null,
+   "motivation": "视频基础模型视觉逼真但物理失真，流体-物体交互最难从扩散先验学到。",
+   "coreProblem": "现有方法靠架构耦合的后训练注入物理先验，成本高且随模型迭代过时。",
+   "contributions": [
+    "两级 agentic 工作流：VLM 生成时规划 + 潜空间引导注入模拟信号",
+    "region-aware latent wrapping，把模拟 rollout 耦合进去噪轨迹",
+    "43 样本流体交互基准（401 帧 rollout、3D 轨迹、光流、10 类流体）"
+   ],
+   "innovations": [
+    "物理推理与外观合成解耦，物理感知全部置于推理时",
+    "即插即用，跨 Tora/VACE/WanMove 多视频基础模型兼容"
+   ],
+   "method": "输入图重建 3D 场景并跑流体物理模拟，VLM agent 规划分段生成计划，模拟信号经潜空间包装注入冻结生成器去噪过程。",
+   "results": "物体轨迹误差降 26.7%–81.5%，流体 fEPE 降 67.9%–84.0%；人评同骨干对比偏好 55.1%–74.4%，对模拟法偏好 90.4%–94.2%，感知质量基本保持。",
+   "value": "给视频生成\"不改权重学物理\"的可持续路径，免后训练的苦役。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "两级 agentic 工作流：VLM 生成时规划 + 潜空间引导注入模拟信号",
+    "agentChange": "输入图重建 3D 场景并跑流体物理模拟，VLM agent 规划分段生成计划，模拟信号经潜空间包装注入冻结生成器去噪过程。",
+    "selfEvolution": null,
+    "evidence": [
+     "物体轨迹误差降 26.7%–81.5%，流体 fEPE 降 67.9%–84.0%；人评同骨干对比偏好 55.1%–74.4%，对模拟法偏好 90.4%–94.2%，感知质量基本保持。",
+     "即插即用，跨 Tora/VACE/WanMove 多视频基础模型兼容"
+    ],
+    "faq": {
+     "problem": "免训练流体视频物理接地，轨迹误差最高降 81.5%，人评超模拟法 90.4%+。",
+     "mechanism": "输入图重建 3D 场景并跑流体物理模拟，VLM agent 规划分段生成计划，模拟信号经潜空间包装注入冻结生成器去噪过程。",
+     "agentChange": "输入图重建 3D 场景并跑流体物理模拟，VLM agent 规划分段生成计划，模拟信号经潜空间包装注入冻结生成器去噪过程。",
+     "support": "物体轨迹误差降 26.7%–81.5%，流体 fEPE 降 67.9%–84.0%；人评同骨干对比偏好 55.1%–74.4%，对模拟法偏好 90.4%–94.2%，感知质量基本保持。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "给视频生成\"不改权重学物理\"的可持续路径，免后训练的苦役。"
+   }
+  },
+  {
+   "id": "2610.11328",
+   "version": 1,
+   "title": "Mine Odyssey: Benchmarking Spatial Agentic Intelligence in the Wild",
+   "abstract": "Minecraft 重建 30 个真实地点、180 个空间导航任务，最强模型 85.6%，开源模型仅 23.9%。",
+   "authors": [],
+   "published": "2026-10-10T04:00:00.000Z",
+   "updated": "2026-10-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.11328",
+   "pdf": "https://arxiv.org/pdf/2610.11328",
+   "announceType": "new",
+   "summary": "Minecraft 重建 30 个真实地点、180 个空间导航任务，最强模型 85.6%，开源模型仅 23.9%。",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.11328"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为空间 agentic 智能提供真实感、跨尺度标尺，暴露开源模型短板。",
+   "repository": null,
+   "motivation": "agent 进入物理世界需持续更新空间认知并按反馈调整行动。",
+   "coreProblem": "现有具身基准只覆盖家庭/城市窄场景，规模、连通性、高程多样性不足。",
+   "contributions": [
+    "30 个真实地点的 Minecraft 重建（5 洲 20 国，20 户外 + 10 室内）",
+    "180 个自然语言有序途经点任务，含开门、楼梯/梯子、导航错误恢复",
+    "8 个 SOTA 模型评测 + 失败阶段与消融分析"
+   ],
+   "innovations": [
+    "借 Minecraft 社区世界生态构建大规模、可复现真实场景环境",
+    "长程有序途经点 + 位置自动验证，覆盖多楼层与可达性约束"
+   ],
+   "method": "社区真实场景地图 + 人工标注途经点可达性 + 自然语言任务指令；agent 第一人称执行，游戏内位置自动判分。",
+   "results": "GPT-6 Astra 成功率 85.6%，Claude Opus 5.5 73.9%，最强开源权重 DeepSeek-V4.1-Flash 仅 23.9%，闭源与开源差距显著。",
+   "value": "为空间 agentic 智能提供真实感、跨尺度标尺，暴露开源模型短板。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "30 个真实地点的 Minecraft 重建（5 洲 20 国，20 户外 + 10 室内）",
+    "agentChange": "社区真实场景地图 + 人工标注途经点可达性 + 自然语言任务指令；agent 第一人称执行，游戏内位置自动判分。",
+    "selfEvolution": null,
+    "evidence": [
+     "GPT-6 Astra 成功率 85.6%，Claude Opus 5.5 73.9%，最强开源权重 DeepSeek-V4.1-Flash 仅 23.9%，闭源与开源差距显著。",
+     "长程有序途经点 + 位置自动验证，覆盖多楼层与可达性约束"
+    ],
+    "faq": {
+     "problem": "Minecraft 重建 30 个真实地点、180 个空间导航任务，最强模型 85.6%，开源模型仅 23.9%。",
+     "mechanism": "社区真实场景地图 + 人工标注途经点可达性 + 自然语言任务指令；agent 第一人称执行，游戏内位置自动判分。",
+     "agentChange": "社区真实场景地图 + 人工标注途经点可达性 + 自然语言任务指令；agent 第一人称执行，游戏内位置自动判分。",
+     "support": "GPT-6 Astra 成功率 85.6%，Claude Opus 5.5 73.9%，最强开源权重 DeepSeek-V4.1-Flash 仅 23.9%，闭源与开源差距显著。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为空间 agentic 智能提供真实感、跨尺度标尺，暴露开源模型短板。"
+   }
+  },
+  {
+   "id": "2610.12126",
+   "version": 1,
+   "title": "SuperNav: An Agentic Navigation System for Any Task in Any Scene",
+   "abstract": "预训练 MLLM + 导航 agent 框架，零导航微调，HM3D-OVON SR 73.33%，真机验证。",
+   "authors": [],
+   "published": "2026-10-10T04:00:00.000Z",
+   "updated": "2026-10-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.12126",
+   "pdf": "https://arxiv.org/pdf/2610.12126",
+   "announceType": "new",
+   "summary": "预训练 MLLM + 导航 agent 框架，零导航微调，HM3D-OVON SR 73.33%，真机验证。",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.12126"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给出导航微调的替代方案：通用模型 + agent 框架也能成导航专家。",
+   "repository": null,
+   "motivation": "服务机器人要在陌生场景处理多样请求，微调 MLLM 受训练数据覆盖限制。",
+   "coreProblem": "为导航微调 MLLM 泛化差，模块化流水线被预定义工作流束缚。",
+   "contributions": [
+    "agent harness：Navigation Skills + agent 向 Tools + 任务进度与上下文管理",
+    "统一 visual-point 接口：模型直接在图像上指定目标点并从执行反馈修订",
+    "可互换运动后端：学习型流预测控制器与几何执行器同接口"
+   ],
+   "innovations": [
+    "不做任何导航特化微调，MLLM 保持通用能力",
+    "决策与运动解耦：MLLM 只做解读、决策，工具负责执行"
+   ],
+   "method": "MLLM 解读请求并在参考图像上选点，工具（观察/运动/进度）执行，执行反馈闭环修订决策。",
+   "results": "单物体、多物体、需求驱动任务上超 UniNaVid、OmniNav 等 4 个基线；HM3D-OVON 1 m 阈值 SR 73.33% / SPL 0.4105（0.25 m 阈值 68.33% / 0.3837），Unitree Go2 真机部署验证。",
+   "value": "给出导航微调的替代方案：通用模型 + agent 框架也能成导航专家。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "agent harness：Navigation Skills + agent 向 Tools + 任务进度与上下文管理",
+    "agentChange": "MLLM 解读请求并在参考图像上选点，工具（观察/运动/进度）执行，执行反馈闭环修订决策。",
+    "selfEvolution": null,
+    "evidence": [
+     "单物体、多物体、需求驱动任务上超 UniNaVid、OmniNav 等 4 个基线；HM3D-OVON 1 m 阈值 SR 73.33% / SPL 0.4105（0.25 m 阈值 68.33% / 0.3837），Unitree Go2 真机部署验证。",
+     "决策与运动解耦：MLLM 只做解读、决策，工具负责执行"
+    ],
+    "faq": {
+     "problem": "预训练 MLLM + 导航 agent 框架，零导航微调，HM3D-OVON SR 73.33%，真机验证。",
+     "mechanism": "MLLM 解读请求并在参考图像上选点，工具（观察/运动/进度）执行，执行反馈闭环修订决策。",
+     "agentChange": "MLLM 解读请求并在参考图像上选点，工具（观察/运动/进度）执行，执行反馈闭环修订决策。",
+     "support": "单物体、多物体、需求驱动任务上超 UniNaVid、OmniNav 等 4 个基线；HM3D-OVON 1 m 阈值 SR 73.33% / SPL 0.4105（0.25 m 阈值 68.33% / 0.3837），Unitree Go2 真机部署验证。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "给出导航微调的替代方案：通用模型 + agent 框架也能成导航专家。"
+   }
+  },
+  {
+   "id": "2610.11450",
+   "version": 1,
+   "title": "Tracing the Thoughts of a Coding Agent Playing ARC-AGI-3: Lessons for Continual Learning",
+   "abstract": "白盒追踪编码 agent 的文件记忆，跨任务知识传递靠\"重写\"而非\"引用\"。",
+   "authors": [],
+   "published": "2026-10-10T04:00:00.000Z",
+   "updated": "2026-10-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.11450",
+   "pdf": "https://arxiv.org/pdf/2610.11450",
+   "announceType": "new",
+   "summary": "白盒追踪编码 agent 的文件记忆，跨任务知识传递靠\"重写\"而非\"引用\"。",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.11450"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给基础模型 agent 的持续学习提供白盒视角，指出参数化是有效修复。",
+   "repository": null,
+   "motivation": "持续学习惯用参数更新讨论，冻结模型 agent 走的是完全不同的路。",
+   "coreProblem": "文件式记忆跨任务保留、传递、遗忘知识的机制从未被定量测量。",
+   "contributions": [
+    "思想追踪测量协议：逐脚本/笔记追溯从形成到修正或废弃的全生命周期",
+    "7 次运行 × 3 个骨干模型，4,786 脚本、689 个任务边界",
+    "发现陈旧记忆的负迁移及其修复方式（硬编码值参数化）"
+   ],
+   "innovations": [
+    "不需访问模型，仅凭文件即可计数保留与传递，适用任何文件记忆 agent",
+    "\"选择性遗忘\"机制：完整日志兜底，脚本可自由丢弃再重建"
+   ],
+   "method": "冻结模型 agent 只写脚本+笔记、harness 记录全量日志；协议把每个工件归属到任务边界，量化引用、重写、废弃比例。",
+   "results": "跨任务边界脚本引用仅 33/630；边界处 74% 脚本被废弃；笔记只追加从不修订；硬编码常量带入新任务是代价最高错误，修复靠参数化。",
+   "value": "给基础模型 agent 的持续学习提供白盒视角，指出参数化是有效修复。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "思想追踪测量协议：逐脚本/笔记追溯从形成到修正或废弃的全生命周期",
+    "agentChange": "冻结模型 agent 只写脚本+笔记、harness 记录全量日志；协议把每个工件归属到任务边界，量化引用、重写、废弃比例。",
+    "selfEvolution": null,
+    "evidence": [
+     "跨任务边界脚本引用仅 33/630；边界处 74% 脚本被废弃；笔记只追加从不修订；硬编码常量带入新任务是代价最高错误，修复靠参数化。",
+     "\"选择性遗忘\"机制：完整日志兜底，脚本可自由丢弃再重建"
+    ],
+    "faq": {
+     "problem": "白盒追踪编码 agent 的文件记忆，跨任务知识传递靠\"重写\"而非\"引用\"。",
+     "mechanism": "冻结模型 agent 只写脚本+笔记、harness 记录全量日志；协议把每个工件归属到任务边界，量化引用、重写、废弃比例。",
+     "agentChange": "冻结模型 agent 只写脚本+笔记、harness 记录全量日志；协议把每个工件归属到任务边界，量化引用、重写、废弃比例。",
+     "support": "跨任务边界脚本引用仅 33/630；边界处 74% 脚本被废弃；笔记只追加从不修订；硬编码常量带入新任务是代价最高错误，修复靠参数化。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "给基础模型 agent 的持续学习提供白盒视角，指出参数化是有效修复。"
+   }
+  },
+  {
+   "id": "2610.10962",
+   "version": 1,
+   "title": "iAm.md: Robot Skill Self-Assessment through Agentic Introspection for Unknown Open-Vocabulary Domains",
+   "abstract": "Markdown 标准描述机器人能力 + 开放词表语义地图，agent 生成代码前自检技能。",
+   "authors": [],
+   "published": "2026-10-10T04:00:00.000Z",
+   "updated": "2026-10-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.10962",
+   "pdf": "https://arxiv.org/pdf/2610.10962",
+   "announceType": "new",
+   "summary": "Markdown 标准描述机器人能力 + 开放词表语义地图，agent 生成代码前自检技能。",
+   "topic": "Agent / 强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.10962"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给具身 agent 证据化的自检路径，降低\"幻觉即行动\"的风险。",
+   "repository": null,
+   "motivation": "LLM 生成的机器人代码可能调用不存在的工具或未观测对象，幻觉变物理动作。",
+   "coreProblem": "场景接地只解决\"东西在哪\"，不解决\"机器人能否执行此操作\"（grounding failure）。",
+   "contributions": [
+    "iAm.md：Markdown 标准表示机器人已解析接口与显式未知项",
+    "开放词表语义记忆：本地 VLM 检测 + SAM 2 分割 → 持久对象记录",
+    "模拟 TIAGo 上验证语义地图构建、技能自检与工具代码复用"
+   ],
+   "innovations": [
+    "机器人描述由 agent 从部署环境自身生成，而非预写文档",
+    "\"内省\"机制：承诺代码前查询语义地图与自身描述验证前置条件"
+   ],
+   "method": "语义地图 + iAm.md 作为 agent 上下文，ROS 2 单一命令工具连接执行，执行反馈驱动内省式修订。",
+   "results": "语义地图 Found 100%（12/12）、Correct 92.31%；无 iAm.md 的 agent 发生 13 次 IK 失败与 23 次现场发现调用（有 iAm.md 仅 14 次发现 + 5 次读取）；验证过的关节构型在新任务直接复用。",
+   "value": "给具身 agent 证据化的自检路径，降低\"幻觉即行动\"的风险。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "iAm.md：Markdown 标准表示机器人已解析接口与显式未知项",
+    "agentChange": "语义地图 + iAm.md 作为 agent 上下文，ROS 2 单一命令工具连接执行，执行反馈驱动内省式修订。",
+    "selfEvolution": null,
+    "evidence": [
+     "语义地图 Found 100%（12/12）、Correct 92.31%；无 iAm.md 的 agent 发生 13 次 IK 失败与 23 次现场发现调用（有 iAm.md 仅 14 次发现 + 5 次读取）；验证过的关节构型在新任务直接复用。",
+     "\"内省\"机制：承诺代码前查询语义地图与自身描述验证前置条件"
+    ],
+    "faq": {
+     "problem": "Markdown 标准描述机器人能力 + 开放词表语义地图，agent 生成代码前自检技能。",
+     "mechanism": "语义地图 + iAm.md 作为 agent 上下文，ROS 2 单一命令工具连接执行，执行反馈驱动内省式修订。",
+     "agentChange": "语义地图 + iAm.md 作为 agent 上下文，ROS 2 单一命令工具连接执行，执行反馈驱动内省式修订。",
+     "support": "语义地图 Found 100%（12/12）、Correct 92.31%；无 iAm.md 的 agent 发生 13 次 IK 失败与 23 次现场发现调用（有 iAm.md 仅 14 次发现 + 5 次读取）；验证过的关节构型在新任务直接复用。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "给具身 agent 证据化的自检路径，降低\"幻觉即行动\"的风险。"
+   }
+  },
+  {
+   "id": "2610.11451",
+   "version": 1,
+   "title": "SAIL: Scientific Agentic Intelligence via a Science-Aware Loop",
+   "abstract": "35B/3B 开放科研模型，失败驱动任务构建循环，SciCode 超 744B 的 GLM-5.2。",
+   "authors": [],
+   "published": "2026-10-10T04:00:00.000Z",
+   "updated": "2026-10-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.11451",
+   "pdf": "https://arxiv.org/pdf/2610.11451",
+   "announceType": "new",
+   "summary": "35B/3B 开放科研模型，失败驱动任务构建循环，SciCode 超 744B 的 GLM-5.2。",
+   "topic": "大语言模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.11451"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明\"小开放模型 + 失败驱动循环\"可在科研 agent 上比肩大模型。",
+   "repository": null,
+   "motivation": "科研 agent 需在执行中持续做科学判断，开放模型缺针对性训练任务。",
+   "coreProblem": "科学能力训练数据缺\"按能力缺口定向构建任务\"的闭环。",
+   "contributions": [
+    "科学感知改进循环：前沿模型 agent 诊断失败 → 构建针对性训练任务与环境",
+    "训练配方：SFT + 专家训练 + 多教师在线蒸馏（MOPD）+ agentic RL",
+    "35B 总参 / 3B 激活开放模型，覆盖文献检索、科学编码、端到端科研"
+   ],
+   "innovations": [
+    "训练任务由\"诊断模型自身失败轨迹\"生成，非人工策划",
+    "科学资源（论文集 + 代码库）驱动任务构建与工具环境装配"
+   ],
+   "method": "循环 = 诊断能力缺口（检索/证据选择/科学假设/规划修订）→ 构建问题与可执行任务 → 训练 → 重评，多周期迭代。",
+   "results": "SciCode 50.35 超 744B GLM-5.2（47.57）；12 任务均值 59.76 列第二（GLM-5.2 63.30、DeepSeek-V4-Flash 59.15）；较基座 LitQA-search +37.33、E2E-Bench Basic +30.71；35B 规模 13 项中 12 项领先。",
+   "value": "证明\"小开放模型 + 失败驱动循环\"可在科研 agent 上比肩大模型。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "科学感知改进循环：前沿模型 agent 诊断失败 → 构建针对性训练任务与环境",
+    "agentChange": "循环 = 诊断能力缺口（检索/证据选择/科学假设/规划修订）→ 构建问题与可执行任务 → 训练 → 重评，多周期迭代。",
+    "selfEvolution": null,
+    "evidence": [
+     "SciCode 50.35 超 744B GLM-5.2（47.57）；12 任务均值 59.76 列第二（GLM-5.2 63.30、DeepSeek-V4-Flash 59.15）；较基座 LitQA-search +37.33、E2E-Bench Basic +30.71；35B 规模 13 项中 12 项领先。",
+     "科学资源（论文集 + 代码库）驱动任务构建与工具环境装配"
+    ],
+    "faq": {
+     "problem": "35B/3B 开放科研模型，失败驱动任务构建循环，SciCode 超 744B 的 GLM-5.2。",
+     "mechanism": "循环 = 诊断能力缺口（检索/证据选择/科学假设/规划修订）→ 构建问题与可执行任务 → 训练 → 重评，多周期迭代。",
+     "agentChange": "循环 = 诊断能力缺口（检索/证据选择/科学假设/规划修订）→ 构建问题与可执行任务 → 训练 → 重评，多周期迭代。",
+     "support": "SciCode 50.35 超 744B GLM-5.2（47.57）；12 任务均值 59.76 列第二（GLM-5.2 63.30、DeepSeek-V4-Flash 59.15）；较基座 LitQA-search +37.33、E2E-Bench Basic +30.71；35B 规模 13 项中 12 项领先。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "证明\"小开放模型 + 失败驱动循环\"可在科研 agent 上比肩大模型。"
+   }
+  },
+  {
+   "id": "2610.11140",
+   "version": 1,
+   "title": "ActiveMedAgent: Cost-Aware Trajectory Learning for Multimodal Medical Diagnosis",
+   "abstract": "冻结 VLM 上做成本感知序贯取证，NEJM 准确率翻倍，发现\"信息过载\"效应。",
+   "authors": [],
+   "published": "2026-10-10T04:00:00.000Z",
+   "updated": "2026-10-10T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.11140",
+   "pdf": "https://arxiv.org/pdf/2610.11140",
+   "announceType": "new",
+   "summary": "冻结 VLM 上做成本感知序贯取证，NEJM 准确率翻倍，发现\"信息过载\"效应。",
+   "topic": "医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.11140"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "提出医学 AI 的\"证据经济学\"视角，对齐真实诊断成本。",
+   "repository": null,
+   "motivation": "临床诊断是从便宜到昂贵证据的逐步升级，医学 MLLM 却按静态预测评测。",
+   "coreProblem": "一次给齐全部模态反而可能干扰 VLM，\"信息越全越好\"不成立。",
+   "contributions": [
+    "ActiveMedAgent：跟踪诊断信念分布，按每步诊断效用减成本评分取证",
+    "PolicyNet：轻量 MLP 控制器离线学于评分轨迹，决定\"再取证还是提交\"",
+    "3 个基准（NEJM/MIDAS/OLIVES）验证 + 175 例信息过载机制分析"
+   ],
+   "innovations": [
+    "把多模态诊断变成序贯决策问题，学\"该省略什么\"而不只是\"该取什么\"",
+    "VLM 推理与定价取证分离，冻结 VLM 也能靠证据轨迹提升"
+   ],
+   "method": "冻结 API VLM 输出候选诊断分布，每步信息增益减成本为奖励，离线训练 MLP 停止/升级策略。",
+   "results": "NEJM/GPT-4o 准确率 48.3%（zero-shot 23.2%、passive 20.7%），MRR 较全模态基线 +21.0 分；每正确诊断成本最多省 $1,768（GPT-4o-mini）；6 种设置全面超全模态基线。",
+   "value": "提出医学 AI 的\"证据经济学\"视角，对齐真实诊断成本。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "ActiveMedAgent：跟踪诊断信念分布，按每步诊断效用减成本评分取证",
+    "agentChange": "冻结 API VLM 输出候选诊断分布，每步信息增益减成本为奖励，离线训练 MLP 停止/升级策略。",
+    "selfEvolution": null,
+    "evidence": [
+     "NEJM/GPT-4o 准确率 48.3%（zero-shot 23.2%、passive 20.7%），MRR 较全模态基线 +21.0 分；每正确诊断成本最多省 $1,768（GPT-4o-mini）；6 种设置全面超全模态基线。",
+     "VLM 推理与定价取证分离，冻结 VLM 也能靠证据轨迹提升"
+    ],
+    "faq": {
+     "problem": "冻结 VLM 上做成本感知序贯取证，NEJM 准确率翻倍，发现\"信息过载\"效应。",
+     "mechanism": "冻结 API VLM 输出候选诊断分布，每步信息增益减成本为奖励，离线训练 MLP 停止/升级策略。",
+     "agentChange": "冻结 API VLM 输出候选诊断分布，每步信息增益减成本为奖励，离线训练 MLP 停止/升级策略。",
+     "support": "NEJM/GPT-4o 准确率 48.3%（zero-shot 23.2%、passive 20.7%），MRR 较全模态基线 +21.0 分；每正确诊断成本最多省 $1,768（GPT-4o-mini）；6 种设置全面超全模态基线。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "提出医学 AI 的\"证据经济学\"视角，对齐真实诊断成本。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-10-09",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-10-09 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-30T21:30:06.000Z",
+ "latestPaperAt": "2026-10-10T04:00:00.000Z",
+ "totalMatched": 1100,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 1100
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 60,
+ "trends": {
+  "status": "accumulating",
+  "days": 60,
+  "minimumDays": 15,
+  "message": "已积累 60/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-30T21:30:06.000Z",
+ "snapshotDay": "2026-10-10",
+ "historical": true
+}

@@ -1,0 +1,1023 @@
+{
+ "papers": [
+  {
+   "id": "2601.13401",
+   "version": 1,
+   "title": "SQuID: A Benchmark for Quantitative Spatial Reasoning on Satellite Imagery",
+   "abstract": "卫星定量推理基准 + 代码生成 QVLM，准确率 42.0% 超 VLM 13.9 点。",
+   "authors": [],
+   "published": "2026-10-29T04:00:00.000Z",
+   "updated": "2026-10-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2601.13401",
+   "pdf": "https://arxiv.org/pdf/2601.13401",
+   "announceType": "new",
+   "summary": "卫星定量推理基准 + 代码生成 QVLM，准确率 42.0% 超 VLM 13.9 点。",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2601.13401"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "定量精度来自像素级掩膜而非更大模型，指明架构方向。",
+   "repository": null,
+   "motivation": "VLM 能描述卫星图却算不准数量与面积，遥感应答难以落地。",
+   "coreProblem": "视觉编码器 256 倍压缩摧毁计数与测量所需的像素级空间索引。",
+   "contributions": [
+    "建 SQuID：2000 题、587 图、三档难度",
+    "提出 QVLM：LLM 生成代码调分割模型做几何运算",
+    "实证瓶颈在架构而非数据量"
+   ],
+   "innovations": [
+    "把代码生成范式从自然图迁到 0.3–1.0 m GSD 卫星度量",
+    "与耦合式 VLM 相反：语言理解与像素分析解耦",
+    "答案按 10 名标注者方差区间判定，非精确匹配"
+   ],
+   "method": "LLM 读题后生成 Python 调分割模型出掩膜，再按 GSD 换算做计数、面积与缓冲区邻接运算。",
+   "results": "SQuID 上 QVLM(GPT-5+ConvNeXt) 42.0% vs GPT-5 VLM 28.1%（+13.9 点）；Tier 2 领先 19.97 点，碎片度题 81.63% vs 26.53%。",
+   "value": "定量精度来自像素级掩膜而非更大模型，指明架构方向。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "建 SQuID：2000 题、587 图、三档难度",
+    "agentChange": "LLM 读题后生成 Python 调分割模型出掩膜，再按 GSD 换算做计数、面积与缓冲区邻接运算。",
+    "selfEvolution": null,
+    "evidence": [
+     "SQuID 上 QVLM(GPT-5+ConvNeXt) 42.0% vs GPT-5 VLM 28.1%（+13.9 点）；Tier 2 领先 19.97 点，碎片度题 81.63% vs 26.53%。",
+     "与耦合式 VLM 相反：语言理解与像素分析解耦",
+     "答案按 10 名标注者方差区间判定，非精确匹配"
+    ],
+    "faq": {
+     "problem": "卫星定量推理基准 + 代码生成 QVLM，准确率 42.0% 超 VLM 13.9 点。",
+     "mechanism": "LLM 读题后生成 Python 调分割模型出掩膜，再按 GSD 换算做计数、面积与缓冲区邻接运算。",
+     "agentChange": "LLM 读题后生成 Python 调分割模型出掩膜，再按 GSD 换算做计数、面积与缓冲区邻接运算。",
+     "support": "SQuID 上 QVLM(GPT-5+ConvNeXt) 42.0% vs GPT-5 VLM 28.1%（+13.9 点）；Tier 2 领先 19.97 点，碎片度题 81.63% vs 26.53%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "定量精度来自像素级掩膜而非更大模型，指明架构方向。"
+   }
+  },
+  {
+   "id": "2606.25312",
+   "version": 1,
+   "title": "LEVIRDet: A Million-Scale 159-Category Dataset and Foundation Model for Universal Remote Sensing Object Detection",
+   "abstract": "159 类百万框遥感检测数据集 + 检测基础模型，免微调 +5.02 mAP。",
+   "authors": [],
+   "published": "2026-10-29T04:00:00.000Z",
+   "updated": "2026-10-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2606.25312",
+   "pdf": "https://arxiv.org/pdf/2606.25312",
+   "announceType": "new",
+   "summary": "159 类百万框遥感检测数据集 + 检测基础模型，免微调 +5.02 mAP。",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2606.25312"
+   ],
+   "hotScore": 94,
+   "scoreParts": {
+    "relevance": 86,
+    "evidence": 70,
+    "noveltyClaim": 82,
+    "actionability": 84,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "统一数据引擎加尺度/层级建模，可替代逐数据集重训。",
+   "repository": null,
+   "motivation": "数据集类别窄且绑定单一传感器，检测器换域即失效。",
+   "coreProblem": "检测器不建模 GSD、场景密度与类别层级，跨分辨率跨传感器即崩。",
+   "contributions": [
+    "建 LEVIRDet-159：17.4 万图、256 万框、159 类",
+    "设计分辨率感知数据引擎，统一 tight-HBB 与层级标注",
+    "LEVIRDetNet：GSD 条件查询、动态分配、层级头"
+   ],
+   "innovations": [
+    "不用外部元数据，改为在线视觉估计 GSD 并调制检测查询",
+    "标注停在视觉可辨的最可信层级，支持混合粒度监督",
+    "非直接合并：90% 以上框为新绘或修订"
+   ],
+   "method": "DEIM 式端到端检测器 + DINOv3 骨干，用 CNN/FFT/边缘三描述子预测 GSD，调制查询嵌入与查询预算。",
+   "results": "9 个外部基准零目标域训练，平均 AP 80.56，超最强目标监督均值 5.02 mAP；AOSD 54.63（+17.65）。",
+   "value": "统一数据引擎加尺度/层级建模，可替代逐数据集重训。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "建 LEVIRDet-159：17.4 万图、256 万框、159 类",
+    "agentChange": "DEIM 式端到端检测器 + DINOv3 骨干，用 CNN/FFT/边缘三描述子预测 GSD，调制查询嵌入与查询预算。",
+    "selfEvolution": null,
+    "evidence": [
+     "9 个外部基准零目标域训练，平均 AP 80.56，超最强目标监督均值 5.02 mAP；AOSD 54.63（+17.65）。",
+     "标注停在视觉可辨的最可信层级，支持混合粒度监督",
+     "非直接合并：90% 以上框为新绘或修订"
+    ],
+    "faq": {
+     "problem": "159 类百万框遥感检测数据集 + 检测基础模型，免微调 +5.02 mAP。",
+     "mechanism": "DEIM 式端到端检测器 + DINOv3 骨干，用 CNN/FFT/边缘三描述子预测 GSD，调制查询嵌入与查询预算。",
+     "agentChange": "DEIM 式端到端检测器 + DINOv3 骨干，用 CNN/FFT/边缘三描述子预测 GSD，调制查询嵌入与查询预算。",
+     "support": "9 个外部基准零目标域训练，平均 AP 80.56，超最强目标监督均值 5.02 mAP；AOSD 54.63（+17.65）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 94,
+    "editorialTier": "must-read",
+    "recommendationReason": "统一数据引擎加尺度/层级建模，可替代逐数据集重训。"
+   }
+  },
+  {
+   "id": "2610.37545",
+   "version": 1,
+   "title": "GroundControl: Satellite-Conditioned Multi-View Diffusion for Reconstruction-Free Novel View Synthesis",
+   "abstract": "卫星图条件化多视图扩散做街景外推，免重建，PSNR +1.93 dB。",
+   "authors": [],
+   "published": "2026-10-29T04:00:00.000Z",
+   "updated": "2026-10-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.37545",
+   "pdf": "https://arxiv.org/pdf/2610.37545",
+   "announceType": "new",
+   "summary": "卫星图条件化多视图扩散做街景外推，免重建，PSNR +1.93 dB。",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.37545"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "卫星先验可低成本压制街景外推的布局幻觉。",
+   "repository": null,
+   "motivation": "稀疏街景外推会幻觉出不存在的建筑，卫星图提供可靠布局先验。",
+   "coreProblem": "卫星与街景视角差大，现有卫星引导法依赖高度图或三维重建与像素对齐。",
+   "contributions": [
+    "提出 GroundControl：卫星条件多视图扩散，免高度图/重建",
+    "设计射线引导交叉注意力，把卫星特征按相机射线注入",
+    "只训新增轻量参数，跨驾驶/全景/手持数据验证"
+   ],
+   "innovations": [
+    "首个卫星引导多视图生成且不依赖高度图或街景重建",
+    "卫星条件沿地面相机射线采样，而非全 token 全局注意力"
+   ],
+   "method": "在 SEVA 的 UNet 编码器插入射线引导交叉注意力，沿目标相机射线在卫星图采 20 点取 DINOv3 特征。",
+   "results": "Metropolis PSNR 10.88→12.81、建筑 IoU 0.291→0.372；nuScenes 11.33→11.88；高重叠 DL3DV 仅 +0.26 dB。",
+   "value": "卫星先验可低成本压制街景外推的布局幻觉。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 GroundControl：卫星条件多视图扩散，免高度图/重建",
+    "agentChange": "在 SEVA 的 UNet 编码器插入射线引导交叉注意力，沿目标相机射线在卫星图采 20 点取 DINOv3 特征。",
+    "selfEvolution": null,
+    "evidence": [
+     "Metropolis PSNR 10.88→12.81、建筑 IoU 0.291→0.372；nuScenes 11.33→11.88；高重叠 DL3DV 仅 +0.26 dB。",
+     "卫星条件沿地面相机射线采样，而非全 token 全局注意力"
+    ],
+    "faq": {
+     "problem": "卫星图条件化多视图扩散做街景外推，免重建，PSNR +1.93 dB。",
+     "mechanism": "在 SEVA 的 UNet 编码器插入射线引导交叉注意力，沿目标相机射线在卫星图采 20 点取 DINOv3 特征。",
+     "agentChange": "在 SEVA 的 UNet 编码器插入射线引导交叉注意力，沿目标相机射线在卫星图采 20 点取 DINOv3 特征。",
+     "support": "Metropolis PSNR 10.88→12.81、建筑 IoU 0.291→0.372；nuScenes 11.33→11.88；高重叠 DL3DV 仅 +0.26 dB。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "卫星先验可低成本压制街景外推的布局幻觉。"
+   }
+  },
+  {
+   "id": "2610.36729",
+   "version": 1,
+   "title": "Hy-Nomas: Towards Free-form Interactive World Generation",
+   "abstract": "8B 自回归 DiT 世界模型统一文本与相机控制，文本遵循胜率 75%。",
+   "authors": [],
+   "published": "2026-10-29T04:00:00.000Z",
+   "updated": "2026-10-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.36729",
+   "pdf": "https://arxiv.org/pdf/2610.36729",
+   "announceType": "new",
+   "summary": "8B 自回归 DiT 世界模型统一文本与相机控制，文本遵循胜率 75%。",
+   "topic": "计算机视觉与世界模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.36729"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给出可复现的开源交互世界模型基线，并暴露记忆短板。",
+   "repository": null,
+   "motivation": "世界模型需在多轮生成中响应自由指令并保持场景一致。",
+   "coreProblem": "双向 DiT 改因果后动作指令跨段仍可见，导致动作错序与跨段重复执行。",
+   "contributions": [
+    "提出 Hy-Nomas：8B 自回归 DiT，统一文本与相机控制",
+    "配套结构化时序字幕与动作感知因果注意力",
+    "建 280 例四能力基准，开源权重与资产"
+   ],
+   "innovations": [
+    "动作描述仅在本段时间窗可见，此前因果掩码不区分指令时效",
+    "相机用连续相对位姿 cross-attn，而非离散按键/方向量化"
+   ],
+   "method": "在 HunyuanVideo 1.5 上逐段改因果，JSON 字幕拆描述头/动作尾做细粒度掩码，再按课程训练。",
+   "results": "280 例成对人工评测：文本遵循胜率 75.0%（对 LingBot-World v2）；相机控制对 Genie 3 净胜 18.0 点，空间记忆净负 16.7 点。",
+   "value": "给出可复现的开源交互世界模型基线，并暴露记忆短板。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 Hy-Nomas：8B 自回归 DiT，统一文本与相机控制",
+    "agentChange": "在 HunyuanVideo 1.5 上逐段改因果，JSON 字幕拆描述头/动作尾做细粒度掩码，再按课程训练。",
+    "selfEvolution": null,
+    "evidence": [
+     "280 例成对人工评测：文本遵循胜率 75.0%（对 LingBot-World v2）；相机控制对 Genie 3 净胜 18.0 点，空间记忆净负 16.7 点。",
+     "相机用连续相对位姿 cross-attn，而非离散按键/方向量化"
+    ],
+    "faq": {
+     "problem": "8B 自回归 DiT 世界模型统一文本与相机控制，文本遵循胜率 75%。",
+     "mechanism": "在 HunyuanVideo 1.5 上逐段改因果，JSON 字幕拆描述头/动作尾做细粒度掩码，再按课程训练。",
+     "agentChange": "在 HunyuanVideo 1.5 上逐段改因果，JSON 字幕拆描述头/动作尾做细粒度掩码，再按课程训练。",
+     "support": "280 例成对人工评测：文本遵循胜率 75.0%（对 LingBot-World v2）；相机控制对 Genie 3 净胜 18.0 点，空间记忆净负 16.7 点。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "给出可复现的开源交互世界模型基线，并暴露记忆短板。"
+   }
+  },
+  {
+   "id": "2610.37662",
+   "version": 1,
+   "title": "Can Discrete Tokens Serve as Semantically Lossless Representations of Visual Signals?",
+   "abstract": "证伪量化误差决定论：FVQ 按有效比特预算追平连续视觉表示。",
+   "authors": [],
+   "published": "2026-10-29T04:00:00.000Z",
+   "updated": "2026-10-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.37662",
+   "pdf": "https://arxiv.org/pdf/2610.37662",
+   "announceType": "new",
+   "summary": "证伪量化误差决定论：FVQ 按有效比特预算追平连续视觉表示。",
+   "topic": "计算机视觉与世界模型",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.37662"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给出离散视觉 token 可扩展的扩容配方。",
+   "repository": null,
+   "motivation": "离散视觉 token 想当原生多模态接口，语义保真度仍受质疑。",
+   "coreProblem": "RVQ/PQ 后期码本只剩弱残差或窄通道，标称比特涨而有效语义饱和。",
+   "contributions": [
+    "证伪量化误差决定语义：MSE 大 9 倍的表示理解反而更好",
+    "提出 FVQ，比特预算扩展时仍增益",
+    "工业级训练 8B 模型，离散表示追平旗舰连续模型"
+   ],
+   "innovations": [
+    "量化器设计目标从重建误差最小改为有效比特预算",
+    "各码本取全特征固定维视图并经紧框架合成，非残差/通道切分"
+   ],
+   "method": "紧框架投影出 L 个同维稠密视图并行量化再合成；VLM 阶段冻结量化器，只学离散索引 embedding。",
+   "results": "C=16384 时 16 码本 224 bit/patch 平均 65.3 超连续 QwenViT 64.6，RVQ/PQ 止步 64.0/64.3；8B CharXiv 86.1/49.3 超 Qwen3-VL-8B 83.0/46.4。",
+   "value": "给出离散视觉 token 可扩展的扩容配方。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "证伪量化误差决定语义：MSE 大 9 倍的表示理解反而更好",
+    "agentChange": "紧框架投影出 L 个同维稠密视图并行量化再合成；VLM 阶段冻结量化器，只学离散索引 embedding。",
+    "selfEvolution": null,
+    "evidence": [
+     "C=16384 时 16 码本 224 bit/patch 平均 65.3 超连续 QwenViT 64.6，RVQ/PQ 止步 64.0/64.3；8B CharXiv 86.1/49.3 超 Qwen3-VL-8B 83.0/46.4。",
+     "各码本取全特征固定维视图并经紧框架合成，非残差/通道切分"
+    ],
+    "faq": {
+     "problem": "证伪量化误差决定论：FVQ 按有效比特预算追平连续视觉表示。",
+     "mechanism": "紧框架投影出 L 个同维稠密视图并行量化再合成；VLM 阶段冻结量化器，只学离散索引 embedding。",
+     "agentChange": "紧框架投影出 L 个同维稠密视图并行量化再合成；VLM 阶段冻结量化器，只学离散索引 embedding。",
+     "support": "C=16384 时 16 码本 224 bit/patch 平均 65.3 超连续 QwenViT 64.6，RVQ/PQ 止步 64.0/64.3；8B CharXiv 86.1/49.3 超 Qwen3-VL-8B 83.0/46.4。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "给出离散视觉 token 可扩展的扩容配方。"
+   }
+  },
+  {
+   "id": "2610.36210",
+   "version": 1,
+   "title": "Diagnosing and Correcting Bias in MLLM for Long Video Understanding",
+   "abstract": "免训练反事实探针加深层残差纠偏，长视频基准最高 +7.8 点。",
+   "authors": [],
+   "published": "2026-10-29T04:00:00.000Z",
+   "updated": "2026-10-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.36210",
+   "pdf": "https://arxiv.org/pdf/2610.36210",
+   "announceType": "new",
+   "summary": "免训练反事实探针加深层残差纠偏，长视频基准最高 +7.8 点。",
+   "topic": "多模态与评测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.36210"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "长视频短板不只在「看不到」，也在「看到不用」。",
+   "repository": null,
+   "motivation": "长视频关键证据稀疏，低帧率采样下模型更易被表面线索带偏。",
+   "coreProblem": "加帧扩上下文只买来算力，证据喂全了模型仍跟语言先验走。",
+   "contributions": [
+    "建 S-MME：320 条捷径敏感问答，平均 15 分钟",
+    "提出 CLEAR：反事实视图估偏差 + 深层残差注入纠偏",
+    "三个开源 MLLM 在四个公开基准一致涨点"
+   ],
+   "innovations": [
+    "把「证据是否被用」落成可测差值：完整视与捷径视的隐状态差",
+    "纠正发生在隐状态而非输入，不改采样帧数",
+    "反事实对照从造数据/训练挪到推理期"
+   ],
+   "method": "三条前向（完整/Q-only/S-only）取深层隐状态算残差，门控超阈值时以 α=0.15 注入完整视路径。",
+   "results": "S-MME 上 Qwen3-VL-8B 20.5%→26.5%（+6.0）；同帧预算 MLVU 59.0→66.8（+7.8）、LVBench 46.0→52.4；人类 91.2%。",
+   "value": "长视频短板不只在「看不到」，也在「看到不用」。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "建 S-MME：320 条捷径敏感问答，平均 15 分钟",
+    "agentChange": "三条前向（完整/Q-only/S-only）取深层隐状态算残差，门控超阈值时以 α=0.15 注入完整视路径。",
+    "selfEvolution": null,
+    "evidence": [
+     "S-MME 上 Qwen3-VL-8B 20.5%→26.5%（+6.0）；同帧预算 MLVU 59.0→66.8（+7.8）、LVBench 46.0→52.4；人类 91.2%。",
+     "纠正发生在隐状态而非输入，不改采样帧数",
+     "反事实对照从造数据/训练挪到推理期"
+    ],
+    "faq": {
+     "problem": "免训练反事实探针加深层残差纠偏，长视频基准最高 +7.8 点。",
+     "mechanism": "三条前向（完整/Q-only/S-only）取深层隐状态算残差，门控超阈值时以 α=0.15 注入完整视路径。",
+     "agentChange": "三条前向（完整/Q-only/S-only）取深层隐状态算残差，门控超阈值时以 α=0.15 注入完整视路径。",
+     "support": "S-MME 上 Qwen3-VL-8B 20.5%→26.5%（+6.0）；同帧预算 MLVU 59.0→66.8（+7.8）、LVBench 46.0→52.4；人类 91.2%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "长视频短板不只在「看不到」，也在「看到不用」。"
+   }
+  },
+  {
+   "id": "2610.36554",
+   "version": 1,
+   "title": "PRISM-BENCH: Diagnosing Grounded and Faithful Multimodal Reasoning Beyond Final-Answer Accuracy",
+   "abstract": "千题多模态推理基准：最强系统仅 66%，85% 失败归因误感知。",
+   "authors": [],
+   "published": "2026-10-29T04:00:00.000Z",
+   "updated": "2026-10-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.36554",
+   "pdf": "https://arxiv.org/pdf/2610.36554",
+   "announceType": "new",
+   "summary": "千题多模态推理基准：最强系统仅 66%，85% 失败归因误感知。",
+   "topic": "多模态与评测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.36554"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把多模态评测从答案对错推进到有据、忠实与成本。",
+   "repository": null,
+   "motivation": "部署要求答案有据、推理忠实且成本可控，现有评测只看对错。",
+   "coreProblem": "只算最终答案准确率，分不清幻觉凑对与真推理，也不计推理成本。",
+   "contributions": [
+    "建 1000 题五类基准，每题配人工理想推理链与多标签",
+    "感知探针：约 85% 前沿失败归因误感知",
+    "提出参考链对齐与 CORE 成本两项指标"
+   ],
+   "innovations": [
+    "每题存人类推理链，过程诊断不依赖不稳定的过程奖励模型",
+    "让模型只凭自写图像描述作答，把感知失败与推理失败拆开测量"
+   ],
+   "method": "四阶段分权标注造题与理想链；用步级语义对齐、感知探针与 CORE 三类诊断评估 25 个系统。",
+   "results": "25 系统最高 66.0%（人类 83.9%）；导航约 47% vs 86%；trace 对齐 macro AUROC 0.66；CORE 重排 24.2% 模型对。",
+   "value": "把多模态评测从答案对错推进到有据、忠实与成本。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "建 1000 题五类基准，每题配人工理想推理链与多标签",
+    "agentChange": "四阶段分权标注造题与理想链；用步级语义对齐、感知探针与 CORE 三类诊断评估 25 个系统。",
+    "selfEvolution": null,
+    "evidence": [
+     "25 系统最高 66.0%（人类 83.9%）；导航约 47% vs 86%；trace 对齐 macro AUROC 0.66；CORE 重排 24.2% 模型对。",
+     "让模型只凭自写图像描述作答，把感知失败与推理失败拆开测量"
+    ],
+    "faq": {
+     "problem": "千题多模态推理基准：最强系统仅 66%，85% 失败归因误感知。",
+     "mechanism": "四阶段分权标注造题与理想链；用步级语义对齐、感知探针与 CORE 三类诊断评估 25 个系统。",
+     "agentChange": "四阶段分权标注造题与理想链；用步级语义对齐、感知探针与 CORE 三类诊断评估 25 个系统。",
+     "support": "25 系统最高 66.0%（人类 83.9%）；导航约 47% vs 86%；trace 对齐 macro AUROC 0.66；CORE 重排 24.2% 模型对。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "把多模态评测从答案对错推进到有据、忠实与成本。"
+   }
+  },
+  {
+   "id": "2610.36469",
+   "version": 1,
+   "title": "CoHARL: Co-Evolving Agent Policies and Executable Harnesses with Reinforcement Learning",
+   "abstract": "策略与一组可执行 harness 共同进化，SWE-rebench 27.6%。",
+   "authors": [],
+   "published": "2026-10-29T04:00:00.000Z",
+   "updated": "2026-10-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.36469",
+   "pdf": "https://arxiv.org/pdf/2610.36469",
+   "announceType": "new",
+   "summary": "策略与一组可执行 harness 共同进化，SWE-rebench 27.6%。",
+   "topic": "Agent 与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.36469"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "执行接口成为可与权重同步优化的新性能杠杆。",
+   "repository": null,
+   "motivation": "Agent 失败或源于策略或源于执行接口，单侧自适应都留病因。",
+   "coreProblem": "策略 RL 只绕开 harness 缺陷；harness 搜索冻结权重只搜一次。",
+   "contributions": [
+    "提出 CoHARL：策略与 harness 群体的共进化框架",
+    "用当前轨迹加历史精度-成本档案提案并调度候选",
+    "三基准评测，含等预算单 harness 对照"
+   ],
+   "innovations": [
+    "不同于 WHALE 交替单 harness：多版并存分摊",
+    "把 harness 群体当经验来源，新候选与旧版本共训同一策略"
+   ],
+   "method": "共享策略面对 harness 池，调度器分 rollout，proposer 依轨迹改写 harness 代码。",
+   "results": "SWE-rebench 27.6%，超 harness 搜索 6.4 点、plain GRPO 7.3 点；SWE-bench Verified 零适配 59.8%（基线 44.2%）；TB-2 36.8%。",
+   "value": "执行接口成为可与权重同步优化的新性能杠杆。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 CoHARL：策略与 harness 群体的共进化框架",
+    "agentChange": "共享策略面对 harness 池，调度器分 rollout，proposer 依轨迹改写 harness 代码。",
+    "selfEvolution": null,
+    "evidence": [
+     "SWE-rebench 27.6%，超 harness 搜索 6.4 点、plain GRPO 7.3 点；SWE-bench Verified 零适配 59.8%（基线 44.2%）；TB-2 36.8%。",
+     "把 harness 群体当经验来源，新候选与旧版本共训同一策略"
+    ],
+    "faq": {
+     "problem": "策略与一组可执行 harness 共同进化，SWE-rebench 27.6%。",
+     "mechanism": "共享策略面对 harness 池，调度器分 rollout，proposer 依轨迹改写 harness 代码。",
+     "agentChange": "共享策略面对 harness 池，调度器分 rollout，proposer 依轨迹改写 harness 代码。",
+     "support": "SWE-rebench 27.6%，超 harness 搜索 6.4 点、plain GRPO 7.3 点；SWE-bench Verified 零适配 59.8%（基线 44.2%）；TB-2 36.8%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "执行接口成为可与权重同步优化的新性能杠杆。"
+   }
+  },
+  {
+   "id": "2610.37567",
+   "version": 1,
+   "title": "Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents",
+   "abstract": "编码 Agent 自动生成实时小游戏基准：Astra 仅 9.0%，暂停后 75.0%。",
+   "authors": [],
+   "published": "2026-10-29T04:00:00.000Z",
+   "updated": "2026-10-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.37567",
+   "pdf": "https://arxiv.org/pdf/2610.37567",
+   "announceType": "new",
+   "summary": "编码 Agent 自动生成实时小游戏基准：Astra 仅 9.0%，暂停后 75.0%。",
+   "topic": "Agent 与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.37567"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把实时性确认为与能力并列的独立维度。",
+   "repository": null,
+   "motivation": "Agent 单步决策常超十秒，真实环境在它思考时仍在变化。",
+   "coreProblem": "现有基准在动作间等模型，或把多种能力混在一局，分不清慢与弱。",
+   "contributions": [
+    "Gym-Anything-RT：编码 Agent 自动生成实时游戏",
+    "建成 100 个实时游戏及非实时/难度/交互变体",
+    "拆出速度因素：实时普遍失败、速度是主因"
+   ],
+   "innovations": [
+    "同一程序可 live/减速/暂停，只改时钟不改任务",
+    "creator/auditor 分工构建，oracle 校验可解"
+   ],
+   "method": "creator 写实时程序与 oracle，auditor 独立报错迭代；控时钟给出 live/慢速/暂停三条件。",
+   "results": "难度 5 live 下 GPT-6 Astra 仅 9.0%，非实时对照 66.0%；减速 64× 升至 57.0%、暂停 75.0%；允许写代码 31.0%。",
+   "value": "把实时性确认为与能力并列的独立维度。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "Gym-Anything-RT：编码 Agent 自动生成实时游戏",
+    "agentChange": "creator 写实时程序与 oracle，auditor 独立报错迭代；控时钟给出 live/慢速/暂停三条件。",
+    "selfEvolution": null,
+    "evidence": [
+     "难度 5 live 下 GPT-6 Astra 仅 9.0%，非实时对照 66.0%；减速 64× 升至 57.0%、暂停 75.0%；允许写代码 31.0%。",
+     "creator/auditor 分工构建，oracle 校验可解"
+    ],
+    "faq": {
+     "problem": "编码 Agent 自动生成实时小游戏基准：Astra 仅 9.0%，暂停后 75.0%。",
+     "mechanism": "creator 写实时程序与 oracle，auditor 独立报错迭代；控时钟给出 live/慢速/暂停三条件。",
+     "agentChange": "creator 写实时程序与 oracle，auditor 独立报错迭代；控时钟给出 live/慢速/暂停三条件。",
+     "support": "难度 5 live 下 GPT-6 Astra 仅 9.0%，非实时对照 66.0%；减速 64× 升至 57.0%、暂停 75.0%；允许写代码 31.0%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "把实时性确认为与能力并列的独立维度。"
+   }
+  },
+  {
+   "id": "2610.37175",
+   "version": 1,
+   "title": "MLE-World: Predicting Machine Learning Experiment Outcomes with a Learned World Model",
+   "abstract": "4B 世界模型预测代码执行输出替代真跑，留出程序命中 77.9%。",
+   "authors": [],
+   "published": "2026-10-29T04:00:00.000Z",
+   "updated": "2026-10-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.37175",
+   "pdf": "https://arxiv.org/pdf/2610.37175",
+   "announceType": "new",
+   "summary": "4B 世界模型预测代码执行输出替代真跑，留出程序命中 77.9%。",
+   "topic": "Agent 与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.37175"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "执行反馈变便宜后，固定预算内能试更多想法。",
+   "repository": null,
+   "motivation": "MLE agent 每步都要真训练模型，算力卡死可试想法数。",
+   "coreProblem": "剪枝/排序只削总成本，单次执行仍贵，且不产出报错轨迹供调试。",
+   "contributions": [
+    "提出 MLE-World：4B 模型预测四类执行结果",
+    "在预测上搭五种测试时搜索策略",
+    "用预测置信度做选择性执行门控"
+   ],
+   "innovations": [
+    "把程序当动作、执行当环境转移，不依赖交互历史",
+    "预测可读报错轨迹与训练日志，而非单标量排序分"
+   ],
+   "method": "在 49.7 万条「代码→执行输出」对上微调 Qwen3.5-4B，输出终端输出/异常/崩溃/指标四字段与置信度。",
+   "results": "1700 条留出程序命中 77.9%（DeepSeek-V4-Flash 41.1%、最近邻 28.0%）；12h 搜索 UCB 达 52.1 百分位 vs AIDE 45.4；门控再省 30–40% 执行时间。",
+   "value": "执行反馈变便宜后，固定预算内能试更多想法。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 MLE-World：4B 模型预测四类执行结果",
+    "agentChange": "在 49.7 万条「代码→执行输出」对上微调 Qwen3.5-4B，输出终端输出/异常/崩溃/指标四字段与置信度。",
+    "selfEvolution": null,
+    "evidence": [
+     "1700 条留出程序命中 77.9%（DeepSeek-V4-Flash 41.1%、最近邻 28.0%）；12h 搜索 UCB 达 52.1 百分位 vs AIDE 45.4；门控再省 30–40% 执行时间。",
+     "预测可读报错轨迹与训练日志，而非单标量排序分"
+    ],
+    "faq": {
+     "problem": "4B 世界模型预测代码执行输出替代真跑，留出程序命中 77.9%。",
+     "mechanism": "在 49.7 万条「代码→执行输出」对上微调 Qwen3.5-4B，输出终端输出/异常/崩溃/指标四字段与置信度。",
+     "agentChange": "在 49.7 万条「代码→执行输出」对上微调 Qwen3.5-4B，输出终端输出/异常/崩溃/指标四字段与置信度。",
+     "support": "1700 条留出程序命中 77.9%（DeepSeek-V4-Flash 41.1%、最近邻 28.0%）；12h 搜索 UCB 达 52.1 百分位 vs AIDE 45.4；门控再省 30–40% 执行时间。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "执行反馈变便宜后，固定预算内能试更多想法。"
+   }
+  },
+  {
+   "id": "2610.36444",
+   "version": 1,
+   "title": "RouteDRAG: Learning to Route and Control Agentic Execution for Multimodal Document RAG",
+   "abstract": "学会判定何时该调 Agent 并校准其动作，DocBench 75.86%。",
+   "authors": [],
+   "published": "2026-10-29T04:00:00.000Z",
+   "updated": "2026-10-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.36444",
+   "pdf": "https://arxiv.org/pdf/2610.36444",
+   "announceType": "new",
+   "summary": "学会判定何时该调 Agent 并校准其动作，DocBench 75.86%。",
+   "topic": "Agent 与强化学习",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.36444"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给「该不该让 Agent 多想几步」一个可学习判据。",
+   "repository": null,
+   "motivation": "Agentic 执行并非总必要，盲目调用既增成本又引入干扰答案。",
+   "coreProblem": "现有 Agentic RAG 只自适应检索内容，缺调用 Agent 的判据。",
+   "contributions": [
+    "提出 RouteDRAG：路由/动作控制/顺序训练四模块",
+    "实证三点：整体增益有限、收益依查询、操作增益非单调",
+    "两基准超九个 RAG 基线且回答调用更少"
+   ],
+   "innovations": [
+    "不预测查询难度，而预测 Agent 相对短路径的增益",
+    "操作决策改为对「立即终止」的相对打分"
+   ],
+   "method": "回归「Agent 减短路径」的增益决定是否调用，执行时用状态-动作相对打分修正 Planner 提案。",
+   "results": "DocBench 75.86%、MMLongBench-Doc 53.80%，比 uniform Agent 高 1.18/1.28 点，回答调用少 16.4%/14.9%。",
+   "value": "给「该不该让 Agent 多想几步」一个可学习判据。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 RouteDRAG：路由/动作控制/顺序训练四模块",
+    "agentChange": "回归「Agent 减短路径」的增益决定是否调用，执行时用状态-动作相对打分修正 Planner 提案。",
+    "selfEvolution": null,
+    "evidence": [
+     "DocBench 75.86%、MMLongBench-Doc 53.80%，比 uniform Agent 高 1.18/1.28 点，回答调用少 16.4%/14.9%。",
+     "操作决策改为对「立即终止」的相对打分"
+    ],
+    "faq": {
+     "problem": "学会判定何时该调 Agent 并校准其动作，DocBench 75.86%。",
+     "mechanism": "回归「Agent 减短路径」的增益决定是否调用，执行时用状态-动作相对打分修正 Planner 提案。",
+     "agentChange": "回归「Agent 减短路径」的增益决定是否调用，执行时用状态-动作相对打分修正 Planner 提案。",
+     "support": "DocBench 75.86%、MMLongBench-Doc 53.80%，比 uniform Agent 高 1.18/1.28 点，回答调用少 16.4%/14.9%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "给「该不该让 Agent 多想几步」一个可学习判据。"
+   }
+  },
+  {
+   "id": "2610.36355",
+   "version": 1,
+   "title": "WAKMan: Workload Aware KVCache Manager",
+   "abstract": "影子缓存回放近窗流量，在线切换淘汰策略，命中率 +5 点。",
+   "authors": [],
+   "published": "2026-10-29T04:00:00.000Z",
+   "updated": "2026-10-29T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.36355",
+   "pdf": "https://arxiv.org/pdf/2610.36355",
+   "announceType": "new",
+   "summary": "影子缓存回放近窗流量，在线切换淘汰策略，命中率 +5 点。",
+   "topic": "系统与基础设施",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.36355"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "前缀缓存淘汰可随流量漂移在线选，不必预判部署类型。",
+   "repository": null,
+   "motivation": "vLLM 默认 LRU 会被一次性块冲垮，且无静态最优策略。",
+   "coreProblem": "按请求类型分队列或拟合复用间隔，都要求已知类型与轮次。",
+   "contributions": [
+    "提出 WAKMan：影子 LRU/S3FIFO 回放近窗流量并定期切换",
+    "无需请求类型/prompt/离线训练，只用 block hash",
+    "在 vLLM + 4 卡实测 20 组混合负载"
+   ],
+   "innovations": [
+    "不做单缓存内逐请求微调，而是每窗口整体选一条完整策略",
+    "把「该用哪条策略」从运维预判变成可在线回放的测量问题"
+   ],
+   "method": "vLLM 内并行维护两份影子缓存，每 15 分钟用上一窗口 block hash 到达序列重放，取命中率高者。",
+   "results": "20 组单轮/多轮/agentic 混合负载平均命中率比 LRU 高 5 点；平均后悔 2.04 vs 7.09；纯多轮场景仍弱（15.0 vs 26.0）。",
+   "value": "前缀缓存淘汰可随流量漂移在线选，不必预判部署类型。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 WAKMan：影子 LRU/S3FIFO 回放近窗流量并定期切换",
+    "agentChange": "vLLM 内并行维护两份影子缓存，每 15 分钟用上一窗口 block hash 到达序列重放，取命中率高者。",
+    "selfEvolution": null,
+    "evidence": [
+     "20 组单轮/多轮/agentic 混合负载平均命中率比 LRU 高 5 点；平均后悔 2.04 vs 7.09；纯多轮场景仍弱（15.0 vs 26.0）。",
+     "把「该用哪条策略」从运维预判变成可在线回放的测量问题"
+    ],
+    "faq": {
+     "problem": "影子缓存回放近窗流量，在线切换淘汰策略，命中率 +5 点。",
+     "mechanism": "vLLM 内并行维护两份影子缓存，每 15 分钟用上一窗口 block hash 到达序列重放，取命中率高者。",
+     "agentChange": "vLLM 内并行维护两份影子缓存，每 15 分钟用上一窗口 block hash 到达序列重放，取命中率高者。",
+     "support": "20 组单轮/多轮/agentic 混合负载平均命中率比 LRU 高 5 点；平均后悔 2.04 vs 7.09；纯多轮场景仍弱（15.0 vs 26.0）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "前缀缓存淘汰可随流量漂移在线选，不必预判部署类型。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-10-28",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-10-28 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-30T21:30:06.000Z",
+ "latestPaperAt": "2026-10-29T04:00:00.000Z",
+ "totalMatched": 942,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 942
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 60,
+ "trends": {
+  "status": "accumulating",
+  "days": 60,
+  "minimumDays": 15,
+  "message": "已积累 60/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-30T21:30:06.000Z",
+ "snapshotDay": "2026-10-29",
+ "historical": true
+}

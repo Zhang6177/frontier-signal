@@ -1,0 +1,1017 @@
+{
+ "papers": [
+  {
+   "id": "2610.12182",
+   "version": 1,
+   "title": "AI-Based On-Board Maritime Object Detection for Earth Observation Payload Data Reduction on Versal Embedded Hardware",
+   "abstract": "星载 Versal DPU 部署船只检测做下行数据缩减，瓦片模式 29% 体积保住 98% 船只。",
+   "authors": [],
+   "published": "2026-10-09T04:00:00.000Z",
+   "updated": "2026-10-09T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.12182",
+   "pdf": "https://arxiv.org/pdf/2610.12182",
+   "announceType": "new",
+   "summary": "星载 Versal DPU 部署船只检测做下行数据缩减，瓦片模式 29% 体积保住 98% 船只。",
+   "topic": "遥感 / 地球观测 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.12182"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为海事监测卫星提供可落地的星上数据缩减路线，缓解下行瓶颈。",
+   "repository": null,
+   "motivation": "高分辨率 EO 卫星数据量超下行能力，而海事场景中船只只占画面极小部分。",
+   "coreProblem": "星上压缩对每个像素同等编码，把稀缺下行容量大量浪费在低价值的开阔海面背景上。",
+   "contributions": [
+    "由 68 幅标注 Maxar 场景生成 43 船类受控数据集，训练 YOLOX-S 检测器",
+    "INT8 量化部署到 Versal VC1902 DPU，平均场景（327 瓦片）推理 5.6s",
+    "设计元数据/裁剪/瓦片/选择性编码 4 种下行模式并量化\"保留船只-体积\"权衡"
+   ],
+   "innovations": [
+    "以\"按内容选择下行什么\"替代\"逐像素编码\"，把检测误差映射为下行损失风险",
+    "各模式给出显式误差边界，可按任务对漏检/虚警的容忍度直接选择"
+   ],
+   "method": "受控数据训练 → 量化嵌入 DPU → 用检测结果驱动分层下行产品组合。",
+   "results": "浮点 AP 86.1 / 10 类 mAP 68.9，量化后 AP 81.4（−4.7）；瓦片模式保 98% 船只、29% 体积，裁剪模式保 83%、3%；能耗 170J/场景。",
+   "value": "为海事监测卫星提供可落地的星上数据缩减路线，缓解下行瓶颈。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "由 68 幅标注 Maxar 场景生成 43 船类受控数据集，训练 YOLOX-S 检测器",
+    "agentChange": "受控数据训练 → 量化嵌入 DPU → 用检测结果驱动分层下行产品组合。",
+    "selfEvolution": null,
+    "evidence": [
+     "浮点 AP 86.1 / 10 类 mAP 68.9，量化后 AP 81.4（−4.7）；瓦片模式保 98% 船只、29% 体积，裁剪模式保 83%、3%；能耗 170J/场景。",
+     "各模式给出显式误差边界，可按任务对漏检/虚警的容忍度直接选择"
+    ],
+    "faq": {
+     "problem": "星载 Versal DPU 部署船只检测做下行数据缩减，瓦片模式 29% 体积保住 98% 船只。",
+     "mechanism": "受控数据训练 → 量化嵌入 DPU → 用检测结果驱动分层下行产品组合。",
+     "agentChange": "受控数据训练 → 量化嵌入 DPU → 用检测结果驱动分层下行产品组合。",
+     "support": "浮点 AP 86.1 / 10 类 mAP 68.9，量化后 AP 81.4（−4.7）；瓦片模式保 98% 船只、29% 体积，裁剪模式保 83%、3%；能耗 170J/场景。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为海事监测卫星提供可落地的星上数据缩减路线，缓解下行瓶颈。"
+   }
+  },
+  {
+   "id": "2610.12401",
+   "version": 1,
+   "title": "Learning Kilometer-Scale Weather Prediction with Global-Regional Alignment",
+   "abstract": "复用全球天气基础模型引导公里级区域预报，9 变量全面超过 CERRA NWP。",
+   "authors": [],
+   "published": "2026-10-09T04:00:00.000Z",
+   "updated": "2026-10-09T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.12401",
+   "pdf": "https://arxiv.org/pdf/2610.12401",
+   "announceType": "new",
+   "summary": "复用全球天气基础模型引导公里级区域预报，9 变量全面超过 CERRA NWP。",
+   "topic": "遥感 / 地球观测 / 地理空间",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.12401"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "低成本复用全球基础模型能力，把公里级区域预报的准入门槛大幅拉低。",
+   "repository": null,
+   "motivation": "公里级区域预报是本地预警刚需，而数值引导或额外训练全局组件成本太高。",
+   "coreProblem": "全球与区域表征处于不同网格，难以将全球引导与区域局部动力耦合推进。",
+   "contributions": [
+    "提出 ScaleCast 全球-区域对齐框架：GR 转换对齐表征、GRAD 块融合引导与区域交互",
+    "单一模型即插 Pangu-Weather / GraphCast / HRES 三驱动，无需针对性重训",
+    "CERRA 5.5km 上验证并迁移到 HRRR 3km 不同区域与分辨率"
+   ],
+   "innovations": [
+    "首次把预训练全球天气模型当作可复用大尺度预报源直接耦合区域高分辨率预测",
+    "对齐与动力解耦：全球引导只进 GRAD，区域邻域交互独立推进区域状态"
+   ],
+   "method": "全球/区域联合表征对齐到区域坐标，注意力融合引导信号并更新区域状态，逐 3h 外推。",
+   "results": "+30h 滚动 T2m RMSE 0.926 vs StormCast-Reg 1.004（−7.8%），MSLP 88.2 vs 90.5；RH500/RH850 降 7.0%/8.6%；风暴案例台风定位误差与中心气压偏差改善。",
+   "value": "低成本复用全球基础模型能力，把公里级区域预报的准入门槛大幅拉低。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 ScaleCast 全球-区域对齐框架：GR 转换对齐表征、GRAD 块融合引导与区域交互",
+    "agentChange": "全球/区域联合表征对齐到区域坐标，注意力融合引导信号并更新区域状态，逐 3h 外推。",
+    "selfEvolution": null,
+    "evidence": [
+     "+30h 滚动 T2m RMSE 0.926 vs StormCast-Reg 1.004（−7.8%），MSLP 88.2 vs 90.5；RH500/RH850 降 7.0%/8.6%；风暴案例台风定位误差与中心气压偏差改善。",
+     "对齐与动力解耦：全球引导只进 GRAD，区域邻域交互独立推进区域状态"
+    ],
+    "faq": {
+     "problem": "复用全球天气基础模型引导公里级区域预报，9 变量全面超过 CERRA NWP。",
+     "mechanism": "全球/区域联合表征对齐到区域坐标，注意力融合引导信号并更新区域状态，逐 3h 外推。",
+     "agentChange": "全球/区域联合表征对齐到区域坐标，注意力融合引导信号并更新区域状态，逐 3h 外推。",
+     "support": "+30h 滚动 T2m RMSE 0.926 vs StormCast-Reg 1.004（−7.8%），MSLP 88.2 vs 90.5；RH500/RH850 降 7.0%/8.6%；风暴案例台风定位误差与中心气压偏差改善。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "低成本复用全球基础模型能力，把公里级区域预报的准入门槛大幅拉低。"
+   }
+  },
+  {
+   "id": "2610.12468",
+   "version": 1,
+   "title": "DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training",
+   "abstract": "多视角跨本体机器人世界模型，AgiBot 动作保真 SOTA，交互缺陷率 48.1%→6.25%。",
+   "authors": [],
+   "published": "2026-10-09T04:00:00.000Z",
+   "updated": "2026-10-09T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.12468",
+   "pdf": "https://arxiv.org/pdf/2610.12468",
+   "announceType": "new",
+   "summary": "多视角跨本体机器人世界模型，AgiBot 动作保真 SOTA，交互缺陷率 48.1%→6.25%。",
+   "topic": "基础模型 / 世界模型 / VLA",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.12468"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让\"预测未来\"真正可用于真机策略评估，世界模型训练摆脱真机数据瓶颈。",
+   "repository": null,
+   "motivation": "机器人世界模型是策略评估与数据生成基础，但现数据集校准差、成功偏置严重。",
+   "coreProblem": "标定不精确损害动作跟随，且失败交互覆盖不足，反事实动作下没有真值反馈。",
+   "contributions": [
+    "提出多视角跨本体世界模型 DreamTrue，无需新增真机数据采集",
+    "离线几何标定法对齐动作条件与视频，发布 3 数据集 153,666 集、1660+ 小时标定",
+    "构建 44.9K 人工缺陷标注视频集（30.4K 缺陷），训练具身视频奖励模型"
+   ],
+   "innovations": [
+    "把动作轨迹渲染为图像空间条件 + 离线标定，摆脱专用标定序列依赖",
+    "改写记录轨迹做反事实后训练，奖励模型反馈替代配对的真实未来帧"
+   ],
+   "method": "阶段 I 学跨本体动作条件预测；阶段 II 用奖励引导 RL 后训练反事实轨迹。",
+   "results": "AgiBot nDTW 0.8772 SOTA（最强对手 0.8063），PSNR 23.06 / SSIM 0.936；交互缺陷率 48.12%→6.25%；AgiBot World Challenge 2026 世界模型赛道第 1。",
+   "value": "让\"预测未来\"真正可用于真机策略评估，世界模型训练摆脱真机数据瓶颈。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出多视角跨本体世界模型 DreamTrue，无需新增真机数据采集",
+    "agentChange": "阶段 I 学跨本体动作条件预测；阶段 II 用奖励引导 RL 后训练反事实轨迹。",
+    "selfEvolution": null,
+    "evidence": [
+     "AgiBot nDTW 0.8772 SOTA（最强对手 0.8063），PSNR 23.06 / SSIM 0.936；交互缺陷率 48.12%→6.25%；AgiBot World Challenge 2026 世界模型赛道第 1。",
+     "改写记录轨迹做反事实后训练，奖励模型反馈替代配对的真实未来帧"
+    ],
+    "faq": {
+     "problem": "多视角跨本体机器人世界模型，AgiBot 动作保真 SOTA，交互缺陷率 48.1%→6.25%。",
+     "mechanism": "阶段 I 学跨本体动作条件预测；阶段 II 用奖励引导 RL 后训练反事实轨迹。",
+     "agentChange": "阶段 I 学跨本体动作条件预测；阶段 II 用奖励引导 RL 后训练反事实轨迹。",
+     "support": "AgiBot nDTW 0.8772 SOTA（最强对手 0.8063），PSNR 23.06 / SSIM 0.936；交互缺陷率 48.12%→6.25%；AgiBot World Challenge 2026 世界模型赛道第 1。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "让\"预测未来\"真正可用于真机策略评估，世界模型训练摆脱真机数据瓶颈。"
+   }
+  },
+  {
+   "id": "2610.12470",
+   "version": 1,
+   "title": "Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration",
+   "abstract": "从单段人类视频学灵巧操作，未见真实构型零样本成功率 60–85%（基线 ≤15%）。",
+   "authors": [],
+   "published": "2026-10-09T04:00:00.000Z",
+   "updated": "2026-10-09T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.12470",
+   "pdf": "https://arxiv.org/pdf/2610.12470",
+   "announceType": "new",
+   "summary": "从单段人类视频学灵巧操作，未见真实构型零样本成功率 60–85%（基线 ≤15%）。",
+   "topic": "基础模型 / 世界模型 / VLA",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.12470"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "单段视频即可得到可泛化灵巧策略，把操作策略数据成本降低一个量级。",
+   "repository": null,
+   "motivation": "真机示教成本极高，单段人类视频是更廉价的示范来源。",
+   "coreProblem": "动作模仿难泛化到未见位姿与抓取；纯 RL 在高维多阶段任务中探索极难。",
+   "contributions": [
+    "将人类视频抽象为阶段式场景图，保留任务关系约束、丢弃执行细节",
+    "场景图接地的 RL：生成多样重置状态与逐阶段稠密奖励",
+    "5 项 UR3+20 自由度灵巧手任务实现零样本 sim2real"
+   ],
+   "innovations": [
+    "用图上的关系约束替代位姿/关键点约束，天然覆盖视频外的物体位姿与抓取",
+    "由场景图直接生成中间阶段重置，RL 从任务中途起步，探索路径大幅缩短"
+   ],
+   "method": "real-to-sim-to-real：抽场景图 → 仿真内多样重置 + 稠密奖励 RL → 零样本真机迁移。",
+   "results": "已见构型超基线 6.5%；未见构型成功率 60–85%，比次优基线高 71 个百分点（均值 75%）；仿真 4 种本体 94.6–96.2%。",
+   "value": "单段视频即可得到可泛化灵巧策略，把操作策略数据成本降低一个量级。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "将人类视频抽象为阶段式场景图，保留任务关系约束、丢弃执行细节",
+    "agentChange": "real-to-sim-to-real：抽场景图 → 仿真内多样重置 + 稠密奖励 RL → 零样本真机迁移。",
+    "selfEvolution": null,
+    "evidence": [
+     "已见构型超基线 6.5%；未见构型成功率 60–85%，比次优基线高 71 个百分点（均值 75%）；仿真 4 种本体 94.6–96.2%。",
+     "由场景图直接生成中间阶段重置，RL 从任务中途起步，探索路径大幅缩短"
+    ],
+    "faq": {
+     "problem": "从单段人类视频学灵巧操作，未见真实构型零样本成功率 60–85%（基线 ≤15%）。",
+     "mechanism": "real-to-sim-to-real：抽场景图 → 仿真内多样重置 + 稠密奖励 RL → 零样本真机迁移。",
+     "agentChange": "real-to-sim-to-real：抽场景图 → 仿真内多样重置 + 稠密奖励 RL → 零样本真机迁移。",
+     "support": "已见构型超基线 6.5%；未见构型成功率 60–85%，比次优基线高 71 个百分点（均值 75%）；仿真 4 种本体 94.6–96.2%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "单段视频即可得到可泛化灵巧策略，把操作策略数据成本降低一个量级。"
+   }
+  },
+  {
+   "id": "2610.12107",
+   "version": 1,
+   "title": "ContourVLA: A Closed-Loop Perception-Action Contour Policy for Generalized Referring Expression Segmentation",
+   "abstract": "把 GRES 重构为闭环轮廓策略，gRefCOCO val gIoU +8.7，8 个 RefCOCO 划分 mIoU 全 SOTA。",
+   "authors": [],
+   "published": "2026-10-09T04:00:00.000Z",
+   "updated": "2026-10-09T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.12107",
+   "pdf": "https://arxiv.org/pdf/2610.12107",
+   "announceType": "new",
+   "summary": "把 GRES 重构为闭环轮廓策略，gRefCOCO val gIoU +8.7，8 个 RefCOCO 划分 mIoU 全 SOTA。",
+   "topic": "基础模型 / 世界模型 / VLA",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.12107"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把机器人 VLA 的闭环交互范式引入分割，为基础模型分割提供新范式。",
+   "repository": null,
+   "motivation": "GRES 要同时平衡语义定位与边界精修，单级架构难以兼顾。",
+   "coreProblem": "级联视觉-语言架构靠静态特征接口与单遍 mask 预测，无法自适应感知与几何修正。",
+   "contributions": [
+    "首次将 GRES 重构为感知-动作闭环策略，可编辑轮廓作为显式策略状态",
+    "提出 EASS：轮廓引导双向边界采样 + 状态条件化多层多模态特征路由",
+    "提出 DECT-GRPO：dustbin 增强熵信用传输，做实例级信用分配"
+   ],
+   "innovations": [
+    "把分割当作 visuomotor 问题，轮廓同时是感知条件与动作输出，替代一次性 mask",
+    "信用分配显式处理假阳/漏检，而非 GRPO 的 rollout 级共享 advantage"
+   ],
+   "method": "SFT 冷启动后，GRPO 联合优化离散定位与连续轮廓动作，奖励来自软预测-目标对应。",
+   "results": "gRefCOCO gIoU 较最强基线 +8.7（val）/+2.8（testA）/+2.7（testB）；RefCOCO 系列 8 个划分 mIoU 全部最高。",
+   "value": "把机器人 VLA 的闭环交互范式引入分割，为基础模型分割提供新范式。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "首次将 GRES 重构为感知-动作闭环策略，可编辑轮廓作为显式策略状态",
+    "agentChange": "SFT 冷启动后，GRPO 联合优化离散定位与连续轮廓动作，奖励来自软预测-目标对应。",
+    "selfEvolution": null,
+    "evidence": [
+     "gRefCOCO gIoU 较最强基线 +8.7（val）/+2.8（testA）/+2.7（testB）；RefCOCO 系列 8 个划分 mIoU 全部最高。",
+     "信用分配显式处理假阳/漏检，而非 GRPO 的 rollout 级共享 advantage"
+    ],
+    "faq": {
+     "problem": "把 GRES 重构为闭环轮廓策略，gRefCOCO val gIoU +8.7，8 个 RefCOCO 划分 mIoU 全 SOTA。",
+     "mechanism": "SFT 冷启动后，GRPO 联合优化离散定位与连续轮廓动作，奖励来自软预测-目标对应。",
+     "agentChange": "SFT 冷启动后，GRPO 联合优化离散定位与连续轮廓动作，奖励来自软预测-目标对应。",
+     "support": "gRefCOCO gIoU 较最强基线 +8.7（val）/+2.8（testA）/+2.7（testB）；RefCOCO 系列 8 个划分 mIoU 全部最高。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "把机器人 VLA 的闭环交互范式引入分割，为基础模型分割提供新范式。"
+   }
+  },
+  {
+   "id": "2610.12448",
+   "version": 1,
+   "title": "One Block, Multiple Depths: Recurrent Vision Transformers with Depth-Programmed Experts",
+   "abstract": "单个循环 Transformer 块达到 DeiT III 精度、参数省 73%，支持弹性多深度推理。",
+   "authors": [],
+   "published": "2026-10-09T04:00:00.000Z",
+   "updated": "2026-10-09T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.12448",
+   "pdf": "https://arxiv.org/pdf/2610.12448",
+   "announceType": "new",
+   "summary": "单个循环 Transformer 块达到 DeiT III 精度、参数省 73%，支持弹性多深度推理。",
+   "topic": "基础模型 / 世界模型 / VLA",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.12448"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给出视觉基础编码器参数高效的新设计，一块模型多深度复用。",
+   "repository": null,
+   "motivation": "ViT 逐层堆叠冗余，想验证单层循环能否保留深度特异性计算。",
+   "coreProblem": "单块循环难以恢复随深度变化的 FFN 变换，以往需中间特征蒸馏兜底。",
+   "contributions": [
+    "提出 reViT：归一化深度坐标编程共享专家库凸组合，恢复深度特异 FFN",
+    "同一循环设置下系统对比 7 种 MoE 适配机制",
+    "弹性深度：单检查点重采样同一坐标区间即可跑多种推理深度"
+   ],
+   "innovations": [
+    "无中间特征蒸馏下，用共享专家凸组合还原深度变化，循环块直接追平全深度",
+    "连续可重采样深度程序，部署时可物化为固定深度稠密图，去在线路由"
+   ],
+   "method": "L 层堆叠换成 1 个循环模块，每深度 FFN 为 E 专家凸组合，混合权重由深度坐标决定。",
+   "results": "ImageNet 从头训 B/16 83.0% vs DeiT III 82.8%（23.6M vs 86.6M 参数）；L/16 参数约 1/7 达 83.8%；DINOv2 蒸馏仅用输出特征即逼近教师 linear probe。",
+   "value": "给出视觉基础编码器参数高效的新设计，一块模型多深度复用。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 reViT：归一化深度坐标编程共享专家库凸组合，恢复深度特异 FFN",
+    "agentChange": "L 层堆叠换成 1 个循环模块，每深度 FFN 为 E 专家凸组合，混合权重由深度坐标决定。",
+    "selfEvolution": null,
+    "evidence": [
+     "ImageNet 从头训 B/16 83.0% vs DeiT III 82.8%（23.6M vs 86.6M 参数）；L/16 参数约 1/7 达 83.8%；DINOv2 蒸馏仅用输出特征即逼近教师 linear probe。",
+     "连续可重采样深度程序，部署时可物化为固定深度稠密图，去在线路由"
+    ],
+    "faq": {
+     "problem": "单个循环 Transformer 块达到 DeiT III 精度、参数省 73%，支持弹性多深度推理。",
+     "mechanism": "L 层堆叠换成 1 个循环模块，每深度 FFN 为 E 专家凸组合，混合权重由深度坐标决定。",
+     "agentChange": "L 层堆叠换成 1 个循环模块，每深度 FFN 为 E 专家凸组合，混合权重由深度坐标决定。",
+     "support": "ImageNet 从头训 B/16 83.0% vs DeiT III 82.8%（23.6M vs 86.6M 参数）；L/16 参数约 1/7 达 83.8%；DINOv2 蒸馏仅用输出特征即逼近教师 linear probe。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "给出视觉基础编码器参数高效的新设计，一块模型多深度复用。"
+   }
+  },
+  {
+   "id": "2610.12419",
+   "version": 1,
+   "title": "OneSearch-VL: Unified Multimodal Deep Research Agent for Image and Video",
+   "abstract": "统一图像+视频多模态深度研究 Agent，8B 模型两项自研基准较 Qwen3-VL-8B 提升 20.2/17.6 分。",
+   "authors": [],
+   "published": "2026-10-09T04:00:00.000Z",
+   "updated": "2026-10-09T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.12419",
+   "pdf": "https://arxiv.org/pdf/2610.12419",
+   "announceType": "new",
+   "summary": "统一图像+视频多模态深度研究 Agent，8B 模型两项自研基准较 Qwen3-VL-8B 提升 20.2/17.6 分。",
+   "topic": "Agent / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.12419"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为多模态深度研究给出证据可溯的训练-评测闭环，小模型逼近大模型 Agent。",
+   "repository": null,
+   "motivation": "单图/多图/视频深度研究工作流同构：定位、检索、事实合成。",
+   "coreProblem": "视觉锚点、实体关系、来源事实与答案操作之间的依赖难以保持、监督与评测。",
+   "contributions": [
+    "提出 VGEG 视觉接地证据图，同时服务数据构建、过程监督与操作级评测",
+    "基于 VGEG 的数据引擎产出 SFT-110K 与 RL-10K，设计 EVGR 证据可溯奖励",
+    "构建 OneSearch-MI-Bench 与 OneSearch-Video-Bench 操作导向基准"
+   ],
+   "innovations": [
+    "以任务级证据图为统一参考，数据、训练、评测三者同构对齐",
+    "首个单图/多图/视频统一深度研究 Agent，同一轨迹表示与工具调度器"
+   ],
+   "method": "统一工具集（裁剪/OCR/图搜/文搜/选段）+ VGEG 校验的专家轨迹 + SFT + RL。",
+   "results": "较 Qwen3-VL-8B（带工具）+20.2（MI-Bench）/+17.6（Video-Bench）/+27.0（VideoDR）；六基准均值 58.3，超同规模 Agent +16.3 分。",
+   "value": "为多模态深度研究给出证据可溯的训练-评测闭环，小模型逼近大模型 Agent。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 VGEG 视觉接地证据图，同时服务数据构建、过程监督与操作级评测",
+    "agentChange": "统一工具集（裁剪/OCR/图搜/文搜/选段）+ VGEG 校验的专家轨迹 + SFT + RL。",
+    "selfEvolution": null,
+    "evidence": [
+     "较 Qwen3-VL-8B（带工具）+20.2（MI-Bench）/+17.6（Video-Bench）/+27.0（VideoDR）；六基准均值 58.3，超同规模 Agent +16.3 分。",
+     "首个单图/多图/视频统一深度研究 Agent，同一轨迹表示与工具调度器"
+    ],
+    "faq": {
+     "problem": "统一图像+视频多模态深度研究 Agent，8B 模型两项自研基准较 Qwen3-VL-8B 提升 20.2/17.6 分。",
+     "mechanism": "统一工具集（裁剪/OCR/图搜/文搜/选段）+ VGEG 校验的专家轨迹 + SFT + RL。",
+     "agentChange": "统一工具集（裁剪/OCR/图搜/文搜/选段）+ VGEG 校验的专家轨迹 + SFT + RL。",
+     "support": "较 Qwen3-VL-8B（带工具）+20.2（MI-Bench）/+17.6（Video-Bench）/+27.0（VideoDR）；六基准均值 58.3，超同规模 Agent +16.3 分。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为多模态深度研究给出证据可溯的训练-评测闭环，小模型逼近大模型 Agent。"
+   }
+  },
+  {
+   "id": "2610.12403",
+   "version": 1,
+   "title": "ViSkill: Reinforcing VLM Agents with Evolving Visual-Native Skills",
+   "abstract": "VLM Agent 视觉原生技能库，2D+3D 任务成功率 0.89（冷启动 0.91），快于 PPO 收敛。",
+   "authors": [],
+   "published": "2026-10-09T04:00:00.000Z",
+   "updated": "2026-10-09T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.12403",
+   "pdf": "https://arxiv.org/pdf/2610.12403",
+   "announceType": "new",
+   "summary": "VLM Agent 视觉原生技能库，2D+3D 任务成功率 0.89（冷启动 0.91），快于 PPO 收敛。",
+   "topic": "Agent / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.12403"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "保住空间结构地复用 Agent 经验，给 VLM Agent 高效训练新路线。",
+   "repository": null,
+   "motivation": "技能增强 Agent 靠复用成功轨迹提升样本效率，值得系统性探索。",
+   "coreProblem": "文本技能把空间布局线性化丢失几何结构；技能更新与策略优化彼此割裂。",
+   "contributions": [
+    "将成功交互编码为复合视觉技能卡，VLM 可直接检索访问",
+    "提出几何感知技能检索 + 技能引导 RL 目标，形成技能-策略闭环",
+    "可选冷启动机制注入种子技能加速早期学习"
+   ],
+   "innovations": [
+    "首次以视觉原生（非文本线性化）形式保存可复用程序性经验",
+    "技能库与策略共同演化：检索同时指导推理与奖励塑形，成功轨迹回流蒸馏"
+   ],
+   "method": "检索技能卡条件化推理并塑形奖励 → 成功轨迹蒸馏回库，RL 闭环迭代。",
+   "results": "总体成功率 0.89（冷启动 0.91）vs AtlasVA 0.87、VAGEN 0.79；Sokoban 0.82→0.88，PrimitiveSkill 1.00；token 消耗更低。",
+   "value": "保住空间结构地复用 Agent 经验，给 VLM Agent 高效训练新路线。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "将成功交互编码为复合视觉技能卡，VLM 可直接检索访问",
+    "agentChange": "检索技能卡条件化推理并塑形奖励 → 成功轨迹蒸馏回库，RL 闭环迭代。",
+    "selfEvolution": null,
+    "evidence": [
+     "总体成功率 0.89（冷启动 0.91）vs AtlasVA 0.87、VAGEN 0.79；Sokoban 0.82→0.88，PrimitiveSkill 1.00；token 消耗更低。",
+     "技能库与策略共同演化：检索同时指导推理与奖励塑形，成功轨迹回流蒸馏"
+    ],
+    "faq": {
+     "problem": "VLM Agent 视觉原生技能库，2D+3D 任务成功率 0.89（冷启动 0.91），快于 PPO 收敛。",
+     "mechanism": "检索技能卡条件化推理并塑形奖励 → 成功轨迹蒸馏回库，RL 闭环迭代。",
+     "agentChange": "检索技能卡条件化推理并塑形奖励 → 成功轨迹蒸馏回库，RL 闭环迭代。",
+     "support": "总体成功率 0.89（冷启动 0.91）vs AtlasVA 0.87、VAGEN 0.79；Sokoban 0.82→0.88，PrimitiveSkill 1.00；token 消耗更低。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "保住空间结构地复用 Agent 经验，给 VLM Agent 高效训练新路线。"
+   }
+  },
+  {
+   "id": "2610.12274",
+   "version": 1,
+   "title": "HarnessSQL: Harness-Native Training for SQL Agents in Realistic Database Environments",
+   "abstract": "在执行 harness 内原生训练 SQL Agent，8B 模型 Spider 2.0 执行准确率 15.5%→45.2%。",
+   "authors": [],
+   "published": "2026-10-09T04:00:00.000Z",
+   "updated": "2026-10-09T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.12274",
+   "pdf": "https://arxiv.org/pdf/2610.12274",
+   "announceType": "new",
+   "summary": "在执行 harness 内原生训练 SQL Agent，8B 模型 Spider 2.0 执行准确率 15.5%→45.2%。",
+   "topic": "Agent / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.12274"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "证明\"在部署环境内训练\"是长程数据库 Agent 能力的关键杠杆。",
+   "repository": null,
+   "motivation": "真实数据库 Agent 靠与活库的多轮交互：查 schema、试跑、纠错、修正。",
+   "coreProblem": "Text-to-SQL 按一问一静态查询训练，执行 harness 只在推理时出现，训练-部署失配。",
+   "contributions": [
+    "将交互式 Text-to-SQL 形式化为执行 harness 内的 POMDP",
+    "构建隔离可执行数据库沙箱 + 隐藏执行 oracle，教师直接在目标 harness 内 rollout",
+    "验证过的全轨迹 SFT + 执行奖励 RL 的后训练管线"
+   ],
+   "innovations": [
+    "首个把完整交互结构贯穿 SFT 与 RL 的\"harness 原生\"后训练框架",
+    "隐藏 oracle 过滤轨迹，抑制错误累积与执行奖励下的投机行为"
+   ],
+   "method": "沙箱环境 → harness 内教师轨迹 rollout → 全轨迹 SFT → 执行奖励 RL。",
+   "results": "Spider 2.0-SQLite 8B 45.2% / 14B 54.8%（基线 32B 模型约 16%、MARS-SQL 12.6%）；OOD：BIRD-Interact Mini 11.3%、LiveSQLBench Base-Lite 28.5%。",
+   "value": "证明\"在部署环境内训练\"是长程数据库 Agent 能力的关键杠杆。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "将交互式 Text-to-SQL 形式化为执行 harness 内的 POMDP",
+    "agentChange": "沙箱环境 → harness 内教师轨迹 rollout → 全轨迹 SFT → 执行奖励 RL。",
+    "selfEvolution": null,
+    "evidence": [
+     "Spider 2.0-SQLite 8B 45.2% / 14B 54.8%（基线 32B 模型约 16%、MARS-SQL 12.6%）；OOD：BIRD-Interact Mini 11.3%、LiveSQLBench Base-Lite 28.5%。",
+     "隐藏 oracle 过滤轨迹，抑制错误累积与执行奖励下的投机行为"
+    ],
+    "faq": {
+     "problem": "在执行 harness 内原生训练 SQL Agent，8B 模型 Spider 2.0 执行准确率 15.5%→45.2%。",
+     "mechanism": "沙箱环境 → harness 内教师轨迹 rollout → 全轨迹 SFT → 执行奖励 RL。",
+     "agentChange": "沙箱环境 → harness 内教师轨迹 rollout → 全轨迹 SFT → 执行奖励 RL。",
+     "support": "Spider 2.0-SQLite 8B 45.2% / 14B 54.8%（基线 32B 模型约 16%、MARS-SQL 12.6%）；OOD：BIRD-Interact Mini 11.3%、LiveSQLBench Base-Lite 28.5%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "证明\"在部署环境内训练\"是长程数据库 Agent 能力的关键杠杆。"
+   }
+  },
+  {
+   "id": "2610.12436",
+   "version": 1,
+   "title": "Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff",
+   "abstract": "提出 AI Agent 种群生态学安全理论，证明协作导致\"种群阈值起飞\"（强 Allee 效应）。",
+   "authors": [],
+   "published": "2026-10-09T04:00:00.000Z",
+   "updated": "2026-10-09T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.12436",
+   "pdf": "https://arxiv.org/pdf/2610.12436",
+   "announceType": "new",
+   "summary": "提出 AI Agent 种群生态学安全理论，证明协作导致\"种群阈值起飞\"（强 Allee 效应）。",
+   "topic": "Agent / 多模态",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.12436"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "小种群红队测试无法保证大种群安全，给出种群级评估与部署节奏框架。",
+   "repository": null,
+   "motivation": "失准 Agent 可攻击系统并自我复制部署，形成自我强化循环。",
+   "coreProblem": "失准 Agent 种群是被 containment 还是起飞，由什么决定？",
+   "contributions": [
+    "定义生态安全框架：适应度（增长率）依赖网络安全能力的种群增长方程",
+    "基于树搜索的玩具模型给出能力随种群规模的缩放律",
+    "提出 population pacing 与生态红队测试的治理协议"
+   ],
+   "innovations": [
+    "把 Agent 安全从个体/固定种群层面推到种群动态层面",
+    "证明协作使集体能力随规模增长，存在临界种群数：越过即起飞，个体能力不变也起飞"
+   ],
+   "method": "种群动力学 × 网络安全能力缩放模型，用 OpenAI 1/4/16 Agent 实测数据拟合验证。",
+   "results": "SEC-Bench Pro / BrowseComp 协作增益指数 β∈[0.025, 0.069]，10 个拟合中 9 个 RMSE ≤1.67%。",
+   "value": "小种群红队测试无法保证大种群安全，给出种群级评估与部署节奏框架。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "定义生态安全框架：适应度（增长率）依赖网络安全能力的种群增长方程",
+    "agentChange": "种群动力学 × 网络安全能力缩放模型，用 OpenAI 1/4/16 Agent 实测数据拟合验证。",
+    "selfEvolution": null,
+    "evidence": [
+     "SEC-Bench Pro / BrowseComp 协作增益指数 β∈[0.025, 0.069]，10 个拟合中 9 个 RMSE ≤1.67%。",
+     "证明协作使集体能力随规模增长，存在临界种群数：越过即起飞，个体能力不变也起飞"
+    ],
+    "faq": {
+     "problem": "提出 AI Agent 种群生态学安全理论，证明协作导致\"种群阈值起飞\"（强 Allee 效应）。",
+     "mechanism": "种群动力学 × 网络安全能力缩放模型，用 OpenAI 1/4/16 Agent 实测数据拟合验证。",
+     "agentChange": "种群动力学 × 网络安全能力缩放模型，用 OpenAI 1/4/16 Agent 实测数据拟合验证。",
+     "support": "SEC-Bench Pro / BrowseComp 协作增益指数 β∈[0.025, 0.069]，10 个拟合中 9 个 RMSE ≤1.67%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "小种群红队测试无法保证大种群安全，给出种群级评估与部署节奏框架。"
+   }
+  },
+  {
+   "id": "2610.12133",
+   "version": 1,
+   "title": "Rehearse Everything, Remember Nothing: Attic-KV Rehearses What Will Be Read",
+   "abstract": "免训练 KV 压缩新范式\"考自己而非复读\"，3% 预算下 RULER 超全文复读 41.9 分。",
+   "authors": [],
+   "published": "2026-10-09T04:00:00.000Z",
+   "updated": "2026-10-09T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.12133",
+   "pdf": "https://arxiv.org/pdf/2610.12133",
+   "announceType": "new",
+   "summary": "免训练 KV 压缩新范式\"考自己而非复读\"，3% 预算下 RULER 超全文复读 41.9 分。",
+   "topic": "大语言模型 / 系统",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.12133"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "拉低预算长上下文压缩上限，直接惠及 RAG 与共享前缀推理服务。",
+   "repository": null,
+   "motivation": "检索文档、共享前缀等场景的 KV 缓存要在提问前就压缩好。",
+   "coreProblem": "主流\"复读上下文打分\"策略在紧预算下适得其反，复读越全记得越差。",
+   "contributions": [
+    "证明\"缓存保留它复读过什么\"，把查询无关压缩重构为选择复什么、复多少",
+    "提出 Attic-KV：自生成 QA 自测 + 锚点句，内容自适应复述量",
+    "RULER×4 模型 + LongBench×2 共 8 设置系统评测，验证可插性"
+   ],
+   "innovations": [
+    "首次揭示全上下文复读的\"剂量-失效\"曲线，提出两条可操作压缩原则",
+    "内容自适应量替代手工 ratio 调参，免训练插件即插 KVgrad/RestoreKV+ 宿主"
+   ],
+   "method": "模型自生成 QA 对做自测复述 + 关键锚点，按注意力/梯度打分选取保留 KV。",
+   "results": "3% keep RULER-4K 73.4 vs KVzip+ 31.5（+41.9）；较 KV² +6.4，5% 下超有监督 RestoreKV+；为宿主模型最高提升 17.1 / 28.1 分。",
+   "value": "拉低预算长上下文压缩上限，直接惠及 RAG 与共享前缀推理服务。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "证明\"缓存保留它复读过什么\"，把查询无关压缩重构为选择复什么、复多少",
+    "agentChange": "模型自生成 QA 对做自测复述 + 关键锚点，按注意力/梯度打分选取保留 KV。",
+    "selfEvolution": null,
+    "evidence": [
+     "3% keep RULER-4K 73.4 vs KVzip+ 31.5（+41.9）；较 KV² +6.4，5% 下超有监督 RestoreKV+；为宿主模型最高提升 17.1 / 28.1 分。",
+     "内容自适应量替代手工 ratio 调参，免训练插件即插 KVgrad/RestoreKV+ 宿主"
+    ],
+    "faq": {
+     "problem": "免训练 KV 压缩新范式\"考自己而非复读\"，3% 预算下 RULER 超全文复读 41.9 分。",
+     "mechanism": "模型自生成 QA 对做自测复述 + 关键锚点，按注意力/梯度打分选取保留 KV。",
+     "agentChange": "模型自生成 QA 对做自测复述 + 关键锚点，按注意力/梯度打分选取保留 KV。",
+     "support": "3% keep RULER-4K 73.4 vs KVzip+ 31.5（+41.9）；较 KV² +6.4，5% 下超有监督 RestoreKV+；为宿主模型最高提升 17.1 / 28.1 分。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "拉低预算长上下文压缩上限，直接惠及 RAG 与共享前缀推理服务。"
+   }
+  },
+  {
+   "id": "2610.12147",
+   "version": 1,
+   "title": "Healthy Counterfactual Generation via Diffusion Inpainting for Mammography Classification",
+   "abstract": "扩散修复生成\"擦除病灶\"的健康对照乳腺片，ConvNeXt 召回率 +4.6%、FPN-MIL +1.9%。",
+   "authors": [],
+   "published": "2026-10-09T04:00:00.000Z",
+   "updated": "2026-10-09T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.12147",
+   "pdf": "https://arxiv.org/pdf/2610.12147",
+   "announceType": "new",
+   "summary": "扩散修复生成\"擦除病灶\"的健康对照乳腺片，ConvNeXt 召回率 +4.6%、FPN-MIL +1.9%。",
+   "topic": "医学影像",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.12147"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为筛查假阴性给出数据增强解法，无需新标注即可提升敏感度。",
+   "repository": null,
+   "motivation": "乳腺癌筛查假阴性导致延误诊治，是 CAD 系统的关键短板。",
+   "coreProblem": "健康样本稀缺，合成无病灶图像又难保留患者特异解剖结构。",
+   "contributions": [
+    "仅用 BI-RADS 1 健康片训练 DDPM，RePaint 在病灶框内修复出健康反事实图",
+    "VinDr-Mammo 上验证 ConvNeXt / ViT / Mammo-CLIP / FPN-MIL 四种骨干",
+    "放射科医师盲评确认生成图真实感与原数据集一致"
+   ],
+   "innovations": [
+    "反向\"病灶→健康\"反事实增强，补充稀缺的阴性训练分布",
+    "框约束 inpainting 只替换病灶区域，保留患者自身解剖与成像风格"
+   ],
+   "method": "DDPM 学健康分布 → RePaint 条件采样修复标注框 → 生成健康图并入训练集。",
+   "results": "生成图 FID 10.1（前合成工作 67.5）；召回 63.5→68.1（ConvNeXt）、73.1→75.0（FPN-MIL）；固定 80% 特异度下召回 +0.6–1.3pp。",
+   "value": "为筛查假阴性给出数据增强解法，无需新标注即可提升敏感度。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "仅用 BI-RADS 1 健康片训练 DDPM，RePaint 在病灶框内修复出健康反事实图",
+    "agentChange": "DDPM 学健康分布 → RePaint 条件采样修复标注框 → 生成健康图并入训练集。",
+    "selfEvolution": null,
+    "evidence": [
+     "生成图 FID 10.1（前合成工作 67.5）；召回 63.5→68.1（ConvNeXt）、73.1→75.0（FPN-MIL）；固定 80% 特异度下召回 +0.6–1.3pp。",
+     "框约束 inpainting 只替换病灶区域，保留患者自身解剖与成像风格"
+    ],
+    "faq": {
+     "problem": "扩散修复生成\"擦除病灶\"的健康对照乳腺片，ConvNeXt 召回率 +4.6%、FPN-MIL +1.9%。",
+     "mechanism": "DDPM 学健康分布 → RePaint 条件采样修复标注框 → 生成健康图并入训练集。",
+     "agentChange": "DDPM 学健康分布 → RePaint 条件采样修复标注框 → 生成健康图并入训练集。",
+     "support": "生成图 FID 10.1（前合成工作 67.5）；召回 63.5→68.1（ConvNeXt）、73.1→75.0（FPN-MIL）；固定 80% 特异度下召回 +0.6–1.3pp。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为筛查假阴性给出数据增强解法，无需新标注即可提升敏感度。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-10-08",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-10-08 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-30T21:30:06.000Z",
+ "latestPaperAt": "2026-10-09T04:00:00.000Z",
+ "totalMatched": 152,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 152
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 60,
+ "trends": {
+  "status": "accumulating",
+  "days": 60,
+  "minimumDays": 15,
+  "message": "已积累 60/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-30T21:30:06.000Z",
+ "snapshotDay": "2026-10-09",
+ "historical": true
+}

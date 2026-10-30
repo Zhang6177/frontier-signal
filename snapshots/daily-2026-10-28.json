@@ -1,0 +1,1022 @@
+{
+ "papers": [
+  {
+   "id": "2605.18541",
+   "version": 1,
+   "title": "LESSViT: Robust Hyperspectral Representation Learning under Spectral Configuration Shift",
+   "abstract": "低秩空间-光谱注意力实现跨光谱鲁棒，跌幅 15%。",
+   "authors": [],
+   "published": "2026-10-28T04:00:00.000Z",
+   "updated": "2026-10-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2605.18541",
+   "pdf": "https://arxiv.org/pdf/2605.18541",
+   "announceType": "new",
+   "summary": "低秩空间-光谱注意力实现跨光谱鲁棒，跌幅 15%。",
+   "topic": "[遥感与地球观测]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2605.18541"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "显式高效空间-光谱建模是跨传感器泛化关键。",
+   "repository": null,
+   "motivation": "传感器波段配置各异，模型跨传感器失效。",
+   "coreProblem": "全谱注意力 O(N²C²) 不可行，折叠波段丢波长依赖。",
+   "contributions": [
+    "提出 LESS Attention 低秩空间-光谱注意力",
+    "提出 LESSViT：通道无关 + 波长感知位置编码",
+    "建立 SpectralEarth 跨光谱评测协议"
+   ],
+   "innovations": [
+    "复杂度 O(N²C²)→O(rNC)，仍显式联合建模",
+    "SSRoPE 将连续波长与空间坐标一并编码"
+   ],
+   "method": "tied patch embedding 通道无关化，SSRoPE 编码波长；HyperMAE 双维 75% 掩码预训练。",
+   "results": "SpectralEarth 15 个跨光谱组合 14 个最优；平均相对跌幅 15/26/5%，SpectralViT 57/56/54%、HyperSigma 33/38/30%、DOFA 29/36/36%；CDL 谱移 38.92 mIoU（↓25%）vs SpectralViT 13.71（↓80%）；域内仍逊 SpectralViT。",
+   "value": "显式高效空间-光谱建模是跨传感器泛化关键。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 LESS Attention 低秩空间-光谱注意力",
+    "agentChange": "tied patch embedding 通道无关化，SSRoPE 编码波长；HyperMAE 双维 75% 掩码预训练。",
+    "selfEvolution": null,
+    "evidence": [
+     "SpectralEarth 15 个跨光谱组合 14 个最优；平均相对跌幅 15/26/5%，SpectralViT 57/56/54%、HyperSigma 33/38/30%、DOFA 29/36/36%；CDL 谱移 38.92 mIoU（↓25%）vs SpectralViT 13.71（↓80%）；域内仍逊 SpectralViT。",
+     "SSRoPE 将连续波长与空间坐标一并编码"
+    ],
+    "faq": {
+     "problem": "低秩空间-光谱注意力实现跨光谱鲁棒，跌幅 15%。",
+     "mechanism": "tied patch embedding 通道无关化，SSRoPE 编码波长；HyperMAE 双维 75% 掩码预训练。",
+     "agentChange": "tied patch embedding 通道无关化，SSRoPE 编码波长；HyperMAE 双维 75% 掩码预训练。",
+     "support": "SpectralEarth 15 个跨光谱组合 14 个最优；平均相对跌幅 15/26/5%，SpectralViT 57/56/54%、HyperSigma 33/38/30%、DOFA 29/36/36%；CDL 谱移 38.92 mIoU（↓25%）vs SpectralViT 13.71（↓80%）；域内仍逊 SpectralViT。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "显式高效空间-光谱建模是跨传感器泛化关键。"
+   }
+  },
+  {
+   "id": "2610.36722",
+   "version": 1,
+   "title": "Progressively Refining SAM for Accurate Phytoplankton Segmentation",
+   "abstract": "渐进细化修正 SAM2 掩码，浮游植物分割 mIoU 91.87%。",
+   "authors": [],
+   "published": "2026-10-28T04:00:00.000Z",
+   "updated": "2026-10-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.36722",
+   "pdf": "https://arxiv.org/pdf/2610.36722",
+   "announceType": "new",
+   "summary": "渐进细化修正 SAM2 掩码，浮游植物分割 mIoU 91.87%。",
+   "topic": "[遥感与地球观测]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.36722"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为浮游植物分割立基线，box 提示即可超越需掩码的方法。",
+   "repository": null,
+   "motivation": "分类/检测标签无法刻画个体形态，生态分析需像素级分割。",
+   "coreProblem": "SAM2 单步上采样难以纠正细长低对比目标的粗预测误差。",
+   "contributions": [
+    "提出 PhySeg：SAM2 加渐进细化器恢复细结构",
+    "构建 PhySegD：11990 个手工标注实例掩码"
+   ],
+   "innovations": [
+    "不同于单步上采样，掩码修正拆为多步残差累加",
+    "特征 F16→F8→F4 逐级迁移，后步专攻局部细节"
+   ],
+   "method": "LoRA 适配 SAM2；粗 logits 多步加残差细化，focal+Dice 监督。",
+   "results": "PhySegD mIoU 91.87%、BF1 68.32%，微超微调 HQ-SAM2（91.73/67.52）、高于未调 SAM2 81.03%。",
+   "value": "为浮游植物分割立基线，box 提示即可超越需掩码的方法。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 PhySeg：SAM2 加渐进细化器恢复细结构",
+    "agentChange": "LoRA 适配 SAM2；粗 logits 多步加残差细化，focal+Dice 监督。",
+    "selfEvolution": null,
+    "evidence": [
+     "PhySegD mIoU 91.87%、BF1 68.32%，微超微调 HQ-SAM2（91.73/67.52）、高于未调 SAM2 81.03%。",
+     "特征 F16→F8→F4 逐级迁移，后步专攻局部细节"
+    ],
+    "faq": {
+     "problem": "渐进细化修正 SAM2 掩码，浮游植物分割 mIoU 91.87%。",
+     "mechanism": "LoRA 适配 SAM2；粗 logits 多步加残差细化，focal+Dice 监督。",
+     "agentChange": "LoRA 适配 SAM2；粗 logits 多步加残差细化，focal+Dice 监督。",
+     "support": "PhySegD mIoU 91.87%、BF1 68.32%，微超微调 HQ-SAM2（91.73/67.52）、高于未调 SAM2 81.03%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "为浮游植物分割立基线，box 提示即可超越需掩码的方法。"
+   }
+  },
+  {
+   "id": "2610.36857",
+   "version": 1,
+   "title": "Evaluating AlphaEarth Embeddings for Crop Classification: Separability, Temporal Dynamics, and Cross-Regional Transferability",
+   "abstract": "评测 AlphaEarth 嵌入：可分性与轮作占优，跨洲迁移落后。",
+   "authors": [],
+   "published": "2026-10-28T04:00:00.000Z",
+   "updated": "2026-10-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.36857",
+   "pdf": "https://arxiv.org/pdf/2610.36857",
+   "announceType": "new",
+   "summary": "评测 AlphaEarth 嵌入：可分性与轮作占优，跨洲迁移落后。",
+   "topic": "[遥感与地球观测]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.36857"
+   ],
+   "hotScore": 88,
+   "scoreParts": {
+    "relevance": 80,
+    "evidence": 70,
+    "noveltyClaim": 76,
+    "actionability": 78,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "表征丰富度≠跨域鲁棒，混合特征更利部署。",
+   "repository": null,
+   "motivation": "地理基础模型嵌入的农业效用仍不清楚。",
+   "coreProblem": "现有评测只看精度，忽视空间自相关与跨域迁移。",
+   "contributions": [
+    "提出表征无关四维评测框架（可分性/时序/空间/跨区）",
+    "LORO + 空间块 CV + 残差 Moran's I 验证"
+   ],
+   "innovations": [
+    "用 CKA+EMD 分离结构对齐与分布偏移",
+    "以多年度轨迹刻画轮作，不假设季节周期性",
+    "揭示方差最优与判别最优维度错位"
+   ],
+   "method": "在 CONUS 五县与北印度横比四类特征。",
+   "results": "嵌入 Bhattacharyya 3.9 vs 光谱 0.10（39×），轮作可分比 1.784（工程特征 ≤1.003）；残差 Moran's I 0.17–0.20 vs 谐波 0.43–0.48；但 US→India Macro F1 0.326 vs 谐波 0.493。",
+   "value": "表征丰富度≠跨域鲁棒，混合特征更利部署。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出表征无关四维评测框架（可分性/时序/空间/跨区）",
+    "agentChange": "在 CONUS 五县与北印度横比四类特征。",
+    "selfEvolution": null,
+    "evidence": [
+     "嵌入 Bhattacharyya 3.9 vs 光谱 0.10（39×），轮作可分比 1.784（工程特征 ≤1.003）；残差 Moran's I 0.17–0.20 vs 谐波 0.43–0.48；但 US→India Macro F1 0.326 vs 谐波 0.493。",
+     "以多年度轨迹刻画轮作，不假设季节周期性",
+     "揭示方差最优与判别最优维度错位"
+    ],
+    "faq": {
+     "problem": "评测 AlphaEarth 嵌入：可分性与轮作占优，跨洲迁移落后。",
+     "mechanism": "在 CONUS 五县与北印度横比四类特征。",
+     "agentChange": "在 CONUS 五县与北印度横比四类特征。",
+     "support": "嵌入 Bhattacharyya 3.9 vs 光谱 0.10（39×），轮作可分比 1.784（工程特征 ≤1.003）；残差 Moran's I 0.17–0.20 vs 谐波 0.43–0.48；但 US→India Macro F1 0.326 vs 谐波 0.493。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 88,
+    "editorialTier": "must-read",
+    "recommendationReason": "表征丰富度≠跨域鲁棒，混合特征更利部署。"
+   }
+  },
+  {
+   "id": "2610.36756",
+   "version": 1,
+   "title": "Efficient Remote Sensing Image-Text Retrieval via Interaction-Free Recall and Text-Guided Reranking",
+   "abstract": "免交互召回加无参 BTIB 重排，mR 51.47 持平、延迟 39.6 ms。",
+   "authors": [],
+   "published": "2026-10-28T04:00:00.000Z",
+   "updated": "2026-10-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.36756",
+   "pdf": "https://arxiv.org/pdf/2610.36756",
+   "announceType": "new",
+   "summary": "免交互召回加无参 BTIB 重排，mR 51.47 持平、延迟 39.6 ms。",
+   "topic": "[遥感与地球观测]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.36756"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "K 提供可调精度-效率权衡，便于部署。",
+   "repository": null,
+   "motivation": "RS 图文检索需兼顾细粒度对齐与低延迟。",
+   "coreProblem": "全库 token 交互延迟高，VLM 方案依赖大数据与生成推理。",
+   "contributions": [
+    "提出 FTF：免交互召回 + 候选级重排",
+    "设计零参数 BTIB 双向归一化重排",
+    "提出 I²M 损失耦合跨模态与模态内一致性"
+   ],
+   "innovations": [
+    "异于一阶段全库交互，把昂贵 token 交互限制在 top-K 之后",
+    "BTIB 双向归一化零参数，异于哈希+可学习重排层"
+   ],
+   "method": "预计算 CLIP 多粒度嵌入做 top-K 召回，仅候选跑 BTIB 重排。",
+   "results": "RSITMD mR 51.47 持平 FSSN，延迟 39.6 vs 238.0 ms；K=50 仅 12.4 ms/80.6 q/s；RSICD 较 RemoteCLIP 快 22.8×。",
+   "value": "K 提供可调精度-效率权衡，便于部署。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 FTF：免交互召回 + 候选级重排",
+    "agentChange": "预计算 CLIP 多粒度嵌入做 top-K 召回，仅候选跑 BTIB 重排。",
+    "selfEvolution": null,
+    "evidence": [
+     "RSITMD mR 51.47 持平 FSSN，延迟 39.6 vs 238.0 ms；K=50 仅 12.4 ms/80.6 q/s；RSICD 较 RemoteCLIP 快 22.8×。",
+     "BTIB 双向归一化零参数，异于哈希+可学习重排层"
+    ],
+    "faq": {
+     "problem": "免交互召回加无参 BTIB 重排，mR 51.47 持平、延迟 39.6 ms。",
+     "mechanism": "预计算 CLIP 多粒度嵌入做 top-K 召回，仅候选跑 BTIB 重排。",
+     "agentChange": "预计算 CLIP 多粒度嵌入做 top-K 召回，仅候选跑 BTIB 重排。",
+     "support": "RSITMD mR 51.47 持平 FSSN，延迟 39.6 vs 238.0 ms；K=50 仅 12.4 ms/80.6 q/s；RSICD 较 RemoteCLIP 快 22.8×。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "K 提供可调精度-效率权衡，便于部署。"
+   }
+  },
+  {
+   "id": "2610.37021",
+   "version": 1,
+   "title": "Ground-to-Satellite Knowledge Distillation for Crop Classification under Temporal and Geographic Shift",
+   "abstract": "地面照片作仅训练期教师蒸馏卫星分类器，域内 macro-F1 升 2.6–5.1 点",
+   "authors": [],
+   "published": "2026-10-28T04:00:00.000Z",
+   "updated": "2026-10-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.37021",
+   "pdf": "https://arxiv.org/pdf/2610.37021",
+   "announceType": "new",
+   "summary": "地面照片作仅训练期教师蒸馏卫星分类器，域内 macro-F1 升 2.6–5.1 点",
+   "topic": "[遥感与地球观测]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.37021"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "调查数据可离线提升卫星模型，部署端不需",
+   "repository": null,
+   "motivation": "地面照片含卫星难捕捉线索，推理不可得",
+   "coreProblem": "卫星签名随气候管理漂移，冻结嵌入头难补偿",
+   "contributions": [
+    "地面照片可作仅训练期特权监督",
+    "冻结/从零/微调三类分支配对 KD−CE 对照",
+    "量化时序与生态区留出增益"
+   ],
+   "innovations": [
+    "照片仅训练期作 privileged 监督",
+    "增益源自 logit 蒸馏预测结构，非跨模态对齐",
+    "同预算配对 CE/KD，隔离蒸馏本身"
+   ],
+   "method": "CLIP ViT-B/32 教师给 logits、128 维嵌入；学生学标签 CE、KL、嵌入余弦，5 seed",
+   "results": "LUCAS 2018 域内 frozen TESSERA 66.7→71.7（+5.1）、AlphaEarth 63.5→66.5（+2.9）；2018→2022 迁移 +5.5/+3.4；Mediterranean 留出 +3.7",
+   "value": "调查数据可离线提升卫星模型，部署端不需",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "地面照片可作仅训练期特权监督",
+    "agentChange": "CLIP ViT-B/32 教师给 logits、128 维嵌入；学生学标签 CE、KL、嵌入余弦，5 seed",
+    "selfEvolution": null,
+    "evidence": [
+     "LUCAS 2018 域内 frozen TESSERA 66.7→71.7（+5.1）、AlphaEarth 63.5→66.5（+2.9）；2018→2022 迁移 +5.5/+3.4；Mediterranean 留出 +3.7",
+     "增益源自 logit 蒸馏预测结构，非跨模态对齐",
+     "同预算配对 CE/KD，隔离蒸馏本身"
+    ],
+    "faq": {
+     "problem": "地面照片作仅训练期教师蒸馏卫星分类器，域内 macro-F1 升 2.6–5.1 点",
+     "mechanism": "CLIP ViT-B/32 教师给 logits、128 维嵌入；学生学标签 CE、KL、嵌入余弦，5 seed",
+     "agentChange": "CLIP ViT-B/32 教师给 logits、128 维嵌入；学生学标签 CE、KL、嵌入余弦，5 seed",
+     "support": "LUCAS 2018 域内 frozen TESSERA 66.7→71.7（+5.1）、AlphaEarth 63.5→66.5（+2.9）；2018→2022 迁移 +5.5/+3.4；Mediterranean 留出 +3.7",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "调查数据可离线提升卫星模型，部署端不需"
+   }
+  },
+  {
+   "id": "2610.37471",
+   "version": 1,
+   "title": "PerceptRL: Making Visual Perception Rewardable in MLLMs from Answers to Interactions",
+   "abstract": "把 MLLM 感知错误转可验证 QA 做两阶段 RL，八基准均分 61.9→69.8",
+   "authors": [],
+   "published": "2026-10-28T04:00:00.000Z",
+   "updated": "2026-10-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.37471",
+   "pdf": "https://arxiv.org/pdf/2610.37471",
+   "announceType": "new",
+   "summary": "把 MLLM 感知错误转可验证 QA 做两阶段 RL，八基准均分 61.9→69.8",
+   "topic": "[计算机视觉与多模态]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.37471"
+   ],
+   "hotScore": 81,
+   "scoreParts": {
+    "relevance": 73,
+    "evidence": 70,
+    "noveltyClaim": 69,
+    "actionability": 71,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "感知可在后训练显式优化，非推理外溢",
+   "repository": null,
+   "motivation": "后训练偏推理 RL，感知监督靠 caption，难验证",
+   "coreProblem": "多轮工具错误裁剪污染后续观测，致坐标漂移",
+   "contributions": [
+    "感知树+多智能体流水线造可验证 QA",
+    "Coordinate Injection 改冷启动轨迹坐标并重执行",
+    "grounding-aware 过程奖励按轮监督空间保真度"
+   ],
+   "innovations": [
+    "奖励免主观 caption，用错误导出 QA 的 exact-match",
+    "不同于只监督终答案，把 grounding 保真度作逐轮奖励",
+    "CI 构造阶段改坐标重执行，非推理后处理"
+   ],
+   "method": "冷启动 SFT 57,678 例 → Perception RL → Agentic RL，Python 沙箱 ≤64 轮",
+   "results": "八基准均分 61.9→69.8（+7.9）；CountQA +14.0、RealWorldCounting +12.8；同工具协议 71.6%，超 Gemini-3-Flash 5.2 分、base 55.9 升 15.7 分",
+   "value": "感知可在后训练显式优化，非推理外溢",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "感知树+多智能体流水线造可验证 QA",
+    "agentChange": "冷启动 SFT 57,678 例 → Perception RL → Agentic RL，Python 沙箱 ≤64 轮",
+    "selfEvolution": null,
+    "evidence": [
+     "八基准均分 61.9→69.8（+7.9）；CountQA +14.0、RealWorldCounting +12.8；同工具协议 71.6%，超 Gemini-3-Flash 5.2 分、base 55.9 升 15.7 分",
+     "不同于只监督终答案，把 grounding 保真度作逐轮奖励",
+     "CI 构造阶段改坐标重执行，非推理后处理"
+    ],
+    "faq": {
+     "problem": "把 MLLM 感知错误转可验证 QA 做两阶段 RL，八基准均分 61.9→69.8",
+     "mechanism": "冷启动 SFT 57,678 例 → Perception RL → Agentic RL，Python 沙箱 ≤64 轮",
+     "agentChange": "冷启动 SFT 57,678 例 → Perception RL → Agentic RL，Python 沙箱 ≤64 轮",
+     "support": "八基准均分 61.9→69.8（+7.9）；CountQA +14.0、RealWorldCounting +12.8；同工具协议 71.6%，超 Gemini-3-Flash 5.2 分、base 55.9 升 15.7 分",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 81,
+    "editorialTier": "recommended",
+    "recommendationReason": "感知可在后训练显式优化，非推理外溢"
+   }
+  },
+  {
+   "id": "2610.37613",
+   "version": 1,
+   "title": "VideoLVR: Latent Visual Reasoning over Grounded Video Evidence",
+   "abstract": "让视频 MLLM 自回归生成潜视觉证据替代文本坐标，均分 61.31→63.95",
+   "authors": [],
+   "published": "2026-10-28T04:00:00.000Z",
+   "updated": "2026-10-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.37613",
+   "pdf": "https://arxiv.org/pdf/2610.37613",
+   "announceType": "new",
+   "summary": "让视频 MLLM 自回归生成潜视觉证据替代文本坐标，均分 61.31→63.95",
+   "topic": "[计算机视觉与多模态]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.37613"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "不膨胀上下文即可回访视频局部证据",
+   "repository": null,
+   "motivation": "文本推理轨迹逐步丢视觉证据，致 visual forgetting",
+   "coreProblem": "文本坐标无视觉内容，工具裁剪需重编码且膨胀上下文",
+   "contributions": [
+    "VideoLVR 把跨时刻局部区域编为潜证据块",
+    "VTP 把潜证据生成化为词表内 token 预测",
+    "TVPO 用 GRPO 联合优化文本与视觉 token"
+   ],
+   "innovations": [
+    "不同于 MSE 逐目标回归，VTP 要在相似 token 中判别目标",
+    "潜证据块跨时刻联合建模，非单帧（14.0% 分组跨时刻）",
+    "推理回灌潜状态，不插入新帧或裁剪"
+   ],
+   "method": "Qwen3-VL-30B 合成 8.8K 接地轨迹；RL 用 19K 多选题，K=8 潜步",
+   "results": "五基准均分 61.31→63.95（+2.64），超 LVR-8B 复现 +1.24；TempCompass +3.50、Video-MMMU +3.11（Comprehension +6.67）；TVPO 后 64.39",
+   "value": "不膨胀上下文即可回访视频局部证据",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "VideoLVR 把跨时刻局部区域编为潜证据块",
+    "agentChange": "Qwen3-VL-30B 合成 8.8K 接地轨迹；RL 用 19K 多选题，K=8 潜步",
+    "selfEvolution": null,
+    "evidence": [
+     "五基准均分 61.31→63.95（+2.64），超 LVR-8B 复现 +1.24；TempCompass +3.50、Video-MMMU +3.11（Comprehension +6.67）；TVPO 后 64.39",
+     "潜证据块跨时刻联合建模，非单帧（14.0% 分组跨时刻）",
+     "推理回灌潜状态，不插入新帧或裁剪"
+    ],
+    "faq": {
+     "problem": "让视频 MLLM 自回归生成潜视觉证据替代文本坐标，均分 61.31→63.95",
+     "mechanism": "Qwen3-VL-30B 合成 8.8K 接地轨迹；RL 用 19K 多选题，K=8 潜步",
+     "agentChange": "Qwen3-VL-30B 合成 8.8K 接地轨迹；RL 用 19K 多选题，K=8 潜步",
+     "support": "五基准均分 61.31→63.95（+2.64），超 LVR-8B 复现 +1.24；TempCompass +3.50、Video-MMMU +3.11（Comprehension +6.67）；TVPO 后 64.39",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "不膨胀上下文即可回访视频局部证据"
+   }
+  },
+  {
+   "id": "2610.36466",
+   "version": 1,
+   "title": "Nemotron-Labs-Diffusion-Uni: Elastic Self-Refining Unified Diffusion LLM with Cross-Paradigm On-Policy Distillation",
+   "abstract": "统一离散扩散 LLM 跨范式 on-policy 蒸馏+自精炼，理解与生成双 SOTA",
+   "authors": [],
+   "published": "2026-10-28T04:00:00.000Z",
+   "updated": "2026-10-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.36466",
+   "pdf": "https://arxiv.org/pdf/2610.36466",
+   "announceType": "new",
+   "summary": "统一离散扩散 LLM 跨范式 on-policy 蒸馏+自精炼，理解与生成双 SOTA",
+   "topic": "[大语言模型与基础模型]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.36466"
+   ],
+   "hotScore": 74,
+   "scoreParts": {
+    "relevance": 66,
+    "evidence": 70,
+    "noveltyClaim": 62,
+    "actionability": 64,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "缩小扩散 LLM 与 AR/流模型差距",
+   "repository": null,
+   "motivation": "统一 DLLM 落后 VLM/连续流模型，缺强 MDM 教师",
+   "coreProblem": "MDM 的 token 从 mask 一步跳到 clean 后不变，同批假设独立",
+   "contributions": [
+    "cross-paradigm OPD 从 AR VLM 与连续流教师蒸馏",
+    "self-refining masked diffusion 在 clean 与 mask 间插中间状态",
+    "NLD-Uni 统一 DLLM 的理解/生成/编辑达 SOTA"
+   ],
+   "innovations": [
+    "OPD 此前限同范式或缺 MDM 教师，此处跨范式",
+    "非启发式阈值重掩码，用 VQ 码本几何粗到细",
+    "编辑目标用 teacher-refined 学生输出"
+   ],
+   "method": "8B+8B 双塔（T2I 载 12B），三阶段训练；末段 Nemotron-3 Nano Omni/Qwen-Image 做 OPD，64×H100 训 26 天",
+   "results": "理解 11 项均分 78.3（较扩散 SOTA +17.1）；MathVista 71.5→77.0、Geometry3k +13.5；GenEval 0.89、HPSv3 11.12 超 FLUX.1-dev 10.88；ImgEdit 3.81→4.17",
+   "value": "缩小扩散 LLM 与 AR/流模型差距",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "cross-paradigm OPD 从 AR VLM 与连续流教师蒸馏",
+    "agentChange": "8B+8B 双塔（T2I 载 12B），三阶段训练；末段 Nemotron-3 Nano Omni/Qwen-Image 做 OPD，64×H100 训 26 天",
+    "selfEvolution": null,
+    "evidence": [
+     "理解 11 项均分 78.3（较扩散 SOTA +17.1）；MathVista 71.5→77.0、Geometry3k +13.5；GenEval 0.89、HPSv3 11.12 超 FLUX.1-dev 10.88；ImgEdit 3.81→4.17",
+     "非启发式阈值重掩码，用 VQ 码本几何粗到细",
+     "编辑目标用 teacher-refined 学生输出"
+    ],
+    "faq": {
+     "problem": "统一离散扩散 LLM 跨范式 on-policy 蒸馏+自精炼，理解与生成双 SOTA",
+     "mechanism": "8B+8B 双塔（T2I 载 12B），三阶段训练；末段 Nemotron-3 Nano Omni/Qwen-Image 做 OPD，64×H100 训 26 天",
+     "agentChange": "8B+8B 双塔（T2I 载 12B），三阶段训练；末段 Nemotron-3 Nano Omni/Qwen-Image 做 OPD，64×H100 训 26 天",
+     "support": "理解 11 项均分 78.3（较扩散 SOTA +17.1）；MathVista 71.5→77.0、Geometry3k +13.5；GenEval 0.89、HPSv3 11.12 超 FLUX.1-dev 10.88；ImgEdit 3.81→4.17",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 74,
+    "editorialTier": "skim",
+    "recommendationReason": "缩小扩散 LLM 与 AR/流模型差距"
+   }
+  },
+  {
+   "id": "2610.36335",
+   "version": 1,
+   "title": "OA-RAG: Ontology-based Agentic RAG for Faithful LLM Reasoning",
+   "abstract": "本体驱动 agentic RAG，前两类问答平均超最强 baseline 10–15 点。",
+   "authors": [],
+   "published": "2026-10-28T04:00:00.000Z",
+   "updated": "2026-10-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.36335",
+   "pdf": "https://arxiv.org/pdf/2610.36335",
+   "announceType": "new",
+   "summary": "本体驱动 agentic RAG，前两类问答平均超最强 baseline 10–15 点。",
+   "topic": "[大语言模型与基础模型]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.36335"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为领域问答提供可核查证据与忠实度标注。",
+   "repository": null,
+   "motivation": "让领域问答忠实本体语义，而非 LLM 参数知识。",
+   "coreProblem": "RAG 只用文本/结构化知识，逻辑公理闲置，推理靠 LLM 内部。",
+   "contributions": [
+    "提出 OA-RAG：预推理→SPARQL ReAct→汇总作答并附可信级",
+    "定义三类推理模式，自动构造三套本体 QA 基准"
+   ],
+   "innovations": [
+    "首个用 OWL 形式推理器增强 agentic RAG（此前仅文本检索）",
+    "四级 grounding 标注答案忠实度，不再等权看待证据"
+   ],
+   "method": "本体经 SPARQL 只读访问；LLM 预推理后取公理与标注，汇总作答。",
+   "results": "本体 QA Test1–2 44.3% vs 最强 baseline 28.9%（Llama）、59.7% vs 49.7%（Qwen）；Test3 84.9% vs i-MedRAG 66.7%（限同 8,192 窗口），token 少 10×（9.7k vs 96.7k）。",
+   "value": "为领域问答提供可核查证据与忠实度标注。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 OA-RAG：预推理→SPARQL ReAct→汇总作答并附可信级",
+    "agentChange": "本体经 SPARQL 只读访问；LLM 预推理后取公理与标注，汇总作答。",
+    "selfEvolution": null,
+    "evidence": [
+     "本体 QA Test1–2 44.3% vs 最强 baseline 28.9%（Llama）、59.7% vs 49.7%（Qwen）；Test3 84.9% vs i-MedRAG 66.7%（限同 8,192 窗口），token 少 10×（9.7k vs 96.7k）。",
+     "四级 grounding 标注答案忠实度，不再等权看待证据"
+    ],
+    "faq": {
+     "problem": "本体驱动 agentic RAG，前两类问答平均超最强 baseline 10–15 点。",
+     "mechanism": "本体经 SPARQL 只读访问；LLM 预推理后取公理与标注，汇总作答。",
+     "agentChange": "本体经 SPARQL 只读访问；LLM 预推理后取公理与标注，汇总作答。",
+     "support": "本体 QA Test1–2 44.3% vs 最强 baseline 28.9%（Llama）、59.7% vs 49.7%（Qwen）；Test3 84.9% vs i-MedRAG 66.7%（限同 8,192 窗口），token 少 10×（9.7k vs 96.7k）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为领域问答提供可核查证据与忠实度标注。"
+   }
+  },
+  {
+   "id": "2610.36013",
+   "version": 1,
+   "title": "OmniBrain-0: A Unified Agentic Model for Embodied Intelligence",
+   "abstract": "9B 统一智能体跨操作与导航，LIBERO-Plus 83.8%，token 少最多 12.7×。",
+   "authors": [],
+   "published": "2026-10-28T04:00:00.000Z",
+   "updated": "2026-10-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.36013",
+   "pdf": "https://arxiv.org/pdf/2610.36013",
+   "announceType": "new",
+   "summary": "9B 统一智能体跨操作与导航，LIBERO-Plus 83.8%，token 少最多 12.7×。",
+   "topic": "[Agent 与具身智能]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.36013"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "紧凑模型可继承教师的任务级规划与恢复。",
+   "repository": null,
+   "motivation": "技能可靠不等于任务级成功，需跨域统一决策。",
+   "coreProblem": "专用 VLA/VLN 策略各自为政，长程/漂移下失目标；大模型 agent 开销大。",
+   "contributions": [
+    "提出 OmniBrain-0：9B 共享决策模型统一操作/导航",
+    "构建含失败恢复的观测–决策–反馈数据流水线",
+    "提出 rubric 引导的递归自改进 RSI 闭环"
+   ],
+   "innovations": [
+    "统一在学到的决策模型内部，非仅工具接口",
+    "蒸馏执行反馈下的决策，非复述教师推理"
+   ],
+   "method": "三阶段：具身预训练 → 操作/导航专家蒸馏 → 多专家在策略蒸馏整合。",
+   "results": "LIBERO-Plus 83.8% vs few-shot GLM-5.3-Flash 69.3%；R2R-CE SR 34.0→65.0、SPL 26.9→54.8；LIBERO-Pro 13.8→1.6 分钟（8.6×）。",
+   "value": "紧凑模型可继承教师的任务级规划与恢复。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 OmniBrain-0：9B 共享决策模型统一操作/导航",
+    "agentChange": "三阶段：具身预训练 → 操作/导航专家蒸馏 → 多专家在策略蒸馏整合。",
+    "selfEvolution": null,
+    "evidence": [
+     "LIBERO-Plus 83.8% vs few-shot GLM-5.3-Flash 69.3%；R2R-CE SR 34.0→65.0、SPL 26.9→54.8；LIBERO-Pro 13.8→1.6 分钟（8.6×）。",
+     "蒸馏执行反馈下的决策，非复述教师推理"
+    ],
+    "faq": {
+     "problem": "9B 统一智能体跨操作与导航，LIBERO-Plus 83.8%，token 少最多 12.7×。",
+     "mechanism": "三阶段：具身预训练 → 操作/导航专家蒸馏 → 多专家在策略蒸馏整合。",
+     "agentChange": "三阶段：具身预训练 → 操作/导航专家蒸馏 → 多专家在策略蒸馏整合。",
+     "support": "LIBERO-Plus 83.8% vs few-shot GLM-5.3-Flash 69.3%；R2R-CE SR 34.0→65.0、SPL 26.9→54.8；LIBERO-Pro 13.8→1.6 分钟（8.6×）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "紧凑模型可继承教师的任务级规划与恢复。"
+   }
+  },
+  {
+   "id": "2610.36877",
+   "version": 1,
+   "title": "GUI-JEPA: Candidate-Conditioned JEPA Latents as a Fast Action Policy for Mobile GUI Agents",
+   "abstract": "无解码器 GUI 策略，0.50B 比 7B 快 2.8–4.0×，保留 86–92% 准确率。",
+   "authors": [],
+   "published": "2026-10-28T04:00:00.000Z",
+   "updated": "2026-10-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.36877",
+   "pdf": "https://arxiv.org/pdf/2610.36877",
+   "announceType": "new",
+   "summary": "无解码器 GUI 策略，0.50B 比 7B 快 2.8–4.0×，保留 86–92% 准确率。",
+   "topic": "[Agent 与具身智能]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.36877"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "GUI agent 可绕开解码在潜空间选动作，利于端侧部署。",
+   "repository": null,
+   "motivation": "7B VLM 逐步解码动作 token 主导延迟，agent 正确但慢。",
+   "coreProblem": "动作生成绑定解码器，解码在关键路径；候选打分需 LLM/VLM。",
+   "contributions": [
+    "提出 GUI-JEPA：冻结 JEPA 编码器 + 残差预测器打分选动作",
+    "适配 GUI：a11y 候选作动作、ROI 条件化、双排序器"
+   ],
+   "innovations": [
+    "首次把 JEPA 用作 GUI 动作策略（此前仅理解/验证）",
+    "无 token 生成，一步批量打分，成本随候选数增长"
+   ],
+   "method": "冻结 JEPA ViT-L 编码一次，残差预测器按动作与 ROI 生成条件化 latent，文本匹配打分取 argmax。",
+   "results": "AndroidControl IDD：AC-Low 84.06 达同协议 7B（91.01）的 92.4%、AC-High 60.99 达其 86.1%；51.5–74 vs vLLM 207 ms（2.8–4.0×），参数 6.0%。",
+   "value": "GUI agent 可绕开解码在潜空间选动作，利于端侧部署。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "提出 GUI-JEPA：冻结 JEPA 编码器 + 残差预测器打分选动作",
+    "agentChange": "冻结 JEPA ViT-L 编码一次，残差预测器按动作与 ROI 生成条件化 latent，文本匹配打分取 argmax。",
+    "selfEvolution": null,
+    "evidence": [
+     "AndroidControl IDD：AC-Low 84.06 达同协议 7B（91.01）的 92.4%、AC-High 60.99 达其 86.1%；51.5–74 vs vLLM 207 ms（2.8–4.0×），参数 6.0%。",
+     "无 token 生成，一步批量打分，成本随候选数增长"
+    ],
+    "faq": {
+     "problem": "无解码器 GUI 策略，0.50B 比 7B 快 2.8–4.0×，保留 86–92% 准确率。",
+     "mechanism": "冻结 JEPA ViT-L 编码一次，残差预测器按动作与 ROI 生成条件化 latent，文本匹配打分取 argmax。",
+     "agentChange": "冻结 JEPA ViT-L 编码一次，残差预测器按动作与 ROI 生成条件化 latent，文本匹配打分取 argmax。",
+     "support": "AndroidControl IDD：AC-Low 84.06 达同协议 7B（91.01）的 92.4%、AC-High 60.99 达其 86.1%；51.5–74 vs vLLM 207 ms（2.8–4.0×），参数 6.0%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "GUI agent 可绕开解码在潜空间选动作，利于端侧部署。"
+   }
+  },
+  {
+   "id": "2610.36623",
+   "version": 1,
+   "title": "God Does Not Play Dice: Enforcing Batch Invariance in Agentic Kernel Generation",
+   "abstract": "插件式批次不变性校验，三个 kernel agent 的 BI 通过率 67.6%→91.9%。",
+   "authors": [],
+   "published": "2026-10-28T04:00:00.000Z",
+   "updated": "2026-10-28T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.36623",
+   "pdf": "https://arxiv.org/pdf/2610.36623",
+   "announceType": "new",
+   "summary": "插件式批次不变性校验，三个 kernel agent 的 BI 通过率 67.6%→91.9%。",
+   "topic": "[系统与基础设施]",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.36623"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "可复现性进入 kernel agent 评测，影响 LLM 服务与 RL 训练。",
+   "repository": null,
+   "motivation": "kernel agent 生成物只测正确性与速度，忽略 BI。",
+   "coreProblem": "batch 上下文改变切分/归约顺序，浮点非结合致输出漂移。",
+   "contributions": [
+    "指出 BI 被忽视：131 产物中 83 个适用、19 个（22.9%）违例",
+    "提出 BIEvolve：DSL 静态分析 + 动态位级校验插件"
+   ],
+   "innovations": [
+    "首次让 BI 成为 kernel 优化验收准则（此前只评正确性与速度）",
+    "可继承 contract DSL 描述 batch 源与受保护参数，静态判定"
+   ],
+   "method": "DSL 契约声明 batch 源与受保护参数，AST 追踪依赖；动态校验位级一致并回灌诊断。",
+   "results": "KernelBench.com/FlashInfer 三框架 BI 通过率 67.6%→91.9%，保留 91.8% 几何平均加速；K-Search 75.7%→97.4%，违例检出 92%。",
+   "value": "可复现性进入 kernel agent 评测，影响 LLM 服务与 RL 训练。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-10-30T21:30:06.000Z",
+    "keyContribution": "指出 BI 被忽视：131 产物中 83 个适用、19 个（22.9%）违例",
+    "agentChange": "DSL 契约声明 batch 源与受保护参数，AST 追踪依赖；动态校验位级一致并回灌诊断。",
+    "selfEvolution": null,
+    "evidence": [
+     "KernelBench.com/FlashInfer 三框架 BI 通过率 67.6%→91.9%，保留 91.8% 几何平均加速；K-Search 75.7%→97.4%，违例检出 92%。",
+     "可继承 contract DSL 描述 batch 源与受保护参数，静态判定"
+    ],
+    "faq": {
+     "problem": "插件式批次不变性校验，三个 kernel agent 的 BI 通过率 67.6%→91.9%。",
+     "mechanism": "DSL 契约声明 batch 源与受保护参数，AST 追踪依赖；动态校验位级一致并回灌诊断。",
+     "agentChange": "DSL 契约声明 batch 源与受保护参数，AST 追踪依赖；动态校验位级一致并回灌诊断。",
+     "support": "KernelBench.com/FlashInfer 三框架 BI 通过率 67.6%→91.9%，保留 91.8% 几何平均加速；K-Search 75.7%→97.4%，违例检出 92%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "可复现性进入 kernel agent 评测，影响 LLM 服务与 RL 训练。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-10-19",
+  "newCount": 12,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-10-19 快照比较"
+ },
+ "sourceUpdatedAt": "2026-10-30T21:30:06.000Z",
+ "latestPaperAt": "2026-10-28T04:00:00.000Z",
+ "totalMatched": 942,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 942
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 60,
+ "trends": {
+  "status": "accumulating",
+  "days": 60,
+  "minimumDays": 15,
+  "message": "已积累 60/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-10-30T21:30:06.000Z",
+ "snapshotDay": "2026-10-28",
+ "historical": true
+}
