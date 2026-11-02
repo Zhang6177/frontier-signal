@@ -1,0 +1,1017 @@
+{
+ "papers": [
+  {
+   "id": "2610.40137",
+   "version": 1,
+   "title": "NeurEO: dissecting Earth observation embeddings with computational neuroscience",
+   "abstract": "借神经科学方法拆解 AlphaEarth 地学嵌入，揭示方向性调谐与高冗余结构。",
+   "authors": [],
+   "published": "2026-11-01T04:00:00.000Z",
+   "updated": "2026-11-01T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.40137",
+   "pdf": "https://arxiv.org/pdf/2610.40137",
+   "announceType": "new",
+   "summary": "借神经科学方法拆解 AlphaEarth 地学嵌入，揭示方向性调谐与高冗余结构。",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.40137"
+   ],
+   "hotScore": 96,
+   "scoreParts": {
+    "relevance": 88,
+    "evidence": 70,
+    "noveltyClaim": 84,
+    "actionability": 86,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为地学嵌入提供可检验的语义解释路径，支撑可信遥感应用。",
+   "repository": null,
+   "motivation": "地学基础模型嵌入精度高但语义未知，下游应用难建立信任。",
+   "coreProblem": "64 维嵌入特征强相关且语义不透明，无法说清每个特征编码何种地表属性。",
+   "contributions": [
+    "把嵌入特征视为\"神经元×空间\"，移植神经科学探测方法",
+    "建立相关结构、有效变程、调谐面、PCA 有效维度四类分析",
+    "在 100 个英国样点×128×128 像元上实证方向性编码"
+   ],
+   "innovations": [
+    "首次把\"自发/刺激响应\"神经活动分析范式迁移到地学嵌入",
+    "用调谐面峰值偏移识别方向性编码（如\"南北林缘\"响应）"
+   ],
+   "method": "将 AlphaEarth 嵌入与 DynamicWorld 土地覆盖、DSM 高程做调谐面与变异函数拟合，按刺激-响应范式归因。",
+   "results": "64 维嵌入在 100 样点上有效维度收敛至 <10；变程与相关结构近乎无关（ρ=0.026，p=0.082）；去趋势后残差维度反升。",
+   "value": "为地学嵌入提供可检验的语义解释路径，支撑可信遥感应用。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-11-02T21:30:23.000Z",
+    "keyContribution": "把嵌入特征视为\"神经元×空间\"，移植神经科学探测方法",
+    "agentChange": "将 AlphaEarth 嵌入与 DynamicWorld 土地覆盖、DSM 高程做调谐面与变异函数拟合，按刺激-响应范式归因。",
+    "selfEvolution": null,
+    "evidence": [
+     "64 维嵌入在 100 样点上有效维度收敛至 <10；变程与相关结构近乎无关（ρ=0.026，p=0.082）；去趋势后残差维度反升。",
+     "用调谐面峰值偏移识别方向性编码（如\"南北林缘\"响应）"
+    ],
+    "faq": {
+     "problem": "借神经科学方法拆解 AlphaEarth 地学嵌入，揭示方向性调谐与高冗余结构。",
+     "mechanism": "将 AlphaEarth 嵌入与 DynamicWorld 土地覆盖、DSM 高程做调谐面与变异函数拟合，按刺激-响应范式归因。",
+     "agentChange": "将 AlphaEarth 嵌入与 DynamicWorld 土地覆盖、DSM 高程做调谐面与变异函数拟合，按刺激-响应范式归因。",
+     "support": "64 维嵌入在 100 样点上有效维度收敛至 <10；变程与相关结构近乎无关（ρ=0.026，p=0.082）；去趋势后残差维度反升。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 1,
+    "editorialScore": 96,
+    "editorialTier": "must-read",
+    "recommendationReason": "为地学嵌入提供可检验的语义解释路径，支撑可信遥感应用。"
+   }
+  },
+  {
+   "id": "2610.39773",
+   "version": 1,
+   "title": "Quantum-Inspired Convolutional Networks for High-Resolution Pseudo-Label Generation from Multimodal Earth Observation Data",
+   "abstract": "量子启发卷积编解码器用 Sentinel-1/2 加粗 MODIS 标签生成高分地物伪标签。",
+   "authors": [],
+   "published": "2026-11-01T04:00:00.000Z",
+   "updated": "2026-11-01T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.39773",
+   "pdf": "https://arxiv.org/pdf/2610.39773",
+   "announceType": "new",
+   "summary": "量子启发卷积编解码器用 Sentinel-1/2 加粗 MODIS 标签生成高分地物伪标签。",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.39773"
+   ],
+   "hotScore": 92,
+   "scoreParts": {
+    "relevance": 84,
+    "evidence": 70,
+    "noveltyClaim": 80,
+    "actionability": 82,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为低标注区提供可扩展的高分地物制图路径。",
+   "repository": null,
+   "motivation": "高分辨率地物标注稀缺昂贵，需靠多源融合与弱监督突破。",
+   "coreProblem": "纯 CNN 参数大、跨传感器泛化弱，已有伪标签空间连贯性差。",
+   "contributions": [
+    "设计参数高效的量子启发卷积编解码网络做伪标签生成",
+    "重建分支+辅助分类器自监督预训练，再接粗标签监督",
+    "在 DFC2020 上产出更空间连贯、类一致的伪标签"
+   ],
+   "innovations": [
+    "以量子卷积块（旋转门+纠缠）替代经典卷积做跨传感器特征混合",
+    "先重建后弱监督的两阶段训练，避免低分标签主导表征"
+   ],
+   "method": "量子卷积块编码后纠缠混合，重建自监督学到谱-空结构，再生成高分辨率伪标签。",
+   "results": "DFC2020 OA 0.8314（UNet 0.8194 / TransUNet 0.8238），mIoU 0.6434（0.6272），Kappa 0.7612，且参数量更少。",
+   "value": "为低标注区提供可扩展的高分地物制图路径。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-11-02T21:30:23.000Z",
+    "keyContribution": "设计参数高效的量子启发卷积编解码网络做伪标签生成",
+    "agentChange": "量子卷积块编码后纠缠混合，重建自监督学到谱-空结构，再生成高分辨率伪标签。",
+    "selfEvolution": null,
+    "evidence": [
+     "DFC2020 OA 0.8314（UNet 0.8194 / TransUNet 0.8238），mIoU 0.6434（0.6272），Kappa 0.7612，且参数量更少。",
+     "先重建后弱监督的两阶段训练，避免低分标签主导表征"
+    ],
+    "faq": {
+     "problem": "量子启发卷积编解码器用 Sentinel-1/2 加粗 MODIS 标签生成高分地物伪标签。",
+     "mechanism": "量子卷积块编码后纠缠混合，重建自监督学到谱-空结构，再生成高分辨率伪标签。",
+     "agentChange": "量子卷积块编码后纠缠混合，重建自监督学到谱-空结构，再生成高分辨率伪标签。",
+     "support": "DFC2020 OA 0.8314（UNet 0.8194 / TransUNet 0.8238），mIoU 0.6434（0.6272），Kappa 0.7612，且参数量更少。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 2,
+    "editorialScore": 92,
+    "editorialTier": "must-read",
+    "recommendationReason": "为低标注区提供可扩展的高分地物制图路径。"
+   }
+  },
+  {
+   "id": "2610.40641",
+   "version": 1,
+   "title": "From extreme weather to agricultural consequences with agentic AI",
+   "abstract": "首个从可解释气象指数因果推断作物损失的智能体，佛州损失复现误差 <2%。",
+   "authors": [],
+   "published": "2026-11-01T04:00:00.000Z",
+   "updated": "2026-11-01T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.40641",
+   "pdf": "https://arxiv.org/pdf/2610.40641",
+   "announceType": "new",
+   "summary": "首个从可解释气象指数因果推断作物损失的智能体，佛州损失复现误差 <2%。",
+   "topic": "遥感与地球观测",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.40641"
+   ],
+   "hotScore": 86,
+   "scoreParts": {
+    "relevance": 78,
+    "evidence": 70,
+    "noveltyClaim": 74,
+    "actionability": 76,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "把灾害预警直接接到农业赔付与救灾资源调度上。",
+   "repository": null,
+   "motivation": "预报只说\"天会怎样\"，不说哪块地、哪种作物、损失多少。",
+   "coreProblem": "官方评估灾后才计算，加法式指数无法表达复合灾害的交互放大。",
+   "contributions": [
+    "构建 WxCrop 智能体：物理可解释指数+因果筛选+农情数据",
+    "为飓风、冻害、干热各建保险记录校准的县级损失模型",
+    "输出\"损失占当季预期产值比例\"，每个数字可溯源"
+   ],
+   "innovations": [
+    "用因果分析的物理指标而非黑箱端到端模型作灾害判据",
+    "首次支持预报日期（灾前）损失预测，而非事后统计"
+   ],
+   "method": "因果比较候选指数形式（如动压∝风速²）后用保险赔付校准损失率，再由智能体组织工具链回答查询。",
+   "results": "飓风日判别 AUC 0.98、冻害 0.99；留出年份损失复现 ±2%；县排名相关 0.63；覆盖 4,478 地块 29.8 万英亩。",
+   "value": "把灾害预警直接接到农业赔付与救灾资源调度上。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-11-02T21:30:23.000Z",
+    "keyContribution": "构建 WxCrop 智能体：物理可解释指数+因果筛选+农情数据",
+    "agentChange": "因果比较候选指数形式（如动压∝风速²）后用保险赔付校准损失率，再由智能体组织工具链回答查询。",
+    "selfEvolution": null,
+    "evidence": [
+     "飓风日判别 AUC 0.98、冻害 0.99；留出年份损失复现 ±2%；县排名相关 0.63；覆盖 4,478 地块 29.8 万英亩。",
+     "首次支持预报日期（灾前）损失预测，而非事后统计"
+    ],
+    "faq": {
+     "problem": "首个从可解释气象指数因果推断作物损失的智能体，佛州损失复现误差 <2%。",
+     "mechanism": "因果比较候选指数形式（如动压∝风速²）后用保险赔付校准损失率，再由智能体组织工具链回答查询。",
+     "agentChange": "因果比较候选指数形式（如动压∝风速²）后用保险赔付校准损失率，再由智能体组织工具链回答查询。",
+     "support": "飓风日判别 AUC 0.98、冻害 0.99；留出年份损失复现 ±2%；县排名相关 0.63；覆盖 4,478 地块 29.8 万英亩。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 3,
+    "editorialScore": 86,
+    "editorialTier": "must-read",
+    "recommendationReason": "把灾害预警直接接到农业赔付与救灾资源调度上。"
+   }
+  },
+  {
+   "id": "2610.40636",
+   "version": 1,
+   "title": "Probing Spatial State Representations in Visual Foundation Models",
+   "abstract": "四级探测揭示 10 个视觉基础模型的空间状态表征存在系统性断层。",
+   "authors": [],
+   "published": "2026-11-01T04:00:00.000Z",
+   "updated": "2026-11-01T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.40636",
+   "pdf": "https://arxiv.org/pdf/2610.40636",
+   "announceType": "new",
+   "summary": "四级探测揭示 10 个视觉基础模型的空间状态表征存在系统性断层。",
+   "topic": "基础模型与表征",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.40636"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为空间智能评测立新标准——表征须以支撑行动为准。",
+   "repository": null,
+   "motivation": "只看当前帧不够，观测者需在自运动下维持可更新的空间状态。",
+   "coreProblem": "强场景读出不等于物体持续性、未来预测与动作可用性。",
+   "contributions": [
+    "提出 L1 结构/L2 持续性/L3 预测更新/L4 可行动性四级框架",
+    "在流式自我中心观测上对 10 个冻结表征做统一探测",
+    "用匹配候选与运动对照分离\"读出准确\"与\"依赖历史\""
+   ],
+   "innovations": [
+    "把空间表征评价从\"能解码什么\"改为\"能否维持、预测并指导动作\"",
+    "证明为真实特征训练的空间读者不能直接迁移到预测特征"
+   ],
+   "method": "冻结特征+因果前缀探测，辅以错误运动候选与历史长度对照实验。",
+   "results": "Fast3R 正进度率 59.8%（最高）；V-JEPA2 复制检索 19.93% 反超其预测 13.04%；重训练读者 MAE 0.223 仍逊真实特征。",
+   "value": "为空间智能评测立新标准——表征须以支撑行动为准。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-11-02T21:30:23.000Z",
+    "keyContribution": "提出 L1 结构/L2 持续性/L3 预测更新/L4 可行动性四级框架",
+    "agentChange": "冻结特征+因果前缀探测，辅以错误运动候选与历史长度对照实验。",
+    "selfEvolution": null,
+    "evidence": [
+     "Fast3R 正进度率 59.8%（最高）；V-JEPA2 复制检索 19.93% 反超其预测 13.04%；重训练读者 MAE 0.223 仍逊真实特征。",
+     "证明为真实特征训练的空间读者不能直接迁移到预测特征"
+    ],
+    "faq": {
+     "problem": "四级探测揭示 10 个视觉基础模型的空间状态表征存在系统性断层。",
+     "mechanism": "冻结特征+因果前缀探测，辅以错误运动候选与历史长度对照实验。",
+     "agentChange": "冻结特征+因果前缀探测，辅以错误运动候选与历史长度对照实验。",
+     "support": "Fast3R 正进度率 59.8%（最高）；V-JEPA2 复制检索 19.93% 反超其预测 13.04%；重训练读者 MAE 0.223 仍逊真实特征。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 4,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "为空间智能评测立新标准——表征须以支撑行动为准。"
+   }
+  },
+  {
+   "id": "2610.40536",
+   "version": 1,
+   "title": "TRACER, a time-to-event EHR foundation model for disease detection across health systems",
+   "abstract": "450 万患者预训练的 EHR 基础模型，95% 特异度下命中率最高达 8 倍。",
+   "authors": [],
+   "published": "2026-11-01T04:00:00.000Z",
+   "updated": "2026-11-01T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.40536",
+   "pdf": "https://arxiv.org/pdf/2610.40536",
+   "announceType": "new",
+   "summary": "450 万患者预训练的 EHR 基础模型，95% 特异度下命中率最高达 8 倍。",
+   "topic": "基础模型与表征",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.40536"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "提示 EHR 基础模型上临床前必须按目标工作点做外部验证。",
+   "repository": null,
+   "motivation": "筛查真正关心低假阳性下的检出量，而非全局排序指标。",
+   "coreProblem": "AUROC 无法说明\"会亮多少假警报、能抓多少真病例\"。",
+   "contributions": [
+    "训练解码器式 EHR 基础模型 TRACER（450 万患者/4 系统）",
+    "在 2 个未参与开发系统、200 万+患者上评 16 病×1/2/5 年",
+    "以 95% 特异度工作点报告灵敏度与假警报负担"
+   ],
+   "innovations": [
+    "把评估从 AUROC 换成临床筛查可用工作点（固定高特异度）",
+    "量化\"判别力稳定但灵敏度骤降\"的跨系统错配现象"
+   ],
+   "method": "序列临床事件自回归预训练，按时间到事件建风险评分，外部系统直接验证。",
+   "results": "95% 特异度下一年内确诊风险最高 8×；心衰 1 年 AUROC 0.87 但灵敏度仅 44.2%，外部降至 32.1%（−10.3pp）。",
+   "value": "提示 EHR 基础模型上临床前必须按目标工作点做外部验证。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-11-02T21:30:23.000Z",
+    "keyContribution": "训练解码器式 EHR 基础模型 TRACER（450 万患者/4 系统）",
+    "agentChange": "序列临床事件自回归预训练，按时间到事件建风险评分，外部系统直接验证。",
+    "selfEvolution": null,
+    "evidence": [
+     "95% 特异度下一年内确诊风险最高 8×；心衰 1 年 AUROC 0.87 但灵敏度仅 44.2%，外部降至 32.1%（−10.3pp）。",
+     "量化\"判别力稳定但灵敏度骤降\"的跨系统错配现象"
+    ],
+    "faq": {
+     "problem": "450 万患者预训练的 EHR 基础模型，95% 特异度下命中率最高达 8 倍。",
+     "mechanism": "序列临床事件自回归预训练，按时间到事件建风险评分，外部系统直接验证。",
+     "agentChange": "序列临床事件自回归预训练，按时间到事件建风险评分，外部系统直接验证。",
+     "support": "95% 特异度下一年内确诊风险最高 8×；心衰 1 年 AUROC 0.87 但灵敏度仅 44.2%，外部降至 32.1%（−10.3pp）。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 5,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "提示 EHR 基础模型上临床前必须按目标工作点做外部验证。"
+   }
+  },
+  {
+   "id": "2610.40029",
+   "version": 1,
+   "title": "Segment Anything Model Based Context Guided Mamba Unet for Medical Image Segmentation",
+   "abstract": "融合 SAM 语义先验与 Mamba 长程建模，三项医学分割基准达 SOTA。",
+   "authors": [],
+   "published": "2026-11-01T04:00:00.000Z",
+   "updated": "2026-11-01T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.40029",
+   "pdf": "https://arxiv.org/pdf/2610.40029",
+   "announceType": "new",
+   "summary": "融合 SAM 语义先验与 Mamba 长程建模，三项医学分割基准达 SOTA。",
+   "topic": "医学影像与分割",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.40029"
+   ],
+   "hotScore": 79,
+   "scoreParts": {
+    "relevance": 71,
+    "evidence": 70,
+    "noveltyClaim": 67,
+    "actionability": 69,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "给出\"基础模型语义+线性复杂度建模\"的可行融合范式。",
+   "repository": null,
+   "motivation": "医学分割既要全局上下文又要精细解剖边界，单一范式难兼顾。",
+   "coreProblem": "SAM 零样本迁移丢失低对比边界，Mamba 缺语义先验。",
+   "contributions": [
+    "提出 SAMBA-UNet：SAM 编码器与 Mamba UNet 双分支",
+    "设计 HCEM 层级上下文增强模块做多级注意力融合",
+    "用 LoRA+Adapter 低成本微调 SAM 适配医学域"
+   ],
+   "innovations": [
+    "首次系统整合 SAM 表征与 Mamba 状态空间建模（此前各自独立改进）",
+    "HCEM 按层级对齐两分支语义，而非简单拼接或相加"
+   ],
+   "method": "双分支特征在 HCEM 中逐级融合，LoRA/Adapter 完成域适配。",
+   "results": "Synapse DSC 81.94%（+0.86 vs VM-UNet）、HD95 17.34；ISIC17 mIoU 81.07%（+0.84）；ISIC18 mIoU 81.69%。",
+   "value": "给出\"基础模型语义+线性复杂度建模\"的可行融合范式。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-11-02T21:30:23.000Z",
+    "keyContribution": "提出 SAMBA-UNet：SAM 编码器与 Mamba UNet 双分支",
+    "agentChange": "双分支特征在 HCEM 中逐级融合，LoRA/Adapter 完成域适配。",
+    "selfEvolution": null,
+    "evidence": [
+     "Synapse DSC 81.94%（+0.86 vs VM-UNet）、HD95 17.34；ISIC17 mIoU 81.07%（+0.84）；ISIC18 mIoU 81.69%。",
+     "HCEM 按层级对齐两分支语义，而非简单拼接或相加"
+    ],
+    "faq": {
+     "problem": "融合 SAM 语义先验与 Mamba 长程建模，三项医学分割基准达 SOTA。",
+     "mechanism": "双分支特征在 HCEM 中逐级融合，LoRA/Adapter 完成域适配。",
+     "agentChange": "双分支特征在 HCEM 中逐级融合，LoRA/Adapter 完成域适配。",
+     "support": "Synapse DSC 81.94%（+0.86 vs VM-UNet）、HD95 17.34；ISIC17 mIoU 81.07%（+0.84）；ISIC18 mIoU 81.69%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 6,
+    "editorialScore": 79,
+    "editorialTier": "recommended",
+    "recommendationReason": "给出\"基础模型语义+线性复杂度建模\"的可行融合范式。"
+   }
+  },
+  {
+   "id": "2610.40227",
+   "version": 1,
+   "title": "EpiAgent: Epistemic Self-Play for LLM Agents",
+   "abstract": "给 LLM 智能体加可学习认知层推断对手私有信息，议价与库恩扑克全面超基线。",
+   "authors": [],
+   "published": "2026-11-01T04:00:00.000Z",
+   "updated": "2026-11-01T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.40227",
+   "pdf": "https://arxiv.org/pdf/2610.40227",
+   "announceType": "new",
+   "summary": "给 LLM 智能体加可学习认知层推断对手私有信息，议价与库恩扑克全面超基线。",
+   "topic": "Agent 与多智能体",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.40227"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为 LLM 多智能体提供可训练的\"心智理论\"接口。",
+   "repository": null,
+   "motivation": "不完全信息博弈中，LLM 智能体缺显式信念建模与更新机制。",
+   "coreProblem": "提示词推理把信念当生成副产物，对手建模与策略学习解耦。",
+   "contributions": [
+    "提出 EpiAgent：显式 epistemic 层维护对他人私有信息的信念",
+    "将策略分解为 Epistemic Update 与 Action Planning 两阶段",
+    "提出 Epistemic Self-Play，用双层优化交替训练两阶段"
+   ],
+   "innovations": [
+    "以\"内在预测奖励\"监督信念质量，使信念可学亦可评",
+    "信念与动作策略协同进化，而非先建模后冻结"
+   ],
+   "method": "交互历史驱动信念更新，条件于 epistemic state 选动作，自博弈中交替优化。",
+   "results": "议价平均收益 0.429（ReAct+RL 0.390、ReAct 0.326）；库恩扑克 0.181（0.109）；信念推断准确率 26.93%→43.37%。",
+   "value": "为 LLM 多智能体提供可训练的\"心智理论\"接口。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-11-02T21:30:23.000Z",
+    "keyContribution": "提出 EpiAgent：显式 epistemic 层维护对他人私有信息的信念",
+    "agentChange": "交互历史驱动信念更新，条件于 epistemic state 选动作，自博弈中交替优化。",
+    "selfEvolution": null,
+    "evidence": [
+     "议价平均收益 0.429（ReAct+RL 0.390、ReAct 0.326）；库恩扑克 0.181（0.109）；信念推断准确率 26.93%→43.37%。",
+     "信念与动作策略协同进化，而非先建模后冻结"
+    ],
+    "faq": {
+     "problem": "给 LLM 智能体加可学习认知层推断对手私有信息，议价与库恩扑克全面超基线。",
+     "mechanism": "交互历史驱动信念更新，条件于 epistemic state 选动作，自博弈中交替优化。",
+     "agentChange": "交互历史驱动信念更新，条件于 epistemic state 选动作，自博弈中交替优化。",
+     "support": "议价平均收益 0.429（ReAct+RL 0.390、ReAct 0.326）；库恩扑克 0.181（0.109）；信念推断准确率 26.93%→43.37%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 7,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为 LLM 多智能体提供可训练的\"心智理论\"接口。"
+   }
+  },
+  {
+   "id": "2610.40578",
+   "version": 1,
+   "title": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
+   "abstract": "把 CUA 任务验证变成主动取证，F1 达 89.2、假阳性率从 15.4% 降至 7.7%。",
+   "authors": [],
+   "published": "2026-11-01T04:00:00.000Z",
+   "updated": "2026-11-01T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.40578",
+   "pdf": "https://arxiv.org/pdf/2610.40578",
+   "announceType": "new",
+   "summary": "把 CUA 任务验证变成主动取证，F1 达 89.2、假阳性率从 15.4% 降至 7.7%。",
+   "topic": "Agent 与多智能体",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.40578"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "为 CUA 强化学习与数据筛选提供可信奖励信号。",
+   "repository": null,
+   "motivation": "桌面/移动/网页智能体的训练、评测与数据筛选都缺可靠完成判定。",
+   "coreProblem": "VLM 裁判只看给定截图，生成程序只看可访问状态，都会漏关键证据。",
+   "contributions": [
+    "提出平台无关验证框架：先探索上下文再建任务 rubric",
+    "按未满足需求自选 GUI 或代码检查，用显式证据规则合并",
+    "统一在线（机器状态）与离线（轨迹回放）验证流程"
+   ],
+   "innovations": [
+    "把验证重构为\"动态取证\"而非一次性打分",
+    "证据规则+工具自选，同一流程适配不同平台与观测模态"
+   ],
+   "method": "rubric 拆解需求→GUI/代码工具取证→证据规则裁决，未决项触发后续检查。",
+   "results": "AndroidWorld F1 89.2/Acc 90.5（VLM 裁判 74.2/78.4），假阳性率 7.7% vs 15.4%；ScienceBoard 假阳性 5.4% vs 24.8%。",
+   "value": "为 CUA 强化学习与数据筛选提供可信奖励信号。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-11-02T21:30:23.000Z",
+    "keyContribution": "提出平台无关验证框架：先探索上下文再建任务 rubric",
+    "agentChange": "rubric 拆解需求→GUI/代码工具取证→证据规则裁决，未决项触发后续检查。",
+    "selfEvolution": null,
+    "evidence": [
+     "AndroidWorld F1 89.2/Acc 90.5（VLM 裁判 74.2/78.4），假阳性率 7.7% vs 15.4%；ScienceBoard 假阳性 5.4% vs 24.8%。",
+     "证据规则+工具自选，同一流程适配不同平台与观测模态"
+    ],
+    "faq": {
+     "problem": "把 CUA 任务验证变成主动取证，F1 达 89.2、假阳性率从 15.4% 降至 7.7%。",
+     "mechanism": "rubric 拆解需求→GUI/代码工具取证→证据规则裁决，未决项触发后续检查。",
+     "agentChange": "rubric 拆解需求→GUI/代码工具取证→证据规则裁决，未决项触发后续检查。",
+     "support": "AndroidWorld F1 89.2/Acc 90.5（VLM 裁判 74.2/78.4），假阳性率 7.7% vs 15.4%；ScienceBoard 假阳性 5.4% vs 24.8%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 8,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "为 CUA 强化学习与数据筛选提供可信奖励信号。"
+   }
+  },
+  {
+   "id": "2610.39927",
+   "version": 1,
+   "title": "Learning Calibrated Confidence for Multi-Agent Collaboration",
+   "abstract": "让多智能体交接时传递校准置信度，3-hop 准确率 37.85% 远超任务 RL 基线。",
+   "authors": [],
+   "published": "2026-11-01T04:00:00.000Z",
+   "updated": "2026-11-01T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.39927",
+   "pdf": "https://arxiv.org/pdf/2610.39927",
+   "announceType": "new",
+   "summary": "让多智能体交接时传递校准置信度，3-hop 准确率 37.85% 远超任务 RL 基线。",
+   "topic": "Agent 与多智能体",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.39927"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让多智能体输出可靠性可量化、可按置信度路由。",
+   "repository": null,
+   "motivation": "上游答案对错参差，下游只能凭文本证据猜是否该信。",
+   "coreProblem": "现有 MAS 只传答案与证据，缺量化可靠性信号，错误沿链累积。",
+   "contributions": [
+    "提出 MASCAL：各智能体联合优化任务表现与置信度校准",
+    "交接时传递正确概率，最终答案也带校准概率",
+    "提出 confidence-aware weighting 放大对上游概率敏感位置的学习"
+   ],
+   "innovations": [
+    "首次打通\"置信度学习—传递—使用\"的完整协作链路",
+    "用加权训练让下游学会\"何时信、何时查\""
+   ],
+   "method": "RL 中加校准目标学正确率，下游据置信度决定追问检索或复核。",
+   "results": "3-hop MuSiQue Acc 37.85%（Task-RL 32.39%，Base 15.61%），Brier 0.190 vs 0.521；4-hop 20.19% vs 17.21%。",
+   "value": "让多智能体输出可靠性可量化、可按置信度路由。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-11-02T21:30:23.000Z",
+    "keyContribution": "提出 MASCAL：各智能体联合优化任务表现与置信度校准",
+    "agentChange": "RL 中加校准目标学正确率，下游据置信度决定追问检索或复核。",
+    "selfEvolution": null,
+    "evidence": [
+     "3-hop MuSiQue Acc 37.85%（Task-RL 32.39%，Base 15.61%），Brier 0.190 vs 0.521；4-hop 20.19% vs 17.21%。",
+     "用加权训练让下游学会\"何时信、何时查\""
+    ],
+    "faq": {
+     "problem": "让多智能体交接时传递校准置信度，3-hop 准确率 37.85% 远超任务 RL 基线。",
+     "mechanism": "RL 中加校准目标学正确率，下游据置信度决定追问检索或复核。",
+     "agentChange": "RL 中加校准目标学正确率，下游据置信度决定追问检索或复核。",
+     "support": "3-hop MuSiQue Acc 37.85%（Task-RL 32.39%，Base 15.61%），Brier 0.190 vs 0.521；4-hop 20.19% vs 17.21%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 9,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "让多智能体输出可靠性可量化、可按置信度路由。"
+   }
+  },
+  {
+   "id": "2610.39649",
+   "version": 1,
+   "title": "Look at Where You Think: Localization-Head Alignment for Fine-Grained Perception in Thinking VLMs",
+   "abstract": "只监督\"看哪里\"，4B 单次推理达 76.6% 且推理 token 省 24%。",
+   "authors": [],
+   "published": "2026-11-01T04:00:00.000Z",
+   "updated": "2026-11-01T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.39649",
+   "pdf": "https://arxiv.org/pdf/2610.39649",
+   "announceType": "new",
+   "summary": "只监督\"看哪里\"，4B 单次推理达 76.6% 且推理 token 省 24%。",
+   "topic": "多模态与视觉语言",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.39649"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "示范\"把机制诊断直接做成训练信号\"的低成本提效范式。",
+   "repository": null,
+   "motivation": "思考型 VLM 推理数千 token，仍看丢高分辨率图里的小目标。",
+   "coreProblem": "瓶颈在选择而非看见——少数定位头要从上万视觉 token 中挑证据。",
+   "contributions": [
+    "定位 Qwen3.5-4B 的 localization heads 并用消融证实其决定性",
+    "提出 LHA：把注意力作辅助损失，在陈述视觉事实处监督焦点区",
+    "同一损失接入 SFT 与 GRPO，推理零额外开销"
+   ],
+   "innovations": [
+    "监督精确到\"推理断言某物体事实的那个 token\"的注意力",
+    "用前景/等面积背景注意力比值作损失，抵消 softmax 总量项"
+   ],
+   "method": "由 grounding 框识别定位头，在事实 token 处对比证据区与背景区注意力。",
+   "results": "V*/HR-Bench 4K/TreeBench 74.1%→76.6%（领先 EASE 3.0pp）；对齐本身 +1.8pp、推理短 20%；RL 每步快 15%。",
+   "value": "示范\"把机制诊断直接做成训练信号\"的低成本提效范式。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-11-02T21:30:23.000Z",
+    "keyContribution": "定位 Qwen3.5-4B 的 localization heads 并用消融证实其决定性",
+    "agentChange": "由 grounding 框识别定位头，在事实 token 处对比证据区与背景区注意力。",
+    "selfEvolution": null,
+    "evidence": [
+     "V*/HR-Bench 4K/TreeBench 74.1%→76.6%（领先 EASE 3.0pp）；对齐本身 +1.8pp、推理短 20%；RL 每步快 15%。",
+     "用前景/等面积背景注意力比值作损失，抵消 softmax 总量项"
+    ],
+    "faq": {
+     "problem": "只监督\"看哪里\"，4B 单次推理达 76.6% 且推理 token 省 24%。",
+     "mechanism": "由 grounding 框识别定位头，在事实 token 处对比证据区与背景区注意力。",
+     "agentChange": "由 grounding 框识别定位头，在事实 token 处对比证据区与背景区注意力。",
+     "support": "V*/HR-Bench 4K/TreeBench 74.1%→76.6%（领先 EASE 3.0pp）；对齐本身 +1.8pp、推理短 20%；RL 每步快 15%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 10,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "示范\"把机制诊断直接做成训练信号\"的低成本提效范式。"
+   }
+  },
+  {
+   "id": "2610.39812",
+   "version": 1,
+   "title": "GROME: GROunding Factorized MEmory into Video World Models",
+   "abstract": "静/动分解的因子化记忆免训练注入视频世界模型，回访 PSNR 20.6 vs 11.4。",
+   "authors": [],
+   "published": "2026-11-01T04:00:00.000Z",
+   "updated": "2026-11-01T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.39812",
+   "pdf": "https://arxiv.org/pdf/2610.39812",
+   "announceType": "new",
+   "summary": "静/动分解的因子化记忆免训练注入视频世界模型，回访 PSNR 20.6 vs 11.4。",
+   "topic": "世界模型与视频生成",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.39812"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "指出长程世界模型需要结构化记忆而非更大上下文窗口。",
+   "repository": null,
+   "motivation": "长程回访时历史落出上下文窗口，世界模型丢失场景与实体。",
+   "coreProblem": "隐式记忆受窗口限制且静动纠缠，显式 3D 记忆误差累积、丢动态。",
+   "contributions": [
+    "提出 GROME：分块重建后把点图分解为静态与动态两部分",
+    "局部记忆检索：静态按空间覆盖、动态按时间最近分别取用",
+    "免训练记忆注入，走主干原生条件通路"
+   ],
+   "innovations": [
+    "记忆按\"是否随时间演变\"因子化，而非统一压进 3D 表示",
+    "用相同 RoPE 索引把参考视图锚为空间不变量，动态保留原时序索引"
+   ],
+   "method": "分块建局部点图→按目标视角检索渲染参考→经原生条件注入冻结主干。",
+   "results": "WorldScore 200 场景静态回访 PSNR 20.62（LingBotV2 RC 11.40）、LPIPS 0.169；消融全量模型动态 PSNR 23.84。",
+   "value": "指出长程世界模型需要结构化记忆而非更大上下文窗口。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-11-02T21:30:23.000Z",
+    "keyContribution": "提出 GROME：分块重建后把点图分解为静态与动态两部分",
+    "agentChange": "分块建局部点图→按目标视角检索渲染参考→经原生条件注入冻结主干。",
+    "selfEvolution": null,
+    "evidence": [
+     "WorldScore 200 场景静态回访 PSNR 20.62（LingBotV2 RC 11.40）、LPIPS 0.169；消融全量模型动态 PSNR 23.84。",
+     "用相同 RoPE 索引把参考视图锚为空间不变量，动态保留原时序索引"
+    ],
+    "faq": {
+     "problem": "静/动分解的因子化记忆免训练注入视频世界模型，回访 PSNR 20.6 vs 11.4。",
+     "mechanism": "分块建局部点图→按目标视角检索渲染参考→经原生条件注入冻结主干。",
+     "agentChange": "分块建局部点图→按目标视角检索渲染参考→经原生条件注入冻结主干。",
+     "support": "WorldScore 200 场景静态回访 PSNR 20.62（LingBotV2 RC 11.40）、LPIPS 0.169；消融全量模型动态 PSNR 23.84。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 11,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "指出长程世界模型需要结构化记忆而非更大上下文窗口。"
+   }
+  },
+  {
+   "id": "2610.39931",
+   "version": 1,
+   "title": "Low-Bit GDN Recurrent-State Quantization: Global Gradient-aware Allocation and Pure-Write Sliding Windows",
+   "abstract": "梯度敏感度分配+纯写滑窗抑制状态量化误差，7 任务均分最高 +41.2pp。",
+   "authors": [],
+   "published": "2026-11-01T04:00:00.000Z",
+   "updated": "2026-11-01T04:00:00.000Z",
+   "categories": [
+    "cs.AI",
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "primaryCategory": "cs.AI",
+   "link": "https://arxiv.org/abs/2610.39931",
+   "pdf": "https://arxiv.org/pdf/2610.39931",
+   "announceType": "new",
+   "summary": "梯度敏感度分配+纯写滑窗抑制状态量化误差，7 任务均分最高 +41.2pp。",
+   "topic": "系统与高效推理",
+   "comments": "",
+   "links": [
+    "https://arxiv.org/abs/2610.39931"
+   ],
+   "hotScore": 72,
+   "scoreParts": {
+    "relevance": 64,
+    "evidence": 70,
+    "noveltyClaim": 60,
+    "actionability": 62,
+    "reliability": 62,
+    "freshness": 96,
+    "personalMatch": 80
+   },
+   "reason": "让低比特循环状态在长程推理任务上真正可用。",
+   "repository": null,
+   "motivation": "长上下文推理把历史压进定长循环状态，降精度省显存但误差累积。",
+   "coreProblem": "量化写回误差沿递推放大，导致推理退化、重复生成与超长输出。",
+   "contributions": [
+    "提出 GGA：按量化残差×未来损失梯度敏感度分配各头位宽",
+    "提出 PW：用 FP8 单独维护最近写入并走完整状态转移",
+    "在 Qwen3.5-4B/9B 的七个评测上系统验证"
+   ],
+   "innovations": [
+    "位宽分配从激活统计改为\"对后续预测损失的梯度敏感度\"",
+    "用纯写滑窗旁路精确保留近端信息，切断误差累积回路"
+   ],
+   "method": "全局混合精度预算下按敏感度分配位宽，近端写入经 FP8 旁路后合并进低位状态。",
+   "results": "@4bit 七任务均分 69.83%/78.63%，超 STEPQuant 38.39/41.21pp；输出 token 减 29.59%。",
+   "value": "让低比特循环状态在长程推理任务上真正可用。",
+   "analysis": {
+    "source": "hermes-cron",
+    "scope": "abstract+introduction",
+    "label": "Hermes 速读",
+    "model": "hermes-daily-report",
+    "promptVersion": "hermes-cron-md-v1",
+    "generatedAt": "2026-11-02T21:30:23.000Z",
+    "keyContribution": "提出 GGA：按量化残差×未来损失梯度敏感度分配各头位宽",
+    "agentChange": "全局混合精度预算下按敏感度分配位宽，近端写入经 FP8 旁路后合并进低位状态。",
+    "selfEvolution": null,
+    "evidence": [
+     "@4bit 七任务均分 69.83%/78.63%，超 STEPQuant 38.39/41.21pp；输出 token 减 29.59%。",
+     "用纯写滑窗旁路精确保留近端信息，切断误差累积回路"
+    ],
+    "faq": {
+     "problem": "梯度敏感度分配+纯写滑窗抑制状态量化误差，7 任务均分最高 +41.2pp。",
+     "mechanism": "全局混合精度预算下按敏感度分配位宽，近端写入经 FP8 旁路后合并进低位状态。",
+     "agentChange": "全局混合精度预算下按敏感度分配位宽，近端写入经 FP8 旁路后合并进低位状态。",
+     "support": "@4bit 七任务均分 69.83%/78.63%，超 STEPQuant 38.39/41.21pp；输出 token 减 29.59%。",
+     "rsi": "",
+     "limitation": ""
+    },
+    "limitation": "",
+    "confidence": "medium",
+    "verificationStatus": "abstract-only",
+    "editorialRank": 12,
+    "editorialScore": 72,
+    "editorialTier": "skim",
+    "recommendationReason": "让低比特循环状态在长程推理任务上真正可用。"
+   }
+  }
+ ],
+ "analysisMeta": {
+  "status": "generated",
+  "provider": "Hermes Cron",
+  "model": "hermes-daily-report",
+  "scope": "arXiv abstracts + Hermes daily digest"
+ },
+ "dailyChanges": {
+  "status": "ready",
+  "comparedWith": "2026-10-31",
+  "newCount": 11,
+  "updatedCount": 0,
+  "repositoryAddedCount": 0,
+  "message": "与 2026-10-31 快照比较"
+ },
+ "sourceUpdatedAt": "2026-11-02T21:30:23.000Z",
+ "latestPaperAt": "2026-11-01T04:00:00.000Z",
+ "totalMatched": 477,
+ "source": "arXiv API",
+ "coverageStatus": "complete",
+ "sourceRuns": [
+  {
+   "name": "hermes-cron",
+   "status": "complete",
+   "candidates": 477
+  }
+ ],
+ "queryVersion": "hermes-cron-v1",
+ "taxonomyVersion": "hermes-topics-v1",
+ "scoreVersion": "hermes-score-v1",
+ "promptVersion": "hermes-cron-md-v1",
+ "scopeVersion": "hermes-scope-v1",
+ "historyDays": 63,
+ "trends": {
+  "status": "accumulating",
+  "days": 63,
+  "minimumDays": 15,
+  "message": "已积累 63/15 个每日快照。先用边界快照确定 first-seen，再比较两个互不重叠的 7 日窗口。"
+ },
+ "fetchedAt": "2026-11-02T21:30:23.000Z",
+ "snapshotDay": "2026-11-01",
+ "historical": true
+}
